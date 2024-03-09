@@ -248,6 +248,7 @@ screen quick_menu():
 
             xalign 0.5
             yalign 1.0
+            yoffset -23
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -274,6 +275,8 @@ style quick_button:
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
+
+define gui.quick_button_text_size = 20
 
 
 ################################################################################

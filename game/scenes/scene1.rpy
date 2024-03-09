@@ -18,8 +18,17 @@ label scene1:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    e ""
+
+    e "You've created a new Ren'Py game. Once you add a story, pictures, and music, you can release it to the world! Once you add a story, pictures, and music, you can release it to the world! Once you add a story, pictures, and music, you can release it to the world! Once you add a story, pictures, and music, you can release it to the world! Once you add a story, pictures, and music, you can release it to the world! Once you add a story, pictures, and music, you can"
+
+    show screen diary
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
+
+    menu:
+        "You've created a new Ren'Py game. Once you add a story, pictures and music, you can":
+
+            e "Test!"
 
     return
