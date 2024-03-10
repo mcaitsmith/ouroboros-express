@@ -1,4 +1,6 @@
-﻿# The script of the scene goes in this file.
+﻿### PLACEHOLDER SCENE ###
+
+# The script of the scene goes in this file.
 
 # The scene starts here.
 
@@ -31,4 +33,6 @@ label scene1:
 
             e "Test!"
 
-    return
+    hide eileen
+
+    jump scene2

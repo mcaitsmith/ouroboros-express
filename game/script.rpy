@@ -4,6 +4,12 @@
 # name of the character.
 
 define e = Character("Eileen")
+define vivi = Character("Vivi",image="vivi")
+define vivithinking = Character("Vivi",image="vivi",what_italic=True)
+define urshu = Character("Urshu",image="urshu")
+define ava = Character("Ava",image="ava")
+define darius = Character("Darius",image="darius")
+define susurha = Character("Susu'Rha",image="susurha")
 
 # The game starts here.
 
