@@ -22,6 +22,8 @@ label scene1:
 
     e "You've created a new Ren'Py game."
 
+    play sound blip # example of playing sound 'blip'
+
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
     hide eileen

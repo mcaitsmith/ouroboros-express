@@ -15,6 +15,8 @@ define susurha = Character("Susu'Rha",image="susurha")
 
 label start:
 
+    call sounds # define sounds
+
     jump scene1 # jump to first scene
 
     # # This ends the game.
