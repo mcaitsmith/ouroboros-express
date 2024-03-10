@@ -1,4 +1,6 @@
-﻿# The script of the scene goes in this file.
+﻿### PLACEHOLDER SCENE ###
+
+# The script of the scene goes in this file.
 
 # The scene starts here.
 
@@ -22,4 +24,4 @@ label scene1:
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
-    return
+    jump scene2
