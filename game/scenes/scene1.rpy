@@ -25,7 +25,8 @@ label scene1:
     play sound blip # example of playing sound 'blip'
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
+    e "Now we are jumping to act 2.1"
 
     hide eileen
 
-    jump scene2
+    jump briefing_denial
