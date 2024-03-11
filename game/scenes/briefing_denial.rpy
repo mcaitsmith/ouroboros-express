@@ -550,7 +550,9 @@ label free_roam_2_ava:
     ava happy "See you soon, Vivi. The All is the One."
     ava sad "We have much to ponder. May your dreams be peaceful and warm."
     vivi neutral "Yeah yeah…you too, Asha."
+    jump character_selector_2
 label free_roam_2_darius:
+    $ freeroam2darius = True
     scene diningcar
     show vivi neutral at left
     show darius neutral at right
@@ -723,8 +725,10 @@ label free_roam_2_darius:
     darius sad "It was all pointless…"
     hide darius
     vivi sad "This is all too much… I need to sleep."
+    jump character_selector_2
 
 label free_roam_2_susu:
+    $ freeroam2susu = True
     scene lounge
     vivithinking "This train is driving me insane. I refuse to play into the conductor’s games."
     vivithinking "Yep. It seems Susu’Rha is lounging on one of the recliners."
