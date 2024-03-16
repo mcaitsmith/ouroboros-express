@@ -17,7 +17,7 @@ label start:
 
     call sounds # define sounds
 
-    jump scene1 # jump to first scene
+    jump scene_bargaining # jump to first scene
 
     # # This ends the game.
 
