@@ -1221,5 +1221,5 @@ label scene_bargaining:
 
 
 
-        # return
-        jump scene_depression
+        return
+        # jump scene_depression
