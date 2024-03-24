@@ -100,7 +100,7 @@ screen say(who, what):
 
     window:
         id "window"
-
+        background Transform(style.window.background, alpha=persistent.say_window_alpha) ##transparency of the dialog box
         if who is not None:
 
             window:
@@ -248,6 +248,7 @@ screen quick_menu():
 
             xalign 0.5
             yalign 1.0
+            yoffset -23
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -274,6 +275,11 @@ style quick_button:
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
+    idle_color "#ffffff"
+    insensitive_color "#A0A0A0"
+    outlines [(0, "#000", 2, 2)]
+
+define gui.quick_button_text_size = 16
 
 
 ################################################################################
@@ -340,6 +346,9 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    font "Lato-Regular.ttf"
+    size 36
+
 
 
 ## Main Menu screen ############################################################
@@ -765,6 +774,10 @@ screen preferences():
                     label _("Auto-Forward Time")
 
                     bar value Preference("auto-forward time")
+
+                    label _("Dialogue Box Transparency")
+
+                    bar value FieldValue(persistent, 'say_window_alpha', range=1.0, style="slider")
 
                 vbox:
 
@@ -1421,7 +1434,6 @@ screen bubble(who, what):
 
     window:
         id "window"
-
         if who is not None:
 
             window:
