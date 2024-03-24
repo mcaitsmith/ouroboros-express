@@ -22,6 +22,8 @@ image vivi sad blush = "images/characters/vivi/vivi sad.png"
 image vivi angry blush = "images/characters/vivi/vivi angry.png"
 image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
 
+image cabin blur = im.Blur("images/backgrounds/cabin.png", 1.5)
+
 layeredimage ava:
     group face auto:
         attribute neutral default

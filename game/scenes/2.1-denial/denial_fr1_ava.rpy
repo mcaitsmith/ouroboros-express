@@ -110,10 +110,12 @@ label denial_fr1_ava:
 
             vivithinking "More of the cat chasing its tail."
             vivi neutral "Maybe later. Thank you for listening, Asha. I'll keep you updated with my investigation as it progresses."
-            ava neutral "May the Goddess guide your travels. The All is the One."
+            show ava neutral -blush
+            ava "May the Goddess guide your travels. The All is the One."
             vivi neutral "Sure thing, sunshine. See ya."
             #JUMP to vivi saying, "That was interesting. Wonder what's next..."
 
     hide ava with dissolve
     vivithinking "That was interesting. Wonder what's next..."
     # JUMP TO: Character Selector 2
+    jump denial_cs2

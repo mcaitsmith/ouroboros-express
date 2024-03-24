@@ -235,3 +235,4 @@ label denial_fr1_darius:
     darius "Anytime, Ms. Sanssouci."
 
     # JUMP TO: Character Selector 2
+    jump denial_cs2
