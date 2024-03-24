@@ -10,6 +10,9 @@ init offset = -2
 ## width and height of the game.
 init python:
     gui.init(1920, 1080)
+    config.font_replacement_map["fonts/KaiseiDecol-Regular.ttf", False, True] = ("fonts/Helvetica RomanItalic.ttf", False, False)
+    config.font_replacement_map["fonts/KaiseiDecol-Regular.ttf", True, False] = ("fonts/KaiseiDecol-Bold.ttf", False, False)
+    # config.font_replacement_map["fonts/KaiseiDecol-Regular.ttf", True, True] = ("fonts/InriaSans-BoldItalic.ttf", False, False)
 
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
@@ -57,19 +60,22 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "KaiseiDecol-Regular.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "KaiseiDecol-Regular.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "KaiseiDecol-Regular.ttf"
+
+define gui.title_text_font = "Lato-Regular.ttf"
+define gui.title_text_size = 70
 
 ## The size of normal dialogue text.
 define gui.text_size = 20
 
 ## The size of character names.
-define gui.name_text_size = 45
+define gui.name_text_size = 24
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
@@ -81,7 +87,7 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 ## The size of the game's title.
-define gui.title_text_size = 75
+define gui.title_text_size = 70
 
 
 ## Main and Game Menus #########################################################
@@ -107,8 +113,8 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 130
-define gui.name_ypos = -70
+define gui.name_xpos = 100
+define gui.name_ypos = -130
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -121,7 +127,7 @@ define gui.namebox_height = None
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(50, 30, 50, 30)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background of the namebox will be scaled.
@@ -212,7 +218,7 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
+define gui.choice_button_text_idle_color = '#ffffff'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#8888887f'
 

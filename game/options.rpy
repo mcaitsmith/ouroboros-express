@@ -13,6 +13,7 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("The Ouroboros Express")
+define persistent.say_window_alpha = 0.9
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
