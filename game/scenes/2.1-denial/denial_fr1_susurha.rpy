@@ -18,6 +18,7 @@ label denial_fr1_susurha:
 
     # SOUND: The train car door slams shut.
     # VISUAL: The screen shakes.
+    show diningcar with hpunch
 
     show susurha surprised at right
 

@@ -43,6 +43,7 @@ label denial_cs2:
 
             vivi neutral "I have a feeling Darius knows more than he's letting on. I believe they're in the dining car."
             #JUMP TO: Free Roam 2 / Inquisitor Darius Wrecker
+            jump denial_fr2_darius
 
     #OPTION 3
         "Susu'Rha Balrinn" if fr1_choice != "Susu'Rha":
