@@ -28,6 +28,7 @@ label denial_cs1:
 
             vivi happy "That Darius looks like they would understand what's going on. Maybe they know where this train is going. I think they're in the lounge."
             #JUMP TO: Free roam 1 / Darius Wrecker
+            jump denial_fr1_darius
 
     # OPTION 3
         "Susu'Rha Balrinn":

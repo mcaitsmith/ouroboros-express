@@ -15,12 +15,37 @@ define mainmusic = "audio/music/OrEx_MainTrack1_v1.0.ogg"
 define goodendmusic = "audio/music/Good Ending.ogg"
 define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.wav"
 
-# PLACEHOLDER UNTIL GET BLUSH OVERLAY
-image ava neutral blush = "images/characters/ava/ava neutral.png"
-image ava happy blush = "images/characters/ava/ava happy.png"
-image ava sad blush = "images/characters/ava/ava sad.png"
-image ava angry blush = "images/characters/ava/ava angry.png"
-image ava surprised blush = "images/characters/ava/ava surprised.png"
+# PLACEHOLDER UNTIL GET BLUSH OVERLAY FOR VIVI SPRITE
+image vivi neutral blush = "images/characters/vivi/vivi neutral.png"
+image vivi happy blush = "images/characters/vivi/vivi happy.png"
+image vivi sad blush = "images/characters/vivi/vivi sad.png"
+image vivi angry blush = "images/characters/vivi/vivi angry.png"
+image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
+
+layeredimage ava:
+    group face auto:
+        attribute neutral default
+    group overlay:
+        attribute blush:
+            "ava_overlay_blush"
+layeredimage darius:
+    group face auto:
+        attribute neutral default
+    group overlay:
+        attribute blush:
+            "darius_overlay_blush"
+layeredimage susurha:
+    group face auto:
+        attribute neutral default
+    group overlay:
+        attribute blush:
+            "susurha_overlay_blush"
+layeredimage urshu:
+    group face auto:
+        attribute neutral default
+    group overlay:
+        attribute blush:
+            "urshu_overlay_blush"
 
 # The game starts here.
 
