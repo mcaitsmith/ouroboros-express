@@ -15,6 +15,13 @@ define mainmusic = "audio/music/OrEx_MainTrack1_v1.0.ogg"
 define goodendmusic = "audio/music/Good Ending.ogg"
 define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.wav"
 
+# PLACEHOLDER UNTIL GET BLUSH OVERLAY
+image ava neutral blush = "images/characters/ava/ava neutral.png"
+image ava happy blush = "images/characters/ava/ava happy.png"
+image ava sad blush = "images/characters/ava/ava sad.png"
+image ava angry blush = "images/characters/ava/ava angry.png"
+image ava surprised blush = "images/characters/ava/ava surprised.png"
+
 # The game starts here.
 
 default quest = Manager()
