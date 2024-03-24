@@ -18,12 +18,16 @@ define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.wav"
 # The game starts here.
 
 default quest = Manager()
+# define _scene_show_hide_transition = Dissolve(0.25)
 
 label start:
 
     call sounds # define sounds
 
-    jump scene1 # jump to first scene
+    play music mainmusic # start main track
+
+    # jump scene1 # jump to first scene
+    jump denial_briefing
 
     # # This ends the game.
 
