@@ -1,8 +1,4 @@
-﻿### PLACEHOLDER SCENE ###
-
-# The script of the scene goes in this file.
-
-# The scene starts here.
+﻿# The scene starts here.
 
 label denial_briefing:
 
@@ -98,4 +94,4 @@ label denial_briefing:
             vivi neutral "The truth will hunt me? I don't even want to know what that means. Better get a move on."
             #JUMP TO: Character Selector 1
 
-    jump scene2
+    jump denial_cs1
