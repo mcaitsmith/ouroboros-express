@@ -58,7 +58,7 @@ default quest = Manager()
 
 label start:
 
-    call sounds # define sounds
+    call sounds from _call_sounds # define sounds
 
     play music mainmusic # start main track
 
