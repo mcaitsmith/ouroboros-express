@@ -69,7 +69,6 @@ define gui.name_text_font = "KaiseiDecol-Regular.ttf"
 define gui.interface_text_font = "KaiseiDecol-Regular.ttf"
 
 define gui.title_text_font = "Lato-Regular.ttf"
-define gui.title_text_size = 70
 
 ## The size of normal dialogue text.
 define gui.text_size = 20
