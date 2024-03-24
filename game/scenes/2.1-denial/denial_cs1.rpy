@@ -35,3 +35,4 @@ label denial_cs1:
 
             vivi happy "The druid seemed easy to talk to. Maybe they can help me figure out what's going on. I think they're in the dining car."
             #JUMP to Free roam 1 / Susu'Rha Balrinn
+            jump denial_fr1_susurha
