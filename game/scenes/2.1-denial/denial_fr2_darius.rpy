@@ -411,3 +411,4 @@ label denial_fr2_darius:
     vivi sad "This is all too much... I need to sleep."
 
     # JUMP TO: Debrief Denial.
+    jump denial_debrief

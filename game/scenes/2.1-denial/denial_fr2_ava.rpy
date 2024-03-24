@@ -177,3 +177,4 @@ label denial_fr2_ava:
     vivithinking "Ugh, I think I need to go lie down. That was a lot to take in."
 
     # JUMP TO: Debrief Denial
+    jump denial_debrief
