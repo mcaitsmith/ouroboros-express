@@ -1,0 +1,363 @@
+﻿# The scene starts here.
+
+label denial_fr2_susurha:
+
+    #FREE ROAM 2 - Susu'Rha
+
+    #LOCATION: Lounge
+    scene lounge with fade
+
+    vivithinking "This train is driving me insane. I refuse to play into the conductor's games."
+
+    vivithinking "Yep. It seems Susu'Rha is lounging on one of the recliners."
+
+    show vivi neutral at left with dissolve
+
+    vivi "What are you doing?"
+
+    show susurha neutral at right with dissolve
+
+    susurha "What does it look like I'm doing at the moment? I'm deep in the meditative process of trying not to think about the circumstances that surround me."
+
+    susurha "And girl... let me tell you that the cushions this contraption houses are just soooo.... Welcoming."
+
+    #<CHOICE>
+    susurha "You should give it a try."
+
+    menu:
+
+    #OPTION 1 
+        "I'll stand.":
+
+            vivi "I'll stand."
+            susurha "Suit yourself but I see you weak at the knees. Eyes drawn to where I lay. The cushions calling your name."
+            susurha "Vivi..."
+            vivi "What?"
+            susurha "I'm saying you look exhausted, but to each their own."
+            vivithinking "Susu'Rha goes silent as they sink into their chair."
+            vivithinking "Ouch. The headache is only getting worse."
+            vivithinking "Maybe this was a mistake."
+            # JUMP TO: susurha "This place is a prison."
+
+    #OPTION 2 +ATTRACTION
+        "I'd love to.":
+
+            vivi "I'd love to."
+            vivithinking "They reach out and slide a chair my way with ease."
+            # SOUND: Vivi sits down in a super comfortable recliner.
+            vivithinking "Holy shit..."
+            susurha happy "Feels like a dream, don't it?"
+            vivi "Feels like I'm sinking."
+            vivithinking "We sit in silence, enjoying the simple comforts."
+            vivithinking "The headache eases off, only somewhat."
+            #JUMP TO: susurha "This place is a prison."
+
+    susurha "This place is a prison."
+
+    susurha "The Archdruids warned of daemons that kidnap their prey and treat them to endless luxuries."
+
+    susurha "Perhaps this is that. We are being fed lies and comfort just so that we can become sooo relaxed and THAT is when they'll strike...to feast on our satisfied souls."
+
+    susurha "To be frank with you, I always believed such tales to be nothing more than a bunch of creative nonsense to make the less fortunate in the clan okay with their shitty life conditions."
+
+    susurha "But..."
+
+    # <CHOICE>
+    susurha "I'm beginning to think that those sad old sods that lived in a forest their entire lives weren't completely high as the stars above."
+
+    menu:
+
+    #OPTION 1 +ATTRACTION
+        "This place freaks me out.":
+        
+            vivi "This place freaks me out."
+            susurha "I feel that in my bones. Oh, this place worms its way down my spine like a spider in the night."
+            susurha "Makes me feel like burning the whole place down."
+            susurha "Imagine..."
+            susurha "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..." 
+            susurha "Suddenly finding yourself trapped with a bunch of odd looking individuals, no offense, in a metal tube speeding to an unknown locale."
+            susurha "All the while you're being told that..."
+            susurha sad "You are dead."
+            vivi "Is that how you died? I mean ended up here."
+            susurha "How you'd figure that?"
+            #JUMP TO: susurha neutral "We will be dead if we stay here any longer."
+
+    #OPTION 2 
+        "That's absurd. That can't be the case.":
+
+            vivi "That's absurd. That can't be the case."
+            "..."
+            vivithinking "They're glaring at me. Looking me up and down."
+            susurha angry "Let me tell you what is absurd." 
+            susurha angry "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..."
+            susurha "Suddenly finding yourself trapped with a bunch of odd looking individuals in a metal tube speeding to an unknown locale."
+            susurha angry "All the while you're being told that YOU ARE DEAD."
+            # JUMP TO: susurha neutral "We will be dead if we stay here any longer."
+
+    susurha neutral "We will be dead if we stay here any longer."
+
+    vivi "We need to get out of here."
+
+    vivithinking "They raise a nonexistent eyebrow. Now I've got their attention."
+
+    susurha happy "Now that is something I absolutely LOVE hearing. Please tell me you have some sort of idea of getting off this thing."
+
+    vivithinking "..."
+
+    vivi "I do not."
+
+    susurha neutral "Hmm..."
+
+    susurha happy "Well, lucky for you, I have been indulging in some...sightseeing around this fine place and I think I know just the perfect spot for us to run away together."
+
+    vivi happy "Where?"
+
+    susurha happy "The observatory and its thin glass windows."
+
+    susurha happy "Oh, I do so very much love gazing up at the stars above like I did when I was a young prince."
+
+    vivi happy "Now?"
+
+    susurha happy "Why wait?"
+
+    vivi happy "Are we really doing this?"
+
+    susurha happy "Sweetie, it's a date."
+
+    vivithinking "They take me by the hand and drag me along."
+
+
+    #LOCATION: Observatory
+    scene observatory with fade
+
+    show susurha surprised at right with dissolve
+    show vivi surprised at left with dissolve
+
+    vivithinking "Golden fiery flashes shine through the glass windows of the cabin, and in-between those sparkles of light..."
+
+    vivithinking "Darkness."
+
+    vivithinking "Where are we?"
+
+    show vivi neutral
+
+    # <CHOICE>
+    susurha surprised "So strange, when I was just here I saw the night sky riddled with an ocean of stars, but now... it's just nothing."
+
+    menu:
+
+    #OPTION 1 +ATTRACTION
+        "Worried?":
+
+            vivi "Worried?"
+            show susurha neutral
+            # SOUND: Susu'Rha scoffs.
+            susurha "Me, worried? Never. I make sure to go out of my way to avoid feeling worried, but this..."
+            susurha "It just doesn't make sense.  I was so sure I knew what I saw. It had the same constellations burned into my mind from that night and..."
+            susurha "It hasn't even been an hour since I scouted the place."
+            susurha "Where are we?"
+            vivi "I was thinking the same thing."
+            susurha happy "I suppose there is only one way to find out."
+            #JUMP TO: susurha "This way."
+
+    #OPTION 2
+        "Where is this exit you sold me?":
+
+            vivi "Where is this exit you sold me?"
+            susurha neutral "Forgive me."
+            # JUMP TO: susurha "This way."
+
+    #OPTION 3 
+        "Maybe you didn't get a clear view?":
+
+            vivi "Maybe you didn't get a clear view?"
+            susurha "Maybe..."
+            susurha neutral "But I was so sure I knew what I saw. It had the same constellations burned into my mind from that night and..."
+            susurha "It hasn't even been an hour since I scouted the place."
+            vivithinking "..."
+            susurha "Doesn't matter."
+            # JUMP TO: susurha "This way."
+
+    susurha "This way."
+
+    susurha "Help me stack these chairs up under that central window on the ceiling."
+
+    # SOUND: Vivi and Susu'Rha exert themselves stacking chairs on top of each other.
+
+    vivithinking "This seems incredibly unplanned, but I don't really have a choice."
+
+    vivithinking "I need to get off this train."
+
+    vivithinking "And this one is my best chance."
+
+    susurha happy "This reminds me of back when I was younger and I'd sneak out of my tower bedroom to wander on top of the surrounding castle walls."
+
+    vivithinking "They climb the tower of stacked chairs and wrestle with the loose screws of the ceiling's window. Golden light is glistening off their scaly skin."
+    vivithinking "I wonder how it is, living in a castle..."
+
+    # <CHOICE>
+    vivithinking "All I can see is the biggest smile I've ever seen."
+
+    menu:
+
+        #OPTION 1 
+        "Can we please hurry this up?":
+
+            vivi "Can we please hurry this up?"
+            # SOUND: Susu'Rha scoffs.
+            susurha neutral "You know, you remind me a lot of the nobility that I grew up around."
+            susurha "They too found my voice to be annoying."
+            vivi "That's not what I meant."
+            susurha "Nevertheless, they listened as I slowly found my way out of that hell."
+            "Aha... Susu'Rha appears soft, but they actually have a nerve..."
+            #JUMP TO: susurha "Voila."
+
+    #OPTION 2 +ATTRACTION
+        "It sounds like you lived a fairy tale.":
+
+            #SOUND: Susu'Rha laughs.
+            susurha "I suppose from the outside it could come across with that poetic fantasy allure."
+            # <CHOICE>
+            susurha neutral "Apologies, I believe you were cracking a joke at me."
+
+            menu:
+            
+                #OPTION 2-1 +ATTRACTION
+                "I wasn't. Tell me more.":
+
+                    vivi "I wasn't. Tell me more."
+                    susurha happy "Perhaps I shall at another time."
+                    # JUMP TO: susurha "Voila."
+
+                #OPTION 2-2
+                "It's okay.":
+
+                    vivithinking "It's okay"
+                    # JUMP TO: susurha "Voila."
+
+    susurha happy "Voila."
+
+    # SOUND: The window clicks open.
+
+    susurha happy "We are homeward bound."
+
+    hide vivi with dissolve
+    hide susurha with dissolve
+
+    show observatory blur with dissolve
+
+    vivithinking "I climb up the tower of chairs and we both peak our heads out of the opened window."
+
+    vivithinking "..."
+
+    vivithinking "This is..."
+
+    vivithinking "Unimaginable."
+
+    vivithinking "Spiraling celestial bodies swirl all around as the train speeds faster than anything I've ever seen."
+
+    vivithinking "Flames burst from the train's tracks and were sucked into the void."
+
+    vivithinking "My hair flaps in my face. I really wanna scream. But I can't."
+
+    vivithinking "Susu'Rha stares out into the visual abyss of...wherever we are. They mumble to themselves but I can't hear anything."
+
+    vivithinking "All I could get was the sight of a tear rolling down their cheek."
+
+    vivithinking "I turn to see what they are staring at and I see..."
+
+    vivithinking "That thing."
+
+    vivithinking "A reflective dress floating in the wind, but it slowly inches closer to us."
+
+    vivithinking "It moves with purpose. It moves like it's alive."
+
+    vivithinking "Dangling like a puppet as it comes closer and I can see its face."
+
+    vivithinking "My face."
+
+    vivithinking "Reflecting on the concave mirror plate it has on its shoulders."
+
+    vivithinking "It crawls closer to us, inches away from my own face."
+
+    vivithinking "I feel the wind stroking my face like cold hands, pulling me closer to it."
+
+    vivithinking "I cannot breathe."
+
+    vivithinking "I cannot breathe."
+
+    vivithinking "I cannot breathe!"
+
+    vivithinking "It reaches out to me..."
+
+    urshu angry "Get down from there!"
+
+    #SOUND: The sounds of chairs clashing and Vivi and Susu'Rha hitting the floor.
+    #VISUAL: The screen shakes.
+    show observatory with hpunch
+    #SOUND: The window slams shut.
+    show urshu angry at left with dissolve:
+        xzoom -1.0
+
+    vivithinking "I can breathe again!"
+
+    show vivi surprised at left with dissolve
+
+    vivi surprised "What the hell was that?"
+
+    urshu angry "When I told you to go seek the truth I didn't quite mean to go and make us all something's meal."
+
+    vivi surprised "What the hell was that?!"
+
+    urshu neutral "The truth, Miss Sanssouci. The truth of the matter whether you choose to accept it or not is that you and Druid Balrinn here have passed in life and there is no getting off this ride."
+
+    urshu "Please, don't try to get off this train again. I may not be there next time to save you."
+
+    show susurha neutral at right with dissolve
+
+    susurha "What was that thing I saw out there?"
+
+    urshu "What you and Miss Sanssouci witnessed depends entirely on yourselves."
+
+    urshu "May I suggest returning to your cabins and getting some rest?"
+
+    vivithinking "Oh baby. Caught between hell and a better place."
+
+    vivithinking "Ugh... I need a drink."
+
+    #  JUMP TO: Debrief Denial.
+
+
+
+    # Debrief Denial
+
+    # LOCATION: cabin
+
+    # show vivi angry at left
+
+    # show urshu neutral at right
+
+    # vivi neutral "Outside this train... the void... it's too much. I thought I was living a nightmare before, but that outside...  That was chilling to my core."
+
+    # vivi angry "Do you get off in seeing all of us in pain? Giving us all an existential dread that we can't fix?"
+
+    # urshu neutral "Seeing the outside is sobering for many. I'm glad you're no longer denying the gravity of the situation. I understand that this is a lot to process." 
+
+    # urshu happy "We've left a journal for you. I thought a reporter such as yourself would like the ability to write down her thoughts."
+
+    # urshu neutral "I hope you utilize it. Please know that nobody else, including myself, can ever read what's inside. Everyone deserves a private place to think."
+
+    # hide urshu
+
+    # vivi angry "He's so infuriating! I don't know why I even bother asking him anything."
+
+    # vivi neutral "But, he might be right. Might as well use the journal."
+
+    # #Journal entry
+
+    # "This is real. It doesn't make sense but it's all really happening. There was no way off the train. How the hell did I die? I thought I'd leave a mark on the world before I left. Or at least someone special. It's all so frustrating. The conductor is the worst, acting like this is a game. THIS IS OUR LIVES! At least I'm not the only one going through this."
+
+    # # JUMP TO: Briefing Anger
+
+
+    jump scene2

@@ -50,3 +50,4 @@ label denial_cs2:
 
             vivi neutral "I feel like the druid wants out too. Maybe they can help me figure this all out. I think they're in the lounge."
             #JUMP TO: Free Roam 2 / Susu'Rha Balrinn
+            jump denial_fr2_susurha
