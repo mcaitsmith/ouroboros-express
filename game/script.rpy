@@ -22,10 +22,10 @@ image vivi sad blush = "images/characters/vivi/vivi sad.png"
 image vivi angry blush = "images/characters/vivi/vivi angry.png"
 image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
 
-image cabin blur = im.Blur("images/backgrounds/cabin.png", 1.5)
-image observatory blur = im.Blur("images/backgrounds/observatory.png", 1.5)
-image lounge blur = im.Blur("images/backgrounds/lounge.png", 1.5)
-
+image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
+image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
+image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
+image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
 
 layeredimage ava:
     group face auto:
