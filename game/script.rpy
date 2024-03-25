@@ -25,7 +25,6 @@ image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
 image cabin blur = im.Blur("images/backgrounds/cabin.png", 1.5)
 image observatory blur = im.Blur("images/backgrounds/observatory.png", 1.5)
 
-
 layeredimage ava:
     group face auto:
         attribute neutral default
@@ -50,6 +49,8 @@ layeredimage urshu:
     group overlay:
         attribute blush:
             "urshu_overlay_blush"
+
+define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 # The game starts here.
 
