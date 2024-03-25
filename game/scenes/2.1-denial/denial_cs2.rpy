@@ -32,21 +32,21 @@ label denial_cs2:
     menu:
 
     # OPTION 1
-        "Avatar of Asha" if fr1_choice != "Ava":
+        "Avatar of Asha" if fr1_denial_choice != "Ava":
 
             vivi happy "I should try the goddess. I think she's in the observatory."
             #JUMP TO: Free Roam 2 / Avatar of Asha
             jump denial_fr2_ava
 
     #OPTION 2
-        "Inquisitor Darius Wrecker" if fr1_choice != "Darius":
+        "Inquisitor Darius Wrecker" if fr1_denial_choice != "Darius":
 
             vivi neutral "I have a feeling Darius knows more than he's letting on. I believe they're in the dining car."
             #JUMP TO: Free Roam 2 / Inquisitor Darius Wrecker
             jump denial_fr2_darius
 
     #OPTION 3
-        "Susu'Rha Balrinn" if fr1_choice != "Susu'Rha":
+        "Susu'Rha Balrinn" if fr1_denial_choice != "Susu'Rha":
 
             vivi neutral "I feel like the druid wants out too. Maybe they can help me figure this all out. I think they're in the lounge."
             #JUMP TO: Free Roam 2 / Susu'Rha Balrinn

@@ -19,7 +19,7 @@ label denial_cs1:
     # OPTION 1
         "Avatar of Asha":
 
-            $ fr1_choice = "Ava"
+            $ fr1_denial_choice = "Ava"
 
             vivi happy "Who better to help me than a goddess? She's gotta know where this train is going and how to get off. I think she's in the observatory."
             #JUMP to Free roam 1 / Avatar of Asha
@@ -28,7 +28,7 @@ label denial_cs1:
     # OPTION 2
         "Darius Wrecker":
 
-            $ fr1_choice = "Darius"
+            $ fr1_denial_choice = "Darius"
 
             vivi happy "That Darius looks like they would understand what's going on. Maybe they know where this train is going. I think they're in the lounge."
             #JUMP TO: Free roam 1 / Darius Wrecker
@@ -37,7 +37,7 @@ label denial_cs1:
     # OPTION 3
         "Susu'Rha Balrinn":
 
-            $ fr1_choice = "Susu'Rha"
+            $ fr1_denial_choice = "Susu'Rha"
 
             vivi happy "The druid seemed easy to talk to. Maybe they can help me figure out what's going on. I think they're in the dining car."
             #JUMP to Free roam 1 / Susu'Rha Balrinn
