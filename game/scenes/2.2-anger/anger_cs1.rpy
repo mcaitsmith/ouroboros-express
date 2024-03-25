@@ -31,6 +31,7 @@ label anger_cs1:
 
             vivi neutral "I want to know more about Darius. Maybe they'd be up for a game."
             # JUMP TO: FREE ROAM 1 - DARIUS
+            jump anger_fr1_darius
 
         # OPTION 3
         "Susu'Rha Balrinn":
