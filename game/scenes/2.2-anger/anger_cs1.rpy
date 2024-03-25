@@ -40,3 +40,4 @@ label anger_cs1:
 
             vivi neutral "I'm sure Susu'Rha would like a game. They seem to make things more fun."
             # JUMP TO: FREE ROAM 1 - SUSU'RHA
+            jump anger_fr1_susurha
