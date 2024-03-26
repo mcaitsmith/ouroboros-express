@@ -1,14 +1,37 @@
 ﻿# The script of the game goes in this file.
 
+init python:
+    def beepy_voice_high(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show_done":
+            renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg")
+        elif event == "slow_done":
+            renpy.sound.stop()
+    def beepy_voice_medium(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show_done":
+            renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg")
+        elif event == "slow_done":
+            renpy.sound.stop()
+    def beepy_voice_low(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show_done":
+            renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg")
+        elif event == "slow_done":
+            renpy.sound.stop()
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define vivi = Character("Vivi",image="vivi",color="#FFFFFF")
+define vivi = Character("Vivi",image="vivi",color="#FFFFFF", callback=beepy_voice_medium)
 define vivithinking = Character("Vivi",image="vivi",what_italic=True,color="#FFFFFF")
-define urshu = Character("Urshu",image="urshu",color="#FFFFFF",namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define ava = Character("Ava",image="ava",color="#FFFFFF",namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define darius = Character("Darius",image="darius",color="#FFFFFF",namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define susurha = Character("Susu'Rha",image="susurha",color="#FFFFFF",namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define urshu = Character("Urshu",image="urshu",color="#FFFFFF", callback=beepy_voice_high, namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define ava = Character("Ava",image="ava",color="#FFFFFF", callback=beepy_voice_medium, namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define darius = Character("Darius",image="darius",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define susurha = Character("Susu'Rha",image="susurha",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 
 define titlemusic = "audio/music/lavenders blue.ogg"
 define mainmusic = "audio/music/OrEx_MainTrack1_v1.0.ogg"
