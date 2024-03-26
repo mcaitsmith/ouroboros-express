@@ -218,3 +218,4 @@ label bargaining_fr2_ava:
     show ava neutral -blush
 
     #JUMP TO: URSHU MEAL REVEAL
+    jump bargaining_meal_reveal

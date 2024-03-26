@@ -319,3 +319,4 @@ label bargaining_fr2_susurha:
     vivi neutral "Let's serve this up!"
 
     # JUMP TO: URSHU MEAL REVEAL
+    jump bargaining_meal_reveal

@@ -25,6 +25,8 @@ label bargaining_cs2:
         # OPTION 1
         "Avatar of Asha" if fr1_bargaining_choice != "Ava":
 
+            $ fr2_bargaining_choice = "Ava"
+
             show vivi neutral at left
 
             vivithinking "I could use the palate of a goddess. Nothing but the best, right?"
@@ -35,6 +37,8 @@ label bargaining_cs2:
         # OPTION 2
         "Inquisitor Darius Wrecker" if fr1_bargaining_choice != "Darius":
 
+            $ fr2_bargaining_choice = "Darius"
+
             show vivi neutral at left
 
             vivithinking "Darius would be an excellent sous chef. Heh. Call them Bobby Mind-flay-er."
@@ -44,6 +48,8 @@ label bargaining_cs2:
 
         # OPTION 3
         "Susu'Rha Balrinn" if fr1_bargaining_choice != "Susu'Rha":
+
+            $ fr2_bargaining_choice = "Susu'Rha"
 
             show vivi neutral at left
 
