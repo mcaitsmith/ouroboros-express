@@ -59,6 +59,13 @@ layeredimage urshu:
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
+transform center_left:
+    xpos -0.5
+transform center_right:
+    xpos 0.5
+transform bright:
+    matrixcolor BrightnessMatrix (0.75)
+
 # The game starts here.
 
 default quest = Manager()
