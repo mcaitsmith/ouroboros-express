@@ -65,8 +65,8 @@ label start:
 
     play music mainmusic # start main track
 
-    # jump scene1 # jump to first scene
-    jump denial_briefing
+    # jump to first scene
+    jump introduction
 
     # # This ends the game.
 
