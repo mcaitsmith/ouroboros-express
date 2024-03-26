@@ -9,7 +9,7 @@ label interview_darius:
 
     # show vivi neutral at left with dissolve
 
-    show darius neutral at right with dissolve
+    show darius neutral with dissolve
 
     # SOUND: train
 

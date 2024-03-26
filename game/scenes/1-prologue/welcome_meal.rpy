@@ -80,6 +80,13 @@ label welcome_meal:
             jump figuring_it_out
         else:
 
+            show ava silhouette at left with dissolve:
+                xzoom -1.0
+
+            show darius silhouette at center with dissolve
+
+            show susurha silhouette at right with dissolve
+
             # <CHOICE>
             vivithinking neutral "Let's see. Who should I interview first?"
 
@@ -88,6 +95,10 @@ label welcome_meal:
                 "The lady in a fine dress" if interview1 == False:
 
                     $ interview1 = True
+
+                    hide darius silhouette with dissolve
+
+                    hide susurha silhouette with dissolve
 
                     vivithinking neutral "Let's talk to the lady with a fine dress and... Is that a crown? She seems interesting."
 
@@ -99,6 +110,10 @@ label welcome_meal:
 
                     $ interview2 = True
 
+                    hide ava silhouette with dissolve
+
+                    hide susurha silhouette with dissolve
+
                     vivithinking neutral "That person went all out with their costume. Those tentacles look so lifelike. I've gotta interview them."
 
                     # JUMP TO: Interviews / Darius Wrecker
@@ -108,6 +123,10 @@ label welcome_meal:
                 "The gecko" if interview3 == False:
 
                     $ interview3 = True
+
+                    hide ava silhouette with dissolve
+
+                    hide darius silhouette with dissolve
 
                     vivithinking neutral "Let's interview whoever's dressed as a giant gecko, shall we? I really don't understand the theme of this costume party."
 

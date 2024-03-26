@@ -23,9 +23,9 @@ image vivi angry blush = "images/characters/vivi/vivi angry.png"
 image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
 
 # PLACEHOLDER UNTIL GET SILHOUETTES
-image ava silhouette = "images/characters/ava/ava_face_neutral.png"
-image darius silhouette = "images/characters/darius/darius_face_neutral.png"
-image susurha silhouette = "images/characters/susurha/susurha_face_neutral.png"
+image ava silhouette = "images/characters/ava/ava silhouette.png"
+image darius silhouette = "images/characters/darius/darius silhouette.png"
+image susurha silhouette = "images/characters/susurha/susurha silhouette.png"
 
 image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
 image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)

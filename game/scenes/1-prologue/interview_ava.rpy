@@ -7,7 +7,7 @@ label interview_ava:
     # LOCATION: diningcar
     # scene diningcar with fade
 
-    show ava neutral at right with dissolve
+    show ava neutral with dissolve
 
     # SOUND: train
 

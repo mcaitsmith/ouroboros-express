@@ -7,7 +7,7 @@ label interview_susurha:
     # LOCATION: lounge
     # scene diningcar with fade
 
-    show susurha neutral at right with dissolve
+    show susurha neutral with dissolve
 
     # show vivi neutral at left with dissolve
 
