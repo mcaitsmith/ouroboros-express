@@ -8,6 +8,7 @@ label bargaining_fr2_ava:
     scene diningcar with fade
 
     # SOUND: cooking, kitchen sounds
+    play sound cooking
 
     show vivi neutral at left with dissolve
 
@@ -16,6 +17,8 @@ label bargaining_fr2_ava:
     vivi neutral "Thanks for coming on such short notice, Asha. I really need your help."
     ava happy "Of course, my radiant companion."
     ava neutral "What services of ours do you require so urgently?"
+
+    stop sound fadeout 1.0
 
     # <CHOICE>
     vivi neutral blush "Asha, to be entirely honest...well..."
@@ -185,9 +188,12 @@ label bargaining_fr2_ava:
     vivi neutral blush "Nothing at all..."
 
     # SOUND: cooking sounds
+    play sound cooking
 
     # PAUSE
-    pause 1.0
+    pause 3.0
+
+    stop sound fadeout 1.0
 
     vivi surprised "Wow! I can't believe we actually did it. It tastes so good too!"
     show ava happy blush with dissolve

@@ -8,27 +8,32 @@ label denial_fr1_susurha:
     scene diningcar with fade
 
     # SOUND: Footsteps storm into the room.
+    play sound footsteps
 
     show susurha happy at right with dissolve
 
     vivithinking "Wait."
     vivithinking "Susu'Rha? What are they doing?"
+    stop sound fadeout 1.0
     vivithinking "Are they literally feasting on a slice of cake?"
     vivithinking "Okay, that's cute."
 
     # SOUND: The train car door slams shut.
+    play sound doorslam
     # VISUAL: The screen shakes.
     show diningcar with hpunch
 
     show susurha surprised at right
 
     # SOUND: Susu'Rha drops their fork against the table.
+    # skipping this one
 
     susurha neutral "Oh my... are you as hungry as I? I too get flustered when I haven't eaten all day."
 
     show vivi neutral at left
 
     # SOUND: Vivi sighs.
+    # skipping this one
 
     # <CHOICE> 
     vivi neutral "I'm not hungry. I'm..."
@@ -69,12 +74,14 @@ label denial_fr1_susurha:
     vivithinking "Deep breaths."
 
     # SOUND: Vivi inhales and exhales.
+    # skipping this one
 
     vivithinking "Alright, let's just sit down and chill."
 
     vivithinking "What's the worst that can happen?"
 
     # SOUND: Vivi takes a seat at the table.
+    # skipping this one
 
     vivithinking "They carve a slice of cake and nudge it my way."
     vivithinking "Fine. I take the fork and take a bite."
@@ -164,10 +171,16 @@ label denial_fr1_susurha:
     vivithinking "Well..."
 
     # SOUND: Door closes.
+    play sound doorslam
+    pause 2.0
+    stop sound
 
     # SOUND: A headache inducing ringing echoes.
+    play sound horror
 
     vivithinking "Ugh... my head feels like something is crawling at the walls of my skull."
+
+    stop sound fadeout 2.0
 
     vivithinking "I think that was enough for me too."
 

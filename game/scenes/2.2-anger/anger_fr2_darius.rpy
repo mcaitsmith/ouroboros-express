@@ -67,6 +67,8 @@ label anger_fr2_darius:
         "Throw a dart while looking straight into Darius' eyes.":
 
             # SOUND: dart lands on board
+            play sound darts
+            pause 2.0
             darius surprised "Huh. Nice throw. Good... darting."
             vivi happy blush "When I want something, I go straight at it."
             darius surprised "Again. Noted."

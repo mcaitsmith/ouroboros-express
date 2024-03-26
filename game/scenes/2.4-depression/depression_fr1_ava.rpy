@@ -8,6 +8,7 @@ label depression_fr1_ava:
     scene lounge with fade
 
     # SOUND: train
+    play sound train
 
     show ava neutral at right with dissolve
     show vivi neutral at center with dissolve
@@ -38,6 +39,8 @@ label depression_fr1_ava:
     vivithinking "Shoulda figured he'd know my drink, the cagey bastard!"
         
     hide urshu with dissolve
+
+    stop sound fadeout 1.0
 
     # <CHOICE>
     vivi neutral "So how about we..."

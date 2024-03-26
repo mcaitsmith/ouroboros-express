@@ -6,6 +6,7 @@ label introduction:
     # We meet Vivi as she is writing her notes. We know that she has been invited to review the Ouroboros Express for her job. Urshu knocks on her cabin door, inviting her to dine.
 
     # SOUND: train
+    play sound train fadein 3.0
 
     # fade in
 
@@ -74,12 +75,16 @@ label introduction:
             # OPTION 4
             "Look out the window" if option1 == True and option2 == True and option3 == True:
 
+                stop sound fadeout 2.0
+
                 vivithinking neutral "Hmm. The view from the window is really hard to make out. It's all dark and misty. I think we're in a forest?"
                 vivithinking surprised "Huh, weird. The condensation on the window is flowing up as if the train is falling. That can't be right."
                 vivithinking surprised "What's going on?"
 
     # SOUND: knocking on the door
-
+    play sound knock
+    # play sound "audio/sfx/knock.wav"
+    pause 1.0
     show urshu neutral at right with dissolve
 
     urshu neutral "Ah, Miss Sanssouci, I'm glad you are awake. Welcome aboard the Ouroboros Express. We've been expecting you."

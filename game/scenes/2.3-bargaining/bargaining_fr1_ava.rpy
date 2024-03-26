@@ -8,6 +8,7 @@ label bargaining_fr1_ava:
     scene observatory with fade
 
     # SOUND: the train on its tracks
+    play sound train
 
     show vivi neutral at left with dissolve
 
@@ -16,6 +17,8 @@ label bargaining_fr1_ava:
     vivithinking "Oh, she's here. I thought she'd be in her room still." 
     vivi neutral "Hey, Asha."
     ava neutral "Yes, little-- I mean, Vivienne."
+
+    stop sound fadeout 2.0
 
     # <CHOICE>
     vivi neutral "I have a question for you..."
@@ -141,7 +144,9 @@ label bargaining_fr1_ava:
 
                     # ?? ATTRACTION
                     # SOUND: heartbeat
+                    play sound heartbeat
                     vivithinking "I think my pulse is pounding louder than the train. Wait! Is...she...flirting with me?"
+                    stop sound fadeout 1.0
                     # END
 
                     vivi happy blush "Well, practice makes perfect, right?"

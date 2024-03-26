@@ -68,6 +68,7 @@ label anger_fr1_ava:
     show observatory with hpunch
     show observatory with flash
     # SOUND: ava says "ugh"
+    # skipping
     ava angry "Why, Vivienne?" 
     ava angry "What was the point of it all?! All our sacrifices. For what?"
     vivithinking surprised "Damn! And I thought I was having trouble coping."

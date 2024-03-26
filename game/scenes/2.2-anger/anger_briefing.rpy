@@ -40,17 +40,23 @@ label anger_briefing:
 
             vivi angry "I don't have time or patience, patience or time! Get me, Urshu?!"
             # SOUND: urshu sighs
+            play sound sigh
+            pause 4.0
             urshu neutral "Patience enough to repeat yourself."
             vivi angry "What was that?" 
             vivithinking angry "What is he on today?" 
             urshu neutral "Nothing, Miss Sanssouci. Here is the answer to my riddle."
             # VISUAL: urshu hands over playing cards (maybe SOUND: shuffling?)
+            play sound shuffle
+            pause 2.0
             vivi neutral "What are these...playing cards?" 
             urshu happy "Games, my dear. The answer is games. They bring unity and competition. They challenge you and change you. They--"
             vivi neutral "Look, Ursh, I've got your number now. You think I should play games with the other passengers."
             vivi neutral "No, let me rephrase. You want me to shoot the breeze while this bullet train screams on down to our universal heat death?"
             urshu happy "Well, excuse me. You're already playing love games with the delicious denizens of death here, Miss Sanssouci. Why not something less challenging?"
             # VISUAL: Urshu reveals a set of playing cards.  (maybe SOUND: shuffling?)
+            play sound shuffle
+            pause 2.0
             vivithinking neutral "Now he's got another set of cards."
             vivithinking surprised "Where is he keeping them all? Nevermind, I don't think I wanna know..." 
             vivi angry "Normal playing cards? Really?" 

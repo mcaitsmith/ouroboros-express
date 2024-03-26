@@ -13,6 +13,8 @@ label depression_cs2:
     vivithinking neutral "Then again, there's nothing to look toward. Might as well take advantage of the open bar."
 
     # SOUND: knocking
+    play sound knock
+    pause 1.0
 
     show urshu neutral at right with dissolve
 

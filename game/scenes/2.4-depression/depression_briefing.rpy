@@ -19,10 +19,14 @@ label depression_briefing:
     vivithinking "Please, make it soon."
 
     # SOUND: knocking
+    play sound knock
+    pause 1.0
     
     vivi "Go away."
 
     # SOUND: knocking
+    play sound knock
+    pause 1.0
 
     # <CHOICE>
 

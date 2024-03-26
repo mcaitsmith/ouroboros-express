@@ -1,27 +1,28 @@
 ﻿# The script of the game goes in this file.
 
 init python:
+    renpy.music.register_channel("blip", "sfx")
     def beepy_voice_high(event, interact=True, **kwargs):
         if not interact:
             return
         if event == "show_done":
-            renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg")
+            renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg",channel="blip")
         elif event == "slow_done":
-            renpy.sound.stop()
+            renpy.sound.stop(channel="blip")
     def beepy_voice_medium(event, interact=True, **kwargs):
         if not interact:
             return
         if event == "show_done":
-            renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg")
+            renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg",channel="blip")
         elif event == "slow_done":
-            renpy.sound.stop()
+            renpy.sound.stop(channel="blip")
     def beepy_voice_low(event, interact=True, **kwargs):
         if not interact:
             return
         if event == "show_done":
-            renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg")
+            renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg",channel="blip")
         elif event == "slow_done":
-            renpy.sound.stop()
+            renpy.sound.stop(channel="blip")
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -98,7 +99,7 @@ label start:
 
     call sounds from _call_sounds # define sounds
 
-    play music mainmusic # start main track
+    play music mainmusic volume 0.5 # start main track
 
     # jump to first scene
     jump introduction

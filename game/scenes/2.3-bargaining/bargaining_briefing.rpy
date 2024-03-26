@@ -10,6 +10,7 @@ label bargaining_briefing:
     show vivi neutral at left with dissolve
 
     # SOUND: vivi yawns 
+    # skipping
 
     vivithinking "God, what time is it? Why don't I feel rested?"
 
@@ -51,10 +52,14 @@ label bargaining_briefing:
                 # VISUAL: a black vignette closes in on the room
                 show lounge blur with dissolve
                 # SOUND: Screams, scary cosmic horror shit
+                play sound horror
+                pause 3.0
 
                 vivithinking surprised "Yeah, I'm out."
 
                 hide vivi with dissolve
+
+                stop sound fadeout 1.0
 
                 scene cabin with fade
 
@@ -130,6 +135,9 @@ label bargaining_briefing:
     urshu neutral "Please, sit. Here, I have a cup for you."
 
     # SOUND: glassclink
+    play sound glassclink
+    pause 5.0
+    stop sound fadeout 1.0
 
     vivi neutral "You... Of course, you knew." 
     vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a petulant pissant."

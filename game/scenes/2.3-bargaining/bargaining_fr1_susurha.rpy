@@ -8,6 +8,8 @@ label bargaining_fr1_susurha:
     scene diningcar with fade
 
     # SOUND: window click - opening
+    play sound windowopen
+    pause 1.0
 
     show vivi neutral at left with dissolve
 

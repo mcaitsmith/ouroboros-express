@@ -139,6 +139,7 @@ label depression_fr1_susurha:
             susurha sad "I share your same experience. Many held me in their gaze, but none could hold mine."
             vivi "Alone together."
             # SOUND: susurha scoffs.
+            # skipping
             susurha "I can drink to that."
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
 

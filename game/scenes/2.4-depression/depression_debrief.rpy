@@ -12,6 +12,8 @@ label depression_debrief:
     show vivi neutral at left with dissolve
 
     # SOUND: Knocking on door
+    play sound knock
+    pause 1.0
 
     show urshu neutral at right with dissolve
 
@@ -44,6 +46,8 @@ label depression_debrief:
     show vivi neutral at left with dissolve
 
     # SOUND: knocking
+    play sound knock
+    pause 1.0
 
     show urshu neutral at right with dissolve
 

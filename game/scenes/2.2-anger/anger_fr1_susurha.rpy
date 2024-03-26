@@ -10,12 +10,16 @@ label anger_fr1_susurha:
     # VISUAL: screen shakes
     show diningcar with hpunch
     # SOUND: the dining car's door slams shut
+    play sound doorslam
+    pause 1.0
 
     show susurha neutral at right with dissolve
 
     show vivi neutral at left with dissolve
 
     # SOUND: card shuffle
+    play sound shuffle
+    pause 2.0
 
     susurha surprised "Vivienne! What brings you here?"
     vivi blush surprised "Uh... nothing. Never mind. It's stupid."
@@ -128,6 +132,8 @@ label anger_fr1_susurha:
             susurha happy "Again, you're deflecting."
             susurha angry "But you are right. I'm furious."
             # SOUND: sigh
+            play sound sigh
+            pause 3.0
             vivithinking surprised "that exhale's like, 150 degrees. Hate to see them truly mad."
             susurha angry "The bloodsuckers. The leeches. Those with souls impervious to art and music. All of them infuriate me to no end!"
             vivithinking surprised "My face is literally burning."

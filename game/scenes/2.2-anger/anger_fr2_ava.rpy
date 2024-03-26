@@ -10,6 +10,8 @@ label anger_fr2_ava:
     show vivi neutral at left with dissolve
 
     # SOUND: dart hitting the board
+    play sound darts
+    pause 2.0
 
     vivithinking neutral "I hear darts. Is that...Asha? Here already?"
 
@@ -19,6 +21,8 @@ label anger_fr2_ava:
     vivi neutral "Watering holes? You mean a pub?"
 
     # SOUND: dart hitting the board 
+    play sound darts
+    pause 2.0
 
     ava neutral "Good throw, Vivienne. But no such term exists on Soleos."
     vivi happy blush "Well, technically you could call it a watering hole. But we call it a pub...or a bar if they don't have Guinness."
@@ -35,6 +39,8 @@ label anger_fr2_ava:
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
             ava sad "No, Vivienne, perpetual loneliness. We would not wish that upon even our monarchy."
             # SOUND: dart hitting the board
+            play sound darts
+            pause 2.0
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
         # OPTION 2 +ATTRACTION
@@ -43,6 +49,8 @@ label anger_fr2_ava:
             show ava sad blush with dissolve
             ava "Thank you...that means more to us than you know."
             # SOUND: dart hitting the board
+            play sound darts
+            pause 2.0
             show ava happy -blush
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
@@ -53,6 +61,8 @@ label anger_fr2_ava:
             vivi happy "It's something that moves quickly with lots of ups and downs."
             ava neutral "We...still struggle to grasp why you have this torture device, but your meaning is clear."
             # SOUND: dart hitting the board
+            play sound darts
+            pause 2.0
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
     ava happy "Another bullseye. Your turn, little one."
@@ -60,6 +70,8 @@ label anger_fr2_ava:
     ava sad "Oh, do not take offense at our term of endearment. We are warming up to you."
     vivithinking angry "I'm feeling warm too. Hot blood's creeping up into my face. Ughhh. I gotta let this out...And THROW!"
     # SOUND: dart hitting the board
+    play sound darts
+    pause 2.0
 
     # <CHOICE>
     vivi angry blush "Well...it's still demeaning. I don't like it."
@@ -98,6 +110,8 @@ label anger_fr2_ava:
             ava "Perhaps our other customs might tempt you?"
             vivithinking surprised "Write this down. WRITE THIS DOWN!"
             # SOUND: dart hitting the board
+            play sound darts
+            pause 2.0
             show ava happy -blush
             # JUMP TO: vivi neutral "Sure. Anyways..."
 
@@ -136,6 +150,8 @@ label anger_fr2_ava:
     
     vivi neutral "How...interesting."
     # SOUND: dart hitting the board and dropping to the floor
+    play sound darts
+    pause 2.0
     vivi angry "Aw shit. Dumbass dart."
     ava angry "We wish you would refrain from such vulgarity."
     vivi angry "If you really want to get to know me better, then deal! Like I do with your ego."

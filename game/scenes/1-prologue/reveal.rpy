@@ -23,10 +23,13 @@ label reveal:
     vivithinking surprised "We're in the dining car? How?"
 
     # SOUND: heartbeat
+    play sound heartbeat
 
     vivithinking surprised "I can't focus."
     vivithinking surprised "There's stuff at the edges of my view. Like, shards?"
     vivithinking sad "Can't think straight..."
+
+    stop sound fadeout 1.0
 
     show urshu happy at center_right with dissolve
     urshu happy "How delightful. Attention over here, please! Lovely! Now, it's finally time—for the welcoming party!"
@@ -47,9 +50,12 @@ label reveal:
     urshu happy "For you are all dead! Haha!"
 
     # SOUND: heartbeat
+    play sound heartbeat
 
     show vivi surprised
     vivithinking surprised "No, no, no... This isn't real."
+
+    stop sound fadeout 1.0
 
     show susurha happy
     susurha "Haha! A funny conductor! Say it again!"
@@ -83,9 +89,12 @@ label reveal:
     show vivi sad
         
     # SOUND: heartbeat
+    play sound heartbeat
 
     vivithinking sad "This is too much. Everyone's looking at me."
     vivithinking sad "What am I supposed to do? I can't help them. I can't even stand straight."
+
+    stop sound fadeout 1.0
 
     show ava angry
     ava "Ignore the pawn. {i}We{/i} will ask the ques--"
@@ -93,6 +102,7 @@ label reveal:
     # EFFECT: Brighten or distort the display
     show diningcar at bright with dissolve
     # SOUND: heartbeat
+    play sound heartbeat
 
     show vivi sad
     vivithinking sad "I see them shouting, but... I can't hear them."
@@ -105,9 +115,13 @@ label reveal:
     # EFFECT: Fade out
     scene black with fade
 
+    stop sound fadeout 1.0
+
     vivithinking sad "Bright...like a mirror..."
 
     # SOUND: crash
+    play sound crash
+    pause 6.0
 
     # JUMP TO: Briefing Denial
     jump denial_briefing

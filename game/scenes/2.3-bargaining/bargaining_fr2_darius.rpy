@@ -8,6 +8,8 @@ label bargaining_fr2_darius:
     scene diningcar with fade
 
     # SOUND: cooking, dining sounds
+    play sound cooking
+    pause 1.0
 
     show vivi neutral at left with dissolve
 
@@ -15,6 +17,8 @@ label bargaining_fr2_darius:
 
     darius neutral "Well? We're here. What is it you wanted?"
     vivi neutral "Okay, promise to hear me out?"
+
+    stop sound fadeout 1.0
 
     # <CHOICE>
     darius neutral "Always."
@@ -134,6 +138,9 @@ label bargaining_fr2_darius:
             # JUMP TO: # SOUND: cooking
 
     # SOUND: cooking
+    play sound cooking
+    pause 3.0
+    stop sound fadeout 1.0
 
     vivithinking neutral "Wow. Darius is really good with their hands."
     vivi neutral "You're rather dextrous, Mr. Wrecker."
@@ -145,6 +152,9 @@ label bargaining_fr2_darius:
     vivithinking "They're cute when they try to act clueless."
 
     # SOUND: glassware clinking (dining, clatter of silverware and plating)
+    play sound glassclink
+    pause 5.0
+    stop sound fadeout 1.0
 
     vivi neutral "Well, that's about as good as it's going to get. What do you think?"
     show darius neutral -blush

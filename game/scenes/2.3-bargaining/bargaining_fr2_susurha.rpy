@@ -214,6 +214,9 @@ label bargaining_fr2_susurha:
     vivithinking "Spices, check. Wow, the beef is quite succulent for...wherever we are. I wonder if they have cows here. Ghost cows." 
 
     # SOUND: kitchen noises, cooking noises
+    play sound cooking
+    pause 3.0
+    stop sound fadeout 1.0
 
     vivithinking "That's...wonky. But edible!"
     vivi neutral "And voila!"

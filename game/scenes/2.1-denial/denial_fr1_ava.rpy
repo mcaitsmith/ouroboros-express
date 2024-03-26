@@ -14,6 +14,9 @@ label denial_fr1_ava:
     show ava surprised at right
 
     # SOUND: ava gasps.
+    play sound gasp
+    pause 1.0
+    
     show ava happy at right
     vivithinking "Oh, she's noticed me. So imposing~"
 

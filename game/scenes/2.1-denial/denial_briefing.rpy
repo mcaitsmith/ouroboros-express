@@ -53,6 +53,8 @@ label denial_briefing:
             urshu happy "Once, long ago, I was in the doldrums of an ordinary immortal career...ferrying souls to and fro. From mortal realms to eternal gardens or places eternal but foul." 
             vivithinking "What did I sign up for?"
             # SOUND: urshu sighs
+            play sound sigh
+            pause 3.0
             urshu neutral "One such soul was in great need of me at a time where I was under heightened supervision. My...managers were unhappy with me. This soul begged me a great favor..."
             urshu angry "And they did so after they ruined something of mine! It was audacious! But this soul only did what they thought was right, for they were in a dire time..."
             vivithinking "I wonder what's for lunch..."

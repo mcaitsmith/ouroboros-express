@@ -54,8 +54,12 @@ label confrontation:
     urshu happy "Well done, Miss Sanssouci. Well done."
 
     # SOUND: teleport
+    play sound teleport
     # VISUAL: screen shakes
     show lounge with hpunch
+
+    pause 2.0
+    stop sound fadeout 2.0
 
     # VISUAL: fade out
     # TRANSITION TO DINING CAR

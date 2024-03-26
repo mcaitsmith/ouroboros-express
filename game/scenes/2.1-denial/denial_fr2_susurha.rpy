@@ -45,6 +45,7 @@ label denial_fr2_susurha:
             vivi "I'd love to."
             vivithinking "They reach out and slide a chair my way with ease."
             # SOUND: Vivi sits down in a super comfortable recliner.
+            # skipping
             vivithinking "Holy shit..."
             susurha happy "Feels like a dream, don't it?"
             vivi "Feels like I'm sinking."
@@ -152,6 +153,7 @@ label denial_fr2_susurha:
             vivi "Worried?"
             show susurha neutral
             # SOUND: Susu'Rha scoffs.
+            # skipping
             susurha "Me, worried? Never. I make sure to go out of my way to avoid feeling worried, but this..."
             susurha "It just doesn't make sense.  I was so sure I knew what I saw. It had the same constellations burned into my mind from that night and..."
             susurha "It hasn't even been an hour since I scouted the place."
@@ -183,6 +185,8 @@ label denial_fr2_susurha:
     susurha "Help me stack these chairs up under that central window on the ceiling."
 
     # SOUND: Vivi and Susu'Rha exert themselves stacking chairs on top of each other.
+    play sound crash
+    pause 5.0
 
     vivithinking "This seems incredibly unplanned, but I don't really have a choice."
 
@@ -205,6 +209,7 @@ label denial_fr2_susurha:
 
             vivi "Can we please hurry this up?"
             # SOUND: Susu'Rha scoffs.
+            # skipping
             susurha neutral "You know, you remind me a lot of the nobility that I grew up around."
             susurha "They too found my voice to be annoying."
             vivi "That's not what I meant."
@@ -216,6 +221,7 @@ label denial_fr2_susurha:
         "It sounds like you lived a fairy tale.":
 
             #SOUND: Susu'Rha laughs.
+            # skipping
             susurha "I suppose from the outside it could come across with that poetic fantasy allure."
             # <CHOICE>
             susurha neutral "Apologies, I believe you were cracking a joke at me."
@@ -238,6 +244,7 @@ label denial_fr2_susurha:
     susurha happy "Voila."
 
     # SOUND: The window clicks open.
+    play sound windowopen
 
     susurha happy "We are homeward bound."
 
@@ -293,9 +300,13 @@ label denial_fr2_susurha:
     urshu angry "Get down from there!"
 
     #SOUND: The sounds of chairs clashing and Vivi and Susu'Rha hitting the floor.
+    play sound crash
+    pause 5.0
     #VISUAL: The screen shakes.
     show observatory with hpunch
     #SOUND: The window slams shut.
+    play sound windowshut
+    pause 1.0
     show urshu angry at left with dissolve:
         xzoom -1.0
 

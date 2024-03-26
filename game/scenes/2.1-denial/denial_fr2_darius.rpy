@@ -26,6 +26,7 @@ label denial_fr2_darius:
 
             vivi "Sure."
             # SOUND: glassclink
+            play sound glassclink loop
             darius neutral "There you are."
 
             vivi "Thank you."
@@ -50,6 +51,7 @@ label denial_fr2_darius:
             darius neutral "Not a fan? That's fine. I can make you a non-alcoholic version."
 
             # SOUND: glassclink
+            # still looping
 
             vivi surprised "Fruits? I didn't think you had a sweet tooth."
 
@@ -106,6 +108,8 @@ label denial_fr2_darius:
 
     vivi surprised "Straight to business then? Lead on."
 
+    stop sound fadeout 1.0
+
 
     #LOCATION: lounge
     scene lounge with fade
@@ -127,6 +131,7 @@ label denial_fr2_darius:
     show vivi angry at right with dissolve
 
     # SOUND: whistling
+    # skipping this one
 
     vivithinking "Is he... whistling? This asshole has us captive here and he's whistling?"
 
@@ -159,13 +164,17 @@ label denial_fr2_darius:
 
     urshu happy "Suppose it's time to retire for the evening. Should do the rounds, ensure nothing is out of order."
 
+    # SOUND: teleport
+    play sound teleport
+    pause 2.0
+
     hide urshu with pixellate
 
     show darius surprised at right with dissolve
 
     show vivi surprised at left with dissolve
 
-    # SOUND: teleport
+    stop sound fadeout 2.0
 
     darius surprised "Is that..."
 
@@ -250,6 +259,8 @@ label denial_fr2_darius:
     vivi neutral "Shut up."
 
     # SOUND: crash
+    play sound crash
+    pause 5.0
 
     vivithinking "What... what the fuck is that through the window?"
 
@@ -337,12 +348,19 @@ label denial_fr2_darius:
     vivithinking "He stretches out his hand. Darius takes it."
 
     #SOUND: twinkle
+    play sound twinkle
+    pause 2.0
+    stop sound fadeout 1.0
 
     #SOUND: horror
+    play sound horror
+    pause 2.0
 
     darius surprised "What... WHAT IS THIS?"
 
     urshu sad "I understand this must be hard. But nothing I've shown you is an illusion. These were your choices, your actions."
+
+    stop sound fadeout 1.0
 
     show vivi sad at left
 

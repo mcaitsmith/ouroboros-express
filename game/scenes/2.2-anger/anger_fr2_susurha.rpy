@@ -30,12 +30,16 @@ label anger_fr2_susurha:
             susurha neutral "I will give you the grace of going first."
 
             # SOUND: dart hits the board
+            play sound darts
+            pause 2.0
 
             vivi happy "Bullseye!"
             susurha angry "Bullseye?!"
             vivi happy "A bullseye is when you hit the dartboard dead center."
 
             # SOUND: dart hits the board
+            play sound darts
+            pause 2.0
 
             susurha happy "Mine hit close, does that count for something?"
             vivi happy "Not as much as a bullseye!"
@@ -52,11 +56,15 @@ label anger_fr2_susurha:
             vivi neutral "You go first."
             
             # SOUND: dart hits the board
+            play sound darts
+            pause 2.0
 
             susurha happy "Bullseye! Oh, how simple!"
             susurha happy "No wonder you humans enjoy this."
             
             # SOUND: dart hits the board and then the floor
+            play sound darts
+            pause 2.0
 
             vivi angry "Urghhh. Stupid dart."
             susurha happy "Am I supposed to believe that you can't hit the board from this distance?"
@@ -68,6 +76,8 @@ label anger_fr2_susurha:
     susurha neutral  "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
 
     # SOUND: dart hits the board
+    play sound darts
+    pause 2.0
 
     vivi neutral "You're...welcome." 
     susurha neutral "..."
@@ -105,6 +115,8 @@ label anger_fr2_susurha:
     vivi neutral "Yeah. It does."
 
     # SOUND: dart hits the board
+    play sound darts
+    pause 2.0
 
     susurha neutral "Why don't you envision your \"agent\" being at the target's center?"
     vivi happy "Okay!"
@@ -140,6 +152,8 @@ label anger_fr2_susurha:
 
             vivi neutral "Pierce the idea that it was her fault."
             # SOUND: dart hits the board
+            play sound darts
+            pause 2.0
             susurha happy "Bullseye!"
             vivi sad "It's not her fault. It's mine."
             vivi angry "I was the master of my fate, and I chose to come here!"
@@ -174,6 +188,8 @@ label anger_fr2_susurha:
             susurha sad "Thank you. That means something."
             
             # SOUND: dart smacks the board
+            play sound darts
+            pause 2.0
         
             vivithinking neutral "At least there's darts."
             vivi sad  "I'm going to miss taking pictures."

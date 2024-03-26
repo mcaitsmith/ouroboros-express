@@ -35,6 +35,8 @@ label anger_fr1_darius:
             vivi surprised "Can you even play this with two people?"
             darius happy "Of course you can. Watch me."
             # SOUND: cards shuffling
+            play sound shuffle
+            pause 2.0
             vivi neutral "You deal so swiftly."
             show darius happy blush with dissolve
             darius "That's kind."
@@ -62,6 +64,8 @@ label anger_fr1_darius:
     darius neutral "There's no reason to get snippy with me. I'm not the one who trapped us all here."
     vivi angry "Who are you calling 'snippy'? You're being aggressive. No way to talk to a lady."
     # SOUND: whoosh
+    play sound swoosh
+    pause 2.0
     vivithinking surprised "That flare of rage again. So bright, it's almost painful."
     darius surprised "Well. That's... interesting."
     vivi surprised "What is?"
