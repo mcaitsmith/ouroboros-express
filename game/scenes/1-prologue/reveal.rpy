@@ -123,5 +123,15 @@ label reveal:
     play sound crash
     pause 6.0
 
+    stop music fadeout 1.0
+
+    scene clockdenial with fade
+    play sound clock loop
+
+    pause 5.0
+    stop sound fadeout 2.0
+
+    play music mainmusic volume 0.5 # start main track
+
     # JUMP TO: Briefing Denial
     jump denial_briefing

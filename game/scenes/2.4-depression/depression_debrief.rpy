@@ -43,6 +43,8 @@ label depression_debrief:
         #Journal entry with attraction meter high
         "Wow. At the beginning of all this, I would've never thought I'd get to know some of the other passengers this well. We're all more similar than I thought. Even Urshu, believe it or not. Time is weird here. I feel like I've been riding this train for ages, but I think I finally understand this place. It's a lot to process, but I'm glad I didn't have to do it alone."
 
+        call showclock
+
         # NOTE: JUMP TO RESPECTIVE ACT 3 BRANCH
         jump good_briefing
 
@@ -79,5 +81,19 @@ label depression_debrief:
         # Journal entry with degradation meter high
         "I can't take this anymore. There's something growing inside me. A hunger I, we can't explain. What is happening to us? This is the conductor's fault. He's behind everything. The other passengers too. They must be working with him. None of them feel the way we do. They're all out to get us. We won't go. Not like this. They'll see."
 
+        call showclock
+
         # NOTE: JUMP TO RESPECTIVE ACT 3 BRANCH
         jump bad_waking_up
+
+label showclock:
+
+    stop music fadeout 1.0
+
+    scene clockacceptance with fade
+    play sound clock loop
+
+    pause 5.0
+    stop sound fadeout 2.0
+
+    return
