@@ -27,6 +27,9 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "Who or what is our mysterious train conductor?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi neutral "Who or what is our mysterious train conductor?"
             ava neutral "He is known by many names, the conveyor of souls. Charon? Urshu? Anubis? The trickster Hermes seems fitting, no?"
             vivi neutral "Think we can convince him to let us off this death train?"
@@ -44,6 +47,9 @@ label bargaining_fr1_ava:
 
         # OPTION 2 >>ATTRACTION +ATTRACTION
         "If you could redo a past event, what would it be?":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
             vivi neutral "If you could redo a past event, what would it be?"
             vivi neutral "Or I guess to be more specific, if you could change something that might have caused this, what would you do?"
@@ -64,6 +70,9 @@ label bargaining_fr1_ava:
         # OPTION 3 +ATTRACTION
         "That was a big sigh. Pebble in your sandal, Asha?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+
             vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
             ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men, even Tears."
             show vivi surprised at left
@@ -79,6 +88,9 @@ label bargaining_fr1_ava:
                 # OPTION 1 +DECAY
                 "No family?":
 
+                    play sound decchoice
+                    $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
                     vivi surprised "No family?"
                     ava sad "Our mother gave us to Asha at birth, then sent us back."
                     vivi surprised "Sent you back?"
@@ -89,6 +101,9 @@ label bargaining_fr1_ava:
                 
                 #OPTION 2 +ATTRACTION
                 "No name?":
+
+                    play sound attchoice
+                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No name?"
                     ava sad "We speak for our people, so we are all, and we are one."
@@ -110,6 +125,9 @@ label bargaining_fr1_ava:
 
                 # OPTION 3 +ATTRACTION
                 "No tears?":
+
+                    play sound attchoice
+                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No tears?"
                     ava sad "We have felt the onset once, but no. We have never cried."
@@ -136,6 +154,9 @@ label bargaining_fr1_ava:
 
                 #OPTION 4 +ATTRACTION
                 "No men?":
+
+                    play sound attchoice
+                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No men?"
                     ava happy "We never had one, but we knew many women."
