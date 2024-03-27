@@ -104,8 +104,7 @@ label start:
     play music mainmusic volume 0.5 # start main track
 
     # jump to first scene
-    # jump introduction
-    jump good_briefing
+    jump introduction
 
     # # This ends the game.
 
