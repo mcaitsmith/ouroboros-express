@@ -47,6 +47,8 @@ label denial_fr1_ava:
     # OPTION 2 +ATTRACTION
         "I wonder what she saw in the window.":
 
+            play sound attchoice
+
             vivithinking "I wonder what she saw in the window."
             vivi happy "I'm a little overwhelmed by everything going on. What are you looking at?"
             show ava happy blush with dissolve
@@ -67,6 +69,8 @@ label denial_fr1_ava:
 
     # OPTION 1 +ATTRACTION
         "I should share my worries with her.":
+
+            play sound attchoice
 
             vivithinking "I should share my worries with her."
             vivi surprised "I don't even know what to think anymore...this whole journey has thrown me for a loop. I mean, if the conductor was telling the truth, then are we all really dead...?"
@@ -96,6 +100,8 @@ label denial_fr1_ava:
 
     # OPTION 1 +ATTRACTION
         "Drink, yes? Little one? No!":
+
+            play sound attchoice
 
             vivithinking "Drink, yes? Little one? No!"
             vivi happy blush "Another time! But please stop calling me \"little one.\" I'm thirty."

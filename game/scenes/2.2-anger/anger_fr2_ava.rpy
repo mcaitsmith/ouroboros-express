@@ -77,7 +77,7 @@ label anger_fr2_ava:
     vivi angry blush "Well...it's still demeaning. I don't like it."
 
     menu:
-        #OPTION 1 + DECAY
+        #OPTION 1 +DECAY
         "But if you like it...":
 
             vivi happy blush "But if you like it...I guess I could get used to it."
@@ -87,7 +87,7 @@ label anger_fr2_ava:
             show ava happy -blush
             # JUMP TO: vivi neutral "Sure. Anyways..."
 
-        #OPTION 2 + ATTRACTION
+        #OPTION 2 +ATTRACTION
         "Don't ever call me that again.":
 
             vivi angry "Don't ever call me that again. I don't like it. I'm not your pet."
@@ -121,7 +121,7 @@ label anger_fr2_ava:
     vivi neutral blush "I've been meaning to ask you:"
 
     menu:
-        # OPTION 1 + DECAY
+        # OPTION 1 +DECAY
         "What are your thoughts on our conductor?":
 
             vivi neutral "What are your thoughts on the conductor?"
@@ -135,7 +135,7 @@ label anger_fr2_ava:
             ava neutral "I suppose humans do rank in the highest percentile for creatures who smile without cause." 
             # JUMP TO: vivi neutral "How...interesting."    
 
-        # OPTION 2 + ATTRACTION
+        # OPTION 2 +ATTRACTION
         "What do you want to do with your time left?":
 
             vivi neutral "What do you want to do with your time left?"

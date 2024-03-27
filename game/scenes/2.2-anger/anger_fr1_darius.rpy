@@ -101,7 +101,7 @@ label anger_fr1_darius:
             vivi neutral "..."
         # JUMP TO: vivi neutral "You're doing a terrible job at playing this game."
 
-    # OPTION 2 + ATTRACTION
+    # OPTION 2 +ATTRACTION
         "That sounds difficult. Like being unmoored.":
 
             vivi sad "That sounds difficult. Like being unmoored."
@@ -115,7 +115,7 @@ label anger_fr1_darius:
             # JUMP TO: vivi neutral "You're doing a terrible job at playing this game."
 
 
-    # OPTION 3 + DECAY
+    # OPTION 3 +DECAY
         "Well, you don't hear me crying about it.":
         
             vivi neutral "Well you don't hear me crying about it."

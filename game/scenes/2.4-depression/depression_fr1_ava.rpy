@@ -158,7 +158,7 @@ label depression_fr1_ava:
             # END
             ava "Ours was taboo. Why did you not find a love-mate?"
             vivi sad "Never had the time."
-            # ?? ATTRACTION
+            # ??ATTRACTION
             show ava neutral blush with dissolve
             ava "Had or made?"
             vivi surprised "Good question, Asha!"

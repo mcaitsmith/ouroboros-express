@@ -142,7 +142,7 @@ label bargaining_fr1_ava:
                     vivithinking "Whoa! Did I underestimate Her Radiance?"
                     ava happy "When we went to lands run by women, our diplomacy always prevailed, no matter the tongue."
 
-                    # ?? ATTRACTION
+                    # ??ATTRACTION
                     # SOUND: heartbeat
                     play sound heartbeat
                     vivithinking "I think my pulse is pounding louder than the train. Wait! Is...she...flirting with me?"

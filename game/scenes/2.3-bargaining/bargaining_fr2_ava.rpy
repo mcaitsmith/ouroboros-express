@@ -39,7 +39,7 @@ label bargaining_fr2_ava:
 
             # JUMP TO: ava neutral "So what shall we make, then?"
 
-        # OPTION 2 + DECAY
+        # OPTION 2 +DECAY
         "Urhsu asked me...":
 
             vivi sad blush "Urshu asked me to cook something for everyone, so I figured we could do it together. What do you think?"

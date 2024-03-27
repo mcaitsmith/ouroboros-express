@@ -52,6 +52,8 @@ label denial_fr1_susurha:
     # OPTION 2 +ATTRACTION
         "Honestly, I don't know.":
 
+            play sound attchoice
+
             vivi "Honestly, I don't know."
             show susurha sad
             susurha sad "Yeah, I get that too. I'm..."
