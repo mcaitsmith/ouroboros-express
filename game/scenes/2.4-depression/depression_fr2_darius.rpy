@@ -180,15 +180,17 @@ label depression_fr2_darius:
     vivithinking "Darius is... a monster. But not a remorseless one."
 
     # ??ATTRACTION
-    vivi neutral blush "You're not beyond redemption, Darius."
-    darius surprised "After all that... You believe so?"
-    vivi happy blush "I know so."
+    if att_meter_darius >= 60:
+        vivi neutral blush "You're not beyond redemption, Darius."
+        darius surprised "After all that... You believe so?"
+        vivi happy blush "I know so."
     # END
 
     # ??DECAY (ELSE)
-    vivi sad "Darius...that's horrifying. I don't know that I can look at you the same way."
-    darius sad "I know. I don't expect you to."
-    darius sad "Let the horrors take me. It's what I deserve."
+    elif dec_meter >= 50:
+        vivi sad "Darius...that's horrifying. I don't know that I can look at you the same way."
+        darius sad "I know. I don't expect you to."
+        darius sad "Let the horrors take me. It's what I deserve."
     # END
 
     # JUMP TO: Debrief Depression

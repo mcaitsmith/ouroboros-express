@@ -42,11 +42,13 @@ label depression_cs2:
 
     # ??ATTRACTION
     #Dialog appears if any of the meters is high
-    urshu neutral "Believe it or not, you have had a profound effect on the other passengers. I'm sure one of them would love to spend time with you as we approach our destination."
+    if att_meter_ava >= 50 or att_meter_darius >= 50 or att_meter_susurha >= 50:
+        urshu neutral "Believe it or not, you have had a profound effect on the other passengers. I'm sure one of them would love to spend time with you as we approach our destination."
     # END
 
     # ??DECAY (ELSE)
-    urshu neutral "That is for you to discover. We approach our destination. Now would be a good time for final goodbyes."
+    else:
+        urshu neutral "That is for you to discover. We approach our destination. Now would be a good time for final goodbyes."
     # END
     hide urshu with dissolve
 
@@ -55,11 +57,13 @@ label depression_cs2:
     # <CHOICE>
     # ??ATTRACTION
     #Dialog appears if any of the meters is high
-    vivithinking happy "Let's find someone to hold one last time before this thing ends."
+    if att_meter_ava >= 50 or att_meter_darius >= 50 or att_meter_susurha >= 50:
+        vivithinking happy "Let's find someone to hold one last time before this thing ends."
     # END
 
     # ??DECAY (ELSE)
-    vivithinking neutral "Time to finally leave this purgatory. I reckon goodbyes are in order."
+    else:
+        vivithinking neutral "Time to finally leave this purgatory. I reckon goodbyes are in order."
     # END
 
     menu:

@@ -202,37 +202,39 @@ label bargaining_fr2_darius:
     darius sad "How I'd feel being trapped here...without you?"
 
     # ??ATTRACTION (and if not DECAY below)
-    vivi neutral blush "But I'm not getting off this train if you can't come with me!"
-    vivi neutral blush "That's why I'm telling you this now."
-    vivi sad "I'm sorry I kept this a secret from you. I wasn't thinking straight when I made the deal, and I...I just didn't want anyone to get hurt."
-    vivi neutral blush "But now, all I know is that you... You guys really mean a lot to me."
-    vivi neutral blush "And home won't be home if you're not a part of it in some way."
-    darius neutral "...You know I would never ask you to do that, right?"
-    vivi neutral "Yeah, but..."
-    vivi neutral blush "It's something I want. I don't care about the consequences anymore."
-    show darius neutral blush with dissolve
-    darius "Vivi... I..."
-    darius "Ahem. Well,"
-    darius "I think that's...something I...also want."
+    if att_meter_darius >= 50:
+        vivi neutral blush "But I'm not getting off this train if you can't come with me!"
+        vivi neutral blush "That's why I'm telling you this now."
+        vivi sad "I'm sorry I kept this a secret from you. I wasn't thinking straight when I made the deal, and I...I just didn't want anyone to get hurt."
+        vivi neutral blush "But now, all I know is that you... You guys really mean a lot to me."
+        vivi neutral blush "And home won't be home if you're not a part of it in some way."
+        darius neutral "...You know I would never ask you to do that, right?"
+        vivi neutral "Yeah, but..."
+        vivi neutral blush "It's something I want. I don't care about the consequences anymore."
+        show darius neutral blush with dissolve
+        darius "Vivi... I..."
+        darius "Ahem. Well,"
+        darius "I think that's...something I...also want."
 
-    show vivi neutral blush at left
+        show vivi neutral blush at left
 
-    vivithinking "What I wouldn't give for a hug..."
-    vivithinking "When was the last time I hugged someone?"
-    show darius neutral -blush
-    darius neutral "...Let's focus on one thing at a time though. Urshu first."
-    vivi neutral "Right."
+        vivithinking "What I wouldn't give for a hug..."
+        vivithinking "When was the last time I hugged someone?"
+        show darius neutral -blush
+        darius neutral "...Let's focus on one thing at a time though. Urshu first."
+        vivi neutral "Right."
     # END
 
     # ??DECAY (and if not ATTRACTION above)
-    vivi sad "But Darius! I--"
-    darius angry "I already told you! You don't need to say anything else."
+    else:
+        vivi sad "But Darius! I--"
+        darius angry "I already told you! You don't need to say anything else."
 
-    show vivi sad at left
+        show vivi sad at left
 
-    vivithinking "...Shit. What have I done?" 
-    vivithinking "I should've just kept my mouth shut."
-    vivi sad "You're right."
+        vivithinking "...Shit. What have I done?" 
+        vivithinking "I should've just kept my mouth shut."
+        vivi sad "You're right."
 
     #END
 

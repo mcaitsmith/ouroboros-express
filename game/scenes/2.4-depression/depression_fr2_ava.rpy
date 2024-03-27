@@ -13,11 +13,13 @@ label depression_fr2_ava:
     vivithinking "Oh, the Sun Goddess, herself. Somehow looking radiant as usual."
 
     # ??DECAY
-    vivi sad "She's too good for me..."
+    if dec_meter >= 40:
+        vivi sad "She's too good for me..."
     #END
 
     # ??ATTRACTION
-    vivi happy "I need her in my life, no matter what."
+    elif att_meter_ava >= 50:
+        vivi happy "I need her in my life, no matter what."
     #END
 
     vivithinking "Okay, Vivi, deep breath, and-"
@@ -117,12 +119,15 @@ label depression_fr2_ava:
     show ava neutral blush with dissolve
 
     # ??ATTRACTION
-    ava "No need. Just be here now."
+    if att_meter_ava >= 55:
+        ava "No need. Just be here now."
 
-    #pause
-    pause 1.0
+        #pause
 
-    # SOUND heartbeat
+        # SOUND: heartbeat
+        play sound heartbeat
+        pause 3.0
+        stop sound
 
     #END
 
@@ -188,13 +193,15 @@ label depression_fr2_ava:
     vivi happy blush "Come to Earth sometime! I'll show you around!"
 
     # ??DECAY
-    show ava sad -blush
-    ava sad "If only we could have..."
+    if dec_meter >= 50:
+        show ava sad -blush
+        ava sad "If only we could have..."
     #END
 
     # ??ATTRACTION
-    show ava happy blush
-    ava "It's a date. We look forward to it."
+    elif att_meter_ava >= 60:
+        show ava happy blush
+        ava "It's a date. We look forward to it."
     #END
 
     vivi sad blush "I should go... See you soon, Asha."

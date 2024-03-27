@@ -36,11 +36,12 @@ label bargaining_fr1_ava:
             ava sad "We know the will of the gods, Vivienne."
 
             # ??DECAY
-            vivi sad "Well, I guess you would, huh? So in layman's terms for me?" 
-            ava sad "We are like a dog chasing its tail, round and round. Catch the tail, and you shall know their will."
-            vivi sad "So no? The answer is no?"
-            ava sad "Correct." 
-            ava sad "The stars would all burn out first."
+            if dec_meter > 10:
+                vivi sad "Well, I guess you would, huh? So in layman's terms for me?" 
+                ava sad "We are like a dog chasing its tail, round and round. Catch the tail, and you shall know their will."
+                vivi sad "So no? The answer is no?"
+                ava sad "Correct." 
+                ava sad "The stars would all burn out first."
             # END
 
             # JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
@@ -134,12 +135,13 @@ label bargaining_fr1_ava:
                     vivithinking "That explains a lot!"
 
                     # ??ATTRACTION
-                    vivi neutral "What happened the time you almost cried?"
-                    ava sad "A serving girl in the palace. We tried to befriend her."
-                    vivi angry "Don't tell me something awful happened to you!"
-                    show ava sad blush with dissolve
-                    ava "No. Far worse. We never saw her again."
-                    show ava sad -blush
+                    if att_meter_ava >= 15:
+                        vivi neutral "What happened the time you almost cried?"
+                        ava sad "A serving girl in the palace. We tried to befriend her."
+                        vivi angry "Don't tell me something awful happened to you!"
+                        show ava sad blush with dissolve
+                        ava "No. Far worse. We never saw her again."
+                        show ava sad -blush
                     # END
 
                     vivi sad "I'm so sorry, Asha. That really sucks."
@@ -164,10 +166,11 @@ label bargaining_fr1_ava:
                     ava happy "When we went to lands run by women, our diplomacy always prevailed, no matter the tongue."
 
                     # ??ATTRACTION
-                    # SOUND: heartbeat
-                    play sound heartbeat
-                    vivithinking "I think my pulse is pounding louder than the train. Wait! Is...she...flirting with me?"
-                    stop sound fadeout 1.0
+                    if att_meter_ava >= 25:
+                        # SOUND: heartbeat
+                        play sound heartbeat
+                        vivithinking "I think my pulse is pounding louder than the train. Wait! Is...she...flirting with me?"
+                        stop sound fadeout 1.0
                     # END
 
                     vivi happy blush "Well, practice makes perfect, right?"
@@ -181,9 +184,10 @@ label bargaining_fr1_ava:
             vivi happy "I'm glad you made the most of it."
 
             # ??ATTRACTION
-            show ava happy blush with dissolve
-            ava "We sighed differently then. And we sigh looking at you now."
-            show ava neutral -blush
+            if att_meter_ava >= 40:
+                show ava happy blush with dissolve
+                ava "We sighed differently then. And we sigh looking at you now."
+                show ava neutral -blush
             # END
 
             # JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."

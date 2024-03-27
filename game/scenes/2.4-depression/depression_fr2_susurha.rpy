@@ -66,13 +66,14 @@ label depression_fr2_susurha:
     vivithinking "I could almost fall asleep right here."
 
     # ??DECAY
-    vivithinking "Why do I feel this way?"
-    susurha "Even with all the druidic teachings in my life..."
-    susurha "The space out there seems so peaceful in all its chaos."
-    susurha "It feels so welcoming..."
-    susurha "Yet I can't trust it."
-    susurha "Do you think it will hurt..."
-    susurha "...when we merge with the cosmic weave?"
+    if dec_meter >= 45:
+        vivithinking "Why do I feel this way?"
+        susurha "Even with all the druidic teachings in my life..."
+        susurha "The space out there seems so peaceful in all its chaos."
+        susurha "It feels so welcoming..."
+        susurha "Yet I can't trust it."
+        susurha "Do you think it will hurt..."
+        susurha "...when we merge with the cosmic weave?"
     #END
 
     #<CHOICE>
@@ -208,30 +209,33 @@ label depression_fr2_susurha:
     susurha "Thank you for staying with me, if even for a moment."
 
     # ??DECAY
-    susurha "I hope I brought some worth to you."
+    if dec_meter >= 50:
+        susurha "I hope I brought some worth to you."
     #END
 
     susurha "The only thing worse than being alone is never being at all."
 
     #DECAY ROUTE (??DECAY)
     #SAL'S NOTE: Lines below are supposed to be a DECAY ending of the scene.
-    vivi "Everything will turn out for the best."
-    susurha "You lie to yourself so easily."
-    susurha "I hope there is someone behind that mask."
-    susurha "Even if you don't show them to me."
-    vivithinking "I..."
-    vivithinking "I think I have had enough of this."
-    vivi "Good night."
-    susurha "Rest easy, Vivi."
+    if dec_meter >= 50:
+        vivi "Everything will turn out for the best."
+        susurha "You lie to yourself so easily."
+        susurha "I hope there is someone behind that mask."
+        susurha "Even if you don't show them to me."
+        vivithinking "I..."
+        vivithinking "I think I have had enough of this."
+        vivi "Good night."
+        susurha "Rest easy, Vivi."
     # END
 
     #SAL'S NOTE: Lines below show if decay is NOT high
     # ELSE
-    vivi "We can sit here for a little while longer."
-    vivi "And watch the cosmos fly by."
-    show susurha neutral blush with dissolve
-    susurha "I'd love that."
-    vivithinking "In its own strange way, the view sure is beautiful from here."
+    else:
+        vivi "We can sit here for a little while longer."
+        vivi "And watch the cosmos fly by."
+        show susurha neutral blush with dissolve
+        susurha "I'd love that."
+        vivithinking "In its own strange way, the view sure is beautiful from here."
     # END
 
     #JUMP to Debrief Depression

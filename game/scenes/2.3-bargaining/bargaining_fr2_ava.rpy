@@ -225,25 +225,26 @@ label bargaining_fr2_ava:
     vivi happy "Let's do it!"
 
     # ??ATTRACTION
-    vivi neutral "Actually, Asha. Before we go, I should tell you something."
-    vivi neutral "The reason this meal is so important to me is because...Urshu and I made a deal."
-    vivi neutral "He said that if I made him the best-tasting meal he's ever had, then he'd let me off this train."
-    vivi neutral "I'm sorry I didn't tell you earlier, but..."
-    vivi neutral "Now I realize..."
-    vivithinking "Please, don't be cringey. Please, don't be cringey."
-    vivi neutral blush "I don't want to leave this train if you're not with me."
-    vivi neutral "I want this meal to be the exit ticket for both of us."
-    show ava neutral blush
-    ava "We see..."
-    ava "We are in agreement with you, and we thank you for your honesty. Life with you outside of this place sounds... idyllic."
+    if att_meter_ava >= 50:
+        vivi neutral "Actually, Asha. Before we go, I should tell you something."
+        vivi neutral "The reason this meal is so important to me is because...Urshu and I made a deal."
+        vivi neutral "He said that if I made him the best-tasting meal he's ever had, then he'd let me off this train."
+        vivi neutral "I'm sorry I didn't tell you earlier, but..."
+        vivi neutral "Now I realize..."
+        vivithinking "Please, don't be cringey. Please, don't be cringey."
+        vivi neutral blush "I don't want to leave this train if you're not with me."
+        vivi neutral "I want this meal to be the exit ticket for both of us."
+        show ava neutral blush
+        ava "We see..."
+        ava "We are in agreement with you, and we thank you for your honesty. Life with you outside of this place sounds... idyllic."
 
-    show vivi surprised blush at left
+        show vivi surprised blush at left
 
-    vivithinking "Idyllic! Not even my mother has ever described life with me that way! Not that I'd expect her to."
+        vivithinking "Idyllic! Not even my mother has ever described life with me that way! Not that I'd expect her to."
 
-    show vivi neutral blush at left
+        show vivi neutral blush at left
 
-    vivithinking "And I'm not crazy, either. Asha really is changing her speech pattern around me. I think... No, I shouldn't read into it too much."
+        vivithinking "And I'm not crazy, either. Asha really is changing her speech pattern around me. I think... No, I shouldn't read into it too much."
     #END
     show ava neutral -blush
 

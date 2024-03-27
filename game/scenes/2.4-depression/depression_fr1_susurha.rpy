@@ -17,7 +17,8 @@ label depression_fr1_susurha:
     susurha neutral "What brings you here?"
 
     #??DECAY
-    susurha "Come to torment me some more?"
+    if dec_meter >= 40:
+        susurha "Come to torment me some more?"
     #END
 
     vivi "To be honest, I'm ready to just get nice and drunk."
@@ -41,15 +42,16 @@ label depression_fr1_susurha:
     susurha "Allowing us to tear away at the veils that encase us to those we know."
 
     # ??DECAY
-    vivi "Oh, I don't know about this."
-    susurha "Even now as we near the end of the tracks?"
-    susurha sad "Can we just try..."
-    susurha sad "Try to pull back the mask?"
-    susurha neutral "I'll even let you ask the first question."
-    vivithinking "Are we sure about this?"
-    vivithinking "..."
-    vivithinking "Screw it!"
-    vivi "Alright."
+    if dec_meter >= 40:
+        vivi "Oh, I don't know about this."
+        susurha "Even now as we near the end of the tracks?"
+        susurha sad "Can we just try..."
+        susurha sad "Try to pull back the mask?"
+        susurha neutral "I'll even let you ask the first question."
+        vivithinking "Are we sure about this?"
+        vivithinking "..."
+        vivithinking "Screw it!"
+        vivi "Alright."
     #END
 
     #<CHOICE>
@@ -195,8 +197,9 @@ label depression_fr1_susurha:
     susurha "Thank you for spending these moments with me."
 
     #DECAY ROUTE (??DECAY?)
-    susurha "I wish I could have made these moments more special for you."
-    susurha "The train is speeding up. Have you noticed?"
+    if dec_meter >= 40:
+        susurha "I wish I could have made these moments more special for you."
+        susurha "The train is speeding up. Have you noticed?"
     # END
 
     hide susurha with dissolve
