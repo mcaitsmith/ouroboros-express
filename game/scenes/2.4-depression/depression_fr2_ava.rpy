@@ -31,6 +31,9 @@ label depression_fr2_ava:
         #OPTION 1 +ATTRACTION
         "Really?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+
             vivi surprised "Really? Even though the royals treated you poorly you had everything you could have ever wanted. I don't understand."
             ava sad "Of course you do not understand. How could you?"
             vivi sad "I want to...understand. How can I share your pain if you don't talk about it with me?"
@@ -39,6 +42,9 @@ label depression_fr2_ava:
         #OPTION 2 +DECAY
         "You're pretty ungrateful, huh?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi angry "You're pretty ungrateful, huh? It sounds like you had everything you could have ever wanted."
             ava sad "How could you ever understand..."
             vivi angry "You're right, Asha. I can't and I won't. How could a puny little human peasant like me ever understand what it's like to be a princess in a castle?!"
@@ -46,6 +52,9 @@ label depression_fr2_ava:
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
         "I wish I could have been there for you.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "I wish I could have been there for you. Our relationship has been the one thing keeping me sane on this journey... I wish we could have spent some time together while we were alive."
             ava happy "Really? We feel the same way." 
@@ -68,6 +77,9 @@ label depression_fr2_ava:
         #OPTION 1 +ATTRACTION
         "But why do you need her to begin with?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+
             vivi surprised "But why do you need her to begin with? I wish you could have had a normal life on Earth."
             ava sad "Without the Avatar, our world would be doomed. These hands have seen much bloodshed."
             vivi surprised "I didn't realize that your life wasn't all sunshine and rainbows."
@@ -88,6 +100,9 @@ label depression_fr2_ava:
 
         #OPTION 3 >>ATTRACTION (+ATTRACTION?)
         "If only I had known you in life.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "If only I had known you in life, things could have been different."
             show ava neutral blush with dissolve
@@ -120,6 +135,9 @@ label depression_fr2_ava:
         #OPTION 1 >>ATTRACTION (+ATTRACTION)
         "My family moved around a lot...":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+
             vivi neutral "My family moved around a lot, from country to country."
             vivi neutral "I'm luckier than most - seen and experienced so many amazing cultures."
             vivi sad "But it's lonely for a kid, you know? As soon as I made friends, started feeling comfortable... We'd uproot again"
@@ -140,6 +158,9 @@ label depression_fr2_ava:
 
         #OPTION 2 >>DECAY (+DECAY?)
         "I wrote this haiku in school once.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi happy "I wrote this haiku in school once. Wanna hear it?"
             ava surprised "Go on."

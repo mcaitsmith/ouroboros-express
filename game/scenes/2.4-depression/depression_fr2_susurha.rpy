@@ -27,6 +27,9 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "I didn't want to be alone.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I didn't want to be alone."
             susurha "I very much hoped you'd come."
             vivi "Is it okay if I stay here?"
@@ -35,6 +38,9 @@ label depression_fr2_susurha:
         
         #OPTION 2 >>ATTRACTION +ATTRACTION
         "I also needed to see a friendly face.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
                 
             vivi "I also needed to see a friendly face."
             show susurha happy blush with dissolve
@@ -45,6 +51,9 @@ label depression_fr2_susurha:
 
         #OPTION 3 >>DECAY +ATTRACTION
         "I don't...know why.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't...know why."
             susurha "I wish you knew, but I'll take it."
@@ -80,6 +89,9 @@ label depression_fr2_susurha:
         #OPTION 2 +ATTRACTION
         "I don't want to go.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I don't want to go."
             susurha sad "Yeah..."
             # JUMP TO: susurha "So you ARE afraid?"
@@ -91,6 +103,9 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "Yes.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "Yes."
             vivi "I'm very afraid."
             vivi "Who wouldn't be?"
@@ -98,6 +113,9 @@ label depression_fr2_susurha:
 
         #OPTION +DECAY
         "No.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "No."
             vivi "What's the point in being afraid?"
@@ -132,6 +150,9 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "I want to be ME as well.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I want to be ME as well."
             vivi "My whole life... I felt I was living someone else's life."
             vivi "Think like someone else. Act like someone else."
@@ -143,6 +164,9 @@ label depression_fr2_susurha:
         #OPTION 2 >>DECAY +ATTRACTION
         "I get what you mean.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I get what you mean."
             susurha "You do?"
             vivi "My whole life, everyone has said \"Vivi, just be yourself!\""
@@ -152,6 +176,9 @@ label depression_fr2_susurha:
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
         "Nothing can take away who you are.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "Nothing can take away who you are."
             vivi "You're one of the most unique creatures I have ever met."
@@ -165,6 +192,9 @@ label depression_fr2_susurha:
 
         #OPTION 4 >>DECAY +DECAY
         "I know who I am.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I know who I am."
             susurha "Are you sure about that?"
