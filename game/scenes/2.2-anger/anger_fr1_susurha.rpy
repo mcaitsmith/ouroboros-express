@@ -39,14 +39,14 @@ label anger_fr1_susurha:
     vivithinking neutral "Provocative. This one's certainly not boring." 
 
     menu:
-        # OPTION 1 +Attraction
+        # OPTION 1 +ATTRACTION
         "I'll play.":
         
             vivi neutral "I'll play"
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
-        # OPTION 2 +Decay
+        # OPTION 2 +DECAY
         "I'd be revealing too much.":
 
             vivi neutral "I'd be revealing too much."
@@ -66,7 +66,7 @@ label anger_fr1_susurha:
 
 
     menu:
-        # OPTION 1 +Attraction
+        # OPTION 1 +ATTRACTION
         "Everyone hides something. I'm no exception.":
 
             vivi neutral blush "Everyone hides something. I'm no exception."

@@ -29,6 +29,9 @@ label anger_fr1_ava:
     menu:
         # OPTION 1 +ATTRACTION
         "The sun card.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
         
             vivi neutral "The sun card."
             show ava sad blush with dissolve
@@ -80,6 +83,14 @@ label anger_fr1_ava:
     # OPTION 1 +ATTRACTION +DECAY
         "...chin up, princess, or the crown slips.":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+
+            pause 0.5
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_list_ava[0])
+
             vivi neutral "...chin up, princess, or the crown slips."
             ava angry "Princess? We were not royalty, those inbred lickspittles. We came from nothing."
             vivithinking neutral "With that stiff upper lip and all? Yeah, right." 
@@ -97,6 +108,9 @@ label anger_fr1_ava:
 
     # OPTION 2 +ATTRACTION
         "...I know what you mean about sacrifices.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
             vivi angry blush "Here!"

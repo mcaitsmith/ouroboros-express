@@ -442,6 +442,11 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
             frame:
                 style "game_menu_content_frame"
+                if not main_menu:
+                    text "Ava: [att_meter_ava]%          Darius: [att_meter_darius]%          Susu'Rha: [att_meter_susurha]%                    Decay: [dec_meter]%":
+                        xoffset 100
+                        yoffset -120
+                        size 30
 
                 if scroll == "viewport":
 
