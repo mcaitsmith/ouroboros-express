@@ -50,6 +50,15 @@ label romance_cs:
                     # JUMP to: Confession / Avatar of Asha
                     jump confession_ava
 
+            # OPTION 7 ??ATTRACTION
+                "I want to be with Ava" if ava_confess == True and ava_friend == False:
+
+                    vivithinking happy "I think the answer is clear. I want to be with Ava." 
+                    vivithinking happy blush "She is the one for me."
+
+                    # JUMP to: Romance / Avatar of Asha
+                    jump romance_ava
+
             # OPTION 2 ??ATTRACTION
                 "Darius Wrecker" if darius_confess == False:
 
@@ -63,6 +72,15 @@ label romance_cs:
                     # JUMP to: Confession / Darius Wrecker
                     jump confession_darius
 
+            # OPTION 8 ??ATTRACTION
+                "I want to be with Darius" if darius_confess == True and darius_friend == False:
+
+                    vivithinking happy "Darius. It's always been Darius. They are my other half."
+                    vivithinking happy blush "They're the one for me."
+
+                    # JUMP to: Romance / Darius Wrecker
+                    jump romance_darius
+
             # OPTION 3 ??ATTRACTION
                 "Susu'Rha Balrinn" if susurha_confess == False:
 
@@ -75,6 +93,15 @@ label romance_cs:
 
                     # JUMP to: Confession / Susu'Rha Balrinn
                     jump confession_susurha
+
+            # OPTION 9 ??ATTRACTION
+                "I want to be with Susu'Rha" if susurha_confess == True and susurha_friend == False:
+
+                    vivithinking happy "I don't know why it's taken me so long to figure it out, but now I know for sure." 
+                    vivithinking happy blush "Susu'Rha is the one I love."
+
+                    # JUMP to Romance / Susu'Rha Balrinn
+                    jump romance_susurha
 
             # NOTE options 4,5,6 are if a character is missing from the scene. It would replace the corresponding character option above.
 
@@ -125,30 +152,6 @@ label romance_cs:
                     jump end_choice
 
             # NOTE options 7,8,9 are if you have talked to a character, they confessed and you chose the "please hold while I make my decision" option. This would replace the corresponding character option from 1,2,3.
-
-            # OPTION 7 ??ATTRACTION
-                "I want to be with Ava" if ava_confess == True and ava_friend == False:
-
-                    vivithinking happy "I think the answer is clear. I want to be with Ava." 
-                    vivithinking happy blush "She is the one for me."
-
-                    # JUMP to: Romance / Avatar of Asha
-
-            # OPTION 8 ??ATTRACTION
-                "I want to be with Darius" if darius_confess == True and darius_friend == False:
-
-                    vivithinking happy "Darius. It's always been Darius. They are my other half."
-                    vivithinking happy blush "They're the one for me."
-
-                    # JUMP to: Romance / Darius Wrecker
-
-            # OPTION 9 ??ATTRACTION
-                "I want to be with Susu'Rha" if susurha_confess == True and susurha_friend == False:
-
-                    vivithinking happy "I don't know why it's taken me so long to figure it out, but now I know for sure." 
-                    vivithinking happy blush "Susu'Rha is the one I love."
-
-                    # JUMP to Romance / Susu'Rha Balrinn
 
             # NOTE If you friendzone all characters, OPTION 10 will appear.
 
