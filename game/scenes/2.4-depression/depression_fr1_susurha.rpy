@@ -110,7 +110,7 @@ label depression_fr1_susurha:
             susurha "You got it."
             #JUMP TO: susurha happy "My turn."
 
-        #OPTION 4 >>Decay +Decay
+        #OPTION 4 >>DECAY +DECAY
         "Can we just sit and drink?":
 
             vivi "Can we just sit and drink?"
@@ -125,7 +125,7 @@ label depression_fr1_susurha:
 
     menu:
 
-        #OPTION 1 +Attraction
+        #OPTION 1 +ATTRACTION
         "No.":
 
             vivi "No."
@@ -143,7 +143,7 @@ label depression_fr1_susurha:
             susurha "I can drink to that."
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
 
-        #OPTION 2 >>Attraction +Attraction
+        #OPTION 2 >>ATTRACTION +ATTRACTION
         "Possibly, recently.":
 
             vivi blush "Possibly, recently."
@@ -157,7 +157,7 @@ label depression_fr1_susurha:
             show susurha neutral -blush
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
 
-        #OPTION 3 +Decay
+        #OPTION 3 +DECAY
         "I've had plenty of lovers.":
 
             vivi "I've had plenty of lovers."
