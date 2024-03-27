@@ -56,6 +56,8 @@ image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
 image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
 image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
 
+image white = "#ffffff"
+
 layeredimage ava:
     group face auto:
         attribute neutral default
