@@ -121,7 +121,7 @@ label denial_fr1_susurha:
             show vivi sad
             #JUMP TO: susurha saying "I'm sorry..."
         
-    # OPTION 2 +Attraction
+    # OPTION 2 +ATTRACTION
         "How could I not? I can't stop thinking about it.":
 
             vivi "How could I not? I can't stop thinking about it."
@@ -152,7 +152,7 @@ label denial_fr1_susurha:
 
     menu:
 
-    # OPTION 1 +Attraction
+    # OPTION 1 +ATTRACTION
         "Are you okay?":
 
             vivi "Are you okay?"

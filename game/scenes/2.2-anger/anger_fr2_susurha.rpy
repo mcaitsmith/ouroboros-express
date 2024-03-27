@@ -147,7 +147,7 @@ label anger_fr2_susurha:
             vivi neutral "*GASPS* Sure. *HEAVES* Why not."
             # JUMP TO: susurha sad "It was fear that brought me here."
 
-    #OPTION +Attraction
+    #OPTION +ATTRACTION
         "Pierce the idea that it was her fault.":
 
             vivi neutral "Pierce the idea that it was her fault."
@@ -181,7 +181,7 @@ label anger_fr2_susurha:
     # <CHOICE>
 
     menu:
-    #OPTION 1 +Attraction
+    #OPTION 1 +ATTRACTION
         "You did what you could. It isn't your fault.":
 
             vivi sad "You did what you could. It isn't your fault."
