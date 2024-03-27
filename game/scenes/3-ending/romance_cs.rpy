@@ -127,7 +127,7 @@ label romance_cs:
             # NOTE options 7,8,9 are if you have talked to a character, they confessed and you chose the "please hold while I make my decision" option. This would replace the corresponding character option from 1,2,3.
 
             # OPTION 7 ??ATTRACTION
-                "I want to be with Ava" if ava_confess == True:
+                "I want to be with Ava" if ava_confess == True and ava_friend == False:
 
                     vivithinking happy "I think the answer is clear. I want to be with Ava." 
                     vivithinking happy blush "She is the one for me."
@@ -135,7 +135,7 @@ label romance_cs:
                     # JUMP to: Romance / Avatar of Asha
 
             # OPTION 8 ??ATTRACTION
-                "I want to be with Darius" if darius_confess == True:
+                "I want to be with Darius" if darius_confess == True and darius_friend == False:
 
                     vivithinking happy "Darius. It's always been Darius. They are my other half."
                     vivithinking happy blush "They're the one for me."
@@ -143,7 +143,7 @@ label romance_cs:
                     # JUMP to: Romance / Darius Wrecker
 
             # OPTION 9 ??ATTRACTION
-                "I want to be with Susu'Rha" if susurha_confess == True:
+                "I want to be with Susu'Rha" if susurha_confess == True and susurha_friend == False:
 
                     vivithinking happy "I don't know why it's taken me so long to figure it out, but now I know for sure." 
                     vivithinking happy blush "Susu'Rha is the one I love."

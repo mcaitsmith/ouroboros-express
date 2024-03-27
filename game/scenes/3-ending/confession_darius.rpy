@@ -1,0 +1,435 @@
+﻿# The scene starts here.
+
+label confession_darius:
+
+    #Romance/Confession/Darius Wrecker
+    #LOCATION: lounge
+    # scene lounge with fade
+    # show darius neutral at right with dissolve
+    # show vivi neutral at left with dissolve
+
+    vivithinking neutral "There they are. He's standing tall."
+    darius neutral "I'm glad to see you. I wasn't sure if we'd have the chance to talk again."
+    vivi neutral "Where else would I go?"
+    show darius neutral blush with dissolve
+    darius "Fair enough."
+    darius "There's...something about you, Vivi." 
+    darius "That fierce intelligence, the dogged questioning."
+    darius "You have a spark that I can't help but want to fan into an inferno."
+    vivi surprised blush "Are you calling me hot?"
+    show darius surprised blush
+    darius "What! Yes! I mean, no! I mean, what?"
+    show darius happy blush
+    darius "I'm trying to bare my soul to you, you wretched human!"
+    darius "I know I'm...worthless. A murderer. Degraded beyond belief."
+    show darius sad blush
+    darius "But I can... I must...be better. These sins. I carry them with me--I can't pretend they don't mean anything, anymore."
+    darius "I own them. But whatever happens, I want someone by my side. Not to share my burden, but as a witness. Someone to remind me of the Ouroboros Express."
+    show darius neutral blush
+    darius "Someone who knows I'm not hiding any longer."
+    show darius happy blush
+    darius "Someone to love."
+
+    #<CHOICE>
+    darius "What do you think? It could be the assignment of a lifetime. One you chose yourself."
+    show darius happy -blush
+
+    menu:
+        #OPTION 1
+        #Accept Romance
+        "Yes!":
+            vivithinking happy "The way their mouth tentacles curl..."
+            vivi happy blush "Darius... Yes."
+            #JUMP TO: Romance/Darius Wrecker
+            jump romance_darius
+
+        #OPTION 2
+        #Reject Romance
+        "I can't.":
+
+            $ darius_friend = True
+
+            vivi neutral blush "Darius. I believe that you've accepted your past. But your future--you have a lot to figure out on your own."
+            vivi happy "I'd love to come with you on your journey. As a friend."
+            show darius neutral blush with dissolve
+            darius "I understand. And I appreciate the confidence. And your honesty."
+            darius "Safe travels...friend."
+            show darius neutral -blush
+            # Note: Darius is locked as friend. Can no longer be chosen as romance partner.
+            # JUMP TO: Character Selector
+            jump show_chars
+
+        #OPTION 3
+        #Delay Decision
+        "Could you give me a moment?":
+
+            vivi surprised blush "Could you give me a moment? I want to give this, ah, assignment the consideration it's due."
+            show darius neutral blush with dissolve
+            darius "Noted. And...thank you."
+            show darius neutral -blush
+            #JUMP TO: Character selector
+            jump show_chars
+
+    # Romance/Confession/Susu'Rha Balrinn
+    # # Susu'Rha takes responsibility for his actions and is able to move on. He asks Vivi whether she will make the most of their present and accept his love.
+
+    # # Vivi can either say yes, say no but stay friends, or ask them to wait before she makes a decision
+
+    # LOCATION: Lounge
+    # show susurha neutral right
+    # show vivi neutral left
+
+    # vivithinking neutral "There they are, gazing out the window..."
+    # vivithinking neutral "The glow... It's haunting, yet..."
+    # susurha "Wondrous, isn't it?"
+    # vivi neutral blush "It sure is."
+    # susurha happy "I'm thrilled you could be here to enjoy it with me."
+    # susurha happy "Our brief time together these past few--I'm not sure if I can even call them days--has been..."
+    # show susurha happy blush with dissolve
+    # susurha "Intoxicating..."
+    # vivithinking neutral "Quite."
+    # show susurha happy -blush
+    # susurha happy "And cathartic."
+    # vivi neutral "Oh, for me too. As I'm sure you know, given your part in it."
+    # susurha neutral "..."
+    # susurha neutral "All my life, all I ever wanted was to be myself, to live life on my own terms. But I didn't understand how much {i}responsibility{/i} was bound up in that."
+    # show susurha happy blush with dissolve
+    # susurha "I didn't see..."
+    # vivi neutral "What?"
+    # vivithinking neutral "They look so nervous."
+    # vivithinking neutral blush "Wait..."
+    # susurha "I didn't see that until I met you."
+    # susurha "Here, in this place, you helped me understand that my decisions are mine alone. And while there may be consequences for those decisions, there is no reason to punish myself."
+    # show susurha happy -blush
+    # susurha happy "Now nothing binds me anymore. The past stays where it belongs."
+    # vivi neutral "What about the present? The future?"
+    # susurha happy "The future remains unwritten. All I know is that, whatever's in store..."
+    # show susurha happy blush with dissolve
+    # susurha "...I want you by my side."
+    # susurha "Before everything fades away, I have to know..."
+    # #<CHOICE 1>
+    # susurha "Will you stay with me, whatever may come?"
+    # show susurha happy -blush
+
+    # menu:
+    #     #OPTION 1
+    #     # Accept Romance
+    #     "Yes!":
+
+    #         vivi happy blush "I'd love nothing more than that."
+    #         show susurha happy blush with dissolve
+    #         susurha "That makes me happier than you can possibly imagine."
+    #         vivi happy blush "Oh, but I {i}can{/i} imagine...because I feel the same way."
+    #         show susurha happy -blush
+    #         # JUMP TO: Romance/Susu'Rha Balrinn
+
+    #     #OPTION 2
+    #     # Reject Romance
+    #     "I can't.":
+
+    #         vivi neutral blush "I...I'm sorry. I like you, I do. But that's where it ends for me."
+    #         susurha sad "I would be remiss if I didn't tell you how disappointed I am. But I understand. I am a lizard with a troubled past, after all."  
+    #         susurha sad "Nevertheless, I'm glad to have met you, Vivienne Sanssouci." 
+    #         susurha neutral "And to call you my friend."
+    #         vivi happy "Me too, Susu'Rha. A friend till the end."
+    #         susurha happy "See, you are a poet."
+    #         # Note: Susu'Rha is locked as friend. Can no longer be chosen as romance partner.
+    #         #JUMP to: character selector 
+
+    #     #OPTION 3
+    #     #Delay Decision
+    #     "Could you give me a moment?":
+
+    #         vivi neutral blush "Could you give me a moment to think about it?"
+    #         show susurha neutral blush with dissolve
+    #         susurha "Of course."
+    #         susurha "But don't take too long, please."
+    #         susurha "I would say the suspense would kill me, but..."
+    #         show susurha neutral -blush
+    #         #JUMP TO: Character Selector
+    # Romance/Avatar of Asha
+    # #A heartfelt interaction as you both hold each other in the face of the end. Darkness, and then a bright light. You hear the train conductor's sigh. "I'm a romantic fool." A chance to begin again... together...
+
+    # # LOCATION: observatory
+
+    # show vivi neutral at right
+    # show ava neutral at left
+
+    # show ava sad blush with dissolve
+    # ava "Now, take my hand, Vivi." 
+    # ava "Hold me close for our last dance."
+    # vivi neutral blush "Aren't you afraid?"
+    # show ava happy blush
+    # ava "Not anymore."
+    # vivi surprised "Oh, Ava! Are you crying?"
+    # ava "Yes, but with joy. Hold me close. Close your eyes. We will be in this moment forever."
+    # vivi "Yes. Forever. Praise Ava."
+
+    # # EFFECT: fade to white
+    # # To Epilogues according to attraction meters
+    # Romance/Darius Wrecker
+    # #LOCATION: observatory
+
+    # show darius surprised at right
+    # show vivi happy at right 
+
+    # show darius surprised blush with dissolve
+    # darius "Yes?"
+    # vivi happy blush "Yes."
+    # vivithinking happy blush "Their hands... Those claws. He holds me so delicately."
+    # vivithinking happy blush "Like they'll never hurt anyone ever again."
+    # vivi neutral blush "I believe in you, Darius."
+    # vivi sad "I just wish we'd had a bit more time... Seems like our final stop is approaching."
+    # show darius happy -blush
+    # darius happy "I'd take these brief moments with you over millennia of the sorry existence I had before."
+
+    # # VISUAL: the screen shakes, flickering
+
+    # vivithinking sad "The end... It's here... But I feel at peace." 
+    # vivithinking happy "Wherever you are, Urshu--thank you."
+
+
+    # # VISUAL: screen fades to black  
+
+    # show urshu happy at center
+
+    # urshu happy "Goodness me, that went much better than I expected for Mr. Wrecker and Miss Sanssouci."
+    # urshu neutral "I must admit, there were a few close misses. Ah, love. It seems such a shame for their story to end here..."
+    # urshu neutral "..."
+    # urshu happy "But now, what kind of conductor would I be if I couldn't arrange an alternate journey for my passengers? Oh dear, I've become quite the romantic fool in my old age..."
+
+
+    # # VISUAL: screen fades to white
+    # # LOCATION: terminalofdreams
+
+    # vivi surprised "What-- Where are we? Darius?"
+    # darius surprised "Vivi... I-I don't believe it. Haha!"
+    # vivithinking surprised "He's laughing?"
+    # vivi surprised "What is this place?"
+    # darius happy "You know, I think Urshu had a few cards up his sleeve. We're somewhere {i}new{i}."
+    # vivi happy "Wait... Are you saying we have a second chance? A fresh start?"
+    # darius neutral "You know better than to ask a silly question, Miss Sanssouci." 
+    # darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
+    # vivi happy "I'm with you."
+
+
+    # #To Epilogues according to attraction meters
+    # Romance/Susu'Rha Balrinn
+    # # A heartfelt interaction as you both hold each other in the face of the end. Darkness, and then a bright light. You hear the train conductor's sigh. "I'm a romantic fool." A chance to begin again... together...
+
+    # #LOCATION: observatory
+
+    # show vivi neutral blush at left
+    # show susurha happy blush at right
+
+    # vivi neutral blush  "Can you feel it? We're approaching our final stop."
+    # susurha "Come into my arms. There."
+    # susurha "We can merge with each other as we merge with the cosmic weave."
+    # vivi neutral blush "It's getting brighter..."
+
+    # # VISUAL: the screen shakes
+    # # VISUAL: the scene brightens
+
+    # vivi happy blush "This is all so much. I may cry."
+    # vivi happy blush "It's awfully bright... I can hardly see."
+    # susurha "I'm here, Vivi. I've got you."
+    # vivi happy "I don't know where you end and I begin!"
+    # show susurha happy -blush
+    # susurha happy "I don't either! And I don't know what awaits us, but if this is to be my final   
+    # moment, I couldn't have asked for a better way to spend it than with you, Vivienne."
+    # vivi happy blush "Me, too."
+    # vivi happy blush "I want to be with you forever." 
+    # vivi happy blush "What if forever is only now?"
+    # vivi happy blush "Then I want to be with you forever, now."
+
+    # #EFFECT: fade to white
+    # #To Epilogues according to attraction meters
+
+
+    # 3.2 Epilogue
+    # Epilogue/Eldritch/Vivi
+    # # A snapshot of Vivi as her new form.
+    # # Vivi monster gets its way back to Earth...for a little revenge. Aahaha. (She's insane)
+
+    # #LOCATION: eldritchlandscape
+
+    # urshu sad "Anyone can change for the better, but they have to want to change."
+    # urshu "Unfortunately, Miss Sanssouci was stuck in her ways. She was too stubborn and too angry to open up. Her repressed self gave birth to emptiness. From the emptiness came the hunger, too strong for her decaying body. I should have realized sooner that she was meant for a different purpose." 
+    # urshu neutral "You can't have light without dark and you can't have absolution without punishment. Vivienne Sanssouci's body was altered to match her mind. A flowing dress and shards of a broken mirror flowing through eternity--an attractive facade concealing a devouring maw." 
+    # urshu "She finally got the life she pursued. She would no longer be censored and repressed by others."
+    # urshu happy "The new Vivi managed to make her way back to Earth...for a little revenge."
+    # #SOUND: Vivi's evil laughter
+    # Epilogue/Eldritch/Avatar of Asha
+    # #LOCATION: eldritchlandscape
+
+    # urshu sad "Alas, our goddess of the sun, Avatar of the Eternal Light, collapsed under the unbearable weight of her self-imposed hatred and inescapable emptiness." 
+    # urshu angry "Unable to connect, cut off from love, burning with pain as sharp as a scalpel, our lovely Avatar exploded into a supernova of fury and regret." 
+    # urshu sad "Soon after, her darkness reunited itself in the void as a ravenous Plutonian maw; a cosmic Eldritch whirlpool slaughtering all who crossed its path--just as she was slaughtered long ago."
+
+    # # VISUAL: Ava as a cosmic horror in eldritch landscape
+    # Epilogue/Eldritch/Darius Wrecker
+
+    # # The two paragraphs below are context
+    # # The mindflayer Darius could not forgive themselves for the atrocities they had been responsible for in life. Without a vehicle through which to reconcile their own actions, nor chance for atonement, the resentment they held only grew. In the end, Darius realized he became what he had grown to despise. Perhaps he always was. What he feared on the Express wasn't his master, but himself. His clean and perfectly groomed visage morphed and shifted, becoming the monstrous figure they so feared. Somewhere deep down he knew this was the fate fitting for him, a horror in body to reflect the monster within. 
+
+    # # The mindflayer Darius could not forgive themselves for the atrocities they had been responsible for in life. Without a vehicle through which to reconcile their own actions, nor chance for atonement, the resentment they held only grew. In the end, Darius realized he became what he had grown to despise. Perhaps he always was. He stared at his hands, clean and groomed, the horrors they had inflicted invisible to all but him. He couldn't take it, and his body responded in kind. He morphed and shifted, the hands he so despised growing, the fingers elongating. He grew and grew, his body cracking and bending under the stress, until he resembled the very horror he so feared. Somewhere deep down he knew this was the fate fitting for him, a nightmare in body to reflect the monster within. 
+
+
+    # #LOCATION: eldritchlandscape
+
+    # urshu sad "The mindflayer Darius could not forgive themself for the atrocities they had been responsible for in life."
+
+    # urshu sad "With neither a vehicle through which to reconcile their own actions nor a chance for atonement, the resentment they held only grew. "
+
+    # urshu sad "In the end, Darius realized he became what he had grown to despise. Perhaps, he thought, he had always been this way."
+
+    # urshu sad "He stared at his hands, clean and groomed, the horrors they had inflicted invisible to all but him. He could not take it, and his body responded in kind."
+
+    # urshu sad "He morphed and shifted, the hands he so despised growing, the fingers elongating. He grew and grew, his body cracking and bending under the stress, until he resembled the very horror he so feared."
+
+    # urshu sad "Somewhere deep down, he knew this was a fitting fate for him--a nightmare in body to reflect the monster within."
+    # Epilogue/Eldritch/Susu'Rha Balrinn
+    # #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective  and they'll be against a black background.
+
+
+
+
+    # #LOCATION: eldritchlandscape
+    # urshu sad "Despite the rebel prince's burning desire to live free, they could not escape the guilt that bound them to their past decisions."
+
+    # urshu sad "This growing rumination metastasized into their personal horror, who chained them at the wrists and ankles and dragged them into the furthest depths of the Dark Beyond."
+
+    # urshu sad "Muzzled so they would never again sing, scaled in nightmares so they would never again gladden or cheer, they became the very thing that haunted them..."
+
+    # urshu sad "...a grotesque prisoner, devoid of agency or expression, doomed to suffer for all eternity."
+    # Epilogue/Friendship/All
+    # # It's a friendship bonanza! Our passengers alight from the train and have a big cheesy moment. Urshu waves at them with a white handkerchief from the train.
+    # #"What is this place?"
+    # # "The Terminal of Dreams. You've made it. Come on! Everyone is waiting for you."
+
+    # # LOCATION: terminalofdreams
+
+    # show vivi happy left
+    # show urshu happy right
+
+    # vivithinking surprised "I can hear brakes..." 
+    # vivithinking happy "I'm in the open!"
+    # vivithinking happy "I think Urshu's being serious."
+    # urshu happy "It is time to disembark, now. Please, watch your step."
+    # show susurha right happy
+
+    # susurha happy "Yeah, get off the train already!"
+    # vivithinking neutral "Wow! Solid ground! Not that slightly-canted, bouncy train floor!"
+    # vivi surprised "What is this place?"
+
+    # show urshu neutral right
+
+    # urshu neutral "The station."
+    # urshu neutral "We have already said our goodbyes. Shoo, shoo!"
+    # vivithinking surprised "I'm stepping off, I'm stepping off, I'm off!"
+    # vivi happy "Woah. This place... And you're all here!"
+
+    # show susurha happy right 
+
+    # susurha "Despite everything... We are."
+    # susurha happy "Does that mean there's no end to the Vivienne antics?"
+
+    # show ava happy right 
+
+    # ava happy "And we are together, too, us strangers."
+
+    # show darius happy right 
+
+    # darius happy "Strangers to ourselves, perhaps, but not among each other."
+    # vivi happy "That's a cute way of saying we're friends."
+    # show darius angry blush with dissolve
+    # darius "Vivienne Sanssouci."
+    # vivi neutral "But now what..? Like, there's no signs!"
+    # show darius angry -blush
+
+    # show urshu neutral right 
+
+    # urshu neutral "In case it was not clear, you will need each other to find the way!"
+    # vivi neutral "So, we passed your test? Can you tell us how we did it?"
+    # vivithinking sad "So many probably never did..."
+    # urshu happy "You all honored each other, I will say."
+    # urshu "But you, Miss Sanssouci, you offered something powerful, more so than simple love."
+    # vivi happy "A pretty smile and nice hips?"
+    # urshu neutral "Come now, no need for deflecting or verbal jousts."
+    # urshu "Besides, you never did beat me..."
+    # urshu "You created camaraderie, companionship, {i}connection{/i}."
+    # vivi neutral blush "I did no such things..."
+    # urshu "You did! And it's something the Miss Sanssouci who boarded the train may never have achieved." 
+    # urshu happy "You have finally changed! Do us a favor and be more silly and moody! Enough of that pedantic reporter mask, okay?"
+    # vivi angry blush "Silly and moody? I'm going to rip that smugness out of your face!"
+    # urshu neutral "It is by being yourself that you saved everyone here."
+    # urshu "Your new bonds are North Stars in dark places. They will lead you back to the light, when you next are lost."
+
+    # # SOUND: Train whistle
+
+    # show urshu happy blush with dissolve
+    # urshu "Au revoir, my diamonds!"
+    # vivi happy blush "Give us one more look!"
+    # show urshu neutral -blush
+    # urshu neutral "At what?"
+    # vivi happy "AT DAT ASS!"
+
+    # show darius happy right
+
+    # darius happy "There, Vivienne. He's turning."
+    # darius neutral "The atrocity. Barely fits through the doorway..."
+
+    # show susurha happy blush at right 
+
+    # susurha "If only all the peoples in the worlds were blessed as he!"
+    # show susurha neutral -blush
+    # susurha neutral "But if everyone's rear was so, would it be special?"
+    # vivi happy "I hate to see him go..."
+
+    # show ava happy right
+
+    # ava happy "Come now, otherworldly companions, wherever we shall go, we will find behinds plump as Lomulan berries."
+    # vivithinking "But will we, though?"
+    # vivi happy "Enough about berries and rear ends..."
+    # vivi "We're free. Wherever we are."
+
+    # show darius right neutral 
+
+    # darius happy "This has to be the Terminal of Dreams, a place oft-referred to in heretical texts."
+    # darius "I can't believe they were right. It is also known as the Waypoint of the Worthy..."
+
+    # show susurha right neutral 
+
+    # susurha neutral "Worthy of what, I wonder?"
+    # vivi happy "Let's not stick around and think about it."
+    # vivi "Let's go and figure it out."
+    # vivi happy blush "Together."
+
+    # # The End
+
+    # Epilogue/Friendship/Avatar of Asha
+    # #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective and they'll be against a plain, bright background. 
+
+    # # LOCATION: terminalofdreams
+
+    # urshu happy "While I had my occasional doubts about you two, I'm glad that you found each other. So many near misses, close connections, heated moments..."
+    # urshu "Our sun goddess brought the warm light of friendship into Vivi's empty heart; our reporter helped the Avatar to realize there was more to her than a voice, more than a goddess." 
+    # urshu "Their verbal sparring matches were an intricate, passionate tango of emotional darts. Their time together burned down their outer defenses until only honesty and friendship remained." 
+    # urshu "It had always been there, though here, the All was the Two."
+    # Epilogue/Friendship/Darius Wrecker
+    # # LOCATION: terminalofdreams
+
+    # urshu happy "Darius Wrecker, former Inquisitor, soldier of the Lord of Eternal Rest, was a being who looked in the mirror and hated what they saw."
+    # urshu happy "They regretted their past actions, but could not accept that they deserved anything but guilt and shame." 
+    # urshu happy "With Vivi's help, they came to accept the possibility of a new journey: atonement." 
+    # urshu happy "Forgiveness was a long way down the road. But for the first time, Darius thought, there could perhaps be a future for them at all."
+    # Epilogue/Friendship/Susu'Rha Balrinn
+    # #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective  and they'll be against a plain, bright background.
+
+    # # LOCATION: terminalofdreams
+
+    # urshu happy "Susu'Rha, desirous of a life of their own design, broke the chains of expectation and eschewed their royal title, opting instead for a life of anarchic expression in the Viridian Wood."
+    # urshu happy "When the generational curse of war pulled them back, they found themself aboard the Ouroboros Express--and with you, Vivi."
+    # urshu happy "Just as they helped you shatter the artifice that kept you from embodying your true essence, you helped them leave their past...in the past."
+    # urshu happy "Now they can again sing songs and imbibe of endless joy in the world beyond the Terminal."
+
