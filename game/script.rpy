@@ -102,7 +102,8 @@ label start:
     play music mainmusic volume 0.5 # start main track
 
     # jump to first scene
-    jump introduction
+    # jump introduction
+    jump bad_waking_up
 
     # # This ends the game.
 
