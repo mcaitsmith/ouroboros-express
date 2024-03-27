@@ -68,15 +68,20 @@ label bargaining_meal_reveal:
         # OPTION 1 +ATTRACTION
         "Grab [fr2_bargaining_choice]'s Hand":
 
+            play sound attchoice
+
             vivithinking neutral "I need to hold on to something!"
             vivithinking neutral "But no, what if [fr2_bargaining_choice] doesn't want to?" 
             vivithinking neutral "Fuck it!"
             #show [INSERT NPC] surprise blush at left
             if fr2_bargaining_choice == "Ava":
+                $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
                 call show_ava_blush
             elif fr2_bargaining_choice == "Darius":
+                $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
                 call show_darius_blush
             elif fr2_bargaining_choice == "Susu'Rha":
+                $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
                 call show_susurha_blush
             vivithinking surprised "Oh, God. What am I doing? What are they thinking? Do they hate me?"
 
