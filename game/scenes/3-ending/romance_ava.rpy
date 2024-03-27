@@ -25,10 +25,19 @@ label romance_ava:
     scene white with Dissolve(3.0)
     # To Epilogues according to attraction meters
     # ??ATTRACTION
-    jump epi_friend_darius
+    call epi_friend_darius
     # ELSE
-    jump epi_eldritch_darius
+    call epi_eldritch_darius
     # ??ATTRACTION
-    jump epi_friend_susurha
+    call epi_friend_susurha
     # ELSE
-    jump epi_eldritch_susurha
+    call epi_eldritch_susurha
+
+    scene black with Dissolve(3.0)
+    window hide fade
+    stop music fadeout 3.0
+    stop sound fadeout 3.0
+    pause 3.0
+
+    # end game
+    return

@@ -35,10 +35,19 @@ label romance_susurha:
     #EFFECT: fade to white
     scene white with Dissolve(3.0)
     #To Epilogues according to attraction meters
-    jump epi_friend_ava
+    call epi_friend_ava
     # ELSE
-    jump epi_eldritch_ava
+    call epi_eldritch_ava
     # ??ATTRACTION
-    jump epi_friend_darius
+    call epi_friend_darius
     # ELSE
-    jump epi_eldritch_darius
+    call epi_eldritch_darius
+
+    scene black with Dissolve(3.0)
+    window hide fade
+    stop music fadeout 3.0
+    stop sound fadeout 3.0
+    pause 3.0
+
+    # end game
+    return
