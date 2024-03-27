@@ -38,6 +38,9 @@ label bargaining_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "She could see down to the essence of a person.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+
             vivi neutral "She could see down to the essence of a person."
             susurha neutral "I sense that power in you too, milady."
             vivi neutral "I guess I have it..."
@@ -54,6 +57,9 @@ label bargaining_fr2_susurha:
         #OPTION 2 +DECAY
         "Whatever it was, it skipped over me.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi neutral "Whatever it was, it skipped over me."
             susurha neutral "Whatever do you mean?"
             vivi neutral "Nana could read people. She could bargain. She had grit. Tenacity." 
@@ -69,6 +75,9 @@ label bargaining_fr2_susurha:
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
         "She was a hustler. She knew how to get what she wanted.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             vivi neutral "She was a hustler. She knew how to get what she wanted."
             susurha neutral "Well, you have that quality as well, Vivienne. It's why you're such an excellent reporter!"
@@ -133,6 +142,9 @@ label bargaining_fr2_susurha:
     menu:
         # OPTION 1 +DECAY
         "Let's try to appeal to Urshu's taste.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Let's try to appeal to Urshu's taste."
             susurha neutral "We would only be guessing."
@@ -152,6 +164,9 @@ label bargaining_fr2_susurha:
 
         # OPTION 2 +ATTRACTION
         "We'll just try to cook the best dish we possibly can!":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
         
             vivi neutral "We'll just try to cook the best dish we possibly can!"    
             susurha neutral "Unluckily for you, I eat nothing but grubs and Burrowers."
@@ -173,6 +188,9 @@ label bargaining_fr2_susurha:
 
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "I don't know. I'll let my Nana's spirit guide me.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
         
             vivi neutral "I don't know. I'll let my Nana's spirit guide me."
             susurha neutral "The spirit of your ancestors... Yes! Great idea!"
@@ -257,6 +275,9 @@ label bargaining_fr2_susurha:
         # OPTION 1 +ATTRACTION
         "It needs more spice.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+
             susurha neutral "It needs more spice."
             vivi neutral "Okay...I can work with that!"
             vivi neutral "Nana would want things spicy."
@@ -282,6 +303,9 @@ label bargaining_fr2_susurha:
 
         #OPTION 2 +DECAY
         "I think it's fine the way it is.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "I think it's fine the way it is."
             susurha neutral "There's no part of you that believes that."
@@ -299,6 +323,9 @@ label bargaining_fr2_susurha:
 
         #OPTION 3 >>DECAY +DECAY
         "Something?!":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi angry "Something?!"
             vivi angry "We get ONE SHOT to impress Urshu or we're stuck on this train forever, and you the only thing you can think of is that's it's missing \"something?!\""

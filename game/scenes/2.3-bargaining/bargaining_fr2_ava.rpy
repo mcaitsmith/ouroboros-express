@@ -27,6 +27,9 @@ label bargaining_fr2_ava:
         # OPTION 1 +ATTRACTION
         "I want to cook together...with you.":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+
             vivi neutral blush "I want to cook together... With you."
             vivi neutral blush "I bet we can whip up something really incredible."
             show ava happy blush with dissolve
@@ -42,6 +45,9 @@ label bargaining_fr2_ava:
         # OPTION 2 +DECAY
         "Urhsu asked me...":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi sad blush "Urshu asked me to cook something for everyone, so I figured we could do it together. What do you think?"
             ava neutral "We wish you would have asked us sooner. The sun is nearly gone today."
             vivi neutral "So...is that a yes?"
@@ -51,6 +57,9 @@ label bargaining_fr2_ava:
 
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "Be my sous chef! Together, we'll rule this train.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi neutral blush "Be my sous chef! Together, we'll rule this train."
             show ava surprised blush with dissolve
@@ -95,6 +104,9 @@ label bargaining_fr2_ava:
         # OPTION 1 +DECAY
         "Croquembouche.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi happy " Let's make the croquembouche you used to have at home. I'm sure it'll put us in a good mood."
             ava happy "Delightful. We shall gather the 74 ingredients required to make the dish."
             vivi surprised "74 ingredients? What is this, Masterchef?"
@@ -109,6 +121,9 @@ label bargaining_fr2_ava:
 
         # OPTION 2 +ATTRACTION
         "Something simple.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi happy "Something simple. A good old American breakfast!"
 
@@ -126,6 +141,9 @@ label bargaining_fr2_ava:
 
         # OPTION 3 +DECAY 
         "Soufflé.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Soufflé. I think I can remember the recipe from my class."
             ava happy "The last soufflé we ate was made with the highest quality eggs and milk on all of Soleos. We wonder how this will compare."
@@ -161,6 +179,9 @@ label bargaining_fr2_ava:
         # OPTION 1 +ATTRACTION
         "If we work together?": 
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+
             vivi neutral blush "Do you mind if we work together? I'm not the most comfortable in the kitchen."
             vivithinking "That's a lie. But I want her...near." 
             show ava happy blush with dissolve
@@ -174,6 +195,9 @@ label bargaining_fr2_ava:
 
         # OPTION 2 +DECAY
         "Beating the eggs and sifting the flour for me?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Do you mind beating the eggs and sifting the flour for me? I'll take care of the other stuff, and we can combine ingredients."
             ava neutral "We'll get right to it!"

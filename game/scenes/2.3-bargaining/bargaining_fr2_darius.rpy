@@ -27,6 +27,9 @@ label bargaining_fr2_darius:
         # OPTION 1 +ATTRACTION
         "Could I interest you in dinner?":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
+
             vivi neutral "Could I interest you in dinner?"
             show darius neutral blush with dissolve
             darius "Pardon me?"
@@ -40,6 +43,9 @@ label bargaining_fr2_darius:
         # OPTION 2 +DECAY
         "Can you help me with something for Urshu?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi neutral "Can you help me with something for Urshu? He asked me to make dinner for the group and I'd appreciate the extra hands."
             darius neutral "Urshu asked you?"
             vivi neutral "Yeah, why do you ask?"
@@ -51,6 +57,9 @@ label bargaining_fr2_darius:
 
         # OPTION 3 >>DECAY +DECAY
         "You want out of this place?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "You want out of this place? I may have your ticket, if you just help me out."
             darius angry "No."
@@ -87,6 +96,9 @@ label bargaining_fr2_darius:
         # OPTION 1 +DECAY
         "Better not leave my comfort zone.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             show vivi neutral at left
             vivithinking "Let's just make something simple. Urshu doesn't strike me as the extravagant type."
             vivi neutral "Let's make some chicken stir fry. I know a pretty easy recipe."
@@ -96,6 +108,9 @@ label bargaining_fr2_darius:
 
         # OPTION 2 +ATTRACTION
         "Screw it, let's go all out!":
+
+            play sound attchoice
+            $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
 
             show vivi neutral at left
 
