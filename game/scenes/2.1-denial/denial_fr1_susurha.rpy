@@ -124,6 +124,8 @@ label denial_fr1_susurha:
     # OPTION 2 +ATTRACTION
         "How could I not? I can't stop thinking about it.":
 
+            play sound attchoice
+
             vivi "How could I not? I can't stop thinking about it."
             susurha angry "Uh.... Wrong answer. Not quite what I was looking to hear. Thank you very much. Now please tell me that the next thing that you utter isn't just echoing..."
             vivi "I don't know. What if we are truly dead?"
@@ -154,6 +156,8 @@ label denial_fr1_susurha:
 
     # OPTION 1 +ATTRACTION
         "Are you okay?":
+
+            play sound attchoice
 
             vivi "Are you okay?"
             show susurha happy
