@@ -169,7 +169,7 @@ label depression_fr1_ava:
             
             
         # OPTION 3 >>ATTRACTION +ATTRACTION
-        "...made a commitment to someone.":
+        "...made a commitment to someone." if att_meter_ava >= 50:
 
             play sound attchoice
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])

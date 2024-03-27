@@ -56,7 +56,7 @@ label bargaining_fr2_darius:
             # JUMP TO: vivi neutral "So, my sous chef, what shall we prepare?"
 
         # OPTION 3 >>DECAY +DECAY
-        "You want out of this place?":
+        "You want out of this place?" if dec_meter > 20:
 
             play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
@@ -129,7 +129,7 @@ label bargaining_fr2_darius:
             # JUMP TO: # SOUND: cooking
 
         # OPTION 3 >>ATTRACTION
-        "Desperate times call for desperate measures.":
+        "Desperate times call for desperate measures." if att_meter_darius >= 40:
 
             show vivi neutral at left
 

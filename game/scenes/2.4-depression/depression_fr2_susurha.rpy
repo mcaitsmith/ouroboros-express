@@ -37,7 +37,7 @@ label depression_fr2_susurha:
             #JUMP TO: vivithinking "It feels so warm being next to them."
         
         #OPTION 2 >>ATTRACTION +ATTRACTION
-        "I also needed to see a friendly face.":
+        "I also needed to see a friendly face." if att_meter_susurha >= 50:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
@@ -50,7 +50,7 @@ label depression_fr2_susurha:
             # JUMP TO: vivithinking "It feels so warm being next to them."
 
         #OPTION 3 >>DECAY +ATTRACTION
-        "I don't...know why.":
+        "I don't...know why." if dec_meter >= 40:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
@@ -163,7 +163,7 @@ label depression_fr2_susurha:
                 
 
         #OPTION 2 >>DECAY +ATTRACTION
-        "I get what you mean.":
+        "I get what you mean." if dec_meter >= 45:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
@@ -176,7 +176,7 @@ label depression_fr2_susurha:
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
-        "Nothing can take away who you are.":
+        "Nothing can take away who you are." if att_meter_susurha >= 60:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
@@ -192,7 +192,7 @@ label depression_fr2_susurha:
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
         #OPTION 4 >>DECAY +DECAY
-        "I know who I am.":
+        "I know who I am." if dec_meter >= 50:
 
             play sound decchoice
             $ dec_meter += int(dec_max_depression / dec_num_depression)

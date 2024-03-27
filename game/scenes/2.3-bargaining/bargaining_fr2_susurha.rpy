@@ -74,7 +74,7 @@ label bargaining_fr2_susurha:
 
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
-        "She was a hustler. She knew how to get what she wanted.":
+        "She was a hustler. She knew how to get what she wanted." if att_meter_susurha >= 30:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
@@ -187,7 +187,7 @@ label bargaining_fr2_susurha:
             # JUMP TO: vivi happy "Yeah! Let's make some magic happen." 
 
         # OPTION 3 >>ATTRACTION +ATTRACTION
-        "I don't know. I'll let my Nana's spirit guide me.":
+        "I don't know. I'll let my Nana's spirit guide me." if att_meter_susurha >= 40:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
@@ -322,7 +322,7 @@ label bargaining_fr2_susurha:
             # JUMP TO: vivi neutral "Let's serve this up!" 
 
         #OPTION 3 >>DECAY +DECAY
-        "Something?!":
+        "Something?!" if dec_meter >= 30:
 
             play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)

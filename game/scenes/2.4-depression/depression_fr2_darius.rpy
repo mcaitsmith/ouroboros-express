@@ -66,7 +66,7 @@ label depression_fr2_darius:
             # JUMP TO: vivi surprised "What do you mean by that?"
 
         # OPTION 4 >>ATTRACTION
-        "If this is the last conversation I'm ever to have, I'm grateful to have it with you.":
+        "If this is the last conversation I'm ever to have, I'm grateful to have it with you." if att_meter_darius >= 60:
 
             vivi neutral blush "If this is the last conversation I'm ever to have, I'm grateful to have it with you."
             show darius neutral blush with dissolve
@@ -84,7 +84,7 @@ label depression_fr2_darius:
             # JUMP TO: vivi surprised "What do you mean by that?"
 
         # OPTION 5 >>DECAY
-        "Do you see them, Darius?":
+        "Do you see them, Darius?" if dec_meter >= 50:
 
             vivi neutral "Do you see them, Darius?"
             darius surprised "I do. You do, as well?"

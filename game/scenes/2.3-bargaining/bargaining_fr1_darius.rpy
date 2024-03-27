@@ -125,7 +125,7 @@ label bargaining_fr1_darius:
             # JUMP TO: vivi neutral "I think I'll be going now. Thank you for the insight."
 
         #OPTION 3 >>ATTRACTION
-        "Sounds like you've had experience.":
+        "Sounds like you've had experience." if att_meter_darius >= 20:
 
             vivi sad "Sounds like you've had experience."
             darius sad "In suffering? More than you know, but still less than the amount I've caused."

@@ -53,7 +53,7 @@ label depression_fr2_ava:
             # JUMP TO: ava sad "Vivi..."
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
-        "I wish I could have been there for you.":
+        "I wish I could have been there for you." if att_meter_ava >= 50:
 
             play sound attchoice
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
@@ -101,7 +101,7 @@ label depression_fr2_ava:
 
 
         #OPTION 3 >>ATTRACTION (+ATTRACTION?)
-        "If only I had known you in life.":
+        "If only I had known you in life." if att_meter_ava >= 55:
 
             play sound attchoice
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
@@ -138,7 +138,7 @@ label depression_fr2_ava:
     menu:
 
         #OPTION 1 >>ATTRACTION (+ATTRACTION)
-        "My family moved around a lot...":
+        "My family moved around a lot..." if att_meter_ava >= 60:
 
             play sound attchoice
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
@@ -162,7 +162,7 @@ label depression_fr2_ava:
 
 
         #OPTION 2 >>DECAY (+DECAY?)
-        "I wrote this haiku in school once.":
+        "I wrote this haiku in school once." if dec_meter >= 50:
 
             play sound decchoice
             $ dec_meter += int(dec_max_depression / dec_num_depression)

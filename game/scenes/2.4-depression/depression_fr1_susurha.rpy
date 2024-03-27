@@ -101,7 +101,7 @@ label depression_fr1_susurha:
             #JUMP TO: susurha happy "My turn."
 
         #OPTION 3 >>DECAY +ATTRACTION
-        "I don't know.":
+        "I don't know." if dec_meter >= 35:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
@@ -122,7 +122,7 @@ label depression_fr1_susurha:
             #JUMP TO: susurha happy "My turn."
 
         #OPTION 4 >>DECAY +DECAY
-        "Can we just sit and drink?":
+        "Can we just sit and drink?" if dec_meter >= 40:
 
             play sound decchoice
             $ dec_meter += int(dec_max_depression / dec_num_depression)
@@ -161,7 +161,7 @@ label depression_fr1_susurha:
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
 
         #OPTION 2 >>ATTRACTION +ATTRACTION
-        "Possibly, recently.":
+        "Possibly, recently." if att_meter_susurha >= 60:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])

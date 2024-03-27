@@ -56,7 +56,7 @@ label bargaining_fr2_ava:
             # JUMP TO: ava neutral "So what shall we make, then?"
 
         # OPTION 3 >>ATTRACTION +ATTRACTION
-        "Be my sous chef! Together, we'll rule this train.":
+        "Be my sous chef! Together, we'll rule this train." if att_meter_ava >= 40:
 
             play sound attchoice
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])

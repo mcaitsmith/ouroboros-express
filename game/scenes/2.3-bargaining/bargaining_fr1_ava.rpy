@@ -47,7 +47,7 @@ label bargaining_fr1_ava:
             # JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
         # OPTION 2 >>ATTRACTION +ATTRACTION
-        "If you could redo a past event, what would it be?":
+        "If you could redo a past event, what would it be?" if att_meter_ava >= 20:
 
             play sound attchoice
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])

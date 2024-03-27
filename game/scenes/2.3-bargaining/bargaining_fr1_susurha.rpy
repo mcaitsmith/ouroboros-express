@@ -48,7 +48,7 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivithinking "I need to discover more about Urshu if I'm to have any hope of keeping up my end of the deal."
     
         # OPTION 2 >>DECAY +DECAY
-        "He just seems like such an enigmatic character.":
+        "He just seems like such an enigmatic character." if dec_meter >= 10:
 
             play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
@@ -202,7 +202,7 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivi neutral "I still need to try at least."
 
         # OPTION 4 >>ATTRACTION +ATTRACTION
-        "Urshu is quite the slimy freak.":
+        "Urshu is quite the slimy freak." if att_meter_susurha >= 30:
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
@@ -226,7 +226,7 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivi neutral "I still need to try at least."
 
         # OPTION 5 >>DECAY +DECAY
-        "I NEED his help if I'm gonna get off this train.":
+        "I NEED his help if I'm gonna get off this train." if dec_meter >= 15:
 
             play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
