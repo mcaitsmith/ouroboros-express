@@ -1,0 +1,18 @@
+﻿# The scene starts here.
+
+label epi_friend_susurha:
+
+    #Epilogue/Friendship/Susu'Rha Balrinn
+    #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective  and they'll be against a plain, bright background.
+
+    # LOCATION: terminalofdreams
+    scene white with dissolve
+
+    show susurha happy at center with dissolve
+
+    urshu happy "Susu'Rha, desirous of a life of their own design, broke the chains of expectation and eschewed their royal title, opting instead for a life of anarchic expression in the Viridian Wood."
+    urshu happy "When the generational curse of war pulled them back, they found themself aboard the Ouroboros Express--and with you, Vivi."
+    urshu happy "Just as they helped you shatter the artifice that kept you from embodying your true essence, you helped them leave their past...in the past."
+    urshu happy "Now they can again sing songs and imbibe of endless joy in the world beyond the Terminal."
+
+    return
