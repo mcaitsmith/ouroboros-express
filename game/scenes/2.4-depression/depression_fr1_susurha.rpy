@@ -60,6 +60,9 @@ label depression_fr1_susurha:
         #OPTION 1 +ATTRACTION
         "Been engaged.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
+
             vivi "Been engaged."
             susurha "Hmmm..."
             susurha "I believe this is called 'Beginner's luck.' You've got me there."
@@ -78,6 +81,9 @@ label depression_fr1_susurha:
         #OPTION 2 +DECAY
         "Led a kingdom.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi "Led a kingdom."
             susurha "Hmm... Got me there I suppose."
             susurha "Bottoms up."
@@ -94,6 +100,9 @@ label depression_fr1_susurha:
 
         #OPTION 3 >>DECAY +ATTRACTION
         "I don't know.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
                 
             vivi "I don't know."
             susurha "Boooo..."
@@ -113,6 +122,9 @@ label depression_fr1_susurha:
         #OPTION 4 >>DECAY +DECAY
         "Can we just sit and drink?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi "Can we just sit and drink?"
             vivithinking "I don't know if I have any more games left in me."
             susurha angry "Hmmm..."
@@ -127,6 +139,9 @@ label depression_fr1_susurha:
 
         #OPTION 1 +ATTRACTION
         "No.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "No."
             susurha surprised "Really?"
@@ -146,6 +161,9 @@ label depression_fr1_susurha:
         #OPTION 2 >>ATTRACTION +ATTRACTION
         "Possibly, recently.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
+
             vivi blush "Possibly, recently."
             susurha surprised "Oh... Do tell me more, madam."
             vivithinking "Do I tell them? Do I not?"
@@ -159,6 +177,9 @@ label depression_fr1_susurha:
 
         #OPTION 3 +DECAY
         "I've had plenty of lovers.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I've had plenty of lovers."
             susurha "I'm sure. A woman such as yourself, but..."

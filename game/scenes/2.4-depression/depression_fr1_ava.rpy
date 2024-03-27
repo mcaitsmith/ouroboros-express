@@ -53,6 +53,9 @@ label depression_fr1_ava:
     menu: 
         # OPTION 1 +DECAY
         "...play a game?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
         
             vivi neutral "...play a game?"
             ava "We will be no more tomorrow and you want to play games."
@@ -62,6 +65,14 @@ label depression_fr1_ava:
         # OPTION 2 +ATTRACTION +DECAY
         "...drink our feelings away?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
+
+            pause 0.5
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi neutral "...drink our feelings away?"
             ava "We accept. Our feelings weigh heavily on us."
             vivi "Then maybe we can play a fun game?"
@@ -70,6 +81,9 @@ label depression_fr1_ava:
         
         # OPTION 3 +ATTRACTION
         "...sneak behind the bar for two top-shelf top-offs?":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi happy "...sneak behind the bar for two top shelf top offs?"
             ava happy "We were unaware you were this naughty, Vivi."
@@ -101,6 +115,9 @@ label depression_fr1_ava:
         # OPTION 1 +DECAY
         "...had a pet.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi sad "...had a pet."
             ava "Do we drink if we have?"
             vivi "Exactly."
@@ -120,6 +137,9 @@ label depression_fr1_ava:
 
         # OPTION 2 +ATTRACTION
         "...flirted with a goddess. Or the avatar, or whatever.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi happy "...flirted with a goddess. Or the avatar, or whatever."
             # ??ATTRACTION
@@ -144,6 +164,9 @@ label depression_fr1_ava:
             
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "...made a commitment to someone.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi sad "...made a commitment to someone."
             ava sad "We do not drink then." 
