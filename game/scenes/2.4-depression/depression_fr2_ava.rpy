@@ -117,7 +117,7 @@ label depression_fr2_ava:
     # <CHOICE>
     menu:
 
-        #OPTION 1 >>ATTRACTION (+ATTRACTION?)
+        #OPTION 1 >>ATTRACTION (+ATTRACTION)
         "My family moved around a lot...":
 
             vivi neutral "My family moved around a lot, from country to country."
