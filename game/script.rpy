@@ -105,7 +105,8 @@ label start:
 
     # jump to first scene
     # jump introduction
-    jump good_briefing
+    # jump good_briefing
+    jump bad_waking_up
 
     # # This ends the game.
 
