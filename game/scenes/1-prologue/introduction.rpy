@@ -15,8 +15,13 @@ label introduction:
 
     show vivi neutral at left with dissolve
 
-    vivithinking surprised "Notepad, check. Pen, check. Laptop... Ugh, I swear I charged it. Phone... Dead too? Typical.. Hundreds of interviews and still I make amateur mistakes. This is an important story!"
 
+    vivithinking surprised "Notepad, check. Pen, check. Laptop... Ugh, I swear I charged it. Phone... Dead too? Typical.. Hundreds of interviews and still I make amateur mistakes. This is an important story!"
+    show screen journal with dissolve
+    vivithinking "I should write something to the journal."
+    python :
+        journal_array.append(renpy.input("What should I write:", length = 256))
+    show screen journal with dissolve
     vivi neutral "..."
 
     vivithinking neutral "At least, I think it is."

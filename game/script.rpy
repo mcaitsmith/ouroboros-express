@@ -91,6 +91,7 @@ transform center_right:
     xpos 0.5
 transform bright:
     matrixcolor BrightnessMatrix (0.75)
+#Journal screen
 
 # The game starts here.
 
@@ -98,7 +99,7 @@ default quest = Manager()
 # define _scene_show_hide_transition = Dissolve(0.25)
 
 label start:
-
+    call journal 
     call sounds from _call_sounds # define sounds
 
     play music mainmusic volume 0.5 # start main track
