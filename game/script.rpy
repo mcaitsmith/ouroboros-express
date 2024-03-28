@@ -100,7 +100,7 @@ transform bright:
 label start:
 
     call sounds from _call_sounds # define sounds
-    call meters # define meter variables
+    call meters from _call_meters # define meter variables
 
     play music mainmusic volume 0.5 # start main track
 
