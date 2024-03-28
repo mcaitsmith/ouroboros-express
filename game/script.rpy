@@ -99,10 +99,10 @@ transform bright:
 #default quest = Manager()
 
 label start:
-    call journal 
+    
     call sounds from _call_sounds # define sounds
     call meters from _call_meters # define meter variables
-
+    call journal 
     play music mainmusic volume 0.5 # start main track
 
     # jump to first scene
