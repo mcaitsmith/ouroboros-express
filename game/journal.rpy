@@ -86,6 +86,9 @@ label journal:
             elif att_meter_darius <= 100:
                 text "{size=16}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/size}" :
                     xalign 0.78 yalign 0.08
+        elif att_meter_darius > 100:
+            text "{size=16}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/size}" :
+                xalign 0.78 yalign 0.08
         #determine ava note
         if att_meter_ava >= 0 and att_meter_ava <= 100 :
             
@@ -107,6 +110,9 @@ label journal:
             elif att_meter_ava <= 100:
                 text "{size=16}{color=#000000}A new sun rises… \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/size}" :
                     xalign 0.78 yalign 0.32
+        elif att_meter_ava > 100:
+            text "{size=16}{color=#000000}A new sun rises… \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/size}" :
+                xalign 0.78 yalign 0.32
         # determine susurha note
         if att_meter_susurha >= 0 and att_meter_susurha <= 100 :
             if att_meter_susurha == 0:
@@ -124,9 +130,12 @@ label journal:
             elif att_meter_susurha <= 80:
                 text "{size=16}{color=#000000}I feel you, Susu’Rha. \nI also isolated myself \nfrom my family. \nIs this fate?{/color}{/size}" :
                     xalign 0.78 yalign 0.55
-            elif att_meter_susurha <= 100:
+            elif att_meter_susurha <= 100 :
                 text "{size=16}{color=#000000}I knew this as \na kid–dragons aren’t \nscary! They’re based!{/color}{/size}" :
                     xalign 0.78 yalign 0.55
+        elif att_meter_susurha > 100:
+            text "{size=16}{color=#000000}I knew this as \na kid–dragons aren’t \nscary! They’re based!{/color}{/size}" :
+                xalign 0.78 yalign 0.55
            
     return
 # display journal on screen
