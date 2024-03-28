@@ -49,9 +49,12 @@ label depression_fr1_ava:
     vivi neutral "So how about we..."
 
     # DECAY ROUTE
-    ava sad "We misspoke. We wish to drink alone."
-    vivi "Well then. See ya, sunshine."
-    # JUMP TO: vivithinking "What are the others doing, I wonder?"
+    if dec_meter >= 40:
+        play sound decchoice
+        ava sad "We misspoke. We wish to drink alone."
+        vivi "Well then. See ya, sunshine."
+        # JUMP TO: vivithinking "What are the others doing, I wonder?"
+        jump dep_fr1_ava_end
 
     menu: 
         # OPTION 1 +DECAY
@@ -110,10 +113,13 @@ label depression_fr1_ava:
     vivi neutral "Never have I ever..."
 
     # DECAY ROUTE
-    ava sad "We misspoke. We wish to drink alone."
-    vivithinking "Up yours, snooty patootie."
-    vivi "Well then. See ya, sunshine."
-    # JUMP TO: vivithinking "What are the others doing, I wonder?"
+    if dec_meter >= 40:
+        play sound decchoice
+        ava sad "We misspoke. We wish to drink alone."
+        vivithinking "Up yours, snooty patootie."
+        vivi "Well then. See ya, sunshine."
+        # JUMP TO: vivithinking "What are the others doing, I wonder?"
+        jump dep_fr1_ava_end
 
     menu: 
         # OPTION 1 +DECAY
@@ -201,7 +207,9 @@ label depression_fr1_ava:
             vivi "See ya, Asha."
             #JUMP TO: vivithinking "What are the others doing, I wonder?"
 
-    vivithinking "What are the others doing, I wonder?"
+    label dep_fr1_ava_end:
 
-    # JUMP TO: Character Selector 2
-    jump depression_cs2
+        vivithinking "What are the others doing, I wonder?"
+
+        # JUMP TO: Character Selector 2
+        jump depression_cs2

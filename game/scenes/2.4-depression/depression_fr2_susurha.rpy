@@ -17,7 +17,10 @@ label depression_fr2_susurha:
     susurha "Ah. Vivacious Vivi. What brings you to me in these final moments?"
 
     # ??DECAY (DECAY ROUTE?)
-    vivi "Don't know. You're not boring."
+    if dec_meter >= 50:
+        play sound decchoice
+        vivi "Don't know. You're not boring."
+        jump dep_fr2_susu_end
     #END
 
     # <CHOICE>
@@ -215,28 +218,30 @@ label depression_fr2_susurha:
 
     susurha "The only thing worse than being alone is never being at all."
 
-    #DECAY ROUTE (??DECAY)
-    #SAL'S NOTE: Lines below are supposed to be a DECAY ending of the scene.
-    if dec_meter >= 50:
-        vivi "Everything will turn out for the best."
-        susurha "You lie to yourself so easily."
-        susurha "I hope there is someone behind that mask."
-        susurha "Even if you don't show them to me."
-        vivithinking "I..."
-        vivithinking "I think I have had enough of this."
-        vivi "Good night."
-        susurha "Rest easy, Vivi."
-    # END
+    label dep_fr2_susu_end:
 
-    #SAL'S NOTE: Lines below show if decay is NOT high
-    # ELSE
-    else:
-        vivi "We can sit here for a little while longer."
-        vivi "And watch the cosmos fly by."
-        show susurha neutral blush with dissolve
-        susurha "I'd love that."
-        vivithinking "In its own strange way, the view sure is beautiful from here."
-    # END
+        #DECAY ROUTE (??DECAY)
+        #SAL'S NOTE: Lines below are supposed to be a DECAY ending of the scene.
+        if dec_meter >= 50:
+            vivi "Everything will turn out for the best."
+            susurha "You lie to yourself so easily."
+            susurha "I hope there is someone behind that mask."
+            susurha "Even if you don't show them to me."
+            vivithinking "I..."
+            vivithinking "I think I have had enough of this."
+            vivi "Good night."
+            susurha "Rest easy, Vivi."
+        # END
 
-    #JUMP to Debrief Depression
-    jump depression_debrief
+        #SAL'S NOTE: Lines below show if decay is NOT high
+        # ELSE
+        else:
+            vivi "We can sit here for a little while longer."
+            vivi "And watch the cosmos fly by."
+            show susurha neutral blush with dissolve
+            susurha "I'd love that."
+            vivithinking "In its own strange way, the view sure is beautiful from here."
+        # END
+
+        #JUMP to Debrief Depression
+        jump depression_debrief

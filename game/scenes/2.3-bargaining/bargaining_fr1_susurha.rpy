@@ -128,8 +128,11 @@ label bargaining_fr1_susurha:
     susurha neutral "And all I know is that bargaining with Boskala Nah was useless." 
     
     # DECAY ROUTE
-    susurha neutral "Try not to burn yourself, Vivienne."
-    # JUMP TO: Character Selector 2
+    if dec_meter >= 10:
+        play sound decchoice
+        susurha neutral "Try not to burn yourself, Vivienne."
+        # JUMP TO: Character Selector 2
+        jump bargaining_cs2
 
     menu:
         # OPTION 1 +ATTRACTION

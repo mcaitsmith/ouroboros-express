@@ -82,8 +82,11 @@ label bargaining_fr1_ava:
             vivithinking "Damn! Which one's the worst?!"
 
             # DECAY ROUTE
-            vivi surprised "Which one—?"
-            ava angry "We have no answer."
+            if dec_meter >= 10:
+                play sound decchoice
+                vivi surprised "Which one—?"
+                ava angry "We have no answer."
+                jump barg_fr1_ava_end
 
             menu:
                 # OPTION 1 +DECAY
@@ -192,9 +195,11 @@ label bargaining_fr1_ava:
 
             # JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
-    vivi neutral blush "It's always memorable talking with you, Asha."
-    ava neutral "And with you. Goodbye, Vivienne. The All is the One."
-    vivithinking "That sure was...something."
+    label barg_fr1_ava_end:
 
-    # JUMP TO: Character Selector 2
-    jump bargaining_cs2
+        vivi neutral blush "It's always memorable talking with you, Asha."
+        ava neutral "And with you. Goodbye, Vivienne. The All is the One."
+        vivithinking "That sure was...something."
+
+        # JUMP TO: Character Selector 2
+        jump bargaining_cs2
