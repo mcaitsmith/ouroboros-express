@@ -27,23 +27,30 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "Who or what is our mysterious train conductor?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi neutral "Who or what is our mysterious train conductor?"
             ava neutral "He is known by many names, the conveyor of souls. Charon? Urshu? Anubis? The trickster Hermes seems fitting, no?"
             vivi neutral "Think we can convince him to let us off this death train?"
             ava sad "We know the will of the gods, Vivienne."
 
             # ??DECAY
-            vivi sad "Well, I guess you would, huh? So in layman's terms for me?" 
-            ava sad "We are like a dog chasing its tail, round and round. Catch the tail, and you shall know their will."
-            vivi sad "So no? The answer is no?"
-            ava sad "Correct." 
-            ava sad "The stars would all burn out first."
+            if dec_meter > 10:
+                vivi sad "Well, I guess you would, huh? So in layman's terms for me?" 
+                ava sad "We are like a dog chasing its tail, round and round. Catch the tail, and you shall know their will."
+                vivi sad "So no? The answer is no?"
+                ava sad "Correct." 
+                ava sad "The stars would all burn out first."
             # END
 
             # JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
         # OPTION 2 >>ATTRACTION +ATTRACTION
-        "If you could redo a past event, what would it be?":
+        "If you could redo a past event, what would it be?" if att_meter_ava >= 20:
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
             vivi neutral "If you could redo a past event, what would it be?"
             vivi neutral "Or I guess to be more specific, if you could change something that might have caused this, what would you do?"
@@ -64,6 +71,9 @@ label bargaining_fr1_ava:
         # OPTION 3 +ATTRACTION
         "That was a big sigh. Pebble in your sandal, Asha?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+
             vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
             ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men, even Tears."
             show vivi surprised at left
@@ -72,12 +82,18 @@ label bargaining_fr1_ava:
             vivithinking "Damn! Which one's the worst?!"
 
             # DECAY ROUTE
-            vivi surprised "Which one—?"
-            ava angry "We have no answer."
+            if dec_meter >= 10:
+                play sound decchoice
+                vivi surprised "Which one—?"
+                ava angry "We have no answer."
+                jump barg_fr1_ava_end
 
             menu:
                 # OPTION 1 +DECAY
                 "No family?":
+
+                    play sound decchoice
+                    $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
                     vivi surprised "No family?"
                     ava sad "Our mother gave us to Asha at birth, then sent us back."
@@ -89,6 +105,9 @@ label bargaining_fr1_ava:
                 
                 #OPTION 2 +ATTRACTION
                 "No name?":
+
+                    play sound attchoice
+                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No name?"
                     ava sad "We speak for our people, so we are all, and we are one."
@@ -111,17 +130,21 @@ label bargaining_fr1_ava:
                 # OPTION 3 +ATTRACTION
                 "No tears?":
 
+                    play sound attchoice
+                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+
                     vivi surprised "No tears?"
                     ava sad "We have felt the onset once, but no. We have never cried."
                     vivithinking "That explains a lot!"
 
                     # ??ATTRACTION
-                    vivi neutral "What happened the time you almost cried?"
-                    ava sad "A serving girl in the palace. We tried to befriend her."
-                    vivi angry "Don't tell me something awful happened to you!"
-                    show ava sad blush with dissolve
-                    ava "No. Far worse. We never saw her again."
-                    show ava sad -blush
+                    if att_meter_ava >= 15:
+                        vivi neutral "What happened the time you almost cried?"
+                        ava sad "A serving girl in the palace. We tried to befriend her."
+                        vivi angry "Don't tell me something awful happened to you!"
+                        show ava sad blush with dissolve
+                        ava "No. Far worse. We never saw her again."
+                        show ava sad -blush
                     # END
 
                     vivi sad "I'm so sorry, Asha. That really sucks."
@@ -137,16 +160,20 @@ label bargaining_fr1_ava:
                 #OPTION 4 +ATTRACTION
                 "No men?":
 
+                    play sound attchoice
+                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+
                     vivi surprised "No men?"
                     ava happy "We never had one, but we knew many women."
                     vivithinking "Whoa! Did I underestimate Her Radiance?"
                     ava happy "When we went to lands run by women, our diplomacy always prevailed, no matter the tongue."
 
-                    # ?? ATTRACTION
-                    # SOUND: heartbeat
-                    play sound heartbeat
-                    vivithinking "I think my pulse is pounding louder than the train. Wait! Is...she...flirting with me?"
-                    stop sound fadeout 1.0
+                    # ??ATTRACTION
+                    if att_meter_ava >= 25:
+                        # SOUND: heartbeat
+                        play sound heartbeat
+                        vivithinking "I think my pulse is pounding louder than the train. Wait! Is...she...flirting with me?"
+                        stop sound fadeout 1.0
                     # END
 
                     vivi happy blush "Well, practice makes perfect, right?"
@@ -160,16 +187,19 @@ label bargaining_fr1_ava:
             vivi happy "I'm glad you made the most of it."
 
             # ??ATTRACTION
-            show ava happy blush with dissolve
-            ava "We sighed differently then. And we sigh looking at you now."
-            show ava neutral -blush
+            if att_meter_ava >= 40:
+                show ava happy blush with dissolve
+                ava "We sighed differently then. And we sigh looking at you now."
+                show ava neutral -blush
             # END
 
             # JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
-    vivi neutral blush "It's always memorable talking with you, Asha."
-    ava neutral "And with you. Goodbye, Vivienne. The All is the One."
-    vivithinking "That sure was...something."
+    label barg_fr1_ava_end:
 
-    # JUMP TO: Character Selector 2
-    jump bargaining_cs2
+        vivi neutral blush "It's always memorable talking with you, Asha."
+        ava neutral "And with you. Goodbye, Vivienne. The All is the One."
+        vivithinking "That sure was...something."
+
+        # JUMP TO: Character Selector 2
+        jump bargaining_cs2

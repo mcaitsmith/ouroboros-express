@@ -95,18 +95,15 @@ transform bright:
 
 # The game starts here.
 
-default quest = Manager()
-# define _scene_show_hide_transition = Dissolve(0.25)
+# commenting out since not used yet
+#default quest = Manager()
 
 label start:
     call journal 
     call sounds from _call_sounds # define sounds
+    call meters from _call_meters # define meter variables
 
     play music mainmusic volume 0.5 # start main track
 
     # jump to first scene
     jump introduction
-
-    # # This ends the game.
-
-    # return

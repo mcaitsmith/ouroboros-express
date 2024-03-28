@@ -18,12 +18,15 @@ label romance_cs:
 
         # show all characters happy that have a high attraction meter.
         # ??ATTRACTION
-        show ava happy at left with dissolve:
-            xzoom -1.0
+        if att_meter_ava >= romance_threshold:
+            show ava happy at left with dissolve:
+                xzoom -1.0
         # ??ATTRACTION
-        show darius happy at center with dissolve
+        if att_meter_darius >= romance_threshold:
+            show darius happy at center with dissolve
         # ??ATTRACTION
-        show susurha happy at right with dissolve
+        if att_meter_susurha >= romance_threshold:
+            show susurha happy at right with dissolve
 
         #hide all characters
 
@@ -38,7 +41,7 @@ label romance_cs:
 
             menu:
             # OPTION1 ??ATTRACTION
-                "Avatar of Asha" if ava_confess == False:
+                "Avatar of Asha" if att_meter_ava >= romance_threshold and ava_confess == False:
 
                     $ ava_confess = True
 
@@ -51,7 +54,7 @@ label romance_cs:
                     jump confession_ava
 
             # OPTION 7 ??ATTRACTION
-                "I want to be with Ava" if ava_confess == True and ava_friend == False:
+                "I want to be with Ava" if att_meter_ava >= romance_threshold and ava_confess == True and ava_friend == False:
 
                     vivithinking happy "I think the answer is clear. I want to be with Ava." 
                     vivithinking happy blush "She is the one for me."
@@ -60,7 +63,7 @@ label romance_cs:
                     jump romance_ava
 
             # OPTION 2 ??ATTRACTION
-                "Darius Wrecker" if darius_confess == False:
+                "Darius Wrecker" if att_meter_darius >= romance_threshold and darius_confess == False:
 
                     $ darius_confess = True
 
@@ -73,7 +76,7 @@ label romance_cs:
                     jump confession_darius
 
             # OPTION 8 ??ATTRACTION
-                "I want to be with Darius" if darius_confess == True and darius_friend == False:
+                "I want to be with Darius" if att_meter_darius >= romance_threshold and darius_confess == True and darius_friend == False:
 
                     vivithinking happy "Darius. It's always been Darius. They are my other half."
                     vivithinking happy blush "They're the one for me."
@@ -82,7 +85,7 @@ label romance_cs:
                     jump romance_darius
 
             # OPTION 3 ??ATTRACTION
-                "Susu'Rha Balrinn" if susurha_confess == False:
+                "Susu'Rha Balrinn" if att_meter_susurha >= romance_threshold and susurha_confess == False:
 
                     $ susurha_confess = True
 
@@ -95,7 +98,7 @@ label romance_cs:
                     jump confession_susurha
 
             # OPTION 9 ??ATTRACTION
-                "I want to be with Susu'Rha" if susurha_confess == True and susurha_friend == False:
+                "I want to be with Susu'Rha" if att_meter_susurha >= romance_threshold and susurha_confess == True and susurha_friend == False:
 
                     vivithinking happy "I don't know why it's taken me so long to figure it out, but now I know for sure." 
                     vivithinking happy blush "Susu'Rha is the one I love."
@@ -106,7 +109,7 @@ label romance_cs:
             # NOTE options 4,5,6 are if a character is missing from the scene. It would replace the corresponding character option above.
 
             # OPTION 4 ??ATTRACTION (ELSE)
-                "Where's the goddess?":
+                "Where's the goddess?" if not att_meter_ava >= romance_threshold:
 
                     vivi surprised "Wait, where's the goddess?"
 
@@ -121,7 +124,7 @@ label romance_cs:
                     jump end_choice
 
             # OPTION 5 ??ATTRACTION (ELSE)
-                "Where's Darius?":
+                "Where's Darius?" if not att_meter_darius >= romance_threshold:
             
                     vivi surprised "Wait, where's Darius?"
 
@@ -137,7 +140,7 @@ label romance_cs:
 
 
             # OPTION 6 ??ATTRACTION (ELSE)
-                "Where's Susu'Rha?":
+                "Where's Susu'Rha?" if not att_meter_susurha >= romance_threshold:
             
                     vivi surprised "Wait, where's Susu'Rha?"
 

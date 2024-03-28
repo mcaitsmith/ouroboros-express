@@ -41,6 +41,8 @@ label denial_fr2_ava:
     # OPTION 2 +ATTRACTION
         "Maybe we all matter, Asha.":
 
+            play sound attchoice
+
             vivi neutral "Maybe we all matter, Asha,"
             vivi sad "Maybe we're all just specks of sand on a cosmic beach."
             vivi sad "Our lives only have the value we give it. Yours. Mine. Theirs."
@@ -55,6 +57,8 @@ label denial_fr2_ava:
 
     # OPTION 3 +ATTRACTION
         "Asha, respectfully, I disagree with you.":
+
+            play sound attchoice
 
             vivi neutral "Asha, respectfully, I disagree with you."
             vivi neutral "Humans have identities, lives, and belief systems. Like you. We're complex. Like you. And you're no goddess. You're just a woman calling herself one."
@@ -109,6 +113,8 @@ label denial_fr2_ava:
     #OPTION 2 +ATTRACTION
         "Terrifying. I can't imagine how it feels.":
 
+            play sound attchoice
+
             vivi sad "Terrifying. I can't imagine how it feels."
             ava sad "A circular void haunts my every thought. We fear it."
             show urshu happy at left
@@ -130,6 +136,8 @@ label denial_fr2_ava:
     menu:
         #OPTION 1 +ATTRACTION
         "Can we get out of here?":
+
+            play sound attchoice
 
             vivi surprised "Can we get out of here?"
             show urshu neutral at left

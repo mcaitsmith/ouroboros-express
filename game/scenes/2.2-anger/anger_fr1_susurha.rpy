@@ -39,15 +39,21 @@ label anger_fr1_susurha:
     vivithinking neutral "Provocative. This one's certainly not boring." 
 
     menu:
-        # OPTION 1 +Attraction
+        # OPTION 1 +ATTRACTION
         "I'll play.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
         
             vivi neutral "I'll play"
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
-        # OPTION 2 +Decay
+        # OPTION 2 +DECAY
         "I'd be revealing too much.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "I'd be revealing too much."
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
@@ -66,8 +72,11 @@ label anger_fr1_susurha:
 
 
     menu:
-        # OPTION 1 +Attraction
+        # OPTION 1 +ATTRACTION
         "Everyone hides something. I'm no exception.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
 
             vivi neutral blush "Everyone hides something. I'm no exception."
             susurha neutral "I'm the exception. All of my pretense has been burned away."
@@ -82,6 +91,10 @@ label anger_fr1_susurha:
 
             # OPTION 2 +DECAY
         "Me? Hiding? What about you?!":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
+
             vivi angry "Me? Hiding? What about you?! What exactly are YOU hiding behind those beady eyes?"
             susurha surprised "Deflection!"
             susurha surprised "A keen observer of everything but yourself."                            
@@ -101,6 +114,9 @@ label anger_fr1_susurha:
     menu:
         #OPTION 1 +ATTRACTION
         "I am angry.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
 
             vivi angry "I am angry."
             vivithinking angry "And the cocky bastard leans back in their chair with a smile too. Right on cue..."
@@ -127,6 +143,9 @@ label anger_fr1_susurha:
 
         #OPTION 2 +DECAY
         "You're the one who's angry.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi angry "You're the one who's angry."
             susurha happy "Again, you're deflecting."

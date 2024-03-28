@@ -12,22 +12,22 @@ label bargaining_meal_reveal:
     # show [INSERT NPC] happy at left
     #Sal's note: INSERT NPC means: The NPC chosen in Character Selector 2
     if fr2_bargaining_choice == "Ava":
-        call show_ava
+        call show_ava from _call_show_ava
     elif fr2_bargaining_choice == "Darius":
-        call show_darius
+        call show_darius from _call_show_darius
     elif fr2_bargaining_choice == "Susu'Rha":
-        call show_susurha
+        call show_susurha from _call_show_susurha
 
     vivithinking "Okay, this is it. Time to show Urshu what we got."  
     vivithinking "But, hold on... None of this would've been possible without [fr2_bargaining_choice]'s help. I need to say something." 
     vivi neutral blush "Hey. I just... I wanna say... I can't thank you enough."
 
     if fr2_bargaining_choice == "Ava":
-        call ava_route
+        call ava_route from _call_ava_route
     elif fr2_bargaining_choice == "Darius":
-        call darius_route
+        call darius_route from _call_darius_route
     elif fr2_bargaining_choice == "Susu'Rha":
-        call susurha_route
+        call susurha_route from _call_susurha_route
 
 
     # LOCATION: observatory
@@ -38,13 +38,13 @@ label bargaining_meal_reveal:
     #show [INSERT NPC] happy at left
     if fr2_bargaining_choice == "Ava":
         $ npc_meal = ava
-        call show_ava
+        call show_ava from _call_show_ava_1
     elif fr2_bargaining_choice == "Darius":
         $ npc_meal = darius
-        call show_darius
+        call show_darius from _call_show_darius_1
     elif fr2_bargaining_choice == "Susu'Rha":
         $ npc_meal = susurha
-        call show_susurha
+        call show_susurha from _call_show_susurha_1
 
     show urshu neutral at left with dissolve:
         xzoom -1.0
@@ -72,12 +72,16 @@ label bargaining_meal_reveal:
             vivithinking neutral "But no, what if [fr2_bargaining_choice] doesn't want to?" 
             vivithinking neutral "Fuck it!"
             #show [INSERT NPC] surprise blush at left
+            play sound attchoice
             if fr2_bargaining_choice == "Ava":
-                call show_ava_blush
+                $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+                call show_ava_blush from _call_show_ava_blush
             elif fr2_bargaining_choice == "Darius":
-                call show_darius_blush
+                $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
+                call show_darius_blush from _call_show_darius_blush
             elif fr2_bargaining_choice == "Susu'Rha":
-                call show_susurha_blush
+                $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+                call show_susurha_blush from _call_show_susurha_blush
             vivithinking surprised "Oh, God. What am I doing? What are they thinking? Do they hate me?"
 
             # JUMP TO: vivithinking neutral "He's taking another bite!"    
@@ -94,11 +98,11 @@ label bargaining_meal_reveal:
     show urshu sad blush with dissolve
     urshu "My, my. I have never... My mouth dances with joy! The texture, the temperature, the sensation of it all. You have truly gone A and B the C of D."
     if fr2_bargaining_choice == "Ava":
-        call show_ava_surprised
+        call show_ava_surprised from _call_show_ava_surprised
     elif fr2_bargaining_choice == "Darius":
-        call show_darius_surprised
+        call show_darius_surprised from _call_show_darius_surprised
     elif fr2_bargaining_choice == "Susu'Rha":
-        call show_susurha_surprised
+        call show_susurha_surprised from _call_show_susurha_surprised
     vivi surprised "What?"
     show urshu happy -blush
     urshu happy "You have gone above and beyond the call of duty."

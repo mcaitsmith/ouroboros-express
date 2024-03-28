@@ -35,13 +35,15 @@ label romance_susurha:
     #EFFECT: fade to white
     scene white with Dissolve(3.0)
     #To Epilogues according to attraction meters
-    call epi_friend_ava
-    # ELSE
-    call epi_eldritch_ava
+    if att_meter_ava >= romance_threshold:
+        call epi_friend_ava from _call_epi_friend_ava_1
+    else:
+        call epi_eldritch_ava from _call_epi_eldritch_ava_1
     # ??ATTRACTION
-    call epi_friend_darius
-    # ELSE
-    call epi_eldritch_darius
+    if att_meter_darius >= romance_threshold:
+        call epi_friend_darius from _call_epi_friend_darius_1
+    else:
+        call epi_eldritch_darius from _call_epi_eldritch_darius_1
 
     scene black with Dissolve(3.0)
     window hide fade

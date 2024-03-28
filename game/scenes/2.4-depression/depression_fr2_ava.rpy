@@ -13,11 +13,13 @@ label depression_fr2_ava:
     vivithinking "Oh, the Sun Goddess, herself. Somehow looking radiant as usual."
 
     # ??DECAY
-    vivi sad "She's too good for me..."
+    if dec_meter >= 40:
+        vivi sad "She's too good for me..."
     #END
 
     # ??ATTRACTION
-    vivi happy "I need her in my life, no matter what."
+    elif att_meter_ava >= 50:
+        vivi happy "I need her in my life, no matter what."
     #END
 
     vivithinking "Okay, Vivi, deep breath, and-"
@@ -31,6 +33,9 @@ label depression_fr2_ava:
         #OPTION 1 +ATTRACTION
         "Really?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+
             vivi surprised "Really? Even though the royals treated you poorly you had everything you could have ever wanted. I don't understand."
             ava sad "Of course you do not understand. How could you?"
             vivi sad "I want to...understand. How can I share your pain if you don't talk about it with me?"
@@ -39,13 +44,19 @@ label depression_fr2_ava:
         #OPTION 2 +DECAY
         "You're pretty ungrateful, huh?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi angry "You're pretty ungrateful, huh? It sounds like you had everything you could have ever wanted."
             ava sad "How could you ever understand..."
             vivi angry "You're right, Asha. I can't and I won't. How could a puny little human peasant like me ever understand what it's like to be a princess in a castle?!"
             # JUMP TO: ava sad "Vivi..."
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
-        "I wish I could have been there for you.":
+        "I wish I could have been there for you." if att_meter_ava >= 50:
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "I wish I could have been there for you. Our relationship has been the one thing keeping me sane on this journey... I wish we could have spent some time together while we were alive."
             ava happy "Really? We feel the same way." 
@@ -68,6 +79,9 @@ label depression_fr2_ava:
         #OPTION 1 +ATTRACTION
         "But why do you need her to begin with?":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+
             vivi surprised "But why do you need her to begin with? I wish you could have had a normal life on Earth."
             ava sad "Without the Avatar, our world would be doomed. These hands have seen much bloodshed."
             vivi surprised "I didn't realize that your life wasn't all sunshine and rainbows."
@@ -87,7 +101,10 @@ label depression_fr2_ava:
 
 
         #OPTION 3 >>ATTRACTION (+ATTRACTION?)
-        "If only I had known you in life.":
+        "If only I had known you in life." if att_meter_ava >= 55:
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "If only I had known you in life, things could have been different."
             show ava neutral blush with dissolve
@@ -102,12 +119,15 @@ label depression_fr2_ava:
     show ava neutral blush with dissolve
 
     # ??ATTRACTION
-    ava "No need. Just be here now."
+    if att_meter_ava >= 55:
+        ava "No need. Just be here now."
 
-    #pause
-    pause 1.0
+        #pause
 
-    # SOUND heartbeat
+        # SOUND: heartbeat
+        play sound heartbeat
+        pause 3.0
+        stop sound
 
     #END
 
@@ -117,8 +137,11 @@ label depression_fr2_ava:
     # <CHOICE>
     menu:
 
-        #OPTION 1 >>ATTRACTION (+ATTRACTION?)
-        "My family moved around a lot...":
+        #OPTION 1 >>ATTRACTION (+ATTRACTION)
+        "My family moved around a lot..." if att_meter_ava >= 60:
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi neutral "My family moved around a lot, from country to country."
             vivi neutral "I'm luckier than most - seen and experienced so many amazing cultures."
@@ -139,7 +162,10 @@ label depression_fr2_ava:
 
 
         #OPTION 2 >>DECAY (+DECAY?)
-        "I wrote this haiku in school once.":
+        "I wrote this haiku in school once." if dec_meter >= 50:
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi happy "I wrote this haiku in school once. Wanna hear it?"
             ava surprised "Go on."
@@ -167,13 +193,15 @@ label depression_fr2_ava:
     vivi happy blush "Come to Earth sometime! I'll show you around!"
 
     # ??DECAY
-    show ava sad -blush
-    ava sad "If only we could have..."
+    if dec_meter >= 50:
+        show ava sad -blush
+        ava sad "If only we could have..."
     #END
 
     # ??ATTRACTION
-    show ava happy blush
-    ava "It's a date. We look forward to it."
+    elif att_meter_ava >= 60:
+        show ava happy blush
+        ava "It's a date. We look forward to it."
     #END
 
     vivi sad blush "I should go... See you soon, Asha."

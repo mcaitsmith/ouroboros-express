@@ -17,7 +17,10 @@ label depression_fr2_susurha:
     susurha "Ah. Vivacious Vivi. What brings you to me in these final moments?"
 
     # ??DECAY (DECAY ROUTE?)
-    vivi "Don't know. You're not boring."
+    if dec_meter >= 50:
+        play sound decchoice
+        vivi "Don't know. You're not boring."
+        jump dep_fr2_susu_end
     #END
 
     # <CHOICE>
@@ -27,6 +30,9 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "I didn't want to be alone.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I didn't want to be alone."
             susurha "I very much hoped you'd come."
             vivi "Is it okay if I stay here?"
@@ -34,7 +40,10 @@ label depression_fr2_susurha:
             #JUMP TO: vivithinking "It feels so warm being next to them."
         
         #OPTION 2 >>ATTRACTION +ATTRACTION
-        "I also needed to see a friendly face.":
+        "I also needed to see a friendly face." if att_meter_susurha >= 50:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
                 
             vivi "I also needed to see a friendly face."
             show susurha happy blush with dissolve
@@ -44,7 +53,10 @@ label depression_fr2_susurha:
             # JUMP TO: vivithinking "It feels so warm being next to them."
 
         #OPTION 3 >>DECAY +ATTRACTION
-        "I don't...know why.":
+        "I don't...know why." if dec_meter >= 40:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't...know why."
             susurha "I wish you knew, but I'll take it."
@@ -57,13 +69,14 @@ label depression_fr2_susurha:
     vivithinking "I could almost fall asleep right here."
 
     # ??DECAY
-    vivithinking "Why do I feel this way?"
-    susurha "Even with all the druidic teachings in my life..."
-    susurha "The space out there seems so peaceful in all its chaos."
-    susurha "It feels so welcoming..."
-    susurha "Yet I can't trust it."
-    susurha "Do you think it will hurt..."
-    susurha "...when we merge with the cosmic weave?"
+    if dec_meter >= 45:
+        vivithinking "Why do I feel this way?"
+        susurha "Even with all the druidic teachings in my life..."
+        susurha "The space out there seems so peaceful in all its chaos."
+        susurha "It feels so welcoming..."
+        susurha "Yet I can't trust it."
+        susurha "Do you think it will hurt..."
+        susurha "...when we merge with the cosmic weave?"
     #END
 
     #<CHOICE>
@@ -80,6 +93,9 @@ label depression_fr2_susurha:
         #OPTION 2 +ATTRACTION
         "I don't want to go.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I don't want to go."
             susurha sad "Yeah..."
             # JUMP TO: susurha "So you ARE afraid?"
@@ -91,6 +107,9 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "Yes.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "Yes."
             vivi "I'm very afraid."
             vivi "Who wouldn't be?"
@@ -98,6 +117,9 @@ label depression_fr2_susurha:
 
         #OPTION +DECAY
         "No.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "No."
             vivi "What's the point in being afraid?"
@@ -132,6 +154,9 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "I want to be ME as well.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+
             vivi "I want to be ME as well."
             vivi "My whole life... I felt I was living someone else's life."
             vivi "Think like someone else. Act like someone else."
@@ -141,7 +166,10 @@ label depression_fr2_susurha:
                 
 
         #OPTION 2 >>DECAY +ATTRACTION
-        "I get what you mean.":
+        "I get what you mean." if dec_meter >= 45:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I get what you mean."
             susurha "You do?"
@@ -151,7 +179,10 @@ label depression_fr2_susurha:
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
-        "Nothing can take away who you are.":
+        "Nothing can take away who you are." if att_meter_susurha >= 60:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "Nothing can take away who you are."
             vivi "You're one of the most unique creatures I have ever met."
@@ -164,7 +195,10 @@ label depression_fr2_susurha:
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
         #OPTION 4 >>DECAY +DECAY
-        "I know who I am.":
+        "I know who I am." if dec_meter >= 50:
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I know who I am."
             susurha "Are you sure about that?"
@@ -178,31 +212,36 @@ label depression_fr2_susurha:
     susurha "Thank you for staying with me, if even for a moment."
 
     # ??DECAY
-    susurha "I hope I brought some worth to you."
+    if dec_meter >= 50:
+        susurha "I hope I brought some worth to you."
     #END
 
     susurha "The only thing worse than being alone is never being at all."
 
-    #DECAY ROUTE (??DECAY)
-    #SAL'S NOTE: Lines below are supposed to be a DECAY ending of the scene.
-    vivi "Everything will turn out for the best."
-    susurha "You lie to yourself so easily."
-    susurha "I hope there is someone behind that mask."
-    susurha "Even if you don't show them to me."
-    vivithinking "I..."
-    vivithinking "I think I have had enough of this."
-    vivi "Good night."
-    susurha "Rest easy, Vivi."
-    # END
+    label dep_fr2_susu_end:
 
-    #SAL'S NOTE: Lines below show if decay is NOT high
-    # ELSE
-    vivi "We can sit here for a little while longer."
-    vivi "And watch the cosmos fly by."
-    show susurha neutral blush with dissolve
-    susurha "I'd love that."
-    vivithinking "In its own strange way, the view sure is beautiful from here."
-    # END
+        #DECAY ROUTE (??DECAY)
+        #SAL'S NOTE: Lines below are supposed to be a DECAY ending of the scene.
+        if dec_meter >= 50:
+            vivi "Everything will turn out for the best."
+            susurha "You lie to yourself so easily."
+            susurha "I hope there is someone behind that mask."
+            susurha "Even if you don't show them to me."
+            vivithinking "I..."
+            vivithinking "I think I have had enough of this."
+            vivi "Good night."
+            susurha "Rest easy, Vivi."
+        # END
 
-    #JUMP to Debrief Depression
-    jump depression_debrief
+        #SAL'S NOTE: Lines below show if decay is NOT high
+        # ELSE
+        else:
+            vivi "We can sit here for a little while longer."
+            vivi "And watch the cosmos fly by."
+            show susurha neutral blush with dissolve
+            susurha "I'd love that."
+            vivithinking "In its own strange way, the view sure is beautiful from here."
+        # END
+
+        #JUMP to Debrief Depression
+        jump depression_debrief

@@ -35,6 +35,9 @@ label anger_fr2_ava:
     menu:
         # OPTION 1 +DECAY
         "Amazing.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
             ava sad "No, Vivienne, perpetual loneliness. We would not wish that upon even our monarchy."
@@ -45,6 +48,10 @@ label anger_fr2_ava:
 
         # OPTION 2 +ATTRACTION
         "Awful.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
             show ava sad blush with dissolve
             ava "Thank you...that means more to us than you know."
@@ -77,8 +84,11 @@ label anger_fr2_ava:
     vivi angry blush "Well...it's still demeaning. I don't like it."
 
     menu:
-        #OPTION 1 + DECAY
+        #OPTION 1 +DECAY
         "But if you like it...":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi happy blush "But if you like it...I guess I could get used to it."
             show ava happy blush with dissolve
@@ -87,8 +97,11 @@ label anger_fr2_ava:
             show ava happy -blush
             # JUMP TO: vivi neutral "Sure. Anyways..."
 
-        #OPTION 2 + ATTRACTION
+        #OPTION 2 +ATTRACTION
         "Don't ever call me that again.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi angry "Don't ever call me that again. I don't like it. I'm not your pet."
             show ava sad blush with dissolve
@@ -121,8 +134,11 @@ label anger_fr2_ava:
     vivi neutral blush "I've been meaning to ask you:"
 
     menu:
-        # OPTION 1 + DECAY
+        # OPTION 1 +DECAY
         "What are your thoughts on our conductor?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "What are your thoughts on the conductor?"
             ava surprised "Ah, Urshu. A mystery."
@@ -135,8 +151,11 @@ label anger_fr2_ava:
             ava neutral "I suppose humans do rank in the highest percentile for creatures who smile without cause." 
             # JUMP TO: vivi neutral "How...interesting."    
 
-        # OPTION 2 + ATTRACTION
+        # OPTION 2 +ATTRACTION
         "What do you want to do with your time left?":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi neutral "What do you want to do with your time left?"
             ava sad "..."
@@ -163,6 +182,14 @@ label anger_fr2_ava:
         #OPTION 1 +ATTRACTION +DECAY
         "Don't play games with me.":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+
+            pause 0.5
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
+
             vivi angry "Don't play games with me."
             ava neutral "Ah. Because you lack skill at darts?" 
             vivi angry "Look, you may have been some kind of big deal deity on Soleos, but we're all equals here on death row, you silly moose!"
@@ -170,6 +197,9 @@ label anger_fr2_ava:
 
         #OPTION 2 +DECAY
         "I don't need you to think I'm special.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I don't need you to think I'm special. Just because your crazy cult revered you doesn't mean that I'm going to, ass hat!"
             # JUMP TO: ava blush angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"

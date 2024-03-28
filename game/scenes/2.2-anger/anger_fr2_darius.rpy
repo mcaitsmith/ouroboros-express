@@ -66,6 +66,11 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "Throw a dart while looking straight into Darius' eyes.":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+
+            pause 1.0
+
             # SOUND: dart lands on board
             play sound darts
             pause 2.0
@@ -77,6 +82,9 @@ label anger_fr2_darius:
 
     # OPTION 2 +DECAY
         "Actually...forget it.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "Actually...forget it."
             darius surprised "I thought you wanted to play."
@@ -100,6 +108,9 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "If I tell you a secret, will you tell me one of yours?":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+
             vivi neutral "If I tell you a secret, will you tell me one of yours?"
             darius surprised "Hm. Let's hear yours first."
             vivi surprised "That's...it's a yes-or-no kind of situation."
@@ -113,6 +124,9 @@ label anger_fr2_darius:
 
     # OPTION 2 +DECAY
         "Sounds like you miss it a little.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "Sounds like you miss it a little."
             darius angry "I beg your pardon."

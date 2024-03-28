@@ -442,6 +442,11 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
             frame:
                 style "game_menu_content_frame"
+                if not main_menu:
+                    text "Ava: [att_meter_ava]%          Darius: [att_meter_darius]%          Susu'Rha: [att_meter_susurha]%                    Decay: [dec_meter]%":
+                        xoffset 100
+                        yoffset -120
+                        size 30
 
                 if scroll == "viewport":
 
@@ -561,14 +566,14 @@ screen about():
 
         vbox:
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            label "[config.name!t]\n"
+            # text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("{i}Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]{/i}")
 
 
 style about_label is gui_label

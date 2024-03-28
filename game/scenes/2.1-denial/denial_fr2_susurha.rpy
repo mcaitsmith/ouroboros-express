@@ -42,6 +42,8 @@ label denial_fr2_susurha:
     #OPTION 2 +ATTRACTION
         "I'd love to.":
 
+            play sound attchoice
+
             vivi "I'd love to."
             vivithinking "They reach out and slide a chair my way with ease."
             # SOUND: Vivi sits down in a super comfortable recliner.
@@ -70,6 +72,8 @@ label denial_fr2_susurha:
 
     #OPTION 1 +ATTRACTION
         "This place freaks me out.":
+
+            play sound attchoice
         
             vivi "This place freaks me out."
             susurha "I feel that in my bones. Oh, this place worms its way down my spine like a spider in the night."
@@ -150,6 +154,8 @@ label denial_fr2_susurha:
     #OPTION 1 +ATTRACTION
         "Worried?":
 
+            play sound attchoice
+
             vivi "Worried?"
             show susurha neutral
             # SOUND: Susu'Rha scoffs.
@@ -220,6 +226,8 @@ label denial_fr2_susurha:
     #OPTION 2 +ATTRACTION
         "It sounds like you lived a fairy tale.":
 
+            play sound attchoice
+
             #SOUND: Susu'Rha laughs.
             # skipping
             susurha "I suppose from the outside it could come across with that poetic fantasy allure."
@@ -230,6 +238,8 @@ label denial_fr2_susurha:
             
                 #OPTION 2-1 +ATTRACTION
                 "I wasn't. Tell me more.":
+
+                    play sound attchoice
 
                     vivi "I wasn't. Tell me more."
                     susurha happy "Perhaps I shall at another time."

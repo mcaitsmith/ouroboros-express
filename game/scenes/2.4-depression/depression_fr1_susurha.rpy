@@ -17,7 +17,8 @@ label depression_fr1_susurha:
     susurha neutral "What brings you here?"
 
     #??DECAY
-    susurha "Come to torment me some more?"
+    if dec_meter >= 40:
+        susurha "Come to torment me some more?"
     #END
 
     vivi "To be honest, I'm ready to just get nice and drunk."
@@ -41,15 +42,16 @@ label depression_fr1_susurha:
     susurha "Allowing us to tear away at the veils that encase us to those we know."
 
     # ??DECAY
-    vivi "Oh, I don't know about this."
-    susurha "Even now as we near the end of the tracks?"
-    susurha sad "Can we just try..."
-    susurha sad "Try to pull back the mask?"
-    susurha neutral "I'll even let you ask the first question."
-    vivithinking "Are we sure about this?"
-    vivithinking "..."
-    vivithinking "Screw it!"
-    vivi "Alright."
+    if dec_meter >= 40:
+        vivi "Oh, I don't know about this."
+        susurha "Even now as we near the end of the tracks?"
+        susurha sad "Can we just try..."
+        susurha sad "Try to pull back the mask?"
+        susurha neutral "I'll even let you ask the first question."
+        vivithinking "Are we sure about this?"
+        vivithinking "..."
+        vivithinking "Screw it!"
+        vivi "Alright."
     #END
 
     #<CHOICE>
@@ -59,6 +61,9 @@ label depression_fr1_susurha:
 
         #OPTION 1 +ATTRACTION
         "Been engaged.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "Been engaged."
             susurha "Hmmm..."
@@ -78,6 +83,9 @@ label depression_fr1_susurha:
         #OPTION 2 +DECAY
         "Led a kingdom.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
+
             vivi "Led a kingdom."
             susurha "Hmm... Got me there I suppose."
             susurha "Bottoms up."
@@ -93,7 +101,10 @@ label depression_fr1_susurha:
             #JUMP TO: susurha happy "My turn."
 
         #OPTION 3 >>DECAY +ATTRACTION
-        "I don't know.":
+        "I don't know." if dec_meter >= 35:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
                 
             vivi "I don't know."
             susurha "Boooo..."
@@ -110,8 +121,11 @@ label depression_fr1_susurha:
             susurha "You got it."
             #JUMP TO: susurha happy "My turn."
 
-        #OPTION 4 >>Decay +Decay
-        "Can we just sit and drink?":
+        #OPTION 4 >>DECAY +DECAY
+        "Can we just sit and drink?" if dec_meter >= 40:
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "Can we just sit and drink?"
             vivithinking "I don't know if I have any more games left in me."
@@ -125,8 +139,11 @@ label depression_fr1_susurha:
 
     menu:
 
-        #OPTION 1 +Attraction
+        #OPTION 1 +ATTRACTION
         "No.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "No."
             susurha surprised "Really?"
@@ -143,8 +160,11 @@ label depression_fr1_susurha:
             susurha "I can drink to that."
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
 
-        #OPTION 2 >>Attraction +Attraction
-        "Possibly, recently.":
+        #OPTION 2 >>ATTRACTION +ATTRACTION
+        "Possibly, recently." if att_meter_susurha >= 60:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi blush "Possibly, recently."
             susurha surprised "Oh... Do tell me more, madam."
@@ -157,8 +177,11 @@ label depression_fr1_susurha:
             show susurha neutral -blush
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
 
-        #OPTION 3 +Decay
+        #OPTION 3 +DECAY
         "I've had plenty of lovers.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I've had plenty of lovers."
             susurha "I'm sure. A woman such as yourself, but..."
@@ -174,8 +197,9 @@ label depression_fr1_susurha:
     susurha "Thank you for spending these moments with me."
 
     #DECAY ROUTE (??DECAY?)
-    susurha "I wish I could have made these moments more special for you."
-    susurha "The train is speeding up. Have you noticed?"
+    if dec_meter >= 40:
+        susurha "I wish I could have made these moments more special for you."
+        susurha "The train is speeding up. Have you noticed?"
     # END
 
     hide susurha with dissolve

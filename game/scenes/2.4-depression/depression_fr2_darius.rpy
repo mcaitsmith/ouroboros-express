@@ -29,6 +29,9 @@ label depression_fr2_darius:
         # OPTION 1 +ATTRACTION
         "There's so much more I want to learn about you.":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
+
             vivi sad "There's so much more I want to learn about you."
             show darius surprised blush with dissolve
             darius "Surely not. I'm an open book."
@@ -42,6 +45,9 @@ label depression_fr2_darius:
 
         # OPTION 2 +DECAY
         "I won't say it's been nice getting to know you.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi neutral "I won't say it's been nice getting to know you."
             darius neutral "You {i}really{/i} don't mince words. I suppose I respect that."
@@ -59,8 +65,8 @@ label depression_fr2_darius:
 
             # JUMP TO: vivi surprised "What do you mean by that?"
 
-        # OPTION 4 ??ATTRACTION
-        "If this is the last conversation I'm ever to have, I'm grateful to have it with you.":
+        # OPTION 4 >>ATTRACTION
+        "If this is the last conversation I'm ever to have, I'm grateful to have it with you." if att_meter_darius >= 60:
 
             vivi neutral blush "If this is the last conversation I'm ever to have, I'm grateful to have it with you."
             show darius neutral blush with dissolve
@@ -77,8 +83,8 @@ label depression_fr2_darius:
     
             # JUMP TO: vivi surprised "What do you mean by that?"
 
-        # OPTION 5 ??DECAY
-        "Do you see them, Darius?":
+        # OPTION 5 >>DECAY
+        "Do you see them, Darius?" if dec_meter >= 50:
 
             vivi neutral "Do you see them, Darius?"
             darius surprised "I do. You do, as well?"
@@ -123,6 +129,9 @@ label depression_fr2_darius:
         # OPTION 1 +ATTRACTION
         "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
+
             vivi happy blush "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?"
             darius happy "You know what? Sure."
             vivi surprised blush "FINALLY! You admit it!"
@@ -131,6 +140,9 @@ label depression_fr2_darius:
 
         # OPTION 2 +DECAY
         "More open than you'll ever be?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi sad "More open than you'll ever be?"
             darius sad "I suppose so. There's just-- the weight. Of everything."
@@ -168,15 +180,17 @@ label depression_fr2_darius:
     vivithinking "Darius is... a monster. But not a remorseless one."
 
     # ??ATTRACTION
-    vivi neutral blush "You're not beyond redemption, Darius."
-    darius surprised "After all that... You believe so?"
-    vivi happy blush "I know so."
+    if att_meter_darius >= 60:
+        vivi neutral blush "You're not beyond redemption, Darius."
+        darius surprised "After all that... You believe so?"
+        vivi happy blush "I know so."
     # END
 
     # ??DECAY (ELSE)
-    vivi sad "Darius...that's horrifying. I don't know that I can look at you the same way."
-    darius sad "I know. I don't expect you to."
-    darius sad "Let the horrors take me. It's what I deserve."
+    elif dec_meter >= 50:
+        vivi sad "Darius...that's horrifying. I don't know that I can look at you the same way."
+        darius sad "I know. I don't expect you to."
+        darius sad "Let the horrors take me. It's what I deserve."
     # END
 
     # JUMP TO: Debrief Depression

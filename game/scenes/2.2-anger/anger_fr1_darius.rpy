@@ -32,6 +32,9 @@ label anger_fr1_darius:
     # OPTION 1 +ATTRACTION
         "Can you even play this with two people?":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
+
             vivi surprised "Can you even play this with two people?"
             darius happy "Of course you can. Watch me."
             # SOUND: cards shuffling
@@ -49,6 +52,9 @@ label anger_fr1_darius:
 
     # OPTION 2 +DECAY
         "You mentioned Urshu. Why bring him up?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "You mentioned Urshu. Why bring him up?"
             darius angry "That little twerp knows more than he lets on."
@@ -101,8 +107,11 @@ label anger_fr1_darius:
             vivi neutral "..."
         # JUMP TO: vivi neutral "You're doing a terrible job at playing this game."
 
-    # OPTION 2 + ATTRACTION
+    # OPTION 2 +ATTRACTION
         "That sounds difficult. Like being unmoored.":
+
+            play sound attchoice
+            $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
 
             vivi sad "That sounds difficult. Like being unmoored."
             show darius surprised -blush
@@ -115,8 +124,11 @@ label anger_fr1_darius:
             # JUMP TO: vivi neutral "You're doing a terrible job at playing this game."
 
 
-    # OPTION 3 + DECAY
+    # OPTION 3 +DECAY
         "Well, you don't hear me crying about it.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi neutral "Well you don't hear me crying about it."
             show darius surprised -blush

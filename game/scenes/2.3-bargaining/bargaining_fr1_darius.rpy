@@ -47,6 +47,9 @@ label bargaining_fr1_darius:
 
         # OPTION 2 +ATTRACTION
         "I didn't think sarcasm was in your wheelhouse.":
+
+            play sound attchoice
+            $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
         
             vivi neutral "I didn't think sarcasm was in your wheelhouse, Mx. Wrecker."
             darius happy "I have many surprises in my \"wheelhouse\" as you say. Some I may even show you someday."
@@ -61,6 +64,9 @@ label bargaining_fr1_darius:
 
         # OPTION 3 +DECAY
         "Can you read ANYTHING?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi angry "Can you read ANYTHING?" 
             vivi angry "Just when I thought you could be useful." 
@@ -89,6 +95,9 @@ label bargaining_fr1_darius:
     menu:
         # OPTION 1 +ATTRACTION
         "So caring. I wouldn't expect it from you.":
+
+            play sound attchoice
+            $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
     
             vivi happy "So caring. I wouldn't expect it from you."
             vivi neutral "You don't have to worry. I don't plan to hurt our dear Urshu."
@@ -105,6 +114,9 @@ label bargaining_fr1_darius:
 
         #OPTION 2 +DECAY
         "Okay, enough. I don't need the lecture.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
     
             vivi angry "Okay, enough. I don't need the lecture. I'm not about to break this guy's heart or anything."
             darius neutral "I'm sure you won't. Just a helpful reminder."
@@ -113,7 +125,7 @@ label bargaining_fr1_darius:
             # JUMP TO: vivi neutral "I think I'll be going now. Thank you for the insight."
 
         #OPTION 3 >>ATTRACTION
-        "Sounds like you've had experience.":
+        "Sounds like you've had experience." if att_meter_darius >= 20:
 
             vivi sad "Sounds like you've had experience."
             darius sad "In suffering? More than you know, but still less than the amount I've caused."

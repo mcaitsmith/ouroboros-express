@@ -29,6 +29,9 @@ label anger_fr1_ava:
     menu:
         # OPTION 1 +ATTRACTION
         "The sun card.":
+
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
         
             vivi neutral "The sun card."
             show ava sad blush with dissolve
@@ -41,6 +44,9 @@ label anger_fr1_ava:
         # OPTION 2 +DECAY
         "The sea monster card.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
+
             vivi neutral "The sea monster card."
             ava surprised "Ah. Leviathan. The eater of worlds. Scourge of the seas. Dominance. Aggression. We find this interesting."
             vivi neutral "Wait, was that a dig at...Darius?"
@@ -49,6 +55,9 @@ label anger_fr1_ava:
 
         # OPTION 3 +DECAY
         "The big snake card.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "The big snake card."
             ava surprised "Curious. We have not seen this card before. Curious, indeed. It resembles the snake biting its own tail, the Ouroboros."
@@ -80,6 +89,14 @@ label anger_fr1_ava:
     # OPTION 1 +ATTRACTION +DECAY
         "...chin up, princess, or the crown slips.":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+
+            pause 0.5
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
+
             vivi neutral "...chin up, princess, or the crown slips."
             ava angry "Princess? We were not royalty, those inbred lickspittles. We came from nothing."
             vivithinking neutral "With that stiff upper lip and all? Yeah, right." 
@@ -98,6 +115,9 @@ label anger_fr1_ava:
     # OPTION 2 +ATTRACTION
         "...I know what you mean about sacrifices.":
 
+            play sound attchoice
+            $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
             vivi angry blush "Here!"
             ava sad "I'm aware of your tale, little one. And I am sorry for that."
@@ -114,6 +134,9 @@ label anger_fr1_ava:
 
     # OPTION 3 +DECAY
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
             ava angry "Perhaps you should heed your own advice, Vivienne."

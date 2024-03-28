@@ -25,6 +25,9 @@ label anger_fr2_susurha:
     # OPTION 1 +ATTRACTION
         "The arrogance on this one. I'd sure love to shut them up.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+
             vivithinking "The arrogance on this one. I'd sure love to shut them up."
             vivi neutral "Magic or not, I'm gonna beat you."
             susurha neutral "I will give you the grace of going first."
@@ -51,6 +54,9 @@ label anger_fr2_susurha:
 
     # OPTION 2 +DECAY
         "Clearly, they're insecure. I'm gonna let them win.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivithinking "Clearly, they feel insecure. I'm gonna let them win."
             vivi neutral "You go first."
@@ -91,6 +97,9 @@ label anger_fr2_susurha:
     # OPTION 1 +ATTRACTION
         "It was an assignment given to me by my agent.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+
             vivi neutral "It was an assignment given to me by my agent. She told me to write an exposé about a mysterious train line with an enigmatic conductor."
             vivi happy "I said yes because it reminded me of those internet horror stories I grew up with."
             vivi neutral "Seems like the stories swirling around the Ouroboros Express were more than just stories."
@@ -102,6 +111,9 @@ label anger_fr2_susurha:
 
     # OPTION 2 +DECAY
         "I didn't have a choice.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I didn't have a choice."
             susurha neutral "Do tell."
@@ -132,6 +144,9 @@ label anger_fr2_susurha:
 
     # mica, I believe the above is an action rather than something vivi says. Same w/ option 2
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
+
             vivi angry "Pierce Chloe!"
             vivi angry "It's all her fault!"
             vivi angry "HER!"
@@ -147,8 +162,11 @@ label anger_fr2_susurha:
             vivi neutral "*GASPS* Sure. *HEAVES* Why not."
             # JUMP TO: susurha sad "It was fear that brought me here."
 
-    #OPTION +Attraction
+    #OPTION +ATTRACTION
         "Pierce the idea that it was her fault.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi neutral "Pierce the idea that it was her fault."
             # SOUND: dart hits the board
@@ -181,8 +199,11 @@ label anger_fr2_susurha:
     # <CHOICE>
 
     menu:
-    #OPTION 1 +Attraction
+    #OPTION 1 +ATTRACTION
         "You did what you could. It isn't your fault.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi sad "You did what you could. It isn't your fault."
             susurha sad "Thank you. That means something."
@@ -207,6 +228,9 @@ label anger_fr2_susurha:
 
     #OPTION +DECAY
         "We got a raw deal. Life is unfair.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "We got a raw deal. Life is unfair."
             susurha angry "Certainly nothing about our present situation is fair."

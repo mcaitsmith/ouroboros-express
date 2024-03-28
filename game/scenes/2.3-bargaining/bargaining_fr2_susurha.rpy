@@ -38,6 +38,9 @@ label bargaining_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "She could see down to the essence of a person.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+
             vivi neutral "She could see down to the essence of a person."
             susurha neutral "I sense that power in you too, milady."
             vivi neutral "I guess I have it..."
@@ -54,6 +57,9 @@ label bargaining_fr2_susurha:
         #OPTION 2 +DECAY
         "Whatever it was, it skipped over me.":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi neutral "Whatever it was, it skipped over me."
             susurha neutral "Whatever do you mean?"
             vivi neutral "Nana could read people. She could bargain. She had grit. Tenacity." 
@@ -68,7 +74,10 @@ label bargaining_fr2_susurha:
 
 
         #OPTION 3 >>ATTRACTION +ATTRACTION
-        "She was a hustler. She knew how to get what she wanted.":
+        "She was a hustler. She knew how to get what she wanted." if att_meter_susurha >= 30:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             vivi neutral "She was a hustler. She knew how to get what she wanted."
             susurha neutral "Well, you have that quality as well, Vivienne. It's why you're such an excellent reporter!"
@@ -96,43 +105,49 @@ label bargaining_fr2_susurha:
     # <CHOICE>
     susurha neutral "So what should we cook?"
     # DECAY ROUTE
+    if dec_meter >= 20:
+        play sound decchoice
 
-    vivi neutral "I can't...seem to make up my mind...."
-    vivithinking "What's outside the window?"
-    vivithinking "Wow. Look at those cosmic spirals, twisting violently like tornados."
+        vivi neutral "I can't...seem to make up my mind...."
+        vivithinking "What's outside the window?"
+        vivithinking "Wow. Look at those cosmic spirals, twisting violently like tornados."
 
-    hide susurha with pixellate
+        hide susurha with pixellate
 
-    vivithinking "Drawing me in..."
-    vivithinking "Like someone is calling me."
-    vivithinking "Oh crap! I...I can't breathe."
+        vivithinking "Drawing me in..."
+        vivithinking "Like someone is calling me."
+        vivithinking "Oh crap! I...I can't breathe."
 
-    # EFFECT: Distort screen
-    show diningcar blur with pixellate
+        # EFFECT: Distort screen
+        show diningcar blur with pixellate
 
-    show vivi surprised at left with dissolve
+        show vivi surprised at left with dissolve
 
-    vivithinking "It's the thing. The damn monster in the silver dress."
-    vivithinking "How can it be so big? I can't take my eyes off it"
-    vivithinking "It doesn't have eyes. Why do I feel it's staring at me?"
-    vivithinking "Why is there no body inside that dress?"
-    vivithinking "Why is it so empty?"
-    vivithinking "Why is it stealing all the light—and reflecting it everywhere?"
-    vivithinking "I don't get it!"
+        vivithinking "It's the thing. The damn monster in the silver dress."
+        vivithinking "How can it be so big? I can't take my eyes off it"
+        vivithinking "It doesn't have eyes. Why do I feel it's staring at me?"
+        vivithinking "Why is there no body inside that dress?"
+        vivithinking "Why is it so empty?"
+        vivithinking "Why is it stealing all the light—and reflecting it everywhere?"
+        vivithinking "I don't get it!"
 
-    show diningcar with dissolve
+        show diningcar with dissolve
 
-    show susurha neutral at right with dissolve
+        show susurha neutral at right with dissolve
 
-    susurha neutral "Vivi! Vivienne! Collect yourself!"
-    vivi neutral "Sorry! Sorry. I don't know what that was..."
-    susurha neutral "You looked like a ghost for a moment! You are sure you wish to go through with this?"
+        susurha neutral "Vivi! Vivienne! Collect yourself!"
+        vivi neutral "Sorry! Sorry. I don't know what that was..."
+        susurha neutral "You looked like a ghost for a moment! You are sure you wish to go through with this?"
 
-    # JUMP TO: vivi happy "Yeah! Let's make some magic happen." 
+        # JUMP TO: vivi happy "Yeah! Let's make some magic happen." 
+        jump barg_fr2_susu_1
 
     menu:
         # OPTION 1 +DECAY
         "Let's try to appeal to Urshu's taste.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Let's try to appeal to Urshu's taste."
             susurha neutral "We would only be guessing."
@@ -152,6 +167,9 @@ label bargaining_fr2_susurha:
 
         # OPTION 2 +ATTRACTION
         "We'll just try to cook the best dish we possibly can!":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
         
             vivi neutral "We'll just try to cook the best dish we possibly can!"    
             susurha neutral "Unluckily for you, I eat nothing but grubs and Burrowers."
@@ -172,7 +190,10 @@ label bargaining_fr2_susurha:
             # JUMP TO: vivi happy "Yeah! Let's make some magic happen." 
 
         # OPTION 3 >>ATTRACTION +ATTRACTION
-        "I don't know. I'll let my Nana's spirit guide me.":
+        "I don't know. I'll let my Nana's spirit guide me." if att_meter_susurha >= 40:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
         
             vivi neutral "I don't know. I'll let my Nana's spirit guide me."
             susurha neutral "The spirit of your ancestors... Yes! Great idea!"
@@ -206,12 +227,14 @@ label bargaining_fr2_susurha:
 
             # JUMP TO: "Yeah! Let's make some magic happen." 
 
-    vivi happy "Yeah! Let's make some magic happen."
+    label barg_fr2_susu_1:
 
-    show vivi neutral at left
+        vivi happy "Yeah! Let's make some magic happen."
 
-    vivithinking "Alright. Let's see what we got here..."
-    vivithinking "Spices, check. Wow, the beef is quite succulent for...wherever we are. I wonder if they have cows here. Ghost cows." 
+        show vivi neutral at left
+
+        vivithinking "Alright. Let's see what we got here..."
+        vivithinking "Spices, check. Wow, the beef is quite succulent for...wherever we are. I wonder if they have cows here. Ghost cows." 
 
     # SOUND: kitchen noises, cooking noises
     play sound cooking
@@ -235,27 +258,33 @@ label bargaining_fr2_susurha:
     susurha neutral "It needs... something."
 
     # DECAY ROUTE
+    if dec_meter >= 30:
+        play sound decchoice
 
-    vivi angry "Well, if you don't know what it is, keep your opinion to yourself!"
-    susurha neutral "If you'd just let me help you--"
-    vivi angry "I've got this under control!"
-    susurha angry "Enough with the rude commentary!"
-    susurha angry "You act as though you WISH to displease Urshu!"
-    susurha angry "Don't you even want to go home?"
+        vivi angry "Well, if you don't know what it is, keep your opinion to yourself!"
+        susurha neutral "If you'd just let me help you--"
+        vivi angry "I've got this under control!"
+        susurha angry "Enough with the rude commentary!"
+        susurha angry "You act as though you WISH to displease Urshu!"
+        susurha angry "Don't you even want to go home?"
 
-    show vivi neutral at left
+        show vivi neutral at left
 
-    vivithinking "Maybe I don't."
-    vivithinking "Maybe I know it's all pointless."
-    vivi neutral "Let's just get this over with, then."
-    vivi neutral "I'm too tired to care."
-    susurha neutral "Are you sure you don't--"
+        vivithinking "Maybe I don't."
+        vivithinking "Maybe I know it's all pointless."
+        vivi neutral "Let's just get this over with, then."
+        vivi neutral "I'm too tired to care."
+        susurha neutral "Are you sure you don't--"
 
-    # JUMP TO: vivi neutral "Let's serve this up!"
+        # JUMP TO: vivi neutral "Let's serve this up!"
+        jump barg_fr2_susu_end
 
     menu:
         # OPTION 1 +ATTRACTION
         "It needs more spice.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             susurha neutral "It needs more spice."
             vivi neutral "Okay...I can work with that!"
@@ -282,6 +311,9 @@ label bargaining_fr2_susurha:
 
         #OPTION 2 +DECAY
         "I think it's fine the way it is.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "I think it's fine the way it is."
             susurha neutral "There's no part of you that believes that."
@@ -298,7 +330,10 @@ label bargaining_fr2_susurha:
             # JUMP TO: vivi neutral "Let's serve this up!" 
 
         #OPTION 3 >>DECAY +DECAY
-        "Something?!":
+        "Something?!" if dec_meter >= 30:
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi angry "Something?!"
             vivi angry "We get ONE SHOT to impress Urshu or we're stuck on this train forever, and you the only thing you can think of is that's it's missing \"something?!\""
@@ -318,8 +353,10 @@ label bargaining_fr2_susurha:
             vivi neutral "Whatever." 
 
             # JUMP TO: vivi neutral "Let's serve this up!" 
-        
-    vivi neutral "Let's serve this up!"
 
-    # JUMP TO: URSHU MEAL REVEAL
-    jump bargaining_meal_reveal
+    label barg_fr2_susu_end:
+        
+        vivi neutral "Let's serve this up!"
+
+        # JUMP TO: URSHU MEAL REVEAL
+        jump bargaining_meal_reveal

@@ -23,6 +23,9 @@ label depression_fr1_darius:
         # OPTION 1 +ATTRACTION
         "Darius. I could really use someone to talk with right now.":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
+
             vivi neutral "Darius. I could really use someone to talk with right now."
             darius sad "I'm not sure that's such a good idea."
             vivi neutral "I do. I'd like your company."
@@ -35,6 +38,9 @@ label depression_fr1_darius:
 
         # OPTION 2 +DECAY 
         "You just push everyone away, don't you? Fine. We can wait for the inevitable in silence.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi angry "You just push everyone away, don't you? Fine. We can wait for the inevitable in silence."
             darius surprised "I didn't mean to offend."
@@ -86,6 +92,9 @@ label depression_fr1_darius:
         # OPTION 1 +ATTRACTION
         "I'll have what you're having, handsome.":
 
+            play sound attchoice
+            $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
+
             vivi happy blush "I'll have what you're having, handsome."
             vivi "I could use a little fruity delight."
             darius surprised "I assure you, this drink is enough to knock you off your feet."
@@ -98,6 +107,9 @@ label depression_fr1_darius:
         
         # OPTION 2 +DECAY
         "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_depression / dec_num_depression)
     
             vivi neutral "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?"
             darius angry "Which is it? Do you want to drink with me and wallow in our mutual misery or do you want to needle me?"

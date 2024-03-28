@@ -36,7 +36,10 @@ label bargaining_fr1_susurha:
 
     menu:
         # OPTION 1 +DECAY
-        "You're such an observant lizard. I just want to know what you pick up on.": 
+        "You're such an observant lizard. I just want to know what you pick up on.":
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "You're such an observant lizard. I just want to know what you pick up on."  
             susurha angry "The one so seemingly dedicated to self-deception has the temerity to call me a lizard."
@@ -45,7 +48,10 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivithinking "I need to discover more about Urshu if I'm to have any hope of keeping up my end of the deal."
     
         # OPTION 2 >>DECAY +DECAY
-        "He just seems like such an enigmatic character.":
+        "He just seems like such an enigmatic character." if dec_meter >= 10:
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "He just seems like such an enigmatic character..."
             susurha angry "...and after that statement I'm supposed to fill in the blanks about what I know?"
@@ -61,6 +67,9 @@ label bargaining_fr1_susurha:
 
         # OPTION 3 +ATTRACTION
         "I struck a bargain with Urshu. I'm going to make him a meal and I need your help.":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
         
             vivi neutral "I struck a bargain with Urshu. I'm going to make him a meal and I need your help."
             susurha neutral "A meal...to die for?"
@@ -75,7 +84,15 @@ label bargaining_fr1_susurha:
 
 
         # OPTION 4 +ATTRACTION +DECAY
-        "Well, I may have a plan...": 
+        "Well, I may have a plan...":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
+
+            pause 0.5
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Well, I may have a plan, but I need to know everything I can about that conductor to get it to come off properly." 
             susurha neutral "..." 
@@ -111,12 +128,18 @@ label bargaining_fr1_susurha:
     susurha neutral "And all I know is that bargaining with Boskala Nah was useless." 
     
     # DECAY ROUTE
-    susurha neutral "Try not to burn yourself, Vivienne."
-    # JUMP TO: Character Selector 2
+    if dec_meter >= 10:
+        play sound decchoice
+        susurha neutral "Try not to burn yourself, Vivienne."
+        # JUMP TO: Character Selector 2
+        jump bargaining_cs2
 
     menu:
         # OPTION 1 +ATTRACTION
         "So you're calling Urshu a slimy freak?":
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
 
             vivi neutral "So you're calling Urshu a slimy freak?"
             susurha neutral "...Yes."
@@ -149,6 +172,9 @@ label bargaining_fr1_susurha:
         # OPTION 2 +ATTRACTION
         "I don't think Urshu is that bad.":
 
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
+
             vivi neutral "I don't think Urshu is that bad."
             susurha angry "Oh, come on now. I know a woman as skilled as yourself can sniff out fakery from miles away."
             susurha angry "The man, or whatever he is, has been painting himself this whole time as a well-dressed, well-meaning human conductor while we hurtle towards our deaths on a train for the dead!"
@@ -164,6 +190,9 @@ label bargaining_fr1_susurha:
         # OPTION 3 +DECAY
         "Are you absolutely sure we can't bargain with Urshu?":
 
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+
             vivi neutral "Are you absolutely sure we can't bargain with Urshu?"
             susurha neutral "I wouldn't trust him if my life depended on it."
             susurha neutral "Heh...I suppose our lives do depend on him, don't they?"
@@ -176,7 +205,10 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivi neutral "I still need to try at least."
 
         # OPTION 4 >>ATTRACTION +ATTRACTION
-        "Urshu is quite the slimy freak.":
+        "Urshu is quite the slimy freak." if att_meter_susurha >= 30:
+
+            play sound attchoice
+            $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
 
             vivi neutral "Urshu is quite the slimy freak."
             susurha neutral "The slimiest of them all."
@@ -197,7 +229,10 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivi neutral "I still need to try at least."
 
         # OPTION 5 >>DECAY +DECAY
-        "I NEED his help if I'm gonna get off this train.":
+        "I NEED his help if I'm gonna get off this train." if dec_meter >= 15:
+
+            play sound decchoice
+            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "I NEED his help if I'm gonna get off this train."
             susurha neutral "Do the prisoners trust their escape with the jailors?"
