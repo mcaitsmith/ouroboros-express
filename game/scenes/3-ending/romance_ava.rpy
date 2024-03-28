@@ -23,16 +23,23 @@ label romance_ava:
 
     # EFFECT: fade to white
     scene white with Dissolve(3.0)
+
+    # ROMANCE JOURNAL ENTRY
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nShe's regal and majestic and... She opened up to me.\nNot in the way people talk when I'm reporting.\nIt's different. More intimate.\nI feel I truly know her fears and dreams.\nI can open up to her and she sees me.\nShe sees me!\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+
+    # Journal entry with degradation meter high
+    call display_journal
+
     # To Epilogues according to attraction meters
     # ??ATTRACTION
     if att_meter_darius >= romance_threshold:
         call epi_friend_darius from _call_epi_friend_darius
-    else:
+    elif att_meter_darius > 0:
         call epi_eldritch_darius from _call_epi_eldritch_darius
     # ??ATTRACTION
     if att_meter_susurha >= romance_threshold:
         call epi_friend_susurha from _call_epi_friend_susurha
-    else:
+    elif att_meter_susurha > 0:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha
 
     scene black with Dissolve(3.0)

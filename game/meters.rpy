@@ -8,6 +8,7 @@ label meters:
     $ att_meter_susurha = 0
     $ dec_meter = 0
     $ cycle = 0
+    $ eldritch = False
 
     # define total meter increase for Anger FR1
     $ att_max_anger_fr1 = 15

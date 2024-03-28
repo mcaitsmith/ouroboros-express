@@ -33,5 +33,10 @@ label bad_consequences:
     vivi neutral "..."
     vivi happy "I'm a god, now."
 
+    $ message = "{i}...Illegible garble...{/i}"
+    $ eldritch = True
+
+    call display_journal
+
     # JUMP to: Epilogue/Eldritch/Vivi
     jump epi_eldritch_vivi

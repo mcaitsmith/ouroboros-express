@@ -83,7 +83,10 @@ label journal:
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
             text "{font=Slimamif.ttf}{color=#000000}[message]{/color}{/font}" xalign 0.28 yalign 0.20
         #determine darius note
-        if att_meter_darius >= 0 and att_meter_darius <= 100 :
+        if eldritch == True:
+            text "{font=Slimamif.ttf}{size=16}{color=#000000}{i}...Illegible garble...{/i}{/color}{/size}{/font}" :
+                xalign 0.785 yalign 0.08
+        elif att_meter_darius >= 0 and att_meter_darius <= 100 :
             if att_meter_darius == 0:
                 text "{font=Slimamif.ttf}{size=16}{color=#000000}????{/color}{/size}{/font}" :
                     xalign 0.785 yalign 0.08
@@ -106,7 +109,10 @@ label journal:
             text "{font=Slimamif.ttf}{size=16}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.08
         #determine ava note
-        if att_meter_ava >= 0 and att_meter_ava <= 100 :
+        if eldritch == True:
+            text "{font=Slimamif.ttf}{size=16}{color=#000000}{i}...Illegible garble...{/i}{/color}{/size}{/font}" :
+                xalign 0.785 yalign 0.315
+        elif att_meter_ava >= 0 and att_meter_ava <= 100 :
             
             if att_meter_ava == 0:
                 text "{font=Slimamif.ttf}{size=16}{color=#000000}????{/color}{/size}{/font}" :
@@ -130,7 +136,10 @@ label journal:
             text "{font=Slimamif.ttf}{size=16}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.315
         # determine susurha note
-        if att_meter_susurha >= 0 and att_meter_susurha <= 100 :
+        if eldritch == True:
+            text "{font=Slimamif.ttf}{size=16}{color=#000000}{i}...Illegible garble...{/i}{/color}{/size}{/font}" :
+                xalign 0.785 yalign 0.55
+        elif att_meter_susurha >= 0 and att_meter_susurha <= 100 :
             if att_meter_susurha == 0:
                 text "{font=Slimamif.ttf}{size=16}{color=#000000}????{/color}{/size}{/font}" :
                     xalign 0.785 yalign 0.55

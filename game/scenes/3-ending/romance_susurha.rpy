@@ -34,15 +34,22 @@ label romance_susurha:
 
     #EFFECT: fade to white
     scene white with Dissolve(3.0)
+
+    # ROMANCE JOURNAL ENTRY
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nThey're funny and positive. It's a breath\nof fresh air.\nI think the thing I love most is Susu'Rha's heart.\nThey're the kindest being I've ever met.\nIt feels like a warm hug whenever they speak.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+
+    # Journal entry with degradation meter high
+    call display_journal
+
     #To Epilogues according to attraction meters
     if att_meter_ava >= romance_threshold:
         call epi_friend_ava from _call_epi_friend_ava_1
-    else:
+    elif att_meter_ava > 0:
         call epi_eldritch_ava from _call_epi_eldritch_ava_1
     # ??ATTRACTION
     if att_meter_darius >= romance_threshold:
         call epi_friend_darius from _call_epi_friend_darius_1
-    else:
+    elif att_meter_darius > 0:
         call epi_eldritch_darius from _call_epi_eldritch_darius_1
 
     scene black with Dissolve(3.0)

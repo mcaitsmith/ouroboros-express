@@ -51,17 +51,22 @@ label romance_darius:
     darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
     vivi happy "I'm with you."
 
+    # ROMANCE JOURNAL ENTRY
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nThey're smart and charming but most of all, kind.\nIt takes a strong person to defy their god and\nrisk eternal damnation to do what's right.\nAcceptance is a hard thing to find but we've found it\nin each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+
+    # Journal entry with degradation meter high
+    call display_journal
 
     #To Epilogues according to attraction meters
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold:
         call epi_friend_ava from _call_epi_friend_ava
-    else:
+    elif att_meter_ava > 0:
         call epi_eldritch_ava from _call_epi_eldritch_ava
     # ??ATTRACTION
     if att_meter_susurha >= romance_threshold:
         call epi_friend_susurha from _call_epi_friend_susurha_1
-    else:
+    elif att_meter_susurha > 0:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha_1
 
     scene black with Dissolve(3.0)
