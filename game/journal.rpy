@@ -55,16 +55,16 @@ label journal:
         text "{color=#ffffff}Darius{/color}" xalign 0.64 yalign 0.195
         # determine diary note
         if len(journal_array) >= 1:
-            text "{color=#000000}DAY [cycle+1]{/color}"  xalign 0.25 yalign 0.1
+            text "{color=#000000}DAY 1{/color}"  xalign 0.25 yalign 0.1
             text "{color=#000000}[journal_array[0]]{/color}" xalign 0.25 yalign 0.13
         if len(journal_array) >= 2:
-            text "{color=#000000}DAY [cycle+1]{/color}"  xalign 0.25 yalign 0.2
+            text "{color=#000000}DAY 2{/color}"  xalign 0.25 yalign 0.2
             text "{color=#000000}[journal_array[1]]{/color}" xalign 0.25 yalign 0.23
         if len(journal_array) >= 3:
-            text "{color=#000000}DAY [cycle+1]{/color}"  xalign 0.25 yalign 0.3
+            text "{color=#000000}DAY 3{/color}"  xalign 0.25 yalign 0.3
             text "{color=#000000}[journal_array[2]]{/color}" xalign 0.25 yalign 0.33
         if len(journal_array) >= 4:
-            text "{color=#000000}DAY [cycle+1]{/color}"  xalign 0.25 yalign 0.4
+            text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
             text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
         #determine darius note
         if att_meter_darius >= 0 and att_meter_darius <= 100 :
@@ -136,11 +136,14 @@ label display_journal:
     define message = ""
     python :
         message = renpy.input("What should I write:", length = 64)
+        print(cycle)
         if len(journal_array) == 0:
             journal_array.insert(cycle,message)
-        elif len(journal_array)>0:
-            journal_array.pop(cycle)
+        elif len(journal_array)>0 :
+            if len(journal_array) == cycle+1:
+                journal_array.pop(cycle)
             journal_array.insert(cycle,message)
+            
     show screen journal with dissolve
     vivi neutral "..."
     hide screen journal with dissolve

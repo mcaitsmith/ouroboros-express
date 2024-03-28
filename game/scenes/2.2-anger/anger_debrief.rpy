@@ -21,7 +21,7 @@ label anger_debrief:
         vivithinking neutral "I should write."
 
         call display_journal
-        $ cycle += 1
+        $ cycle = 2
 
         # Journal entry with degradation meter high
 
@@ -39,7 +39,7 @@ label anger_debrief:
         vivithinking neutral "I should journal my thoughts."
 
         call display_journal
-        $ cycle += 1
+        $ cycle = 2
 
         # Journal entry
 
