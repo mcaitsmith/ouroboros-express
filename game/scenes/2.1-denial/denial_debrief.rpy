@@ -28,6 +28,8 @@ label denial_debrief:
     vivi neutral "But, he might be right. Might as well use the journal."
 
     #Journal entry
+    call display_journal
+    $ cycle = 1
 
     "This is real. It doesn't make sense but it's all really happening. There was no way off the train. How the hell did I die? I thought I'd leave a mark on the world before I left. Or at least someone special. It's all so frustrating. The conductor is the worst, acting like this is a game. THIS IS OUR LIVES! At least I'm not the only one going through this."
 

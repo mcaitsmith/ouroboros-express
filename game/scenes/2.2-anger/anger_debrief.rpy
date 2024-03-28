@@ -20,6 +20,9 @@ label anger_debrief:
 
         vivithinking neutral "I should write."
 
+        call display_journal
+        $ cycle = 2
+
         # Journal entry with degradation meter high
 
         "This whole thing is pointless! That conductor... URG! I wanna strangle him and wipe that stupid smirk off his face. Talking to him is like solving a riddle. It's infuriating! Gotta find something on him. Maybe the others know a thing or two. There's gotta be some way to make Urshu help me. He seems like one who'd appreciate an exchange for his aid."
@@ -34,6 +37,9 @@ label anger_debrief:
         vivithinking happy "It was kinda refreshing! I'm glad I'm not alone here. It's nice to be seen. Nobody wanting or expecting anything from me. Just two beings trying to understand each other."
 
         vivithinking neutral "I should journal my thoughts."
+
+        call display_journal
+        $ cycle = 2
 
         # Journal entry
 

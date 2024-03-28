@@ -91,6 +91,7 @@ transform center_right:
     xpos 0.5
 transform bright:
     matrixcolor BrightnessMatrix (0.75)
+#Journal screen
 
 # The game starts here.
 
@@ -98,10 +99,10 @@ transform bright:
 #default quest = Manager()
 
 label start:
-
+    
     call sounds from _call_sounds # define sounds
     call meters from _call_meters # define meter variables
-
+    call journal 
     play music mainmusic volume 0.5 # start main track
 
     # jump to first scene

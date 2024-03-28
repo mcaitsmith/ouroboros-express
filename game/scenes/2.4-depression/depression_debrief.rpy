@@ -41,6 +41,7 @@ label depression_debrief:
         vivithinking neutral "My mind is buzzing. I need to write."
 
         #Journal entry with attraction meter high
+        call display_journal
         "Wow. At the beginning of all this, I would've never thought I'd get to know some of the other passengers this well. We're all more similar than I thought. Even Urshu, believe it or not. Time is weird here. I feel like I've been riding this train for ages, but I think I finally understand this place. It's a lot to process, but I'm glad I didn't have to do it alone."
 
         call showclock from _call_showclock
@@ -79,6 +80,7 @@ label depression_debrief:
         vivithinking neutral "I should write whatever thoughts I have left. By tomorrow, I'm not sure they'll be mine."
 
         # Journal entry with degradation meter high
+        call display_journal
         "I can't take this anymore. There's something growing inside me. A hunger I, we can't explain. What is happening to us? This is the conductor's fault. He's behind everything. The other passengers too. They must be working with him. None of them feel the way we do. They're all out to get us. We won't go. Not like this. They'll see."
 
         call showclock from _call_showclock_1

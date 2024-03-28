@@ -23,6 +23,8 @@ label bargaining_debrief:
         vivithinking neutral "Maybe I should write out my thoughts."
 
         # Journal entry with degradation meter high
+        call display_journal
+        $ cycle = 3
 
         "Urshu...that stupid, cruel son of a... This is all hopeless! I can see changes in all of us. I don't feel fully human anymore. Those creatures outside the windows... Will we end like them? At least the bar is stocked. Tomorrow's plan is to drink the place dry. Hopefully, if I'm lucky, it'll piss the conductor off."
 
@@ -40,6 +42,8 @@ label bargaining_debrief:
         vivithinking neutral "I need to write."
 
         # Journal entry with attraction meter high
+        call display_journal
+        $ cycle = 3
 
         "If cooking for him didn't work, what would? I'm beginning to think that this is it. The end of the line. Everything I worked for... gone. Maybe [fr2_bargaining_choice] will join me at the bar. I definitely owe them a drink. Good a place as any to forget everything."
 
