@@ -6,7 +6,8 @@ label depression_fr2_ava:
     # LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show ava neutral at right with dissolve
 

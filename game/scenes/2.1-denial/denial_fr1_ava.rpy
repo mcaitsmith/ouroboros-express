@@ -8,7 +8,8 @@ label denial_fr1_ava:
     scene observatory with fade
 
     show ava sad at right with dissolve
-
+    show vivi neutral at left with dissolve:
+        xzoom -1
     vivithinking "On to the observatory. Who do I see staring out the window into darkness but the sun goddess herself?"
 
     show ava surprised at right

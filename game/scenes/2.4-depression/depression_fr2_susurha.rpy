@@ -12,7 +12,8 @@ label depression_fr2_susurha:
     vivithinking "Susu'Rha looks like they're holding up about as well as me."
     susurha "The stars are out tonight. As beautiful and endless as the night I left home."
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     susurha "Ah. Vivacious Vivi. What brings you to me in these final moments?"
 

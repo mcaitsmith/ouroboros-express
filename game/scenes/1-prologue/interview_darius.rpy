@@ -7,9 +7,10 @@ label interview_darius:
     # LOCATION: diningcar
     # scene diningcar with fade
 
-    # show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
-    show darius neutral with dissolve
+    show darius neutral at right with dissolve
 
     # SOUND: train
     play sound train loop

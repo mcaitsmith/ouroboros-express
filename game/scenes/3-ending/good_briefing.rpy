@@ -11,7 +11,8 @@ label good_briefing:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi happy at left with dissolve
+    show vivi happy at left with dissolve:
+        xzoom -1
 
     vivithinking neutral "Something seems different today."
     vivithinking neutral "The decay... It's...slowed? The train is looking back to its gaudy self."

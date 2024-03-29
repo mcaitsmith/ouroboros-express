@@ -6,7 +6,8 @@ label confession_darius:
     #LOCATION: lounge
     # scene lounge with fade
     # show darius neutral at right with dissolve
-    # show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking neutral "There they are. He's standing tall."
     darius neutral "I'm glad to see you. I wasn't sure if we'd have the chance to talk again."

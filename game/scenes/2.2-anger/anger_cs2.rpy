@@ -7,7 +7,8 @@ label anger_cs2:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking angry "I feel like I'm getting nowhere! How the hell am I supposed to escape this?"
 

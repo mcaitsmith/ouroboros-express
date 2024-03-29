@@ -30,7 +30,8 @@ label denial_fr1_susurha:
 
     susurha neutral "Oh my... are you as hungry as I? I too get flustered when I haven't eaten all day."
 
-    show vivi neutral at left
+    show vivi neutral at left :
+        xzoom -1
 
     # SOUND: Vivi sighs.
     # skipping this one

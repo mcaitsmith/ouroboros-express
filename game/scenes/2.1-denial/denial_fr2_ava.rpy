@@ -6,7 +6,8 @@ label denial_fr2_ava:
     #LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve :
+        xzoom -1
 
     vivithinking "Many thoughts... Head full."
     vivithinking "Oh. I ended into the observatory."
@@ -83,15 +84,23 @@ label denial_fr2_ava:
 
     show urshu happy at left with dissolve:
         xzoom -1.0
-
+    show vivi surprised at left with hpunch:
+        linear 0.1 ypos 1000
+        linear 0.1 ypos 1080
+    $ renpy.pause(0.3)
     urshu happy "You are both correct! Those are the spirits of passengers lost to the fabric of space-time. Or perhaps how you see them.. hard to say sometimes."
 
-    show vivi sad at left
+    show vivi surprised blush:
+        linear 1 xpos 700
+    $ renpy.pause(1)
+    show vivi surprised blush at center with dissolve:
+        xzoom 1
+    $ renpy.pause()
     vivi sad "Those poor souls...is there no help for them?" 
     ava sad "Is there no help for us?"
     show urshu sad at left
     urshu sad "None for them, I fear."
-    show vivi neutral at left
+    show vivi neutral at center
 
     # <CHOICE>
 
@@ -128,7 +137,7 @@ label denial_fr2_ava:
     urshu neutral "All quite true. All of it. I wish I could offer better news, but on the Ouroboros Express your soul is bound for the afterlife."
     ava sad "But..this cannot be!"
 
-    show vivi sad at left
+    show vivi sad 
     vivi "Oh, Asha! I'm so sorry. I would say I couldn't imagine, but given the circumstances..."
     vivithinking "Oh my God, c'mon, Vivi, shut up, summon your inner reporter, and ask the Conductor something clever!"
 

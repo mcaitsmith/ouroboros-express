@@ -7,7 +7,8 @@ label anger_fr2_ava:
     # LOCATION: dining car
     scene diningcar with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     # SOUND: dart hitting the board
     play sound darts

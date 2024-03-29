@@ -7,7 +7,8 @@ label anger_fr1_ava:
     # LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking sad "Looks like our friendly neighborhood sun goddess is here."
 

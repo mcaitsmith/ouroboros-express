@@ -15,7 +15,8 @@ label anger_fr1_susurha:
 
     show susurha neutral at right with dissolve
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     # SOUND: card shuffle
     play sound shuffle

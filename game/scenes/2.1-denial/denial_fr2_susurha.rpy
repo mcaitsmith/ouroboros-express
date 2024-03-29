@@ -11,7 +11,8 @@ label denial_fr2_susurha:
 
     vivithinking "Yep. It seems Susu'Rha is lounging on one of the recliners."
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve :
+        xzoom -1
 
     vivi "What are you doing?"
 
@@ -136,7 +137,8 @@ label denial_fr2_susurha:
     scene observatory with fade
 
     show susurha surprised at right with dissolve
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve :
+        xzoom -1
 
     vivithinking "Golden fiery flashes shine through the glass windows of the cabin, and in-between those sparkles of light..."
 
@@ -322,7 +324,8 @@ label denial_fr2_susurha:
 
     vivithinking "I can breathe again!"
 
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1
 
     vivi surprised "What the hell was that?"
 

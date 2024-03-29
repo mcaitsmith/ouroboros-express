@@ -71,10 +71,10 @@ define gui.interface_text_font = "KaiseiDecol-Regular.ttf"
 define gui.title_text_font = "Lato-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 20
+define gui.text_size = 24
 
 ## The size of character names.
-define gui.name_text_size = 24
+define gui.name_text_size = 36
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33

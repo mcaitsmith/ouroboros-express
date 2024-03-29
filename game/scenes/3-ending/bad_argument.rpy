@@ -27,7 +27,8 @@ label bad_argument:
     # LOCATION: observatory
     scene observatory with fade
 
-    show vivi angry at center_left with dissolve
+    show vivi angry at center_left with dissolve:
+        xzoom -1
 
     vivithinking angry "There those fuckers are!"
     vivi angry "Hey!"
