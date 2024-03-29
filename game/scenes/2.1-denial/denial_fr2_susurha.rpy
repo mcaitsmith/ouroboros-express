@@ -321,11 +321,14 @@ label denial_fr2_susurha:
     pause 1.0
     show urshu angry at left with dissolve:
         xzoom -1.0
+    show vivi surprised at center with hpunch:
+        xzoom 1
+        linear 0.3 ypos 1000
+        linear 0.3 ypos 1200
 
     vivithinking "I can breathe again!"
-
-    show vivi surprised at left with dissolve:
-        xzoom -1
+    show vivi surprised at center with dissolve:
+        xzoom 1
 
     vivi surprised "What the hell was that?"
 

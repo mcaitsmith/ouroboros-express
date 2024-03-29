@@ -288,9 +288,17 @@ label denial_fr2_darius:
 
     show urshu neutral at left with dissolve:
         xzoom -1.0
-
+    show vivi surprised at left:
+        xzoom -1
+        linear 0.1 ypos 1000
+        linear 0.1 ypos 1080
     urshu neutral "Interesting! What do you see out there?"
-
+    
+    show vivi surprised:
+        linear 0.5 xpos 700
+    $ renpy.pause(0.7)
+    show vivi surprised at center with dissolve:
+        xzoom 1
     vivi surprised "Where the hell did you come from?"
 
     urshu neutral "I appear when I am needed my dear! Now Mx. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
