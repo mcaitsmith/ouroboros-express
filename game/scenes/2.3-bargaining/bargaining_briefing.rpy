@@ -25,15 +25,16 @@ label bargaining_briefing:
     vivithinking "What I know: Urshu is an immortal, silver-tongued courier of the dead who's probably tasted and seen everything life can offer. What could I possibly exchange with him to win him over?"
     vivithinking "Well...he has told me a bit about his past. I get the feeling he's lonely. That he longs for something. For what? Doesn't matter. I can relate to a deep sense of unsatisfied longings."
 
-
+    define checked_observatory = False
+    define checked_lounge = False
     label search_urshu:
         # <CHOICE>
         vivithinking "Where should I look for that little peach?"
-
+        
         menu:
             # OPTION 1
-            "Let's try the lounge.":
-
+            "Let's try the lounge." if not checked_lounge:
+                $ checked_lounge = True
                 vivithinking "Let's try the lounge."
 
                 # LOCATION: lounge
@@ -69,8 +70,8 @@ label bargaining_briefing:
                 jump search_urshu
 
             # OPTION 2
-            "Perhaps Urshu's enjoying the stars.":
-
+            "Perhaps Urshu's enjoying the stars." if not checked_observatory:
+                $ checked_observatory = True
                 vivithinking "Perhaps Urshu's enjoying the stars."
 
                 # LOCATION: observatory
