@@ -503,6 +503,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                     if scroll == "viewport":
 
                         viewport:
+                            style "main_menu_viewport"
                             yinitial yinitial
                             scrollbars "vertical"
                             mousewheel True
@@ -654,6 +655,9 @@ style main_menu_navigation_frame is empty:
 
 style main_menu_content_frame is empty:
     yfill True
+
+style main_menu_viewport is gui_viewport:
+    xsize 1400
 
 # Used in the INGAME menu only!
 style game_menu_outer_frame:
