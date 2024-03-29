@@ -502,7 +502,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                         viewport:
                             yinitial yinitial
-                            scrollbars "vertical"
+                            scrollbars true
                             mousewheel True
                             draggable True
                             pagekeys True
@@ -644,7 +644,7 @@ style game_menu_bottom_frame:
     left_padding 40
 
 style game_menu_viewport:
-    xsize 1380
+    xsize 1060
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -1180,6 +1180,7 @@ style slider_vbox:
 ##
 ## https://www.renpy.org/doc/html/history.html
 
+# DM: This screen doesn't have a second version because it will never show up on the main menu!
 screen history():
 
     tag menu
@@ -1245,6 +1246,7 @@ style history_name:
 style history_name_text:
     min_width gui.history_name_width
     textalign gui.history_name_xalign
+    size 24
 
 style history_text:
     xpos gui.history_text_xpos
@@ -1254,12 +1256,14 @@ style history_text:
     min_width gui.history_text_width
     textalign gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
+    size 20
 
 style history_label:
     xfill True
 
 style history_label_text:
     xalign 0.5
+    size 20
 
 
 ## Help screen #################################################################
