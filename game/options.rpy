@@ -31,9 +31,8 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-HOW TO PLAY:\n
-Your choices have consequences, some options that you see are a result of what you’ve done, others may be hidden away until a later play-through where such conditions are met.\n
----""")
+The Ouroboros Express\n
+Version 1.0""")
 
 
 ## A short name for the game used for executables and directories in the built

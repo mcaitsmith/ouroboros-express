@@ -104,6 +104,7 @@ label start:
     call meters from _call_meters # define meter variables
     call journal 
     play music mainmusic volume 0.5 # start main track
+    $ has_journal = False
 
     # jump to first scene
     jump introduction
