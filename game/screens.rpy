@@ -338,7 +338,9 @@ screen navigation():
             textbutton "Help":
                 if not main_menu:
                     background "gui/pause/button2.png"
-                action ShowMenu("help")
+                    action ShowMenu("help_ingame")
+                else:
+                    action ShowMenu("help")
 
             if _in_replay:
                 textbutton _("End Replay") action EndReplay(confirm=True)
@@ -1265,6 +1267,61 @@ style history_label_text:
 ## A screen that gives information about key and mouse bindings. It uses other
 ## screens (keyboard_help, mouse_help, and gamepad_help) to display the actual
 ## help.
+screen help_ingame():
+
+    tag menu
+
+    default device = "keyboard"
+
+    use game_menu(_("Help"), scroll="viewport"):
+
+        style_prefix "help_ingame"
+
+        vbox:
+            spacing 16
+
+            hbox:
+
+                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
+                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+
+                if GamepadExists():
+                    textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+
+            if device == "keyboard":
+                use keyboard_help
+            elif device == "mouse":
+                use mouse_help
+            elif device == "gamepad":
+                use gamepad_help
+
+style help_ingame_button is gui_button
+style help_ingame_button_text is gui_button_text
+style help_ingame_label is gui_label
+style help_ingame_label_text is gui_label_text
+style help_ingame_text is gui_text
+
+style help_ingame_button:
+    properties gui.button_properties("help_button")
+    xmargin 12
+
+style help_ingame_button_text:
+    properties gui.button_text_properties("help_button")
+    size 24
+
+style help_ingame_label:
+    xsize 375
+    right_padding 30
+
+style help_ingame_label_text:
+    size 20
+    xalign 1.0
+    textalign 1.0
+
+style help_ingame_text is text:
+    size 20
+    xalign 1.0
+    textalign 1.0
 
 screen help():
 
