@@ -324,8 +324,10 @@ screen navigation():
 
         textbutton "Settings":
             if not main_menu:
+                action ShowMenu("preferences_ingame")
                 background "gui/pause/button2.png"
-            action ShowMenu("preferences")
+            else:
+                action ShowMenu("preferences")
 
         if main_menu:
             textbutton _("About") action ShowMenu("about")
@@ -502,7 +504,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                         viewport:
                             yinitial yinitial
-                            scrollbars true
+                            scrollbars "vertical"
                             mousewheel True
                             draggable True
                             pagekeys True
@@ -1015,6 +1017,127 @@ style page_ingame_button_text is text:
 ## themselves.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
+
+screen preferences_ingame():
+
+    tag menu
+
+    use game_menu(_("Preferences"), scroll="viewport"):
+
+        vbox:
+            style_prefix "pref_ingame"
+            hbox:
+                box_wrap False
+                spacing 40
+
+                if renpy.variant("pc") or renpy.variant("web"):
+
+                    vbox:
+                        style_prefix "radio_ingame"
+                        label _("Display")
+                        textbutton _("Window") action Preference("display", "window")
+                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+
+                vbox:
+                    style_prefix "check_ingame"
+                    label _("Skip")
+                    textbutton _("Unseen Text") action Preference("skip", "toggle")
+                    textbutton _("After Choices") action Preference("after choices", "toggle")
+                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                vbox:
+                    xsize 300
+                    if config.has_music:
+                        label _("Music Volume")
+
+                        hbox:
+                            bar value Preference("music volume")
+
+                    if config.has_sound:
+
+                        label _("Sound Volume")
+
+                        hbox:
+                            bar value Preference("sound volume")
+
+                            if config.sample_sound:
+                                textbutton _("Test") action Play("sound", config.sample_sound)
+
+
+                    if config.has_voice:
+                        label _("Voice Volume")
+
+                        hbox:
+                            bar value Preference("voice volume")
+
+                            if config.sample_voice:
+                                textbutton _("Test") action Play("voice", config.sample_voice)
+
+                    if config.has_music or config.has_sound or config.has_voice:
+                        null height gui.pref_spacing
+
+                        textbutton _("Mute All"):
+                            action Preference("all mute", "toggle")
+                            style "mute_all_button_ingame"
+
+                ## Additional vboxes of type "radio_pref" or "check_pref" can be
+                ## added here, to add additional creator-defined preferences.
+
+
+                vbox:
+                    xsize 300
+                    label _("Text Speed")
+
+                    bar value Preference("text speed")
+
+                    label _("Auto-Forward Time")
+
+                    bar value Preference("auto-forward time")
+
+                    label _("Dialogue Box Transparency")
+
+                    bar value FieldValue(persistent, 'say_window_alpha', range=1.0, style="slider")
+
+
+style pref_ingame_label is label:
+    top_margin gui.pref_spacing
+    bottom_margin 3
+
+style pref_ingame_label_text is label_text:
+    yalign 1.0
+    size 20
+
+style pref_ingame_vbox:
+    xsize 450
+
+style slider_ingame_hbox:
+    xsize 450
+
+style radio_ingame_vbox:
+    spacing gui.pref_button_spacing
+
+style radio_ingame_button:
+    properties gui.button_properties("radio_button")
+    foreground "gui/button/radio_[prefix_]foreground.png"
+
+style radio_ingame_button_text:
+    properties gui.button_text_properties("radio_button")
+    size 20
+
+style check_ingame_vbox:
+    spacing gui.pref_button_spacing
+
+style check_ingame_button:
+    properties gui.button_properties("check_button")
+    foreground "gui/button/check_[prefix_]foreground.png"
+
+style check_ingame_button_text:
+    properties gui.button_text_properties("check_button")
+    size 20
+
+style mute_all_button_ingame is gui_button
+
+style mute_all_button_ingame_text is gui_button_text:
+    size 20
 
 screen preferences():
 
