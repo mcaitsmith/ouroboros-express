@@ -586,7 +586,24 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                             transclude
                 frame:
                     style "game_menu_bottom_frame"
-                    textbutton "Test"         
+                    hbox:
+                        yalign 0.5
+                        xalign 0.0
+
+                        text "Quote of the day.":
+                            style "quote_of_the_day"
+                    if hasattr(store, 'has_journal') and has_journal == True:
+                        hbox:
+                            yalign 0.5
+                            spacing 20
+                            xalign 1.0
+                            
+                            textbutton "View Journal":
+                                style "view_journal_button"
+                                action Jump("display_journal")
+                            imagebutton:
+                                idle "gui/pause/journal.jpg"
+                                action Jump("display_journal")
     use navigation
 
     if main_menu:
@@ -595,6 +612,20 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
     
+style quote_of_the_day is text:
+    size 24
+
+style view_journal_button is gui_button:
+    background "gui/pause/journal_button.png"
+    xsize 374
+    ysize 128
+    yalign 0.5
+    left_padding 0
+    bottom_padding 16
+
+style view_journal_button_text is gui_button_text:
+    xalign 0.5
+    yalign 0.5
 
 
 style game_menu_outer_frame is empty
@@ -642,8 +673,11 @@ style game_menu_bottom_frame:
     ysize 300
     yanchor 1.0
     xfill True
+    left_margin 120
+    right_margin 120
+    top_margin 60
+    bottom_margin 60
     background None
-    left_padding 40
 
 style game_menu_viewport:
     xsize 1060
