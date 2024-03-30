@@ -176,8 +176,10 @@ label bargaining_meal_reveal:
         vivi neutral "You didn't have to do this, but you still did, and I just..."
         vivi neutral "I really appreciate it."
         darius neutral "You're welcome, Vivi. I'm glad I could help."
-        darius neutral blush "...Anyways."
+        show darius neutral blush with dissolve
+        darius "...Anyways."
         vivi neutral "Yeah. We should go."
+        show darius neutral -blush
         return
     label susurha_route:
         vivi neutral "You didn't have to do this, but you still did, and on such short notice too."
