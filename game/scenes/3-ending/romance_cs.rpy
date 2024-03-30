@@ -158,22 +158,23 @@ label romance_cs:
             # NOTE options 7,8,9 are if you have talked to a character, they confessed and you chose the "please hold while I make my decision" option. This would replace the corresponding character option from 1,2,3.
 
             # NOTE If you friendzone all characters, OPTION 10 will appear.
-                "Thank you for coming this far with me Asha." if ava_friend == True and (susurha_asked and darius_asked):
-                    jump epi_friend_ava
-                "Thank you for coming this far with me Darius." if darius_friend == True and (susurha_asked and ava_asked):
-                    jump epi_friend_darius
-                "Thank you for coming this far with me Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
-                    jump epi_friend_susurha
-                "I think I found closure now." if (susurha_friend and darius_friend) or (ava_friend and darius_friend) or (susurha_friend and ava_friend):
+                # "Thank you for coming this far with me, Asha." if ava_friend == True and (susurha_asked and darius_asked):
+                #     jump epi_friend_ava
+                # "Thank you for coming this far with me, Darius." if darius_friend == True and (susurha_asked and ava_asked):
+                #     jump epi_friend_darius
+                # "Thank you for coming this far with me, Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
+                #     jump epi_friend_susurha
+                "I think I found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_friend == True or darius_friend == True or susurha_friend == True):
                     vivi happy "I think I found closure now."
                     vivi neutral "All is said and done."
                 
                     show urshu neutral at center_right with dissolve
                 
                     urshu neutral "Then, would you accompany me to the observatory, Miss Sansoucci? One last look at the stars?"
-                    vivi "You have something to say too? Fine. Let’s hear it."
+                    vivi "You have something to say too? Fine. Let's hear it."
 
-                    jump  epi_imperfect_friendship
+                    jump epi_imperfect_friendship
+
             # OPTION 10
                 "I found friends." if ava_friend == True and darius_friend == True and susurha_friend == True:
 
