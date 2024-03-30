@@ -35,7 +35,7 @@ label bargaining_cs2:
             jump bargaining_fr2_ava
 
         # OPTION 2
-        "Inquisitor Darius Wrecker" if fr1_bargaining_choice != "Darius":
+        "Darius Wrecker" if fr1_bargaining_choice != "Darius":
 
             $ fr2_bargaining_choice = "Darius"
 

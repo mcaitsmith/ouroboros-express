@@ -11,7 +11,7 @@ label confrontation:
 
     urshu happy "Doo doo doo, dee dee dee, dum dum dum!"
     vivithinking angry "There he is. Humming a jaunty tune. Polishing the leather. The audacity!"
-    vivithinking angry "Just look at his smug face, his perfectly tailored navy suit with that crimson pinstripe, his huge caboose in fine detail—"
+    vivithinking angry "Just look at his smug face, his perfectly tailored black suit with those golden details, his huge caboose in fine detail—"
     urshu neutral "Miss Sanssouci?"
     vivithinking surprised blush "Shit! How long have I been staring?"
     urshu neutral "I am flattered by your gaze, my dear, but do take care. In some lands, the victim of such a gaze is entitled to divorce your head from your shoulders."

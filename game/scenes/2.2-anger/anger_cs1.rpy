@@ -25,7 +25,7 @@ label anger_cs1:
             jump anger_fr1_ava
 
         # OPTION 2
-        "Inquisitor Darius Wrecker":
+        "Darius Wrecker":
 
             $ fr1_anger_choice = "Darius"
 

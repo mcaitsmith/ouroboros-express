@@ -100,7 +100,7 @@ label anger_fr2_susurha:
             play sound attchoice
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
-            vivi neutral "It was an assignment given to me by my agent. She told me to write an exposé about a mysterious train line with an enigmatic conductor."
+            vivi neutral "It was an assignment given to me by my agent, Chloe. She told me to write an exposé about a mysterious train line with an enigmatic conductor."
             vivi happy "I said yes because it reminded me of those internet horror stories I grew up with."
             vivi neutral "Seems like the stories swirling around the Ouroboros Express were more than just stories."
             vivi sad "Now I'm dead..."

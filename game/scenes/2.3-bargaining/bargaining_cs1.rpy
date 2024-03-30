@@ -34,7 +34,7 @@ label bargaining_cs1:
             jump bargaining_fr1_ava
 
         # OPTION 2
-        "Inquisitor Darius Wrecker":
+        "Darius Wrecker":
 
             $ fr1_bargaining_choice = "Darius"
 

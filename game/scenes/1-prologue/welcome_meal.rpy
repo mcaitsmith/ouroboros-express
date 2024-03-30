@@ -100,7 +100,7 @@ label welcome_meal:
 
                     hide susurha silhouette with dissolve
 
-                    vivithinking neutral "Let's talk to the lady with a fine dress and... Is that a crown? She seems interesting."
+                    vivithinking neutral "Let's talk to the lady with the fine dress and... Is that a crown? She seems interesting."
 
                     # JUMP TO: Interviews / Avatar of Asha
                     jump interview_ava

@@ -27,7 +27,7 @@ label interview_darius:
     darius neutral "But you reporters are never satisfied, are you?"
     darius neutral "{i}Sigh{/i}. If you make it quick, I'll humor you."
     vivithinking angry "Oh, I'm about to eviscerate this jerk. Every character flaw. In print. Forever."
-    vivi neutral "Thank you for your patience, um... Well, we never established your name, did     we?"
+    vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
     darius neutral "Just call me Darius."
     vivi neutral "No last name?"
     darius neutral "Does it really matter?"

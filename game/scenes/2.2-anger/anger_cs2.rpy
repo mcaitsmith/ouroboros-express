@@ -34,7 +34,7 @@ label anger_cs2:
             jump anger_fr2_ava
 
         #OPTION 2 
-        "Inquisitor Darius Wrecker" if fr1_anger_choice != "Darius":
+        "Darius Wrecker" if fr1_anger_choice != "Darius":
 
             vivi neutral "Darius seems like good competition."
             # JUMP TO: Free Roam 2 / Darius 

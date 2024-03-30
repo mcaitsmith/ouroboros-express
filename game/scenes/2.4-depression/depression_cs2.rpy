@@ -76,7 +76,7 @@ label depression_cs2:
             jump depression_fr2_ava
 
         # OPTION 2
-        "Inquisitor Darius Wrecker" if fr1_depression_choice != "Darius":
+        "Darius Wrecker" if fr1_depression_choice != "Darius":
 
             vivithinking neutral "Darius. I want to spend my last moments with them."
             # JUMP TO: Free roam 2 / Darius Wrecker
