@@ -164,8 +164,16 @@ label romance_cs:
                     jump epi_friend_darius
                 "Thank you for coming this far with me Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
                     jump epi_friend_susurha
-                "Thank you for coming this far with me you two." if (susurha_friend and darius_friend) or (ava_friend and darius_friend) or (susurha_friend and ava_friend):
-                    jump  epi_friendship_all
+                "I think I found closure now." if (susurha_friend and darius_friend) or (ava_friend and darius_friend) or (susurha_friend and ava_friend):
+                    vivi happy "I think I found closure now."
+                    vivi neutral "All is said and done."
+                
+                    show urshu neutral at center_right with dissolve
+                
+                    urshu neutral "Then, would you accompany me to the observatory, Miss Sansoucci? One last look at the stars?"
+                    vivi "You have something to say too? Fine. Let’s hear it."
+
+                    jump  epi_imperfect_friendship
             # OPTION 10
                 "I found friends." if ava_friend == True and darius_friend == True and susurha_friend == True:
 
