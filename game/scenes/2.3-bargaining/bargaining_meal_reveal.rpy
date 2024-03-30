@@ -7,7 +7,8 @@ label bargaining_meal_reveal:
     # LOCATION: lounge 
     scene lounge with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     # show [INSERT NPC] happy at left
     #Sal's note: INSERT NPC means: The NPC chosen in Character Selector 2
@@ -71,6 +72,9 @@ label bargaining_meal_reveal:
             vivithinking neutral "I need to hold on to something!"
             vivithinking neutral "But no, what if [fr2_bargaining_choice] doesn't want to?" 
             vivithinking neutral "Fuck it!"
+            show vivi neutral blush with dissolve:
+                xpos 0.5
+                linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
             play sound attchoice
             if fr2_bargaining_choice == "Ava":

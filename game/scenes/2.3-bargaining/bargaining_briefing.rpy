@@ -8,7 +8,8 @@ label bargaining_briefing:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     # SOUND: vivi yawns 
     # skipping
@@ -26,21 +27,23 @@ label bargaining_briefing:
     vivithinking "What I know: Urshu is an immortal, silver-tongued courier of the dead who's probably tasted and seen everything life can offer. What could I possibly exchange with him to win him over?"
     vivithinking "Well...he has told me a bit about his past. I get the feeling he's lonely. That he longs for something. For what? Doesn't matter. I can relate to a deep sense of unsatisfied longings."
 
-
+    define checked_observatory = False
+    define checked_lounge = False
     label search_urshu:
         # <CHOICE>
         vivithinking "Where should I look for that little peach?"
-
+        
         menu:
             # OPTION 1
-            "Let's try the lounge.":
-
+            "Let's try the lounge." if not checked_lounge:
+                $ checked_lounge = True
                 vivithinking "Let's try the lounge."
 
                 # LOCATION: lounge
                 scene lounge with fade
 
-                show vivi neutral at left with dissolve
+                show vivi neutral at left with dissolve:
+                    xzoom -1
 
                 vivithinking "Welp. He isn't here. Nobody's here."
                 vivithinking "Wait...what is..."
@@ -64,20 +67,22 @@ label bargaining_briefing:
 
                 scene cabin with fade
 
-                show vivi neutral at left with dissolve
+                show vivi neutral at left with dissolve:
+                    xzoom -1
 
                 # JUMP TO: vivithinking "Where should I look for that little peach?"
                 jump search_urshu
 
             # OPTION 2
-            "Perhaps Urshu's enjoying the stars.":
-
+            "Perhaps Urshu's enjoying the stars." if not checked_observatory:
+                $ checked_observatory = True
                 vivithinking "Perhaps Urshu's enjoying the stars."
 
                 # LOCATION: observatory
                 scene observatory with fade
             
-                show vivi neutral at left with dissolve
+                show vivi neutral at left with dissolve:
+                    xzoom -1
 
                 vivithinking "Goddamn. He isn't here."
                 vivithinking "Can't deny that view, though."
@@ -103,7 +108,8 @@ label bargaining_briefing:
 
                 scene cabin with fade
 
-                show vivi neutral at left with dissolve
+                show vivi neutral at left with dissolve:
+                    xzoom -1
 
                 # JUMP TO: vivithinking "Where should I look for that little peach?"
                 jump search_urshu
@@ -117,7 +123,8 @@ label bargaining_briefing:
                 # LOCATION: dining car
                 scene diningcar with fade
 
-                show vivi neutral at left with dissolve
+                show vivi neutral at left with dissolve:
+                    xzoom -1
 
                 show urshu sad at right with dissolve
 
@@ -146,7 +153,8 @@ label bargaining_briefing:
     urshu happy "It is my joy to serve--not only to serve, but to draw out of each of you your very best."
     vivithinking "Oh, he's being sweet. And candid. And not talking in riddles!"
 
-    show vivi angry at left
+    show vivi angry at left:
+        xzoom -1
     
     vivithinking "Focus, Vivi. Think about your goal. Now, how should I go about this?"
 
@@ -174,7 +182,8 @@ label bargaining_briefing:
             urshu sad "I cannot hope for what I know is impossible."
             vivi sad "Ursh... I'm sorry. I didn't mean." 
 
-            show vivi neutral at left 
+            show vivi neutral at left :
+                xzoom -1
 
             vivithinking "M'kay. Time to take a risk." 
             vivi neutral "I did overhear you before coming up to you. You wished you could dance with someone?"
@@ -199,7 +208,8 @@ label bargaining_briefing:
     show urshu neutral blush with dissolve
     urshu "You know, I cannot recall..."
 
-    show vivi happy at left
+    show vivi happy at left:
+        xzoom -1
 
     vivithinking happy "Got him! Now, for the bargain."
     vivi happy "I can give you that!" 

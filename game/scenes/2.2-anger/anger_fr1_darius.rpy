@@ -13,7 +13,8 @@ label anger_fr1_darius:
 
     show darius neutral at right
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     darius neutral "Well. Cards, then?"
     vivi surprised "Of course you read my mind already. Do you actually want to play?"

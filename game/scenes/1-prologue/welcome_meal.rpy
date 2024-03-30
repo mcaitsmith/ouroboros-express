@@ -11,7 +11,8 @@ label welcome_meal:
     # LOCATION: diningcar
     scene diningcar with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve :
+        xzoom -1
 
     show urshu neutral at right with dissolve
 
@@ -43,7 +44,8 @@ label welcome_meal:
 
     hide susurha silhouette with dissolve
 
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1
 
     vivi surprised "Umm...Urshu?"
 
@@ -75,17 +77,24 @@ label welcome_meal:
     $ interview3 = False
 
     label interview_choice:
-
+        hide vivi with dissolve
         if interview1 == True and interview2 == True and interview3 == True:
             jump figuring_it_out
         else:
-
-            show ava silhouette at left with dissolve:
-                xzoom -1.0
-
-            show darius silhouette at center with dissolve
-
-            show susurha silhouette at right with dissolve
+            if not interview1:
+                show ava silhouette at left with dissolve:
+                    xzoom -1.0
+            else:
+                show ava neutral at left with dissolve:
+                    xzoom -1.0
+            if not interview2:
+                show darius silhouette at center with dissolve
+            else:
+                show darius neutral at center with dissolve
+            if not interview3:
+                show susurha silhouette at right with dissolve
+            else:
+                show susurha neutral at right with dissolve
 
             # <CHOICE>
             if interview1 == False and interview2 == False and interview3 == False:

@@ -7,7 +7,9 @@ label reveal:
     # pixellate transition since teleport!
     scene diningcar with pixellate
 
-    show vivi surprised at center_left with dissolve
+    show vivi surprised at center_left:
+        xzoom -1
+    with dissolve
     vivi "{i}*cough* *cough*{/i}"
 
     show darius surprised at right with dissolve
@@ -16,7 +18,7 @@ label reveal:
     show ava neutral at center with dissolve
     ava neutral "Another trick?"
 
-    show susurha angry at left with dissolve:
+    show susurha angry at left behind vivi with dissolve:
         xzoom -1.0
     susurha angry "Teleportation? That's rude."
 

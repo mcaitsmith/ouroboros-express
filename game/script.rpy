@@ -40,11 +40,11 @@ define goodendmusic = "audio/music/Good Ending.ogg"
 define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.wav"
 
 # PLACEHOLDER UNTIL GET BLUSH OVERLAY FOR VIVI SPRITE
-image vivi neutral blush = "images/characters/vivi/vivi neutral.png"
-image vivi happy blush = "images/characters/vivi/vivi happy.png"
-image vivi sad blush = "images/characters/vivi/vivi sad.png"
-image vivi angry blush = "images/characters/vivi/vivi angry.png"
-image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
+# image vivi neutral blush = "images/characters/vivi/vivi neutral.png"
+# image vivi happy blush = "images/characters/vivi/vivi happy.png"
+# image vivi sad blush = "images/characters/vivi/vivi sad.png"
+# image vivi angry blush = "images/characters/vivi/vivi angry.png"
+# image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
 
 # PLACEHOLDER UNTIL GET SILHOUETTES
 image ava silhouette = "images/characters/ava/ava silhouette.png"
@@ -86,9 +86,9 @@ layeredimage urshu:
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 transform center_left:
-    xpos -0.5
+    xalign 0.2 yalign 1.0
 transform center_right:
-    xpos 0.5
+    xalign 0.8 yalign 1.0
 transform bright:
     matrixcolor BrightnessMatrix (0.75)
 #Journal screen
@@ -102,7 +102,7 @@ label start:
     
     call sounds from _call_sounds # define sounds
     call meters from _call_meters # define meter variables
-    call journal 
+    call journal from _call_journal 
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False
 

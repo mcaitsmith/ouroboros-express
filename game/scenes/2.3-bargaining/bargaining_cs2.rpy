@@ -7,7 +7,8 @@ label bargaining_cs2:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi angry at left with dissolve
+    show vivi angry at left with dissolve:
+        xzoom -1
 
     vivithinking "Ughhhh. I've spent all morning trying to learn about Urshu but found NOTHING useful."
 

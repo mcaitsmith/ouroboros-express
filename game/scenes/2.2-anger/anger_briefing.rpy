@@ -7,7 +7,8 @@ label anger_briefing:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show urshu neutral at right with dissolve
 

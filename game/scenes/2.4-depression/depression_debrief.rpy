@@ -10,7 +10,8 @@ label depression_debrief:
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold or att_meter_darius >= romance_threshold or att_meter_susurha >= romance_threshold:
 
-        show vivi neutral at left with dissolve
+        show vivi neutral at left with dissolve:
+            xzoom -1
 
         # SOUND: knocking
         play sound knock
@@ -44,7 +45,7 @@ label depression_debrief:
 
         $ day = 5 # good ending
         #Journal entry with attraction meter high
-        call display_journal
+        call display_journal from _call_display_journal_5
 
         call showclock from _call_showclock
 
@@ -54,7 +55,8 @@ label depression_debrief:
     # NOTE: SCENE VARIATION IF DECAY IS HIGH
     # ??DECAY
     else:
-        show vivi neutral at left with dissolve
+        show vivi neutral at left with dissolve:
+            xzoom -1
 
         # SOUND: Knocking on door
         play sound knock
@@ -85,7 +87,7 @@ label depression_debrief:
 
         $ day = 6 # bad ending
         # Journal entry with degradation meter high
-        call display_journal
+        call display_journal from _call_display_journal_6
 
         call showclock from _call_showclock_1
 

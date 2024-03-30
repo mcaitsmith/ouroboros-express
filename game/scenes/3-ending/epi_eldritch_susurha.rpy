@@ -7,7 +7,7 @@ label epi_eldritch_susurha:
 
     #LOCATION: eldritchlandscape
     scene black with fade
-
+    show urshu sad at center with dissolve
     urshu sad "Despite the rebel prince's burning desire to live free, they could not escape the guilt that bound them to their past decisions."
 
     urshu sad "This growing rumination metastasized into their personal horror, who chained them at the wrists and ankles and dragged them into the furthest depths of the Dark Beyond."

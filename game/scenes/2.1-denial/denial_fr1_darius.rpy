@@ -6,7 +6,8 @@ label denial_fr1_darius:
     #LOCATION: lounge
     scene lounge with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom-1
 
     show darius neutral at right with dissolve
 

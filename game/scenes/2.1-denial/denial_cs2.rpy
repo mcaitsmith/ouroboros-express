@@ -7,7 +7,8 @@ label denial_cs2:
     #LOCATION: cabin
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivi neutral "That was... interesting. Looks like I wasn't the only one blindsided by this train. I need some time to gather my thoughts."
 

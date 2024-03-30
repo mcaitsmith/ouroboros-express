@@ -7,7 +7,8 @@ label denial_fr2_darius:
     #LOCATION: dining car
     scene diningcar with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show darius neutral at right with dissolve
 
@@ -116,7 +117,8 @@ label denial_fr2_darius:
 
     show darius neutral at right with dissolve
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     darius neutral "Stay behind me and follow my motions."
 
@@ -128,7 +130,8 @@ label denial_fr2_darius:
 
     show urshu happy at left with dissolve
 
-    show vivi angry at right with dissolve
+    show vivi angry at right with dissolve:
+        xzoom 1
 
     # SOUND: whistling
     # skipping this one
@@ -141,7 +144,8 @@ label denial_fr2_darius:
 
     show darius neutral at right with dissolve
 
-    show vivi angry at left with dissolve
+    show vivi angry at left with dissolve :
+        xzoom -1
 
     darius neutral "Calm yourself."
 
@@ -172,7 +176,8 @@ label denial_fr2_darius:
 
     show darius surprised at right with dissolve
 
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1
 
     stop sound fadeout 2.0
 
@@ -195,7 +200,8 @@ label denial_fr2_darius:
 
     show darius surprised at right with dissolve
 
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1 
 
     darius surprised "Been a while since I had to track a mage. Hopefully my senses are somewhat intact here."
 
@@ -282,9 +288,17 @@ label denial_fr2_darius:
 
     show urshu neutral at left with dissolve:
         xzoom -1.0
-
+    show vivi surprised at left:
+        xzoom -1
+        linear 0.1 ypos 1000
+        linear 0.1 ypos 1080
     urshu neutral "Interesting! What do you see out there?"
-
+    
+    show vivi surprised:
+        linear 0.5 xpos 700
+    $ renpy.pause(0.7)
+    show vivi surprised at center with dissolve:
+        xzoom 1
     vivi surprised "Where the hell did you come from?"
 
     urshu neutral "I appear when I am needed my dear! Now Mx. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
@@ -300,7 +314,8 @@ label denial_fr2_darius:
 
     urshu neutral "The cosmos holds many things, not all of them friendly. Some may draw themselves to you, while others may find another passenger more appealing. What you saw is simply one of those entities."
 
-    show vivi angry at right
+    show vivi angry at center :
+        xzoom 1
 
     # <CHOICE>
 
@@ -334,7 +349,8 @@ label denial_fr2_darius:
 
     darius sad "A loving couple, screams, confusion... I can't make sense of it all."
 
-    show urshu neutral at left
+    show urshu neutral at left:
+        xzoom -1
     urshu neutral "I see. Tell me, how much of your... end, do you remember?"
 
     darius sad "My end?"
@@ -362,7 +378,7 @@ label denial_fr2_darius:
 
     stop sound fadeout 1.0
 
-    show vivi sad at left
+    show vivi sad at center
 
     vivithinking "I've never seen Darius like this before."
 
@@ -381,7 +397,7 @@ label denial_fr2_darius:
 
     urshu neutral "Ms. Sanssouci, if you don't mind, could you meet me at your cabin shortly? We have some matters to discuss."
 
-    show vivi neutral at left
+    show vivi neutral at  center
     vivithinking "We have things to discuss?"
 
     vivithinking "The tension hangs in the air. It's like a miasma, cutting the oxygen and making my heart pace."
@@ -392,6 +408,8 @@ label denial_fr2_darius:
 
     show darius surprised at right
     darius surprised "What?"
+    show vivi sad blush at left with dissolve:
+        xzoom -1
 
     vivithinking "The air is getting thin, heated even. It's just like before in the dining car. Darius is..."
 

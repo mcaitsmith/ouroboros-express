@@ -8,11 +8,16 @@ label romance_susurha:
     #LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral blush at left with dissolve
+    show vivi neutral blush at left with dissolve:
+        xzoom -1
     show susurha happy blush at right with dissolve
 
     vivi neutral blush  "Can you feel it? We're approaching our final stop."
     susurha "Come into my arms. There."
+    show vivi neutral blush:
+        linear 1.0 xpos 480
+    show susurha happy blush:
+        linear 1.0 xpos 1560
     susurha "We can merge with each other as we merge with the cosmic weave."
     vivi neutral blush "It's getting brighter..."
 
@@ -39,7 +44,7 @@ label romance_susurha:
     $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nThey're funny and positive. It's a breath\nof fresh air.\nI think the thing I love most is Susu'Rha's heart.\nThey're the kindest being I've ever met.\nIt feels like a warm hug whenever they speak.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
-    call display_journal
+    call display_journal from _call_display_journal_10
 
     #To Epilogues according to attraction meters
     if att_meter_ava >= romance_threshold:

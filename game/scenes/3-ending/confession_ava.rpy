@@ -9,7 +9,8 @@ label confession_ava:
     # scene lounge with fade
 
     # show ava happy at right with dissolve
-    # show vivi neutral at left with dissolve
+    # show vivi neutral at left with dissolve:
+    #     xzoom -1
 
     vivithinking neutral "There she is. Radiant as always."
     vivithinking surprised blush "But damn! Today she {i}really{/i} is glowing! Like even more than normal..." 
