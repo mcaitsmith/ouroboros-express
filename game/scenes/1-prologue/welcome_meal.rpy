@@ -38,11 +38,11 @@ label welcome_meal:
 
     vivi neutral "..."
 
-    hide ava silhouette with dissolve
+    # hide ava silhouette with dissolve
 
-    hide darius silhouette with dissolve
+    # hide darius silhouette with dissolve
 
-    hide susurha silhouette with dissolve
+    # hide susurha silhouette with dissolve
 
     show vivi surprised at left with dissolve:
         xzoom -1
@@ -114,6 +114,10 @@ label welcome_meal:
 
                     vivithinking neutral "Let's talk to the lady with a fine dress and... Is that a crown? She seems interesting."
 
+                    show ava silhouette at right with moveinright
+                    show ava silhouette at right:
+                        xzoom 1.0
+
                     # JUMP TO: Interviews / Avatar of Asha
                     jump interview_ava
 
@@ -128,6 +132,8 @@ label welcome_meal:
 
                     vivithinking neutral "That person went all out with their costume. Those tentacles look so lifelike. I've gotta interview them."
 
+                    show darius silhouette at right with moveinright
+
                     # JUMP TO: Interviews / Darius Wrecker
                     jump interview_darius
 
@@ -141,6 +147,8 @@ label welcome_meal:
                     hide darius silhouette with dissolve
 
                     vivithinking neutral "Let's interview whoever's dressed as a giant gecko, shall we? I really don't understand the theme of this costume party."
+
+                    show susurha silhouette at right with moveinright
 
                     # JUMP TO: Interviews / Susu'Rha Balrinn
                     jump interview_susurha
