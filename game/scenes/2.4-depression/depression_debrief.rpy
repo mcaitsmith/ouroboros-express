@@ -49,6 +49,8 @@ label depression_debrief:
         #Journal entry with attraction meter high
         call display_journal from _call_display_journal_5
 
+        $ cycle = 4
+
         stop sound
 
         call showclock from _call_showclock
@@ -94,6 +96,8 @@ label depression_debrief:
         $ day = 6 # bad ending
         # Journal entry with degradation meter high
         call display_journal from _call_display_journal_6
+
+        $ cycle = 4
 
         stop sound
 

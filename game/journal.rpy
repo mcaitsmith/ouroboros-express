@@ -82,6 +82,11 @@ label journal:
             text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 4{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
             text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+        if cycle == 4:
+            # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 5{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
         #determine darius note
         if eldritch == True:
             text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/size}{/font}" :
