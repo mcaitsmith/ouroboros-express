@@ -97,7 +97,10 @@ label welcome_meal:
                 show susurha neutral at right with dissolve
 
             # <CHOICE>
-            vivithinking neutral "Let's see. Who should I interview first?"
+            if interview1 == False and interview2 == False and interview3 == False:
+                vivithinking neutral "Let's see. Who should I interview first?"
+            else:
+                vivithinking neutral "Who should I interview next?"
 
             menu:
                 # OPTION 1 

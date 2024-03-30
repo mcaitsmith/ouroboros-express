@@ -43,6 +43,7 @@ label depression_debrief:
 
         $ message = "Wow.\nAt the beginning of all this, I would've never thought\nI'd get to know some of the other passengers\nthis well.\nWe're all more similar than I thought.\nEven Urshu, believe it or not.\n\nTime is weird here.\nI feel like I've been riding this train for ages,\nbut I think I finally understand this place.\n\nIt's a lot to process,\nbut I'm glad I didn't have to do it alone."
 
+        $ day = 5 # good ending
         #Journal entry with attraction meter high
         call display_journal from _call_display_journal_5
 
@@ -84,6 +85,7 @@ label depression_debrief:
 
         $ message = "I can't take this anymore.\n\nThere's something growing inside me.\nA hunger I, {i}we{/i} can't explain.\nWhat is happening to us?\n\nThis is the conductor's fault.\nHe's behind everything. The other passengers too.\nThey must be working with him.\nNone of them feel the way we do.\nThey're all out to get us.\nWe won't go. Not like this.\nThey'll see."
 
+        $ day = 6 # bad ending
         # Journal entry with degradation meter high
         call display_journal from _call_display_journal_6
 

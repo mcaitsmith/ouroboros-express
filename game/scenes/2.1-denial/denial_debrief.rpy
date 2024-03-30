@@ -31,7 +31,10 @@ label denial_debrief:
     $ message = "This is real.\nIt doesn't make sense but it's all\nreally happening.\nThere was no way off the train.\nHow the hell did I die?\nI thought I'd leave a mark on the world before I left.\nOr at least someone special.\nIt's all so frustrating.\nThe conductor is the worst, acting like this is a game.\n\nTHIS IS OUR LIVES!\n\nAt least I'm not the only one going through this."
 
     #Journal entry
-    call display_journal from _call_display_journal
+
+    call display_journal
+    $ has_journal = True
+
     $ cycle = 1
 
     # "This is real. It doesn't make sense but it's all really happening. There was no way off the train. How the hell did I die? I thought I'd leave a mark on the world before I left. Or at least someone special. It's all so frustrating. The conductor is the worst, acting like this is a game. THIS IS OUR LIVES! At least I'm not the only one going through this."
