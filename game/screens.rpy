@@ -591,8 +591,27 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                         yalign 0.5
                         xalign 0.0
 
-                        text "Quote of the day.":
-                            style "quote_of_the_day"
+                        if not hasattr(store, 'day') or day == 0:
+                            text "V, superstar! You got this!":
+                                style "quote_of_the_day"
+                        elif day == 1: # denial
+                            text "To do: Let it sink. Take your time.":
+                                style "quote_of_the_day"
+                        elif day == 2: # anger
+                            text "One thing is clear. Death hasn’t stopped you.":
+                                style "quote_of_the_day"
+                        elif day == 3: # bargaining
+                            text "It’s okay to ask for help.":
+                                style "quote_of_the_day"
+                        elif day == 4: # depression
+                            text "Take it how you will. This is your story.":
+                                style "quote_of_the_day"
+                        elif day == 5: # good ending
+                            text "Cast the mask away. Bloom.":
+                                style "quote_of_the_day"
+                        else: # bad ending. also what happens if things go wrong apparently.
+                            text "Vivi! Don’t go down quietly!":
+                                style "quote_of_the_day"
                     if hasattr(store, 'has_journal') and has_journal == True:
                         hbox:
                             yalign 0.5
