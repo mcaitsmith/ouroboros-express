@@ -36,7 +36,7 @@ label bad_consequences:
     # $ message = "{i}...Illegible garble...{/i}"
     $ message = "xxxxxxxxxxxxxxxxxxxxxx \nxxxxxxxxx xxxxxxxx \nxxxxxxxx xxxxx xxxxxx xxxxxxxx\nxxxxxx xxxxxxxxxx xxxxxxxxxx \nxxx xxxxx xxxx xxxx xxxxx \nxxxxx \nxxxx \nxxx \nXXX XXX"
     # $ message = "{=strikethrough}{color=#FF0000}{b}starving \n one by one they will be devoured \n give me their light \n starving{/b}{/color}"
-    $ message = "{s}{color=#FF0000}{b}xxxxxxxxxxxxxxxxxxxxxx \nxxxxxxxxx xxxxxxxx \nxxxxxxxx xxxxx xxxxxx xxxxxxxx\nxxxxxx xxxxxxxxxx xxxxxxxxxx \nxxx xxxxx xxxx xxxx xxxxx \nxxxxx \nxxxx \nxxx \nXXX XXX{/b}{/color}{/s}"
+    $ message = "{s}{color=#920000}{b}xxxxxxxxxxxxxxxxxxxxxx \nxxxxxxxxx xxxxxxxx \nxxxxxxxx xxxxx xxxxxx xxxxxxxx\nxxxxxx xxxxxxxxxx xxxxxxxxxx \nxxx xxxxx xxxx xxxx xxxxx \nxxxxx \nxxxx \nxxx \nXXX XXX{/b}{/color}{/s}"
     $ eldritch = True
 
     call display_journal from _call_display_journal_7

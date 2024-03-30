@@ -84,7 +84,7 @@ label journal:
             text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
         #determine darius note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#FF0000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.08
         elif att_meter_darius >= 0 and att_meter_darius <= 100 :
             if att_meter_darius == 0:
@@ -110,7 +110,7 @@ label journal:
                 xalign 0.785 yalign 0.08
         #determine ava note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#FF0000}{i}{s}yYYyoouuu Sooon OF {/s}{/i}{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}yYYyoouuu Sooon OF {/s}{/i}{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.315
         elif att_meter_ava >= 0 and att_meter_ava <= 100 :
             
@@ -137,7 +137,7 @@ label journal:
                 xalign 0.785 yalign 0.315
         # determine susurha note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#FF0000}{i}{s}a B?TCH{/s}{/i}{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}a B?TCH{/s}{/i}{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.55
         elif att_meter_susurha >= 0 and att_meter_susurha <= 100 :
             if att_meter_susurha == 0:
