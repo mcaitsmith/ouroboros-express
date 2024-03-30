@@ -1,6 +1,7 @@
 ﻿# The scene starts here.
 
 label anger_briefing:
+    $ day = 2 # anger
 
     #Briefing Anger
     # LOCATION: cabin

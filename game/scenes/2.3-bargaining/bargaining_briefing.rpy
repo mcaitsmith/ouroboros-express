@@ -1,6 +1,7 @@
 ﻿# The scene starts here.
 
 label bargaining_briefing:
+    $ day = 3 # bargaining
 
     #Briefing Bargaining
 

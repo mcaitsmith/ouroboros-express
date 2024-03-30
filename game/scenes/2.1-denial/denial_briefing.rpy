@@ -1,6 +1,7 @@
 ﻿# The scene starts here.
 
 label denial_briefing:
+    $ day = 1 # denial
 
     #Briefing Denial
     #LOCATION: cabin
