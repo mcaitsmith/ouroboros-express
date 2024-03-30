@@ -5,7 +5,7 @@ label depression_fr1_ava:
     # FREE ROAM 1 - Ava
 
     # LOCATION: lounge
-    scene lounge with fade
+    scene diningcar with fade
 
     # SOUND: train
     play sound train
@@ -42,7 +42,8 @@ label depression_fr1_ava:
     vivithinking "Shoulda figured he'd know my drink, the cagey bastard!"
         
     hide urshu with dissolve
-
+    show vivi neutral at left with dissolve:
+        xzoom -1
     stop sound fadeout 1.0
 
     # <CHOICE>

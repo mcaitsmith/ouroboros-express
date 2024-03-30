@@ -11,7 +11,8 @@ label welcome_meal:
     # LOCATION: diningcar
     scene diningcar with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve :
+        xzoom -1
 
     show urshu neutral at right with dissolve
 
@@ -37,13 +38,14 @@ label welcome_meal:
 
     vivi neutral "..."
 
-    hide ava silhouette with dissolve
+    # hide ava silhouette with dissolve
 
-    hide darius silhouette with dissolve
+    # hide darius silhouette with dissolve
 
-    hide susurha silhouette with dissolve
+    # hide susurha silhouette with dissolve
 
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1
 
     vivi surprised "Umm...Urshu?"
 
@@ -75,20 +77,30 @@ label welcome_meal:
     $ interview3 = False
 
     label interview_choice:
-
+        hide vivi with dissolve
         if interview1 == True and interview2 == True and interview3 == True:
             jump figuring_it_out
         else:
-
-            show ava silhouette at left with dissolve:
-                xzoom -1.0
-
-            show darius silhouette at center with dissolve
-
-            show susurha silhouette at right with dissolve
+            if not interview1:
+                show ava silhouette at left with dissolve:
+                    xzoom -1.0
+            else:
+                show ava neutral at left with dissolve:
+                    xzoom -1.0
+            if not interview2:
+                show darius silhouette at center with dissolve
+            else:
+                show darius neutral at center with dissolve
+            if not interview3:
+                show susurha silhouette at right with dissolve
+            else:
+                show susurha neutral at right with dissolve
 
             # <CHOICE>
-            vivithinking neutral "Let's see. Who should I interview first?"
+            if interview1 == False and interview2 == False and interview3 == False:
+                vivithinking neutral "Let's see. Who should I interview first?"
+            else:
+                vivithinking neutral "Who should I interview next?"
 
             menu:
                 # OPTION 1 
@@ -101,6 +113,10 @@ label welcome_meal:
                     hide susurha silhouette with dissolve
 
                     vivithinking neutral "Let's talk to the lady with the fine dress and... Is that a crown? She seems interesting."
+
+                    show ava silhouette at right with moveinright
+                    show ava silhouette at right:
+                        xzoom 1.0
 
                     # JUMP TO: Interviews / Avatar of Asha
                     jump interview_ava
@@ -116,6 +132,8 @@ label welcome_meal:
 
                     vivithinking neutral "That person went all out with their costume. Those tentacles look so lifelike. I've gotta interview them."
 
+                    show darius silhouette at right with moveinright
+
                     # JUMP TO: Interviews / Darius Wrecker
                     jump interview_darius
 
@@ -129,6 +147,8 @@ label welcome_meal:
                     hide darius silhouette with dissolve
 
                     vivithinking neutral "Let's interview whoever's dressed as a giant gecko, shall we? I really don't understand the theme of this costume party."
+
+                    show susurha silhouette at right with moveinright
 
                     # JUMP TO: Interviews / Susu'Rha Balrinn
                     jump interview_susurha

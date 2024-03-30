@@ -10,7 +10,8 @@ label bargaining_fr1_ava:
     # SOUND: the train on its tracks
     play sound train
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show ava neutral at right with dissolve
 
@@ -76,7 +77,8 @@ label bargaining_fr1_ava:
 
             vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
             ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men, even Tears."
-            show vivi surprised at left
+            show vivi surprised at left:
+                xzoom -1
 
             # <CHOICE>
             vivithinking "Damn! Which one's the worst?!"
@@ -112,7 +114,8 @@ label bargaining_fr1_ava:
                     vivi surprised "No name?"
                     ava sad "We speak for our people, so we are all, and we are one."
 
-                    show vivi neutral at left
+                    show vivi neutral at left:
+                        xzoom -1
 
                     vivithinking "That puts a lot into perspective."
                     ava neutral "Better us than the Royals. We care."
@@ -122,7 +125,8 @@ label bargaining_fr1_ava:
                     vivi happy "Good! Maybe it'll help you forget your time on Soleos."
                     ava sad "No, I do not wish that entirely." 
                     ava neutral "The Royals were cruel, yes, but it was an honor to serve our people."
-                    show vivi neutral blush at left
+                    show vivi neutral blush at left:
+                        xzoom -1
                     vivithinking "Wow. She really is radiant. Inside and out."
                 
                     # JUMP TO: vivi happy "I'm glad you made the most of it."

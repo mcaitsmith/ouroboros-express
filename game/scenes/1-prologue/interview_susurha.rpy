@@ -9,8 +9,8 @@ label interview_susurha:
 
     show susurha neutral with dissolve
 
-    # show vivi neutral at left with dissolve
-
+    show vivi at left with dissolve:
+        xzoom -1
     vivithinking surprised "Wait a minute..."
     vivithinking surprised "A humanoid...lizard? Seriously, whoa."
     vivithinking neutral "And so relaxed." 

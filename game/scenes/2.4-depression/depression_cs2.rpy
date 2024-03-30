@@ -7,7 +7,8 @@ label depression_cs2:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking sad "Ugh... I think I might've had a little too much."
     vivithinking neutral "Then again, there's nothing to look toward. Might as well take advantage of the open bar."

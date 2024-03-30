@@ -7,7 +7,8 @@ label confrontation:
     scene lounge with fade
 
     show urshu happy at right with dissolve
-    show vivi angry at left with dissolve
+    show vivi angry at left with dissolve:
+        xzoom -1
 
     urshu happy "Doo doo doo, dee dee dee, dum dum dum!"
     vivithinking angry "There he is. Humming a jaunty tune. Polishing the leather. The audacity!"

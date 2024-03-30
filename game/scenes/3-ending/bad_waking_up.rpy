@@ -24,7 +24,8 @@ label bad_waking_up:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi surprised at left with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1
 
     vivi surprised "No!"
     vivi surprised "A dream. Only, I was dying. All alone."

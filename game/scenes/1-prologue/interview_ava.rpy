@@ -7,8 +7,10 @@ label interview_ava:
     # LOCATION: diningcar
     # scene diningcar with fade
 
-    show ava neutral with dissolve
-
+    show ava neutral at right with dissolve:
+        xzoom 1.0
+    show vivi at left with dissolve:
+        xzoom -1
     # SOUND: train
     play sound train loop
 
@@ -63,7 +65,7 @@ label interview_ava:
     vivithinking neutral "Oh la di da. I get it, you're cultured."
 
     # <CHOICE>
-    "So, umm...?"
+    vivi neutral "So, umm...?"
 
     menu:
         # OPTION 1

@@ -7,7 +7,8 @@ label anger_fr2_darius:
     # LOCATION: dining car
     scene diningcar with fade
 
-    show vivi happy at left with dissolve
+    show vivi happy at left with dissolve:
+        xzoom -1
 
     vivithinking neutral "Their heat is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
 

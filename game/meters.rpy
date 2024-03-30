@@ -10,6 +10,10 @@ label meters:
     $ cycle = 0
     $ eldritch = False
 
+    # Used only for quote of the day. A number to determine 
+    # which quote is shown. Default is the 'prologue' quote.
+    $ day = 0
+
     # define total meter increase for Anger FR1
     $ att_max_anger_fr1 = 15
     # define total meter increase for Anger FR2

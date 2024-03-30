@@ -7,7 +7,8 @@ label bargaining_fr2_susurha:
     # LOCATION: diningcar
     scene diningcar with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show susurha neutral at right with dissolve
 

@@ -7,7 +7,8 @@ label figuring_it_out:
     # LOCATION: cabin 
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking angry "My head's spinning. This is not normal. Something's not okay."
     vivithinking sad "Am I...okay?"

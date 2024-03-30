@@ -11,7 +11,8 @@ label bargaining_fr1_susurha:
     play sound windowopen
     pause 1.0
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show susurha neutral at right with dissolve
 
@@ -66,7 +67,7 @@ label bargaining_fr1_susurha:
 
 
         # OPTION 3 +ATTRACTION
-        "I struck a bargain with Urshu. I'm going to make him a meal and I need your help.":
+        "I struck a bargain with Urshu. I'm going to make him a meal.":
 
             play sound attchoice
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])

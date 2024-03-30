@@ -13,7 +13,8 @@ label introduction:
     # LOCATION: cabin
     scene cabin with Fade(3.0,1.0,3.0)
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
 
     vivithinking surprised "Notepad, check. Pen, check. Laptop... Ugh, I swear I charged it. Phone... Dead too? Typical.. Hundreds of interviews and still I make amateur mistakes. This is an important story!"

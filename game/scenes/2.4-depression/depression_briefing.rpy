@@ -7,7 +7,8 @@ label depression_briefing:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi sad at left with dissolve
+    show vivi sad at left with dissolve :
+        xzoom -1
 
     vivithinking "I'm...awake."
     vivithinking "Alive."

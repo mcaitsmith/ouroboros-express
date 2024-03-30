@@ -28,14 +28,14 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#cc6600'
+define gui.accent_color = '#ffffff'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#a6a6a6'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#cacaca'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#e0a366'
@@ -71,10 +71,10 @@ define gui.interface_text_font = "KaiseiDecol-Regular.ttf"
 define gui.title_text_font = "Lato-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 20
+define gui.text_size = 24
 
 ## The size of character names.
-define gui.name_text_size = 24
+define gui.name_text_size = 36
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
@@ -204,6 +204,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ## navigation button.
 
 # define gui.navigation_button_width = 250
+define gui.navigation_button_text_font = gui.text_font
 
 
 ## Choice Buttons ##############################################################
@@ -239,8 +240,8 @@ define gui.slot_button_text_selected_idle_color = gui.selected_color
 define gui.slot_button_text_selected_hover_color = gui.hover_color
 
 ## The width and height of thumbnails used by the save slots.
-define config.thumbnail_width = 384
-define config.thumbnail_height = 216
+define config.thumbnail_width = 150
+define config.thumbnail_height = 120
 
 ## The number of columns and rows in the grid of save slots.
 define gui.file_slot_cols = 3
@@ -347,19 +348,19 @@ define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at
 ## the cost of performance.
-define gui.history_height = 210
+define gui.history_height = None
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.history_name_xpos = 233
+define gui.history_name_xpos = 150
 define gui.history_name_ypos = 0
-define gui.history_name_width = 233
+define gui.history_name_width = 100
 define gui.history_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.history_text_xpos = 255
+define gui.history_text_xpos = 200
 define gui.history_text_ypos = 3
-define gui.history_text_width = 1110
+define gui.history_text_width = 720
 define gui.history_text_xalign = 0.0
 
 

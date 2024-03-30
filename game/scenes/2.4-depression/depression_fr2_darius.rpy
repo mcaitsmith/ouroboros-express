@@ -8,7 +8,8 @@ label depression_fr2_darius:
 
     show darius sad at right with dissolve
         
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     darius sad "You're here."
     vivi neutral "Expecting me?"
@@ -66,9 +67,9 @@ label depression_fr2_darius:
             # JUMP TO: vivi surprised "What do you mean by that?"
 
         # OPTION 4 >>ATTRACTION
-        "If this is the last conversation I'm ever to have, I'm grateful to have it with you." if att_meter_darius >= 60:
+        "I'm grateful my last moments are with you." if att_meter_darius >= 60:
 
-            vivi neutral blush "If this is the last conversation I'm ever to have, I'm grateful to have it with you."
+            vivi neutral blush "I'm grateful my last moments are with you."
             show darius neutral blush with dissolve
             darius "You don't even know me."
             vivi happy blush "I know enough. You care deeply."

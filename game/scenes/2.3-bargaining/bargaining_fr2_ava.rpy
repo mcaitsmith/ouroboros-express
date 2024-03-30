@@ -10,7 +10,8 @@ label bargaining_fr2_ava:
     # SOUND: cooking, kitchen sounds
     play sound cooking
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show ava neutral at right with dissolve
 

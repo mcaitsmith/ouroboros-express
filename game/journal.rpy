@@ -62,29 +62,34 @@ label journal:
         # determine diary note
         # if len(journal_array) >= 1:
         if cycle == 0:
-            text "{font=Slimamif.ttf}{color=#000000}{b}DAY 1{/b}{/color}{/font}"  xalign 0.33 yalign 0.1
-            text "{font=Slimamif.ttf}{color=#000000}[message]{/color}{/font}" xalign 0.28 yalign 0.20
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 1{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
         # if len(journal_array) >= 2:
         if cycle == 1:
             # text "{color=#000000}DAY 2{/color}"  xalign 0.25 yalign 0.2
-            text "{font=Slimamif.ttf}{color=#000000}{b}DAY 2{/b}{/color}{/font}"  xalign 0.33 yalign 0.1
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 2{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
             # text "{color=#000000}[journal_array[1]]{/color}" xalign 0.25 yalign 0.23
-            text "{font=Slimamif.ttf}{color=#000000}[message]{/color}{/font}" xalign 0.28 yalign 0.20
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
         # if len(journal_array) >= 3:
         if cycle == 2:
             # text "{color=#000000}DAY 3{/color}"  xalign 0.25 yalign 0.3
-            text "{font=Slimamif.ttf}{color=#000000}{b}DAY 3{/b}{/color}{/font}"  xalign 0.33 yalign 0.1
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 3{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
             # text "{color=#000000}[journal_array[2]]{/color}" xalign 0.25 yalign 0.33
-            text "{font=Slimamif.ttf}{color=#000000}[message]{/color}{/font}" xalign 0.28 yalign 0.20
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
         # if len(journal_array) >= 4:
         if cycle == 3:
             # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Slimamif.ttf}{color=#000000}{b}DAY 4{/b}{/color}{/font}"  xalign 0.33 yalign 0.1
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 4{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Slimamif.ttf}{color=#000000}[message]{/color}{/font}" xalign 0.28 yalign 0.20
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+        if cycle == 4:
+            # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 5{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
+            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
         #determine darius note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}{i}...Illegible garble...{/i}{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.08
         elif att_meter_darius >= 0 and att_meter_darius <= 100 :
             if att_meter_darius == 0:
@@ -110,7 +115,7 @@ label journal:
                 xalign 0.785 yalign 0.08
         #determine ava note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}{i}...Illegible garble...{/i}{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}yYYyoouuu Sooon OF {/s}{/i}{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.315
         elif att_meter_ava >= 0 and att_meter_ava <= 100 :
             
@@ -137,7 +142,7 @@ label journal:
                 xalign 0.785 yalign 0.315
         # determine susurha note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}{i}...Illegible garble...{/i}{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}a B?TCH{/s}{/i}{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.55
         elif att_meter_susurha >= 0 and att_meter_susurha <= 100 :
             if att_meter_susurha == 0:

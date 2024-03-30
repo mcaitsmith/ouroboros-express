@@ -7,7 +7,8 @@ label bargaining_fr1_darius:
     # LOCATION: lounge 
     scene lounge with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show darius sad at right with dissolve
 

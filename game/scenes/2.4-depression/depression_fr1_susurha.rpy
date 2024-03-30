@@ -7,7 +7,8 @@ label depression_fr1_susurha:
     # LOCATION: diningcar
     scene diningcar with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking "If anyone knows how to drink on this train, it's gotta be Susu'Rha."
 

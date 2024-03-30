@@ -1,12 +1,14 @@
 ﻿# The scene starts here.
 
 label denial_briefing:
+    $ day = 1 # denial
 
     #Briefing Denial
     #LOCATION: cabin
     scene cabin with fade
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     vivithinking "Uhhh..."
     vivithinking "My head's pounding. Almost as bad as it did that one lunar new year in Hanoi."

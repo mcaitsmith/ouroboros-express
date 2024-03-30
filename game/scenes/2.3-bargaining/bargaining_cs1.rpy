@@ -7,7 +7,8 @@ label bargaining_cs1:
     # LOCATION: cabin
     scene cabin with fade
 
-    show vivi happy at left with dissolve
+    show vivi happy at left with dissolve:
+        xzoom -1
 
     vivithinking "Okay. Let's think, Vivi. How am I gonna satisfy the conductor?"
 

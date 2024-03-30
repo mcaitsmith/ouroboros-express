@@ -11,7 +11,8 @@ label bargaining_fr2_darius:
     play sound cooking
     pause 1.0
 
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
     show darius neutral at right with dissolve
 

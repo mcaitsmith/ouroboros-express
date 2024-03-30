@@ -10,7 +10,8 @@ label epi_friendship_all:
     # LOCATION: terminalofdreams
     scene white with dissolve
 
-    show vivi happy at center_left with dissolve
+    show vivi happy at center_left with dissolve:
+        xzoom -1
     show urshu happy at center_right with dissolve
 
     vivithinking surprised "I can hear brakes..." 

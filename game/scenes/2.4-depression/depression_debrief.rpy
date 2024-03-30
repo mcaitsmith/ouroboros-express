@@ -10,7 +10,8 @@ label depression_debrief:
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold or att_meter_darius >= romance_threshold or att_meter_susurha >= romance_threshold:
 
-        show vivi neutral at left with dissolve
+        show vivi neutral at left with dissolve:
+            xzoom -1
 
         # SOUND: knocking
         play sound knock
@@ -40,10 +41,17 @@ label depression_debrief:
         
         vivithinking neutral "My mind is buzzing. I need to write."
 
+        play sound writing
+
         $ message = "Wow.\nAt the beginning of all this, I would've never thought\nI'd get to know some of the other passengers\nthis well.\nWe're all more similar than I thought.\nEven Urshu, believe it or not.\n\nTime is weird here.\nI feel like I've been riding this train for ages,\nbut I think I finally understand this place.\n\nIt's a lot to process,\nbut I'm glad I didn't have to do it alone."
 
+        $ day = 5 # good ending
         #Journal entry with attraction meter high
-        call display_journal
+        call display_journal from _call_display_journal_5
+
+        $ cycle = 4
+
+        stop sound
 
         call showclock from _call_showclock
 
@@ -53,7 +61,8 @@ label depression_debrief:
     # NOTE: SCENE VARIATION IF DECAY IS HIGH
     # ??DECAY
     else:
-        show vivi neutral at left with dissolve
+        show vivi neutral at left with dissolve:
+            xzoom -1
 
         # SOUND: Knocking on door
         play sound knock
@@ -80,10 +89,17 @@ label depression_debrief:
 
         vivithinking neutral "I should write whatever thoughts I have left. By tomorrow, I'm not sure they'll be mine."
 
+        play sound writing
+
         $ message = "I can't take this anymore.\n\nThere's something growing inside me.\nA hunger I, {i}we{/i} can't explain.\nWhat is happening to us?\n\nThis is the conductor's fault.\nHe's behind everything. The other passengers too.\nThey must be working with him.\nNone of them feel the way we do.\nThey're all out to get us.\nWe won't go. Not like this.\nThey'll see."
 
+        $ day = 6 # bad ending
         # Journal entry with degradation meter high
-        call display_journal
+        call display_journal from _call_display_journal_6
+
+        $ cycle = 4
+
+        stop sound
 
         call showclock from _call_showclock_1
 

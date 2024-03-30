@@ -7,7 +7,8 @@ label depression_fr1_darius:
     scene lounge with fade
 
     show darius sad at right with dissolve
-    show vivi happy at left with dissolve
+    show vivi happy at left with dissolve:
+        xzoom -1
 
     vivithinking "Perfect. They're here."
 
@@ -37,7 +38,7 @@ label depression_fr1_darius:
             # JUMP TO: vivi happy "So. What are we drinking?"
 
         # OPTION 2 +DECAY 
-        "You just push everyone away, don't you? Fine. We can wait for the inevitable in silence.":
+        "You just push everyone away, don't you?":
 
             play sound decchoice
             $ dec_meter += int(dec_max_depression / dec_num_depression)

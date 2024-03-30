@@ -13,14 +13,16 @@ label romance_cs:
     $ ava_friend = False
     $ darius_friend = False
     $ susurha_friend = False
+    define ava_asked = False
+    define darius_asked = False
+    define susurha_asked = False
 
     label show_chars:
 
         # show all characters happy that have a high attraction meter.
         # ??ATTRACTION
         if att_meter_ava >= romance_threshold:
-            show ava happy at left with dissolve:
-                xzoom -1.0
+            show ava happy at center_right with dissolve
         # ??ATTRACTION
         if att_meter_darius >= romance_threshold:
             show darius happy at center with dissolve
@@ -29,16 +31,15 @@ label romance_cs:
             show susurha happy at right with dissolve
 
         #hide all characters
-
-        show vivi happy at center_left with dissolve
-
+        show vivi happy at center_left with dissolve:
+                xzoom -1
         vivi happy "Hey..."
-
+        
+        vivithinking happy "Time to talk with someone."
         label end_choice:
-
+            show vivi at center_left with dissolve:
+                xzoom -1
             # <CHOICE>
-            vivithinking happy "Time to talk with someone."
-
             menu:
             # OPTION1 ??ATTRACTION
                 "Avatar of Asha" if att_meter_ava >= romance_threshold and ava_confess == False:
@@ -109,8 +110,8 @@ label romance_cs:
             # NOTE options 4,5,6 are if a character is missing from the scene. It would replace the corresponding character option above.
 
             # OPTION 4 ??ATTRACTION (ELSE)
-                "Where's the goddess?" if not att_meter_ava >= romance_threshold:
-
+                "Where's the goddess?" if not att_meter_ava >= romance_threshold and not ava_asked:
+                    $ ava_asked = True
                     vivi surprised "Wait, where's the goddess?"
 
                     show urshu sad at center_right with dissolve
@@ -124,8 +125,8 @@ label romance_cs:
                     jump end_choice
 
             # OPTION 5 ??ATTRACTION (ELSE)
-                "Where's Darius?" if not att_meter_darius >= romance_threshold:
-            
+                "Where's Darius?" if not att_meter_darius >= romance_threshold and not darius_asked:
+                    $ darius_asked = True
                     vivi surprised "Wait, where's Darius?"
 
                     show urshu sad at center_right with dissolve
@@ -140,8 +141,8 @@ label romance_cs:
 
 
             # OPTION 6 ??ATTRACTION (ELSE)
-                "Where's Susu'Rha?" if not att_meter_susurha >= romance_threshold:
-            
+                "Where's Susu'Rha?" if not att_meter_susurha >= romance_threshold and not susurha_asked:
+                    $ susurha_asked = True
                     vivi surprised "Wait, where's Susu'Rha?"
 
                     show urshu sad at center_right with dissolve
@@ -157,7 +158,14 @@ label romance_cs:
             # NOTE options 7,8,9 are if you have talked to a character, they confessed and you chose the "please hold while I make my decision" option. This would replace the corresponding character option from 1,2,3.
 
             # NOTE If you friendzone all characters, OPTION 10 will appear.
-
+                "Thank you for coming this far with me Asha." if ava_friend == True and (susurha_asked and darius_asked):
+                    jump epi_friend_ava
+                "Thank you for coming this far with me Darius." if darius_friend == True and (susurha_asked and ava_asked):
+                    jump epi_friend_darius
+                "Thank you for coming this far with me Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
+                    jump epi_friend_susurha
+                "Thank you for coming this far with me you two." if (susurha_friend and darius_friend) or (ava_friend and darius_friend) or (susurha_friend and ava_friend):
+                    jump  epi_friendship_all
             # OPTION 10
                 "I found friends." if ava_friend == True and darius_friend == True and susurha_friend == True:
 
