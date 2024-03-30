@@ -26,6 +26,8 @@ label anger_debrief:
         call display_journal from _call_display_journal_1
         $ cycle = 2
 
+        stop sound
+
         # Journal entry with degradation meter high
 
     # ELSE
@@ -40,10 +42,14 @@ label anger_debrief:
 
         vivithinking neutral "I should journal my thoughts."
 
+        play sound writing
+
         $ message = "Talking to the other passengers has helped\nput things into perspective.\nThey're not so bad after all.\nI won't get off this train by fighting.\n\nI still need more info on the conductor.\nHe's my ticket off this ride.\nHe seems like one who'd appreciate an exchange\nfor his aid.\nMaybe some of the other passengers can help me?\nWe can maybe figure out together\nwhat Urshu would want from us..."
 
         call display_journal from _call_display_journal_2
         $ cycle = 2
+
+        stop sound
 
         # Journal entry
 

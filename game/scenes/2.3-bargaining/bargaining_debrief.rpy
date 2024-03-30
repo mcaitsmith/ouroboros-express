@@ -23,11 +23,15 @@ label bargaining_debrief:
         vivithinking sad "I'm doomed."
         vivithinking neutral "Maybe I should write out my thoughts."
 
+        play sound writing
+
         $ message = "Urshu...that stupid, cruel son of a...\n\nThis is all hopeless!\nI can see changes in all of us.\nI don't feel fully human anymore.\nThose creatures outside the windows...\nWill we end like them?\n\nAt least the bar is stocked.\nTomorrow's plan is to drink the place dry.\nHopefully, if I'm lucky, it'll\npiss the conductor off."
 
         # Journal entry with degradation meter high
         call display_journal from _call_display_journal_3
         $ cycle = 3
+
+        stop sound
 
     # ELSE
     else:
@@ -43,11 +47,15 @@ label bargaining_debrief:
 
         vivithinking neutral "I need to write."
 
+        play sound writing
+
         $ message =  "If cooking for him didn't work, what would?\n\nI'm beginning to think that this is it.\nThe end of the line.\nEverything I worked for... gone.\n\nMaybe "+ fr2_bargaining_choice  +" will join me at the bar.\nI definitely owe them a drink.\n\nGood a place as any to forget everything."
 
         # Journal entry with attraction meter high
         call display_journal from _call_display_journal_4
         $ cycle = 3
+
+        stop sound
 
     # END
 
