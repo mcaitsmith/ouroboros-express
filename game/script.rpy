@@ -37,7 +37,7 @@ define susurha = Character("Susu'Rha",image="susurha",color="#FFFFFF", callback=
 # define titlemusic = "audio/music/lavenders blue.ogg"
 define mainmusic = "audio/music/OrEx_MainTrack1_v1.0.ogg"
 define goodendmusic = "audio/music/Good Ending.ogg"
-define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.wav"
+define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.ogg"
 
 # PLACEHOLDER UNTIL GET BLUSH OVERLAY FOR VIVI SPRITE
 # image vivi neutral blush = "images/characters/vivi/vivi neutral.png"

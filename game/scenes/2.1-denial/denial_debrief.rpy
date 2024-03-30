@@ -34,7 +34,7 @@ label denial_debrief:
 
     #Journal entry
 
-    call display_journal
+    call display_journal from _call_display_journal
     $ has_journal = True
 
     $ cycle = 1
