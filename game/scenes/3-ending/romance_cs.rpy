@@ -23,12 +23,18 @@ label romance_cs:
         # ??ATTRACTION
         if att_meter_ava >= romance_threshold:
             show ava happy at center_right with dissolve
+        else:
+            $ ava_confess = True
         # ??ATTRACTION
         if att_meter_darius >= romance_threshold:
             show darius happy at center with dissolve
+        else:
+            $ darius_confess = True
         # ??ATTRACTION
         if att_meter_susurha >= romance_threshold:
             show susurha happy at right with dissolve
+        else:
+            $ susurha_confess = True
 
         #hide all characters
         show vivi happy at center_left with dissolve:
@@ -164,7 +170,7 @@ label romance_cs:
                 #     jump epi_friend_darius
                 # "Thank you for coming this far with me, Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
                 #     jump epi_friend_susurha
-                "I think I found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_friend == True or darius_friend == True or susurha_friend == True):
+                "I think I found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_confess == True and darius_confess == True and susurha_confess == True):
                     vivi happy "I think I found closure now."
                     vivi neutral "All is said and done."
                 

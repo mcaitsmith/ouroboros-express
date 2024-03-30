@@ -112,10 +112,11 @@ label epi_friendship_all:
 
     # The End
 
+    stop sound fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
+    call screen credits
     stop music fadeout 3.0
-    stop sound fadeout 3.0
     pause 3.0
 
     # end game

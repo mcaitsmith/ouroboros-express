@@ -57,10 +57,11 @@ label romance_susurha:
     elif att_meter_darius > 0:
         call epi_eldritch_darius from _call_epi_eldritch_darius_1
 
+    stop sound fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
+    call screen credits
     stop music fadeout 3.0
-    stop sound fadeout 3.0
     pause 3.0
 
     # end game
