@@ -595,7 +595,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                             text "V, superstar! You got this!":
                                 style "quote_of_the_day"
                         elif day == 1: # denial
-                            text "To do: Let it sink. Take your time.":
+                            text "To do: Let it sink in. Take your time.":
                                 style "quote_of_the_day"
                         elif day == 2: # anger
                             text "One thing is clear. Death hasn’t stopped you.":
