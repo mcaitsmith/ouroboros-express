@@ -851,15 +851,14 @@ screen file_slots(title):
 
                     button:
                         action FileAction(slot)
-
-                        xalign 0.5
-                        yalign 0.5
-
                         has vbox
+                        xfill True
+                        yfill True
 
                         add FileScreenshot(slot) xalign 0.5 yalign 0.5 xsize 250 ysize 120
 
                         text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            xalign 0.5
                             style "slot_time_text"
 
                         text FileSaveName(slot):
@@ -931,9 +930,13 @@ style page_button_text:
 
 style slot_button:
     properties gui.button_properties("slot_button")
+    xalign 0.5
+    yalign 0.5
 
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
+    xalign 0.5
+    yalign 0.5
 
 screen file_slots_ingame(title):
 
