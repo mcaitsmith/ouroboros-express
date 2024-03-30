@@ -112,7 +112,7 @@ label welcome_meal:
 
                     hide susurha silhouette with dissolve
 
-                    vivithinking neutral "Let's talk to the lady with a fine dress and... Is that a crown? She seems interesting."
+                    vivithinking neutral "Let's talk to the lady with the fine dress and... Is that a crown? She seems interesting."
 
                     show ava silhouette at right with moveinright
                     show ava silhouette at right:

@@ -40,7 +40,7 @@ label denial_cs2:
             jump denial_fr2_ava
 
     #OPTION 2
-        "Inquisitor Darius Wrecker" if fr1_denial_choice != "Darius":
+        "Darius Wrecker" if fr1_denial_choice != "Darius":
 
             vivi neutral "I have a feeling Darius knows more than he's letting on. I believe they're in the dining car."
             #JUMP TO: Free Roam 2 / Inquisitor Darius Wrecker

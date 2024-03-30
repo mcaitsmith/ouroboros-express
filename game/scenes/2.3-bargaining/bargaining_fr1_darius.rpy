@@ -52,7 +52,7 @@ label bargaining_fr1_darius:
             play sound attchoice
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
         
-            vivi neutral "I didn't think sarcasm was in your wheelhouse, Mx. Wrecker."
+            vivi neutral "I didn't think sarcasm was in your wheelhouse, Monsieur Wrecker."
             darius happy "I have many surprises in my \"wheelhouse\" as you say. Some I may even show you someday."
             vivi happy "Rather forward, aren't we? That definitely isn't in your nature."
             darius neutral "Yes, well... Maybe you're a bad influence on me, Ms. Sanssouci."

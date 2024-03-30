@@ -34,7 +34,7 @@ label bargaining_fr2_darius:
             vivi neutral "Could I interest you in dinner?"
             show darius neutral blush with dissolve
             darius "Pardon me?"
-            vivi neutral "I'm making a meal for everyone today, and I thought this would be a great chance to work together."
+            vivi neutral "I'm making a meal today for Urshu, and I thought this would be a great chance to work together."
             darius "Ah, I see. I'm not the greatest chef, but I suppose I can help you prepare what you need."
             vivi happy "Thank you, Darius!"
             show darius neutral -blush
@@ -146,7 +146,7 @@ label bargaining_fr2_darius:
             darius neutral "And now you want to make that again."
             vivi neutral blush "Yes."
             show darius happy blush with dissolve
-            darius "I think if anything were to truly wow Urshu, it would be something like that. Something with heart behind it, as you humans say."
+            darius "I think if anything were to truly impress Urshu, it would be something like that. Something with heart behind it, as you humans say."
             vivi neutral blush "I guess you're right. It's cheesy, but it does make a difference."
             show darius happy -blush
             darius happy "Indeed. Let me get the pasta."
@@ -184,12 +184,13 @@ label bargaining_fr2_darius:
     vivi neutral blush "Oh? Are you so sure?"
     show darius neutral blush with dissolve
     darius "Not like that! I... Damn you."
-    vivi happy blush "Hahahaha."
+    vivi happy blush "Haha, so flustered Mr. Wrecker!"
     vivi neutral "..."
     vivi neutral "Actually, Darius, before we go..."
     show darius neutral -blush
     darius neutral "Yes?"
-    vivi neutral "You...know that if Urshu likes this food, we might be able to get off this train..."
+    vivi neutral "I should be honest with you... This dinner isn't as benevolent as I made it seem."
+    vivi sad "The reason I'm cooking is because of a deal I made with Urshu. If I make him a fantastic meal, he'll get us off this train."
     vivi sad "Well, I mean... I...could get off this train."
     darius neutral "..."
     darius surprised "You...you..."
@@ -199,7 +200,7 @@ label bargaining_fr2_darius:
     vivi neutral "Wait, Darius! You don't understand!"
     darius angry "What is there to not understand? You kept this a secret from me! I respected you enough to not read you, and this is how you repay me?" 
     vivi neutral "Darius! I--"
-    darius angry "Did you ever stop to think about whether or not I'd want to get off this train too?"
+    darius angry "Did you ever stop to think about how the rest of us would feel?"
     darius sad "How I'd feel being trapped here...without you?"
 
     # ??ATTRACTION (and if not DECAY below)

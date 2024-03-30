@@ -26,7 +26,7 @@ label depression_cs1:
             jump depression_fr1_ava
 
         #OPTION 2
-        "Inquisitor Darius Wrecker":
+        "Darius Wrecker":
 
             $ fr1_depression_choice = "Darius"
 

@@ -30,7 +30,7 @@ init python:
 define vivi = Character("Vivi",image="vivi",color="#FFFFFF", callback=beepy_voice_medium)
 define vivithinking = Character("Vivi",image="vivi",what_italic=True,color="#FFFFFF")
 define urshu = Character("Urshu",image="urshu",color="#FFFFFF", callback=beepy_voice_high, namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define ava = Character("Ava",image="ava",color="#FFFFFF", callback=beepy_voice_medium, namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define ava = Character("Asha",image="ava",color="#FFFFFF", callback=beepy_voice_medium, namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define darius = Character("Darius",image="darius",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define susurha = Character("Susu'Rha",image="susurha",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 
