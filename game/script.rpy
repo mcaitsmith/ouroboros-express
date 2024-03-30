@@ -91,6 +91,10 @@ transform center_right:
     xalign 0.8 yalign 1.0
 transform bright:
     matrixcolor BrightnessMatrix (0.75)
+transform flicker_opacity:
+    linear 0.2 alpha 0.8
+    linear 0.2 alpha 0.4
+    repeat 4
 #Journal screen
 
 # The game starts here.
