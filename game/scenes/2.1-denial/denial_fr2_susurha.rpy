@@ -308,7 +308,7 @@ label denial_fr2_susurha:
 
     vivithinking "I CAN'T BREATHE!"
 
-    vivithinking "It reaches out to me..."
+    vivithinking "It's reaching out to me..."
 
     urshu angry "Get down from there!"
 
