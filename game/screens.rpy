@@ -256,7 +256,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Prefs") action ShowMenu('preferences_ingame')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -1066,7 +1066,9 @@ style page_ingame_button is button
 style page_ingame_button_text is text:
     size 16
     hover_color gui.hover_color
-    hover_underline True
+    hover_bold True
+    selected_idle_color "#FFF" 
+    selected_idle_bold True
 
 ## Preferences screen ##########################################################
 ##
