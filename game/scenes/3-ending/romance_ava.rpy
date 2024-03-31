@@ -8,13 +8,16 @@ label romance_ava:
     # LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral at left with dissolve:
+    show vivi neutral at center_left with dissolve:
         xzoom -1
-    show ava neutral at right with dissolve
+    show ava neutral at center_right with dissolve
 
     show ava sad blush with dissolve
     ava "Now, take my hand, Vivi." 
     ava "Hold me close for our last dance."
+    show vivi neutral with dissolve:
+        xpos 0.5
+        linear 0.5 xpos 0.5
     vivi neutral blush "Aren't you afraid?"
     show ava happy blush
     ava "Not anymore."
