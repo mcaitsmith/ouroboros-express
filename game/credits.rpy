@@ -9,7 +9,7 @@
 
 transform credits_scroll(speed):
     ypos 1080
-    linear speed ypos -6700
+    linear speed ypos -6600
 
 ## Credits screen.
 
