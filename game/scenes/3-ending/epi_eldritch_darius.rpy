@@ -9,6 +9,9 @@ label epi_eldritch_darius:
 
     # The mindflayer Darius could not forgive themselves for the atrocities they had been responsible for in life. Without a vehicle through which to reconcile their own actions, nor chance for atonement, the resentment they held only grew. In the end, Darius realized he became what he had grown to despise. Perhaps he always was. He stared at his hands, clean and groomed, the horrors they had inflicted invisible to all but him. He couldn't take it, and his body responded in kind. He morphed and shifted, the hands he so despised growing, the fingers elongating. He grew and grew, his body cracking and bending under the stress, until he resembled the very horror he so feared. Somewhere deep down he knew this was the fate fitting for him, a nightmare in body to reflect the monster within. 
 
+    stop music fadeout 1.0
+    pause 1.0
+    play music badendmusic volume 0.5
 
     #LOCATION: eldritchlandscape
     scene black with fade
