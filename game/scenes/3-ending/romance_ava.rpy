@@ -16,8 +16,13 @@ label romance_ava:
     ava "Now, take my hand, Vivi." 
     ava "Hold me close for our last dance."
     show vivi neutral with dissolve:
-        xpos 0.5
-        linear 0.5 xpos 0.5
+        # xpos 0.5
+        # linear 0.5 xpos 0.35
+        xpos 0.35
+    show ava sad blush with dissolve:
+        # xpos 0.5
+        # linear 0.5 xpos 0.65
+        xpos 0.65
     vivi neutral blush "Aren't you afraid?"
     show ava happy blush
     ava "Not anymore."

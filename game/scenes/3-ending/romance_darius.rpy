@@ -6,9 +6,11 @@ label romance_darius:
     #LOCATION: observatory
     scene observatory with fade
 
-    show darius surprised at right with dissolve
-    show vivi happy at left with dissolve :
+    show darius surprised at center_right with dissolve:
+        xpos 0.65
+    show vivi happy at center_left with dissolve :
         xzoom -1
+        xpos 0.35
 
     show darius surprised blush with dissolve
     darius "Yes?"
