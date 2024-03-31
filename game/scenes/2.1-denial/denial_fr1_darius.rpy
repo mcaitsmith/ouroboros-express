@@ -11,7 +11,7 @@ label denial_fr1_darius:
 
     show darius neutral at right with dissolve
 
-    vivithinking "Darius is doing their best to fill out that loveseat. Even in such a casual position, they're so graceful. Guess that's the benefit of that mindflayer physique."
+    vivithinking "Darius is doing their best to fill out that loveseat. Even in such a casual position, they're so graceful."
 
     vivi "Excuse me, it's Darius, right?"
 
@@ -42,7 +42,7 @@ label denial_fr1_darius:
     darius neutral "I'm not entirely sure, but he's given us no reason to doubt. We should find out soon regardless."
 
     show vivi angry 
-    vivithinking "Real charmer, this one. Who knows if this is some sort of trap, a messed up fantasy for this conductor? Are we supposed to just take him at his word?."
+    vivithinking "Real charmer, this one. Who knows if this is some sort of trap, a messed up fantasy for this conductor? Are we supposed to just take him at his word?"
 
     # <CHOICE>
 
@@ -155,8 +155,7 @@ label denial_fr1_darius:
 
         "Oblivion.":
 
-            vivi "Oblivion"
-            vivi  "I kind of like the idea that we just fade away into the ether when everything's said and done. It's like finally being able to rest after a long day's work."
+            vivi  "Oblivion. I kind of like the idea that we just fade away into the ether when everything's said and done. It's like finally being able to rest after a long day's work."
 
             darius sad "It's a very appealing option to many. It was for me as well, long ago."
 

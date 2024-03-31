@@ -301,7 +301,7 @@ label denial_fr2_darius:
         xzoom 1
     vivi surprised "Where the hell did you come from?"
 
-    urshu neutral "I appear when I am needed my dear! Now Mx. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
+    urshu neutral "I appear when I am needed my dear! Now Mr. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
 
     show darius surprised at right
     darius surprised "You... Are you not an ambassador of the Eternal Rest?"
@@ -359,7 +359,7 @@ label denial_fr2_darius:
 
     vivithinking "That sounded... honest. He can't be serious, right? He can't be..."
 
-    urshu sad "As for you Mx. Wrecker, hmm. I promised I wouldn't get involved in any of your journeys, but I believe showing you this will help."
+    urshu sad "As for you Mr. Wrecker, hmm. I promised I wouldn't get involved in any of your journeys, but I believe showing you this will help."
 
     vivithinking "He stretches out his hand. Darius takes it."
 

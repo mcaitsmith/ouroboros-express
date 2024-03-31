@@ -104,7 +104,7 @@ label denial_fr2_susurha:
 
     vivi "We need to get out of here."
 
-    vivithinking "They raise a nonexistent eyebrow. Now I've got their attention."
+    vivithinking "They raise an inquisitive eyebrow. Now I've got their attention."
 
     susurha happy "Now that is something I absolutely LOVE hearing. Please tell me you have some sort of idea of getting off this thing."
 

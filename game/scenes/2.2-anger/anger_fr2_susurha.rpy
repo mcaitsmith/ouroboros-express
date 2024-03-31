@@ -49,7 +49,9 @@ label anger_fr2_susurha:
             vivi happy "Not as much as a bullseye!"
             susurha surprised "Hmm... seems my magic doesn't work here."
             vivi happy "Either that, or I'm better at darts than you."
-            # JUMP TO: susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
+            susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
+            vivi neutral "You're...welcome." 
+            #JUMP TO: susurha neutral "..."
 
 
 
@@ -59,7 +61,7 @@ label anger_fr2_susurha:
             play sound decchoice
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
-            vivithinking "Clearly, they feel insecure. I'm gonna let them win."
+            vivithinking "Clearly, they're insecure. I'm gonna let them win."
             vivi neutral "You go first."
             
             # SOUND: dart hits the board
@@ -78,16 +80,14 @@ label anger_fr2_susurha:
             vivi neutral blush "..."
             vivi neutral "Sorry. It seemed like you could use a win. After being banished from your kingdom, and well, dying."
             susurha neutral "Actually, I banished myself." 
-            # JUMP TO: susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
+            # JUMP TO: susurha neutral "..."
 
-    susurha neutral  "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
+    susurha neutral "..."
 
     # SOUND: dart hits the board
     play sound darts
     pause 2.0
-
-    vivi neutral "You're...welcome." 
-    susurha neutral "..."
+ 
     susurha surprised "Vivienne. You seem almost relaxed."
     vivi happy "I am. For a moment I almost forgot how I got here."
     susurha neutral "How did you get here?"
@@ -118,13 +118,13 @@ label anger_fr2_susurha:
 
             vivi angry "I didn't have a choice."
             susurha neutral "Do tell."
-            vivi angry "I'm a reporter. I go where the story is."
+            vivi angry "I'm a reporter. I go where the story is. Wherever Chloe tells me to go."
             vivi sad "What a silly reason to die."
             susurha sad "Oh, Vivienne. I'm sorry. "
             susurha neutral "But you must remember that you did not come here on your own. Someone told you to come."
             # JUMP TO: susurha neutral "The fault lies with your \"agent.\""
 
-    susurha neutral "The fault lies with your \"agent.\""
+    susurha neutral "The fault lies with your \"agent.\" This Chloe individual."
     vivi neutral "Yeah. It does."
 
     # SOUND: dart hits the board
