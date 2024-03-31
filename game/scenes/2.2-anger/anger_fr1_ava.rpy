@@ -121,7 +121,7 @@ label anger_fr1_ava:
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
             vivi angry blush "Here!"
-            ava sad "I'm aware of your tale, little one. And I am sorry for that."
+            ava sad "I'm aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
             ava angry "We shall fade to darkness soon. Have you not seen it in your dreams?"
             vivi angry "You mean nightmares? Yeah..."
             vivi neutral "Well... at least we don't have to make any more sacrifices, right?"

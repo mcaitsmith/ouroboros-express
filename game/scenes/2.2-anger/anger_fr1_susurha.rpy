@@ -23,9 +23,10 @@ label anger_fr1_susurha:
     pause 2.0
 
     susurha surprised "Vivienne! What brings you here?"
+    vivithinking surprised "Are they shuffling cards? Doesn't look like a deck I've ever seen."
     vivi blush surprised "Uh... nothing. Never mind. It's stupid."
     vivi neutral "...Well, actually...Do you want to...play a game with me?"
-    susurha happy "Certainly! There's a wonderful game from my childhood that I'd be honored to share with you!"
+    susurha happy "Certainly! There's a wonderful game here from my childhood that I'd be honored to share with you!"
     vivi neutral "What's the game?"
     susurha neutral "Truth or Lies."
     vivi neutral "What's at stake?"
@@ -33,8 +34,8 @@ label anger_fr1_susurha:
     vivi neutral "I'm not sure..."
     susurha neutral "Don't be coy. It doesn't suit you."
     vivi angry "I'm not coy."
-    susurha happy "Okay then."
-    susurha neutral "Time is of the essence. Sit with me, and together, we'll find out what's true, and what isn't."
+    susurha happy "Alright then."
+    susurha neutral "Time is of the essence. Sit with me, and with this deck of cards, we'll find out what's true, and what isn't."
 
     # <CHOICE>
     vivithinking neutral "Provocative. This one's certainly not boring." 
@@ -64,7 +65,8 @@ label anger_fr1_susurha:
 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
-    susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+    susurha neutral "I'm going to draw cards from this deck with questions."
+    susurha happy "You will answer, and I will try to ascertain whether or not you are lying."
     vivi surprised "That's it?"
     vivi neutral "Hit me." 
 

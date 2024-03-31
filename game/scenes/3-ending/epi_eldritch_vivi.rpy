@@ -16,6 +16,7 @@ label epi_eldritch_vivi:
     urshu "She finally got the life she pursued. She would no longer be censored and repressed by others."
     urshu happy "The new Vivi managed to make her way back to Earth...for a little revenge."
     window hide fade
+    call screen credits
     stop music fadeout 3.0
     stop sound fadeout 3.0
     pause 3.0

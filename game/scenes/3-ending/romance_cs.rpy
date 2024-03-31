@@ -23,12 +23,18 @@ label romance_cs:
         # ??ATTRACTION
         if att_meter_ava >= romance_threshold:
             show ava happy at center_right with dissolve
+        else:
+            $ ava_confess = True
         # ??ATTRACTION
         if att_meter_darius >= romance_threshold:
             show darius happy at center with dissolve
+        else:
+            $ darius_confess = True
         # ??ATTRACTION
         if att_meter_susurha >= romance_threshold:
             show susurha happy at right with dissolve
+        else:
+            $ susurha_confess = True
 
         #hide all characters
         show vivi happy at center_left with dissolve:
@@ -158,14 +164,23 @@ label romance_cs:
             # NOTE options 7,8,9 are if you have talked to a character, they confessed and you chose the "please hold while I make my decision" option. This would replace the corresponding character option from 1,2,3.
 
             # NOTE If you friendzone all characters, OPTION 10 will appear.
-                "Thank you for coming this far with me Asha." if ava_friend == True and (susurha_asked and darius_asked):
-                    jump epi_friend_ava
-                "Thank you for coming this far with me Darius." if darius_friend == True and (susurha_asked and ava_asked):
-                    jump epi_friend_darius
-                "Thank you for coming this far with me Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
-                    jump epi_friend_susurha
-                "Thank you for coming this far with me you two." if (susurha_friend and darius_friend) or (ava_friend and darius_friend) or (susurha_friend and ava_friend):
-                    jump  epi_friendship_all
+                # "Thank you for coming this far with me, Asha." if ava_friend == True and (susurha_asked and darius_asked):
+                #     jump epi_friend_ava
+                # "Thank you for coming this far with me, Darius." if darius_friend == True and (susurha_asked and ava_asked):
+                #     jump epi_friend_darius
+                # "Thank you for coming this far with me, Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
+                #     jump epi_friend_susurha
+                "I think I found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_confess == True and darius_confess == True and susurha_confess == True):
+                    vivi happy "I think I found closure now."
+                    vivi neutral "All is said and done."
+                
+                    show urshu neutral at center_right with dissolve
+                
+                    urshu neutral "Then, would you accompany me to the observatory, Miss Sansoucci? One last look at the stars?"
+                    vivi "You have something to say too? Fine. Let's hear it."
+
+                    jump epi_imperfect_friendship
+
             # OPTION 10
                 "I found friends." if ava_friend == True and darius_friend == True and susurha_friend == True:
 
