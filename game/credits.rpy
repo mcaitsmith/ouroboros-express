@@ -9,7 +9,7 @@
 
 transform credits_scroll(speed):
     ypos 1080
-    linear speed ypos -2950
+    linear speed ypos -3800
 
 ## Credits screen.
 
@@ -36,7 +36,7 @@ screen credits():
             for credit in credits_list:
 
                 vbox:
-                    add "images/logo.png"
+                    add credit.image
 
                 vbox:
                     spacing 4
