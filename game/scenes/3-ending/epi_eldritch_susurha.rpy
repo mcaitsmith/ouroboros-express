@@ -5,6 +5,10 @@ label epi_eldritch_susurha:
     #Epilogue/Eldritch/Susu'Rha Balrinn
     #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective  and they'll be against a black background.
 
+    stop music fadeout 1.0
+    pause 1.0
+    play music badendmusic volume 0.5
+
     #LOCATION: eldritchlandscape
     scene black with fade
     show urshu sad at center with dissolve

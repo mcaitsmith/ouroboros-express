@@ -125,7 +125,7 @@ label bargaining_fr2_susurha:
         show vivi surprised at left with dissolve
 
         vivithinking "It's the thing. The damn monster in the silver dress."
-        vivithinking "How can it be so big? I can't take my eyes off it"
+        vivithinking "How can it be so big? I can't take my eyes off it."
         vivithinking "It doesn't have eyes. Why do I feel it's staring at me?"
         vivithinking "Why is there no body inside that dress?"
         vivithinking "Why is it so empty?"

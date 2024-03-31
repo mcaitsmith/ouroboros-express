@@ -90,12 +90,8 @@ label anger_fr1_ava:
     # OPTION 1 +ATTRACTION +DECAY
         "...chin up, princess, or the crown slips.":
 
-            play sound attchoice
+            play sound attdecchoice
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
-
-            pause 0.5
-
-            play sound decchoice
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "...chin up, princess, or the crown slips."
@@ -142,6 +138,8 @@ label anger_fr1_ava:
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
             ava angry "Perhaps you should heed your own advice, Vivienne."
             vivithinking angry "Hmph. Well, someone's got their knickers in a twist!" 
+            vivi angry "Perhaps I shall. Goodbye Asha."
+            ava angry "Hmph. Very well. Have an... acceptable evening, Vivienne."
 
             # ava exits
             hide ava with dissolve

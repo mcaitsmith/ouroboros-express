@@ -86,14 +86,14 @@ label bad_argument:
     darius angry "I can feel you changing, Vivi. Don't give in. It's not too late."
     vivithinking angry "But it is too late. The mindflayer already knows. He's just too weak to stop me now."
     vivi angry "Oh, why would you even pretend to care, you whining, sullen, self-obsessed shit."
-    vivi angry "{i}You{/i} sit there with these incredible abilities, and all you can think of are {i}your{/i}regrets, {i}your{/i} failures."
+    vivi angry "{i}You{/i} sit there with these incredible abilities, and all you can think of are {i}your{/i} regrets, {i}your{/i} failures."
     vivi angry "You don't care about anyone else. You think you're {i}above{/i} everyone else, just because you can look in and see what's there."
     vivi angry "Well, guess what? What you see isn't half the story. We're more. I'm more. And you missed out."
     darius sad "I see...You are right. On many accounts."
 
     show susurha angry
 
-    susurha angry "Darius, for Toltua'an's sake, don't agree with her."
+    susurha angry "Darius, for God's sake, don't agree with her."
     susurha neutral "She's clearly under the influence of this decaying world. Vivi, if you're in there, come out! We can help you!"
     vivi angry "You've helped enough, snake. You're the worst of this bunch of dying degenerates."
     vivi angry "All your education. All your wealth, thrust upon you. And the only thing you've ever done with your life is reject that silver spoon when BILLIONS would have killed for it."

@@ -25,7 +25,7 @@ label bargaining_fr1_susurha:
     vivi neutral "And?"
     susurha neutral "It's decaying. Parts of the train that were visible during the start of our voyage are now impossible to see."
     susurha neutral "Shrouded in mist."
-    vivi neutral "That's not good"
+    vivi neutral "That's not good."
     susurha neutral "The phenomenon is becoming more pronounced as time goes on."
     vivi neutral "..."
     susurha neutral "I can see your wheels turning. What is it?"
@@ -87,12 +87,8 @@ label bargaining_fr1_susurha:
         # OPTION 4 +ATTRACTION +DECAY
         "Well, I may have a plan...":
 
-            play sound attchoice
+            play sound attdecchoice
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
-
-            pause 0.5
-
-            play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Well, I may have a plan, but I need to know everything I can about that conductor to get it to come off properly." 

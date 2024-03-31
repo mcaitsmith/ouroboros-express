@@ -156,7 +156,7 @@ label anger_fr1_susurha:
             # SOUND: sigh
             play sound sigh
             pause 3.0
-            vivithinking surprised "that exhale's like, 150 degrees. Hate to see them truly mad."
+            vivithinking surprised "That exhale's like, 150 degrees. Hate to see them truly mad."
             susurha angry "The bloodsuckers. The leeches. Those with souls impervious to art and music. All of them infuriate me to no end!"
             vivithinking surprised "My face is literally burning."
             susurha neutral "..."

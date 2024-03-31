@@ -10,7 +10,7 @@ label denial_fr2_ava:
         xzoom -1
 
     vivithinking "Many thoughts... Head full."
-    vivithinking "Oh. I ended into the observatory."
+    vivithinking "Oh. I ended up in the observatory."
     vivithinking "Well, the goddess is here, staring into the darkness."
 
     show ava neutral at right with dissolve
@@ -77,7 +77,7 @@ label denial_fr2_ava:
     vivi surprised "...dow"
     vivithinking "What the heck am I seeing?"
     ava surprised "Radiance protect me! What-"
-    vivi surprised "IT'S LIKE MORTON'S SALT GIRL COVERED IN TINFOIL AND ROASTED UNDER A JET ENGINE?!"
+    vivi surprised "IT'S LIKE THE MORTON'S SALT GIRL COVERED IN TINFOIL AND ROASTED UNDER A JET ENGINE?!"
     vivithinking "Dammit. I've seen this thing in nightmares." 
     vivithinking "I can't move, I can't breathe."
     ava neutral "Do you...jest? We see a cold abyss, pulsing with hunger and emptiness."

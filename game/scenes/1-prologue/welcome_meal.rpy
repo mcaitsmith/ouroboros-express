@@ -104,7 +104,7 @@ label welcome_meal:
 
             menu:
                 # OPTION 1 
-                "The lady in a fine dress" if interview1 == False:
+                "The lady in the fine dress" if interview1 == False:
 
                     $ interview1 = True
 
@@ -112,7 +112,7 @@ label welcome_meal:
 
                     hide susurha silhouette with dissolve
 
-                    vivithinking neutral "Let's talk to the lady with the fine dress and... Is that a crown? She seems interesting."
+                    vivithinking neutral "Let's talk to the lady in the fine dress and... Is that a crown? She seems interesting."
 
                     show ava silhouette at right with moveinright
                     show ava silhouette at right:

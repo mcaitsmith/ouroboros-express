@@ -2,6 +2,10 @@
 
 label epi_eldritch_ava:
 
+    stop music fadeout 1.0
+    pause 1.0
+    play music badendmusic volume 0.5
+
     #Epilogue/Eldritch/Avatar of Asha
     #LOCATION: eldritchlandscape
     scene black with fade
