@@ -60,7 +60,7 @@ label interview_ava:
     ava neutral "We speak for many with one voice. The All is the One."
     vivithinking neutral "Wow. Another egomaniac. Great."
     vivi neutral "That's great. Must be pretty time-consuming. I can relate."
-    vivi neutral "I spend a lot of hours traveling for my job, and and write about my experiences."
+    vivi neutral "I spend a lot of hours traveling for my job, and and writing about my experiences."
     ava happy "A writer? Interesting. We learned writing, the arts, and many different tongues."
     vivithinking neutral "Oh la di da. I get it, you're cultured."
 

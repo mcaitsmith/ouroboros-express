@@ -94,9 +94,9 @@ label introduction:
     urshu neutral "My name is Urshunabi, but you may call me Urshu. I am the conductor here, so if you need anything during your stay, please don't hesitate to call."
     vivi neutral "Outside... How is that..."
     urshu happy "Oh, don't you mind that. There will be plenty of time later to get acquainted with this place."
-    vivi neutral "Sorry this is all just a lot. I must be really tired."
+    vivi neutral "Sorry, this is all just a lot. I must be really tired."
     urshu happy "I could whip up an espresso if you'd like. They are to die for. I personally have one every morning."
-    vivi neutral "I think I'm ok for now, but thank you."
+    vivi neutral "I think I'm okay for now, but thank you."
     urshu neutral "Well, in any case, I've actually stopped by to invite you to dinner. The other guests have gathered. I'm sure they're quite eager to meet you."
 
     # <CHOICE>

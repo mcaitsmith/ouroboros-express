@@ -67,9 +67,9 @@ label depression_briefing:
     vivithinking "I can't face this. Whatever Ursh is doing...it hurts worse now."
     vivithinking "When will it stop hurting?"
     vivithinking "Why can't I just disappear?"
-    urshu sad "Oh...don't turn away from me. I will not hurt you, my diamond."
-    vivi angry "Don't call me that. Not anymore."
-    urshu "Yes, of course, Miss Sanssouci."
+    urshu sad "Oh...don't turn away from me. I will not hurt you."
+    vivi angry "Why don't I believe you?"
+    urshu "You have always had my support."
     vivi "You don't deserve anything from me. Not my attention, nor my dwindling time!"
     urshu sad "..."
     vivi sad "We had a deal..."
@@ -82,13 +82,12 @@ label depression_briefing:
     vivi sad "I...want to live."
     urshu neutral "I wish you could."
     vivi "I want to-- God. There's no words for it."
-    urshu "I understand. I wish to help {i}you{/i} understand something about our locomotive 
-    existence."
+    urshu "I understand. I wish to help {i}you{/i} understand something about our locomotive existence."
     vivithinking "If this turns into another trite anecdote..."
     urshu "I have been on this journey countless times, will be on it for an eternity still. This is what I do. It is what I am."
     vivi angry "A torturer in a sharp suit who could bounce silver dollars off his ass?"
     show urshu neutral blush with dissolve
-    urshu "Well... How flattering."
+    urshu "Well...How flattering."
     show urshu neutral -blush
     urshu neutral "But a torturer? No. A caretaker of poor souls. A ferryman. And the only currency I accept is the pleasure of conversation and high-stakes romantic drama. It is {i}all{/i} I have here."
     vivi neutral "So what? You're immortal. That can't be your excuse to manipulate us."

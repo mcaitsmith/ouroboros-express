@@ -150,7 +150,7 @@ label bargaining_briefing:
     vivi neutral "You... Of course, you knew." 
     vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a petulant pissant."
     urshu happy "I appreciate that, Miss Sanssouci. I do work very hard for all of you."
-    urshu happy "It is my joy to serve--not only to serve, but to draw out of each of you your very best."
+    urshu neutral "It is my joy to serve--not only to serve, but to draw out of each of you your very best."
     vivithinking "Oh, he's being sweet. And candid. And not talking in riddles!"
 
     show vivi angry at left:
