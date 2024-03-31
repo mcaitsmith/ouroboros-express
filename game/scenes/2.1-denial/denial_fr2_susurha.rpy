@@ -20,7 +20,7 @@ label denial_fr2_susurha:
 
     susurha "What does it look like I'm doing at the moment? I'm deep in the meditative process of trying not to think about the circumstances that surround me."
 
-    susurha "And girl... let me tell you that the cushions this contraption houses are just soooo.... Welcoming."
+    susurha "And girl... let me tell you that the cushions this contraption houses are just soooo... Welcoming."
 
     #<CHOICE>
     susurha "You should give it a try."
@@ -33,11 +33,11 @@ label denial_fr2_susurha:
             vivi "I'll stand."
             susurha "Suit yourself but I see you weak at the knees. Eyes drawn to where I lay. The cushions calling your name."
             susurha "Vivi..."
-            vivi "What?"
+            vivi surprised "What?"
             susurha "I'm saying you look exhausted, but to each their own."
-            vivithinking "Susu'Rha goes silent as they sink into their chair."
-            vivithinking "Ouch. The headache is only getting worse."
-            vivithinking "Maybe this was a mistake."
+            vivithinking sad "They're positively drooping in their seat."
+            vivithinking sad "Ouch. The headache is only getting worse."
+            vivithinking sad "Maybe this was a mistake."
             # JUMP TO: susurha "This place is a prison."
 
     #OPTION 2 +ATTRACTION
@@ -46,14 +46,14 @@ label denial_fr2_susurha:
             play sound attchoice
 
             vivi "I'd love to."
-            vivithinking "They reach out and slide a chair my way with ease."
+            vivithinking "The way they slid that chair my way with ease..."
             # SOUND: Vivi sits down in a super comfortable recliner.
             # skipping
             vivithinking "Holy shit..."
-            susurha happy "Feels like a dream, don't it?"
+            susurha happy "Feels like a dream, doesn't it?"
             vivi "Feels like I'm sinking."
-            vivithinking "We sit in silence, enjoying the simple comforts."
-            vivithinking "The headache eases off, only somewhat."
+            vivithinking "It's nice sitting in silence. I'm enjoying their company."
+            vivithinking "I think my headache's easing off."
             #JUMP TO: susurha "This place is a prison."
 
     susurha "This place is a prison."
@@ -104,13 +104,13 @@ label denial_fr2_susurha:
 
     vivi "We need to get out of here."
 
-    vivithinking "They raise a nonexistent eyebrow. Now I've got their attention."
+    vivithinking happy "Now I've got their attention."
 
     susurha happy "Now that is something I absolutely LOVE hearing. Please tell me you have some sort of idea of getting off this thing."
 
     vivithinking "..."
 
-    vivi "I do not."
+    vivi sad "I do not."
 
     susurha neutral "Hmm..."
 
@@ -128,9 +128,9 @@ label denial_fr2_susurha:
 
     vivi happy "Are we really doing this?"
 
-    susurha happy "Sweetie, it's a date."
+    susurha happy "It's a date, my dove."
 
-    vivithinking "They take me by the hand and drag me along."
+    vivithinking surprised "Whoa - I didn't expect them to literally drag me along!"
 
 
     #LOCATION: Observatory
@@ -204,8 +204,9 @@ label denial_fr2_susurha:
 
     susurha happy "This reminds me of back when I was younger and I'd sneak out of my tower bedroom to wander on top of the surrounding castle walls."
 
-    vivithinking "They climb the tower of stacked chairs and wrestle with the loose screws of the ceiling's window. Golden light is glistening off their scaly skin."
-    vivithinking "I wonder how it is, living in a castle..."
+    vivithinking "Aaaaand they're climbing the tower of stacked chairs and wrestling with the loose screws of the ceiling's window."
+    vivithinking "You don't see that every day. Huh... Golden light is glistening off their scaly skin."
+    vivithinking "I wonder what it's like, living in a castle..."
 
     # <CHOICE>
     vivithinking "All I can see is the biggest smile I've ever seen."
@@ -265,7 +266,7 @@ label denial_fr2_susurha:
 
     show observatory blur with dissolve
 
-    vivithinking "I climb up the tower of chairs and we both peak our heads out of the opened window."
+    vivithinking "I haven't done this much climbing since I was a kid. Now to look out the opened window."
 
     vivithinking "..."
 
@@ -277,15 +278,15 @@ label denial_fr2_susurha:
 
     vivithinking "Flames burst from the train's tracks and were sucked into the void."
 
-    vivithinking "My hair flaps in my face. I really wanna scream. But I can't."
+    vivithinking "I can feel my hair whipping around my face. I really wanna scream. But I can't."
 
-    vivithinking "Susu'Rha stares out into the visual abyss of...wherever we are. They mumble to themselves but I can't hear anything."
+    vivithinking "Susu'Rha's staring out into the visual abyss of...wherever we are. They're mumbling... I can't hear what they're saying."
 
-    vivithinking "All I could get was the sight of a tear rolling down their cheek."
+    vivithinking "There's a tear rolling down their cheek."
 
-    vivithinking "I turn to see what they are staring at and I see..."
+    vivithinking "What are they looking at...?"
 
-    vivithinking "That thing."
+    vivithinking "What is that thing?!"
 
     vivithinking "A reflective dress floating in the wind, but it slowly inches closer to us."
 
@@ -299,15 +300,15 @@ label denial_fr2_susurha:
 
     vivithinking "It crawls closer to us, inches away from my own face."
 
-    vivithinking "I feel the wind stroking my face like cold hands, pulling me closer to it."
+    vivithinking "The wind's stroking my face like cold hands, pulling me closer to it."
 
-    vivithinking "I cannot breathe."
+    vivithinking "I can't breathe."
 
-    vivithinking "I cannot breathe."
+    vivithinking "I can't breathe."
 
-    vivithinking "I cannot breathe!"
+    vivithinking "I CAN'T BREATHE!"
 
-    vivithinking "It reaches out to me..."
+    vivithinking "It's reaching out to me..."
 
     urshu angry "Get down from there!"
 
