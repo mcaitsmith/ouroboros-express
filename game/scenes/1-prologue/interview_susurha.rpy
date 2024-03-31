@@ -26,7 +26,7 @@ label interview_susurha:
     susurha neutral "...Pimple...popping?"
     vivi neutral "...Nevermind!" 
     vivi neutral "What should I call you?"
-    susurha neutral "I am Susu'Rha of Balrinn. Balrinn is my surname."
+    susurha neutral "I am the druid, Susu'Rha of Balrinn. Balrinn is my surname."
     vivi neutral "I'm Vivienne Sanssouci, but everyone calls me Vivi."
     susurha neutral "Vivi...Vivi..."
     susurha happy "Like Bon Vivant!"
@@ -47,7 +47,7 @@ label interview_susurha:
             susurha neutral "I'm heir to the throne of Balrinn. Or was."
             vivi surprised "Was?" 
             susurha neutral "I abdicated my position because I found that life stultifying."
-            susurha happy "And instead embarked upon a life of mirth, art, expression, and pleasure."
+            susurha happy "I then became a druid, which means I embarked upon a life of mirth, art, expression, and pleasure."
             susurha sad "This had...consequences."
             vivi neutral "Like what?"
             susurha neutral "..." 
@@ -60,9 +60,10 @@ label interview_susurha:
 
             susurha neutral "Balrinn. The capital city of my home country." 
             susurha neutral "Which is also my family name."
-            vivithinking neutral "So...royalty. You're royalty."
+            vivi neutral "So...you're royalty."
+            susurha neutral "I was, until I became a druid and dedicated my life to pleasure."
             vivi neutral "You seem very nonchalant about that."
-            susurha neutral "It's not something that I really discuss."
+            susurha neutral "If you say so..."
             
             # JUMP TO: "Bury the lede, why don't you?"
 

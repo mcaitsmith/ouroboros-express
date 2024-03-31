@@ -142,7 +142,7 @@ label depression_fr2_susurha:
     susurha "Its body is chained at the wrists and ankles, making it unable to move."
     susurha "Its eyes, blinded so that it couldn't see a path ahead."
     susurha "Its mouth, muzzled so that it can never express thoughts."
-    vivi sad "That sounds awful"
+    vivi sad "That sounds awful."
     susurha sad "I ran away from home because I was afraid I would never get to live the life I wanted to."
     susurha sad "Now I'm afraid that thing, void of life, is my fate. Ceasing to exist..."
     susurha sad "I don't want to cease to exist."

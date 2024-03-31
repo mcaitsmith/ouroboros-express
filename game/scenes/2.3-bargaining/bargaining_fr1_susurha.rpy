@@ -25,7 +25,7 @@ label bargaining_fr1_susurha:
     vivi neutral "And?"
     susurha neutral "It's decaying. Parts of the train that were visible during the start of our voyage are now impossible to see."
     susurha neutral "Shrouded in mist."
-    vivi neutral "That's not good"
+    vivi neutral "That's not good."
     susurha neutral "The phenomenon is becoming more pronounced as time goes on."
     vivi neutral "..."
     susurha neutral "I can see your wheels turning. What is it?"

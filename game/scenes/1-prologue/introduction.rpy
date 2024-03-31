@@ -37,7 +37,10 @@ label introduction:
     label lookaround:
 
         # <CHOICE>
-        vivithinking neutral "I must be here for a reason. Might as well look around."
+        if option1 == False and option2 == False and option3 == False:
+            vivithinking neutral "I must be here for a reason. Might as well look around."
+        else:
+            vivithinking neutral "Maybe something else here will jog my memory."
 
         menu:
             # OPTION 1 

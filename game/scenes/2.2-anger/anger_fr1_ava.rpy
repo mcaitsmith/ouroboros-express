@@ -142,6 +142,8 @@ label anger_fr1_ava:
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
             ava angry "Perhaps you should heed your own advice, Vivienne."
             vivithinking angry "Hmph. Well, someone's got their knickers in a twist!" 
+            vivi angry "Perhaps I shall. Goodbye Asha."
+            ava angry "Hmph. Very well. Have an... acceptable evening, Vivienne."
 
             # ava exits
             hide ava with dissolve
