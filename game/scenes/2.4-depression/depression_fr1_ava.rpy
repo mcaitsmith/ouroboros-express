@@ -72,12 +72,8 @@ label depression_fr1_ava:
         # OPTION 2 +ATTRACTION +DECAY
         "...drink our feelings away?":
 
-            play sound attchoice
+            play sound attdecchoice
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
-
-            pause 0.5
-
-            play sound decchoice
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi neutral "...drink our feelings away?"

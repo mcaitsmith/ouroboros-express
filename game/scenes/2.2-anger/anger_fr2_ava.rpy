@@ -183,12 +183,8 @@ label anger_fr2_ava:
         #OPTION 1 +ATTRACTION +DECAY
         "Don't play games with me.":
 
-            play sound attchoice
+            play sound attdecchoice
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
-
-            pause 0.5
-
-            play sound decchoice
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "Don't play games with me."
