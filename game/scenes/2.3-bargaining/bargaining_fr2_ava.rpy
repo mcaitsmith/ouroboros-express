@@ -44,7 +44,7 @@ label bargaining_fr2_ava:
             # JUMP TO: ava neutral "So what shall we make, then?"
 
         # OPTION 2 +DECAY
-        "Urhsu asked me...":
+        "Urshu asked me...":
 
             play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
