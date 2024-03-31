@@ -9,24 +9,79 @@ init -5 python:
 
 
 define credits_list = [
-    CreditsCategory(category = "Writing", credit_list = 
+    CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = 
     [
-        "Writer name 1",
-        "Writer name 2"
-    ], image = "images/vivi in the train being all mysterious and such.png"),
-    CreditsCategory(category = "Art", credit_list = [
-        "Artist name 1"
+        "{b}Writing{/b}",
+        "Haley Bulen",
+        "Patrick Christell",
+        "Robert Corra",
+        "Tiago Da Cunha",
+        "Cameron Daxon",
+        "Gideon Devendra",
+        "Logan Grimes",
+        "Zachary Roush",
+        "Dylan Sands",
+        "Kyle Smith-Laird",
+        "{b}Editing{/b}",
+        "Allison Bryant",
+        "Haley Bulen",
+        "hosomeowa",
+        "Megan Fleming",
+        "Lindsay Howard"
+    ], image = "images/snakelogo.png"),
+    CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
+        "Onashabay Daniyar",
+        "Denochi_",
+        "gleamiarts",
+        "Stephanie Terrero"
     ], image = "images/vivi and urshu.png"),
-    CreditsCategory(category = "Sound", credit_list = [
-        "Audio name 1"
+    CreditsCategory(category = "{b}{i}SOUND{/i}{/b}\n", credit_list = [
+        "Armoni Boone",
+        "Max Lincoln",
+        "Scott Stinson"
     ], image = "images/vivi expressions.png"),
-    CreditsCategory(category = "Programming", credit_list = [
-        "Programming name 1"
+    CreditsCategory(category = "{b}{i}PROGRAMMING{/i}{/b}\n", credit_list = [
+        "Amorphous",
+        "Denochi_"
     ], image = "images/vivi and ava.png"),
-    CreditsCategory(category = "LEADS", credit_list = [
-        "Lead name 1"
+    CreditsCategory(category = "{b}{i}QA/PLAYTESTING{/i}{/b}\n", credit_list = [
+        "{b}QA{/b}",
+        "Keumars Afifi-Sabet",
+        "Rafael Campbell",
+        "Patrick Christell",
+        "Robert Corra",
+        "Jonathan Rhee",
+        "Cameryn Tuliao",
+        "{b}Playtesting{/b}",
+        "Keumars Afifi-Sabet",
+        "Mohammad Al Hadiansyah Suwandhy",
+        "Rafael Campbell",
+        "Marcelo Domingues",
+        "Megan Fleming",
+        "Patrick Knisely",
+        "Anika Konkati",
+        "Aaron Mesnard",
+        "Jonathan Rhee",
+        "Thomasina Rogers",
+        "Kyle Smith-Laird",
+        "Ines Souquett",
+        "Cameryn Tuliao"
     ], image = "images/vivi bruh.png"),
-    CreditsCategory(category = "DIRECTOR", credit_list = [
-        "Director name"
+    CreditsCategory(category = "{b}{i}LEADS{/i}{/b}\n", credit_list = [
+        "{b}Narrative Lead{/b}",
+        "Salvador Bas Folch",
+        "{b}Narrative Producer{/b}",
+        "Anivette Wong",
+        "{b}Art Lead{/b}",
+        "fruitsicaljams",
+        "{b}Sound Lead{/b}",
+        "Andrea Saravia Pérez",
+        "{b}Programming Lead{/b}",
+        "Mica Smith",
+        "{b}Lead Producer/Project Manager{/b}",
+        "Albert Bassili"
+    ], image = "images/vivi in the train being all mysterious and such.png"),
+    CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
+        "Najmah Salam"
     ], image = "images/thumbnail concept.png"),
 ]

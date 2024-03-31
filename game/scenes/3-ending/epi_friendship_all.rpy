@@ -115,6 +115,8 @@ label epi_friendship_all:
     stop sound fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
+    $ quick_menu = False # hide quick menu
+    $ _game_menu_screen = None # disable menu
     call screen credits
     stop music fadeout 3.0
     pause 3.0
