@@ -17,11 +17,11 @@ label bad_argument:
 
     # And then I realized, it's me. I'm devoid of meaning. So if you're asking me what all this means - you're asking the wrong fucking person.
 
-    # To Ava: You think you're something really special, when in reality you're nothing but cattle - raised to be slaughtered. 
+    # To Ava: You think you're something really special, when in reality you're nothing but ordinary. An average woman told they were great so much they began to believe the lies. 
 
     # To Darius: Spare me your guilt. Sentimentality! You might not have stained your gloves, Mr. Inquisitor, but you have blood on your hands. I hope you've reckoned with that.
 
-    # To Susu'Rha: You reek of nepotistic privilege. You think you're the first royal in the world to run away from home? Please. And now you're filled with regret, why? Because your family DIED. And it's YOUR FAULT. Don't try and bullshit a bullshitter,alright?
+    # To Susu'Rha: You reek of nepotistic privilege. You think you're the first royal in the world to run away from home? Please. And now you're filled with regret, why? It's YOUR FAULT. Don't try and bullshit a bullshitter,alright?
 
 
     # LOCATION: observatory
@@ -73,8 +73,8 @@ label bad_argument:
     vivi angry "So {i}done{/i} with you? And your ways, and your wants, and your {i}shit{/i}? Well, since you asked, Asha..."
     vivi angry "You're not the worst of the bunch, but you're a contender. No, you're a vapid shell. An empty hall of mirrors for your own {i}light{/i}."
     ava angry "How dare--"
-    vivi angry "I see why you were given up: your mother knew what little use would come of you otherwise."
-    vivi angry "You're a fake. A poor imitation of godhood. You don't even deserve a name."
+    vivi angry "Everything you claim to embody is a lie. You're just a haughty fool who was born into delusions of grandeur, told they were great without actually doing anything to earn that praise."
+    vivi angry "You're a fake. A poor imitation of godhood."
     ava sad "You... We have done nothing to..."
 
     show susurha angry
@@ -98,7 +98,6 @@ label bad_argument:
     vivi angry "You've helped enough, snake. You're the worst of this bunch of dying degenerates."
     vivi angry "All your education. All your wealth, thrust upon you. And the only thing you've ever done with your life is reject that silver spoon when BILLIONS would have killed for it."
     vivi angry "I can't decide if you're just plain cruel or so...morbidly...stupid."
-    vivi angry "And {i}stupid{/i} isn't even half of it. Your family died because of you. You might have saved them. But instead, you traded them for illusions of freedom."
     vivi angry "Hmm. Maybe {i}selfish{/i} is the best word to describe you. A selfish, stupid slithering snake."
     susurha sad "I ought to kill you myself."
     vivi happy "Ha! We're already dead."

@@ -12,7 +12,7 @@ label bargaining_meal_reveal:
 
     # show [INSERT NPC] happy at left
     #Sal's note: INSERT NPC means: The NPC chosen in Character Selector 2
-    if fr2_bargaining_choice == "Ava":
+    if fr2_bargaining_choice == "Asha":
         call show_ava from _call_show_ava
     elif fr2_bargaining_choice == "Darius":
         call show_darius from _call_show_darius
@@ -23,7 +23,7 @@ label bargaining_meal_reveal:
     vivithinking "But, hold on... None of this would've been possible without [fr2_bargaining_choice]'s help. I need to say something." 
     vivi neutral blush "Hey. I just... I wanna say... I can't thank you enough."
 
-    if fr2_bargaining_choice == "Ava":
+    if fr2_bargaining_choice == "Asha":
         call ava_route from _call_ava_route
     elif fr2_bargaining_choice == "Darius":
         call darius_route from _call_darius_route
@@ -37,7 +37,7 @@ label bargaining_meal_reveal:
     show vivi happy at center with dissolve
 
     #show [INSERT NPC] happy at left
-    if fr2_bargaining_choice == "Ava":
+    if fr2_bargaining_choice == "Asha":
         $ npc_meal = ava
         call show_ava from _call_show_ava_1
     elif fr2_bargaining_choice == "Darius":
@@ -77,7 +77,7 @@ label bargaining_meal_reveal:
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
             play sound attchoice
-            if fr2_bargaining_choice == "Ava":
+            if fr2_bargaining_choice == "Asha":
                 $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
                 call show_ava_blush from _call_show_ava_blush
             elif fr2_bargaining_choice == "Darius":
@@ -101,7 +101,7 @@ label bargaining_meal_reveal:
     vivithinking neutral "He's taking another bite! And another! He's...he's crying."
     show urshu sad blush with dissolve
     urshu "My, my. I have never... My mouth dances with joy! The texture, the temperature, the sensation of it all. You have truly gone A and B the C of D."
-    if fr2_bargaining_choice == "Ava":
+    if fr2_bargaining_choice == "Asha":
         call show_ava_surprised from _call_show_ava_surprised
     elif fr2_bargaining_choice == "Darius":
         call show_darius_surprised from _call_show_darius_surprised

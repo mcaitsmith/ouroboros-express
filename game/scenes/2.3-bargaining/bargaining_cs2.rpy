@@ -26,7 +26,7 @@ label bargaining_cs2:
         # OPTION 1
         "Avatar of Asha" if fr1_bargaining_choice != "Ava":
 
-            $ fr2_bargaining_choice = "Ava"
+            $ fr2_bargaining_choice = "Asha"
 
             show vivi neutral at left
 
