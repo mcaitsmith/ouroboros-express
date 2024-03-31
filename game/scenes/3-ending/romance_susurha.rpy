@@ -8,16 +8,20 @@ label romance_susurha:
     #LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral blush at left with dissolve:
+    show vivi neutral blush at center_left with dissolve:
         xzoom -1
-    show susurha happy blush at right with dissolve
+    show susurha happy blush at center_right with dissolve
 
     vivi neutral blush  "Can you feel it? We're approaching our final stop."
     susurha "Come into my arms. There."
-    show vivi neutral blush:
-        linear 1.0 xpos 480
-    show susurha happy blush:
-        linear 1.0 xpos 1560
+    # show vivi neutral blush:
+    #     linear 1.0 xpos 480
+    # show susurha happy blush:
+    #     linear 1.0 xpos 1560
+    show vivi neutral blush with dissolve:
+        xpos 0.35
+    show susurha happy blush with dissolve:
+        xpos 0.65
     susurha "We can merge with each other as we merge with the cosmic weave."
     vivi neutral blush "It's getting brighter..."
 
