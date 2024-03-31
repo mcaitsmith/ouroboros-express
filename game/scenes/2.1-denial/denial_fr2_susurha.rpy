@@ -223,7 +223,7 @@ label denial_fr2_susurha:
             susurha "They too found my voice to be annoying."
             vivi "That's not what I meant."
             susurha "Nevertheless, they listened as I slowly found my way out of that hell."
-            "Aha... Susu'Rha appears soft, but they actually have a nerve..."
+            vivithinking surprised "Aha... Susu'Rha appears soft, but they actually have a nerve..."
             #JUMP TO: susurha "Voila."
 
     #OPTION 2 +ATTRACTION

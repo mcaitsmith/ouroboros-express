@@ -71,7 +71,8 @@ label anger_briefing:
             vivithinking neutral "That's a good guess, right? Don't even need to question it. I nailed it."
             urshu happy "Ah! Innocence is precious, is it not? A purity of existence where all emotions are in touch and rhythm. Doubt, fear, and anger all have their freedom."
             vivi neutral "So...?"
-            urshu happy "I'm afraid not, my dear! The answer is not innocence. Good guess, though! In truth, the answer is far less altruistic. Here, take a look."
+            urshu happy "I'm afraid not, my dear! The answer is not innocence. Good guess, though! In truth, the answer is far less altruistic."
+            urshu neutral "Games. It's Games, Miss Sansoucci."
             vivithinking angry "Cards. CARDS?! All this to get me to play poker? Let me tell you, I wanna be free with my feelings right now. I'll show Urshu my innocence..." 
             vivi angry "Give me a break, Ursh. I woke up today, still dead. Still hurtling towards THE end. And I haven't even had coffee yet. Narubian or otherwise."
             # JUMP TO: urshu happy "No matter when..." 
@@ -99,6 +100,7 @@ label anger_briefing:
             urshu happy "Pulling your leg? I would never."
             vivithinking "This sonofabitch has wasted countless cosmic minutes!" 
             vivi angry "So what's the answer to your tiresome riddle?"
+            urshu neutral "Games. It's Games, Miss Sansoucci."
             # JUMP TO: urshu happy "No matter when..." 
 
 

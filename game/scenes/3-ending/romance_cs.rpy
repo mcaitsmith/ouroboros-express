@@ -170,8 +170,8 @@ label romance_cs:
                 #     jump epi_friend_darius
                 # "Thank you for coming this far with me, Susu'Rha." if susurha_friend == True and (ava_asked and darius_asked):
                 #     jump epi_friend_susurha
-                "I think I found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_confess == True and darius_confess == True and susurha_confess == True):
-                    vivi happy "I think I found closure now."
+                "I think I've found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_confess == True and darius_confess == True and susurha_confess == True):
+                    vivi happy "I think I've found closure now."
                     vivi neutral "All is said and done."
                 
                     show urshu neutral at center_right with dissolve
