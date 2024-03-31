@@ -132,7 +132,7 @@ label anger_fr2_darius:
             vivi neutral "Sounds like you miss it a little."
             darius angry "I beg your pardon."
             vivi neutral "Is that why you're so quiet and pensive? Moody? You wish you could still be out there, in service of your god."
-            darius angry "Could not be further from the truth."
+            darius angry "That could not be further from the truth."
             vivi angry "Then clarify it for me. Why keep your past a secret? It's not like it matters now."
 
             # JUMP TO: "Less of a secret and more of a...regret."
