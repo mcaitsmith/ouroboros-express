@@ -25,7 +25,7 @@ label denial_briefing:
     vivi neutral "What's so funny?"
 
     urshu neutral "I apologize, Miss Sanssouci, for not informing you earlier. The cosmic cycle of life and death and life again spirals faster than any of us like to admit."
-    urshu neutral "I digress, Miss Sanssouci, I came to check on you. Last night's excitement did not, ah, sit well with you."
+    urshu neutral "But I digress, Miss Sanssouci. I came to check on you. Last night's excitement did not, ah, sit well with you."
     vivi neutral "To say the least..." 
     vivithinking "How many shots equate to learning you're dead? Is this how Bruce Willis felt?"
     urshu neutral "I was concerned that yesterday's revelations, on top of your physical, temporal distress, were contributing to a less than ideal mental state."
