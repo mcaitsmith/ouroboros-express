@@ -121,6 +121,16 @@ label bargaining_meal_reveal:
     vivithinking neutral "That's not a happy cry. He's covering his mouth."
     vivi neutral "Urshu, what's going on? Why are you crying?"
     urshu sad "Miss Sanssoucci, my dear."
+
+    # THE BELOW TEXT (UP UNTIL LINE 129 INCLUSIVE) ONLY APPEARS IF VIVI CHOSE TO HEAR/TELL ALL THREE STORIES WITH URSHU (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." IN 2.1 DENIAL_BRIEFING + SELECTED OPTION 2 "Look, just tell me the story. If we have time." IN 2.2 ANGER_BRIEFING + SELECTED OPTION 1 "Urgh, ok. You win. What do you want to hear?" IN 2.3 BARGAINING BRIEFING). OTHERWISE, NEEDS TO JUMP TO urshu sad "I underestimated you, as I so often do with humans." BELOW
+    urshu sad "Miss Sanssoucci, my dear."
+    vivi neutral "You can just call me Vivi, Ursh."
+    urshu surprised blush "I would like that, Miss Sa- I mean, my dear Vivi."
+    urshu sad -blush "But I must confess..."
+
+    # JUMP TO: urshu sad "I underestimated you, as I so often do with humans."
+    
+  
     urshu sad "I underestimated you, as I so often do with humans."
     vivi neutral "Ursh..."
     urshu sad "I did not think you would complete the task at hand, let alone with a companion."
@@ -135,6 +145,21 @@ label bargaining_meal_reveal:
     urshu neutral "You don't understand! Coffee is different. Coffee is a metaphysical experience."
     urshu neutral "The concept of coffee! Hypothetical productivity with a hint of idealism, mmm! That I can taste. Not the lowly physical aspect."
     vivi angry "No! No! NO! I can't take any more of this. I'm done."
+
+    # Carrie's note - VERSION 1: THE BELOW TEXT (UNTIL LINE 159 INCLUSIVE) ONLY APPEARS IF VIVI CHOSE TO HEAR ALL THREE OF URSHU'S STORIES (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." IN 2.1 DENIAL_BRIEFING + SELECTED OPTION 2 "Look, just tell me the story. If we have time." IN 2.2 ANGER_BRIEFING + SELECTED OPTION 1 "Urgh, ok. You win. What do you want to hear?" IN 2.3 BARGAINING BRIEFING). OTHERWISE, NEEDS TO JUMP TO # VERSION 2 BELOW 
+    
+    vivi sad "I cannot believe you, Urshu. That you did this. {i}You.{/i}" 
+    vivi sad "You know, I actually trusted you, more than most. I don't have much time left, but I gave you plenty of it. I heard you out. I listened to you, and all your ferryman stuff."
+    vivi sad "And I opened up to you. I haven't spoken to anyone - {i}anyone{/i} - like that in a long time. You looked me in the eye and said that we understood each other perfectly."
+    vivi sad "I got to feel... I felt like we were..."
+    urshu sad "My dear Vivi?"
+    vivi sad "No. It doesn't matter. Because you clearly don't, and we're clearly not. I thought I was seeing my time here wisely, differently, like you said I should. But maybe I don't have the investigative chops I thought I did." 
+    urshu sad "Dear Vivi, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
+
+    # JUMP TO: stop music fadeout 5.0
+    
+    # Carrie's note - VERSION 2: BASE GAME VERSION (NO URSHU ROMANCE PATH)
+    
     vivi sad "You know, I actually trusted you. You looked me in the eyes and shook my hand, and I trusted you."
     urshu sad "Dear Vivienne, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
 
