@@ -11,7 +11,7 @@ label denial_fr1_darius:
 
     show darius neutral at right with dissolve
 
-    vivithinking "Darius is doing their best to fill out that loveseat. Even in such a casual position, they're so graceful."
+    vivithinking "Darius is doing their best to fill out that loveseat. Even in such a casual position, they're so graceful.."
 
     vivi "Excuse me, it's Darius, right?"
 
@@ -19,7 +19,7 @@ label denial_fr1_darius:
 
     vivithinking "They seem surprised. Loner type maybe?"
 
-    darius neutral "I'm surprised you walked over to me of all people. Surely the goddess or dragon would be more approachable? Not many humans would chat up a mindflayer like you just have."
+    darius neutral "I'm surprised you walked over to me of all people. Surely the goddess or dragon would be more approachable? Not many humans would chat up a creature such as myself like you just have."
 
     vivithinking "Bingo on the loner call."
 
