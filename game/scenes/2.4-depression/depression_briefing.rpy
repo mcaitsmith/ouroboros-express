@@ -181,6 +181,9 @@ label depression_briefing:
     urshu "Nothing. I apologize, Miss Sanssouci, for losing my composure."
     show urshu sad -blush
     urshu sad "And I {i}am{/i} sorry."
+    #Here starts a reminder for the player: that the chosen person for FR1 will not be available in FR2, i.e. Vivi's "last moments" before the endings
+    urshu neutral "What I meant is, please be careful whom you choose today. It will likely be the last time you will get to speak with them in this plane of existence."
+    urshu neutral "And remember, shall you choose one person now, they will not be available later. Everyone has their own life to give close to."
     urshu neutral "I care for you. Please, give yourself a little more time. Just, be free with it."
 
     hide urshu with dissolve
