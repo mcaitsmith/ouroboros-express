@@ -166,68 +166,77 @@ label bargaining_briefing:
     vivi angry "But I look out of these windows, and all I see is death!"
     vivi sad "I want off this train. Ideally, I want everyone to get off and get back to their lives. I'll do anything to make it happen."
    
-    # THE BELOW TEXT AND FOLLOWING CHOICE ONLY APPEAR IF VIVI CHOSE TO HEAR BOTH URSHU'S FIRST STORY (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." IN 2.1 DENIAL_BRIEFING) AND SECOND STORY (SELECTED OPTION 2 "Look, just tell me the story. If we have time." IN 2.2 ANGER_BRIEFING). OTHERWISE, NEEDS TO JUMP TO urshu neutral "Miss Sanssouci..." BELOW.
-    urshu neutral "It is a wonderful wish, Miss Sanssouci. I wonder..."
-    vivi sad "You wonder what? How you're gonna make that happen?"
-    urshu neutral "I am sure it won't have escaped your journalist's intellect that the stories I have shared with you in our time here... well, I was that ferryman. They were my stories to share."
-    vivithinking "Yeah, no kidding."
-    urshu neutral "And I wonder if you might now care to share one of your own? About the life you so fervently wish to return to."
-    vivi neutral "Wait up, I thought you already knew a ton about us?"
+    # THE BELOW TEXT AND FOLLOWING CHOICE ONLY APPEAR IF VIVI CHOSE TO HEAR BOTH URSHU'S 
+    # FIRST STORY (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." 
+    # IN 2.1 DENIAL_BRIEFING) AND SECOND STORY (SELECTED OPTION 2 "Look, just tell me 
+    # the story. If we have time." IN 2.2 ANGER_BRIEFING). OTHERWISE, NEEDS TO JUMP TO 
+    # urshu neutral "Miss Sanssouci..." BELOW.
 
-    # <CHOICE>
-    urshu neutral "The deepest secrets of the heart must be shared freely, Miss Sanssouci."
+    if urshu_story_1 == True and urshu_story_2 == True:
 
-    menu:
-        # OPTION 1
-        "Urgh, ok. You win. What do you want to hear?":
+        urshu neutral "It is a wonderful wish, Miss Sanssouci. I wonder..."
+        vivi sad "You wonder what? How you're gonna make that happen?"
+        urshu neutral "I am sure it won't have escaped your journalist's intellect that the stories I have shared with you in our time here... well, I was that ferryman. They were my stories to share."
+        vivithinking "Yeah, no kidding."
+        urshu neutral "And I wonder if you might now care to share one of your own? About the life you so fervently wish to return to."
+        vivi neutral "Wait up, I thought you already knew a ton about us?"
 
-            vivi neutral "Urgh, ok. You win. What do you want to hear?"
-            vivithinking "I bet he wants to hear a {i}secret of the heart{/i}, whatever that means."
-            urshu happy "I wish to hear a memory of your past that tells me best who you are at present."
-            vivi neutral "Uhh..."
-            vivithinking "He really digs nostalgia, huh."
-            vivi neutral "Sure, I can do that. Lemme see..."
-            urshu happy "I await with bated breath, Miss Sanssouci!"
-            vivi neutral "Great. Well, I always loved crazy décor. Always. Like, all-out, the bigger the better. Too much is not enough, y'know?"
-            vivithinking "Oh, he knows. If he had anything to do with the look of this place, anyway."
-            urshu happy "I can only imagine!"
-            vivi neutral "Holidays were amazing. Mom always let me go batshit with the dec's. Birthdays, BBQs, Lunar New Year - everything got tinsel and streamers and confetti, the works. But Halloween was the best."
-            vivi happy "I turned the whole house orange and black. Every year bigger and better. It was a whole thing - people tripping over pumpkins, bats, and skeletons for a week."
-            vivi neutral "But a few years ago I was so busy and I... I screwed up."
-            vivi neutral "I was going after this scoop. It was a big catch for once, not just the usual small fry. I was finally gonna make my name."
-            vivi neutral "I was chasing leads for weeks, and I totally forgot it was Halloween."
-            vivi neutral "I left all the decorations at home. All of them. I was late to Mom's, and then I spent all day on the phone with sources and my editor barking at me."
-            urshu neutral "How out of character that must have seemed."
-            vivi sad "Mom was so sad."
-            vivi sad "I said I was sorry. I told her I was just really busy chasing my dream. I was gonna make her so proud. But she was hurt, and she was worried I was gonna trip up, always looking ahead."
-            vivi neutral "But I fixed it. I raided her fridge, shelves, even her vegetable garden. I rustled up a feast for the whole family."
-            vivi happy "I did it all: dumplings, pumpkin stew, cakes - the lot! Auntie ate so much of my putu piring she had to lie down for hours!"
-            urshu happy "A bountiful bargain!"
-            vivi happy "Yeah. It was."
-            vivi neutral "But I need to do that again. I've been so busy, I've barely been home the past couple years."
-            vivi neutral "With Mom, and Auntie, and everyone... it's not been the same. Not for a while."
-            urshu neutral "It seems your eye has been too fixed upon another time, one out of reach. It has struggled to see the present, and to bask in what it beholds."
-            vivi surprised "I... I mean, I dunno. I guess so. Maybe."
-            urshu neutral "Perhaps you lost your way?"
-            vivi surprised "Maybe a little. Yeah."
-            urshu neutral "And in this, my dear, I think we understand each other perfectly."
-            vivi surprised blush "I... What d'you mean?"
-            urshu neutral "I don't only urge you to use your time aboard this vessel wisely, Miss Sanssouci. I urge you to {i}see{/i} it wisely. Differently."
-            vivithinking blush "Dammit Urshu, why you gotta hit me in the feels like that?! Cunning little..."
-            vivithinking blush "But that does give me an idea."
-            vivi neutral "Look, Ursh..."
+        # <CHOICE>
+        urshu neutral "The deepest secrets of the heart must be shared freely, Miss Sanssouci."
 
-            # JUMP TO: urshu neutral "Miss Sanssouci..."
+        menu:
+            # OPTION 1
+            "Urgh, ok. You win. What do you want to hear?":
+
+                $ urshu_story_3 = True
+
+                vivi neutral "Urgh, ok. You win. What do you want to hear?"
+                vivithinking "I bet he wants to hear a {i}secret of the heart{/i}, whatever that means."
+                urshu happy "I wish to hear a memory of your past that tells me best who you are at present."
+                vivi neutral "Uhh..."
+                vivithinking "He really digs nostalgia, huh."
+                vivi neutral "Sure, I can do that. Lemme see..."
+                urshu happy "I await with bated breath, Miss Sanssouci!"
+                vivi neutral "Great. Well, I always loved crazy décor. Always. Like, all-out, the bigger the better. Too much is not enough, y'know?"
+                vivithinking "Oh, he knows. If he had anything to do with the look of this place, anyway."
+                urshu happy "I can only imagine!"
+                vivi neutral "Holidays were amazing. Mom always let me go batshit with the dec's. Birthdays, BBQs, Lunar New Year - everything got tinsel and streamers and confetti, the works. But Halloween was the best."
+                vivi happy "I turned the whole house orange and black. Every year bigger and better. It was a whole thing - people tripping over pumpkins, bats, and skeletons for a week."
+                vivi neutral "But a few years ago I was so busy and I... I screwed up."
+                vivi neutral "I was going after this scoop. It was a big catch for once, not just the usual small fry. I was finally gonna make my name."
+                vivi neutral "I was chasing leads for weeks, and I totally forgot it was Halloween."
+                vivi neutral "I left all the decorations at home. All of them. I was late to Mom's, and then I spent all day on the phone with sources and my editor barking at me."
+                urshu neutral "How out of character that must have seemed."
+                vivi sad "Mom was so sad."
+                vivi sad "I said I was sorry. I told her I was just really busy chasing my dream. I was gonna make her so proud. But she was hurt, and she was worried I was gonna trip up, always looking ahead."
+                vivi neutral "But I fixed it. I raided her fridge, shelves, even her vegetable garden. I rustled up a feast for the whole family."
+                vivi happy "I did it all: dumplings, pumpkin stew, cakes - the lot! Auntie ate so much of my putu piring she had to lie down for hours!"
+                urshu happy "A bountiful bargain!"
+                vivi happy "Yeah. It was."
+                vivi neutral "But I need to do that again. I've been so busy, I've barely been home the past couple years."
+                vivi neutral "With Mom, and Auntie, and everyone... it's not been the same. Not for a while."
+                urshu neutral "It seems your eye has been too fixed upon another time, one out of reach. It has struggled to see the present, and to bask in what it beholds."
+                vivi surprised "I... I mean, I dunno. I guess so. Maybe."
+                urshu neutral "Perhaps you lost your way?"
+                vivi surprised "Maybe a little. Yeah."
+                urshu neutral "And in this, my dear, I think we understand each other perfectly."
+                vivi surprised blush "I... What d'you mean?"
+                urshu neutral "I don't only urge you to use your time aboard this vessel wisely, Miss Sanssouci. I urge you to {i}see{/i} it wisely. Differently."
+                vivithinking blush "Dammit Urshu, why you gotta hit me in the feels like that?! Cunning little..."
+                vivithinking blush "But that does give me an idea."
+                vivi neutral "Look, Ursh..."
+
+                # JUMP TO: urshu neutral "Miss Sanssouci..."
 
 
-        # OPTION 2
-        "Not right now, Urshu. I've got an idea.":
+            # OPTION 2
+            "Not right now, Urshu. I've got an idea.":
 
-            vivi neutral "Not right now, Urshu. I've got an idea."
-            urshu neutral "Whatever for?"
-            vivi neutral "To get off this ride."
+                vivi neutral "Not right now, Urshu. I've got an idea."
+                urshu neutral "Whatever for?"
+                vivi neutral "To get off this ride."
 
-            #JUMP TO: urshu neutral "Miss Sanssouci..."
+                #JUMP TO: urshu neutral "Miss Sanssouci..."
     
     urshu neutral "Miss Sanssouci..."
     vivi neutral "Don't \"Miss Sanssouci\" me. I wanna make a deal with you in exchange for my freedom. I want to give you something you haven't had in recent memory."

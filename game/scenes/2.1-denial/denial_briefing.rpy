@@ -52,6 +52,8 @@ label denial_briefing:
     # OPTION 1
         "Go on, already. A story might lift my crow's feet.":
 
+            $ urshu_story_1 = True
+
             vivi neutral "Go on, already. A story might lift my crow's feet."
             urshu happy "Once, long ago, a ferryman called... Sursu toiled in the doldrums of an ordinary immortal career... ferrying souls to and fro. From mortal realms to eternal gardens, or places eternal but foul." 
             vivithinking "What did I sign up for?"

@@ -132,7 +132,11 @@ label anger_briefing:
     show urshu sad blush with dissolve
 
     # <CHOICE>
-    # THIS MENU CHOICE ONLY APPEARS IF VIVI CHOSE TO HEAR URSHU'S FIRST STORY (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." IN 2.1 DENIAL_BRIEFING). OTHERWISE, NEEDS TO DEFAULT TO RUNNING OPTION 1 ("Hey, Urshu! Let's keep it moving, shall we?") FROM MENU BELOW.
+    # THIS MENU CHOICE ONLY APPEARS IF VIVI CHOSE TO HEAR URSHU'S FIRST STORY 
+    # (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." 
+    # IN 2.1 DENIAL_BRIEFING). OTHERWISE, NEEDS TO DEFAULT TO RUNNING OPTION 1 
+    # ("Hey, Urshu! Let's keep it moving, shall we?") FROM MENU BELOW.
+
     urshu sad "Forgive me... Some days I can barely hold it in my mind's eye. Others... it's as if I could reach out and touch it... Alas..."
     
     menu:
@@ -143,7 +147,9 @@ label anger_briefing:
             # JUMP TO: urshu "Ah yes, of course...
 
         # OPTION 2
-        "Look, just tell me the story. If we have time.":
+        "Look, just tell me the story. If we have time." if urshu_story_1 == True:
+
+            $ urshu_story_2 = True
 
             vivi neutral "Look, just tell me the story. If we have time."
             urshu happy -blush "Ah Miss Sanssouci, we have so little time and yet far too much of it!"
