@@ -32,7 +32,9 @@ label train_epilogue:
     urshu happy "But what should fate bring them now? Perhaps... to new beginnings!"
     vivi surprised "New beginnings? You mean..."
     
-    #SERA NOTE - ideally it would be lovely to fade out here, and fade up an image of the three NPCs at the terminal. Vivi's next line could be shown over this image, before returning to them in the obervatory.
+    #SERA NOTE - ideally it would be lovely to fade out here, and fade up an image of 
+    # the three NPCs at the terminal. Vivi's next line could be shown over this image, 
+    # before returning to them in the obervatory.
     
     vivi surprised "They're together on the platform! Urshu, you little peach! Wherever they're going, you made sure they wouldn't be alone."
     urshu happy "Ahem... yes, well. Someone recently did something similar for me. You could say I found myself inspired."
