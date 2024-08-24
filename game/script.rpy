@@ -110,5 +110,10 @@ label start:
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False
 
+    # initialize Urshu path variables
+    $ urshu_story_1 = False
+    $ urshu_story_2 = False
+    $ urshu_story_3 = False
+
     # jump to first scene
     jump introduction
