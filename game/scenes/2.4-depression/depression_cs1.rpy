@@ -14,6 +14,7 @@ label depression_cs1:
 
     #<CHOICE>
     vivithinking neutral "I'm gonna get a drink. I'm sure I'm not the only one who'd want one."
+    vivithinking "As Urshu said, the person I choose now won't be available later. They won't be able to see my final moments."
     menu:
 
         #OPTION 1

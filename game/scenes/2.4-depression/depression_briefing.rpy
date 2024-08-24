@@ -98,8 +98,7 @@ label depression_briefing:
     vivi neutral "And the food I made you?"
     urshu sad "It was divine!"
     vivi neutral "And we've had weird, wonderful sparring matches!"
-    urshu neutral "Yes! A thousand times, yes!"
-    
+    urshu neutral "Yes! A thousand times, yes!"    
     vivi angry "Then why did {i}you{/i} lie to {i}me{/i}?"
     vivi "Now, I have no hope."
     vivi "I have nothing."
@@ -186,4 +185,5 @@ label depression_briefing:
     hide urshu with dissolve
 
     # JUMP TO: character selector 1
+
     jump depression_cs1

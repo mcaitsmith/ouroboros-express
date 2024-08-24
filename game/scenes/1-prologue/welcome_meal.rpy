@@ -61,7 +61,7 @@ label welcome_meal:
     urshu neutral "I hope..."
     urshu neutral "In the meantime, I suggest you begin interviewing your fellow passengers while it is still early in your stay. That {i}is{/i} what you came here for, is it not?"
     vivithinking neutral "I just came here so I could pay my rent."
-    vivi neutral "Okay. I guess I can start. Still wish I had a little more time to get acclimated though."
+    vivi neutral "Okay. I guess I can start. Though I wish I had a little more time to get acclimated."
     urshu neutral "There's never enough time, Miss Sanssouci. Though there is always enough to seek companionship, I daresay!" 
 
     # urshu exits
