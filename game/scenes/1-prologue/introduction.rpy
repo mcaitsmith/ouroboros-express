@@ -100,7 +100,7 @@ label introduction:
     vivi neutral "Sorry, this is all just a lot. I must be really tired."
     urshu happy "I could whip up an espresso if you'd like. They are to die for. I personally have one every morning."
     vivi neutral "I think I'm okay for now, but thank you."
-    urshu neutral "Well, in any case, I've actually stopped by to invite you to dinner. The other guests have gathered. I'm sure they're quite eager to meet you."
+    urshu neutral "Well, in any case, I've actually stopped by to invite you to dinner. The other guests have gathered in the dining car. I'm sure they're quite eager to meet you."
 
     # <CHOICE>
     vivi neutral "Um..."
