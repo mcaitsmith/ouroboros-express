@@ -80,7 +80,7 @@ label anger_susurha_urshu:
         vivithinking "I can feel the heat burn as Susu’Rha snarls."
 
 
-        susurha sad "...”
+        susurha sad "..."
 
 
         susurha sad "Just remove yourself from my sight."
