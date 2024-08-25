@@ -1,6 +1,6 @@
 label anger_susurha_urshu:
 
-        show lounge with fade
+        scene lounge with fade
 
         show vivi neutral at left with dissolve :
             xzoom-1

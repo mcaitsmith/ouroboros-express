@@ -146,7 +146,7 @@ label anger_fr1_ava:
 
             # vivi exits
             hide vivi with dissolve
-            jump anger_cs2
+            jump anger_susurha_urshu
 
     vivi neutral blush "Thank you for sharing with me, Asha."
     vivithinking neutral "That went better than I thought. Maybe one of the others wants to play a game as well."
