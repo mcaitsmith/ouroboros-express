@@ -27,6 +27,7 @@ label anger_urshu_darius:
     hide vivi
 
     show darius angry at left
+        xzoom -1
     show urshu neutral at right
 
     darius angry "I know what it is like to toy with your prey. I don’t appreciate it."
