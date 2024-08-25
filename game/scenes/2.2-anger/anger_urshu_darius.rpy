@@ -4,8 +4,8 @@ label anger_urshu_darius:
 
     scene observatory with fade
 
-        show vivi neutral left with dissolve :
-        xzoom -1 
+    show vivi neutral left with dissolve :
+    xzoom -1 
 
         vivithinking neutral “Something drew me here. It’s late, but I couldn’t resist the pull.”
 

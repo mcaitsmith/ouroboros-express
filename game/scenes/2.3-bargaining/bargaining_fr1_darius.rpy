@@ -153,5 +153,5 @@ label bargaining_fr1_darius:
     darius neutral "Insight is a kind way of putting it. I just told you about what I've seen."
     darius neutral "But thank you, Vivienne. I'm always open to chat."
 
-    # JUMP TO: Character Selector 2
-    jump bargaining_cs2
+    # JUMP TO: Darius Susu'Rha intermission scene'
+    jump bargaining_darius_susurha
