@@ -2,7 +2,8 @@ label anger_susurha_urshu:
 
         show lounge with fade
 
-        show vivi at left with dissolve
+        show vivi at left with dissolve :
+            xzoom-1
 
 
         vivithinking "This is getting to be too much. This train, these games, Urshu…"
@@ -94,8 +95,8 @@ label anger_susurha_urshu:
         hide susurha
         hide Urshu
 
-        show vivi at left with dissolve
-
+        show vivi at left with dissolve :
+            xzoom-1
 
         vivithinking "Time to go."
 
