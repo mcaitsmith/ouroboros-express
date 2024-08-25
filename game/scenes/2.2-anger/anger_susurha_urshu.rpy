@@ -18,7 +18,7 @@ label anger_susurha_urshu:
 
         hide vivi
 
-        show urshu neutral at left with dissolve
+        show urshu neutral at left with dissolve :
             xzoom-1
         show susurha neutral at right with dissolve
 
