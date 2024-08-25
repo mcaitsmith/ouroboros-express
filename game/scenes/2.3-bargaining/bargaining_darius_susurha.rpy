@@ -5,7 +5,7 @@ label bargaining_darius_susurha:
     show vivi neutral left with dissolve :
         xzoom -1
 
-        vivithinking neutral “There’s got to be a way out. Surely I can convince one of these strangers to help me.
+        vivithinking neutral “There’s got to be a way out. Surely I can convince one of these strangers to help me.”
         vivithinking surprised “Oh scat, someone’s coming. I could sense that roiling mind anywhere. Better make myself scarce, see if I can learn anything.”
 
         hide vivi
