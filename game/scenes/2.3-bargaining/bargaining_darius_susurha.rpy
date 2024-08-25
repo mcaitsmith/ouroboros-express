@@ -6,11 +6,12 @@ label bargaining_darius_susurha:
         xzoom -1
 
         vivithinking neutral “There’s got to be a way out. Surely I can convince one of these strangers to help me.”
+
         vivithinking surprised “Oh scat, someone’s coming. I could sense that roiling mind anywhere. Better make myself scarce, see if I can learn anything.”
 
         hide vivi
 
-# vivi portrait disappears, fades away or something
+        # vivi portrait disappears, fades away or something
 
         show darius neutral at left with dissolve
         show susurha neutral at right with dissolve
@@ -63,7 +64,7 @@ label bargaining_darius_susurha:
 
         hide darius
 
-#darius fades, vivi potrait slides left?
+        #darius fades, vivi potrait slides left?
 
         susurha happy “Your scent is pretty recognizable, you can come out whenever you feel comfortable. Hi!”
 
@@ -75,6 +76,6 @@ label bargaining_darius_susurha:
 
         susurha happy “Suit yourself!”
 
-# this has to jump to the 2.3 character selector scene i believe
+        # this has to jump to the 2.3 character selector scene i believe
 
     jump bargaining_cs2
