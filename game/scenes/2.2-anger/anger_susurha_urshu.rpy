@@ -6,7 +6,7 @@ label anger_susurha_urshu:
             xzoom-1
 
 
-        vivithinking neutral "This is getting to be too much. This train, these games, Urshu…"
+        vivithinking "This is getting to be too much. This train, these games, Urshu…"
 
 
         vivithinking "I’m sick of it!"
@@ -93,7 +93,7 @@ label anger_susurha_urshu:
         urshu sad "It is a great shame that no one does."
 
         hide susurha
-        hide Urshu
+        hide urshu
 
         show vivi neutral at left with dissolve :
             xzoom-1
