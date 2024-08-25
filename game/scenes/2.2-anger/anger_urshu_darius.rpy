@@ -18,7 +18,7 @@ label anger_urshu_darius:
 
     # another character portrait fade-in, of darius
 
-    show darius neutral at middle with dissolve
+    show darius neutral at center with dissolve
 
     vivithinking surprised "Looks like that cosmic detective guy is here too. He seems pissed. I shouldn’t interrupt them."
 
@@ -59,7 +59,7 @@ label anger_urshu_darius:
 
     urshu happy "Wouldn’t you agree, Miss Sanssouci?"
 
-    show vivi surprised at middle with dissolve
+    show vivi surprised at center with dissolve
 
     vivithinking surprised "Crap on a cracker, they must have heard me. Sensed me? Who can say."
 
