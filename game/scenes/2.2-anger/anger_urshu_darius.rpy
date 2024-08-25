@@ -1,17 +1,23 @@
 # i’m not sure of where this should take place so i’m putting it as the observatory
 
 label anger_urshu_darius:
-    LOCATION: observatory
 
-    show vivi neutral left 
+    scene observatory with fade
+
+    show vivi neutral left with dissolve :
+        xzoom -1 
 
     vivithinking neutral “Something drew me here. It’s late, but I couldn’t resist the pull.”
 
 # can we fade in on a character portrait? might be a good place to do that here with urshu
 
+    show urshu neutral at right with dissolve
+
     vivithinking surprised “Is that– the conductor? I thought he was in the lounge.”
 
 # another character portrait fade-in, of darius
+
+    show darius neutral at middle with dissolve
 
     vivithinking surprised “Looks like that cosmic detective guy is here too. He seems pissed. I shouldn’t interrupt them.”
     vivithinking neutral “But I’ll still listen in.”
@@ -53,13 +59,13 @@ label anger_urshu_darius:
 
     darius neutral “Miss. Good night.”
 
-# sound of darius leaving/ steps/ door closing
+    # sound of darius leaving/ steps/ door closing
 
     vivithinking sad “A wave of something like sadness just crashed over me.”
     vivi surprised “What was that about?”
 
     urshu neutral “Dear Darius is simply adjusting. They will be fine. Do excuse me.”
 
-#need a JUMP or something? i'm not sure where this scene goes next
+    #need a JUMP or something? i'm not sure where this scene goes next
 
-jump anger_debrief
+    jump anger_debrief
