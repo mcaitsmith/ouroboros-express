@@ -2,7 +2,7 @@ label bargaining_darius_susurha:
 
     scene lounge with fade
 
-    show vivi neutral left with dissolve :
+    show vivi neutral at left with dissolve :
         xzoom -1
 
     vivithinking neutral "There’s got to be a way out. Surely I can convince one of these strangers to help me."
@@ -65,6 +65,8 @@ label bargaining_darius_susurha:
     #darius fades, vivi potrait slides left?
 
     susurha happy "Your scent is pretty recognizable, you can come out whenever you feel comfortable. Hi!"
+
+    show vivi at left with dissolve
 
     vivi happy blush "Why the hell didn’t you say anything?"
 

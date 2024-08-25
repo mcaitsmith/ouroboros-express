@@ -4,7 +4,7 @@ label anger_urshu_darius:
 
     scene observatory with fade
 
-    show vivi neutral left with dissolve :
+    show vivi neutral at left with dissolve :
         xzoom -1
         
 
@@ -26,8 +26,8 @@ label anger_urshu_darius:
 
     hide vivi
 
-    show darius angry left
-    show urshu neutral right
+    show darius angry at left
+    show urshu neutral at right
 
     darius angry "I know what it is like to toy with your prey. I don’t appreciate it."
 
@@ -59,7 +59,7 @@ label anger_urshu_darius:
 
     urshu happy "Wouldn’t you agree, Miss Sanssouci?"
 
-    show vivi surprised middle
+    show vivi surprised at middle with dissolve
 
     vivithinking surprised "Crap on a cracker, they must have heard me. Sensed me? Who can say."
 
