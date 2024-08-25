@@ -11,7 +11,7 @@ label denial_fr1_darius:
 
     show darius neutral at right with dissolve
 
-    vivithinking "Darius is doing their best to fill out that loveseat. Even in such a casual position, they're so graceful.."
+    vivithinking "Darius is doing their best to fill out that loveseat. Even in such a casual position, they're so graceful."
 
     vivi "Excuse me, it's Darius, right?"
 
