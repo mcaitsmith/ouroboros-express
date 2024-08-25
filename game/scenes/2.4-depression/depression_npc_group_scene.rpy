@@ -1,4 +1,3 @@
-
 label depression_npc_group_scene:
 
         #LOCATION: bar
