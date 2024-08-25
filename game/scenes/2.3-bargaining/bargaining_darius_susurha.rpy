@@ -2,7 +2,7 @@ label bargaining_darius_susurha:
 
     scene lounge with fade
 
-   show vivi neutral left with dissolve :
+    show vivi neutral left with dissolve :
         xzoom -1
 
     vivithinking neutral “There’s got to be a way out. Surely I can convince one of these strangers to help me.
