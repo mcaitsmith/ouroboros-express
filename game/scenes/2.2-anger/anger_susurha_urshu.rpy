@@ -2,11 +2,11 @@ label anger_susurha_urshu:
 
         show lounge with fade
 
-        show vivi at left with dissolve :
+        show vivi neutral at left with dissolve :
             xzoom-1
 
 
-        vivithinking "This is getting to be too much. This train, these games, Urshu…"
+        vivithinking neutral "This is getting to be too much. This train, these games, Urshu…"
 
 
         vivithinking "I’m sick of it!"
@@ -95,10 +95,10 @@ label anger_susurha_urshu:
         hide susurha
         hide Urshu
 
-        show vivi at left with dissolve :
+        show vivi neutral at left with dissolve :
             xzoom-1
 
-        vivithinking "Time to go."
+        vivithinking  "Time to go."
 
         #JUMP TO: Character Selector 2
         jump anger_cs2
