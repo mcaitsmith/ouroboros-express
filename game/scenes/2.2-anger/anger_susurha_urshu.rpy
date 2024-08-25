@@ -1,95 +1,95 @@
 label anger_susurha_urshu:
 
-#LOCATION: Lounge
+		#LOCATION: Lounge
 
 
-vivithinking "This is getting to be too much. This train, these games, Urshu…"
+		vivithinking "This is getting to be too much. This train, these games, Urshu…"
 
 
-vivithinking "I’m sick of it!"
+		vivithinking "I’m sick of it!"
 
 
-vivithinking "Oh, speaking of the devil."
+		vivithinking "Oh, speaking of the devil."
 
 
-vivithinking "It seems Urshu is getting feisty with Susu’Rha."
+		vivithinking "It seems Urshu is getting feisty with Susu’Rha."
 
 
-show urshu neutral at left with dissolve
-xzoom-1
-show susurha neutral at right with dissolve
+		show urshu neutral at left with dissolve
+			xzoom-1
+		show susurha neutral at right with dissolve
 
 
-urshu "Lounging about again, I see. Kicking the feet up and enjoying the ride, hmm?"
+		urshu "Lounging about again, I see. Kicking the feet up and enjoying the ride, hmm?"
 
 
-susurha happy "You know it, Mr. Conductor. Envious?"
+		susurha happy "You know it, Mr. Conductor. Envious?"
 
 
-urshu "Envious? Ah, do you spot a green-eyed monster, perhaps? I don’t have nearly enough time in the day for such feelings."
+		urshu "Envious? Ah, do you spot a green-eyed monster, perhaps? I don’t have nearly enough time in the day for such feelings."
 
 
-susurha "Mhm."
+		susurha "Mhm."
 
 
-urshu "How do you do it?"
+		urshu "How do you do it?"
 
 
-susurha neutral "Do what?"
+		susurha neutral "Do what?"
 
 
-urshu "Present yourself as so relaxed."
+		urshu "Present yourself as so relaxed."
 
 
-susurha "Present?"
+		susurha "Present?"
 
 
-susurha happy "Look at you. So confident that I’m playing pretend."
+		susurha happy "Look at you. So confident that I’m playing pretend."
 
 
-susurha neutral "What about yourself? Coming here to criticize me. Acting like you’re better than I."
+		susurha neutral "What about yourself? Coming here to criticize me. Acting like you’re better than I."
 
 
-urshu sad "..."
+		urshu sad "..."
 
 
-urshu sad "I come to you, honestly."
+		urshu sad "I come to you, honestly."
 
 
-susurha neutral "Sure you do, dragging me here to this contraption really invokes such ideas."
+		susurha neutral "Sure you do, dragging me here to this contraption really invokes such ideas."
 
 
-urshu sad "What are you afraid of? What makes you wear this mask of relaxation?"
+		urshu sad "What are you afraid of? What makes you wear this mask of relaxation?"
 
 
-susurha angry "I wear no mask! So don’t even try to project your own lies onto me!"
+		susurha angry "I wear no mask! So don’t even try to project your own lies onto me!"
 
 
-susurha angry "Your dashing physique and alluring voice may convince the others to play your little game, but I see you for the creature you are."
+		susurha angry "Your dashing physique and alluring voice may convince the others to play your little game, but I see you for the creature you are."
 
 
-urshu sad "I merely wish to help, Susu’Rha."
+		urshu sad "I merely wish to help, Susu’Rha."
 
 
-urshu sad "Not everyone is scheming."
+		urshu sad "Not everyone is scheming."
 
 
-vivithinking "I can feel the heat burn as Susu’Rha snarls."
+		vivithinking "I can feel the heat burn as Susu’Rha snarls."
 
 
-susurha sad "...”
+		susurha sad "...”
 
 
-susurha sad "Just remove yourself from my sight."
+		susurha sad "Just remove yourself from my sight."
 
 
-susurha sad "You know nothing of me."
+		susurha sad "You know nothing of me."
 
 
-urshu sad "It is a great shame that no one does."
+		urshu sad "It is a great shame that no one does."
 
 
-vivithinking "Time to go."
+		vivithinking "Time to go."
 
-#JUMP TO: Character Selector 2
-jump anger_cs2
+		#JUMP TO: Character Selector 2
+		jump anger_cs2
