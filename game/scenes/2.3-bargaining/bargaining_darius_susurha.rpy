@@ -72,8 +72,6 @@ label bargaining_darius_susurha:
 
     vivi neutral "I– I’d better not. I should get back to the others. Another time.”
 
-    susurha happy "Suit yourself!”
-
-    # this has to jump to the 2.3 character selector scene i believe
+    susurha happy "Suit yourself!"
 
     jump bargaining_cs2

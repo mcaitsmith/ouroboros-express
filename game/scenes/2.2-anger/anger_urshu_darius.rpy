@@ -78,8 +78,6 @@ label anger_urshu_darius:
     vivithinking sad "A wave of something like sadness just crashed over me.”
     vivi surprised "What was that about?”
 
-    urshu neutral "Dear Darius is simply adjusting. They will be fine. Do excuse me.”
-
-    # need a JUMP or something? i'm not sure where this scene goes next
+    urshu neutral "Dear Darius is simply adjusting. They will be fine. Do excuse me."
 
     jump anger_debrief
