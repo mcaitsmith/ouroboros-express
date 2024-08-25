@@ -1,6 +1,8 @@
 label anger_susurha_urshu:
 
-		#LOCATION: Lounge
+		show lounge with fade
+
+		show vivi at left with dissolve
 
 
 		vivithinking "This is getting to be too much. This train, these games, Urshu…"
@@ -14,6 +16,7 @@ label anger_susurha_urshu:
 
 		vivithinking "It seems Urshu is getting feisty with Susu’Rha."
 
+		hide vivi
 
 		show urshu neutral at left with dissolve
 			xzoom-1
@@ -87,6 +90,11 @@ label anger_susurha_urshu:
 
 
 		urshu sad "It is a great shame that no one does."
+
+		hide susurha
+		hide Urshu
+
+		show vivi at left with dissolve
 
 
 		vivithinking "Time to go."
