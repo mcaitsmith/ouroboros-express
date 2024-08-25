@@ -26,7 +26,7 @@ label anger_urshu_darius:
 
     hide vivi
 
-    show darius angry at left
+    show darius angry at left :
         xzoom -1
     show urshu neutral at right
 

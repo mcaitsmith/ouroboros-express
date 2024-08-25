@@ -13,7 +13,7 @@ label bargaining_darius_susurha:
 
     # vivi portrait disappears, fades away or something
 
-    show darius neutral at left with dissolve
+    show darius neutral at left with dissolve :
         xzoom -1
 
     show susurha neutral at right with dissolve
@@ -68,7 +68,7 @@ label bargaining_darius_susurha:
 
     susurha happy "Your scent is pretty recognizable, you can come out whenever you feel comfortable. Hi!"
 
-    show vivi at left with dissolve
+    show vivi at left with dissolve :
         xzoom -1
 
     vivi happy blush "Why the hell didn’t you say anything?"
