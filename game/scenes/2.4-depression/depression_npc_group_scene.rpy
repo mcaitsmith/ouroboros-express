@@ -1,7 +1,7 @@
 label depression_npc_group_scene:
 
         #LOCATION: bar
-        scene bar with fade
+        scene diningcar with fade
 
         #SOUND: train
 
@@ -15,7 +15,7 @@ label depression_npc_group_scene:
         show ava sad at left with dissolve :
             xzoom -1
 
-        show darius sad at middle with dissolve
+        show darius sad at center with dissolve
         show susurha sad at right with dissolve
 
         hide ava with dissolve
@@ -32,7 +32,7 @@ label depression_npc_group_scene:
         show ava sad at left with dissolve :
             xzoom -1
 
-        show darius sad at middle with dissolve
+        show darius sad at center with dissolve
         show susurha sad at right with dissolve
 
         ava sad "By Mother Asha, we face oblivion soon; our icy shadow self beckons through the glass. What say you, thrall? Druid? What dark fate awaits you?"
