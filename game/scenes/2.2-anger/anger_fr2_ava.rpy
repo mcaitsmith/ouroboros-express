@@ -208,5 +208,5 @@ label anger_fr2_ava:
     ava sad "Please...go."
     vivithinking sad "Ugh! I messed up. Maybe they'll accept my apology tomorrow..."
 
-    # JUMP TO: Debrief Anger
-    jump anger_debrief
+    # JUMP TO: Urshu Darius scene
+    jump anger_urshu_darius

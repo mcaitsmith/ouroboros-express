@@ -114,6 +114,7 @@ label start:
     $ urshu_story_1 = False
     $ urshu_story_2 = False
     $ urshu_story_3 = False
+    $ urshu_story_4 = False
 
     # jump to first scene
     jump introduction

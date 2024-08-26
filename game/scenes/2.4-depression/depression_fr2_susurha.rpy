@@ -244,5 +244,5 @@ label depression_fr2_susurha:
             vivithinking "In its own strange way, the view sure is beautiful from here."
         # END
 
-        #JUMP to Debrief Depression
-        jump depression_debrief
+        #JUMP to Depression NPC Group Scene
+        jump depression_npc_group_scene

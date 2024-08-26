@@ -205,5 +205,5 @@ label bargaining_fr1_ava:
         ava neutral "And with you. Goodbye, Vivienne. The All is the One."
         vivithinking "That sure was...something."
 
-        # JUMP TO: Character Selector 2
-        jump bargaining_cs2
+        # JUMP TO: Darius/Susu'Rha intermission scene'
+        jump bargaining_darius_susurha

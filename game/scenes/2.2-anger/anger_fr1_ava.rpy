@@ -146,11 +146,11 @@ label anger_fr1_ava:
 
             # vivi exits
             hide vivi with dissolve
-            jump anger_cs2
+            jump anger_susurha_urshu
 
     vivi neutral blush "Thank you for sharing with me, Asha."
     vivithinking neutral "That went better than I thought. Maybe one of the others wants to play a game as well."
     vivithinking angry "Ugh. And I still gotta find out Urshu's riddle. How am I gonna get off this doomsday train?"
 
-    # JUMP TO: Character Selector 2
-    jump anger_cs2
+    # JUMP TO: Anger Susurha Urshu
+    jump anger_susurha_urshu

@@ -40,7 +40,16 @@ label good_briefing:
     vivi happy "You're in a really good mood today!"
     urshu happy "I'm not the only one. Come see who's waiting for you in the lounge."
     
-    # The choice that follows will be between the player choosing to move on to the romance / confession character selector OR choosing to talk to Urshu instead, in which case they will not get to select / confess to any other character. This choice only appears if vivi chose to hear URSHU'S FIRST STORY (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." IN 2.1 DENIAL_BRIEFING) AND SECOND STORY (SELECTED OPTION 2 "Look, just tell me the story. If we have time." IN 2.2 ANGER_BRIEFING) AND THIRD STORY (SELECTED OPTION 1 "Urgh, ok. You win. What do you want to hear?" AND FOURTH STORY (SELECTED OPTION 1 vivi neutral "Only because I don't trust you to tell it alone."  Otherwise the remainder of this scene is skipped and we jump to romance_cs
+    # The choice that follows will be between the player choosing to move on to the 
+    # romance / confession character selector OR choosing to talk to Urshu instead, 
+    # in which case they will not get to select / confess to any other character. 
+    # This choice only appears if vivi chose to hear URSHU'S FIRST STORY (SELECTED 
+    # OPTION 1 "Go on, already. A story might lift my crow's feet." IN 
+    # 2.1 DENIAL_BRIEFING) AND SECOND STORY (SELECTED OPTION 2 "Look, just tell me 
+    # the story. If we have time." IN 2.2 ANGER_BRIEFING) AND THIRD STORY (SELECTED 
+    # OPTION 1 "Urgh, ok. You win. What do you want to hear?" AND FOURTH STORY 
+    # (SELECTED OPTION 1 vivi neutral "Only because I don't trust you to tell it alone."  
+    # Otherwise the remainder of this scene is skipped and we jump to romance_cs
     
     # <CHOICE>
     menu:
@@ -53,7 +62,7 @@ label good_briefing:
             jump romance_cs
     
         # OPTION 2
-        "Hold your horses. I've decided to step into the unknown with you.":
+        "Hold your horses. I've decided to step into the unknown with you." if urshu_story_1 == True and urshu_story_2 == True and urshu_story_3 == True and urshu_story_4 == True:
         
             vivi happy "Hold your horses. I've decided to step into the unknown with you."
             vivithinking happy "The way he's staring at me right now. Rude, but also kind of hot."

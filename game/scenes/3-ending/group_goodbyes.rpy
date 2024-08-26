@@ -135,7 +135,7 @@ label group_goodbyes:
     ava happy "But listen to me, Vivienne. For time is of the essence, and there is something we wish to impart."
     vivi surprised "Go ahead, I'm all ears."
     ava happy "Knowing you... it has changed us. Your determination. Watching as you discovered yourself. It has given us courage in return. Courage so that we..."
-    ava surprised "We? No, no, so that {i}I{/} can tell you this: from now on, we are Asha no more. {i}I{/i} am Ava. And I would like you to remember me, Vivi. As a friend."
+    ava surprised "We? No, no, so that {i}I{/i} can tell you this: from now on, we are Asha no more. {i}I{/i} am Ava. And I would like you to remember me, Vivi. As a friend."
     vivi surprised "Ava. That's a beautiful name. I'm so glad to meet you, Ava. I'll never forget who you are."
     ava happy "Nor I you. But I will not take more of your time. There is precious little left."
     
