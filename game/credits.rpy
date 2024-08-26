@@ -9,7 +9,7 @@
 
 transform credits_scroll(speed):
     ypos 1080
-    linear speed ypos -2950
+    linear speed ypos -6600
 
 ## Credits screen.
 
@@ -19,10 +19,10 @@ screen credits():
     add "#000000"
 
     # timer 10.0 action Return()
-    timer 40.0 action Return()
+    timer 60.0 action Return()
 
     # frame at credits_scroll(10.0):
-    frame at credits_scroll(30.0):
+    frame at credits_scroll(50.0):
         background None
         xalign 0.5
 
@@ -36,7 +36,7 @@ screen credits():
             for credit in credits_list:
 
                 vbox:
-                    add "images/logo.png"
+                    add credit.image
 
                 vbox:
                     spacing 4

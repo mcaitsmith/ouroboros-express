@@ -6,9 +6,11 @@ label romance_darius:
     #LOCATION: observatory
     scene observatory with fade
 
-    show darius surprised at right with dissolve
-    show vivi happy at left with dissolve :
+    show darius surprised at center_right with dissolve:
+        xpos 0.65
+    show vivi happy at center_left with dissolve :
         xzoom -1
+        xpos 0.35
 
     show darius surprised blush with dissolve
     darius "Yes?"
@@ -70,9 +72,13 @@ label romance_darius:
     elif att_meter_susurha > 0:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha_1
 
+    stop music fadeout 3.0
     stop sound fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
+    $ quick_menu = False # hide quick menu
+    $ _game_menu_screen = None # disable menu
+    play music goodendmusic volume 0.5
     call screen credits
     stop music fadeout 3.0
     pause 3.0

@@ -20,7 +20,7 @@ label denial_fr2_susurha:
 
     susurha "What does it look like I'm doing at the moment? I'm deep in the meditative process of trying not to think about the circumstances that surround me."
 
-    susurha "And girl... let me tell you that the cushions this contraption houses are just soooo... Welcoming."
+    susurha "And let me tell you...the cushions this contraption houses are just soooo...Welcoming."
 
     #<CHOICE>
     susurha "You should give it a try."
@@ -51,9 +51,9 @@ label denial_fr2_susurha:
             # skipping
             vivithinking "Holy shit..."
             susurha happy "Feels like a dream, doesn't it?"
-            vivi "Feels like I'm sinking."
-            vivithinking "It's nice sitting in silence. I'm enjoying their company."
-            vivithinking "I think my headache's easing off."
+            vivi neutral "Feels like I'm sinking."
+            vivithinking happy "It's nice sitting in silence. I'm enjoying their company."
+            vivithinking neutral "I think my headache's easing off."
             #JUMP TO: susurha "This place is a prison."
 
     susurha "This place is a prison."
@@ -140,7 +140,7 @@ label denial_fr2_susurha:
     show vivi surprised at left with dissolve :
         xzoom -1
 
-    vivithinking "Golden fiery flashes shine through the glass windows of the cabin, and in-between those sparkles of light..."
+    vivithinking "Golden fiery flashes shine through the glass windows of the cabin, and in between those sparkles of light..."
 
     vivithinking "Darkness."
 
@@ -149,7 +149,7 @@ label denial_fr2_susurha:
     show vivi neutral
 
     # <CHOICE>
-    susurha surprised "So strange, when I was just here I saw the night sky riddled with an ocean of stars, but now... it's just nothing."
+    susurha surprised "So strange, when I was just here I saw the night sky riddled with an ocean of stars, but now...it's just nothing."
 
     menu:
 
@@ -205,7 +205,7 @@ label denial_fr2_susurha:
     susurha happy "This reminds me of back when I was younger and I'd sneak out of my tower bedroom to wander on top of the surrounding castle walls."
 
     vivithinking "Aaaaand they're climbing the tower of stacked chairs and wrestling with the loose screws of the ceiling's window."
-    vivithinking "You don't see that every day. Huh... Golden light is glistening off their scaly skin."
+    vivithinking "You don't see that every day. Huh...Golden light is glistening off their scaly skin."
     vivithinking "I wonder what it's like, living in a castle..."
 
     # <CHOICE>
@@ -223,7 +223,7 @@ label denial_fr2_susurha:
             susurha "They too found my voice to be annoying."
             vivi "That's not what I meant."
             susurha "Nevertheless, they listened as I slowly found my way out of that hell."
-            "Aha... Susu'Rha appears soft, but they actually have a nerve..."
+            vivithinking surprised "Aha...Susu'Rha appears soft, but they actually have a nerve..."
             #JUMP TO: susurha "Voila."
 
     #OPTION 2 +ATTRACTION
@@ -280,7 +280,7 @@ label denial_fr2_susurha:
 
     vivithinking "I can feel my hair whipping around my face. I really wanna scream. But I can't."
 
-    vivithinking "Susu'Rha's staring out into the visual abyss of...wherever we are. They're mumbling... I can't hear what they're saying."
+    vivithinking "Susu'Rha's staring out into the visual abyss of...wherever we are. They're mumbling...I can't hear what they're saying."
 
     vivithinking "There's a tear rolling down their cheek."
 
@@ -351,7 +351,7 @@ label denial_fr2_susurha:
 
     vivithinking "Oh baby. Caught between hell and a better place."
 
-    vivithinking "Ugh... I need a drink."
+    vivithinking "Ugh...I need a drink."
 
     #  JUMP TO: Debrief Denial.
     jump denial_debrief

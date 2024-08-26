@@ -8,13 +8,21 @@ label romance_ava:
     # LOCATION: observatory
     scene observatory with fade
 
-    show vivi neutral at left with dissolve:
+    show vivi neutral at center_left with dissolve:
         xzoom -1
-    show ava neutral at right with dissolve
+    show ava neutral at center_right with dissolve
 
     show ava sad blush with dissolve
     ava "Now, take my hand, Vivi." 
     ava "Hold me close for our last dance."
+    show vivi neutral with dissolve:
+        # xpos 0.5
+        # linear 0.5 xpos 0.35
+        xpos 0.35
+    show ava sad blush with dissolve:
+        # xpos 0.5
+        # linear 0.5 xpos 0.65
+        xpos 0.65
     vivi neutral blush "Aren't you afraid?"
     show ava happy blush
     ava "Not anymore."
@@ -43,9 +51,13 @@ label romance_ava:
     elif att_meter_susurha > 0:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha
 
+    stop music fadeout 3.0
     stop sound fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
+    $ quick_menu = False # hide quick menu
+    $ _game_menu_screen = None # disable menu
+    play music goodendmusic volume 0.5
     call screen credits
     stop music fadeout 3.0
     pause 3.0

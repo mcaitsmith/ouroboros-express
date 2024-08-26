@@ -12,7 +12,7 @@ label denial_fr2_darius:
 
     show darius neutral at right with dissolve
 
-    vivithinking "Darius is... drinking? Guess even impeccably dressed cephalopods need a break every now and then too."
+    vivithinking "Darius is... drinking? Guess impeccably-dressed cephalopods need a break every now and then."
 
     vivi "Enjoying a drink?"
 
@@ -42,6 +42,22 @@ label denial_fr2_darius:
 
             vivithinking "They shudder at this, it ripples through their sleek frame like a gentle breeze. Gotta be a story there."
 
+            vivi neutral "Mindflayer? Is that what you are?"
+
+            darius neutral "I suppose there's no point in hiding it anymore, but yes. Are you familiar with them?"
+
+            vivi neutral "I've heard some things. Mainly that your people eat brains."
+
+            show darius neutral blush with dissolve
+
+            darius "We don't {i}only{/i} eat brains. I've been known to enjoy a treat now and again."
+
+            vivi happy "Right. Hence the drink."
+
+            show darius happy -blush
+
+            darius happy "Exactly."
+
             # JUMP TO: vivithinking "Why is the air here so... heavy?"
 
 
@@ -61,6 +77,22 @@ label denial_fr2_darius:
             darius sad "Mindflayers and hard alcohol... don't mix."
 
             vivithinking "They shudder at this, it ripples through their sleek frame like a gentle breeze. Gotta be a story there."
+
+            vivi neutral "Mindflayer? Is that what you are?"
+
+            darius neutral "I suppose there's no point in hiding it anymore, but yes. Are you familiar with them?"
+
+            vivi neutral "I've heard some things. Mainly that your people eat brains."
+
+            show darius neutral blush with dissolve
+
+            darius "We don't {i}only{/i} eat brains. I've been known to enjoy a treat now and again."
+
+            vivi happy "Right. Hence the drink."
+
+            show darius happy -blush
+
+            darius happy "Exactly."
 
             #JUMP TO: vivithinking "Why is the air here so... heavy?"
 
@@ -153,7 +185,7 @@ label denial_fr2_darius:
 
     darius angry "That isn't what we agreed on. Besides, you've spoken to him. Do you really think he'd just give up his secrets so easily?"
 
-    darius neutral "This is the best way to find out more. So please, it may be human nature to be quick to anger but calm yourself."
+    darius neutral "This is the best way to find out more. So please, it may be human nature to be quick to anger but {i}calm yourself{/i}."
 
     vivithinking "Those last words held an undercurrent to them. Like the rumble of an oncoming storm."
 
@@ -293,6 +325,8 @@ label denial_fr2_darius:
         linear 0.1 ypos 1000
         linear 0.1 ypos 1080
     urshu neutral "Interesting! What do you see out there?"
+
+    vivi surprised "What the? Get out of the way!"
     
     show vivi surprised:
         linear 0.5 xpos 700
@@ -301,7 +335,13 @@ label denial_fr2_darius:
         xzoom 1
     vivi surprised "Where the hell did you come from?"
 
-    urshu neutral "I appear when I am needed my dear! Now Mr. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
+    show urshu neutral blush with dissolve
+
+    urshu "Apologies Ms. Sanssouci, sometimes the teleportation spell can be a bit... faulty."
+
+    show urshu neutral -blush
+
+    urshu neutral "However, I appear when I am needed my dear! Now Mr. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
 
     show darius surprised at right
     darius surprised "You... Are you not an ambassador of the Eternal Rest?"
@@ -328,7 +368,7 @@ label denial_fr2_darius:
 
             vivi angry "Excuse me? You're going to answer my questions now."
 
-            urshu neutral "I know asking questions is in a reporter's nature, but is decorum not? Mx. Wrecker is clearly \"going through something\" as it were, so I'd appreciate your silence."
+            urshu neutral "I know asking questions is in a reporter's nature, but is decorum not? Mr. Wrecker is clearly \"going through something\" as it were, so I'd appreciate your silence."
 
             vivi angry blush "I--"
 

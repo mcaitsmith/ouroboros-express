@@ -9,11 +9,13 @@ label denial_fr1_susurha:
 
     # SOUND: Footsteps storm into the room.
     play sound footsteps
+    pause 2.0
 
     show susurha happy at right with dissolve
+    stop sound fadeout 1.0
 
-    vivithinking "Wait."
-    vivithinking "Susu'Rha? What are they doing?"
+    vivithinking "Wait. Susu'Rha just stormed into the room."
+    vivithinking "What are they doing?"
     stop sound fadeout 1.0
     vivithinking "Are they literally feasting on a slice of cake?"
     vivithinking "Okay, that's cute."

@@ -4,6 +4,11 @@ label epi_friend_darius:
 
     # Epilogue/Friendship/Darius Wrecker
     # LOCATION: terminalofdreams
+
+    stop music fadeout 1.0
+    pause 1.0
+    play music goodendmusic volume 0.5
+
     scene white with dissolve
 
     show darius happy at center with dissolve

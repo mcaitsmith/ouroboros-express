@@ -87,12 +87,8 @@ label bargaining_fr1_susurha:
         # OPTION 4 +ATTRACTION +DECAY
         "Well, I may have a plan...":
 
-            play sound attchoice
+            play sound attdecchoice
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
-
-            pause 0.5
-
-            play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Well, I may have a plan, but I need to know everything I can about that conductor to get it to come off properly." 

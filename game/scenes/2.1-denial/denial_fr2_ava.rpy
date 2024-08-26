@@ -88,7 +88,9 @@ label denial_fr2_ava:
         linear 0.1 ypos 1000
         linear 0.1 ypos 1080
     $ renpy.pause(0.3)
-    urshu happy "You are both correct! Those are the spirits of passengers lost to the fabric of space-time. Or perhaps how you see them.. hard to say sometimes."
+    urshu happy "You are both correct!"
+
+    vivi surprised "What the? Get out of the way!"
 
     show vivi surprised blush:
         linear 1 xpos 700
@@ -96,6 +98,13 @@ label denial_fr2_ava:
     show vivi surprised blush at center with dissolve:
         xzoom 1
     $ renpy.pause()
+    vivi surprised "Where the hell did you come from?"
+    show urshu neutral blush with dissolve
+    urshu "Apologies Ms. Sanssouci, sometimes the teleportation spell can be a bit... faulty."
+    show urshu neutral -blush
+
+    urshu "Those are the spirits of passengers lost to the fabric of space-time. Or perhaps how you see them.. hard to say sometimes."
+
     vivi sad "Those poor souls...is there no help for them?" 
     ava sad "Is there no help for us?"
     show urshu sad at left

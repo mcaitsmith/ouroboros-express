@@ -6,6 +6,11 @@ label epi_friend_susurha:
     #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective  and they'll be against a plain, bright background.
 
     # LOCATION: terminalofdreams
+
+    stop music fadeout 1.0
+    pause 1.0
+    play music goodendmusic volume 0.5
+
     scene white with dissolve
 
     show susurha happy at center with dissolve
