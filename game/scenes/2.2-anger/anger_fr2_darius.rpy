@@ -151,4 +151,4 @@ label anger_fr2_darius:
     # vivi exits
     hide vivi with dissolve
 
-    jump anger_debrief
+    jump anger_urshu_darius

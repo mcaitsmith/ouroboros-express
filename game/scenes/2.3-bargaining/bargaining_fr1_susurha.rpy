@@ -244,5 +244,5 @@ label bargaining_fr1_susurha:
     susurha neutral "Take care, and see you later, Vivienne."
 
 
-    # JUMP TO: Character Selector 2
-    jump bargaining_cs2
+    # JUMP TO: Darius Susu'Rha intermission scene'
+    jump bargaining_darius_susurha
