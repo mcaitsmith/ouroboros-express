@@ -194,5 +194,5 @@ label depression_fr2_darius:
         darius sad "Let the horrors take me. It's what I deserve."
     # END
 
-    # JUMP TO: Debrief Depression
-    jump depression_debrief
+    # JUMP TO: Depression NPC Group Scene
+    jump depression_npc_group_scene

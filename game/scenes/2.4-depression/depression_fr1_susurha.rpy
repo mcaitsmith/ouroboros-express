@@ -209,5 +209,5 @@ label depression_fr1_susurha:
     vivithinking "My head is already spinning."
     vivithinking "I should take a moment to collect myself."
 
-    #JUMP TO: Character Selector 2
-    jump depression_cs2
+    #JUMP TO: Asha Susurha convo
+    jump depression_asha_susurha

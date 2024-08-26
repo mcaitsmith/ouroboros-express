@@ -19,7 +19,7 @@ label denial_fr1_darius:
 
     vivithinking "They seem surprised. Loner type maybe?"
 
-    darius neutral "I'm surprised you walked over to me of all people. Surely the goddess or dragon would be more approachable? Not many humans would chat up a mindflayer like you just have."
+    darius neutral "I'm surprised you walked over to me of all people. Surely the goddess or dragon would be more approachable? Not many humans would chat up a creature such as myself like you just have."
 
     vivithinking "Bingo on the loner call."
 
@@ -27,7 +27,7 @@ label denial_fr1_darius:
 
     darius neutral "Go ahead."
 
-    vivithinking "If anyone has a good idea what the hell is going on here, it has to be the mindflayer."
+    vivithinking "If anyone has a good idea what the hell is going on here, I'm guessing the mystical octopus detective might have a decent shot at it."
 
     vivi  "Tell me, you must have experience with otherworldly phenomena, right?"
 
@@ -95,7 +95,7 @@ label denial_fr1_darius:
     # OPTION 3 
         "It's interesting.":
 
-            vivi  "It's a thinker, that's for sure. If you're into that, then I guess there's some merit to it. I don't know about you though, but I can't \"come to terms\" here of all places."
+            vivi  "It's interesting. If you're into that, then I guess there's some merit to it. I don't know about you though, but I can't \"come to terms\" here of all places."
 
             darius surprised "Interesting. I wouldn't have expected that answer from you. Thank you for humoring me."
 
@@ -137,9 +137,9 @@ label denial_fr1_darius:
 
     vivi "Where do you think we're going?"
 
-    darius "In my...religion, we believed that oblivion was at the end of it all. Maybe this train is leading us to that."
-
-    vivithinking "Do mindflayers have religions? No, that's probably a dumb question."
+    darius "In my...religion, we believed that oblivion was at the end of it all. Many mindflayers believe in a similar idea, Maybe this train is leading us to that."
+ 
+    vivi "Mindflayer? Is that what you are?"
 
     vivi "You seemed interested in making amends before. What's the point if you're headed for oblivion regardless?"
 

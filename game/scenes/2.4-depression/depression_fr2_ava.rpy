@@ -210,5 +210,5 @@ label depression_fr2_ava:
     ava "Remember, The All is the One."
     vivi blush "The All is the One..."
 
-    # JUMP TO: DEBRIEF DEPRESSION
-    jump depression_debrief
+    # JUMP TO: Depression NPC Group Scene
+    jump depression_npc_group_scene

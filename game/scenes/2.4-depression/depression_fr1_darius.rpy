@@ -152,5 +152,5 @@ label depression_fr1_darius:
     hide darius with dissolve
     vivithinking sad "I wish I could have comforted him more..."
 
-    #JUMP TO: Character Selector 2
-    jump depression_cs2
+    #JUMP TO: Asha Susurha convo
+    jump depression_asha_susurha
