@@ -14,6 +14,7 @@ label depression_npc_group_scene:
 
         show ava sad at left with dissolve :
             x zoom -1
+
         show darius sad at middle with dissolve
         show susurha sad at right with dissolve
 
@@ -30,6 +31,7 @@ label depression_npc_group_scene:
 
         show ava sad at left with dissolve :
             x zoom -1
+
         show darius sad at middle with dissolve
         show susurha sad at right with dissolve
 
