@@ -1,6 +1,7 @@
 label bargaining_asha_urshu :
 
     #LOCATION: observatory
+    scene observatory with fade
 
 
     #SOUND: train

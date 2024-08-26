@@ -11,7 +11,7 @@ label depression_asha_susurha:
     vivi neutral "What's the commotion I'm hearing?"
 
     show ava neutral at right
-    show susu neutral at left :
+    show susurha neutral at left :
         xzoom -1
 
     vivithinking "Oh! It's them! Don't want to interrupt."
