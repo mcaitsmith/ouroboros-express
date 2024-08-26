@@ -152,4 +152,5 @@ label anger_fr1_darius:
     # vivi exits
     hide vivi with dissolve
 
-    jump anger_cs2
+    # JUMP TO: Anger Susurha Urshu
+    jump anger_susurha_urshu
