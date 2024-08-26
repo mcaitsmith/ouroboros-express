@@ -208,5 +208,5 @@ label depression_fr1_ava:
 
         vivithinking "What are the others doing, I wonder?"
 
-        # JUMP TO: Character Selector 2
-        jump depression_cs2
+        # JUMP TO: Asha Susurha convo
+        jump depression_asha_susurha
