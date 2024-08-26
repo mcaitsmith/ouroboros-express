@@ -54,7 +54,7 @@ label depression_asha_susurha:
 
     ava sad "…"
 
-    susu sad "…"
+    susurha sad "…"
 
     hide susurha
     hide ava
