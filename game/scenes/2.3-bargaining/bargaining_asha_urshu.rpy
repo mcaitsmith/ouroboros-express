@@ -20,7 +20,7 @@ label bargaining_asha_urshu :
 
     vivithinking "Maybe I’m not the only one who can’t sleep. Is that Urshu and the Goddess? Dare I eavesdrop? Not like anyone’s gonna sue."
 
-    show ava angry at center
+    show ava angry at center :
         xzoom -1
     show urshu sad at right
 
