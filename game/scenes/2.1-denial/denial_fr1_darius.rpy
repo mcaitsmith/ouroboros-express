@@ -236,4 +236,4 @@ label denial_fr1_darius:
 
 
     # JUMP TO: Denial 2.1 NPC scene Ava and Darius
-    jump denial_NPC_ava_darius
+    jump denial_fr1_ava_darius

@@ -196,4 +196,4 @@ label denial_fr1_susurha:
     vivithinking "I better head back to my cabin and collect myself."
 
     # JUMP TO: Character Selector 2
-    jump denial_cs2
+    jump denial_fr1_ava_darius
