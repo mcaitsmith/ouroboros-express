@@ -12,7 +12,7 @@ label denial_fr2_darius:
 
     show darius neutral at right with dissolve
 
-    vivithinking "Darius is... drinking? Guess even hardboiled detectives need a break every now and then too."
+    vivithinking "Darius is... drinking? Guess even impeccably dressed cephalopods need a break every now and then too."
 
     vivi "Enjoying a drink?"
 
