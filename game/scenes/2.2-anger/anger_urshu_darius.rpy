@@ -72,9 +72,13 @@ label anger_urshu_darius:
 
     darius neutral "Miss. Good night."
 
-    # sound of darius leaving/ steps/ door closing
-
     hide darius
+
+    # sound of darius leaving/ steps/ door closing
+    play sound footsteps
+    pause 2.0
+    play sound doorslam
+    pause 1.0
 
     vivithinking sad "A wave of something like sadness just crashed over me."
     vivi surprised "What was that about?"
