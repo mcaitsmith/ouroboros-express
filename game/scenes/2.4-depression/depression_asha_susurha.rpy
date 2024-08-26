@@ -10,6 +10,8 @@ label depression_asha_susurha:
 
     vivi neutral "What's the commotion I'm hearing?"
 
+    hide vivi
+
     show ava neutral at right
     show susurha neutral at left :
         xzoom -1
