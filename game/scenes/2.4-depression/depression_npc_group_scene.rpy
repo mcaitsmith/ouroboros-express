@@ -1,121 +1,123 @@
 label depression_npc_group_scene:
 
-        #LOCATION: bar
-        scene diningcar with fade
+    #LOCATION: bar
+    scene diningcar with fade
 
-        #SOUND: train
+    #SOUND: train
+    play sound train
 
-        show vivi neutral at left with dissolve :
-            xzoom -1
 
-        vivithinking "Well, the lounge was pretty empty too. Wonder where everyone is? Maybe I’ll check out the bar."
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
-        hide vivi
+    vivithinking "Well, the lounge was pretty empty too. Wonder where everyone is? Maybe I’ll check out the bar."
 
-        show ava sad at left with dissolve :
-            xzoom -1
+    hide vivi
 
-        show darius sad at center with dissolve
-        show susurha sad at right with dissolve
+    show ava sad at left with dissolve:
+        xzoom -1
 
-        hide ava with dissolve
-        hide darius with dissolve
-        hide susurha with dissolve
+    show darius sad at center with dissolve
+    show susurha sad at right with dissolve
 
-        show vivi neutral at left with dissolve :
-            xzoom -1
+    hide ava with dissolve
+    hide darius with dissolve
+    hide susurha with dissolve
 
-        vivithinking "Oh, wow! Here they are. Huh. The vibe is kinda off. I’ll hang back. Listen to what they’re talking about on our last night."
+    show vivi neutral at left with dissolve:
+        xzoom -1
 
-        hide vivi
+    vivithinking "Oh, wow! Here they are. Huh. The vibe is kinda off. I’ll hang back. Listen to what they’re talking about on our last night."
 
-        show ava sad at left with dissolve :
-            xzoom -1
+    hide vivi
 
-        show darius sad at center with dissolve
-        show susurha sad at right with dissolve
+    show ava sad at left with dissolve:
+        xzoom -1
 
-        ava sad "By Mother Asha, we face oblivion soon; our icy shadow self beckons through the glass. What say you, thrall? Druid? What dark fate awaits you?"
+    show darius sad at center with dissolve
+    show susurha sad at right with dissolve
 
-        darius neutral "Perhaps time on this cosmic plane has changed me. Yesterday I wouldn’t have spoken about such matters freely. But now? Now I see the horror, Goddess."
+    ava sad "By Mother Asha, we face oblivion soon; our icy shadow self beckons through the glass. What say you, thrall? Druid? What dark fate awaits you?"
 
-        darius sad "My past. The weight of it descending upon me all at once."
+    darius neutral "Perhaps time on this cosmic plane has changed me. Yesterday I wouldn’t have spoken about such matters freely. But now? Now I see the horror, Goddess."
 
-        darius neutral "The guilt appears to me in the form of a giant disembodied hand. It points directly towards my heart. I hear something echo in my mind."
+    darius sad "My past. The weight of it descending upon me all at once."
 
-        darius sad "It says ‘You did this. You. You. You.’ And I know they’re correct."
+    darius neutral "The guilt appears to me in the form of a giant disembodied hand. It points directly towards my heart. I hear something echo in my mind."
 
-        darius neutral "I wish it would quiet."
+    darius sad "It says ‘You did this. You. You. You.’ And I know they’re correct."
 
-        ava sad "What of you, Druid?"
+    darius neutral "I wish it would quiet."
 
-        susurha sad "I’m trapped by chains reaching from what lays beyond."
+    ava sad "What of you, Druid?"
 
-        susurha sad "I’m unable to move. I’m unable to speak. I’m unable to see."
+    susurha sad "I’m trapped by chains reaching from what lays beyond."
 
-        susurha sad "I’m just…"
+    susurha sad "I’m unable to move. I’m unable to speak. I’m unable to see."
 
-        susurha sad "...there."
+    susurha sad "I’m just…"
 
-        ava surprised "Such horrors! Let us speak of them no more."
+    susurha sad "...there."
 
-        susurha neutral "What alternative would you suggest, Avatar?"
+    ava surprised "Such horrors! Let us speak of them no more."
 
-        ava sad "Regret. What else do the dying consider?"
+    susurha neutral "What alternative would you suggest, Avatar?"
 
-        ava neutral blush "Regret teaches us harshly yet fairly. What stifled desires yet cling to the fringes of your minds?"
+    ava sad "Regret. What else do the dying consider?"
 
-        darius neutral "Stifled desires… A seed of doubt sprouted in my heart hundreds of years ago. I regret not nurturing that seed. I tried to kill it by any means necessary."
+    ava neutral blush "Regret teaches us harshly yet fairly. What stifled desires yet cling to the fringes of your minds?"
 
-        darius sad "I thought the doubt was a test of faith. Maybe it was. I still ended up here."
+    darius neutral "Stifled desires… A seed of doubt sprouted in my heart hundreds of years ago. I regret not nurturing that seed. I tried to kill it by any means necessary."
 
-        darius neutral "As far as regrets– that is not how I view the universe. We make choices and we live with the consequences. We are consumed by guilt or we are not."
+    darius sad "I thought the doubt was a test of faith. Maybe it was. I still ended up here."
 
-        ava neutral "We notice you have avoided the thrust of the question."
+    darius neutral "As far as regrets– that is not how I view the universe. We make choices and we live with the consequences. We are consumed by guilt or we are not."
 
-        darius surprised "...so I have. You want to hear a true regret?"
+    ava neutral "We notice you have avoided the thrust of the question."
 
-        darius sad "I did not listen enough. I scraped thoughts and pulled what I wanted from other sentients. But I did not truly hear what my victims were saying. Where would I be if I had?"
+    darius surprised "...so I have. You want to hear a true regret?"
 
-        darius sad blush "I suppose I also wish I had tried ice cream on earth, or one of its parallel dimensions."
+    darius sad "I did not listen enough. I scraped thoughts and pulled what I wanted from other sentients. But I did not truly hear what my victims were saying. Where would I be if I had?"
 
-        susurha sad "Where would one honestly begin?"
+    darius sad blush "I suppose I also wish I had tried ice cream on earth, or one of its parallel dimensions."
 
-        susurha sad "..."
+    susurha sad "Where would one honestly begin?"
 
-        susurha sad "I regret not being there. For my family."
+    susurha sad "..."
 
-        susurha sad "But I regret not leaving sooner."
+    susurha sad "I regret not being there. For my family."
 
-        ava sad blush "We regret not sharing Asha’s love with ourselves. Her light banishes shadows and sadness evaporates at her warm touch. Why did we not love ourselves more?"
+    susurha sad "But I regret not leaving sooner."
 
-        ava neutral "When we were newly anointed as Avatar, our moon passed between Soleos and our sun. The people feared doom; we held the truth."
+    ava sad blush "We regret not sharing Asha’s love with ourselves. Her light banishes shadows and sadness evaporates at her warm touch. Why did we not love ourselves more?"
 
-        susurha surprised "Why would you not explain, O Enlightened One?"
+    ava neutral "When we were newly anointed as Avatar, our moon passed between Soleos and our sun. The people feared doom; we held the truth."
 
-        ava angry blush "We shall pass over your mockery, Druid."
+    susurha surprised "Why would you not explain, O Enlightened One?"
 
-        ava neutral "Few truths give comfort. Great Mother Asha had saved Soleos from darkness, we said. Safety and order followed."
+    ava angry blush "We shall pass over your mockery, Druid."
 
-        darius surprised "Was it worth the price?"
+    ava neutral "Few truths give comfort. Great Mother Asha had saved Soleos from darkness, we said. Safety and order followed."
 
-        ava angry blush "Every decision eats at our soul, Inspector."
+    darius surprised "Was it worth the price?"
 
-        ava sad "Of which so little remains."
+    ava angry blush "Every decision eats at our soul, Inspector."
 
-        hide ava with dissolve
-        hide darius with dissolve
-        hide susurha with dissolve
+    ava sad "Of which so little remains."
 
-        show vivi neutral at left :
-            xzoom -1
+    hide ava with dissolve
+    hide darius with dissolve
+    hide susurha with dissolve
 
-        show urshu neutral at right
+    show vivi neutral at left:
+        xzoom -1
 
-        urshu happy "Ah, Vivienne! A journalist to the bitter end, I see, eh? Glad I found you. Let us allow our fellow passengers some space. Perhaps I could regale you instead?"
+    show urshu neutral at right
 
-        vivi angry "Thanks, Urshunabi, but I think my bed is calling my name, and I’d hate to ignore it. Night."
+    urshu happy "Ah, Vivienne! A journalist to the bitter end, I see, eh? Glad I found you. Let us allow our fellow passengers some space. Perhaps I could regale you instead?"
 
-        #JUMP TO Depression debrief
+    vivi angry "Thanks, Urshunabi, but I think my bed is calling my name, and I’d hate to ignore it. Night."
 
-        jump depression_debrief
+    #JUMP TO Depression debrief
+
+    jump depression_debrief
