@@ -234,5 +234,5 @@ label denial_fr1_darius:
 
     darius "Anytime, Ms. Sanssouci."
 
-    # JUMP TO: Character Selector 2
-    jump denial_cs2
+    # JUMP TO: Denial 2.1 NPC scene Ava and Darius
+    jump denial_fr1_ava_darius

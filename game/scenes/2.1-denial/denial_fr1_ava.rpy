@@ -127,5 +127,6 @@ label denial_fr1_ava:
 
     hide ava with dissolve
     vivithinking "That was interesting. Wonder what's next..."
-    # JUMP TO: Character Selector 2
-    jump denial_cs2
+    
+    # JUMP TO: 2.1 Denial NPC scene Ava and Darius
+    jump denial_fr1_ava_darius
