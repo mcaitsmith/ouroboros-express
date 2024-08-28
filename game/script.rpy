@@ -95,12 +95,11 @@ transform flicker_opacity:
     linear 0.2 alpha 0.8
     linear 0.2 alpha 0.4
     repeat 4
-#Journal screen
+
+init python:
+    config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
 
 # The game starts here.
-
-# commenting out since not used yet
-#default quest = Manager()
 
 label start:
     
