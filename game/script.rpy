@@ -28,7 +28,7 @@ init python:
 # name of the character.
 
 define vivi = Character("Vivi",image="vivi",color="#FFFFFF", callback=beepy_voice_medium)
-define vivithinking = Character("Vivi",image="vivi",what_italic=True,color="#FFFFFF")
+define vivithinking = Character("Vivi",image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
 define urshu = Character("Urshu",image="urshu",color="#FFFFFF", callback=beepy_voice_high, namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define ava = Character("Asha",image="ava",color="#FFFFFF", callback=beepy_voice_medium, namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define darius = Character("Darius",image="darius",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
