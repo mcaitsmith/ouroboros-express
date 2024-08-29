@@ -106,6 +106,19 @@ label start:
     call sounds from _call_sounds # define sounds
     call meters from _call_meters # define meter variables
     call journal from _call_journal 
+
+    pause 1.0
+
+    menu:
+        "Press Shift+A to set accessibility options before beginning the game."
+        "Continue":
+            window hide dissolve
+            stop music fadeout 3.0
+            pause 3.0
+            jump begin
+
+label begin:
+
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False
 
