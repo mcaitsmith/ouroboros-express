@@ -146,7 +146,7 @@ label denial_fr1_susurha:
 
     susurha sad "I really know how to go and spoil a mood, don't I?"
 
-    vivithinking "Whoop. He just slid the entire cake dish to my side."
+    vivithinking "Whoa! He just slid the entire cake dish to my side."
 
     susurha sad "I've lost my appetite."
 
