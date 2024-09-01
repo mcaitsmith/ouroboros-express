@@ -191,7 +191,7 @@ label depression_fr2_susurha:
             vivi happy blush "You are truly one of a kind."
             show susurha happy blush with dissolve
             susurha "STOP... You flatter me, Vivienne."
-            susurha "Nothing can take away who you are."
+            susurha "Nothing can take away who you are either."
             show susurha happy -blush
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
