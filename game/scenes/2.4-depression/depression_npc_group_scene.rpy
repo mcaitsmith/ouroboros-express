@@ -55,7 +55,7 @@ label depression_npc_group_scene:
 
     susurha sad "I’m unable to move. I’m unable to speak. I’m unable to see."
 
-    susurha sad "I’m just…"
+    susurha sad "I’m just..."
 
     susurha sad "...there."
 

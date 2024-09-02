@@ -36,7 +36,7 @@ label bargaining_asha_urshu :
 
     urshu sad "The only thing worse than giving up is wishing that you hadn't."
 
-    ava sad "Give up? We gave everything to our goddess. And now…what was the point of our sacrifices?"
+    ava sad "Give up? We gave everything to our goddess. And now...what was the point of our sacrifices?"
 
     urshu sad "What is the point of anything, O Enlightened One?"
 

@@ -42,7 +42,7 @@ label bargaining_darius_susurha:
 
     susurha surprised "Well, I certainly didn’t do it for the company. You’d think the two of us would get along."
 
-    darius surprised "Why would we… ever get along?"
+    darius surprised "Why would we...ever get along?"
 
     susurha happy "Because we have so much in common!"
 
