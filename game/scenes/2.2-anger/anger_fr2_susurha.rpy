@@ -254,5 +254,5 @@ label anger_fr2_susurha:
     vivithinking "It's not a bad idea. I could use this time to reflect."
     vivithinking "I may not get many more chances."
 
-    # JUMP TO: Debrief Anger
-    jump anger_debrief
+    # JUMP TO: Urshu Darius scene
+    jump anger_urshu_darius

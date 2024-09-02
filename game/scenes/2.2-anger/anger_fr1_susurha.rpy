@@ -176,5 +176,5 @@ label anger_fr1_susurha:
 
     vivithinking neutral "That was a lot. I'm going back to my room."
 
-    # JUMP TO: Character Selector 2
-    jump anger_cs2
+    # JUMP TO: Anger Susurha Urshu
+    jump anger_susurha_urshu
