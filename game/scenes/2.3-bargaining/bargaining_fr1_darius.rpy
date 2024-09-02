@@ -105,7 +105,7 @@ label bargaining_fr1_darius:
             vivi neutral "I was actually thinking of doing something for him later today and wanted you to read him to see what he'd like."
             darius happy "I'm glad to hear it. I can tell he cares for you a great deal."
             vivi neutral blush "What do you mean? He treats me just the same as anyone else."
-            darius happy "You're inquisitive Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
+            darius happy "You're inquisitive, Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
             show darius happy blush with dissolve
             darius "Perhaps that is why I, too, enjoy your company so much."
             vivi neutral blush "This guy... When did he get so suave?"
