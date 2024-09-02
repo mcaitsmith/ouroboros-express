@@ -17,7 +17,7 @@ label bargaining_fr1_susurha:
     show susurha neutral at right with dissolve
 
     vivithinking "There they are. Wait, what are they--"
-    vivi neutral "Susu'rha? What are you doing?"
+    vivi neutral "Susu'Rha? What are you doing?"
     vivi neutral "You're staring out that dirty window like a Natasha Bedingfield song."
     vivi neutral "Is something wrong?"
     susurha neutral "..."
@@ -217,7 +217,7 @@ label bargaining_fr1_susurha:
             susurha happy "Wishing he was human."
             vivi happy "HAH! Yes."
             vivithinking "This is nice."
-            vivithinking "I really do love talking to Susu'rha."
+            vivithinking "I really do love talking to Susu'Rha."
 
             show vivi neutral at left
 
