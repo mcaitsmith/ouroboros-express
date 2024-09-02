@@ -64,7 +64,7 @@ label anger_fr1_ava:
             ava surprised "Curious. We have not seen this card before. Curious, indeed. It resembles the snake biting its own tail, the Ouroboros."
             ava neutral "But of course, snakes, reptiles. They are of the same family. A warning... "
             vivi surprised "Oh?"
-            vivi neutral "Is this a dig at Susu'rha?"
+            vivi neutral "Is this a dig at Susu'Rha?"
             ava surprised "I merely am the messenger. And the card could not be clearer. Avoid him, Vivienne."
             # JUMP TO: vivi angry "This is silly! They're just cards. They can't tell us that!"
 
