@@ -54,7 +54,7 @@ label bargaining_asha_urshu :
 
     ava sad "Custom demanded habitation alongside the aristocrats. Distance softened their contempt and disdain."
 
-    ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it…?"
+    ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it...?"
 
     urshu sad "Mayhaps, O Enlightened One. Mayhaps the emptiness you see is what you fear most."
 

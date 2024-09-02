@@ -32,7 +32,7 @@ label bargaining_darius_susurha:
 
     darius surprised "Hm. I’ll take your word for it."
 
-    susurha happy "So…read my mind. Do it. What number am I thinking about? What shape is my tail making? How many claws am I holding up?"
+    susurha happy "So...read my mind. Do it. What number am I thinking about? What shape is my tail making? How many claws am I holding up?"
 
     darius angry "Drop it."
 
