@@ -46,7 +46,7 @@ label bargaining_darius_susurha:
 
     susurha happy "Because we have so much in common!"
 
-    darius neutral "This is a joke. You’re mocking me. My time is better spent elsewhere"
+    darius neutral "This is a joke. You’re mocking me. My time is better spent elsewhere."
 
     susurha neutral "No, wait. Wait. Seriously. I feel like between the two of us we can break out of here. Aren’t your kind supposed to be super powerful?"
 
