@@ -117,7 +117,7 @@ label denial_fr2_darius:
 
     darius sad "Well aside from some unpleasant memories... I've been thinking."
 
-    darius sad "I have many questions about this place and this conductor. But I don't believe asking him will get me any of them..."
+    darius sad "I have many questions about this place that need answers. But I don't believe asking will get me any of them..."
 
     darius neutral "I've let myself fall into passivity too often, simply allowing the current to wash over me. This time, I'll act."
 
