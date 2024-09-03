@@ -15,9 +15,27 @@ label denial_fr2_ava:
 
     show ava neutral at right with dissolve
     vivi happy "Hey Ash, I think I found us a way out of this bi-"
-    ava angry "You may refer to us as Asha or Avatar of the Eternal Light,...but your proposition has intrigued us. Proceed."
-    vivithinking "Bruh. Stick up your ass much?!"
-    vivi neutral "I'll go grab the others!"
+   
+   # <CHOICE>
+    ava angry "You may refer to us as Asha or Avatar of the Eternal Light... but your proposition has intrigued us. Proceed."
+    
+    menu:
+
+    # OPTION 1
+        "(Bruh. Stick up your ass, much?!)":
+
+            vivithinking angry "Bruh. Stick up your ass much?!"
+
+             # JUMP TO vivi neutral "Well then, if your Eternal Shininess agrees, I'll go grab the others."
+
+    # OPTION 2
+        "('Proceed'? Very well, {i}m'lady{/i}. I shall proceed forthwith.)":
+
+            vivithinking neutral "'Proceed'? Very well, {i}m'lady{/i}. I shall proceed forthwith."
+
+            # JUMP TO vivi neutral "Well then, if your Eternal Shininess agrees, I'll go grab the others."
+   
+    vivi neutral "Well then, if your Eternal Shininess agrees, I'll go grab the others."
     ava surprised "Those poor creatures? Pay them no mind. Their only worry is their own insignificance."
     vivithinking "What a self-important prickle this Avatar of ASSha is!" 
     ava sad "Like sand in the wind."

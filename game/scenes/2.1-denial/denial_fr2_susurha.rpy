@@ -94,6 +94,7 @@ label denial_fr2_susurha:
             vivi "That's absurd. That can't be the case."
             "..."
             vivithinking "They're glaring at me. Looking me up and down."
+            vivithinking "Alright, chill Vivi. Maybe that was a bit too-"
             susurha angry "Let me tell you what is absurd." 
             susurha angry "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..."
             susurha "Suddenly finding yourself trapped with a bunch of odd looking individuals in a metal tube speeding to an unknown locale."

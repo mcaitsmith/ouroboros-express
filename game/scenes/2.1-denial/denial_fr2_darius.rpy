@@ -217,15 +217,27 @@ label denial_fr2_darius:
 
     vivi surprised "Magic. Yeah I think so."
 
+    # <CHOICE>
     darius happy "This is exactly what I wanted to see. Come, let's pursue him."
 
-    show vivi happy blush 
+    menu: 
 
-    vivithinking "Aww, their little mouth tentacles curl up when they're happy."
+    # OPTION 1
+        "(Aww, their little mouth tentacles curl up when they're happy.)":
 
-    show vivi angry blush 
+            show vivi happy blush 
+            vivithinking "Aww, their little mouth tentacles curl up when they're happy."
+            show vivi angry blush 
+            vivithinking "What am I thinking? This isn't the time Vivi!"
 
-    vivithinking "What am I thinking? This isn't the time Vivi!"
+            # JUMP TO scene observatory with fade
+
+    # OPTION 2
+        "(Wow, they're really on this. Good call teaming up with them, Vivi.)":
+
+            vivithinking neutral "Wow, they're really on this. Good call teaming up with them, Vivi."
+
+            # JUMP TO scene observatory with fade
 
     #LOCATION: observatory
     scene observatory with fade

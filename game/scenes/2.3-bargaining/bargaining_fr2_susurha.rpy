@@ -16,9 +16,27 @@ label bargaining_fr2_susurha:
     susurha neutral "Of course, Vivienne. What is it that you need?"
     vivi neutral "Okay, so... Listen to me."
     vivi neutral "I know how we're gonna get off this train."
+    
+    # <CHOICE>
     vivi neutral "I made a deal with Urshu, and if we make the best-tasting meal he's ever had, we can get outta here!"
-    vivithinking "Well... I can get outta here. I'm not sure I specified more than one person getting off this train..."
-    vivi neutral "All we gotta do is make a meal that knocks the sock suspenders off of Ursh!     What do you say? You in?"
+    
+    menu:
+        # OPTION 1
+        "(Well... I can get outta here.)":
+
+            vivithinking neutral "Well... I can get outta here."
+            vivithinking neutral "I'm not sure I specified more than one person getting off this train..."
+
+            # JUMP TO vivi neutral "All we gotta do is make a meal that knocks the sock suspenders off of Ursh! What do you say? You in?"
+    
+        # OPTION 2
+        "(Not sure about the 'we' bit, but that's a problem for future Vivi.)":
+
+            vivithinking neutral "Not sure about the 'we' bit, but that's a problem for future Vivi."
+
+            # JUMP TO vivi neutral "All we gotta do is make a meal that knocks the sock suspenders off of Ursh! What do you say? You in?"
+    
+    vivi neutral "All we gotta do is make a meal that knocks the sock suspenders off of Ursh! What do you say? You in?"
     susurha neutral "..."
     susurha neutral "If you would have told me that the fate of my soul rested on my ability to cook..."
     susurha neutral "...I would have said, \"WHY DIDN'T YOU TELL ME SOONER?!\""

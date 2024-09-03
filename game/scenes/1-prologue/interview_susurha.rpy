@@ -53,7 +53,7 @@ label interview_susurha:
             susurha neutral "..." 
             susurha neutral "I don't know if I'm quite comfortable talking about that."
 
-            # JUMP TO: "Bury the lede, why don't you?"
+            # JUMP TO: vivithinking neutral "Seriously?"
 
         # OPTION 2
         "Where are you from?!":
@@ -65,11 +65,30 @@ label interview_susurha:
             vivi neutral "You seem very nonchalant about that."
             susurha neutral "If you say so..."
             
-            # JUMP TO: "Bury the lede, why don't you?"
+            # JUMP TO: vivithinking neutral "Seriously?"
 
-    vivithinking neutral "Bury the lede, why don't you?"
-    vivithinking angry "And why are they looking at me like I'M the freak?! THEY'RE the talking wellness-guru gecko!"
-    vivithinking angry "The attitude on this one."
+    # <CHOICE>
+    vivithinking neutral "Seriously?"
+    
+    menu:
+        # OPTION 1
+        "(Ugh, all these deflections are driving me nuts!)":
+
+            vivithinking angry "Ugh, all these deflections are driving me nuts!"
+            vivithinking angry "And why are they looking at me like I'M the freak?! THEY'RE the talking wellness-guru gecko!"
+            vivithinking angry "The attitude on this one."
+
+            # JUMP TO susurha neutral "Your face right now...You're judging me."
+
+        # OPTION 2
+        "(Bury the lede, why don't you?)":
+    
+            vivithinking neutral "Bury the lede, why don't you?"
+            vivithinking neutral "There's gotta be something there. People don't put up walls to protect nothing."
+            vivithinking neutral "Maybe I should try something else... something to get ol' wellness-guru gecko here on board..."
+
+            # JUMP TO susurha neutral "Your face right now...You're judging me."
+    
 
     susurha neutral "Your face right now...You're judging me."
     vivi neutral "No, I..."

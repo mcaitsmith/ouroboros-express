@@ -202,8 +202,25 @@ label anger_fr2_ava:
             # JUMP TO: ava blush angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"
 
     ava angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"
+    
+    # <CHOICE>
     vivithinking "..."
-    vivithinking "Nice one, Vivi, you handled that with all the grace of an ornery bull."
+    
+    menu:
+        # OPTION 1
+        "(Nice one, Vivi. Handled that with all the grace of an ornery bull.)":
+            
+            vivithinking neutral "Nice one, Vivi. Handled that with all the grace of an ornery bull."
+
+            # JUMP TO vivi sad blush "I'm sorry. I didn't mean it. I'm just...in a crappy mood."
+
+        # OPTION 2
+        "(Like I have time to worry about manners. Still, maybe I should...)":
+
+            vivithinking neutral "Like I have time to worry about manners. Still, maybe I should..."
+
+            # JUMP TO vivi sad blush "I'm sorry. I didn't mean it. I'm just...in a crappy mood."
+    
     vivi sad blush "I'm sorry. I didn't mean it. I'm just...in a crappy mood."
     ava sad "Please...go."
     vivithinking sad "Ugh! I messed up. Maybe they'll accept my apology tomorrow..."
