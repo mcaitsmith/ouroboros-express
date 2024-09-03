@@ -48,7 +48,7 @@ label denial_fr2_ava:
             vivi sad "Maybe we're all just specks of sand on a cosmic beach."
             vivi sad "Our lives only have the value we give it. Yours. Mine. Theirs."
             ava sad "There are times we wished for a simpler life. Family. Friends. Love, perhaps? All forbidden. Even tears."
-            vivithinking "Whoa. Even tears? Here I thought I was a hot mess."
+            vivithinking surprised "Whoa. Even tears? Here I thought I was a hot mess."
             vivi sad "That must've been awful. Well, I'm here now, so dry those eyes."
             show ava sad blush with dissolve
             ava "Your heart speaks strangely, but with truth. Tears do not come easily to us. Thank you, Vivi."
