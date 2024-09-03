@@ -115,7 +115,7 @@ label anger_briefing:
             vivithinking happy "Fuck yeah!" 
             vivi happy "I had no doubt. I'm brilliant."
             urshu happy "Let's not get ahead of ourselves. You're the only human to have guessed correctly."
-            vivithinking angry "This lil' shit!"
+            vivithinking angry "This lil' jerk!"
             # JUMP TO: urshu happy "No matter when..."
 
     urshu happy "No matter when, where, what, or who in the universe, across nebulae and even in the underworlds, games always have a place among emotional beings."

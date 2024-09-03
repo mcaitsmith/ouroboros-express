@@ -60,7 +60,7 @@ label bargaining_meal_reveal:
     urshu neutral "Let's try a bite, shall we?"
     vivithinking neutral "Alright, let's set this down. Careful... Okay. Nothing spilled." 
     vivithinking neutral "God, I'm hovering. Step away, V. It smells {i}soooo good{/i}, though. Maybe he'll leave us a bite?" 
-    vivithinking neutral "Oh, shit, he's going for it!"
+    vivithinking neutral "Oh oh oh! He's going for it!"
 
     # <CHOICE>
     "I need to hold on to something!"

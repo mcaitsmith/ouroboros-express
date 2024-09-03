@@ -234,7 +234,7 @@ label bargaining_fr2_darius:
 
         show vivi sad at left
 
-        vivithinking "...Shit. What have I done?" 
+        vivithinking "...Damn it. What have I done?" 
         vivithinking "I should've just kept my mouth shut."
         vivi sad "You're right."
 

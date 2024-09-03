@@ -49,7 +49,7 @@ label denial_fr2_susurha:
             vivithinking "The way they slid that chair my way with ease..."
             # SOUND: Vivi sits down in a super comfortable recliner.
             # skipping
-            vivithinking "Holy shit..."
+            vivithinking "Hot damn..."
             susurha happy "Feels like a dream, doesn't it?"
             vivi neutral "Feels like I'm sinking."
             vivithinking happy "It's nice sitting in silence. I'm enjoying their company."

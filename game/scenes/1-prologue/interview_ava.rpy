@@ -106,7 +106,7 @@ label interview_ava:
             # ava leaves
             hide ava with dissolve
 
-            vivithinking angry "Wow. I haven't had a guest this rude since we interviewed that random stockbroker for our business edition."
+            vivithinking angry "Wow. Good thing she's tall - that's one high horse she's clambered up on."
             vivithinking angry "At least she's not wrong. She really is on another planet. In every sense of the word."
 
             # JUMP TO: "Well, what now?"
