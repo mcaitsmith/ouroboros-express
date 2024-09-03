@@ -58,6 +58,7 @@ label interview_susurha:
         # OPTION 2
         "Where are you from?!":
 
+            vivi neutral "Where are you from?!"
             susurha neutral "Balrinn. The capital city of my home country." 
             susurha neutral "Which is also my family name."
             vivi neutral "So...you're royalty."
