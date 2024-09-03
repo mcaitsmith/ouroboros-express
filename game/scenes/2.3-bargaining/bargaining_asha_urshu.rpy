@@ -22,11 +22,19 @@ label bargaining_asha_urshu :
 
     vivithinking "Maybe I’m not the only one who can’t sleep. Is that Urshu and the Goddess? Dare I eavesdrop? Not like anyone’s gonna sue."
 
-    show ava angry at center :
+    show ava angry at center with dissolve :
         xzoom -1
-    show urshu sad at right
+    show urshu sad at right with dissolve
 
     vivithinking "Well, hot damn! They look deep in conversation."
+
+    hide vivi with dissolve
+
+    show ava angry at left with dissolve :
+        xzoom -1
+    with move
+
+    
 
     ava angry "Sleep eludes us, conductor. So many thoughts. So many regrets."
 

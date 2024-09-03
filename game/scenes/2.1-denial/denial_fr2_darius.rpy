@@ -121,7 +121,7 @@ label denial_fr2_darius:
 
     darius neutral "I've let myself fall into passivity too often, simply allowing the current to wash over me. This time, I'll act."
 
-    vivithinking "They want to act huh? Looks like we're on the same page."
+    vivithinking "They want to act, huh? Looks like we're on the same page."
 
     vivi neutral  "Listen, I was thinking about looking for a way off of this damnable train. What do you think?"
 
@@ -225,7 +225,7 @@ label denial_fr2_darius:
 
     show vivi angry blush 
 
-    vivithinking "What am I thinking? This isn't the time Vivi!"
+    vivithinking "What am I thinking? This isn't the time, Vivi!"
 
     #LOCATION: observatory
     scene observatory with fade
@@ -337,11 +337,11 @@ label denial_fr2_darius:
 
     show urshu neutral blush with dissolve
 
-    urshu "Apologies Ms. Sanssouci, sometimes the teleportation spell can be a bit... faulty."
+    urshu "Apologies, Ms. Sanssouci. Sometimes the teleportation spell can be a bit... wonky."
 
     show urshu neutral -blush
 
-    urshu neutral "However, I appear when I am needed my dear! Now Mr. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
+    urshu neutral "However, I appear when I am needed, my dear! Now, Mr. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
 
     show darius surprised at right
     darius surprised "You... Are you not an ambassador of the Eternal Rest?"
@@ -350,7 +350,7 @@ label denial_fr2_darius:
 
     darius surprised "Out there... I could've sworn I saw its tendrils grasping out for me."
 
-    urshu neutral "Ahh, now I see. I'm afraid to disappoint you Mr. Wrecker, but unfortunately that is not the case."
+    urshu neutral "Ahh, now I see. I'm afraid to disappoint you, Mr. Wrecker, but unfortunately that is not the case."
 
     urshu neutral "The cosmos holds many things, not all of them friendly. Some may draw themselves to you, while others may find another passenger more appealing. What you saw is simply one of those entities."
 
@@ -359,7 +359,7 @@ label denial_fr2_darius:
 
     # <CHOICE>
 
-    vivithinking "Are they really going to act like I'm not here? I have questions too you know!"
+    vivithinking "Are they really going to act like I'm not here? I have questions too, you know!"
 
     menu:
 
@@ -433,7 +433,7 @@ label denial_fr2_darius:
     show darius angry at right
     darius angry "Urshu. What was it all for then? Who am I anymore?"
 
-    urshu sad "Unfortunately, I can't answer that for you my friend. I'm sure you'll learn the answer yourself, in time."
+    urshu sad "Unfortunately, I can't answer that for you, my friend. I'm sure you'll learn the answer yourself, in time."
 
     urshu neutral "Ms. Sanssouci, if you don't mind, could you meet me at your cabin shortly? We have some matters to discuss."
 
@@ -474,11 +474,12 @@ label denial_fr2_darius:
 
     darius "I... I suppose I'm not anymore."
 
-    darius "I'm sorry Vivi, I lost my temper. Thank you for joining me, and I hope you can forgive that little outburst." 
+    darius "I'm sorry, Vivi; I lost my temper. Thank you for joining me, and I hope you can forgive that little outburst."
 
     vivithinking "Are they muttering to themselves?"
 
-    show darius sad -blush
+    show darius sad -blush:
+        xzoom -1
 
     darius "It was all pointless..."
 
