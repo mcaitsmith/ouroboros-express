@@ -127,7 +127,7 @@ label denial_fr2_darius:
 
     darius neutral "Hmm. I'm not interested in leaving just yet, but I think there is a way our needs could both be met."
 
-    darius neutral "I am going to trail the conductor. Should you wish, you could join me and look for any sign of an exit strategy."
+    darius neutral "I am going to trail the conductor. Should you wish to join me, you may search for an exit."
 
     vivi surprised "Trail? Are you some sort of detective?"
 
