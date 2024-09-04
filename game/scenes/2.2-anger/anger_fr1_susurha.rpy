@@ -108,7 +108,7 @@ label anger_fr1_susurha:
             susurha neutral "This goes deeper. And it's been going on for a long time."
             # JUMP TO: susurha surprised "You're... angry."
 
-    susurha surprised "You're...angry. And you've been angry far before before your demise."
+    susurha surprised "You're...angry. And you've been angry far before your demise."
 
     # <CHOICE>
     vivithinking "What if they're right?"

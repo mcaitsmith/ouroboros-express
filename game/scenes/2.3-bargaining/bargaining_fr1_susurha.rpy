@@ -17,8 +17,7 @@ label bargaining_fr1_susurha:
     show susurha neutral at right with dissolve
 
     vivithinking "There they are. Wait, what are they--"
-    vivi neutral "Susu'Rha? What are you doing?"
-    vivi neutral "You're staring out that dirty window like a Natasha Bedingfield song."
+    vivi neutral "Susu'Rha? Why are you just staring out that dirty window?"
     vivi neutral "Is something wrong?"
     susurha neutral "..."
     susurha neutral "When we made our way around the last turn I was able to see the entire length of the train for a brief moment."

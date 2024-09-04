@@ -18,10 +18,10 @@ label bargaining_fr2_susurha:
     vivi neutral "I know how we're gonna get off this train."
     vivi neutral "I made a deal with Urshu, and if we make the best-tasting meal he's ever had, we can get outta here!"
     vivithinking "Well... I can get outta here. I'm not sure I specified more than one person getting off this train..."
-    vivi neutral "All we gotta do is make a meal that knocks the sock suspenders off of Ursh!     What do you say? You in?"
-    susurha neutral "..."
-    susurha neutral "If you would have told me that the fate of my soul rested on my ability to cook..."
-    susurha neutral "...I would have said, \"WHY DIDN'T YOU TELL ME SOONER?!\""
+    vivi neutral "All we gotta do is make a meal that knocks the sock suspenders off of Ursh! What do you say? You in?"
+    susurha angry "..."
+    susurha angry "If you would have told me that the fate of my soul rested on my ability to cook..."
+    susurha angry "...I would have said, \"WHY DIDN'T YOU TELL ME SOONER?!\""
     vivi surprised "Sorry! I just made the deal today!"
 
     show vivi neutral at left
@@ -202,7 +202,7 @@ label bargaining_fr2_susurha:
             susurha sad "Even now, as I plunge towards imminent death, I still run from mine." 
             vivi sad "Oh... Susu'Rha..."
             vivi sad "Look... I don't wanna tell you the same old cliche of \"You can't blame yourself\" for what happened to your family because, in a way...I did the same thing as you." 
-            susurha neutral "What do you mean? You're actions resulted in the death of your loved ones?!"
+            susurha neutral "What do you mean? Your actions resulted in the death of your loved ones?!"
             vivi neutral "Well, okay. Let me clarify. Where I'm from, running away doesn't necessarily mean physically running away. It can mean a lot of things, like burrowing yourself in some much work you don't face, just...how terrifying it all is..."
             vivi sad "I think by working so much on this reporting gig that I never saw my family did...kill the bond between us in a way..."
             vivi neutral "Anyways. What I'm trying to say is... Both of us ran from what we thought would hurt us, which is natural... I think."

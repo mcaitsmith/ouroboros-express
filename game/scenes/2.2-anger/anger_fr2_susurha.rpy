@@ -11,8 +11,8 @@ label anger_fr2_susurha:
         xzoom -1 
     show susurha neutral at right with dissolve
         
-    vivi neutral "Susu'Rha! My second favorite Gecko behind the Geico guy! Care to play some darts?"
-    susurha neutral "What is \"Geico\"? And what exactly is this...\"darts?\""
+    vivi neutral "Susu'Rha! My favorite reptilian! Care to play some darts?"
+    susurha neutral "I'm flattered, but what exactly is this...\"darts?\""
     vivi neutral "You toss pointed sticks at that round board over there. You score points based on how well you hit the target, and if you score enough points, you win."
     susurha happy "In the Viridian Wood, we played a game similar to this. Instead of a round board, we used the carcasses of Burrowers."
     vivithinking "And that's what happens when you don't have a TV." 
