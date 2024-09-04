@@ -100,8 +100,10 @@ label bargaining_briefing:
                 vivithinking "No. It can't be human."
                 vivithinking "Damn, it's looking at me!"
                 vivi "W-what do you want? Leave me alone!"
-                # VISUAL: shadow disappears
-                vivi surprised "What the hell!? It's gone."
+                # VISUAL: shadow disappears, leaving Vivi's reflection behind
+                vivi surprised "What the hell?! It's gone. But wait..."
+                # VISUAL: Vivi catches sight of her decaying reflection
+                vivi surprised "Where are my eyes?! I can see my reflection, but... Why does it look like my ribs are showing through my—"
                 vivi surprised "I gotta get off this train. I gotta find Urshu."
 
                 hide vivi with dissolve
@@ -148,7 +150,7 @@ label bargaining_briefing:
     stop sound fadeout 1.0
 
     vivi neutral "You... Of course, you knew." 
-    vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a petulant pissant."
+    vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a... an impish... wisenheimer or something."
     urshu happy "I appreciate that, Miss Sanssouci. I do work very hard for all of you."
     urshu neutral "It is my joy to serve--not only to serve, but to draw out of each of you your very best."
     vivithinking "Oh, he's being sweet. And candid. And not talking in riddles!"

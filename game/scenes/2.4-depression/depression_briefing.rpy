@@ -15,6 +15,7 @@ label depression_briefing:
     vivithinking "Dying. But still goddamn alive."
     vivithinking "I'm just a shell."
     vivithinking "Empty, breaking."
+    vivithinking "Flaking off. Sloughing away."
     vivithinking "I'm nothing."
     vivithinking "Or..I will be soon."
     vivithinking "Please, make it soon."
