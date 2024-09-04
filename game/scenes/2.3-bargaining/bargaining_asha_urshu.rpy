@@ -22,11 +22,19 @@ label bargaining_asha_urshu :
 
     vivithinking "Maybe I’m not the only one who can’t sleep. Is that Urshu and the Goddess? Dare I eavesdrop? Not like anyone’s gonna sue."
 
-    show ava angry at center :
+    show ava angry at center with dissolve :
         xzoom -1
-    show urshu sad at right
+    show urshu sad at right with dissolve
 
     vivithinking "Well, hot damn! They look deep in conversation."
+
+    hide vivi with dissolve
+
+    show ava angry at left with dissolve :
+        xzoom -1
+    with move
+
+    
 
     ava angry "Sleep eludes us, conductor. So many thoughts. So many regrets."
 
@@ -36,7 +44,7 @@ label bargaining_asha_urshu :
 
     urshu sad "The only thing worse than giving up is wishing that you hadn't."
 
-    ava sad "Give up? We gave everything to our goddess. And now…what was the point of our sacrifices?"
+    ava sad "Give up? We gave everything to our goddess. And now...what was the point of our sacrifices?"
 
     urshu sad "What is the point of anything, O Enlightened One?"
 
@@ -54,7 +62,7 @@ label bargaining_asha_urshu :
 
     ava sad "Custom demanded habitation alongside the aristocrats. Distance softened their contempt and disdain."
 
-    ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it…?"
+    ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it...?"
 
     urshu sad "Mayhaps, O Enlightened One. Mayhaps the emptiness you see is what you fear most."
 

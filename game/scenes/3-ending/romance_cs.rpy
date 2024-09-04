@@ -173,6 +173,10 @@ label romance_cs:
                 "I think I've found closure now." if not (ava_friend == True and darius_friend == True and susurha_friend == True) and (ava_confess == True and darius_confess == True and susurha_confess == True):
                     vivi happy "I think I've found closure now."
                     vivi neutral "All is said and done."
+
+                    hide ava with dissolve
+                    hide darius with dissolve
+                    hide susurha with dissolve
                 
                     show urshu neutral at center_right with dissolve
                 

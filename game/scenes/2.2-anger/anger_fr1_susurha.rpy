@@ -47,7 +47,7 @@ label anger_fr1_susurha:
             play sound attchoice
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
         
-            vivi neutral "I'll play"
+            vivi neutral "I'll play."
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
@@ -122,7 +122,7 @@ label anger_fr1_susurha:
             susurha neutral "This goes deeper. And it's been going on for a long time."
             # JUMP TO: susurha surprised "You're... angry."
 
-    susurha surprised "You're...angry. And you've been angry far before before your demise."
+    susurha surprised "You're...angry. And you've been angry far before your demise."
 
     # <CHOICE>
     vivithinking "What if they're right?"

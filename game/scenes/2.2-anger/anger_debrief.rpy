@@ -15,7 +15,9 @@ label anger_debrief:
 
         vivithinking angry "I feel like the only one trying to get off this train. How are people content with playing silly card games when their lives are at stake? And the conductor! He knows he's messing with me and gets off on it."
 
-        vivithinking neutral "Take a deep breath, V. This isn't getting me anywhere."
+        vivithinking surprised "What? Did my face just..."
+        
+        vivithinking neutral "...no, it couldn't have. That's impossible. Take a deep breath, V. This isn't getting me anywhere."
 
         vivithinking neutral "Fighting with everybody is obviously not gonna work. Maybe I can get what I want another way. Urshu is the key. He must want something."
 

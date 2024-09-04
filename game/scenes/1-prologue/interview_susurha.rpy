@@ -50,8 +50,8 @@ label interview_susurha:
             susurha happy "I then became a druid, which means I embarked upon a life of mirth, art, expression, and pleasure."
             susurha sad "This had...consequences."
             vivi neutral "Like what?"
-            susurha neutral "..." 
-            susurha neutral "I don't know if I'm quite comfortable talking about that."
+            susurha sad "..." 
+            susurha sad "I don't know if I'm quite comfortable talking about that."
 
             # JUMP TO: vivithinking neutral "Seriously?"
 
