@@ -1,104 +1,104 @@
 label anger_susurha_urshu:
 
-        scene lounge with fade
+    scene lounge with fade
 
-        show vivi neutral at left with dissolve :
-            xzoom-1
-
-
-        vivi neutral "This is getting to be too much. This train, these games, Urshu…"
+    show vivi neutral at left with dissolve :
+        xzoom-1
 
 
-        vivithinking "I’m sick of it!"
+    vivi neutral "This is getting to be too much. This train, these games, Urshu..."
 
 
-        vivithinking "Oh, speaking of the devil."
+    vivithinking "I’m sick of it!"
 
 
-        vivithinking "It seems Urshu is getting feisty with Susu’Rha."
-
-        hide vivi
-
-        show urshu neutral at left with dissolve :
-            xzoom-1
-        show susurha neutral at right with dissolve
+    vivithinking "Oh, speaking of the devil."
 
 
-        urshu "Lounging about again, I see. Kicking the feet up and enjoying the ride, hmm?"
+    vivithinking "It seems Urshu is getting feisty with Susu’Rha."
+
+    hide vivi
+
+    show urshu neutral at left with dissolve :
+        xzoom-1
+    show susurha neutral at right with dissolve
 
 
-        susurha happy "You know it, Mr. Conductor. Envious?"
+    urshu "Lounging about again, I see. Kicking the feet up and enjoying the ride, hmm?"
 
 
-        urshu "Envious? Ah, do you spot a green-eyed monster, perhaps? I don’t have nearly enough time in the day for such feelings."
+    susurha happy "You know it, Mr. Conductor. Envious?"
 
 
-        susurha "Mhm."
+    urshu "Envious? Ah, do you spot a green-eyed monster, perhaps? I don’t have nearly enough time in the day for such feelings."
 
 
-        urshu "How do you do it?"
+    susurha "Mhm."
 
 
-        susurha neutral "Do what?"
+    urshu "How do you do it?"
 
 
-        urshu "Present yourself as so relaxed."
+    susurha neutral "Do what?"
 
 
-        susurha "Present?"
+    urshu "Present yourself as so relaxed."
 
 
-        susurha happy "Look at you. So confident that I’m playing pretend."
+    susurha "Present?"
 
 
-        susurha neutral "What about yourself? Coming here to criticize me. Acting like you’re better than I."
+    susurha happy "Look at you. So confident that I’m playing pretend."
 
 
-        urshu sad "..."
+    susurha neutral "What about yourself? Coming here to criticize me. Acting like you’re better than I."
 
 
-        urshu sad "I come to you, honestly."
+    urshu sad "..."
 
 
-        susurha neutral "Sure you do, dragging me here to this contraption really invokes such ideas."
+    urshu sad "I come to you, honestly."
 
 
-        urshu sad "What are you afraid of? What makes you wear this mask of relaxation?"
+    susurha neutral "Sure you do, dragging me here to this contraption really invokes such ideas."
 
 
-        susurha angry "I wear no mask! So don’t even try to project your own lies onto me!"
+    urshu sad "What are you afraid of? What makes you wear this mask of relaxation?"
 
 
-        susurha angry "Your dashing physique and alluring voice may convince the others to play your little game, but I see you for the creature you are."
+    susurha angry "I wear no mask! So don’t even try to project your own lies onto me!"
 
 
-        urshu sad "I merely wish to help, Susu’Rha."
+    susurha angry "Your dashing physique and alluring voice may convince the others to play your little game, but I see you for the creature you are."
 
 
-        urshu sad "Not everyone is scheming."
+    urshu sad "I merely wish to help, Susu’Rha."
 
 
-        vivithinking "I can feel the heat burn as Susu’Rha snarls."
+    urshu sad "Not everyone is scheming."
 
 
-        susurha sad "..."
+    vivithinking "I can feel the heat burn as Susu’Rha snarls."
 
 
-        susurha sad "Just remove yourself from my sight."
+    susurha sad "..."
 
 
-        susurha sad "You know nothing of me."
+    susurha sad "Just remove yourself from my sight."
 
 
-        urshu sad "It is a great shame that no one does."
+    susurha sad "You know nothing of me."
 
-        hide susurha
-        hide urshu
 
-        show vivi neutral at left with dissolve :
-            xzoom-1
+    urshu sad "It is a great shame that no one does."
 
-        vivithinking  "Time to go."
+    hide susurha
+    hide urshu
 
-        #JUMP TO: Character Selector 2
-        jump anger_cs2
+    show vivi neutral at left with dissolve :
+        xzoom-1
+
+    vivithinking  "Time to go."
+
+    #JUMP TO: Character Selector 2
+    jump anger_cs2

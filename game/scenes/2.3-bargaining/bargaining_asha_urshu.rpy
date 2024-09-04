@@ -36,7 +36,7 @@ label bargaining_asha_urshu :
 
     urshu sad "The only thing worse than giving up is wishing that you hadn't."
 
-    ava sad "Give up? We gave everything to our goddess. And now…what was the point of our sacrifices?"
+    ava sad "Give up? We gave everything to our goddess. And now...what was the point of our sacrifices?"
 
     urshu sad "What is the point of anything, O Enlightened One?"
 
@@ -54,7 +54,7 @@ label bargaining_asha_urshu :
 
     ava sad "Custom demanded habitation alongside the aristocrats. Distance softened their contempt and disdain."
 
-    ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it…?"
+    ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it...?"
 
     urshu sad "Mayhaps, O Enlightened One. Mayhaps the emptiness you see is what you fear most."
 

@@ -55,7 +55,7 @@ label depression_npc_group_scene:
 
     susurha sad "I’m unable to move. I’m unable to speak. I’m unable to see."
 
-    susurha sad "I’m just…"
+    susurha sad "I’m just..."
 
     susurha sad "...there."
 
@@ -67,7 +67,7 @@ label depression_npc_group_scene:
 
     ava neutral blush "Regret teaches us harshly yet fairly. What stifled desires yet cling to the fringes of your minds?"
 
-    darius neutral "Stifled desires… A seed of doubt sprouted in my heart hundreds of years ago. I regret not nurturing that seed. I tried to kill it by any means necessary."
+    darius neutral "Stifled desires... A seed of doubt sprouted in my heart hundreds of years ago. I regret not nurturing that seed. I tried to kill it by any means necessary."
 
     darius sad "I thought the doubt was a test of faith. Maybe it was. I still ended up here."
 

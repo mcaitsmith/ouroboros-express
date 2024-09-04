@@ -32,7 +32,7 @@ label bargaining_darius_susurha:
 
     darius surprised "Hm. I’ll take your word for it."
 
-    susurha happy "So…read my mind. Do it. What number am I thinking about? What shape is my tail making? How many claws am I holding up?"
+    susurha happy "So...read my mind. Do it. What number am I thinking about? What shape is my tail making? How many claws am I holding up?"
 
     darius angry "Drop it."
 
@@ -42,11 +42,11 @@ label bargaining_darius_susurha:
 
     susurha surprised "Well, I certainly didn’t do it for the company. You’d think the two of us would get along."
 
-    darius surprised "Why would we… ever get along?"
+    darius surprised "Why would we...ever get along?"
 
     susurha happy "Because we have so much in common!"
 
-    darius neutral "This is a joke. You’re mocking me. My time is better spent elsewhere"
+    darius neutral "This is a joke. You’re mocking me. My time is better spent elsewhere."
 
     susurha neutral "No, wait. Wait. Seriously. I feel like between the two of us we can break out of here. Aren’t your kind supposed to be super powerful?"
 

@@ -12,7 +12,7 @@ label bargaining_fr2_susurha:
 
     show susurha neutral at right with dissolve
 
-    vivi neutral "Thanks for coming on such short notice, Susu'rha. I really need your help."
+    vivi neutral "Thanks for coming on such short notice, Susu'Rha. I really need your help."
     susurha neutral "Of course, Vivienne. What is it that you need?"
     vivi neutral "Okay, so... Listen to me."
     vivi neutral "I know how we're gonna get off this train."
@@ -89,7 +89,7 @@ label bargaining_fr2_susurha:
             vivi neutral "If we work together, maybe we can pull this thing off."
             show susurha neutral blush with dissolve
             susurha "I dare say, working in close quarters with you, I hope I don't get too distracted...by your \"girlboss\" energy."
-            vivi surprised blush "Susu'rha, I'm not sure that's the compliment you think it is..."
+            vivi surprised blush "Susu'Rha, I'm not sure that's the compliment you think it is..."
             susurha "No, sorry! What I meant to say was... Well, I just think... I think you're quite... radiant. I mean that. Earnestly."
             vivithinking "No one's ever said anything so nice to me in my entire life...I...I'm not falling in love, am I? No! No, that's silly. I just love being called radiant. Yeah! That's all... Right?"
             vivi neutral "Ahem. Well, thank you..."
@@ -174,7 +174,7 @@ label bargaining_fr2_susurha:
         
             vivi neutral "We'll just try to cook the best dish we possibly can!"    
             susurha neutral "Unluckily for you, I eat nothing but grubs and Burrowers."
-            vivi angry "Susu'rha..."
+            vivi angry "Susu'Rha..."
             susurha neutral "I'm joking, of course! I grew up crafting my own cuisine from the family larder."
             vivi neutral "Oh, great! I too, am a bit of a master chef."
             vivithinking "AKA, I fall asleep watching \"{i}Diners, Drive-Ins and Dives.{/i}\""
