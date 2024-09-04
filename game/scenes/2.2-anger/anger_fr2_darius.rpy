@@ -10,7 +10,7 @@ label anger_fr2_darius:
     show vivi happy at left with dissolve:
         xzoom -1
 
-    vivithinking neutral "Their heat is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
+    vivithinking neutral "The heat he gives off is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
 
     show darius neutral at right with dissolve
 
