@@ -169,7 +169,7 @@ label bargaining_fr2_darius:
 
     # SOUND: glassware clinking (dining, clatter of silverware and plating)
     play sound glassclink
-    pause 5.0
+    pause 2.5
     stop sound fadeout 1.0
 
     vivi neutral "Well, that's about as good as it's going to get. What do you think?"
