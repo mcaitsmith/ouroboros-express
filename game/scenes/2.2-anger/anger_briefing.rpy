@@ -177,7 +177,7 @@ label anger_briefing:
             urshu happy "Myths and tales are a treasure trove of wisdom, no? Especially for those who find themselves unable to focus on the present, Miss Sanssouci."
             vivi angry "When are you gonna admit that you're talking about you? And that this is just one big sob story?!"
             urshu neutral "What might have led you to such a conclusion, my dear?"
-            vivi angry "Look, just cut the crap, ok? I'm a journo, this is my whole deal. You can't pull the wool over my eyes, Urshu!"
+            vivi angry "Look, just cut the crap, ok? I'm a journalist, this is my whole deal. You can't pull the wool over my eyes, Urshu!"
             urshu neutral "What a blessing and curse to be beholden to your journalistic proclivities!"
             vivi angry "You lost your first love and your homes, and you're sad. I get it! But why are you dressing it up with all this 'ferryman' stuff? You're trying to mess with me! Why won't you just be open with me?"
             urshu neutral "I am sure you appreciate that openness is difficult when time is short. The curtain soon closes and new players await in the wings to begin the play anew. Only the stagehand shall remain. Alone."

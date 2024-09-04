@@ -146,7 +146,7 @@ label depression_fr2_ava:
 
             vivi neutral "My family moved around a lot, from country to country."
             vivi neutral "I'm luckier than most - seen and experienced so many amazing cultures."
-            vivi sad "But it's lonely for a kid, you know? As soon as I made friends, started feeling comfortable... We'd uproot again"
+            vivi sad "But it's lonely for a kid, you know? As soon as I made friends, started feeling comfortable... We'd uproot again."
             ava neutral "Ah, you were a lonely child. We understand this."
             vivi sad "Over time, I just felt like it was easier to not make friends... And even when my family stopped moving, I just kept going."
             ava neutral "Did you find solace in other things?"

@@ -252,7 +252,7 @@ label denial_fr2_susurha:
                 #OPTION 2-2
                 "It's okay.":
 
-                    vivithinking "It's okay"
+                    vivithinking "It's okay."
                     # JUMP TO: susurha "Voila."
 
     susurha happy "Voila."
