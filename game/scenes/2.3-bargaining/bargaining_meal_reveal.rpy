@@ -131,7 +131,6 @@ label bargaining_meal_reveal:
 
     if urshu_story_1 == True and urshu_story_2 == True and urshu_story_3 == True:
 
-        urshu sad "Miss Sanssoucci, my dear."
         vivi neutral "You can just call me Vivi, Ursh."
         urshu surprised blush "I would like that, Miss Sa- I mean, my dear Vivi."
         urshu sad -blush "But I must confess..."
