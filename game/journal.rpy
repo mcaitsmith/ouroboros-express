@@ -62,110 +62,110 @@ label journal:
         # determine diary note
         # if len(journal_array) >= 1:
         if cycle == 0:
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 1{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 1{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
         # if len(journal_array) >= 2:
         if cycle == 1:
             # text "{color=#000000}DAY 2{/color}"  xalign 0.25 yalign 0.2
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 2{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 2{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
             # text "{color=#000000}[journal_array[1]]{/color}" xalign 0.25 yalign 0.23
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
         # if len(journal_array) >= 3:
         if cycle == 2:
             # text "{color=#000000}DAY 3{/color}"  xalign 0.25 yalign 0.3
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 3{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 3{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
             # text "{color=#000000}[journal_array[2]]{/color}" xalign 0.25 yalign 0.33
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
         # if len(journal_array) >= 4:
         if cycle == 3:
             # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 4{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 4{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
         if cycle == 4:
             # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}{b}DAY 5{/b}{/color}{/font}{/size}"  xalign 0.33 yalign 0.1
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 5{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Slimamif.ttf}{size=20}{color=#000000}[message]{/color}{/font}{/size}" xalign 0.28 yalign 0.20
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
         #determine darius note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/size}{/font}" :
-                xalign 0.785 yalign 0.08
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/k}{/size}{/font}" :
+                xalign 0.78 yalign 0.08
         elif att_meter_darius >= 0 and att_meter_darius <= 100 :
             if att_meter_darius == 0:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}????{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}????{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.08
             elif att_meter_darius <= 20:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}What a specimen! \nNot sure if more \nsurprised at their stor-\ny or their physiology.{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}What a specimen! \nNot sure if more \nsurprised at their stor-\ny or their physiology.{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.08
             elif att_meter_darius <= 40:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}There's an \nallure to him. \nMust know more.'{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}kinda...hot{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.08
             elif att_meter_darius <= 60:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}Their baggage \nis wearing them \ndown. It affects\n me...{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Their baggage \nis wearing them \ndown. It affects\n me...{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.08
             elif att_meter_darius <= 80:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}Tormented by \npast. I can \nsave them.{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Tormented by \npast. I can \nsave them.{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.08
             elif att_meter_darius <= 100:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.08
         elif att_meter_darius > 100:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/size}{/font}" :
-                xalign 0.785 yalign 0.08
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/k}{/size}{/font}" :
+                xalign 0.78 yalign 0.08
         #determine ava note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}yYYyoouuu Sooon OF {/s}{/i}{/color}{/size}{/font}" :
-                xalign 0.785 yalign 0.315
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}yYYyoouuu Sooon OF {/s}{/i}{/color}{/k}{/size}{/font}" :
+                xalign 0.78 yalign 0.32
         elif att_meter_ava >= 0 and att_meter_ava <= 100 :
             
             if att_meter_ava == 0:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}????{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.315
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}????{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.32
             elif att_meter_ava <= 20:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}Caution: Compli-\ncated background. \nPrincess or \ncaptive?{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.315
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Caution:\nComplicated\nbackground. \nPrincess or \ncaptive?{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.32
             elif att_meter_ava <= 40:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}kinda WOW{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.315
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}kinda WOW{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.32
             elif att_meter_ava <= 60:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}We're more alike\nthan I thought. \nActually pretty friendly.{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.315
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}We're more alike\nthan I thought. \nActually pretty friendly.{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.32
             elif att_meter_ava <= 80:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}Can't imagine being \nin her shoes... \nBut hardship has \nmade her an\nincredible person.{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.315
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Can't imagine being \nin her shoes... \nBut hardship has \nmade her an\nincredible person.{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.32
             elif att_meter_ava <= 100:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.315
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.32
         elif att_meter_ava > 100:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/size}{/font}" :
-                xalign 0.785 yalign 0.315
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/k}{/size}{/font}" :
+                xalign 0.78 yalign 0.32
         # determine susurha note
         if eldritch == True:
-            text "{font=Slimamif.ttf}{size=16}{color=#920000}{i}{s}a B?TCH{/s}{/i}{/color}{/size}{/font}" :
-                xalign 0.785 yalign 0.55
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}a B?TCH{/s}{/i}{/color}{/k}{/size}{/font}" :
+                xalign 0.78 yalign 0.55
         elif att_meter_susurha >= 0 and att_meter_susurha <= 100 :
             if att_meter_susurha == 0:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}????{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}????{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.55
             elif att_meter_susurha <= 20:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}Are they the \nmost normal of the \nlot? Evasive; must \ncrack that juice.{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Are they the \nmost normal of the \nlot? Evasive; must \ncrack that juice.{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.55
             elif att_meter_susurha <= 40:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}kinda cute!{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}kinda cute!{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.55
             elif att_meter_susurha <= 60:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}Cool hang when \nin the right mood. \nKinda want to \nadventure together...{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Cool hang when \nin the right mood. \nKinda want to \nadventure together...{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.55
             elif att_meter_susurha <= 80:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}I feel you, Susu'Rha. \nI also isolated myself \nfrom my family. \nIs this fate?{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I feel you, Susu'Rha. \nI also isolated myself \nfrom my family. \nIs this fate?{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.55
             elif att_meter_susurha <= 100 :
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/size}{/font}" :
-                    xalign 0.785 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/k}{/size}{/font}" :
+                    xalign 0.78 yalign 0.55
         elif att_meter_susurha > 100:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/size}{/font}" :
-                xalign 0.785 yalign 0.55
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/k}{/size}{/font}" :
+                xalign 0.78 yalign 0.55
            
     return
 # display journal on screen

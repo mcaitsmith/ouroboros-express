@@ -117,7 +117,7 @@ label denial_fr2_darius:
 
     darius sad "Well aside from some unpleasant memories... I've been thinking."
 
-    darius sad "I have many questions about this place and this conductor. But I don't believe asking him will get me any of them..."
+    darius sad "I have many questions about this place that need answers. But I don't believe asking will get me any of them..."
 
     darius neutral "I've let myself fall into passivity too often, simply allowing the current to wash over me. This time, I'll act."
 
@@ -127,7 +127,7 @@ label denial_fr2_darius:
 
     darius neutral "Hmm. I'm not interested in leaving just yet, but I think there is a way our needs could both be met."
 
-    darius neutral "I am going to trail the conductor. Should you wish, you could join me and look for any sign of an exit strategy."
+    darius neutral "I am going to trail the conductor. Should you wish to join me, you may search for an exit."
 
     vivi surprised "Trail? Are you some sort of detective?"
 
@@ -217,15 +217,27 @@ label denial_fr2_darius:
 
     vivi surprised "Magic. Yeah I think so."
 
+    # <CHOICE>
     darius happy "This is exactly what I wanted to see. Come, let's pursue him."
 
-    show vivi happy blush 
+    menu: 
 
-    vivithinking "Aww, their little mouth tentacles curl up when they're happy."
+    # OPTION 1
+        "(Aww, their little mouth tentacles curl up when they're happy.)":
 
-    show vivi angry blush 
+            show vivi happy blush 
+            vivithinking "Aww, their little mouth tentacles curl up when they're happy."
+            show vivi angry blush 
+            vivithinking "What am I thinking? This isn't the time Vivi!"
 
-    vivithinking "What am I thinking? This isn't the time, Vivi!"
+            # JUMP TO scene observatory with fade
+
+    # OPTION 2
+        "(Wow, they're really on this. Good call teaming up with them, Vivi.)":
+
+            vivithinking neutral "Wow, they're really on this. Good call teaming up with them, Vivi."
+
+            # JUMP TO scene observatory with fade
 
     #LOCATION: observatory
     scene observatory with fade

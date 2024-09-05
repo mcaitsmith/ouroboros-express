@@ -164,8 +164,24 @@ label bargaining_fr2_darius:
     vivi happy "I'm sure they could be useful for...other things as well."
     show darius neutral blush with dissolve
     darius "Ms. Sanssouci, I have no idea what you could possibly be referring to."
+    
+    # <CHOICE>
     vivi happy blush "Oh, I'm sure."
-    vivithinking "They're cute when they try to act clueless."
+    
+    menu:
+        # OPTION 1
+        "(They're cute when they try to act clueless.)":
+        
+            vivithinking "They're cute when they try to act clueless."
+
+            # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
+
+        # OPTION 2
+        "(Heh. They know.)":
+
+            vivithinking "Heh. They know."
+
+            # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
 
     # SOUND: glassware clinking (dining, clatter of silverware and plating)
     play sound glassclink
@@ -234,7 +250,7 @@ label bargaining_fr2_darius:
 
         show vivi sad at left
 
-        vivithinking "...Shit. What have I done?" 
+        vivithinking "...Damn it. What have I done?" 
         vivithinking "I should've just kept my mouth shut."
         vivi sad "You're right."
 

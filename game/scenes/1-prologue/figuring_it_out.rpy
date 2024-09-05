@@ -99,7 +99,7 @@ label figuring_it_out:
     vivithinking neutral "But if I'm not, then...being dead {i}is{/i} the most logical thing."
     vivithinking neutral "But it feels too...normal. How?"
     vivithinking neutral "I need to talk to someone. Someone who {i}knows{/i} what's going on."
-    vivithinking angry "And I bet that smug-as-shit conductor was just waiting for me to put it all together."
+    vivithinking angry "And I bet that smug little so-and-so conductor was just waiting for me to put it all together."
     vivithinking angry "I'm going to make him tell me the truth."
 
     # Room selector, lounge as only option.
