@@ -136,7 +136,8 @@ label interview_darius:
         # OPTION 1
         "(Duty? You're a detective. What, were you here for wardrobe inspo?)":
 
-            vivithinking neutral "Duty? You're a detective. What, were you here for wardrobe inspo?"
+            vivithinking neutral "Duty? You're a detective. You just told me you weren't on a case!" 
+            vivithinking neutral "What, does the decor match your outfit? Trying to get wardrobe inspiration?"
 
             # JUMP TO vivi neutral "Very interesting, I—"
 
