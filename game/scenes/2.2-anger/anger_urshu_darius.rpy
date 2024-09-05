@@ -50,7 +50,7 @@ label anger_urshu_darius:
 
     urshu neutral "Go on."
 
-    darius neutral "I wanted… more. There must be more. Something to give some kind of context."
+    darius neutral "I wanted... more. There must be more. Something to give some kind of context."
 
     darius surprised "This can’t be all there is. What about my service? All I’ve done? Does that not count for anything here?"
 
@@ -68,7 +68,7 @@ label anger_urshu_darius:
 
     vivithinking neutral "Only this time the embarrassment is from being caught by a walking squid and a little shit."
 
-    vivi surprised "Um…hello. I didn’t hear anything."
+    vivi surprised "Um...hello. I didn’t hear anything."
 
     darius neutral "Miss. Good night."
 

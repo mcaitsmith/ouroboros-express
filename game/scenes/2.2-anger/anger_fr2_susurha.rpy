@@ -11,11 +11,29 @@ label anger_fr2_susurha:
         xzoom -1 
     show susurha neutral at right with dissolve
         
-    vivi neutral "Susu'rha! My second favorite Gecko behind the Geico guy! Care to play some darts?"
-    susurha neutral "What is \"Geico\"? And what exactly is this...\"darts?\""
+    vivi neutral "Susu'Rha! My favorite reptilian! Care to play some darts?"
+    susurha neutral "I'm flattered, but what exactly is this...\"darts?\""
     vivi neutral "You toss pointed sticks at that round board over there. You score points based on how well you hit the target, and if you score enough points, you win."
+    
+    # <CHOICE>
     susurha happy "In the Viridian Wood, we played a game similar to this. Instead of a round board, we used the carcasses of Burrowers."
-    vivithinking "And that's what happens when you don't have a TV." 
+    
+    menu:
+    # OPTION 1
+        "(And that's what happens when you don't have a TV.)":
+    
+            vivithinking neutral "And that's what happens when you don't have a TV." 
+    
+            # JUMP TO susurha neutral "And we used magic to increase our accuracy."
+
+    # OPTION 2
+        "(Note to self: don't die in the Viridian Wood.)":
+
+            vivithinking neutral "Note to self: don't die in the Viridian Wood."
+            vivithinking neutral "The funeral will not be pretty."
+
+            # JUMP TO susurha neutral "And we used magic to increase our accuracy."
+    
     susurha neutral "And we used magic to increase our accuracy."
     vivithinking neutral "Well then, nice of you to be born in a magical world."
 
@@ -194,7 +212,7 @@ label anger_fr2_susurha:
     susurha neutral "Then...a sharp pain and...darkness."
     susurha sad "I woke up here."
     susurha angry "I have no idea whether my family--that I abandoned--is okay. My fear is I'll see them walk into this dining car, like me, wondering what happened."    
-    susurha angry "If only I was there to protect them."
+    susurha angry "If only I had been there to protect them."
     susurha sad "They died because I abandoned them."
 
     # <CHOICE>

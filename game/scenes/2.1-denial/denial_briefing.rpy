@@ -19,7 +19,7 @@ label denial_briefing:
     urshu "Miss Sanssouci, the Ouroboros Express waits for no one. Least of all a reporter. Do you have a moment?"
 
     vivi happy "Conductor!"
-    vivithinking neutral "What's his name again? Usher? Ursherbambi? Shit. Conductor, for now." 
+    vivithinking neutral "What's his name again? Usher? Ursherbambi? Eh, whatever. Conductor, for now." 
     vivi happy "Why not? Got nothing but time here, right?"
     vivithinking "He's laughing."
     vivi neutral "What's so funny?"

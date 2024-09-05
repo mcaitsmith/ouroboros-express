@@ -50,7 +50,7 @@ label epi_imperfect_friendship:
     show white:
         linear 0.6 alpha 0.65
     vivi "..."
-    urshu sad "Come on, Vivi. For prosperity!"
+    urshu sad "Come on, Vivi. For posterity!"
     vivi "..."
     vivi happy "I hate you, ahaha!!"
     vivi "So long, DUMBASS!"

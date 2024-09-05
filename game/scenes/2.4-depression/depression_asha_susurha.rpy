@@ -55,9 +55,9 @@ label depression_asha_susurha:
 
     ava sad "You speak to one who knows nothing of freedom or dreams. Those were for the aristocrats. Like you."
 
-    ava sad "…"
+    ava sad "..."
 
-    susurha sad "…"
+    susurha sad "..."
 
     hide susurha
     hide ava

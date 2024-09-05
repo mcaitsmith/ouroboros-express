@@ -10,7 +10,7 @@ label anger_fr2_darius:
     show vivi happy at left with dissolve:
         xzoom -1
 
-    vivithinking neutral "Their heat is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
+    vivithinking neutral "The heat he gives off is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
 
     show darius neutral at right with dissolve
 
@@ -54,6 +54,7 @@ label anger_fr2_darius:
     vivi angry "It's not about owing anything, I'm not keeping a ledger--"
     darius angry "Neither am I. Not anymore."
     vivithinking surprised "He's practically shaking."
+    vivithinking neutral "Yep. There goes Vivi, running her mouth like a bull in a china shop again."
     vivi neutral "I've touched a nerve. I'm sorry. Again. I swear I'm not trying to get under your skin."
     show darius neutral blush with dissolve
     darius "Whether you were trying or not, you've a talent for it."
