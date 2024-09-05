@@ -143,9 +143,9 @@ label depression_fr1_darius:
     darius sad "Apologized."
     vivi surprised "For what?"
     darius sad "For anything."
-    vivithinking "Radiating off of them--that uncomfortable heat."
+    vivithinking "Radiating off of them—that uncomfortable heat."
     darius neutral "Well? Surely you must drink to that. I know your kind is always saying that. ...Whether it's warranted or not."
-    vivi neutral "You're not wrong. You know--if you'd rather talk instead of just playing a game--"
+    vivi neutral "You're not wrong. You know—if you'd rather talk instead of just playing a game—"
     darius sad "I wouldn't."
     darius "In fact, perhaps it's time we leave. This lounge is feeling a bit small. Excuse me."
 

@@ -49,7 +49,7 @@ label anger_fr2_susurha:
             vivi happy "Not as much as a bullseye!"
             susurha surprised "Hmm... seems my magic doesn't work here."
             vivi happy "Either that, or I'm better at darts than you."
-            susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
+            susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not — in this case, inadequate at this darts game."
             vivi neutral "You're...welcome." 
             #JUMP TO: susurha neutral "..."
 
@@ -193,7 +193,7 @@ label anger_fr2_susurha:
     susurha neutral "But the smoke was too much. None of us could see. I couldn't breathe."
     susurha neutral "Then...a sharp pain and...darkness."
     susurha sad "I woke up here."
-    susurha angry "I have no idea whether my family--that I abandoned--is okay. My fear is I'll see them walk into this dining car, like me, wondering what happened."    
+    susurha angry "I have no idea whether my family—that I abandoned—is okay. My fear is I'll see them walk into this dining car, like me, wondering what happened."    
     susurha angry "If only I was there to protect them."
     susurha sad "They died because I abandoned them."
 

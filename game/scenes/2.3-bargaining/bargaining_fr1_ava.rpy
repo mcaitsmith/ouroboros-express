@@ -17,7 +17,7 @@ label bargaining_fr1_ava:
 
     vivithinking "Oh, she's here. I thought she'd be in her room still." 
     vivi neutral "Hey, Asha."
-    ava neutral "Yes, little-- I mean, Vivienne."
+    ava neutral "Yes, little— I mean, Vivienne."
 
     stop sound fadeout 2.0
 
@@ -76,7 +76,7 @@ label bargaining_fr1_ava:
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
             vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
-            ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men, even Tears."
+            ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men...even tears."
             show vivi surprised at left:
                 xzoom -1
 

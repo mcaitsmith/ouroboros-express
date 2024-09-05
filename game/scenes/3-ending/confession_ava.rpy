@@ -33,7 +33,7 @@ label confession_ava:
     ava neutral "We..."
     ava happy "No. No, so that {i}I{/i} can ask you this."
     vivithinking surprised "I! She can't be..."
-    vivi surprised blush "Asha...Do you mean--?"
+    vivi surprised blush "Asha...Do you mean—?"
     show ava happy blush with dissolve
     ava "From now on we are Asha no more. {i}I{/i} am Ava." 
     ava "And I would like to dance with you, Vivienne, until you and I are no more."

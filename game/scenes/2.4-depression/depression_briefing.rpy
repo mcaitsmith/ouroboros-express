@@ -81,7 +81,7 @@ label depression_briefing:
     urshu sad "..."
     vivi sad "I...want to live."
     urshu neutral "I wish you could."
-    vivi "I want to-- God. There's no words for it."
+    vivi "I want to— God. There's no words for it."
     urshu "I understand. I wish to help {i}you{/i} understand something about our locomotive existence."
     vivithinking "If this turns into another trite anecdote..."
     urshu "I have been on this journey countless times, will be on it for an eternity still. This is what I do. It is what I am."
@@ -110,7 +110,7 @@ label depression_briefing:
     vivi neutral "That is the worst advice to give to someone in my state."
     urshu neutral "I urge you to embrace not death, but the fleeting moments before. When nothing holds you back. When it does not matter that there is no tomorrow, because you have the present, and it is wholly yours."
     vivi angry "Shut up. I won't take this fluffy language. Make it make sense or leave."
-    urshu angry "Don't you fucking get it? This is all on purpose and you only have so much time! You have to complete--"
+    urshu angry "Don't you fucking get it? This is all on purpose and you only have so much time! You have to complete—"
     vivithinking "He just used a contraction. And said 'fucking'? What the hell?"
     vivi neutral "Complete what?" 
     show urshu neutral blush with dissolve

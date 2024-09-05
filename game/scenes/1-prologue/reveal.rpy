@@ -99,7 +99,7 @@ label reveal:
     stop sound fadeout 1.0
 
     show ava angry
-    ava "Ignore the pawn. {i}We{/i} will ask the ques--"
+    ava "Ignore the pawn. {i}We{/i} will ask the ques—"
 
     # EFFECT: Brighten or distort the display
     show diningcar at bright with dissolve

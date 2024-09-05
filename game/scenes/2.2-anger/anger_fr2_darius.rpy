@@ -26,7 +26,7 @@ label anger_fr2_darius:
     show darius surprised blush
     darius "I'm sorry?"
     vivi happy blush "Something where you have to do it just right to score..."
-    darius "Ms. Sanssouci, I think this is hardly the time or place--"
+    darius "Ms. Sanssouci, I think this is hardly the time or place—"
     vivi neutral "Darts, Darius. I'm talking about darts."
     show darius neutral blush
     darius "Right. Darts."
@@ -41,7 +41,7 @@ label anger_fr2_darius:
     darius sad "Not exactly, no. I've been a bit... busy for the last thousand years."
     darius neutral "And as a side note, not all flirting is harmless. Trust me."
     vivi sad "I...I didn't mean to bring up anything painful."
-    vivithinking sad "He's staring at me--No, through me--So intensely."
+    vivithinking sad "He's staring at me—No, through me—So intensely."
     vivi neutral "So... What have you been busy with?"
     darius neutral "Oh, this and that. My kind live a long time. At least...we're supposed to."
     vivi neutral "I suppose I wouldn't know what that's like. We only get about 80 good years if we're lucky. And I suppose I wasn't lucky."
@@ -51,7 +51,7 @@ label anger_fr2_darius:
     darius surprised "Excuse me?"
     vivi angry "At least you had a life. Mine was cut short. I had more I wanted to do. You could at least clue me into what you're so upset about."
     darius angry "I owe you no such explanation."
-    vivi angry "It's not about owing anything, I'm not keeping a ledger--"
+    vivi angry "It's not about owing anything, I'm not keeping a ledger—"
     darius angry "Neither am I. Not anymore."
     vivithinking surprised "He's practically shaking."
     vivi neutral "I've touched a nerve. I'm sorry. Again. I swear I'm not trying to get under your skin."

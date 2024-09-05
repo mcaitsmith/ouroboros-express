@@ -195,11 +195,11 @@ label bargaining_fr2_darius:
     darius neutral "..."
     darius surprised "You...you..."
     darius sad "...I see."
-    vivi neutral "I'm sorry! I--"
+    vivi neutral "I'm sorry! I—"
     darius sad "You don't need to say anything else."
     vivi neutral "Wait, Darius! You don't understand!"
     darius angry "What is there to not understand? You kept this a secret from me! I respected you enough to not read you, and this is how you repay me?" 
-    vivi neutral "Darius! I--"
+    vivi neutral "Darius! I—"
     darius angry "Did you ever stop to think about how the rest of us would feel?"
     darius sad "How I'd feel being trapped here...without you?"
 
@@ -229,7 +229,7 @@ label bargaining_fr2_darius:
 
     # ??DECAY (and if not ATTRACTION above)
     else:
-        vivi sad "But Darius! I--"
+        vivi sad "But Darius! I—"
         darius angry "I already told you! You don't need to say anything else."
 
         show vivi sad at left

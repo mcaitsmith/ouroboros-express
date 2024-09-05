@@ -161,10 +161,10 @@ label journal:
                 text "{font=Slimamif.ttf}{size=16}{color=#000000}I feel you, Susu'Rha. \nI also isolated myself \nfrom my family. \nIs this fate?{/color}{/size}{/font}" :
                     xalign 0.785 yalign 0.55
             elif att_meter_susurha <= 100 :
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/size}{/font}" :
+                text "{font=Slimamif.ttf}{size=16}{color=#000000}I knew this as \na kid—dragons aren't \nscary! They're based!{/color}{/size}{/font}" :
                     xalign 0.785 yalign 0.55
         elif att_meter_susurha > 100:
-            text "{font=Slimamif.ttf}{size=16}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/size}{/font}" :
+            text "{font=Slimamif.ttf}{size=16}{color=#000000}I knew this as \na kid—dragons aren't \nscary! They're based!{/color}{/size}{/font}" :
                 xalign 0.785 yalign 0.55
            
     return

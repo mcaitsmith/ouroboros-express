@@ -104,7 +104,7 @@ label interview_susurha:
             vivi angry "I just came here to get this assignment done, not get a self-care lecture from a talking lizard."
             susurha angry "Ss-uit yourself."
             susurha neutral "Alright, then. I've spoken enough about myself for one conversation."
-            vivi neutral "I mean, not really. You kinda avoided my--"
+            vivi neutral "I mean, not really. You kinda avoided my—"
 
             # JUMP TO: "So enough about me. Who are you, Vivienne?"
 

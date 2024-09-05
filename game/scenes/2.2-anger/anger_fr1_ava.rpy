@@ -100,7 +100,7 @@ label anger_fr1_ava:
             ava angry "Why?! We are no more! Our mother sacrificed us. Gutted us like a butcher does a fatted calf."
             vivithinking surprised "Unnecessarily graphic and undeniably tragic!"
             vivi surprised "That's your people's tradition? Sacrifice?!"
-            ava sad "We are sacrificed lest people love us too much. Once, an avatar nearly toppled the royals. But now, that is only but a distant fairytale ."
+            ava sad "We are sacrificed lest people love us too much. Once, an avatar nearly toppled the royals. But now, that is only but a distant fairytale."
             vivi neutral blush "Well, then no offense, but you're better off here. If your whole purpose was to be sacrificed, then guess what?"
             show ava happy blush with dissolve
             ava "Then our service is at an end. We are free."
@@ -138,7 +138,7 @@ label anger_fr1_ava:
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
             ava angry "Perhaps you should heed your own advice, Vivienne."
             vivithinking angry "Hmph. Well, someone's got their knickers in a twist!" 
-            vivi angry "Perhaps I shall. Goodbye Asha."
+            vivi angry "Perhaps I shall. Goodbye, Asha."
             ava angry "Hmph. Very well. Have an... acceptable evening, Vivienne."
 
             # ava exits

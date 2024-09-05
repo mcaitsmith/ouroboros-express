@@ -44,7 +44,7 @@ label denial_fr2_ava:
 
             play sound attchoice
 
-            vivi neutral "Maybe we all matter, Asha,"
+            vivi neutral "Maybe we all matter, Asha."
             vivi sad "Maybe we're all just specks of sand on a cosmic beach."
             vivi sad "Our lives only have the value we give it. Yours. Mine. Theirs."
             ava sad "There are times we wished for a simpler life. Family. Friends. Love, perhaps? All forbidden. Even tears."

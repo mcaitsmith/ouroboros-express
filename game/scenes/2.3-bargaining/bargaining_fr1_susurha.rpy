@@ -16,7 +16,7 @@ label bargaining_fr1_susurha:
 
     show susurha neutral at right with dissolve
 
-    vivithinking "There they are. Wait, what are they--"
+    vivithinking "There they are. Wait, what are they—"
     vivi neutral "Susu'rha? What are you doing?"
     vivi neutral "You're staring out that dirty window like a Natasha Bedingfield song."
     vivi neutral "Is something wrong?"
@@ -99,7 +99,7 @@ label bargaining_fr1_susurha:
             susurha neutral "He told you that?"
             vivi neutral "Not in so many words."
             susurha neutral "..."
-            susurha neutral "That man or...thing, or whatever he is—-what makes you think we can trust him?"
+            susurha neutral "That man or...thing, or whatever he is—what makes you think we can trust him?"
 
             show vivi neutral at left
 

@@ -66,7 +66,7 @@ label denial_fr1_darius:
 
             vivithinking "There's a pain in their voice, it's almost... melancholic?"
 
-            vivi "If you don't mind me asking, what happened--"
+            vivi "If you don't mind me asking, what happened—"
 
             darius neutral "Ahem..."
 
@@ -113,7 +113,7 @@ label denial_fr1_darius:
 
             show darius happy blush with dissolve
 
-            darius "I-- uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
+            darius "I— uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
 
             show vivi happy 
             vivithinking "Who knew mindflayers could get flustered. And even a little cute?"

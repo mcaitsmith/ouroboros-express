@@ -263,7 +263,7 @@ label bargaining_fr2_susurha:
         play sound decchoice
 
         vivi angry "Well, if you don't know what it is, keep your opinion to yourself!"
-        susurha neutral "If you'd just let me help you--"
+        susurha neutral "If you'd just let me help you—"
         vivi angry "I've got this under control!"
         susurha angry "Enough with the rude commentary!"
         susurha angry "You act as though you WISH to displease Urshu!"
@@ -275,7 +275,7 @@ label bargaining_fr2_susurha:
         vivithinking "Maybe I know it's all pointless."
         vivi neutral "Let's just get this over with, then."
         vivi neutral "I'm too tired to care."
-        susurha neutral "Are you sure you don't--"
+        susurha neutral "Are you sure you don't—"
 
         # JUMP TO: vivi neutral "Let's serve this up!"
         jump barg_fr2_susu_end

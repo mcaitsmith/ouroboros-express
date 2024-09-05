@@ -36,7 +36,7 @@ label good_briefing:
     vivi neutral "How do you know?"
     urshu happy "I trust you."
     vivithinking neutral "He trusts me? With what?"
-    vivi neutral "Oh, well...Thanks Urshu."
+    vivi neutral "Oh, well...Thanks, Urshu."
     vivi happy "You're in a really good mood today!"
     urshu happy "I'm not the only one. Come see who's waiting for you in the lounge."
 

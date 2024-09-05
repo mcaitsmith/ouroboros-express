@@ -128,7 +128,7 @@ label interview_ava:
             # ava leaves
             hide ava with dissolve
 
-            vivi happy "Oh, sure--all for one and one for all to you, too!"
+            vivi happy "Oh, sure—all for one and one for all to you, too!"
 
             # JUMP TO: "Well, what now?"
 

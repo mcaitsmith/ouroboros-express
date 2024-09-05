@@ -113,7 +113,7 @@ label bargaining_meal_reveal:
     vivi happy "That...that's amazing! Urshu, that's the best news we could have possibly heard!"
     vivithinking neutral "Hell yeah! We are getting OUTTA HERE!"
     urshu neutral "I am certain with every ounce of my being that this tastes absolutely wondrous."
-    vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so--"
+    vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so—"
     vivi neutral "..."
     vivi neutral "Wait, what do you mean by...certain?"
     vivithinking neutral "Holy moly. He's crying again!"
@@ -146,8 +146,8 @@ label bargaining_meal_reveal:
     urshu neutral "But the Ouroboros Express is not a second chance. It is your last chance to make peace with yourself and the other travelers with you."
     urshu neutral "I told you that I am a conductor, nothing more. I am sorry for this ruse. It was wrong of me to play with your heart in such a careless manner." 
     urshu neutral "But when you shook my hand, there was a certain hope in your soul, Miss Sanssouci, that I was too weak to crush at its onset." 
-    urshu neutral "Only now are you ready to accept the reality of—-"
-    vivi sad "I can't hear another word. I can't—-"
+    urshu neutral "Only now are you ready to accept the reality of—"
+    vivi sad "I can't hear another word. I can't—"
 
     # fade out
     scene black with fade
