@@ -166,9 +166,10 @@ label depression_briefing:
             
             
             # OPTION 2
-            "Ugh, no. I don't want to replay my life for you. Its meaningless now. It's over.": 
+            "Ugh, no. I don't want to replay my life for you.": 
             
-                vivi angry "Ugh, no. I don't want to replay my life for you. Its meaningless now. It's over."
+                vivi angry "Ugh, no. I don't want to replay my life for you."
+                vivi angry "It's meaningless now. It's over."
                 vivi sad "I just want to lie here. On my face."
                 urshu angry "With my most sincere apologies, there is no time for that either, Miss Sanssouci."
                 urshu sad "I do wish I could make you see how very little time you have. How very important it is to use it."
