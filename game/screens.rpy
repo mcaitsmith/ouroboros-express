@@ -362,6 +362,7 @@ screen navigation():
 
         if not main_menu:
             textbutton _("Return"):
+                background "gui/pause/button2.png"
                 action Return()
         else:
             if renpy.variant("pc"):
