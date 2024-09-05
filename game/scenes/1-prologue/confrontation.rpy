@@ -1,4 +1,4 @@
-﻿# The scene starts here.
+# The scene starts here.
 
 label confrontation:
 
@@ -12,7 +12,7 @@ label confrontation:
 
     urshu happy "Doo doo doo, dee dee dee, dum dum dum!"
     vivithinking angry "There he is. Humming a jaunty tune. Polishing his little cap, er... badge... thing! The audacity!"
-    vivithinking angry "Just look at his smug face, his perfectly tailored black suit with those golden details, his huge caboose in fine detail—"
+    vivithinking angry "Just look at his smug face, his perfectly tailored suit with  golden details... his tight caboose in those sharp black pants—"
     urshu neutral "Miss Sanssouci?"
     vivithinking surprised blush "Shit! How long have I been staring?"
     urshu neutral "I am flattered by your gaze, my dear, but do take care. In some lands, the victim of such a gaze is entitled to divorce your head from your shoulders."
@@ -20,8 +20,8 @@ label confrontation:
     urshu neutral "Oh? Is there no bread? Shall you eat cake?"
     vivithinking angry "Oh, the {i}gall{/i}."
     vivi angry "I {i}know{/i}, Urshu."
-    urshu neutral "You know? Know what? Recipes for cake? My waist size? It does take some doing, you know, finding a tailor who can accommodate my, hmm, dimensions."
-    vivi angry "I know."
+    urshu happy "You know? Know what? Recipes for cake? My waist size?"
+    vivi angry "Quit the deflections. I said I {i}know.{/i}"
     urshu neutral "..."
     urshu neutral "Ah, so you have followed your investigative proclivities. Tell me, what is it you {i}know{/i}?"
     vivi angry "For starters, this train exists on some sort of cosmic plane heading nowhere good, and—"
