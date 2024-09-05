@@ -184,7 +184,7 @@ label depression_briefing:
     urshu neutral "Not death, but the fleeting moments before. When nothing holds you back. When it does not matter that there is no tomorrow, because it is when you have only the present that you can be truly fearless."
     vivi angry "Shut up. I won't take this flowery language, not now. Make sense or leave."
     urshu angry "Don't you get it? This is all on purpose and you only have so much time! You must complete--"
-    vivithinking "He just used a contraction. And he's never used that kind of tone with me. He sounds almost... desperate. What the hell?"
+    vivithinking "Well that was... unusually direct. No creative metaphor? And he's never used that kind of tone with me. He sounds almost... desperate. What the hell?"
     vivi neutral "Complete what?" 
     show urshu neutral blush with dissolve
     urshu "Nothing. I apologize, Miss Sanssouci, for losing my composure."
