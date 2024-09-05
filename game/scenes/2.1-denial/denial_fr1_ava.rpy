@@ -23,9 +23,24 @@ label denial_fr1_ava:
 
     show ava happy blush with dissolve
 
+    # <CHOICE>
     ava "Hello, little one. Has our radiance tempted you today? Come, sit with us for a moment."
 
-    vivithinking "When she says it like this. It's not like I can say no."
+    menu:
+
+    # OPTION 1
+        "(Well, when she says it like that, how's a girl supposed to say no?)":
+
+            vivithinking "Well, when she says it like that, how's a girl supposed to say no?"
+
+            # JUMP TO show ava neutral -blush
+
+    # OPTION 2
+        "(Well, it can't hurt. I guess.)":
+
+            vivithinking neutral "Well, it can't hurt. I guess."
+
+            # JUMP TO show ava neutral -blush
 
     show ava neutral -blush
 

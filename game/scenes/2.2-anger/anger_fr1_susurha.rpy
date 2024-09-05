@@ -59,11 +59,25 @@ label anger_fr1_susurha:
 
             vivi neutral "I'd be revealing too much."
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
-            vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."    
-            susurha neutral "Either you're suffering from an acute lack of self-awareness, or you're simply a bad liar."
-            vivithinking angry "The nerve of this creature!"
+            vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."
 
-            # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+            # <CHOICE>
+            susurha neutral "Either you're suffering from an acute lack of self-awareness, or you're simply a bad liar."
+            
+            menu:
+                # OPTION 2A
+                "(The nerve of this creature!)":
+
+                    vivithinking angry "The nerve of this creature!"
+
+                    # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+
+                # OPTION 2B
+                "(Ugh. Jerk. Not far wrong, though.)":
+
+                    vivithinking neutral "Ugh. Jerk. Not far wrong, though."
+
+                    # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
     susurha neutral "I'm going to draw cards from this deck with questions."
     susurha happy "You will answer, and I will try to ascertain whether or not you are lying."

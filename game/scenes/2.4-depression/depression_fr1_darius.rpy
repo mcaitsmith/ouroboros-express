@@ -149,8 +149,24 @@ label depression_fr1_darius:
     darius sad "I wouldn't."
     darius "In fact, perhaps it's time we leave. This lounge is feeling a bit small. Excuse me."
 
+    # <CHOICE>
     hide darius with dissolve
-    vivithinking sad "I wish I could have comforted him more..."
+    
+    menu:
+        # OPTION 1
+        "(I wish I could have comforted him more...)":
+
+            vivithinking sad "I wish I could have comforted him more..."
+
+            # JUMP TO JUMP TO: Asha Susurha convo
+
+        # OPTION 2
+        "(I'm just spectacular at this. Still, not like he wanted my help.)":
+
+            vivithinking neutral "I'm just spectacular at this. Still, not like he wanted my help."
+
+            # JUMP TO JUMP TO: Asha Susurha convo
+    
 
     #JUMP TO: Asha Susurha convo
     jump depression_asha_susurha

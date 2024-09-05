@@ -24,8 +24,23 @@ label bargaining_fr1_darius:
     vivi happy "Have I ever told you you're quite charming?"
     darius neutral "Oh gods, here she starts."
     vivi happy "Such a vast intelligence, but always holding it tight to the chest. So many  thoughts and words, but only picking out a select few."
+    
+    # <CHOICE>
     darius neutral "I can tell this is killing you. Come on, out with it."
-    vivithinking "Surprisingly, no, if I'm being honest. But they don't have to know that."
+    
+    menu:
+        # OPTION 1
+        "(Surprisingly, no, if I'm honest. But they don't have to know that.)":
+
+            vivithinking neutral "Surprisingly, no, if I'm honest. But they don't have to know that."
+            # JUMP TO vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
+
+        # OPTION 2
+        "(Ugh. They got me. Still, no harm in indulging them.)":
+
+            vivithinking neutral "Ugh. They got me. Still, no harm in indulging them."
+            # JUMP TO vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
+    
     vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
     darius happy "Ahahaha! Oh, you humans are a riot. Comedy, that's the true gift your species possesses..."
     darius neutral "Hold on. You're serious?"

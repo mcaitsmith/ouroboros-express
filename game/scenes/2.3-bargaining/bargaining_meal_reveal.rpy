@@ -60,7 +60,7 @@ label bargaining_meal_reveal:
     urshu neutral "Let's try a bite, shall we?"
     vivithinking neutral "Alright, let's set this down. Careful... Okay. Nothing spilled." 
     vivithinking neutral "God, I'm hovering. Step away, V. It smells {i}soooo good{/i}, though. Maybe he'll leave us a bite?" 
-    vivithinking neutral "Oh, shit, he's going for it!"
+    vivithinking neutral "Oh oh oh! He's going for it!"
 
     # <CHOICE>
     "I need to hold on to something!"
@@ -131,7 +131,6 @@ label bargaining_meal_reveal:
 
     if urshu_story_1 == True and urshu_story_2 == True and urshu_story_3 == True:
 
-        urshu sad "Miss Sanssoucci, my dear."
         vivi neutral "You can just call me Vivi, Ursh."
         urshu surprised blush "I would like that, Miss Sa- I mean, my dear Vivi."
         urshu sad -blush "But I must confess..."

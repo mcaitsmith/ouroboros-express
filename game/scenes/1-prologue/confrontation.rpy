@@ -11,7 +11,7 @@ label confrontation:
         xzoom -1
 
     urshu happy "Doo doo doo, dee dee dee, dum dum dum!"
-    vivithinking angry "There he is. Humming a jaunty tune. Polishing the leather. The audacity!"
+    vivithinking angry "There he is. Humming a jaunty tune. Polishing his little cap, er... badge... thing! The audacity!"
     vivithinking angry "Just look at his smug face, his perfectly tailored black suit with those golden details, his huge caboose in fine detail—"
     urshu neutral "Miss Sanssouci?"
     vivithinking surprised blush "Shit! How long have I been staring?"

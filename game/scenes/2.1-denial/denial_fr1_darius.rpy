@@ -39,10 +39,27 @@ label denial_fr1_darius:
 
     vivithinking "Their... phalanges? Tentacles? Whatever they are. They keep them hidden from me. Strange."
 
+    # <CHOICE>
     darius neutral "I'm not entirely sure, but he's given us no reason to doubt. We should find out soon regardless."
 
-    show vivi angry 
-    vivithinking "Real charmer, this one. Who knows if this is some sort of trap, a messed up fantasy for this conductor? Are we supposed to just take him at his word?"
+    menu:
+
+        # OPTION 1
+            "(Real charmer, this one.)":
+
+                vivithinking angry "Real charmer, this one."
+                vivithinking angry "Who knows if this is some sort of trap, a messed up fantasy for this conductor? Are we supposed to just take him at his word?"
+    
+                # JUMP TO darius neutral "Now that you mention it, I am... curious...
+
+        # OPTION 2
+            "(Damn. I was banking on them knowing.)":
+
+                vivithinking neutral "Damn. I was banking on them knowing."
+                vivithinking neutral "I hope this won't be a total bust."
+
+                # JUMP TO darius neutral "Now that you mention it, I am... curious...
+
 
     # <CHOICE>
 
