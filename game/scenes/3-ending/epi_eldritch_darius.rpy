@@ -11,7 +11,7 @@ label epi_eldritch_darius:
 
     stop music fadeout 1.0
     pause 1.0
-    play music badendmusic volume 0.5
+    play sound train loop
 
     #LOCATION: eldritchlandscape
     scene black with fade
