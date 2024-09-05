@@ -48,7 +48,7 @@ label figuring_it_out:
 
                 vivithinking neutral "I'm traveling with {i}very{/i} strange people."
                 vivithinking neutral "And no one remembers how we got onto the train. But we know {i}why{/i} we came aboard. For me, I was chasing down another story."
-                vivithinking neutral "Little did I know I'd be on a train with a goddess, a detective-octopus-thing, and a lounge lizard prince."
+                vivithinking neutral "Little did I know I'd be on a train with a goddess, a detective-squid-thing, and a lounge lizard prince."
                 vivithinking surprised "Wait, what am I saying? When I get off this train, I'll have enough material to start a media empire!"
                 vivithinking neutral  "Huh. Where {i}am{/i} I getting off this train?"
                 vivithinking neutral "The conductor would know. Urshu seems like part of the puzzle."

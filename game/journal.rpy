@@ -99,7 +99,7 @@ label journal:
                 text "{font=Slimamif.ttf}{size=16}{color=#000000}What a specimen! \nNot sure if more \nsurprised at their stor-\ny or their physiology.{/color}{/size}{/font}" :
                     xalign 0.785 yalign 0.08
             elif att_meter_darius <= 40:
-                text "{font=Slimamif.ttf}{size=16}{color=#000000}kinda...hot{/color}{/size}{/font}" :
+                text "{font=Slimamif.ttf}{size=16}{color=#000000}There's an \nallure to him. \nMust know more.'{/color}{/size}{/font}" :
                     xalign 0.785 yalign 0.08
             elif att_meter_darius <= 60:
                 text "{font=Slimamif.ttf}{size=16}{color=#000000}Their baggage \nis wearing them \ndown. It affects\n me...{/color}{/size}{/font}" :

@@ -27,7 +27,7 @@ label denial_fr1_darius:
 
     darius neutral "Go ahead."
 
-    vivithinking "If anyone has a good idea what the hell is going on here, I'm guessing the mystical octopus detective might have a decent shot at it."
+    vivithinking "If anyone has a good idea what the hell is going on here, I'm guessing the mystical squid detective might have a decent shot at it."
 
     vivi  "Tell me, you must have experience with otherworldly phenomena, right?"
 

@@ -50,7 +50,7 @@ label interview_darius:
             vivi neutral "Yeah, you know. The overcoat, tentacles, mask. What're you going for?"
             show darius neutral blush with dissolve
             darius "I don't... A detective? Yes, a detective."
-            vivi neutral "Not quite what I meant, but sure, an octopus detective."
+            vivi neutral "Not quite what I meant, but sure, a squid detective."
             show darius neutral -blush
             darius neutral "You... don't know what I am, do you?"
             vivi neutral "Sorry, I'm a bit out of the loop with current trends so I don't get the reference."
@@ -88,8 +88,9 @@ label interview_darius:
             darius neutral "Nowhere you're familiar with."
             vivi angry "Do you intend to be so difficult throughout this entire process?"
             darius neutral "I am simply being honest. I come from a rather small garden."
-            vivi neutral "Octopus puns? Really?"
-            darius neutral "It wasn't intended, but take it how you will."
+            vivi neutral "Garden hmm? Funny way to refer to back home."
+            darius neutral "That's not what it's really called, of course. Again, you wouldn't be familiar with it'."
+            vivi thinking ". . .not what I meant, but moving on."
 
             # JUMP TO vivi neutral "Forget it. Last question."
 
@@ -111,7 +112,8 @@ label interview_darius:
     darius sad "Sorry, I'm...not feeling very well. Why am I here, you asked?"
     vivi neutral "Essentially, yes."
     darius neutral "Duty... yes."
-    vivithinking neutral "Duty? You're a detective. What, did you need inspiration for your wardrobe?"
+    vivithinking neutral "Duty? You're a detective. You just told me you weren't on a case!" 
+    vivithinking neutral "What, does the decor match your outfit? Trying to get wardrobe inspiration?"
     vivi neutral "Very interesting, I—"
     vivithinking sad "It's like a chill just came in. Why is the room so...heavy? Such a sickly atmosphere, like wet clothes sticking to your skin."
     vivi neutral "Thank you, uh...Darius. I'll leave you be."

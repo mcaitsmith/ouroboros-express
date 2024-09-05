@@ -78,7 +78,7 @@ label bargaining_fr2_darius:
             # JUMP TO: vivi neutral "So, my sous chef, what shall we prepare?"
 
     vivi neutral "So, my sous chef, what shall we prepare?"
-    darius sad "I'm...not sure. I don't think typical mindflayer cuisine fits the palate of our guests."
+    darius sad "I'm...not sure. I don't think typical illithid cuisine fits the palate of our guests."
 
     show vivi angry at left
 
