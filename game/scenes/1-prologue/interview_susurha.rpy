@@ -72,9 +72,9 @@ label interview_susurha:
     vivithinking angry "And why are they looking at me like I'M the freak?! THEY'RE the talking wellness-guru gecko!"
     vivithinking angry "The attitude on this one."
 
-    susurha neutral "Your face right now...You're judging me."
+    susurha sad "Your face right now...You're judging me."
     vivi neutral "No, I..."
-    susurha neutral "I'd say stay awhile and relax with me, but I don't think you'd know how."
+    susurha sad "I'd say stay awhile and relax with me, but I don't think you'd know how."
 
     # <CHOICE>
     vivithinking angry "Oooh! This one is getting on my nerves."
