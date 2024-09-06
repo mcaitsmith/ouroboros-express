@@ -101,9 +101,13 @@ label denial_fr2_darius:
 
     darius neutral "Are you ok, Ms. Sanssouci? You look a little... sickly."
 
-    darius surprised "Ahh! My apologies."
+    darius surprised "Ahh! My apologies. Give me a moment."
 
-    vivithinking  "A quick flick of the wrist, graceful as ever. Did they do something..? Things feel a lot lighter."
+    #SOUND (if possible): Darius sighs/tries to calm themself
+
+    darius neutral "There. Feeling better?"
+
+    vivithinking  "A quick flick of the wrist... wish {i}I{/i} could be so grateful. Did they do something..? Things feel a lot lighter."
 
     darius neutral "A mindflayer's brain is a powerful thing. Sometimes emotions and thoughts can leak out into the atmosphere. I believe you may have been feeling my...malaise, so to speak."
 
