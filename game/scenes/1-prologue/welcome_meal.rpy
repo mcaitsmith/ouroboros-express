@@ -17,7 +17,7 @@ label welcome_meal:
     show urshu neutral at right with dissolve
 
     urshu neutral "Welcome to the dining car. The food will be out shortly."
-    vivi neutral "It all smells del--"
+    vivi neutral "It all smells del—"
 
     show vivi surprised at left
 

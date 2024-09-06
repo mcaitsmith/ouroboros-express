@@ -131,7 +131,7 @@ label denial_fr2_darius:
 
     vivi surprised "Trail? Are you some sort of detective?"
 
-    darius surprised "What? Ahem I'm-- something like that, yes. I have the skills needed for the job, don't you worry."
+    darius surprised "What? Ahem I'm— something like that, yes. I have the skills needed for the job, don't you worry."
 
     vivithinking "What a weirdo. They seem pretty confident though, so I'll take their lead on this. Nice to be able to rely on someone for once."
 
@@ -382,7 +382,7 @@ label denial_fr2_darius:
 
             urshu neutral "I know asking questions is in a reporter's nature, but is decorum not? Mr. Wrecker is clearly \"going through something\" as it were, so I'd appreciate your silence."
 
-            vivi angry blush "I--"
+            vivi angry blush "I—"
 
             vivithinking "Scolded like a schoolgirl. I hate that he's right."
 
@@ -470,9 +470,9 @@ label denial_fr2_darius:
     #VISUAL: screen shake
     show observatory with hpunch
 
-    darius angry "I AM AN INQUISITOR OF THE LORD--"
+    darius angry "I AM AN INQUISITOR OF THE LORD—"
 
-    vivi sad "Darius... your emotions are--"
+    vivi sad "Darius... your emotions are—"
 
     #VISUAL: screen shake
     show observatory with hpunch

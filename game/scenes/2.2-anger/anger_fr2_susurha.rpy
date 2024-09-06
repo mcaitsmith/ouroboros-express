@@ -67,7 +67,7 @@ label anger_fr2_susurha:
             vivi happy "Not as much as a bullseye!"
             susurha surprised "Hmm... seems my magic doesn't work here."
             vivi happy "Either that, or I'm better at darts than you."
-            susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not -- in this case, inadequate at this darts game."
+            susurha neutral "In that case, thank you for not patronizing me by pretending to be something you're not — in this case, inadequate at this darts game."
             vivi neutral "You're...welcome." 
             #JUMP TO: susurha neutral "..."
 

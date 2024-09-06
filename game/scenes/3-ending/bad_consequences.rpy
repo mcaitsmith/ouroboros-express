@@ -16,7 +16,7 @@ label bad_consequences:
     # SOUND: horror
     play sound horror loop
 
-    vivi sad "No! It's her. The monster. The--"
+    vivi sad "No! It's her. The monster. The—"
     vivi sad "No, don't come out of the mirror! Stop! No!"
     vivithinking surprised "She's...embracing me!!"
     vivi "..."

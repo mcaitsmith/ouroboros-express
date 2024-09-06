@@ -104,7 +104,7 @@ label depression_fr2_darius:
     vivi surprised "What do you mean by that?"
     darius neutral "I'm not who you think I am, Ms. Sanssouci. Vivi."
     darius "I'm a monster. Worse, even, I'm a coward."
-    vivi happy "Come on, now. You're too hard on yourself. I--"
+    vivi happy "Come on, now. You're too hard on yourself. I—"
     vivithinking "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
     darius angry "I'm responsible for the deaths of millions of sentient beings. {i}Millions{/i}."
     darius sad "I deserve to be crushed by those hands. I long for it."
@@ -135,7 +135,7 @@ label depression_fr2_darius:
     vivi neutral "Who were they?"
     darius neutral "I don't think a human tongue could say their name without considerable effort. They are ancient."
     darius sad "Eldritch."
-    darius neutral "You may think of them as That Which Gathers. Or, perhaps-- Za'deeh."
+    darius neutral "You may think of them as That Which Gathers. Or, perhaps— Za'deeh."
     vivi neutral blush "Your terrifying ancient eldritch god is a zaddy?"
     show darius surprised blush with dissolve
     darius "What? No! Their very gaze would melt your mind, much less your face! Put some respect on Za'deeh's name!"
@@ -166,7 +166,7 @@ label depression_fr2_darius:
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi sad "More open than you'll ever be?"
-            darius sad "I suppose so. There's just-- the weight. Of everything."
+            darius sad "I suppose so. There's just— the weight. Of everything."
             vivi neutral "There you are."
         
             # JUMP TO: vivi neutral "Now. Let's get real."

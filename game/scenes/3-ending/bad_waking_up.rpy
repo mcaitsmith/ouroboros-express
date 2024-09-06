@@ -41,7 +41,7 @@ label bad_waking_up:
     vivithinking sad "It's all my fault. It's all my {i}fault{/i}!"
     vivi angry "Shut up! Look at you, bleeding from your eyes and still blaming yourself!"
     vivithinking sad "Of course it's my fault. It always is. I never take chances. Never the right chances..."
-    vivi sad "But...I tried. I did everything Urshu asked. I tried to connect with all of them! Asha, Susu, Darius...They--"
+    vivi sad "But...I tried. I did everything Urshu asked. I tried to connect with all of them! Asha, Susu, Darius...They—"
     vivithinking angry "They didn't try. They let their wounds define them. They, they..."
     vivi neutral "They didn't let me in. They put up their walls and cowered."
     vivi angry "Fuck. Them."

@@ -52,7 +52,7 @@ label anger_briefing:
             play sound shuffle
             pause 2.0
             vivi neutral "What are these...playing cards?" 
-            urshu happy "Games, my dear. The answer is games. They bring unity and competition. They challenge you and change you. They--"
+            urshu happy "Games, my dear. The answer is games. They bring unity and competition. They challenge you and change you. They—"
             vivi neutral "Look, Ursh, I've got your number now. You think I should play games with the other passengers."
             vivi neutral "No, let me rephrase. You want me to shoot the breeze while this bullet train screams on down to our universal heat death?"
             urshu happy "Well, excuse me. You're already playing love games with the delicious denizens of death here, Miss Sanssouci. Why not something less challenging?"
@@ -88,7 +88,7 @@ label anger_briefing:
             vivi neutral "So, I'm right."
             urshu happy "Ha...no."
             urshu neutral "It concerns me greatly to think that you believe baby teeth will keep you young. Do you consider baby teeth to be a source of eternal life? The philosopher's enamel, if you will."
-            vivi surprised "I--what?"
+            vivi surprised "I—what?"
             urshu neutral "Are you in a cult? You must be, back in that backwater you call civilization. I do not wish to judge, not at all. It's a natural question, in regards to harvesting baby teeth."
             vivi neutral "Oh my God."
             urshu neutral "How do you harvest baby teeth? Do you pluck them fresh or bribe a despondent dental worker?"

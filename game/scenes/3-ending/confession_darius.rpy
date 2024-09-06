@@ -24,7 +24,7 @@ label confession_darius:
     darius "I'm trying to bare my soul to you, you wretched human!"
     darius "I know I'm...worthless. A murderer. Degraded beyond belief."
     show darius sad blush
-    darius "But I can... I must...be better. These sins. I carry them with me--I can't pretend they don't mean anything, anymore."
+    darius "But I can... I must...be better. These sins. I carry them with me—I can't pretend they don't mean anything, anymore."
     darius "I own them. But whatever happens, I want someone by my side. Not to share my burden, but as a witness. Someone to remind me of the Ouroboros Express."
     show darius neutral blush
     darius "Someone who knows I'm not hiding any longer."
@@ -50,7 +50,7 @@ label confession_darius:
 
             $ darius_friend = True
 
-            vivi neutral blush "Darius. I believe that you've accepted your past. But your future--you have a lot to figure out on your own."
+            vivi neutral blush "Darius. I believe that you've accepted your past. But your future—you have a lot to figure out on your own."
             vivi happy "I'd love to come with you on your journey. As a friend."
             show darius neutral blush with dissolve
             darius "I understand. And I appreciate the confidence. And your honesty."

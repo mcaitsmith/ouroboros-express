@@ -17,7 +17,7 @@ label denial_cs2:
 
     vivithinking "This car has big windows..."
     vivithinking "What I see behind those windows makes...zero sense though."
-    vivithinking "Surreal landscapes--blending into a swirl of colors. The train's breathtaking speed blurs everything into cosmic spaghetti. It gets darker. Darker."
+    vivithinking "Surreal landscapes—blending into a swirl of colors. The train's breathtaking speed blurs everything into cosmic spaghetti. It gets darker. Darker."
 
     # Fade back in.
     show cabin with dissolve

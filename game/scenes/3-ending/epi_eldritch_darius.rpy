@@ -26,6 +26,6 @@ label epi_eldritch_darius:
 
     urshu sad "He morphed and shifted, the hands he so despised growing, the fingers elongating. He grew and grew, his body cracking and bending under the stress, until he resembled the very horror he so feared."
 
-    urshu sad "Somewhere deep down, he knew this was a fitting fate for him--a nightmare in body to reflect the monster within."
+    urshu sad "Somewhere deep down, he knew this was a fitting fate for him—a nightmare in body to reflect the monster within."
 
     return

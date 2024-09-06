@@ -98,7 +98,7 @@ label bargaining_fr1_susurha:
             susurha neutral "He told you that?"
             vivi neutral "Not in so many words."
             susurha neutral "..."
-            susurha neutral "That man or...thing, or whatever he is—-what makes you think we can trust him?"
+            susurha neutral "That man or...thing, or whatever he is—what makes you think we can trust him?"
 
             show vivi neutral at left
 

@@ -28,7 +28,7 @@ label romance_darius:
     show observatory with flash
 
     vivithinking sad "The end... It's here... But I feel at peace." 
-    vivithinking happy "Wherever you are, Urshu--thank you."
+    vivithinking happy "Wherever you are, Urshu—thank you."
 
     # VISUAL: screen fades to black  
     scene black with fade
@@ -44,7 +44,7 @@ label romance_darius:
     scene white with Dissolve(3.0)
     # LOCATION: terminalofdreams
 
-    vivi surprised "What-- Where are we? Darius?"
+    vivi surprised "What— Where are we? Darius?"
     darius surprised "Vivi... I-I don't believe it. Haha!"
     vivithinking surprised "He's laughing?"
     vivi surprised "What is this place?"
