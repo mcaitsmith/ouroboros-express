@@ -102,6 +102,9 @@ init python:
 # The game starts here.
 
 label start:
+
+    $ quick_menu = False # hide quick menu at start
+    $ _game_menu_screen = None # disable ESC menu at start
     
     call sounds from _call_sounds # define sounds
     call meters from _call_meters # define meter variables
@@ -127,6 +130,10 @@ label begin:
     $ urshu_story_2 = False
     $ urshu_story_3 = False
     $ urshu_story_4 = False
+
+    $ quick_menu = True
+    $ _game_menu_screen = "save"
+
 
     # jump to first scene
     jump introduction
