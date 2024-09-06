@@ -1,4 +1,4 @@
-﻿# The scene starts here.
+# The scene starts here.
 
 label bargaining_briefing:
     $ day = 3 # bargaining
@@ -42,24 +42,31 @@ label bargaining_briefing:
                 # LOCATION: lounge
                 scene lounge with fade
 
-                show vivi neutral at left with dissolve:
+                show vivi neutral at left:
                     xzoom -1
 
-                vivithinking "Welp. He isn't here. Nobody's here."
+                vivithinking "Well. He isn't here. Nobody's here."
                 vivithinking "Wait...what is..."
-                show vivi surprised
 
                 # VISUAL: rainbows flash around the room
                 scene lounge with flash
                 scene lounge with flash
                 scene lounge with flash
+
+                show vivi surprised at left
+                vivithinking surprised "The train's shaking. Feels like it's coming apart!"
+                vivithinking "Feels like {i}I{/i} might come apart."
+                vivithinking "That strange light is turning the windows into mirrors but I can't see myself in them, just endless other mirrors reflecting back. And then darkness. Darkness I can {i}feel{/i}."
+                vivithinking sad "Like there's a void closing in around me, swallowing me up, and there are things waiting there... things I don't want to see. Is this what the end feels like?"
+                vivithinking "No, pull yourself together, Vivi. It's all just your imagination. It's just..."
                 # VISUAL: a black vignette closes in on the room
+                scene lounge with flash
                 show lounge blur with dissolve
                 # SOUND: Screams, scary cosmic horror shit
                 play sound horror
                 pause 3.0
 
-                vivithinking surprised "Yeah, I'm out."
+                vivithinking surprised "...Yeah, I'm out."
 
                 hide vivi with dissolve
 
