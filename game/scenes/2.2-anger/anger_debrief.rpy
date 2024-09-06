@@ -23,7 +23,9 @@ label anger_debrief:
 
         vivithinking neutral "I should write."
 
-        $ message = "This whole thing is pointless!\nThat conductor... URG!\nI wanna strangle him and wipe that\nstupid smirk off his face.\nTalking to him is like solving a riddle.\nIt's infuriating! Gotta find something on him.\n\nMaybe the others know a thing or two.\n\nThere's gotta be some way to make Urshu help me.\nHe seems like one who'd appreciate an\nexchange for his aid."
+        play sound writing
+
+        $ message = "This whole thing is pointless!\nThat conductor... URG!\nI wanna strangle him and wipe that\nstupid smirk off his face.\nTalking to him is like solving a riddle.\nIt's infuriating!\nGotta find something on him.\nMaybe the others know a thing or two.\n\nThere's gotta be some way to make\nUrshu help me.\nHe seems like one who'd appreciate an\nexchange for his aid."
 
         call display_journal from _call_display_journal_1
         $ cycle = 2

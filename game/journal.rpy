@@ -56,116 +56,118 @@ label journal:
             right_bar Frame("images/journal/bar_empty2.png", 100, 10)
             left_bar Frame("images/journal/bar_full2.png", 100, 10)
         # name text
-        text "{color=#ffffff}Susu'Rha{/color}" xalign 0.64 yalign 0.625
-        text "{color=#ffffff}Avatar of Asha{/color}" xalign 0.64 yalign 0.41
-        text "{color=#ffffff}Darius{/color}" xalign 0.64 yalign 0.195
+        text "{color=#ffffff}Susu'Rha{/color}" xpos 1155 ypos 652
+        text "{color=#ffffff}Avatar of Asha{/color}" xpos 1115 ypos 423
+        text "{color=#ffffff}Darius{/color}" xpos 1170 ypos 196
         # determine diary note
+        # note 9/6/24 - 14 lines max, ~42 chars max per line
         # if len(journal_array) >= 1:
         if cycle == 0:
-            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 1{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 1{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.12
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 170 yanchor 0.0
         # if len(journal_array) >= 2:
         if cycle == 1:
             # text "{color=#000000}DAY 2{/color}"  xalign 0.25 yalign 0.2
-            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 2{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 2{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.12
             # text "{color=#000000}[journal_array[1]]{/color}" xalign 0.25 yalign 0.23
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 170 yanchor 0.0
         # if len(journal_array) >= 3:
         if cycle == 2:
             # text "{color=#000000}DAY 3{/color}"  xalign 0.25 yalign 0.3
-            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 3{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 3{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.12
             # text "{color=#000000}[journal_array[2]]{/color}" xalign 0.25 yalign 0.33
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 170 yanchor 0.0
         # if len(journal_array) >= 4:
         if cycle == 3:
             # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 4{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 4{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.12
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 170 yanchor 0.0
         if cycle == 4:
             # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 5{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.11
+            text "{font=Kalam-Bold.ttf}{size=28}{k=1.5}{color=#000000}{b}DAY 5{/b}{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.12
             # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xalign 0.28 yalign 0.21
+            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 170 yanchor 0.0
+        # note as of 9/6/24: 14 chars max per line, 5 lines max
         #determine darius note
         if eldritch == True:
-            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}UUUuuURssshhuuuUU{/s}{/i}{/color}{/k}{/size}{/font}" :
-                xalign 0.78 yalign 0.08
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}\nUUUuuUR\nssshhu\nuuUU{/s}{/i}{/color}{/k}{/size}{/font}" :
+                xpos 1370 ypos 90
         elif att_meter_darius >= 0 and att_meter_darius <= 100 :
             if att_meter_darius == 0:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}????{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}\n\n????{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 90
             elif att_meter_darius <= 20:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}What a specimen! \nNot sure if more \nsurprised at their stor-\ny or their physiology.{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Not sure if\nmore surprised\nat their story\nor their\nphysiology.{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 90
             elif att_meter_darius <= 40:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}There's an \nallure to him, \nmust know more.'{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}There's an allure\nto him,\nmust know\nmore.{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 90
             elif att_meter_darius <= 60:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Their baggage \nis wearing them \ndown. It affects\n me...{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Their baggage \nis wearing\nthem down.\nIt affects\nme...{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 90
             elif att_meter_darius <= 80:
                 text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Tormented by \npast. I can \nsave them.{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.08
+                    xpos 1370 ypos 90
             elif att_meter_darius <= 100:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.08
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}The end\nchanged them,\nmade them \nanew. I want\nthat too.{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 90
         elif att_meter_darius > 100:
-            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}The end changed \nthem, made them \nanew.I want that too.{/color}{/k}{/size}{/font}" :
-                xalign 0.78 yalign 0.08
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}The end\nchanged them,\nmade them \nanew. I want\nthat too.{/color}{/k}{/size}{/font}" :
+                xpos 1370 ypos 90
         #determine ava note
         if eldritch == True:
-            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}yYYyoouuu Sooon OF {/s}{/i}{/color}{/k}{/size}{/font}" :
-                xalign 0.78 yalign 0.32
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}\nyYYyoouuu\nSooon OF {/s}{/i}{/color}{/k}{/size}{/font}" :
+                xpos 1370 ypos 315
         elif att_meter_ava >= 0 and att_meter_ava <= 100 :
             
             if att_meter_ava == 0:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}????{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.32
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}\n\n????{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 315
             elif att_meter_ava <= 20:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Caution:\nComplicated\nbackground. \nPrincess or \ncaptive?{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.32
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Caution:\nComplicated\nbackground.\nPrincess or \ncaptive?{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 315
             elif att_meter_ava <= 40:
                 text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}kinda WOW{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.32
+                    xpos 1370 ypos 315
             elif att_meter_ava <= 60:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}We're more alike\nthan I thought. \nActually pretty friendly.{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.32
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}We're more\nalike than I\nthought. Actually\npretty friendly.{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 315
             elif att_meter_ava <= 80:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Can't imagine being \nin her shoes... \nBut hardship has \nmade her an\nincredible person.{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.32
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Can't imagine\nbeing in her\nshoes...hard-\nship made her\nincredible.{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 315
             elif att_meter_ava <= 100:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.32
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}A new sun\nrises... \nbrighter than\nany deity.{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 315
         elif att_meter_ava > 100:
-            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}A new sun rises... \nbrighter than any \ndeity.(did I just \nwrite that? so tacky){/color}{/k}{/size}{/font}" :
-                xalign 0.78 yalign 0.32
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}A new sun\nrises... \nbrighter than\nany deity.{/color}{/k}{/size}{/font}" :
+                xpos 1370 ypos 315
         # determine susurha note
         if eldritch == True:
-            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}a B?TCH{/s}{/i}{/color}{/k}{/size}{/font}" :
-                xalign 0.78 yalign 0.55
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#920000}{i}{s}\n\na B?TCH{/s}{/i}{/color}{/k}{/size}{/font}" :
+                xpos 1370 ypos 540
         elif att_meter_susurha >= 0 and att_meter_susurha <= 100 :
             if att_meter_susurha == 0:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}????{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}\n\n????{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 540
             elif att_meter_susurha <= 20:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Are they the \nmost normal of the \nlot? Evasive; must \ncrack that juice.{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Are they the \nmost normal of\nthe lot?\nEvasive...{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 540
             elif att_meter_susurha <= 40:
                 text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}kinda cute!{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.55
+                    xpos 1370 ypos 540
             elif att_meter_susurha <= 60:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Cool hang when \nin the right mood. \nKinda want to \nadventure together...{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Cool hang when\nin the right\nmood. Want to\nadventure\ntogether...{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 540
             elif att_meter_susurha <= 80:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I feel you, Susu'Rha. \nI also isolated myself \nfrom my family. \nIs this fate?{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I feel you. I\nalso isolated\nmyself from my\nfamily. \nIs this fate?{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 540
             elif att_meter_susurha <= 100 :
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/k}{/size}{/font}" :
-                    xalign 0.78 yalign 0.55
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I knew this as \na kid--dragons\naren't scary!\nThey're based!{/color}{/k}{/size}{/font}" :
+                    xpos 1370 ypos 540
         elif att_meter_susurha > 100:
-            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I knew this as \na kid--dragons aren't \nscary! They're based!{/color}{/k}{/size}{/font}" :
-                xalign 0.78 yalign 0.55
+            text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}I knew this as \na kid--dragons\naren't scary!\nThey're based!{/color}{/k}{/size}{/font}" :
+                xpos 1370 ypos 540
            
     return
 # display journal on screen

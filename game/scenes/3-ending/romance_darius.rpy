@@ -55,7 +55,7 @@ label romance_darius:
     vivi happy "I'm with you."
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nThey're smart and charming but most of all, kind.\nIt takes a strong person to defy their god and\nrisk eternal damnation to do what's right.\nAcceptance is a hard thing to find but we've found it\nin each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
     call display_journal from _call_display_journal_9
