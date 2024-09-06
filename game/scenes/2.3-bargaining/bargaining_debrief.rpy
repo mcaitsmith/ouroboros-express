@@ -49,7 +49,7 @@ label bargaining_debrief:
 
         play sound writing
 
-        $ message =  "If cooking for him didn't work, what would?\n\nI'm beginning to think that this is it.\nThe end of the line.\nEverything I worked for... gone.\n\nMaybe "+ fr2_bargaining_choice  +" will join me at the bar.\nI definitely owe them a drink.\n\nGood a place as any to forget everything."
+        $ message =  "If cooking for him didn't work, what would?\n\nI'm beginning to think that this is it.\nThe end of the line.\nEverything I worked for... gone.\n\nI bet "+ fr2_bargaining_choice  +" has more to say.\nI should pay them a visit sometime\n\nIt beats cloud gazing through\nthese creepy windows."
 
         # Journal entry with attraction meter high
         call display_journal from _call_display_journal_4

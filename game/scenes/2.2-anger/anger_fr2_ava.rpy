@@ -16,7 +16,7 @@ label anger_fr2_ava:
 
     vivithinking neutral "I hear darts. Is that...Asha? Here already?"
 
-    show ava angry at right with dissolve
+    show ava neutral at right with dissolve
 
     ava neutral "Ah, bullseye. Game of darts, Vivienne? We hear your watering holes often host such competitions." 
     vivi neutral "Watering holes? You mean a pub?"
