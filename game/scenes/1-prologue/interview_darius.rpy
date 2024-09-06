@@ -66,7 +66,7 @@ label interview_darius:
             vivi neutral "Yeah, you know. The overcoat, tentacles, mask. What're you going for?"
             show darius neutral blush with dissolve
             darius "I don't... A detective? Yes, a detective."
-            vivi neutral "Not quite what I meant, but sure, an octopus detective."
+            vivi neutral "Not quite what I meant, but sure, a squid detective."
             show darius neutral -blush
             darius neutral "You... don't know what I am, do you?"
             vivi neutral "Sorry, I'm a bit out of the loop with current trends so I don't get the reference."
@@ -104,8 +104,9 @@ label interview_darius:
             darius neutral "Nowhere you're familiar with."
             vivi angry "Do you intend to be so difficult throughout this entire process?"
             darius neutral "I am simply being honest. I come from a rather small garden."
-            vivi neutral "Octopus puns? Really?"
-            darius neutral "It wasn't intended, but take it how you will."
+            vivi neutral "A garden? Weird way to refer to back home."
+            darius neutral "It's not the name of it, obviously. Like I said,it's small, you wouldn't know it."
+            vivithinking neutral ". . .right then."
 
             # JUMP TO vivi neutral "Forget it. Last question."
 
@@ -134,7 +135,8 @@ label interview_darius:
         # OPTION 1
         "(Duty? You're a detective. What, were you here for wardrobe inspo?)":
 
-            vivithinking neutral "Duty? You're a detective. What, were you here for wardrobe inspo?"
+            vivithinking neutral "Duty? You're a detective. You just told me you weren't on a case!" 
+            vivithinking neutral "What, does the decor match your outfit? Trying to get wardrobe inspiration?"
 
             # JUMP TO vivi neutral "Very interesting, I—"
 

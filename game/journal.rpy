@@ -99,7 +99,7 @@ label journal:
                 text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}What a specimen! \nNot sure if more \nsurprised at their stor-\ny or their physiology.{/color}{/k}{/size}{/font}" :
                     xalign 0.78 yalign 0.08
             elif att_meter_darius <= 40:
-                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}kinda...hot{/color}{/k}{/size}{/font}" :
+                text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}There's an \nallure to him, \nmust know more.'{/color}{/k}{/size}{/font}" :
                     xalign 0.78 yalign 0.08
             elif att_meter_darius <= 60:
                 text "{font=Kalam-Bold.ttf}{size=20}{k=1.5}{color=#000000}Their baggage \nis wearing them \ndown. It affects\n me...{/color}{/k}{/size}{/font}" :

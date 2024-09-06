@@ -24,7 +24,7 @@ label denial_fr1_ava_darius:
     show ava angry at left with dissolve:
         xzoom -1
 
-    vivithinking "Oh! The Goddess and the Inspector are in the middle of something. Time to be a fly on the wall, Vivi."
+    vivithinking "Oh! The Goddess and the detective are in the middle of something. Time to be a fly on the wall, Vivi."
 
     ava angry "You mock us? Your shapeless, nameless god sends his Illithid scourge to commit murder; nay, rather, genocide. Your sacrifices brought you nothing but here."
 

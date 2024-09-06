@@ -55,7 +55,7 @@ label bargaining_fr1_darius:
     
             vivi angry "Okay, I get it. No need to rub it in anymore."
             darius neutral "I apologize, but you think too highly of my abilities. Mind reading is a very involved exercise. It requires a very stable hold on one's person, almost like learning to swim in deeper waters."
-            darius neutral "A mind like Urshu's would be like diving into... hmm, what's the right example for you humans...the Mariana Trench, I believe it's named?" 
+            darius neutral "A mind like Urshu's would be like diving into a bottomless well, an abyss the depth of which I'd likely never find the end of." 
             darius neutral "I'd lose myself in his mind, unable to pull back."
             vivi neutral "I understand. I don't want you to do anything dangerous."
 

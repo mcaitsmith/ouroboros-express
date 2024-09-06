@@ -166,7 +166,7 @@ label anger_fr2_susurha:
             play sound decchoice
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
-            vivi angry "Pierce Chloe!"
+            vivithinking "Pierce Chloe!"
             vivi angry "It's all her fault!"
             vivi angry "HER!"
             vivi angry "SHE had to discover this \"exclusive story.\""
@@ -187,7 +187,7 @@ label anger_fr2_susurha:
             play sound attchoice
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
-            vivi neutral "Pierce the idea that it was her fault."
+            vivithinking sad "No. . . this isn't right.'"
             # SOUND: dart hits the board
             play sound darts
             pause 2.0
