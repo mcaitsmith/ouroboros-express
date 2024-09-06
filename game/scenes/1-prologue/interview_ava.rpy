@@ -12,7 +12,6 @@ label interview_ava:
     show vivi at left with dissolve:
         xzoom -1
     # SOUND: train
-    play sound train loop
 
     vivithinking neutral "What's your story, tall, dark, and gorgeous?"
     ava neutral "Ah. A fellow traveler. Do you wish to bask in our radiance?"
@@ -168,7 +167,6 @@ label interview_ava:
 
     vivithinking neutral "Well, what now?"
 
-    stop sound fadeout 2.0
 
     # JUMP TO: Figuring it out
     jump interview_choice

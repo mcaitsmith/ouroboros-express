@@ -9,6 +9,7 @@ label welcome_meal:
     # fade in
 
     # LOCATION: diningcar
+    play sound train loop
     scene diningcar with fade
 
     show vivi neutral at left with dissolve :
@@ -79,6 +80,7 @@ label welcome_meal:
     label interview_choice:
         hide vivi with dissolve
         if interview1 == True and interview2 == True and interview3 == True:
+            stop sound fadeout 2.0
             jump figuring_it_out
         else:
             if not interview1:

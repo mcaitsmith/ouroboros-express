@@ -13,7 +13,6 @@ label interview_darius:
     show darius neutral at right with dissolve
 
     # SOUND: train
-    play sound train loop
 
     vivithinking neutral "This one's imposing. Tall and solid, despite that slender frame." 
     vivithinking sad "But what's this unease I sense?"
@@ -152,8 +151,6 @@ label interview_darius:
     vivithinking sad "It's like he doesn't even see me."
 
     hide darius with dissolve
-
-    stop sound fadeout 2.0
 
     # JUMP TO: Figuring it out
     jump interview_choice

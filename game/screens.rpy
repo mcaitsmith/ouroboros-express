@@ -362,6 +362,7 @@ screen navigation():
 
         if not main_menu:
             textbutton _("Return"):
+                background "gui/pause/button2.png"
                 action Return()
         else:
             if renpy.variant("pc"):
@@ -1095,7 +1096,7 @@ screen preferences_ingame():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
             style_prefix "pref_ingame"
@@ -1216,7 +1217,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 
