@@ -69,6 +69,10 @@ label anger_fr2_darius:
         "Throw a dart while looking straight into Darius' eyes.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
 
             pause 1.0
@@ -77,6 +81,8 @@ label anger_fr2_darius:
             play sound darts
             pause 2.0
             darius surprised "Huh. Nice throw. Good... darting."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi happy blush "When I want something, I go straight at it."
             darius surprised "Again. Noted."
 
@@ -111,9 +117,15 @@ label anger_fr2_darius:
         "If I tell you a secret, will you tell me one of yours?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
 
             vivi neutral "If I tell you a secret, will you tell me one of yours?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius surprised "Hm. Let's hear yours first."
             vivi surprised "That's...it's a yes-or-no kind of situation."
             darius happy "And I'm sure it worked on difficult interview subjects. Go ahead."

@@ -51,9 +51,15 @@ label anger_fr2_ava:
         "Awful.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "Thank you...that means more to us than you know."
             # SOUND: dart hitting the board
@@ -102,9 +108,15 @@ label anger_fr2_ava:
         "Don't ever call me that again.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi angry "Don't ever call me that again. I don't like it. I'm not your pet."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "By Asha, we beg forgiveness. We never intended harm."
             vivi  "..." 
@@ -156,9 +168,15 @@ label anger_fr2_ava:
         "What do you want to do with your time left?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi neutral "What do you want to do with your time left?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "..."
             ava neutral "Enjoy the view. We seldom saw nighttime. It is strange. Nice."
             vivi happy "It is pretty nice, huh." 

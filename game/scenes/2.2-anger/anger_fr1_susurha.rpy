@@ -45,9 +45,15 @@ label anger_fr1_susurha:
         "I'll play.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
         
             vivi neutral "I'll play."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
@@ -93,9 +99,15 @@ label anger_fr1_susurha:
         "Everyone hides something. I'm no exception.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
 
             vivi neutral blush "Everyone hides something. I'm no exception."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "I'm the exception. All of my pretense has been burned away."
             susurha surprised "..."
             vivithinking "Why are they looking at me like that?"
@@ -133,9 +145,15 @@ label anger_fr1_susurha:
         "I am angry.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
 
             vivi angry "I am angry."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivithinking angry "And the cocky bastard leans back in their chair with a smile too. Right on cue..."
             susurha happy "You know what? For all of my years of frolicking, I believe I am too."    
             vivi neutral "Who are you angry at?"

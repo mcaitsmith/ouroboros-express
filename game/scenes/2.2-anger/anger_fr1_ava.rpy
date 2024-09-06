@@ -32,9 +32,15 @@ label anger_fr1_ava:
         "The sun card.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
         
             vivi neutral "The sun card."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "The sun can represent light, truth, and love..."
             vivi surprised "Finally some good news!"
@@ -128,9 +134,15 @@ label anger_fr1_ava:
         "...I know what you mean about sacrifices.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi angry blush "Here!"
             ava sad "I'm aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
             ava angry "We shall fade to darkness soon. Have you not seen it in your dreams?"

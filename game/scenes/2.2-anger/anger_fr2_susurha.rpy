@@ -45,9 +45,15 @@ label anger_fr2_susurha:
         "The arrogance on this one. I'd sure love to shut them up.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivithinking "The arrogance on this one. I'd sure love to shut them up."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "Magic or not, I'm gonna beat you."
             susurha neutral "I will give you the grace of going first."
 
@@ -117,9 +123,15 @@ label anger_fr2_susurha:
         "It was an assignment given to me by my agent.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi neutral "It was an assignment given to me by my agent, Chloe. She told me to write an exposé about a mysterious train line with an enigmatic conductor."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi happy "I said yes because it reminded me of those internet horror stories I grew up with."
             vivi neutral "Seems like the stories swirling around the Ouroboros Express were more than just stories."
             vivi sad "Now I'm dead..."
@@ -185,9 +197,15 @@ label anger_fr2_susurha:
         "Pierce the idea that it was her fault.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivithinking sad "No. . . this isn't right.'"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             # SOUND: dart hits the board
             play sound darts
             pause 2.0
@@ -222,9 +240,15 @@ label anger_fr2_susurha:
         "You did what you could. It isn't your fault.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi sad "You did what you could. It isn't your fault."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha sad "Thank you. That means something."
             
             # SOUND: dart smacks the board

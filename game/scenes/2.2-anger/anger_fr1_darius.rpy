@@ -52,9 +52,15 @@ label anger_fr1_darius:
         "Can you even play this with two people?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
 
             vivi surprised "Can you even play this with two people?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius happy "Of course you can. Watch me."
             # SOUND: cards shuffling
             play sound shuffle
@@ -130,9 +136,15 @@ label anger_fr1_darius:
         "That sounds difficult. Like being unmoored.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
 
             vivi sad "That sounds difficult. Like being unmoored."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show darius surprised -blush
             darius "Yes, exactly. 'Unmoored.' You have a way with... words."
             vivi happy "Aw, you're just saying that. You think so?"
