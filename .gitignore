@@ -124,6 +124,7 @@ CubismSdkForNative-4-*.zip
 # Created files.
 /screenshot*
 .android.json
+project.json
 
 # Old files.
 /0old
