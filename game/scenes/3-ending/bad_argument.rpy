@@ -126,7 +126,7 @@ label bad_argument:
     show ava neutral
 
     ava neutral "We understand. We can see it now."
-    vivi angry "See what? See what? This shit is exactly what I'm talking about!"
+    vivi angry "See what? See what? This is {i}exactly{/i} what I'm talking about!"
 
     show urshu happy
 

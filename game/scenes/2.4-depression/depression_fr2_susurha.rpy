@@ -191,7 +191,7 @@ label depression_fr2_susurha:
             vivi happy blush "You are truly one of a kind."
             show susurha happy blush with dissolve
             susurha "STOP... You flatter me, Vivienne."
-            susurha "Nothing can take away who you are."
+            susurha "Nothing can take away who you are either."
             show susurha happy -blush
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
@@ -244,5 +244,5 @@ label depression_fr2_susurha:
             vivithinking "In its own strange way, the view sure is beautiful from here."
         # END
 
-        #JUMP to Debrief Depression
-        jump depression_debrief
+        #JUMP to Depression NPC Group Scene
+        jump depression_npc_group_scene

@@ -30,10 +30,26 @@ label depression_fr1_susurha:
     susurha happy "In the Viridian Wood, the mixture and ingestion of intoxicating potions was almost a nightly occurrence."
     susurha happy "Ah...to sit on my balcony, reading a collection of poetry with a glass of red wine in hand."
     vivi "It sounds like you've lived a full life."
+    
+    # <CHOICE>
     susurha sad "In the Wood, we lived joyously, following the path of self-expression."
-    vivithinking "I could have used more of that."
+    
+    menu:
+        # OPTION 1
+        "(I could have used more of that.)":
+
+            vivithinking sad "I could have used more of that."
+            # JUMP TO susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
+
+        # OPTION 2
+        "(Self-expression, huh. Yeah, right.)":
+
+            vivithinking neutral "Self-expression, huh. Yeah, right."
+            vivithinking neutral "I feel like constantly chasing a way to express myself in the next day's paper sometimes got in the way of the whole living joyously part..."
+            # JUMP TO susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
+
     susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
-    vivithinking "Hmmm..."
+    vivithinking neutral "Hmmm..."
     vivi "This is incredible."
     susurha "Good."
     susurha "During my time at the druid camp, they had a special ritual that required the unique properties of liquor."
@@ -209,5 +225,5 @@ label depression_fr1_susurha:
     vivithinking "My head is already spinning."
     vivithinking "I should take a moment to collect myself."
 
-    #JUMP TO: Character Selector 2
-    jump depression_cs2
+    #JUMP TO: Asha Susurha convo
+    jump depression_asha_susurha

@@ -164,12 +164,28 @@ label bargaining_fr2_darius:
     vivi happy "I'm sure they could be useful for...other things as well."
     show darius neutral blush with dissolve
     darius "Ms. Sanssouci, I have no idea what you could possibly be referring to."
+    
+    # <CHOICE>
     vivi happy blush "Oh, I'm sure."
-    vivithinking "They're cute when they try to act clueless."
+    
+    menu:
+        # OPTION 1
+        "(They're cute when they try to act clueless.)":
+        
+            vivithinking "They're cute when they try to act clueless."
+
+            # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
+
+        # OPTION 2
+        "(Heh. They know.)":
+
+            vivithinking "Heh. They know."
+
+            # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
 
     # SOUND: glassware clinking (dining, clatter of silverware and plating)
     play sound glassclink
-    pause 5.0
+    pause 2.5
     stop sound fadeout 1.0
 
     vivi neutral "Well, that's about as good as it's going to get. What do you think?"
@@ -184,12 +200,12 @@ label bargaining_fr2_darius:
     vivi neutral blush "Oh? Are you so sure?"
     show darius neutral blush with dissolve
     darius "Not like that! I... Damn you."
-    vivi happy blush "Haha, so flustered Mr. Wrecker!"
+    vivi happy blush "Haha, so flustered, Mr. Wrecker!"
     vivi neutral "..."
     vivi neutral "Actually, Darius, before we go..."
     show darius neutral -blush
     darius neutral "Yes?"
-    vivi neutral "I should be honest with you... This dinner isn't as benevolent as I made it seem."
+    vivi neutral "I should be honest with you... This dinner isn't as altruistic as I made it seem."
     vivi sad "The reason I'm cooking is because of a deal I made with Urshu. If I make him a fantastic meal, he'll get us off this train."
     vivi sad "Well, I mean... I...could get off this train."
     darius neutral "..."
@@ -234,7 +250,7 @@ label bargaining_fr2_darius:
 
         show vivi sad at left
 
-        vivithinking "...Shit. What have I done?" 
+        vivithinking "...Damn it. What have I done?" 
         vivithinking "I should've just kept my mouth shut."
         vivi sad "You're right."
 

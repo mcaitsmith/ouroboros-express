@@ -47,7 +47,7 @@ label anger_fr1_susurha:
             play sound attchoice
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
         
-            vivi neutral "I'll play"
+            vivi neutral "I'll play."
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
@@ -59,11 +59,25 @@ label anger_fr1_susurha:
 
             vivi neutral "I'd be revealing too much."
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
-            vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."    
-            susurha neutral "Either you're suffering from an acute lack of self-awareness, or you're simply a bad liar."
-            vivithinking angry "The nerve of this creature!"
+            vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."
 
-            # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+            # <CHOICE>
+            susurha neutral "Either you're suffering from an acute lack of self-awareness, or you're simply a bad liar."
+            
+            menu:
+                # OPTION 2A
+                "(The nerve of this creature!)":
+
+                    vivithinking angry "The nerve of this creature!"
+
+                    # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+
+                # OPTION 2B
+                "(Ugh. Jerk. Not far wrong, though.)":
+
+                    vivithinking neutral "Ugh. Jerk. Not far wrong, though."
+
+                    # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
     susurha neutral "I'm going to draw cards from this deck with questions."
     susurha happy "You will answer, and I will try to ascertain whether or not you are lying."
@@ -108,7 +122,7 @@ label anger_fr1_susurha:
             susurha neutral "This goes deeper. And it's been going on for a long time."
             # JUMP TO: susurha surprised "You're... angry."
 
-    susurha surprised "You're...angry. And you've been angry far before before your demise."
+    susurha surprised "You're...angry. And you've been angry far before your demise."
 
     # <CHOICE>
     vivithinking "What if they're right?"
@@ -176,5 +190,5 @@ label anger_fr1_susurha:
 
     vivithinking neutral "That was a lot. I'm going back to my room."
 
-    # JUMP TO: Character Selector 2
-    jump anger_cs2
+    # JUMP TO: Anger Susurha Urshu
+    jump anger_susurha_urshu

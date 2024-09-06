@@ -42,7 +42,7 @@ label denial_cs2:
     #OPTION 2
         "Darius Wrecker" if fr1_denial_choice != "Darius":
 
-            vivi neutral "I have a feeling Darius knows more than he's letting on. I believe they're in the dining car."
+            vivi neutral "I have a feeling Darius knows more than he's letting on. I believe he's' in the dining car."
             #JUMP TO: Free Roam 2 / Inquisitor Darius Wrecker
             jump denial_fr2_darius
 

@@ -4,8 +4,8 @@ label depression_cs2:
 
     # Character Selector 2
 
-    # LOCATION: cabin
-    scene cabin with fade
+    # LOCATION: dining car
+    scene diningcar with fade
 
     show vivi neutral at left with dissolve:
         xzoom -1

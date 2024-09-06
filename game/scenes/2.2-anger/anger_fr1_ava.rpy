@@ -64,7 +64,7 @@ label anger_fr1_ava:
             ava surprised "Curious. We have not seen this card before. Curious, indeed. It resembles the snake biting its own tail, the Ouroboros."
             ava neutral "But of course, snakes, reptiles. They are of the same family. A warning... "
             vivi surprised "Oh?"
-            vivi neutral "Is this a dig at Susu'rha?"
+            vivi neutral "Is this a dig at Susu'Rha?"
             ava surprised "I merely am the messenger. And the card could not be clearer. Avoid him, Vivienne."
             # JUMP TO: vivi angry "This is silly! They're just cards. They can't tell us that!"
 
@@ -80,8 +80,23 @@ label anger_fr1_ava:
     # SOUND: ava says "ugh"
     # skipping
     ava angry "Why, Vivienne?" 
+    
+    # <CHOICE>
     ava angry "What was the point of it all?! All our sacrifices. For what?"
-    vivithinking surprised "Damn! And I thought I was having trouble coping."
+   
+    menu:
+    # OPTION 1
+        "(Damn! And I thought I was having trouble coping.)":
+        
+            vivithinking surprised "Damn! And I thought I was having trouble coping."
+            # JUMP TO vivi neutral "Look, Asha..."
+
+    # OPTION 2
+        "(Don't you dare dump all your crap on me.)":
+
+            vivithinking angry "Don't you dare dump all your crap on me."
+            vivithinking angry "I've got enough on my plate."
+            # JUMP TO vivi neutral "Look, Asha..."
 
     # <CHOICE>
     vivi neutral "Look, Asha..."
@@ -146,11 +161,11 @@ label anger_fr1_ava:
 
             # vivi exits
             hide vivi with dissolve
-            jump anger_cs2
+            jump anger_susurha_urshu
 
     vivi neutral blush "Thank you for sharing with me, Asha."
     vivithinking neutral "That went better than I thought. Maybe one of the others wants to play a game as well."
     vivithinking angry "Ugh. And I still gotta find out Urshu's riddle. How am I gonna get off this doomsday train?"
 
-    # JUMP TO: Character Selector 2
-    jump anger_cs2
+    # JUMP TO: Anger Susurha Urshu
+    jump anger_susurha_urshu

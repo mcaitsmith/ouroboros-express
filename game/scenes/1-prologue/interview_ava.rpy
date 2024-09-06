@@ -34,8 +34,25 @@ label interview_ava:
             vivi neutral "Drop the act and help a fellow human out?"
             ava angry "Act? We are diplomats, not clowns. And we are not pathetic, pretending humans either...like some."
             vivithinking surprised "Are they referring to me?!"
+            # <CHOICE>
             ava neutral "Still, we are unsurprised you came to us. How may we help you, little one?"
-            vivithinking angry "Little one?! What a snob!"
+
+            menu:
+                # OPTION 1A
+                "(Little one?! What a snob!)":
+
+                    vivithinking angry "Little one?! What a snob!"
+
+                    # JUMP TO vivithinking neutral "Deep breaths, Vivi. It's just a job."
+
+                # OPTION 1B
+                "(Ugh, “little one”? That reminds me of... never mind. Focus.)":
+
+                    vivithinking neutral "Ugh, “little one”? That reminds me of... never mind. Focus."
+
+                    # JUMP TO vivithinking neutral "Deep breaths, Vivi. It's just a job."
+
+            
             vivithinking neutral "Deep breaths, Vivi. It's just a job."
 
             # JUMP TO: "Mind telling me a little about yourself?"
@@ -87,8 +104,25 @@ label interview_ava:
     ava neutral "It is on another plane entirely."
     vivi surprised "Like...You're from the future? Or the past?"
     show ava neutral blush with dissolve
+    
+    # <CHOICE>
     ava "We are not bound by your facile definitions of time."
-    vivithinking angry "An egomaniac AND rude. Even better."
+    
+    menu:
+        # OPTION 1
+        "(An egomaniac AND rude. Even better.)":
+
+            vivithinking angry "An egomaniac AND rude. Even better."
+    
+        # JUMP TO show ava neutral -blush
+
+        # OPTION 2
+        "(I'm starting to wonder if any of us are, here, honey.)":
+
+            vivithinking neutral "I'm starting to wonder if any of us are, here, honey."
+
+            # JUMP TO show ava neutral -blush
+    
     show ava neutral -blush
 
     # <CHOICE>
@@ -106,7 +140,7 @@ label interview_ava:
             # ava leaves
             hide ava with dissolve
 
-            vivithinking angry "Wow. I haven't had a guest this rude since we interviewed that random stockbroker for our business edition."
+            vivithinking angry "Wow. Good thing she's tall - that's one high horse she's clambered up on."
             vivithinking angry "At least she's not wrong. She really is on another planet. In every sense of the word."
 
             # JUMP TO: "Well, what now?"
