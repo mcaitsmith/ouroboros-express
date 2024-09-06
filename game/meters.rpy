@@ -36,7 +36,7 @@ label meters:
     $ dec_max_depression = 45
 
     # define threshold for romance
-    $ romance_threshold = 70
+    $ romance_threshold = 67 # decreased a little under 70 to account for rounding differences
 
     # define choice number lists for each character
     # guide: [anger_FR1, anger_FR2, bargaining_FR1, bargaining_FR2, depression_FR1, depression_FR2]

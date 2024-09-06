@@ -16,9 +16,9 @@ label epi_eldritch_darius:
     #LOCATION: eldritchlandscape
     scene black with fade
     show urshu sad at center with dissolve
-    urshu sad "The mindflayer Darius could not forgive themself for the atrocities they had been responsible for in life."
+    urshu sad "The mindflayer Darius could not forgive himself for the atrocities he had been responsible for in life."
 
-    urshu sad "With neither a vehicle through which to reconcile their own actions nor a chance for atonement, the resentment they held only grew. "
+    urshu sad "With neither a vehicle through which to reconcile his own actions, nor a chance for atonement, the resentment he held only grew. "
 
     urshu sad "In the end, Darius realized he became what he had grown to despise. Perhaps, he thought, he had always been this way."
 

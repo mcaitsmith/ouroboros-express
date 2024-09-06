@@ -59,14 +59,4 @@ label bargaining_debrief:
 
     # END
 
-    stop music fadeout 1.0
-
-    scene clockdepression with fade
-    play sound clock loop
-
-    pause 5.0
-    stop sound fadeout 2.0
-
-    play music mainmusic volume 0.5 # start main track
-
-    jump depression_briefing
+    jump bargaining_asha_urshu

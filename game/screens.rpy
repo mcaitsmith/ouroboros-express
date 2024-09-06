@@ -836,6 +836,11 @@ screen file_slots(title):
                     style "page_label_text"
                     value page_name_value
 
+            vbox:
+                null height 50
+                xalign 0.5
+                label _("{size=-12}Hover over a slot and press Delete or D key to delete a save.{/size}")
+            
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:
                 style_prefix "slot"
@@ -962,6 +967,12 @@ screen file_slots_ingame(title):
                 input:
                     style "page_ingame_label_text"
                     value page_name_value
+
+            vbox:
+                null height -20
+                xalign 0.5
+                label _("{size=-20}Hover over a slot and press Delete or D key to delete a save.{/size}")
+        
 
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:

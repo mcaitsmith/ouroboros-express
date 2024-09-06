@@ -34,8 +34,26 @@ label bargaining_fr2_ava:
             vivi neutral blush "I want to cook together... With you."
             vivi neutral blush "I bet we can whip up something really incredible."
             show ava happy blush with dissolve
+            
+            # <CHOICE>
             ava "We would be honored to cook with you. It has been over a decade since we've set foot in a kitchen. This should prove to be...interesting."
-            vivithinking "Interesting indeed..."
+            
+            menu:
+                # OPTION 1A
+                "(Interesting indeed...)":
+                    
+                    vivithinking blush "Interesting indeed..."
+
+                    # JUMP TO vivi happy blush "Thank you! You have no idea what this means to me!"
+
+
+                # OPTION 1B
+                "(Oh man, not {i}too{/i} interesting, I hope! Edible would be good.)":
+
+                    vivithinking -blush "Oh man, not {i}too{/i} interesting, I hope! Edible would be good."
+
+                    # JUMP TO vivi happy blush "Thank you! You have no idea what this means to me!"
+           
             vivi happy blush "Thank you! You have no idea what this means to me!" 
             vivi happy "I can't wait! Let's get cooking."
             show ava happy -blush

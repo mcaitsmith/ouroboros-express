@@ -23,8 +23,26 @@ label anger_fr1_darius:
     darius surprised "I thought that's all you humans did. Play games. Fritter away your time."
     darius neutral "We'll play a game I know called Hearts. No need to explain. You'll catch on quickly, even as a human. And we'll learn about each other. About this place. About Urshu."
     vivithinking neutral "Mon dieu, his hands. Dextrous fingers. Manicured claws."
+    
+    # <CHOICE>
     darius neutral "..." 
-    vivithinking blush "Oh shit! They caught me looking. Ughhh, I got distracted. Wait, what is this feeling? Displeasure? Embarrassment? Satisfaction?"
+    
+    menu:
+    # OPTION 1
+        "(Wait, what is this feeling?)":
+
+            vivithinking blush "Wait, what is this feeling?"
+            vivithinking blush "Displeasure? Embarrassment? Satisfaction?"
+            vivithinking -blush "Ughhh I got so distracted."
+
+            # JUMP TO darius neutral "You start."
+
+    # OPTION 2
+        "(Damn, caught staring in the act!)":
+
+            vivithinking neutral "Quick, eyes somewhere else. Literally anywhere else, Vivi."
+
+            # JUMP TO darius neutral "You start."
 
     # <CHOICE>
     darius neutral "You start."
@@ -152,4 +170,5 @@ label anger_fr1_darius:
     # vivi exits
     hide vivi with dissolve
 
-    jump anger_cs2
+    # JUMP TO: Anger Susurha Urshu
+    jump anger_susurha_urshu

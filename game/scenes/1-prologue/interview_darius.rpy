@@ -27,7 +27,24 @@ label interview_darius:
     darius neutral "And I responded in kind. Nothing else was needed between us."
     darius neutral "But you reporters are never satisfied, are you?"
     darius neutral "{i}Sigh{/i}. If you make it quick, I'll humor you."
-    vivithinking angry "Oh, I'm about to eviscerate this jerk. Every character flaw. In print. Forever."
+
+    
+    menu:
+        # OPTION 1
+        "(I'm gonna eviscerate this jerk. Every flaw. In print. Forever.)":
+
+            vivithinking angry "I'm gonna eviscerate this jerk. Every flaw. In print. Forever."
+
+            #JUMP TO vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
+    
+    
+        # OPTION 2
+        "(This guy! No, cool your jets, Vivi. Angry, er, squids tell no tales.)":
+
+            vivithinking neutral "This guy! No, cool your jets, Vivi. Angry, er, squids tell no tales."
+
+            #JUMP TO vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
+    
     vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
     darius neutral "Just call me Darius."
     vivi neutral "No last name?"
@@ -110,8 +127,25 @@ label interview_darius:
     vivithinking neutral "His whole demeanor changed. No witty remark this time?"
     darius sad "Sorry, I'm...not feeling very well. Why am I here, you asked?"
     vivi neutral "Essentially, yes."
+    
+    # <CHOICE>
     darius neutral "Duty... yes."
-    vivithinking neutral "Duty? You're a detective. What, did you need inspiration for your wardrobe?"
+
+    menu: 
+        # OPTION 1
+        "(Duty? You're a detective. What, were you here for wardrobe inspo?)":
+
+            vivithinking neutral "Duty? You're a detective. What, were you here for wardrobe inspo?"
+
+            # JUMP TO vivi neutral "Very interesting, I—"
+
+        # OPTION 2
+        "(Duty, eh? Are they keeping their eye on someone here?)":
+
+            vivithinking neutral "Duty, eh? Are they keeping their eye on someone here?"
+
+            # JUMP TO vivi neutral "Very interesting, I—"
+
     vivi neutral "Very interesting, I—"
     vivithinking sad "It's like a chill just came in. Why is the room so...heavy? Such a sickly atmosphere, like wet clothes sticking to your skin."
     vivi neutral "Thank you, uh...Darius. I'll leave you be."

@@ -115,14 +115,14 @@ label anger_briefing:
             vivithinking happy "Fuck yeah!" 
             vivi happy "I had no doubt. I'm brilliant."
             urshu happy "Let's not get ahead of ourselves. You're the only human to have guessed correctly."
-            vivithinking angry "This lil' shit!"
+            vivithinking angry "This lil' jerk!"
             # JUMP TO: urshu happy "No matter when..."
 
     urshu happy "No matter when, where, what, or who in the universe, across nebulae and even in the underworlds, games always have a place among emotional beings."
     urshu happy "Games are one method of reversing the naturally lawful decay we all suffer."
     vivithinking neutral "Games don't get rid of wrinkles. Wait. Do they?" 
     vivi neutral "Can you just hand them over already?"
-    urshu neutral "I'm sorry, Miss Sanssouci. These are my special cards. Given to me by...well, someone from so long ago even Asha was a young deity. Humans had yet to walk upright, even. Ah, but you don't look like you want a story like that."
+    urshu neutral "I'm sorry, Miss Sanssouci. These are my special cards. Given to me by...well, someone from so long ago even the Goddess of the Sun herself was but a young deity. Humans had yet to walk upright. Ah, but you don't look like you want a story like that."
     vivithinking neutral "Good read there, honey." 
     vivi neutral "Are there other games, then?"
     urshu sad "..."
@@ -130,7 +130,66 @@ label anger_briefing:
     vivithinking neutral "He's not even speaking in full sentences. Weird." 
     vivi neutral "Uh...Ursh?"
     show urshu sad blush with dissolve
-    urshu "Forgive me...you will find games where you will find your next partner. Whoever shall you challenge? I am positively vibrating with anticipation."
+
+    # <CHOICE>
+    # THIS MENU CHOICE ONLY APPEARS IF VIVI CHOSE TO HEAR URSHU'S FIRST STORY 
+    # (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." 
+    # IN 2.1 DENIAL_BRIEFING). OTHERWISE, NEEDS TO DEFAULT TO RUNNING OPTION 1 
+    # ("Hey, Urshu! Let's keep it moving, shall we?") FROM MENU BELOW.
+
+    urshu sad "Forgive me... Some days I can barely hold it in my mind's eye. Others... it's as if I could reach out and touch it... Alas..."
+    
+    menu:
+        # OPTION 1
+        "Hey, Urshu! Let's keep it moving, shall we?":
+
+            vivi angry "Hey, Urshu! Let's keep it moving, shall we?"
+            # JUMP TO: urshu "Ah yes, of course...
+
+        # OPTION 2
+        "Look, just tell me the story. If we have time." if urshu_story_1 == True:
+
+            $ urshu_story_2 = True
+
+            vivi neutral "Look, just tell me the story. If we have time."
+            urshu happy -blush "Ah Miss Sanssouci, we have so little time and yet far too much of it!"
+            vivi neutral "Yeah, yeah. Just tell it already."
+            urshu neutral "I shall continue the tale of Sursu, the ferryman."
+            vivithinking "'Sursu'. Riiiight."
+            urshu neutral "After his plight, the weary ferryman found himself in the embrace of that sweet soul he helped. Sheltered by the new home that welcomed him."
+            urshu neutral "He tried to be happy and himself in this place, but he could not settle. Cut off from his past, now {i}he{/i} found himself without a north star."
+            vivithinking "Oh boy, I'm in for a loooong one."
+            urshu neutral "The ferryman's eye was too fixed on the home he had lost, which he could never return to."
+            urshu neutral "The air, sweet and serene, suffocated him. The glorious emerald walls kept strife out, but also kept him in. The amber lanterns would not light his way home, for there was none in that place. He would not let it be so."
+            urshu neutral "The sweet soul's gaze could not hold his own. Their touch could not rouse his heart from its numbness. Their very presence was drowned by the potency of his memories."
+            vivithinking angry "Is he ever going to cut the poetic crap and get to the point? I don't have time for this!"
+            urshu neutral "For who are we - what are we - when not refracted through our people and places? The things that make us what we are more than we care to acknowledge?"
+            urshu sad "Like the ocean that changes its hue with the sky, the ferryman lived on, but was an entirely different shade. He felt he did not know himself."
+            vivithinking angry "Well, 'the ferryman' knows himself plenty now, doesn't he? Spinning these self-indulgent yarns at me!"
+            urshu sad "Consumed with longing, the ferryman fled the sweet soul's domain. It was his greatest regret." 
+            urshu sad "Adrift, raftless, in the tides of his... managers' furies, he was captured and confined to yet another life. One he did not choose."
+            urshu sad "Now he lives on, so to speak, filled with a different, but no less dangerous, longing."
+            vivithinking angry "Ok, he's just misery-dumping on me now without being straight with me! Such a fraud!"
+            urshu neutral "Nostalgia is a powerful and perilous thing, Miss Sanssouci."
+            urshu neutral "For the merest moment, it can take us home. But it also can taint our present, and leave us unable to forge a new one."
+            urshu happy "And yet, to swim in nostalgia's balmy waters, even for a moment, is one of life's greatest pleasures! And we must remember who we are, and what made us, to make sense of who we might become."
+            vivi angry "You just love being Mr. Cryptic, don't you? You, with all your little 'stories'!"
+            urshu happy "Myths and tales are a treasure trove of wisdom, no? Especially for those who find themselves unable to focus on the present, Miss Sanssouci."
+            vivi angry "When are you gonna admit that you're talking about you? And that this is just one big sob story?!"
+            urshu neutral "What might have led you to such a conclusion, my dear?"
+            vivi angry "Look, just cut the crap, ok? I'm a journalist, this is my whole deal. You can't pull the wool over my eyes, Urshu!"
+            urshu neutral "What a blessing and curse to be beholden to your journalistic proclivities!"
+            vivi angry "You lost your first love and your homes, and you're sad. I get it! But why are you dressing it up with all this 'ferryman' stuff? You're trying to mess with me! Why won't you just be open with me?"
+            urshu neutral "I am sure you appreciate that openness is difficult when time is short. The curtain soon closes and new players await in the wings to begin the play anew. Only the stagehand shall remain. Alone."
+            vivi angry "I'M SICK OF THESE RIDDLES! WHY WON'T YOU JUST BE UPFRONT WITH ME?"
+            urshu angry "I reiterate, Miss Sanssouci, that time is short and we each have our roles to play." 
+            urshu angry "It is for you to use this stage to find meaning in the present and make your curtain call count. Not me."
+            vivi angry "I'm done with you and your games, Urshu!"
+            urshu neutral "Games?"
+            urshu neutral "Games! That quite reminds me..."
+            # JUMP TO: urshu "Ah yes, of course...
+        
+    urshu "Ah yes, of course...you will find games where you will find your next partner. Whoever shall you challenge? I am positively vibrating with anticipation."
     vivithinking neutral "Ew?"
     vivi neutral "I'll be sure to tell you all about it, as long as you stop vibrating...so close to me."
     show urshu happy blush
@@ -139,8 +198,8 @@ label anger_briefing:
     # VISUAL: urshu exits
     hide urshu with dissolve
 
-    vivithinking angry "What the hell does he expect me to do? What will the others think of me? Oh God. Do I play one I know? Then they might think I'm cheating. Maybe I play one they know...but then I might lose."
-    vivithinking happy "Then again, I've never played any game, love or otherwise, I couldn't win."
+    vivithinking angry "What the hell does he expect me to do? What will the others think of me? Oh, God. Do I play one I know? Then they might think I'm cheating. Maybe I play one they know... but then I might lose."
+    vivithinking happy "Then again, I've never played any game I couldn't win. Apart from the dating game. Ha. Hmm."
 
     # JUMP TO: Character Selector 1
     jump anger_cs1

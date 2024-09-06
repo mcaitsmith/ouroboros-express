@@ -110,8 +110,28 @@ label depression_fr2_darius:
     darius sad "I deserve to be crushed by those hands. I long for it."
     vivi surprised "I... I don't know how to respond."
     darius neutral "I'm not asking you to. I just want you to know who you're choosing to spend your time with."
+    
+    # <CHOICE>
     darius "I loved my god. I loved the Inquisition. I would have done anything for them. And I did. Frequently."
-    vivithinking "Is it weird that I'm pulling out my notebook? Who is even going to read this...?"
+    
+    menu:
+
+        # OPTION 1
+        "(Is it weird that I'm pulling out my notebook?)":
+
+            vivithinking neutral "Is it weird that I'm pulling out my notebook?"
+            vivithinking neutral "Who is even going to read this...?"
+    
+            # JUMP TO vivi neutral "Who were they?"
+
+        # OPTION 2
+        "(This is it. Their walls are coming down.)":
+
+            vivithinking neutral "This is it. Their walls are coming down."
+            vivithinking neutral "Don't speak, don't interrupt, Vivi. Hear them out, every word."
+
+            # JUMP TO vivi neutral "Who were they?"
+
     vivi neutral "Who were they?"
     darius neutral "I don't think a human tongue could say their name without considerable effort. They are ancient."
     darius sad "Eldritch."
@@ -194,5 +214,5 @@ label depression_fr2_darius:
         darius sad "Let the horrors take me. It's what I deserve."
     # END
 
-    # JUMP TO: Debrief Depression
-    jump depression_debrief
+    # JUMP TO: Depression NPC Group Scene
+    jump depression_npc_group_scene

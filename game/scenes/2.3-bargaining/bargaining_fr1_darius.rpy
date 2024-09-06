@@ -24,8 +24,23 @@ label bargaining_fr1_darius:
     vivi happy "Have I ever told you you're quite charming?"
     darius neutral "Oh gods, here she starts."
     vivi happy "Such a vast intelligence, but always holding it tight to the chest. So many  thoughts and words, but only picking out a select few."
+    
+    # <CHOICE>
     darius neutral "I can tell this is killing you. Come on, out with it."
-    vivithinking "Surprisingly, no, if I'm being honest. But they don't have to know that."
+    
+    menu:
+        # OPTION 1
+        "(Surprisingly, no, if I'm honest. But they don't have to know that.)":
+
+            vivithinking neutral "Surprisingly, no, if I'm honest. But they don't have to know that."
+            # JUMP TO vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
+
+        # OPTION 2
+        "(Ugh. They got me. Still, no harm in indulging them.)":
+
+            vivithinking neutral "Ugh. They got me. Still, no harm in indulging them."
+            # JUMP TO vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
+    
     vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
     darius happy "Ahahaha! Oh, you humans are a riot. Comedy, that's the true gift your species possesses..."
     darius neutral "Hold on. You're serious?"
@@ -105,7 +120,7 @@ label bargaining_fr1_darius:
             vivi neutral "I was actually thinking of doing something for him later today and wanted you to read him to see what he'd like."
             darius happy "I'm glad to hear it. I can tell he cares for you a great deal."
             vivi neutral blush "What do you mean? He treats me just the same as anyone else."
-            darius happy "You're inquisitive Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
+            darius happy "You're inquisitive, Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
             show darius happy blush with dissolve
             darius "Perhaps that is why I, too, enjoy your company so much."
             vivi neutral blush "This guy... When did he get so suave?"
@@ -153,5 +168,5 @@ label bargaining_fr1_darius:
     darius neutral "Insight is a kind way of putting it. I just told you about what I've seen."
     darius neutral "But thank you, Vivienne. I'm always open to chat."
 
-    # JUMP TO: Character Selector 2
-    jump bargaining_cs2
+    # JUMP TO: Darius Susu'Rha intermission scene
+    jump bargaining_darius_susurha

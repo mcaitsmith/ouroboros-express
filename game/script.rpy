@@ -28,7 +28,7 @@ init python:
 # name of the character.
 
 define vivi = Character("Vivi",image="vivi",color="#FFFFFF", callback=beepy_voice_medium)
-define vivithinking = Character("Vivi",image="vivi",what_italic=True,color="#FFFFFF")
+define vivithinking = Character("Vivi",image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
 define urshu = Character("Urshu",image="urshu",color="#FFFFFF", callback=beepy_voice_high, namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define ava = Character("Asha",image="ava",color="#FFFFFF", callback=beepy_voice_medium, namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define darius = Character("Darius",image="darius",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
@@ -95,20 +95,38 @@ transform flicker_opacity:
     linear 0.2 alpha 0.8
     linear 0.2 alpha 0.4
     repeat 4
-#Journal screen
+
+init python:
+    config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
 
 # The game starts here.
-
-# commenting out since not used yet
-#default quest = Manager()
 
 label start:
     
     call sounds from _call_sounds # define sounds
     call meters from _call_meters # define meter variables
     call journal from _call_journal 
+
+    pause 1.0
+
+    menu:
+        "Press Shift+A to set accessibility options before beginning the game."
+        "Continue":
+            window hide dissolve
+            stop music fadeout 3.0
+            pause 3.0
+            jump begin
+
+label begin:
+
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False
+
+    # initialize Urshu path variables
+    $ urshu_story_1 = False
+    $ urshu_story_2 = False
+    $ urshu_story_3 = False
+    $ urshu_story_4 = False
 
     # jump to first scene
     jump introduction

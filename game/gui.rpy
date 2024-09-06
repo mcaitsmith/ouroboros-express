@@ -10,6 +10,7 @@ init offset = -2
 ## width and height of the game.
 init python:
     gui.init(1920, 1080)
+    # config.context_fadeout_music = 3
     config.font_replacement_map["fonts/KaiseiDecol-Regular.ttf", False, True] = ("fonts/Helvetica RomanItalic.ttf", False, False)
     config.font_replacement_map["fonts/KaiseiDecol-Regular.ttf", True, False] = ("fonts/KaiseiDecol-Bold.ttf", False, False)
     # config.font_replacement_map["fonts/KaiseiDecol-Regular.ttf", True, True] = ("fonts/InriaSans-BoldItalic.ttf", False, False)
@@ -71,7 +72,7 @@ define gui.interface_text_font = "KaiseiDecol-Regular.ttf"
 define gui.title_text_font = "Lato-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 24
+define gui.text_size = 26
 
 ## The size of character names.
 define gui.name_text_size = 36
