@@ -98,7 +98,7 @@ label reveal:
 
     stop sound fadeout 1.0
 
-    show ava angry
+    show ava surprised
     ava "Ignore the pawn. {i}We{/i} will ask the ques—"
 
     # EFFECT: Brighten or distort the display
