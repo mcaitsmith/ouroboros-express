@@ -1719,7 +1719,11 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
+                textbutton _("Yes"):
+                    if message == gui.LOADING:
+                        action [Stop("music"),yes_action]
+                    else:
+                        action yes_action
                 textbutton _("No") action no_action
 
     ## Right-click and escape answer "no".
