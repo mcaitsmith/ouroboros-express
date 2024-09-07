@@ -2,6 +2,7 @@
 
 label anger_urshu_darius:
 
+    call check_overlay
     scene observatory with fade
 
     show vivi neutral at left with dissolve :

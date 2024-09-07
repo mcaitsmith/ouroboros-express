@@ -6,6 +6,7 @@ label depression_cs1:
 
     # LOCATION: cabin
     # scene cabin with fade
+    call check_overlay_nofade
 
     # show vivi neutral at left with dissolve
 

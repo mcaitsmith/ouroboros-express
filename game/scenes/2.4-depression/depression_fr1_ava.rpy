@@ -5,6 +5,7 @@ label depression_fr1_ava:
     # FREE ROAM 1 - Ava
 
     # LOCATION: lounge
+    call check_overlay
     scene diningcar with fade
 
     # SOUND: train

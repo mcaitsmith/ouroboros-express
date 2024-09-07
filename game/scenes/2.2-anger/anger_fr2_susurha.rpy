@@ -5,6 +5,7 @@ label anger_fr2_susurha:
     #FREE ROAM 2 - SUSU'RHA
 
     # LOCATION: dining car
+    call check_overlay
     scene diningcar with fade
 
     show vivi neutral at left with dissolve : 

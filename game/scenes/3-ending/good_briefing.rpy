@@ -9,6 +9,7 @@ label good_briefing:
     # fade in
 
     # LOCATION: cabin
+    call hide_overlay
     scene cabin with fade
 
     show vivi happy at left with dissolve:

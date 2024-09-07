@@ -5,6 +5,7 @@ label bargaining_cs1:
     #Character Selector 1
 
     # LOCATION: cabin
+    call check_overlay
     scene cabin with fade
 
     show vivi happy at left with dissolve:

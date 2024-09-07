@@ -5,6 +5,7 @@ label depression_debrief:
     # Debrief Depression
 
     # LOCATION: cabin
+    call check_overlay
     scene cabin with fade
 
     # ??ATTRACTION

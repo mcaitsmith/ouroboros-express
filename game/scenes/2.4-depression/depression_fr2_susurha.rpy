@@ -5,6 +5,7 @@ label depression_fr2_susurha:
     # FREE ROAM 2 - Susu'Rha (DEPRESSION)
 
     # LOCATION: observatory
+    call check_overlay
     scene observatory with fade
 
     show susurha sad at right with dissolve

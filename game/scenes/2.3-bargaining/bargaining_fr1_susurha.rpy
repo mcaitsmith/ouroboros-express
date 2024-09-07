@@ -5,6 +5,7 @@ label bargaining_fr1_susurha:
     #FREE ROAM 1 - Susu'Rha
 
     # LOCATION: diningcar
+    call check_overlay
     scene diningcar with fade
 
     # SOUND: window click - opening

@@ -5,6 +5,7 @@ label anger_fr1_ava:
     #FREE ROAM 1 - Ava
 
     # LOCATION: observatory
+    call check_overlay
     scene observatory with fade
 
     show vivi neutral at left with dissolve:

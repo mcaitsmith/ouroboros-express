@@ -5,6 +5,7 @@ label bargaining_fr2_darius:
     #FREE ROAM 2 - Darius
 
     # LOCATION: diningcar
+    call check_overlay
     scene diningcar with fade
 
     # SOUND: cooking, dining sounds

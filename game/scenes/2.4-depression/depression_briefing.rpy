@@ -5,6 +5,7 @@ label depression_briefing:
     # Briefing Depression
 
     # LOCATION: cabin
+    call check_overlay
     scene cabin with fade
 
     show vivi sad at left with dissolve :

@@ -5,6 +5,7 @@ label bargaining_fr2_susurha:
     #FREE ROAM 2 - Susu'Rha
 
     # LOCATION: diningcar
+    call check_overlay
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:

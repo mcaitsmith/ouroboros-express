@@ -4,6 +4,7 @@ label depression_fr1_darius:
 
     # FREE ROAM 1 - Darius
     # LOCATION: Lounge
+    call check_overlay
     scene lounge with fade
 
     show darius sad at right with dissolve

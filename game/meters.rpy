@@ -52,6 +52,13 @@ label meters:
     $ dec_num_bargaining = 5
     $ dec_num_depression = 4
 
+    # define decay threshold for each eldritch overlay
+    $ dec_threshold_1 = 10
+    $ dec_threshold_2 = 25
+    $ dec_threshold_3 = 40
+    $ dec_threshold_4 = 55
+    $ dec_threshold_5 = 70
+
     # define variable for NPC-dependent meal reveal choice number (just one currently)
     # added 1 to the bargaining FR2 numbers in the att lists to account for this
     $ att_num_meal_reveal = 1

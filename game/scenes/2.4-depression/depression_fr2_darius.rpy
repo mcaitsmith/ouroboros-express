@@ -4,6 +4,7 @@ label depression_fr2_darius:
 
     # FREE ROAM 2 - Darius
     # LOCATION: observatory
+    call check_overlay
     scene observatory with fade
 
     show darius sad at right with dissolve

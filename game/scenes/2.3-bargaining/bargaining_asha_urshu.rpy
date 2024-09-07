@@ -1,6 +1,7 @@
 label bargaining_asha_urshu :
 
     #LOCATION: observatory
+    call check_overlay
     scene observatory with fade
 
 

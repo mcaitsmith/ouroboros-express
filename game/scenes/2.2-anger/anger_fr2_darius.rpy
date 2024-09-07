@@ -5,6 +5,7 @@ label anger_fr2_darius:
     #FREE ROAM 2 - DARIUS 
 
     # LOCATION: dining car
+    call check_overlay
     scene diningcar with fade
 
     show vivi happy at left with dissolve:

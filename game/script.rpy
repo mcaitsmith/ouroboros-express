@@ -115,6 +115,56 @@ transform flicker_opacity:
 init python:
     config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
 
+# add layer for eldritch overlay
+define config.layers = [ 'master', 'transient', 'screens', 'overlay','eldritch_overlay']
+
+label check_overlay: # call this label to display eldritch overlay
+    hide eldritch1 onlayer eldritch_overlay
+    hide eldritch2 onlayer eldritch_overlay
+    hide eldritch3 onlayer eldritch_overlay
+    hide eldritch4 onlayer eldritch_overlay
+    hide eldritch5 onlayer eldritch_overlay
+    with { "master" : Dissolve(1.0) }
+    if dec_meter >= dec_threshold_5:
+        show eldritch5 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_4:
+        show eldritch4 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_3:
+        show eldritch3 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_2:
+        show eldritch2 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_1:
+        show eldritch1 onlayer eldritch_overlay
+    with { "master" : Dissolve(1.0) }
+    return
+
+label check_overlay_nofade: # call this label to display eldritch overlay
+    hide eldritch1 onlayer eldritch_overlay
+    hide eldritch2 onlayer eldritch_overlay
+    hide eldritch3 onlayer eldritch_overlay
+    hide eldritch4 onlayer eldritch_overlay
+    hide eldritch5 onlayer eldritch_overlay
+    if dec_meter >= dec_threshold_5:
+        show eldritch5 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_4:
+        show eldritch4 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_3:
+        show eldritch3 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_2:
+        show eldritch2 onlayer eldritch_overlay
+    elif dec_meter >= dec_threshold_1:
+        show eldritch1 onlayer eldritch_overlay
+    return
+
+label hide_overlay: # call this label to hide eldritch overlay
+    hide eldritch1 onlayer eldritch_overlay
+    hide eldritch2 onlayer eldritch_overlay
+    hide eldritch3 onlayer eldritch_overlay
+    hide eldritch4 onlayer eldritch_overlay
+    hide eldritch5 onlayer eldritch_overlay
+    with { "master" : Dissolve(1.0) }
+    return
+
 # The game starts here.
 
 label start:

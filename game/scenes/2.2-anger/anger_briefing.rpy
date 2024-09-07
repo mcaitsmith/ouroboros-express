@@ -5,6 +5,7 @@ label anger_briefing:
 
     #Briefing Anger
     # LOCATION: cabin
+    call check_overlay
     scene cabin with fade
 
     show vivi neutral at left with dissolve:
