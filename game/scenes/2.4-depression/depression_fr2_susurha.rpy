@@ -150,9 +150,15 @@ label depression_fr2_susurha:
         "No.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "No."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi "What's the point in being afraid?"
             vivi "You cease to be, and it's lights out. Poof."
             susurha "Your confidence feels as if it is made of glass."
@@ -247,9 +253,15 @@ label depression_fr2_susurha:
         "I know who I am." if dec_meter >= 50:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I know who I am."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Are you sure about that?"
             susurha "This whole time that I've interacted with you, it has always felt like I was talking to a mirror that bends and flows with the wind."
             vivithinking sad "This son of a..."

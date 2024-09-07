@@ -47,9 +47,15 @@ label depression_fr1_darius:
         "You just push everyone away, don't you?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi angry "You just push everyone away, don't you? Fine. We can wait for the inevitable in silence."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius surprised "I didn't mean to offend."
             vivi angry blush "You never do. So cold. You're practically an icicle."
             vivithinking "That flare of rage again. Good. Burn me."
@@ -122,9 +128,15 @@ label depression_fr1_darius:
         "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
     
             vivi neutral "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "Which is it? Do you want to drink with me and wallow in our mutual misery or do you want to needle me?"
             vivithinking "Agh. The flash. There's definitely pain here."
             vivi angry "Don't be so sensitive. We're all in the same...train."

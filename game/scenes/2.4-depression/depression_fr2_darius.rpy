@@ -54,9 +54,15 @@ label depression_fr2_darius:
         "I won't say it's been nice getting to know you.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi neutral "I won't say it's been nice getting to know you."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius neutral "You {i}really{/i} don't mince words. I suppose I respect that."
             vivi neutral "There isn't a point. May as well say what we mean."
             vivi "There's still a lot I don't know about you. I'd like to unearth those truths."
@@ -175,9 +181,15 @@ label depression_fr2_darius:
         "More open than you'll ever be?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi sad "More open than you'll ever be?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius sad "I suppose so. There's just— the weight. Of everything."
             vivi neutral "There you are."
         

@@ -52,9 +52,15 @@ label depression_fr2_ava:
         "You're pretty ungrateful, huh?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi angry "You're pretty ungrateful, huh? It sounds like you had everything you could have ever wanted."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "How could you ever understand..."
             vivi angry "You're right, Asha. I can't and I won't. How could a puny little human peasant like me ever understand what it's like to be a princess in a castle?!"
             # JUMP TO: ava sad "Vivi..."
@@ -196,9 +202,15 @@ label depression_fr2_ava:
         "I wrote this haiku in school once." if dec_meter >= 50:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi happy "I wrote this haiku in school once. Wanna hear it?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Go on."
             vivi happy blush "Tasty soup tasty. Tasty soup tasty soup mmm. Tasty tasty soup."
             ava surprised "Wow. You do have a way with words."

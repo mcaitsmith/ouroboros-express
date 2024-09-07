@@ -107,9 +107,15 @@ label depression_fr1_susurha:
         "Led a kingdom.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "Led a kingdom."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Hmm... Got me there I suppose."
             susurha "Bottoms up."
             susurha "That was quite the easy one. Are you trying to make me drunk?"
@@ -154,9 +160,15 @@ label depression_fr1_susurha:
         "Can we just sit and drink?" if dec_meter >= 40:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "Can we just sit and drink?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivithinking "I don't know if I have any more games left in me."
             susurha angry "Hmmm..."
             #JUMP TO: susurha happy "My turn."
@@ -222,9 +234,15 @@ label depression_fr1_susurha:
         "I've had plenty of lovers.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I've had plenty of lovers."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha "I'm sure. A woman such as yourself, but..."
             susurha "Have YOU ever been in love?"
             vivi "Everyone has been in love in their life."

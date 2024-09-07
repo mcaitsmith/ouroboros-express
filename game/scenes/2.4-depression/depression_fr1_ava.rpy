@@ -62,9 +62,15 @@ label depression_fr1_ava:
         "...play a game?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
         
             vivi neutral "...play a game?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava "We will be no more tomorrow and you want to play games."
             vivi "Might help. That and another swig."
             # JUMP TO: vivi neutral "It's called {i}Never Have I Ever{/i}."
@@ -129,9 +135,15 @@ label depression_fr1_ava:
         "...had a pet.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi sad "...had a pet."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava "Do we drink if we have?"
             vivi "Exactly."
             vivithinking "Daaang! She pounded that one."
