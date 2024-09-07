@@ -25,9 +25,15 @@ label depression_fr1_darius:
         "Darius. I could really use someone to talk with right now.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
 
             vivi neutral "Darius. I could really use someone to talk with right now."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius sad "I'm not sure that's such a good idea."
             vivi neutral "I do. I'd like your company."
             show darius surprised blush with dissolve
@@ -94,9 +100,15 @@ label depression_fr1_darius:
         "I'll have what you're having, handsome.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
 
             vivi happy blush "I'll have what you're having, handsome."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi "I could use a little fruity delight."
             darius surprised "I assure you, this drink is enough to knock you off your feet."
             vivi happy blush "Trust me, it'll take more than a juicebox to get me sauced."

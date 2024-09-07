@@ -80,9 +80,15 @@ label depression_fr1_susurha:
         "Been engaged.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "Been engaged."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Hmmm..."
             susurha "I believe this is called 'Beginner's luck.' You've got me there."
             vivithinking "Wow! They've been engaged?"
@@ -121,9 +127,15 @@ label depression_fr1_susurha:
         "I don't know." if dec_meter >= 35:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
                 
             vivi "I don't know."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Boooo..."
             vivi "I'm sorry. I'm not sure what to say."
             susurha "Really?"
@@ -160,9 +172,15 @@ label depression_fr1_susurha:
         "No.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "No."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha surprised "Really?"
             vivi sad "Yeah, I've... never really gotten that far before."
             vivi sad "I've had plenty of partners, but none of them... felt..."
@@ -181,9 +199,15 @@ label depression_fr1_susurha:
         "Possibly, recently." if att_meter_susurha >= 60:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi blush "Possibly, recently."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha surprised "Oh... Do tell me more, madam."
             vivithinking "Do I tell them? Do I not?"
             vivithinking "No."

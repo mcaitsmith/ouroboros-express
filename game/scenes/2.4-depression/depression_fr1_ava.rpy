@@ -86,9 +86,15 @@ label depression_fr1_ava:
         "...sneak behind the bar for two top-shelf top-offs?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi happy "...sneak behind the bar for two top shelf top offs?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava happy "We were unaware you were this naughty, Vivi."
             # ??ATTRACTION
             if att_meter_ava >= 55:
@@ -147,9 +153,15 @@ label depression_fr1_ava:
         "...flirted with a goddess. Or the avatar, or whatever.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi happy "...flirted with a goddess. Or the avatar, or whatever."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             # ??ATTRACTION
             if att_meter_ava >= 55:
                 vivithinking "She's not drinking...hmmm?"
@@ -175,9 +187,15 @@ label depression_fr1_ava:
         "...made a commitment to someone." if att_meter_ava >= 50:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi sad "...made a commitment to someone."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "We do not drink then." 
             # ??ATTRACTION
             if att_meter_ava >= 60:

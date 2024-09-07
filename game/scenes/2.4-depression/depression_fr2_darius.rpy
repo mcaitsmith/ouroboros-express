@@ -31,9 +31,15 @@ label depression_fr2_darius:
         "There's so much more I want to learn about you.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
 
             vivi sad "There's so much more I want to learn about you."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show darius surprised blush with dissolve
             darius "Surely not. I'm an open book."
             vivi happy blush "If you call {i}this{/i} being an open book then I shudder to imagine what closed off looks like."
@@ -151,9 +157,15 @@ label depression_fr2_darius:
         "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
 
             vivi happy blush "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius happy "You know what? Sure."
             vivi surprised blush "FINALLY! You admit it!"
 

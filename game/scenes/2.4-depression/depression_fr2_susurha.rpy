@@ -32,9 +32,15 @@ label depression_fr2_susurha:
         "I didn't want to be alone.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I didn't want to be alone."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "I very much hoped you'd come."
             vivi "Is it okay if I stay here?"
             susurha "Please do."
@@ -44,9 +50,15 @@ label depression_fr2_susurha:
         "I also needed to see a friendly face." if att_meter_susurha >= 50:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
                 
             vivi "I also needed to see a friendly face."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show susurha happy blush with dissolve
             vivi "..."
             show susurha neutral -blush
@@ -57,9 +69,15 @@ label depression_fr2_susurha:
         "I don't...know why." if dec_meter >= 40:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't...know why."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "I wish you knew, but I'll take it."
             susurha "Thank you for your honesty."
             vivi "Is it okay if I stay here?"
@@ -95,9 +113,15 @@ label depression_fr2_susurha:
         "I don't want to go.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't want to go."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha sad "Yeah..."
             # JUMP TO: susurha "So you ARE afraid?"
 
@@ -109,9 +133,15 @@ label depression_fr2_susurha:
         "Yes.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "Yes."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi "I'm very afraid."
             vivi "Who wouldn't be?"
             # JUMP TO: susurha "Well, I know I am."
@@ -156,9 +186,15 @@ label depression_fr2_susurha:
         "I want to be ME as well.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I want to be ME as well."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi "My whole life... I felt I was living someone else's life."
             vivi "Think like someone else. Act like someone else."
             vivi "I'm afraid I've missed my chance to be me."
@@ -170,9 +206,15 @@ label depression_fr2_susurha:
         "I get what you mean." if dec_meter >= 45:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I get what you mean."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "You do?"
             vivi "My whole life, everyone has said \"Vivi, just be yourself!\""
             vivi "I don't think I ever understood what that meant."
@@ -183,9 +225,15 @@ label depression_fr2_susurha:
         "Nothing can take away who you are." if att_meter_susurha >= 60:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "Nothing can take away who you are."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi "You're one of the most unique creatures I have ever met."
             vivi "There aren't many poet-musicians druids that were once heir to a throne, but chose to not take that power so that they could be THEMSELVES."
             vivi happy blush "You are truly one of a kind."

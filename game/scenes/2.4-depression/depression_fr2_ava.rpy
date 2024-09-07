@@ -35,9 +35,15 @@ label depression_fr2_ava:
         "Really?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi surprised "Really? Even though the royals treated you poorly you had everything you could have ever wanted. I don't understand."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "Of course you do not understand. How could you?"
             vivi sad "I want to...understand. How can I share your pain if you don't talk about it with me?"
             # JUMP TO: ava sad "Vivi..."
@@ -57,9 +63,15 @@ label depression_fr2_ava:
         "I wish I could have been there for you." if att_meter_ava >= 50:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "I wish I could have been there for you. Our relationship has been the one thing keeping me sane on this journey... I wish we could have spent some time together while we were alive."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava happy "Really? We feel the same way." 
             # JUMP TO: ava sad "Vivi..."
 
@@ -81,9 +93,15 @@ label depression_fr2_ava:
         "But why do you need her to begin with?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi surprised "But why do you need her to begin with? I wish you could have had a normal life on Earth."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "Without the Avatar, our world would be doomed. These hands have seen much bloodshed."
             vivi surprised "I didn't realize that your life wasn't all sunshine and rainbows."
             ava sad "It is not your fault, for we did not share with you. It is not an easy thing to broach lightly."
@@ -105,9 +123,15 @@ label depression_fr2_ava:
         "If only I had known you in life." if att_meter_ava >= 55:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "If only I had known you in life, things could have been different."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava neutral blush with dissolve
             ava "A little bit of love would have gone a long way."
             vivi happy blush "Well I'm glad we can spend this time together now."
@@ -142,9 +166,15 @@ label depression_fr2_ava:
         "My family moved around a lot..." if att_meter_ava >= 60:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi neutral "My family moved around a lot, from country to country."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "I'm luckier than most - seen and experienced so many amazing cultures."
             vivi sad "But it's lonely for a kid, you know? As soon as I made friends, started feeling comfortable... We'd uproot again."
             ava neutral "Ah, you were a lonely child. We understand this."
