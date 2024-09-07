@@ -105,10 +105,22 @@ label bargaining_fr1_susurha:
         "Well, I may have a plan...":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Well, I may have a plan, but I need to know everything I can about that conductor to get it to come off properly." 
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "..." 
             vivi neutral "You want me to tell you about my plan."
             susurha neutral "Or you could keep me in suspense, and while we stand here awkwardly, more and more of this train is reclaimed by whomever or whatever entity rules this cursed liminality."

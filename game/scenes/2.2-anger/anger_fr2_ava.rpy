@@ -220,10 +220,22 @@ label anger_fr2_ava:
         "Don't play games with me.":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "Don't play games with me."
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava neutral "Ah. Because you lack skill at darts?" 
             vivi angry "Look, you may have been some kind of big deal deity on Soleos, but we're all equals here on death row, you silly moose!"
             # JUMP TO: ava blush angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"

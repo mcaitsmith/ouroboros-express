@@ -79,10 +79,22 @@ label depression_fr1_ava:
         "...drink our feelings away?":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi neutral "...drink our feelings away?"
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava "We accept. Our feelings weigh heavily on us."
             vivi "Then maybe we can play a fun game?"
             ava surprised "A game? Frivolity amidst such sorrow?"

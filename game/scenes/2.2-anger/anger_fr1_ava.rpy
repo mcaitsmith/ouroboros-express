@@ -124,10 +124,22 @@ label anger_fr1_ava:
         "...chin up, princess, or the crown slips.":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "...chin up, princess, or the crown slips."
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava angry "Princess? We were not royalty, those inbred lickspittles. We came from nothing."
             vivithinking neutral "With that stiff upper lip and all? Yeah, right." 
             ava angry "Why?! We are no more! Our mother sacrificed us. Gutted us like a butcher does a fatted calf."
