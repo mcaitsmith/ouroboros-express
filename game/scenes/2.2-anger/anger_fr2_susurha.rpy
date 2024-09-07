@@ -83,9 +83,15 @@ label anger_fr2_susurha:
         "Clearly, they're insecure. I'm gonna let them win.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivithinking "Clearly, they're insecure. I'm gonna let them win."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "You go first."
             
             # SOUND: dart hits the board
@@ -144,9 +150,15 @@ label anger_fr2_susurha:
         "I didn't have a choice.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I didn't have a choice."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "Do tell."
             vivi angry "I'm a reporter. I go where the story is. Wherever Chloe tells me to go."
             vivi sad "What a silly reason to die."
@@ -171,14 +183,20 @@ label anger_fr2_susurha:
     vivithinking "Chloe..."
     menu:
     #OPTION 1 +DECAY
-        "Pierce Chloe!":
+        "(Pierce Chloe!)":
 
     # mica, I believe the above is an action rather than something vivi says. Same w/ option 2
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivithinking "Pierce Chloe!"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi angry "It's all her fault!"
             vivi angry "HER!"
             vivi angry "SHE had to discover this \"exclusive story.\""
@@ -194,7 +212,7 @@ label anger_fr2_susurha:
             # JUMP TO: susurha sad "It was fear that brought me here."
 
     #OPTION +ATTRACTION
-        "Pierce the idea that it was her fault.":
+        "(Pierce the idea that it was her fault.)":
 
             play sound attchoice
             show attraction_icon at right with dissolve:
@@ -273,9 +291,15 @@ label anger_fr2_susurha:
         "We got a raw deal. Life is unfair.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "We got a raw deal. Life is unfair."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha angry "Certainly nothing about our present situation is fair."
             vivi angry "I HATE this train!"
             vivi angry "And the conductor. It's his fault we're here."

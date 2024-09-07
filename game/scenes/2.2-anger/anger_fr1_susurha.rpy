@@ -61,9 +61,15 @@ label anger_fr1_susurha:
         "I'd be revealing too much.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "I'd be revealing too much."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
             vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."
 
@@ -122,9 +128,15 @@ label anger_fr1_susurha:
         "Me? Hiding? What about you?!":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "Me? Hiding? What about you?! What exactly are YOU hiding behind those beady eyes?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha surprised "Deflection!"
             susurha surprised "A keen observer of everything but yourself."                            
             susurha neutral "Do you know what I see when I look into your eyes?"
@@ -180,9 +192,15 @@ label anger_fr1_susurha:
         "You're the one who's angry.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi angry "You're the one who's angry."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha happy "Again, you're deflecting."
             susurha angry "But you are right. I'm furious."
             # SOUND: sigh

@@ -92,9 +92,15 @@ label anger_fr2_darius:
         "Actually...forget it.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "Actually...forget it."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius surprised "I thought you wanted to play."
             vivi angry "Play? At a time like this? Seems a waste of time."
             darius surprised "I... actually agree."
@@ -140,9 +146,15 @@ label anger_fr2_darius:
         "Sounds like you miss it a little.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "Sounds like you miss it a little."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "I beg your pardon."
             vivi neutral "Is that why you're so quiet and pensive? Moody? You wish you could still be out there, in service of your god."
             darius angry "That could not be further from the truth."

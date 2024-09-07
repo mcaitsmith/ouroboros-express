@@ -79,9 +79,15 @@ label anger_fr1_darius:
         "You mentioned Urshu. Why bring him up?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "You mentioned Urshu. Why bring him up?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "That little twerp knows more than he lets on."
             vivi surprised "You're getting angry."
             darius angry "Yes. You should be, too."
@@ -159,9 +165,15 @@ label anger_fr1_darius:
         "Well, you don't hear me crying about it.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi neutral "Well you don't hear me crying about it."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             show darius surprised -blush
             darius "I'm sorry?"
             vivi neutral "You heard me. Things may be different, but they aren't dire."

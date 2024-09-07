@@ -52,9 +52,15 @@ label anger_fr1_ava:
         "The sea monster card.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "The sea monster card."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Ah. Leviathan. The eater of worlds. Scourge of the seas. Dominance. Aggression. We find this interesting."
             vivi neutral "Wait, was that a dig at...Darius?"
             ava angry "We know of his kind. You would be wise to stay away. His card brings darkness...and deceit."
@@ -64,9 +70,15 @@ label anger_fr1_ava:
         "The big snake card.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "The big snake card."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Curious. We have not seen this card before. Curious, indeed. It resembles the snake biting its own tail, the Ouroboros."
             ava neutral "But of course, snakes, reptiles. They are of the same family. A warning... "
             vivi surprised "Oh?"
@@ -160,9 +172,15 @@ label anger_fr1_ava:
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava angry "Perhaps you should heed your own advice, Vivienne."
             vivithinking angry "Hmph. Well, someone's got their knickers in a twist!" 
             vivi angry "Perhaps I shall. Goodbye, Asha."

@@ -38,9 +38,15 @@ label anger_fr2_ava:
         "Amazing.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "No, Vivienne, perpetual loneliness. We would not wish that upon even our monarchy."
             # SOUND: dart hitting the board
             play sound darts
@@ -95,9 +101,15 @@ label anger_fr2_ava:
         "But if you like it...":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi happy blush "But if you like it...I guess I could get used to it."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             show ava happy blush with dissolve
             ava "No. We never wish to offend you."
             vivithinking happy "I'll do anything she wants to spend some more time with them...!"
@@ -151,9 +163,15 @@ label anger_fr2_ava:
         "What are your thoughts on our conductor?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "What are your thoughts on the conductor?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Ah, Urshu. A mystery."
             vivi "Personally...I think he's undead."
             ava surprised "A zombie?"
@@ -214,9 +232,15 @@ label anger_fr2_ava:
         "I don't need you to think I'm special.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I don't need you to think I'm special. Just because your crazy cult revered you doesn't mean that I'm going to, ass hat!"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             # JUMP TO: ava blush angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"
 
     ava angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"
