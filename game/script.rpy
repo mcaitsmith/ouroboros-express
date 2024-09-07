@@ -116,53 +116,63 @@ init python:
     config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
 
 # add layer for eldritch overlay
-define config.layers = [ 'master', 'transient', 'screens', 'overlay','eldritch_overlay']
+define config.layers = [ 'background','master', 'transient', 'screens', 'overlay','eldritch_overlay']
+# define layers of backgrounds and NPCs
+$ config.tag_layer['observatory'] = 'background'
+$ config.tag_layer['diningcar'] = 'background'
+$ config.tag_layer['cabin'] = 'background'
+$ config.tag_layer['lounge'] = 'background'
+$ config.tag_layer['vivi'] = 'master'
+$ config.tag_layer['urshu'] = 'master'
+$ config.tag_layer['ava'] = 'master'
+$ config.tag_layer['darius'] = 'master'
+$ config.tag_layer['susurha'] = 'master'
 
 label check_overlay: # call this label to display eldritch overlay
-    hide eldritch1 onlayer eldritch_overlay
-    hide eldritch2 onlayer eldritch_overlay
-    hide eldritch3 onlayer eldritch_overlay
-    hide eldritch4 onlayer eldritch_overlay
-    hide eldritch5 onlayer eldritch_overlay
-    with { "master" : Dissolve(1.0) }
+    # hide eldritch1 onlayer eldritch_overlay
+    # hide eldritch2 onlayer eldritch_overlay
+    # hide eldritch3 onlayer eldritch_overlay
+    # hide eldritch4 onlayer eldritch_overlay
+    # hide eldritch5 onlayer eldritch_overlay
+    # with { "master" : Dissolve(1.0) }
     if dec_meter >= dec_threshold_5:
-        show eldritch5 onlayer eldritch_overlay
+        show eldritch lv5 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_4:
-        show eldritch4 onlayer eldritch_overlay
+        show eldritch lv4 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_3:
-        show eldritch3 onlayer eldritch_overlay
+        show eldritch lv3 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_2:
-        show eldritch2 onlayer eldritch_overlay
+        show eldritch lv2 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_1:
-        show eldritch1 onlayer eldritch_overlay
-    with { "master" : Dissolve(1.0) }
+        show eldritch lv1 onlayer eldritch_overlay
+    with { "background" : Dissolve(1.0) }
     return
 
 label check_overlay_nofade: # call this label to display eldritch overlay
-    hide eldritch1 onlayer eldritch_overlay
-    hide eldritch2 onlayer eldritch_overlay
-    hide eldritch3 onlayer eldritch_overlay
-    hide eldritch4 onlayer eldritch_overlay
-    hide eldritch5 onlayer eldritch_overlay
+    # hide eldritch1 onlayer eldritch_overlay
+    # hide eldritch2 onlayer eldritch_overlay
+    # hide eldritch3 onlayer eldritch_overlay
+    # hide eldritch4 onlayer eldritch_overlay
+    # hide eldritch5 onlayer eldritch_overlay
     if dec_meter >= dec_threshold_5:
-        show eldritch5 onlayer eldritch_overlay
+        show eldritch lv5 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_4:
-        show eldritch4 onlayer eldritch_overlay
+        show eldritch lv4 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_3:
-        show eldritch3 onlayer eldritch_overlay
+        show eldritch lv3 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_2:
-        show eldritch2 onlayer eldritch_overlay
+        show eldritch lv2 onlayer eldritch_overlay
     elif dec_meter >= dec_threshold_1:
-        show eldritch1 onlayer eldritch_overlay
+        show eldritch lv1 onlayer eldritch_overlay
     return
 
 label hide_overlay: # call this label to hide eldritch overlay
-    hide eldritch1 onlayer eldritch_overlay
-    hide eldritch2 onlayer eldritch_overlay
-    hide eldritch3 onlayer eldritch_overlay
-    hide eldritch4 onlayer eldritch_overlay
-    hide eldritch5 onlayer eldritch_overlay
-    with { "master" : Dissolve(1.0) }
+    # hide eldritch1 onlayer eldritch_overlay
+    # hide eldritch2 onlayer eldritch_overlay
+    # hide eldritch3 onlayer eldritch_overlay
+    # hide eldritch4 onlayer eldritch_overlay
+    # hide eldritch5 onlayer eldritch_overlay
+    # with { "master" : Dissolve(1.0) }
     return
 
 # The game starts here.
