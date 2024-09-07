@@ -51,9 +51,15 @@ label bargaining_fr2_darius:
         "Can you help me with something for Urshu?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Can you help me with something for Urshu? He asked me to make dinner for the group and I'd appreciate the extra hands."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius neutral "Urshu asked you?"
             vivi neutral "Yeah, why do you ask?"
             darius neutral "Nothing it just seems...strange. Urshu has never asked us to do anything for him. Besides, he's a god."
@@ -66,9 +72,15 @@ label bargaining_fr2_darius:
         "You want out of this place?" if dec_meter > 20:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "You want out of this place? I may have your ticket, if you just help me out."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "No."
             vivi neutral "No, what?"
             darius neutral "No, I do not \"want out of this place\" because it isn't possible."
@@ -104,10 +116,16 @@ label bargaining_fr2_darius:
         "Better not leave my comfort zone.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             show vivi neutral at left
             vivithinking "Let's just make something simple. Urshu doesn't strike me as the extravagant type."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "Let's make some chicken stir fry. I know a pretty easy recipe."
             darius neutral "Ah, seems simple enough. Let me prepare the meat."
 

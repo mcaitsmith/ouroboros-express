@@ -39,9 +39,15 @@ label bargaining_fr1_susurha:
         "You're such an observant lizard. I just want to know what you pick up on.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "You're such an observant lizard. I just want to know what you pick up on."  
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha angry "The one so seemingly dedicated to self-deception has the temerity to call me a lizard."
             vivi angry "Alright, then. Fine! Keep your assiduous observations to yourself."
     
@@ -51,9 +57,15 @@ label bargaining_fr1_susurha:
         "He just seems like such an enigmatic character." if dec_meter >= 10:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "He just seems like such an enigmatic character..."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha angry "...and after that statement I'm supposed to fill in the blanks about what I know?"
             susurha angry "Even if I did know anything useful about Urshu, what makes you think I'd tell you?"
             vivi surprised "Damn. I thought we had a good rapport. I guess not."
@@ -205,9 +217,15 @@ label bargaining_fr1_susurha:
         "Are you absolutely sure we can't bargain with Urshu?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Are you absolutely sure we can't bargain with Urshu?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "I wouldn't trust him if my life depended on it."
             susurha neutral "Heh...I suppose our lives do depend on him, don't they?"
             vivi neutral "This isn't a joke."
@@ -252,9 +270,15 @@ label bargaining_fr1_susurha:
         "I NEED his help if I'm gonna get off this train." if dec_meter >= 15:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "I NEED his help if I'm gonna get off this train."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "Do the prisoners trust their escape with the jailors?"
             susurha neutral "I've had my fair share of desperation, but this..."
             susurha neutral "You can do better."

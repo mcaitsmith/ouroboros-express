@@ -83,9 +83,15 @@ label bargaining_fr2_susurha:
         "Whatever it was, it skipped over me.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Whatever it was, it skipped over me."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "Whatever do you mean?"
             vivi neutral "Nana could read people. She could bargain. She had grit. Tenacity." 
             susurha neutral "Those are good qualities."
@@ -178,9 +184,15 @@ label bargaining_fr2_susurha:
         "Let's try to appeal to Urshu's taste.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Let's try to appeal to Urshu's taste."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "We would only be guessing."
             vivi neutral "Let's guess then."
             vivi neutral "If I were that penguin-dressed, double-talking astral weirdo, I'd eat... Meatloaf."
@@ -362,9 +374,15 @@ label bargaining_fr2_susurha:
         "I think it's fine the way it is.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "I think it's fine the way it is."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "There's no part of you that believes that."
             vivi neutral "So what. We're being scammed anyway."
             susurha neutral "\"So what?\" Vivi!"
@@ -382,9 +400,15 @@ label bargaining_fr2_susurha:
         "Something?!" if dec_meter >= 30:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi angry "Something?!"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi angry "We get ONE SHOT to impress Urshu or we're stuck on this train forever, and you the only thing you can think of is that's it's missing \"something?!\""
             vivi angry "You know what? Forget it. The food is all yours, lizard brain! And you can add all the unspecific \"somethings\" your little reptilian heart desires!"
             susurha surprised "Vivienne, enough!"

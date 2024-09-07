@@ -29,9 +29,15 @@ label bargaining_fr1_ava:
         "Who or what is our mysterious train conductor?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Who or what is our mysterious train conductor?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava neutral "He is known by many names, the conveyor of souls. Charon? Urshu? Anubis? The trickster Hermes seems fitting, no?"
             vivi neutral "Think we can convince him to let us off this death train?"
             ava sad "We know the will of the gods, Vivienne."
@@ -107,9 +113,15 @@ label bargaining_fr1_ava:
                 "No family?":
 
                     play sound decchoice
+                    show decay_icon at right with dissolve:
+                        xoffset -500
+                        # xoffset -30
+                        yoffset -750
                     $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
                     vivi surprised "No family?"
+                    hide decay_icon
+                    with { "master" : Dissolve(0.5) }
                     ava sad "Our mother gave us to Asha at birth, then sent us back."
                     vivi surprised "Sent you back?"
                     ava sad "We are sacrificed. We are grateful we do not remember our mother or our death. Praise Asha."
