@@ -69,9 +69,15 @@ label bargaining_fr1_susurha:
         "I struck a bargain with Urshu. I'm going to make him a meal.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
         
             vivi neutral "I struck a bargain with Urshu. I'm going to make him a meal and I need your help."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "A meal...to die for?"
             vivi angry "Witty."
             susurha happy "I'm listening."
@@ -135,9 +141,15 @@ label bargaining_fr1_susurha:
         "So you're calling Urshu a slimy freak?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
 
             vivi neutral "So you're calling Urshu a slimy freak?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "...Yes."
             susurha angry "In fact, he is the slimiest of them all."
             susurha neutral "I know you feel as I do about him."
@@ -169,9 +181,15 @@ label bargaining_fr1_susurha:
         "I don't think Urshu is that bad.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
 
             vivi neutral "I don't think Urshu is that bad."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha angry "Oh, come on now. I know a woman as skilled as yourself can sniff out fakery from miles away."
             susurha angry "The man, or whatever he is, has been painting himself this whole time as a well-dressed, well-meaning human conductor while we hurtle towards our deaths on a train for the dead!"
             show susurha neutral blush with dissolve
@@ -204,9 +222,15 @@ label bargaining_fr1_susurha:
         "Urshu is quite the slimy freak." if att_meter_susurha >= 30:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
 
             vivi neutral "Urshu is quite the slimy freak."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "The slimiest of them all."
             vivi neutral "I bet he thinks he looks good in that garb he has on every day."
             susurha neutral "I imagine him lounging around, reading romance novels nightly."

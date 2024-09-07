@@ -29,9 +29,15 @@ label bargaining_fr2_ava:
         "I want to cook together...with you.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi neutral blush "I want to cook together... With you."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral blush "I bet we can whip up something really incredible."
             show ava happy blush with dissolve
             
@@ -78,9 +84,15 @@ label bargaining_fr2_ava:
         "Be my sous chef! Together, we'll rule this train." if att_meter_ava >= 40:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi neutral blush "Be my sous chef! Together, we'll rule this train."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava surprised blush with dissolve
             ava "We're not sure exactly what you mean."
             vivi neutral "A sous chef is the right-hand to the main chef! We're gonna be making something in the kitchen today!" 
@@ -142,9 +154,15 @@ label bargaining_fr2_ava:
         "Something simple.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi happy "Something simple. A good old American breakfast!"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
 
             ava surprised "We are not familiar with...American..."
             vivi happy "Well, then I'll tell ya, Asha! Americans love to eat, and they wake up most days with a massive meal."
@@ -199,9 +217,15 @@ label bargaining_fr2_ava:
         "If we work together?": 
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi neutral blush "Do you mind if we work together? I'm not the most comfortable in the kitchen."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivithinking "That's a lie. But I want her...near." 
             show ava happy blush with dissolve
             ava "Of course, Vivienne. Let's do this together."

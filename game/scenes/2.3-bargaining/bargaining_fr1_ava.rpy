@@ -51,9 +51,15 @@ label bargaining_fr1_ava:
         "If you could redo a past event, what would it be?" if att_meter_ava >= 20:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
             vivi neutral "If you could redo a past event, what would it be?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "Or I guess to be more specific, if you could change something that might have caused this, what would you do?"
             show ava sad blush with dissolve
             ava "Once, we broke a taboo. We found a bird, hurt and dying. We hid it, cared for it, grew attached to it."
@@ -73,9 +79,15 @@ label bargaining_fr1_ava:
         "That was a big sigh. Pebble in your sandal, Asha?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
             vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men...even tears."
             show vivi surprised at left:
                 xzoom -1
@@ -109,9 +121,15 @@ label bargaining_fr1_ava:
                 "No name?":
 
                     play sound attchoice
+                    show attraction_icon at right with dissolve:
+                        xoffset -500
+                        # xoffset -30
+                        yoffset -850
                     $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No name?"
+                    hide attraction_icon
+                    with { "master" : Dissolve(0.5) }
                     ava sad "We speak for our people, so we are all, and we are one."
 
                     show vivi neutral at left:
@@ -135,9 +153,15 @@ label bargaining_fr1_ava:
                 "No tears?":
 
                     play sound attchoice
+                    show attraction_icon at right with dissolve:
+                        xoffset -500
+                        # xoffset -30
+                        yoffset -850
                     $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No tears?"
+                    hide attraction_icon
+                    with { "master" : Dissolve(0.5) }
                     ava sad "We have felt the onset once, but no. We have never cried."
                     vivithinking "That explains a lot!"
 
@@ -165,9 +189,15 @@ label bargaining_fr1_ava:
                 "No men?":
 
                     play sound attchoice
+                    show attraction_icon at right with dissolve:
+                        xoffset -500
+                        # xoffset -30
+                        yoffset -850
                     $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No men?"
+                    hide attraction_icon
+                    with { "master" : Dissolve(0.5) }
                     ava happy "We never had one, but we knew many women."
                     vivithinking "Whoa! Did I underestimate Her Radiance?"
                     ava happy "When we went to lands run by women, our diplomacy always prevailed, no matter the tongue."

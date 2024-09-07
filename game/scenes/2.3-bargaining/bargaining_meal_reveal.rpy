@@ -77,6 +77,10 @@ label bargaining_meal_reveal:
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             if fr2_bargaining_choice == "Asha":
                 $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
                 call show_ava_blush from _call_show_ava_blush
@@ -87,6 +91,8 @@ label bargaining_meal_reveal:
                 $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
                 call show_susurha_blush from _call_show_susurha_blush
             vivithinking surprised "Oh, God. What am I doing? What are they thinking? Do they hate me?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
 
             # JUMP TO: vivithinking neutral "He's taking another bite!"    
 

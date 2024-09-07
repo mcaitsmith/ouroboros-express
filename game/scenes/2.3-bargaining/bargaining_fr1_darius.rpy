@@ -65,9 +65,15 @@ label bargaining_fr1_darius:
         "I didn't think sarcasm was in your wheelhouse.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
         
             vivi neutral "I didn't think sarcasm was in your wheelhouse, Monsieur Wrecker."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius happy "I have many surprises in my \"wheelhouse\" as you say. Some I may even show you someday."
             vivi happy "Rather forward, aren't we? That definitely isn't in your nature."
             darius neutral "Yes, well... Maybe you're a bad influence on me, Ms. Sanssouci."
@@ -113,9 +119,15 @@ label bargaining_fr1_darius:
         "So caring. I wouldn't expect it from you.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
     
             vivi happy "So caring. I wouldn't expect it from you."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "You don't have to worry. I don't plan to hurt our dear Urshu."
             vivi neutral "I was actually thinking of doing something for him later today and wanted you to read him to see what he'd like."
             darius happy "I'm glad to hear it. I can tell he cares for you a great deal."

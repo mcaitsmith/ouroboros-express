@@ -29,9 +29,15 @@ label bargaining_fr2_darius:
         "Could I interest you in dinner?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
 
             vivi neutral "Could I interest you in dinner?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show darius neutral blush with dissolve
             darius "Pardon me?"
             vivi neutral "I'm making a meal today for Urshu, and I thought this would be a great chance to work together."
@@ -111,11 +117,17 @@ label bargaining_fr2_darius:
         "Screw it, let's go all out!":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
 
             show vivi neutral at left
 
             vivithinking "Screw it, let's go all out! Really need to wow Urshu if I want my ticket out of here."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "It's a bit of a challenging recipe, but I know a beef wellington that's sure to make his jaw drop."
             darius neutral "That's a rather sophisticated recipe. Do you have a culinary background, Vivi?" 
             vivi neutral "Not exactly. I just pick up a lot of things on this job. Everyone loves food, and they all have an opinion on it. It's pretty easy to get good recipes if you just ask."
