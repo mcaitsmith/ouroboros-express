@@ -44,6 +44,8 @@ label train_epilogue:
     urshu neutral blush "And yet, none quite so beautiful as you. Won't you take my hand, Vivi? At any moment we will leave them to their new beginning, as our journey begins its spiral of theatrics and redemption once again."
     vivi happy "It's been a long time since you had a fresh start of your own, huh Urshu?"
     urshu neutral "An eternity, one might say."
+    $ renpy.choice_for_skipping() # stop skipping
+    $ _skipping = False
     vivi happy "Then hold me close. Don't let go. Our new beginning starts now."
     
    

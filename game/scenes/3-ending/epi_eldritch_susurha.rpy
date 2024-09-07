@@ -17,8 +17,10 @@ label epi_eldritch_susurha:
     urshu sad "This growing rumination metastasized into their personal horror, who chained them at the wrists and ankles and dragged them into the furthest depths of the Dark Beyond."
 
     urshu sad "Muzzled so they would never again sing, scaled in nightmares so they would never again gladden or cheer, they became the very thing that haunted them..."
-
+    $ renpy.choice_for_skipping() # stop skipping
+    $ _skipping = False
     urshu sad "...a grotesque prisoner, devoid of agency or expression, doomed to suffer for all eternity."
+    $ _skipping = True
 
     return
 

@@ -25,7 +25,9 @@ label epi_eldritch_darius:
     urshu sad "He stared at his hands, clean and groomed, the horrors they had inflicted invisible to all but him. He could not take it, and his body responded in kind."
 
     urshu sad "He morphed and shifted, the hands he so despised growing, the fingers elongating. He grew and grew, his body cracking and bending under the stress, until he resembled the very horror he so feared."
-
+    $ renpy.choice_for_skipping() # stop skipping
+    $ _skipping = False
     urshu sad "Somewhere deep down, he knew this was a fitting fate for him—a nightmare in body to reflect the monster within."
-
+    $ _skipping = True
+    
     return
