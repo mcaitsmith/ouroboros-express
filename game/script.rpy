@@ -1,94 +1,110 @@
 ﻿# The script of the game goes in this file.
 
-init python:
-    renpy.music.register_channel("blip", "sfx")
-    def beepy_voice_high(event, interact=True, **kwargs):
-        if not interact:
-            return
-        if event == "show_done":
-            renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg",channel="blip")
-        elif event == "slow_done":
-            renpy.sound.stop(channel="blip")
-    def beepy_voice_medium(event, interact=True, **kwargs):
-        if not interact:
-            return
-        if event == "show_done":
-            renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg",channel="blip")
-        elif event == "slow_done":
-            renpy.sound.stop(channel="blip")
-    def beepy_voice_low(event, interact=True, **kwargs):
-        if not interact:
-            return
-        if event == "show_done":
-            renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg",channel="blip")
-        elif event == "slow_done":
-            renpy.sound.stop(channel="blip")
+# COMMENTING OUT TEXT BLIPS TO BE REPLACED BY VO
+# init python:
+#     renpy.music.register_channel("blip", "sfx")
+#     def beepy_voice_high(event, interact=True, **kwargs):
+#         if not interact:
+#             return
+#         if event == "show_done":
+#             renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg",channel="blip")
+#         elif event == "slow_done":
+#             renpy.sound.stop(channel="blip")
+#     def beepy_voice_medium(event, interact=True, **kwargs):
+#         if not interact:
+#             return
+#         if event == "show_done":
+#             renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg",channel="blip")
+#         elif event == "slow_done":
+#             renpy.sound.stop(channel="blip")
+#     def beepy_voice_low(event, interact=True, **kwargs):
+#         if not interact:
+#             return
+#         if event == "show_done":
+#             renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg",channel="blip")
+#         elif event == "slow_done":
+#             renpy.sound.stop(channel="blip")
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
-define vivi = Character("Vivi",image="vivi",color="#FFFFFF", callback=beepy_voice_medium)
-define vivithinking = Character("Vivi",image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
-define urshu = Character("Urshu",image="urshu",color="#FFFFFF", callback=beepy_voice_high, namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define ava = Character("Asha",image="ava",color="#FFFFFF", callback=beepy_voice_medium, namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define darius = Character("Darius",image="darius",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define susurha = Character("Susu'Rha",image="susurha",color="#FFFFFF", callback=beepy_voice_low, namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define vivi = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",color="#FFFFFF")
+define vivithinking = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
+define urshu = Character("Urshu", callback = name_callback, cb_name = "urshu", image="urshu",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define ava = Character("Asha", callback = name_callback, cb_name = "ava",image="ava",color="#FFFFFF", namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define darius = Character("Darius", callback = name_callback, cb_name = "darius",image="darius",color="#FFFFFF", namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susurha",image="susurha",color="#FFFFFF", namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 
 # define titlemusic = "audio/music/lavenders blue.ogg"
 define mainmusic = "audio/music/OrEx_MainTrack1_v1.0.ogg"
 define goodendmusic = "audio/music/Good Ending.ogg"
 define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.ogg"
 
-# PLACEHOLDER UNTIL GET BLUSH OVERLAY FOR VIVI SPRITE
-# image vivi neutral blush = "images/characters/vivi/vivi neutral.png"
-# image vivi happy blush = "images/characters/vivi/vivi happy.png"
-# image vivi sad blush = "images/characters/vivi/vivi sad.png"
-# image vivi angry blush = "images/characters/vivi/vivi angry.png"
-# image vivi surprised blush = "images/characters/vivi/vivi surprised.png"
-
-# PLACEHOLDER UNTIL GET SILHOUETTES
+# define silhouette images
 image ava silhouette = "images/characters/ava/ava silhouette.png"
 image darius silhouette = "images/characters/darius/darius silhouette.png"
 image susurha silhouette = "images/characters/susurha/susurha silhouette.png"
 
+# define blurred background images
 image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
 image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
 image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
 image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
 
+# define white background
 image white = "#ffffff"
 
+# define NPC expression and blush layered images
 layeredimage ava:
+    at sprite_highlight('ava')
     group face auto:
         attribute neutral default
     group overlay:
         attribute blush:
             "ava_overlay_blush"
 layeredimage darius:
+    at sprite_highlight('darius')
     group face auto:
         attribute neutral default
     group overlay:
         attribute blush:
             "darius_overlay_blush"
 layeredimage susurha:
+    at sprite_highlight('susurha')
     group face auto:
         attribute neutral default
     group overlay:
         attribute blush:
             "susurha_overlay_blush"
 layeredimage urshu:
+    at sprite_highlight('urshu')
     group face auto:
         attribute neutral default
     group overlay:
         attribute blush:
             "urshu_overlay_blush"
 
+# define vivi images
+image vivi neutral = At('images/characters/vivi/vivi neutral.png', sprite_highlight('vivi'))
+image vivi happy = At('images/characters/vivi/vivi happy.png', sprite_highlight('vivi'))
+image vivi sad = At('images/characters/vivi/vivi sad.png', sprite_highlight('vivi'))
+image vivi angry = At('images/characters/vivi/vivi angry.png', sprite_highlight('vivi'))
+image vivi surprised = At('images/characters/vivi/vivi surprised.png', sprite_highlight('vivi'))
+image vivi neutral blush = At('images/characters/vivi/vivi neutral blush.png', sprite_highlight('vivi'))
+image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprite_highlight('vivi'))
+image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
+image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
+image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+
+# define flash effect
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
+# define custom positions for sprites
 transform center_left:
     xalign 0.2 yalign 1.0
 transform center_right:
     xalign 0.8 yalign 1.0
+
+# define custom screen effects
 transform bright:
     matrixcolor BrightnessMatrix (0.75)
 transform flicker_opacity:
@@ -131,8 +147,8 @@ label begin:
     $ urshu_story_3 = False
     $ urshu_story_4 = False
 
-    $ quick_menu = True
-    $ _game_menu_screen = "save"
+    $ quick_menu = True # restore quick menu
+    $ _game_menu_screen = "save" # restore menu access
 
 
     # jump to first scene
