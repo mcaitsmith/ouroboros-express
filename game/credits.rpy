@@ -55,6 +55,8 @@ screen credits():
                 text "https://smallloanstudio.wordpress.com"
                 text "Thanks for playing!"
 
+    key "K_ESCAPE" action Quit(confirm=True)
+
 style credits_hbox:
     spacing 40
     ysize 30
