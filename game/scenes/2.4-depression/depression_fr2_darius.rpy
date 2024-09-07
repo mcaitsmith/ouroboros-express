@@ -160,7 +160,7 @@ label depression_fr2_darius:
 
     menu:
         # OPTION 1 +ATTRACTION
-        "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?":
+        "Adorable? Cute?":
 
             play sound attchoice
             show attraction_icon at right with dissolve:

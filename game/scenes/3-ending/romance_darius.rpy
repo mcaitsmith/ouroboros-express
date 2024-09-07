@@ -64,12 +64,12 @@ label romance_darius:
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold:
         call epi_friend_ava from _call_epi_friend_ava
-    elif att_meter_ava > 0:
+    else:
         call epi_eldritch_ava from _call_epi_eldritch_ava
     # ??ATTRACTION
     if att_meter_susurha >= romance_threshold:
         call epi_friend_susurha from _call_epi_friend_susurha_1
-    elif att_meter_susurha > 0:
+    else:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha_1
 
     stop music fadeout 3.0
