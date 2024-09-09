@@ -13,7 +13,7 @@ label reveal:
     vivi "{i}*cough* *cough*{/i}"
 
     show darius surprised at right with dissolve
-    darius surprised "Huh."
+    darius surprised "You again."
 
     show ava neutral at center with dissolve
     ava neutral "Another trick?"
@@ -44,7 +44,7 @@ label reveal:
     susurha happy "Ha! A joke! How droll!"
 
     show darius neutral
-    darius neutral "Hmph."
+    darius neutral "Surprise, surprise."
 
     show ava angry
     ava angry "What trickery is this? We've had enough of this game. Release us this instant."
@@ -75,7 +75,7 @@ label reveal:
     susurha surprised "Oh, well, then that's funny, see? It'll take more than a fool in uniform to keep me captive."
 
     show darius neutral
-    darius "Hmph."
+    darius "Do you always act the fool or is this a special occasion?"
     ava "What is the matter, master of thralls? Care to elaborate?"
     darius "I-I'm a mere observer."
 
