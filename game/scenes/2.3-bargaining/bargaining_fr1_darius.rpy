@@ -5,7 +5,7 @@ label bargaining_fr1_darius:
     #FREE ROAM 1 - Darius
 
     # LOCATION: lounge 
-    call check_overlay
+    call check_overlay from _call_check_overlay_18
     scene lounge with fade
 
     show vivi neutral at left with dissolve:

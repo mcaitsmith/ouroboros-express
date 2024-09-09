@@ -5,7 +5,7 @@ label anger_cs2:
     #Character Selector 2
 
     # LOCATION: cabin
-    call check_overlay
+    call check_overlay from _call_check_overlay_1
     scene cabin with fade
 
     show vivi neutral at left with dissolve:

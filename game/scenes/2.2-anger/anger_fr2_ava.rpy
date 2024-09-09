@@ -5,7 +5,7 @@ label anger_fr2_ava:
     #FREE ROAM 2 - AVA
 
     # LOCATION: dining car
-    call check_overlay
+    call check_overlay from _call_check_overlay_6
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:

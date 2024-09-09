@@ -5,7 +5,7 @@ label bargaining_meal_reveal:
     #URSHU MEAL REVEAL
 
     # LOCATION: lounge
-    call check_overlay 
+    call check_overlay from _call_check_overlay_23 
     scene lounge with fade
 
     show vivi neutral at left with dissolve:

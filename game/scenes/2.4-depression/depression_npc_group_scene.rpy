@@ -1,7 +1,7 @@
 label depression_npc_group_scene:
 
     #LOCATION: bar
-    call check_overlay
+    call check_overlay from _call_check_overlay_34
     scene diningcar with fade
 
     #SOUND: train
