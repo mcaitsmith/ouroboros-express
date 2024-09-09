@@ -308,6 +308,11 @@ label denial_fr2_darius:
     #I'd like Vivi to move to the right here and Darius to move to the left. Is that possible without making them disappear and reappear?
     # PROGRAMMING NOTE: not gonna implement this for now since we don't have a Vivi sprite
 
+    show vivi at right with move
+    show darius at center with move
+    show darius at center:
+        xzoom -1
+
     darius surprised "Ms. Sanssouci, I didn't take you to be one for stargazing. This hardly seems the time for it."
 
     vivi neutral "Shut up."
@@ -326,6 +331,9 @@ label denial_fr2_darius:
 
     vivi angry "Just look! It's in a dress but it's like it has no torso or anything! It has some sort of mirror thing for a head!"
 
+    show darius at right with move
+    show vivi at left with move
+
     darius surprised "I don't see this figure you're speaking of, but... oh my."
 
     vivi surprised "What? What do you see?"
@@ -337,13 +345,15 @@ label denial_fr2_darius:
     show urshu neutral at left with dissolve:
         xzoom -1.0
     show vivi surprised at left:
-        xzoom -1
+        xzoom 1
         linear 0.1 ypos 1000
         linear 0.1 ypos 1080
     urshu neutral "Interesting! What do you see out there?"
 
     vivi surprised "What the? Get out of the way!"
     
+    show darius at right:
+        xzoom 1
     show vivi surprised:
         linear 0.5 xpos 700
     $ renpy.pause(0.7)
@@ -461,6 +471,7 @@ label denial_fr2_darius:
     urshu happy "...On a lighter note, we will be serving brunch tomorrow! Do come... well I'd say \"early\" but time has no meaning here anyways. Ta-ta!" 
 
     hide urshu with dissolve
+    show vivi at left with move
 
     show darius surprised at right
     darius surprised "What?"
