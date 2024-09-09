@@ -165,7 +165,7 @@ label anger_fr1_ava:
 
     vivi neutral blush "Thank you for sharing with me, Asha."
     vivithinking neutral "That went better than I thought. Maybe one of the others wants to play a game as well."
-    vivithinking angry "Ugh. And I still gotta find out Urshu's riddle. How am I gonna get off this doomsday train?"
+    vivithinking angry "Ugh. Urshu and his damnable riddles and mind games. How am I gonna get off this doomsday train?"
 
     # JUMP TO: Anger Susurha Urshu
     jump anger_susurha_urshu
