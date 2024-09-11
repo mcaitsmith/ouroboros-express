@@ -13,7 +13,8 @@ label anger_cs2:
 
     vivithinking angry "I feel like I'm getting nowhere! How the hell am I supposed to escape this?"
 
-    vivithinking neutral "I can already see the outside affecting the train. There are black tendrils wrapping around the outside of the cars. And those noises! They're awful. It sounds like demonic whales fighting. This whole place is slowly dissolving into... I don't know, and I don't wanna find out."
+    vivithinking neutral "I can already see the outside affecting the train. There are black tendrils wrapping around the outside of the cars. And those noises! They're awful. It sounds like demonic whales fighting." 
+    vivithinking neutral "This whole place is slowly dissolving into... I don't know, and I don't wanna find out."
 
     vivithinking neutral "I need some time to make a plan of escape."
 
