@@ -58,7 +58,7 @@ label anger_fr2_darius:
     vivithinking neutral "Yep. There goes Vivi, running her mouth like a bull in a china shop again."
     vivi neutral "I've touched a nerve. I'm sorry. Again. I swear I'm not trying to get under your skin."
     show darius neutral blush with dissolve
-    darius "Whether you were trying or not, you've a talent for it."
+    darius "Whether you were trying to or not, you've a talent for it."
     vivi neutral blush "Should we...play some darts?"
 
     # <CHOICE>
