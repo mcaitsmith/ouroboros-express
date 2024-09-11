@@ -152,7 +152,7 @@ label interview_susurha:
             susurha sad "And then I found myself here."
             vivithinking neutral "Something is clearly bothering them."
             vivithinking sad "I can't say that I blame them."
-            vivithinking surprised "If I woke up here without knowing I got here..."
+            vivithinking surprised "If I woke up here without knowing how I got here..."
             vivithinking "..."
             vivithinking neutral "Something must be going on."
 
