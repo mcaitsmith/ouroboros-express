@@ -186,7 +186,6 @@ label anger_fr2_susurha:
     susurha neutral "Then there was smoke. So much of it. Everyone ran as fast as they could."
     susurha sad "That's when I saw it."
     susurha sad "My city, where my family had lived for hundreds of generations, besieged by Tellethor's great army."
-    vivithinking surprised "Oh wow."
     vivi sad "What did you do?"
     susurha sad "I ran home."
     susurha angry "I thought that if I could just GET THERE, I could save them."

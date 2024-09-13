@@ -26,7 +26,7 @@ label bargaining_fr2_susurha:
 
     show vivi neutral at left
 
-    vivithinking "Ah, man. Now they're pissed. What am I supposed to do now?"
+    vivithinking "Now they're pissed. What am I supposed to do now?"
     vivithinking "I wish my Nana was here."
     vivi neutral "..."
     susurha neutral "...Is something on your mind?"
