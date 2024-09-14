@@ -211,7 +211,7 @@ label bargaining_fr1_susurha:
             vivi neutral "I bet he thinks he looks good in that garb he has on every day."
             susurha neutral "I imagine him lounging around, reading romance novels nightly."
             vivi happy "And sipping the most expensive of red wines."
-            susurha happy "And laughing at all twists and betrayals."
+            susurha happy "And laughing at all the twists and betrayals."
             vivi happy "Snooping on all of our drama."
             susurha happy "Wishing he was human."
             vivi happy "HAH! Yes."
