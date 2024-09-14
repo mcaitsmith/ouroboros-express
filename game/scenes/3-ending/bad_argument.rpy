@@ -25,6 +25,7 @@ label bad_argument:
 
 
     # LOCATION: observatory
+    call check_overlay from _call_check_overlay_35
     scene observatory with fade
 
     show vivi angry at center_left with dissolve:
@@ -58,7 +59,7 @@ label bad_argument:
 
     show darius neutral
 
-    darius neutral "Vivi--"
+    darius neutral "Vivi—"
     vivi angry "No, I'm done with you. All of you."
     vivi angry "I tried {i}everything{/i}. Getting to know you, befriend you, even love you!"
     vivi angry "And what did it add up to? Jack...shit!"
@@ -69,10 +70,10 @@ label bad_argument:
 
     show ava sad
 
-    ava sad "We agree. We do not understand how you can be so...so--"
+    ava sad "We agree. We do not understand how you can be so...so—"
     vivi angry "So {i}done{/i} with you? And your ways, and your wants, and your {i}shit{/i}? Well, since you asked, Asha..."
     vivi angry "You're not the worst of the bunch, but you're a contender. No, you're a vapid shell. An empty hall of mirrors for your own {i}light{/i}."
-    ava angry "How dare--"
+    ava angry "How dare—"
     vivi angry "Everything you claim to embody is a lie. You're just a haughty fool who was born into delusions of grandeur, told they were great without actually doing anything to earn that praise."
     vivi angry "You're a fake. A poor imitation of godhood."
     ava sad "You... We have done nothing to..."

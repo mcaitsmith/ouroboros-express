@@ -5,6 +5,7 @@ label depression_briefing:
     # Briefing Depression
 
     # LOCATION: cabin
+    call check_overlay from _call_check_overlay_25
     scene cabin with fade
 
     show vivi sad at left with dissolve :
@@ -82,7 +83,7 @@ label depression_briefing:
     urshu sad "..."
     vivi sad "I...want to live."
     urshu neutral "I wish you could."
-    vivi "I want to-- God. There's no words for it."
+    vivi "I want to— God. There's no words for it."
     urshu "I understand. I wish to help {i}you{/i} understand something about our locomotive existence."
     vivithinking "If this turns into another trite anecdote..."
     urshu "I have been on this journey countless times, will be on it for an eternity still. This is what I do. It is what I am."

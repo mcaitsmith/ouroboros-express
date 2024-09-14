@@ -12,7 +12,6 @@ label interview_ava:
     show vivi at left with dissolve:
         xzoom -1
     # SOUND: train
-    play sound train loop
 
     vivithinking neutral "What's your story, tall, dark, and gorgeous?"
     ava neutral "Ah. A fellow traveler. Do you wish to bask in our radiance?"
@@ -162,13 +161,12 @@ label interview_ava:
             # ava leaves
             hide ava with dissolve
 
-            vivi happy "Oh, sure--all for one and one for all to you, too!"
+            vivi happy "Oh, sure—all for one and one for all to you, too!"
 
             # JUMP TO: "Well, what now?"
 
     vivithinking neutral "Well, what now?"
 
-    stop sound fadeout 2.0
 
     # JUMP TO: Figuring it out
     jump interview_choice

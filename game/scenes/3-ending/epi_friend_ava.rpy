@@ -17,6 +17,9 @@ label epi_friend_ava:
     urshu happy "While I had my occasional doubts about you two, I'm glad that you found each other. So many near misses, close connections, heated moments..."
     urshu "Our sun goddess brought the warm light of friendship into Vivi's empty heart; our reporter helped the Avatar to realize there was more to her than a voice, more than a goddess." 
     urshu "Their verbal sparring matches were an intricate, passionate tango of emotional darts. Their time together burned down their outer defenses until only honesty and friendship remained." 
+    $ renpy.choice_for_skipping() # stop skipping
+    $ _skipping = False
     urshu "It had always been there, though here, the All was the Two."
+    $ _skipping = True
 
     return

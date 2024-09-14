@@ -5,6 +5,7 @@ label depression_cs2:
     # Character Selector 2
 
     # LOCATION: dining car
+    call check_overlay from _call_check_overlay_26
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:

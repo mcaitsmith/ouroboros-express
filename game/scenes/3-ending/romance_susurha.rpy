@@ -22,6 +22,12 @@ label romance_susurha:
         xpos 0.35
     show susurha happy blush with dissolve:
         xpos 0.65
+    hide vivi
+    hide susurha
+    show susu_vivi hug at center
+    with { "master" : Dissolve(1.0) }
+    pause 2.0
+
     susurha "We can merge with each other as we merge with the cosmic weave."
     vivi neutral blush "It's getting brighter..."
 
@@ -30,11 +36,12 @@ label romance_susurha:
     # VISUAL: the scene brightens
     show observatory at bright with dissolve
 
+    show susu_vivi hug blush at center
+
     vivi happy blush "This is all so much. I may cry."
     vivi happy blush "It's awfully bright... I can hardly see."
     susurha "I'm here, Vivi. I've got you."
     vivi happy "I don't know where you end and I begin!"
-    show susurha happy -blush
     susurha happy "I don't either! And I don't know what awaits us, but if this is to be my final moment, I couldn't have asked for a better way to spend it than with you, Vivienne."
     vivi happy blush "Me, too."
     vivi happy blush "I want to be with you forever." 
@@ -45,7 +52,7 @@ label romance_susurha:
     scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nThey're funny and positive. It's a breath\nof fresh air.\nI think the thing I love most is Susu'Rha's heart.\nThey're the kindest being I've ever met.\nIt feels like a warm hug whenever they speak.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nThey're funny and positive. It's a breath\nof fresh air.\nI think the thing I love most is\nSusu'Rha's heart.\nThey're the kindest being I've ever met.\nIt feels like a warm hug\nwhenever they speak.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
     call display_journal from _call_display_journal_10
@@ -53,12 +60,12 @@ label romance_susurha:
     #To Epilogues according to attraction meters
     if att_meter_ava >= romance_threshold:
         call epi_friend_ava from _call_epi_friend_ava_1
-    elif att_meter_ava > 0:
+    else:
         call epi_eldritch_ava from _call_epi_eldritch_ava_1
     # ??ATTRACTION
     if att_meter_darius >= romance_threshold:
         call epi_friend_darius from _call_epi_friend_darius_1
-    elif att_meter_darius > 0:
+    else:
         call epi_eldritch_darius from _call_epi_eldritch_darius_1
 
     stop music fadeout 3.0

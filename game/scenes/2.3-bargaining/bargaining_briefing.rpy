@@ -1,4 +1,4 @@
-﻿# The scene starts here.
+# The scene starts here.
 
 label bargaining_briefing:
     $ day = 3 # bargaining
@@ -6,6 +6,7 @@ label bargaining_briefing:
     #Briefing Bargaining
 
     # LOCATION: cabin
+    call check_overlay from _call_check_overlay_12
     scene cabin with fade
 
     show vivi neutral at left with dissolve:
@@ -42,24 +43,31 @@ label bargaining_briefing:
                 # LOCATION: lounge
                 scene lounge with fade
 
-                show vivi neutral at left with dissolve:
+                show vivi neutral at left:
                     xzoom -1
 
-                vivithinking "Welp. He isn't here. Nobody's here."
+                vivithinking "Well. He isn't here. Nobody's here."
                 vivithinking "Wait...what is..."
-                show vivi surprised
 
                 # VISUAL: rainbows flash around the room
                 scene lounge with flash
                 scene lounge with flash
                 scene lounge with flash
+
+                show vivi surprised at left
+                vivithinking surprised "The train's shaking. Feels like it's coming apart!"
+                vivithinking "Feels like {i}I{/i} might come apart."
+                vivithinking "That strange light is turning the windows into mirrors but I can't see myself in them, just endless other mirrors reflecting back. And then darkness. Darkness I can {i}feel{/i}."
+                vivithinking sad "Like there's a void closing in around me, swallowing me up, and there are things waiting there... things I don't want to see. Is this what the end feels like?"
+                vivithinking "No, pull yourself together, Vivi. It's all just your imagination. It's just..."
                 # VISUAL: a black vignette closes in on the room
+                scene lounge with flash
                 show lounge blur with dissolve
                 # SOUND: Screams, scary cosmic horror shit
                 play sound horror
                 pause 3.0
 
-                vivithinking surprised "Yeah, I'm out."
+                vivithinking surprised "...Yeah, I'm out."
 
                 hide vivi with dissolve
 
@@ -92,7 +100,7 @@ label bargaining_briefing:
                 # VISUAL: two galaxies glow, one red and one white, resembling a reptile
                 vivithinking "No... Galaxies. One is white... and the other red?"
                 vivithinking "The whole glowing thing looks like... a reptile. I'll never understand this space. Please wake me up. I got enough of this hell."
-                vivi surprised "What the--"
+                vivi surprised "What the—"
                 # VISUAL: a shadow appears over vivi's face
                 # CUE FOR VA: vivi is possessed here, speaking with a voice that is not her own
                 vivithinking "Something just stopped by the window."
@@ -152,7 +160,7 @@ label bargaining_briefing:
     vivi neutral "You... Of course, you knew." 
     vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a... an impish... wisenheimer or something."
     urshu happy "I appreciate that, Miss Sanssouci. I do work very hard for all of you."
-    urshu neutral "It is my joy to serve--not only to serve, but to draw out of each of you your very best."
+    urshu neutral "It is my joy to serve—not only to serve, but to draw out of each of you your very best."
     vivithinking "Oh, he's being sweet. And candid. And not talking in riddles!"
 
     show vivi angry at left:
@@ -162,9 +170,9 @@ label bargaining_briefing:
 
     show vivi neutral at left
 
-    vivithinking "I need to be delicate. I should go in with tact and poise and--"
+    vivithinking "I need to be delicate. I should go in with tact and poise and—"
     vivi angry "Urshu, I want my fucking life back!"
-    vivi neutral "Yes, I have distractions and good people and tasty espresso--and you here to spice up my life..."
+    vivi neutral "Yes, I have distractions and good people and tasty espresso—and you here to spice up my life..."
     vivi angry "But I look out of these windows, and all I see is death!"
     vivi sad "I want off this train. Ideally, I want everyone to get off and get back to their lives. I'll do anything to make it happen."
    

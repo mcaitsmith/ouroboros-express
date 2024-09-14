@@ -5,6 +5,7 @@ label anger_fr2_ava:
     #FREE ROAM 2 - AVA
 
     # LOCATION: dining car
+    call check_overlay from _call_check_overlay_6
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:
@@ -16,7 +17,7 @@ label anger_fr2_ava:
 
     vivithinking neutral "I hear darts. Is that...Asha? Here already?"
 
-    show ava angry at right with dissolve
+    show ava neutral at right with dissolve
 
     ava neutral "Ah, bullseye. Game of darts, Vivienne? We hear your watering holes often host such competitions." 
     vivi neutral "Watering holes? You mean a pub?"
@@ -38,9 +39,15 @@ label anger_fr2_ava:
         "Amazing.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "No, Vivienne, perpetual loneliness. We would not wish that upon even our monarchy."
             # SOUND: dart hitting the board
             play sound darts
@@ -51,9 +58,15 @@ label anger_fr2_ava:
         "Awful.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "Thank you...that means more to us than you know."
             # SOUND: dart hitting the board
@@ -89,9 +102,15 @@ label anger_fr2_ava:
         "But if you like it...":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi happy blush "But if you like it...I guess I could get used to it."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             show ava happy blush with dissolve
             ava "No. We never wish to offend you."
             vivithinking happy "I'll do anything she wants to spend some more time with them...!"
@@ -102,9 +121,15 @@ label anger_fr2_ava:
         "Don't ever call me that again.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi angry "Don't ever call me that again. I don't like it. I'm not your pet."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "By Asha, we beg forgiveness. We never intended harm."
             vivi  "..." 
@@ -139,9 +164,15 @@ label anger_fr2_ava:
         "What are your thoughts on our conductor?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "What are your thoughts on the conductor?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Ah, Urshu. A mystery."
             vivi "Personally...I think he's undead."
             ava surprised "A zombie?"
@@ -156,9 +187,15 @@ label anger_fr2_ava:
         "What do you want to do with your time left?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi neutral "What do you want to do with your time left?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "..."
             ava neutral "Enjoy the view. We seldom saw nighttime. It is strange. Nice."
             vivi happy "It is pretty nice, huh." 
@@ -184,10 +221,22 @@ label anger_fr2_ava:
         "Don't play games with me.":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "Don't play games with me."
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava neutral "Ah. Because you lack skill at darts?" 
             vivi angry "Look, you may have been some kind of big deal deity on Soleos, but we're all equals here on death row, you silly moose!"
             # JUMP TO: ava blush angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"
@@ -196,9 +245,15 @@ label anger_fr2_ava:
         "I don't need you to think I'm special.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I don't need you to think I'm special. Just because your crazy cult revered you doesn't mean that I'm going to, ass hat!"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             # JUMP TO: ava blush angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"
 
     ava angry "You dare speak to us with such impudence! Refer to us as Asha or not at all!"

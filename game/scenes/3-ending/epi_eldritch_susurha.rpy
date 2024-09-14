@@ -7,18 +7,28 @@ label epi_eldritch_susurha:
 
     stop music fadeout 1.0
     pause 1.0
-    play music badendmusic volume 0.5
+    play sound train loop
 
     #LOCATION: eldritchlandscape
     scene black with fade
     show urshu sad at center with dissolve
-    urshu sad "Despite the rebel prince's burning desire to live free, they could not escape the guilt that bound them to their past decisions."
 
-    urshu sad "This growing rumination metastasized into their personal horror, who chained them at the wrists and ankles and dragged them into the furthest depths of the Dark Beyond."
+    if att_meter_susurha > 0:
+        urshu sad "Despite the rebel prince's burning desire to live free, they could not escape the guilt that bound them to their past decisions."
 
-    urshu sad "Muzzled so they would never again sing, scaled in nightmares so they would never again gladden or cheer, they became the very thing that haunted them..."
+        urshu sad "This growing rumination metastasized into their personal horror, who chained them at the wrists and ankles and dragged them into the furthest depths of the Dark Beyond."
 
-    urshu sad "...a grotesque prisoner, devoid of agency or expression, doomed to suffer for all eternity."
+        urshu sad "Muzzled so they would never again sing, scaled in nightmares so they would never again gladden or cheer, they became the very thing that haunted them..."
+        $ renpy.choice_for_skipping() # stop skipping
+        $ _skipping = False
+        urshu sad "...a grotesque prisoner, devoid of agency or expression, doomed to suffer for all eternity."
+        $ _skipping = True
+    else:
+        urshu sad "Susu'Rha retreated inward aboard the Ouroboros Express, neither giving into their grief nor opening up to the others. What better place for someone in such a transitory phase than the Express itself?"
+        $ renpy.choice_for_skipping() # stop skipping
+        $ _skipping = False
+        urshu "And so they found themselves an unwitting passenger for yet another ride aboard, continuing in their quest to understand themselves..."
+        $ _skipping = True
 
     return
 

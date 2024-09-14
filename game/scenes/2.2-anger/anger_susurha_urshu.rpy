@@ -1,5 +1,6 @@
 label anger_susurha_urshu:
 
+    call check_overlay from _call_check_overlay_9
     scene lounge with fade
 
     show vivi neutral at left with dissolve :

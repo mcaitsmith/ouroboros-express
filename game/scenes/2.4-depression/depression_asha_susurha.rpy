@@ -1,6 +1,7 @@
 label depression_asha_susurha:
 
     #LOCATION: lounge
+    call check_overlay from _call_check_overlay_24
     scene lounge with fade
 
     #SOUND: train

@@ -256,7 +256,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences_ingame')
+            textbutton _("Settings") action ShowMenu('preferences_ingame')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -362,6 +362,7 @@ screen navigation():
 
         if not main_menu:
             textbutton _("Return"):
+                background "gui/pause/button2.png"
                 action Return()
         else:
             if renpy.variant("pc"):
@@ -1095,7 +1096,7 @@ screen preferences_ingame():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
             style_prefix "pref_ingame"
@@ -1216,7 +1217,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 
@@ -1718,7 +1719,11 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
+                textbutton _("Yes"):
+                    if message == gui.LOADING:
+                        action [Stop("music"),yes_action]
+                    else:
+                        action yes_action
                 textbutton _("No") action no_action
 
     ## Right-click and escape answer "no".

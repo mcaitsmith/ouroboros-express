@@ -1,4 +1,4 @@
-﻿# The scene starts here.
+# The scene starts here.
 
 label figuring_it_out:
 
@@ -35,7 +35,7 @@ label figuring_it_out:
                 vivithinking neutral "I'm on a train. Sort of?"
                 vivithinking neutral "Except this train isn't flying through the Florentine countryside. And it's shrouded in mist."
                 vivithinking neutral "Chloe did put me on this assignment, right? Ugh, my memory's Swiss cheese."
-                vivithinking neutral "Oh, and who prepared that meal? Besides the other travelers, there's only that badonkadonk-blessed conductor. No other staff around. That's weird, right?"
+                vivithinking neutral "Oh, and who prepared that meal? Besides the other travellers, there's only that tight-assed conductor. No other staff around. That's weird, right?"
 
                 # JUMP TO vivi neutral "What else do I know?"
                 # list remaining choice options

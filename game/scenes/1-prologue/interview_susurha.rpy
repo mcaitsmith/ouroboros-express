@@ -6,7 +6,6 @@ label interview_susurha:
 
     # LOCATION: lounge
     # scene diningcar with fade
-
     show susurha neutral with dissolve
 
     show vivi at left with dissolve:
@@ -58,6 +57,7 @@ label interview_susurha:
         # OPTION 2
         "Where are you from?!":
 
+            vivi neutral "Where are you from?!"
             susurha neutral "Balrinn. The capital city of my home country." 
             susurha neutral "Which is also my family name."
             vivi neutral "So...you're royalty."
@@ -90,9 +90,9 @@ label interview_susurha:
             # JUMP TO susurha neutral "Your face right now...You're judging me."
     
 
-    susurha neutral "Your face right now...You're judging me."
+    susurha sad "Your face right now...You're judging me."
     vivi neutral "No, I..."
-    susurha neutral "I'd say stay awhile and relax with me, but I don't think you'd know how."
+    susurha sad "I'd say stay awhile and relax with me, but I don't think you'd know how."
 
     # <CHOICE>
     vivithinking angry "Oooh! This one is getting on my nerves."
@@ -123,7 +123,7 @@ label interview_susurha:
             vivi angry "I just came here to get this assignment done, not get a self-care lecture from a talking lizard."
             susurha angry "Ss-uit yourself."
             susurha neutral "Alright, then. I've spoken enough about myself for one conversation."
-            vivi neutral "I mean, not really. You kinda avoided my--"
+            vivi neutral "I mean, not really. You kinda avoided my—"
 
             # JUMP TO: "So enough about me. Who are you, Vivienne?"
 
@@ -171,7 +171,7 @@ label interview_susurha:
             susurha sad "And then I found myself here."
             vivithinking neutral "Something is clearly bothering them."
             vivithinking sad "I can't say that I blame them."
-            vivithinking surprised "If I woke up here without knowing I got here..."
+            vivithinking surprised "If I woke up here without knowing how I got here..."
             vivithinking "..."
             vivithinking neutral "Something must be going on."
 

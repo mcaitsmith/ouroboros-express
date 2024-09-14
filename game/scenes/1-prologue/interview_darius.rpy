@@ -13,7 +13,6 @@ label interview_darius:
     show darius neutral at right with dissolve
 
     # SOUND: train
-    play sound train loop
 
     vivithinking neutral "This one's imposing. Tall and solid, despite that slender frame." 
     vivithinking sad "But what's this unease I sense?"
@@ -106,7 +105,7 @@ label interview_darius:
             vivi angry "Do you intend to be so difficult throughout this entire process?"
             darius neutral "I am simply being honest. I come from a rather small garden."
             vivi neutral "A garden? Weird way to refer to back home."
-            darius neutral "It's not the name of it, obviously. Like I said,it's small, you wouldn't know it."
+            darius neutral "It's not the name of it, obviously. Like I said: it's small, you wouldn't know it."
             vivithinking neutral ". . .right then."
 
             # JUMP TO vivi neutral "Forget it. Last question."
@@ -154,8 +153,6 @@ label interview_darius:
     vivithinking sad "It's like he doesn't even see me."
 
     hide darius with dissolve
-
-    stop sound fadeout 2.0
 
     # JUMP TO: Figuring it out
     jump interview_choice

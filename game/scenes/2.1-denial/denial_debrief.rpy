@@ -30,7 +30,7 @@ label denial_debrief:
 
     play sound writing
 
-    $ message = "This is real.\nIt doesn't make sense but it's all\nreally happening.\nThere was no way off the train.\nHow the hell did I die?\nI thought I'd leave a mark on the world\nbefore I left.\nOr at least someone special.\nIt's all so frustrating.\nThe conductor is the worst, acting like\nthis is a game.\nTHIS IS OUR LIVES!\n\nAt least I'm not the only one\ngoing through this."
+    $ message = "This is real.\nIt doesn't make sense but it's all\nreally happening.\nThere was no way off the train.\nHow the hell did I die?\nI thought I'd leave a mark on the world\nbefore I left.\nOr at least someone special.\nIt's all so frustrating.\nThe conductor is the worst, acting like\nthis is a game. THIS IS OUR LIVES!\n\nAt least I'm not the only one\ngoing through this."
 
     #Journal entry
 

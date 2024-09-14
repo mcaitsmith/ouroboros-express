@@ -4,6 +4,7 @@ label bad_consequences:
 
     # Bad Ending/Consequences
     # LOCATION: eldritch landscape
+    call hide_overlay from _call_hide_overlay
     scene black with Fade(3.0,0.0,1.0)
 
     show vivi neutral at right with dissolve
@@ -16,7 +17,7 @@ label bad_consequences:
     # SOUND: horror
     play sound horror loop
 
-    vivi sad "No! It's her. The monster. The--"
+    vivi sad "No! It's her. The monster. The—"
     vivi sad "No, don't come out of the mirror! Stop! No!"
     vivithinking surprised "She's...embracing me!!"
     vivi "..."

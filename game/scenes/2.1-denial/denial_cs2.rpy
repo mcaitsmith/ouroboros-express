@@ -17,7 +17,7 @@ label denial_cs2:
 
     vivithinking "This car has big windows..."
     vivithinking "What I see behind those windows makes...zero sense though."
-    vivithinking "Surreal landscapes--blending into a swirl of colors. The train's breathtaking speed blurs everything into cosmic spaghetti. It gets darker. Darker."
+    vivithinking "Surreal landscapes—blending into a swirl of colors. The train's breathtaking speed blurs everything into cosmic spaghetti. It gets darker. Darker."
 
     # Fade back in.
     show cabin with dissolve
@@ -42,7 +42,7 @@ label denial_cs2:
     #OPTION 2
         "Darius Wrecker" if fr1_denial_choice != "Darius":
 
-            vivi neutral "I have a feeling Darius knows more than he's letting on. I believe he's' in the dining car."
+            vivi neutral "I have a feeling Darius knows more than he's letting on. I believe he's in the dining car."
             #JUMP TO: Free Roam 2 / Inquisitor Darius Wrecker
             jump denial_fr2_darius
 

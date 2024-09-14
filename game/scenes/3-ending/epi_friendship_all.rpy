@@ -108,6 +108,8 @@ label epi_friendship_all:
     susurha neutral "Worthy of what, I wonder?"
     vivi happy "Let's not stick around and think about it."
     vivi "Let's go and figure it out."
+    $ renpy.choice_for_skipping() # stop skipping
+    $ _skipping = False
     vivi happy blush "Together."
 
     # The End

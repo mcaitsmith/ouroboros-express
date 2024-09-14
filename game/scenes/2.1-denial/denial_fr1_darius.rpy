@@ -19,7 +19,7 @@ label denial_fr1_darius:
 
     vivithinking "They seem surprised. Loner type maybe?"
 
-    darius neutral "I'm surprised you walked over to me of all people. Surely the goddess or dragon would be more approachable? Not many humans would chat up a creature such as myself like you just have."
+    darius neutral "Intriguing. You approaching me like this. Especially after my earlier rude behavior."
 
     vivithinking "Bingo on the loner call."
 
@@ -31,7 +31,7 @@ label denial_fr1_darius:
 
     vivi  "Tell me, you must have experience with otherworldly phenomena, right?"
 
-    darius neutral "In a sense. This whole situation is unlike anything I've seen however."
+    darius neutral "You have no idea. However, this whole situation is unlike anything I've seen."
 
     vivithinking "Crap. Swing and a miss."
 
@@ -63,7 +63,7 @@ label denial_fr1_darius:
 
     # <CHOICE>
 
-    darius neutral "Now that you mention it, I am... curious. What do you make of this \"Urshu's\" claim that we must come to terms?"
+    darius neutral "Now that you mention it, I am... curious. What do you make of the conductor's claim that we must come to terms?"
 
     menu:
 
@@ -73,17 +73,17 @@ label denial_fr1_darius:
             vivi  "I'm not sure." 
             vivi "The man speaks in riddles, and I can't make heads or tails of them right now."
 
-            darius neutral "That is understandable. Last night was a shock to be sure."
+            darius neutral "That is understandable. Last night was certainly a shock."
 
             vivi "Is that something you're interested in? Coming to terms?"
 
-            darius neutral "You could say that. The details of my life are still cloudy but they're coming back slowly. I'm sure the same goes for you?"
+            darius neutral "You could say that. I am recalling details of my life, gradually. But the fog persists. I assume the same goes for you?"
 
             vivi "Yes, some things are coming back slowly."
 
             vivithinking "There's a pain in their voice, it's almost... melancholic?"
 
-            vivi "If you don't mind me asking, what happened--"
+            vivi "If you don't mind me asking, what happened—"
 
             darius neutral "Ahem..."
 
@@ -114,15 +114,15 @@ label denial_fr1_darius:
 
             vivi  "It's interesting. If you're into that, then I guess there's some merit to it. I don't know about you though, but I can't \"come to terms\" here of all places."
 
-            darius surprised "Interesting. I wouldn't have expected that answer from you. Thank you for humoring me."
+            darius surprised "An unusual response. Thank you for humoring me."
 
             vivithinking surprised "What does THAT mean? You don't know me. Unless... oh god, are they reading my mind?"
 
-            darius happy "Wondering if I'm reading your mind are you?"
+            darius happy "Wondering if I'm reading your mind, are you?"
 
             vivi surprised blush "So you ARE then!"
 
-            darius happy "Hah, I don't rely on such cheap tricks. I'm naturally quite skilled at reading people you see."
+            darius happy "Hah, I don't rely on such cheap tricks. Other mindflayers might, but I'm naturally quite skilled at reading people."
 
             vivithinking "Is that a hint of annoyance I sense?"
 
@@ -130,7 +130,7 @@ label denial_fr1_darius:
 
             show darius happy blush with dissolve
 
-            darius "I-- uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
+            darius "I— uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
 
             show vivi happy 
             vivithinking "Who knew mindflayers could get flustered. And even a little cute?"
@@ -154,7 +154,7 @@ label denial_fr1_darius:
 
     vivi "Where do you think we're going?"
 
-    darius "In my...religion, we believed that oblivion was at the end of it all. Many mindflayers believe in a similar idea, Maybe this train is leading us to that."
+    darius "In my...religion, we believed that oblivion was at the end of it all. My people -you may know us as mindflayers- believe in a similar idea. Maybe this train is leading us to that."
  
     vivi "Mindflayer? Is that what you are?"
 
@@ -249,7 +249,7 @@ label denial_fr1_darius:
 
     vivi "Sure. Thank you for being open to my questions."
 
-    darius "Anytime, Ms. Sanssouci."
+    darius "Consider it restitution for my earlier rudeness, Ms. Sanssouci."
 
     # JUMP TO: Denial 2.1 NPC scene Ava and Darius
     jump denial_fr1_ava_darius

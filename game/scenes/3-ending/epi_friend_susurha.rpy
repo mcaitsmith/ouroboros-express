@@ -16,8 +16,11 @@ label epi_friend_susurha:
     show susurha happy at center with dissolve
 
     urshu happy "Susu'Rha, desirous of a life of their own design, broke the chains of expectation and eschewed their royal title, opting instead for a life of anarchic expression in the Viridian Wood."
-    urshu happy "When the generational curse of war pulled them back, they found themself aboard the Ouroboros Express--and with you, Vivi."
+    urshu happy "When the generational curse of war pulled them back, they found themself aboard the Ouroboros Express—and with you, Vivi."
     urshu happy "Just as they helped you shatter the artifice that kept you from embodying your true essence, you helped them leave their past...in the past."
+    $ renpy.choice_for_skipping() # stop skipping
+    $ _skipping = False
     urshu happy "Now they can again sing songs and imbibe of endless joy in the world beyond the Terminal."
+    $ _skipping = True
 
     return

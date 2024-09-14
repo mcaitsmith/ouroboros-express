@@ -5,6 +5,7 @@ label depression_fr1_ava:
     # FREE ROAM 1 - Ava
 
     # LOCATION: lounge
+    call check_overlay from _call_check_overlay_28
     scene diningcar with fade
 
     # SOUND: train
@@ -62,9 +63,15 @@ label depression_fr1_ava:
         "...play a game?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
         
             vivi neutral "...play a game?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava "We will be no more tomorrow and you want to play games."
             vivi "Might help. That and another swig."
             # JUMP TO: vivi neutral "It's called {i}Never Have I Ever{/i}."
@@ -73,10 +80,22 @@ label depression_fr1_ava:
         "...drink our feelings away?":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi neutral "...drink our feelings away?"
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava "We accept. Our feelings weigh heavily on us."
             vivi "Then maybe we can play a fun game?"
             ava surprised "A game? Frivolity amidst such sorrow?"
@@ -86,9 +105,15 @@ label depression_fr1_ava:
         "...sneak behind the bar for two top-shelf top-offs?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi happy "...sneak behind the bar for two top shelf top offs?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava happy "We were unaware you were this naughty, Vivi."
             # ??ATTRACTION
             if att_meter_ava >= 55:
@@ -123,9 +148,15 @@ label depression_fr1_ava:
         "...had a pet.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi sad "...had a pet."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava "Do we drink if we have?"
             vivi "Exactly."
             vivithinking "Daaang! She pounded that one."
@@ -147,9 +178,15 @@ label depression_fr1_ava:
         "...flirted with a goddess. Or the avatar, or whatever.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi happy "...flirted with a goddess. Or the avatar, or whatever."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             # ??ATTRACTION
             if att_meter_ava >= 55:
                 vivithinking "She's not drinking...hmmm?"
@@ -175,9 +212,15 @@ label depression_fr1_ava:
         "...made a commitment to someone." if att_meter_ava >= 50:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
 
             vivi sad "...made a commitment to someone."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             ava sad "We do not drink then." 
             # ??ATTRACTION
             if att_meter_ava >= 60:

@@ -4,7 +4,8 @@ label bargaining_meal_reveal:
 
     #URSHU MEAL REVEAL
 
-    # LOCATION: lounge 
+    # LOCATION: lounge
+    call check_overlay from _call_check_overlay_23 
     scene lounge with fade
 
     show vivi neutral at left with dissolve:
@@ -77,6 +78,10 @@ label bargaining_meal_reveal:
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             if fr2_bargaining_choice == "Asha":
                 $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
                 call show_ava_blush from _call_show_ava_blush
@@ -87,6 +92,8 @@ label bargaining_meal_reveal:
                 $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
                 call show_susurha_blush from _call_show_susurha_blush
             vivithinking surprised "Oh, God. What am I doing? What are they thinking? Do they hate me?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
 
             # JUMP TO: vivithinking neutral "He's taking another bite!"    
 
@@ -113,7 +120,7 @@ label bargaining_meal_reveal:
     vivi happy "That...that's amazing! Urshu, that's the best news we could have possibly heard!"
     vivithinking neutral "Hell yeah! We are getting OUTTA HERE!"
     urshu neutral "I am certain with every ounce of my being that this tastes absolutely wondrous."
-    vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so--"
+    vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so—"
     vivi neutral "..."
     vivi neutral "Wait, what do you mean by...certain?"
     vivithinking neutral "Holy moly. He's crying again!"
@@ -186,8 +193,8 @@ label bargaining_meal_reveal:
     urshu neutral "But the Ouroboros Express is not a second chance. It is your last chance to make peace with yourself and the other travelers with you."
     urshu neutral "I told you that I am a conductor, nothing more. I am sorry for this ruse. It was wrong of me to play with your heart in such a careless manner." 
     urshu neutral "But when you shook my hand, there was a certain hope in your soul, Miss Sanssouci, that I was too weak to crush at its onset." 
-    urshu neutral "Only now are you ready to accept the reality of—-"
-    vivi sad "I can't hear another word. I can't—-"
+    urshu neutral "Only now are you ready to accept the reality of—"
+    vivi sad "I can't hear another word. I can't—"
 
     # fade out
     scene black with fade

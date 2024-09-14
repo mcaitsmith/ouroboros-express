@@ -5,6 +5,7 @@ label bargaining_fr2_susurha:
     #FREE ROAM 2 - Susu'Rha
 
     # LOCATION: diningcar
+    call check_overlay from _call_check_overlay_22
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:
@@ -58,9 +59,15 @@ label bargaining_fr2_susurha:
         "She could see down to the essence of a person.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             vivi neutral "She could see down to the essence of a person."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "I sense that power in you too, milady."
             vivi neutral "I guess I have it..."
             vivi neutral "...When my agenda doesn't get in the way."
@@ -77,9 +84,15 @@ label bargaining_fr2_susurha:
         "Whatever it was, it skipped over me.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Whatever it was, it skipped over me."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "Whatever do you mean?"
             vivi neutral "Nana could read people. She could bargain. She had grit. Tenacity." 
             susurha neutral "Those are good qualities."
@@ -96,9 +109,15 @@ label bargaining_fr2_susurha:
         "She was a hustler. She knew how to get what she wanted." if att_meter_susurha >= 30:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             vivi neutral "She was a hustler. She knew how to get what she wanted."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "Well, you have that quality as well, Vivienne. It's why you're such an excellent reporter!"
             vivi blush neutral "Oh. Thank you! No one's ever said that to me before..."
             vivi neutral "I guess I do have a little \"girlboss\" energy in me..."
@@ -166,9 +185,15 @@ label bargaining_fr2_susurha:
         "Let's try to appeal to Urshu's taste.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "Let's try to appeal to Urshu's taste."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "We would only be guessing."
             vivi neutral "Let's guess then."
             vivi neutral "If I were that penguin-dressed, double-talking astral weirdo, I'd eat... Meatloaf."
@@ -188,9 +213,15 @@ label bargaining_fr2_susurha:
         "We'll just try to cook the best dish we possibly can!":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
         
-            vivi neutral "We'll just try to cook the best dish we possibly can!"    
+            vivi neutral "We'll just try to cook the best dish we possibly can!"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "Unluckily for you, I eat nothing but grubs and Burrowers."
             vivi angry "Susu'Rha..."
             susurha neutral "I'm joking, of course! I grew up crafting my own cuisine from the family larder."
@@ -212,9 +243,15 @@ label bargaining_fr2_susurha:
         "I don't know. I'll let my Nana's spirit guide me." if att_meter_susurha >= 40:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
         
             vivi neutral "I don't know. I'll let my Nana's spirit guide me."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "The spirit of your ancestors... Yes! Great idea!"
             susurha sad "It's...really wonderful that you try to connect with your family in times of hardship." 
             susurha sad "Even now, as I plunge towards imminent death, I still run from mine." 
@@ -281,7 +318,7 @@ label bargaining_fr2_susurha:
         play sound decchoice
 
         vivi angry "Well, if you don't know what it is, keep your opinion to yourself!"
-        susurha neutral "If you'd just let me help you--"
+        susurha neutral "If you'd just let me help you—"
         vivi angry "I've got this under control!"
         susurha angry "Enough with the rude commentary!"
         susurha angry "You act as though you WISH to displease Urshu!"
@@ -293,7 +330,7 @@ label bargaining_fr2_susurha:
         vivithinking "Maybe I know it's all pointless."
         vivi neutral "Let's just get this over with, then."
         vivi neutral "I'm too tired to care."
-        susurha neutral "Are you sure you don't--"
+        susurha neutral "Are you sure you don't—"
 
         # JUMP TO: vivi neutral "Let's serve this up!"
         jump barg_fr2_susu_end
@@ -303,9 +340,15 @@ label bargaining_fr2_susurha:
         "It needs more spice.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             susurha neutral "It needs more spice."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "Okay...I can work with that!"
             vivi neutral "Nana would want things spicy."
             vivi neutral "I'll add...more cardamom."
@@ -332,9 +375,15 @@ label bargaining_fr2_susurha:
         "I think it's fine the way it is.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi neutral "I think it's fine the way it is."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "There's no part of you that believes that."
             vivi neutral "So what. We're being scammed anyway."
             susurha neutral "\"So what?\" Vivi!"
@@ -352,9 +401,15 @@ label bargaining_fr2_susurha:
         "Something?!" if dec_meter >= 30:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
             vivi angry "Something?!"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi angry "We get ONE SHOT to impress Urshu or we're stuck on this train forever, and you the only thing you can think of is that's it's missing \"something?!\""
             vivi angry "You know what? Forget it. The food is all yours, lizard brain! And you can add all the unspecific \"somethings\" your little reptilian heart desires!"
             susurha surprised "Vivienne, enough!"

@@ -5,6 +5,7 @@ label anger_fr1_darius:
     #FREE ROAM 1 - DARIUS 
 
     # LOCATION: lounge
+    call check_overlay from _call_check_overlay_4
     scene lounge with fade
 
     show darius angry at right with dissolve
@@ -52,9 +53,15 @@ label anger_fr1_darius:
         "Can you even play this with two people?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
 
             vivi surprised "Can you even play this with two people?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius happy "Of course you can. Watch me."
             # SOUND: cards shuffling
             play sound shuffle
@@ -73,9 +80,15 @@ label anger_fr1_darius:
         "You mentioned Urshu. Why bring him up?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "You mentioned Urshu. Why bring him up?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "That little twerp knows more than he lets on."
             vivi surprised "You're getting angry."
             darius angry "Yes. You should be, too."
@@ -106,7 +119,7 @@ label anger_fr1_darius:
     darius angry "Fine. Vivi. Normally, I can read the beings around me. It's what makes me such an excellent judge of... character. But since arriving here, that's changed. I feel...cut off. Disarmed."
     vivi neutral "Darius, you shouldn't be reading my mind without asking first anyway. Bit rude."
     show darius surprised blush with dissolve
-    darius "I...I'm not trying to--"
+    darius "I...I'm not trying to—"
     vivi happy "Please don't do it again. Your turn!"
 
 
@@ -130,9 +143,15 @@ label anger_fr1_darius:
         "That sounds difficult. Like being unmoored.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
 
             vivi sad "That sounds difficult. Like being unmoored."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show darius surprised -blush
             darius "Yes, exactly. 'Unmoored.' You have a way with... words."
             vivi happy "Aw, you're just saying that. You think so?"
@@ -147,9 +166,15 @@ label anger_fr1_darius:
         "Well, you don't hear me crying about it.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi neutral "Well you don't hear me crying about it."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             show darius surprised -blush
             darius "I'm sorry?"
             vivi neutral "You heard me. Things may be different, but they aren't dire."

@@ -5,6 +5,7 @@ label anger_fr1_ava:
     #FREE ROAM 1 - Ava
 
     # LOCATION: observatory
+    call check_overlay from _call_check_overlay_3
     scene observatory with fade
 
     show vivi neutral at left with dissolve:
@@ -32,9 +33,15 @@ label anger_fr1_ava:
         "The sun card.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
         
             vivi neutral "The sun card."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "The sun can represent light, truth, and love..."
             vivi surprised "Finally some good news!"
@@ -46,9 +53,15 @@ label anger_fr1_ava:
         "The sea monster card.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "The sea monster card."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Ah. Leviathan. The eater of worlds. Scourge of the seas. Dominance. Aggression. We find this interesting."
             vivi neutral "Wait, was that a dig at...Darius?"
             ava angry "We know of his kind. You would be wise to stay away. His card brings darkness...and deceit."
@@ -58,9 +71,15 @@ label anger_fr1_ava:
         "The big snake card.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "The big snake card."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava surprised "Curious. We have not seen this card before. Curious, indeed. It resembles the snake biting its own tail, the Ouroboros."
             ava neutral "But of course, snakes, reptiles. They are of the same family. A warning... "
             vivi surprised "Oh?"
@@ -106,16 +125,28 @@ label anger_fr1_ava:
         "...chin up, princess, or the crown slips.":
 
             play sound attdecchoice
+            show attraction_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
+            show decay_icon at right:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
+            with { "master" : Dissolve(0.5) }
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "...chin up, princess, or the crown slips."
+            hide attraction_icon
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava angry "Princess? We were not royalty, those inbred lickspittles. We came from nothing."
             vivithinking neutral "With that stiff upper lip and all? Yeah, right." 
             ava angry "Why?! We are no more! Our mother sacrificed us. Gutted us like a butcher does a fatted calf."
             vivithinking surprised "Unnecessarily graphic and undeniably tragic!"
             vivi surprised "That's your people's tradition? Sacrifice?!"
-            ava sad "We are sacrificed lest people love us too much. Once, an avatar nearly toppled the royals. But now, that is only but a distant fairytale ."
+            ava sad "We are sacrificed lest people love us too much. Once, an avatar nearly toppled the royals. But now, that is only but a distant fairytale."
             vivi neutral blush "Well, then no offense, but you're better off here. If your whole purpose was to be sacrificed, then guess what?"
             show ava happy blush with dissolve
             ava "Then our service is at an end. We are free."
@@ -128,9 +159,15 @@ label anger_fr1_ava:
         "...I know what you mean about sacrifices.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi angry blush "Here!"
             ava sad "I'm aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
             ava angry "We shall fade to darkness soon. Have you not seen it in your dreams?"
@@ -148,12 +185,18 @@ label anger_fr1_ava:
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             ava angry "Perhaps you should heed your own advice, Vivienne."
             vivithinking angry "Hmph. Well, someone's got their knickers in a twist!" 
-            vivi angry "Perhaps I shall. Goodbye Asha."
+            vivi angry "Perhaps I shall. Goodbye, Asha."
             ava angry "Hmph. Very well. Have an... acceptable evening, Vivienne."
 
             # ava exits
