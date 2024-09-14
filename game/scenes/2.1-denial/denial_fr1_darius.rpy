@@ -163,7 +163,7 @@ label denial_fr1_darius:
 
             vivi "Not entirely. The same fate awaits us all, and we can't make every wrong right again."
 
-            vivi "Besides, that's assuming that this place is really what that conductor claims it is. Which I'm not that sure of, personally."
+            vivi "Besides, that's assuming this place is really what that conductor claims it is. Which I'm not that sure of, personally."
 
             darius neutral "I see."
 

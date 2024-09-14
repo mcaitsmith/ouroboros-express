@@ -103,7 +103,7 @@ label denial_fr2_darius:
 
     darius surprised "Ahh! My apologies."
 
-    vivithinking  "A quick flick of the wrist, graceful as ever. Did they do something..? Things feel a lot lighter."
+    vivithinking  "A quick flick of the wrist, wish {i}I{/i} could be so graceful. Did they do something..? Things feel a lot lighter."
 
     darius neutral "A mindflayer's brain is a powerful thing. Sometimes emotions and thoughts can leak out into the atmosphere. I believe you may have been feeling my...malaise, so to speak."
 
