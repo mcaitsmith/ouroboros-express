@@ -28,7 +28,7 @@ label depression_fr1_susurha:
     vivithinking "Wow. They seem at home behind the bar."
     vivi surprised "When someone's really good at mixing drinks, we call them a mixologist."
     susurha happy "In the Viridian Wood, the mixture and ingestion of intoxicating potions was almost a nightly occurrence."
-    susurha happy "To sit on my balcony, reading a collection of poetry with a glass of red wine in hand."
+    susurha happy "Ah...to sit on my balcony, reading a collection of poetry with a glass of red wine in hand."
     vivi "It sounds like you've lived a full life."
     susurha sad "In the Wood, we lived joyously, following the path of self-expression."
     vivithinking "I could have used more of that."
@@ -52,6 +52,7 @@ label depression_fr1_susurha:
         vivithinking "Are we sure about this?"
         vivithinking "..."
         vivithinking "Screw it!"
+        vivi "Alright."
     #END
 
     #<CHOICE>
@@ -72,6 +73,7 @@ label depression_fr1_susurha:
             vivithinking "Looking at them, not hard to believe."
             vivi "Who was it to?"
             susurha "My second cousin. Gal'Rha. It was arranged."
+            vivi "Oh boy."
             susurha "I learned about it the night before I ran away."
             susurha "I didn't want to be tied down and now I'm here."
             susurha "Alone."
@@ -132,6 +134,7 @@ label depression_fr1_susurha:
             #JUMP TO: susurha happy "My turn."
 
     susurha happy "My turn."
+    vivithinking "Oh boy."
     # <CHOICE>
     susurha neutral "Never have I ever been in love."
 

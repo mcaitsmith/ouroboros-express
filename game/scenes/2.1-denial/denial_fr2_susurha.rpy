@@ -49,7 +49,7 @@ label denial_fr2_susurha:
             vivithinking "The way they slid that chair my way with ease..."
             # SOUND: Vivi sits down in a super comfortable recliner.
             # skipping
-            vivithinking "Ah yes..."
+            vivithinking "Holy shit..."
             susurha happy "Feels like a dream, doesn't it?"
             vivi neutral "Feels like I'm sinking."
             vivithinking happy "It's nice sitting in silence. I'm enjoying their company."
@@ -130,7 +130,7 @@ label denial_fr2_susurha:
 
     susurha happy "It's a date, my dove."
 
-    vivithinking surprised "I didn't expect them to literally drag me along!"
+    vivithinking surprised "Whoa - I didn't expect them to literally drag me along!"
 
 
     #LOCATION: Observatory
@@ -351,7 +351,7 @@ label denial_fr2_susurha:
 
     vivithinking "Oh baby. Caught between hell and a better place."
 
-    vivithinking "I need a drink."
+    vivithinking "Ugh...I need a drink."
 
     #  JUMP TO: Debrief Denial.
     jump denial_debrief
