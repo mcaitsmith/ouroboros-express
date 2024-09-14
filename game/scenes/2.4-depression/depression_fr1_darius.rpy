@@ -13,7 +13,7 @@ label depression_fr1_darius:
 
     vivithinking "Perfect. They're here."
 
-    vivi happy "Just the sad cephalopod I wanted to see-"
+    vivi happy "Just the sad cephalopod I wanted to see—"
     vivi sad "Oh. Sorry. Is...this a bad time?"
     darius sad "It's nothing."
     vivi angry "It's clearly {i}something{/i}, you clod."
@@ -90,12 +90,12 @@ label depression_fr1_darius:
     show darius happy blush
     darius "It's called a... Singapore Sling."
     vivi surprised "A... what? It looks like a tall glass of juice!"
-    darius "I'll have you know it's much more than that Ms. Sanssouci. It's actually a sophisticated gin cocktail with hints of bitters and Cointreau..."
+    darius "I'll have you know it's much more than that, Ms. Sanssouci. It's actually a sophisticated gin cocktail with hints of bitters and Cointreau..."
     darius "...layered with cherry brandy and Bénédictine..."
     darius "...lime juice, pineapple juice, and grenadine, naturally..."
     vivi happy "Monsieur Wrecker, I can say with all honesty this is the happiest I've ever seen you."
-    vivithinking "Umph. There it is again- rage, but this time it's tempered by- pain? Sadness?"
     show darius sad -blush
+    vivithinking "Umph. There it is again— rage, but this time it's tempered by— pain? Sadness?"
     darius sad "Don't get used to it."
     darius neutral "I suppose I should ask you: what's {i}your{/i} poison?"
     darius sad "I'd rather not drink alone."
@@ -168,11 +168,13 @@ label depression_fr1_darius:
     darius sad "Apologized."
     vivi surprised "For what?"
     darius sad "For anything."
+    darius sad blush "Except to you."
     vivithinking "Radiating off of them—that uncomfortable heat."
-    darius neutral "Well? Surely you must drink to that. I know your kind is always saying that. ...Whether it's warranted or not."
+    darius neutral "Well? Surely you must drink to that. I know your kind is always apologizing. ...Whether it's warranted or not."
     vivi neutral "You're not wrong. You know—if you'd rather talk instead of just playing a game—"
     darius sad "I wouldn't."
-    darius "In fact, perhaps it's time we leave. This lounge is feeling a bit small. Excuse me."
+    show darius neutral -blush
+    darius neutral "In fact, perhaps it's time we leave. This lounge is feeling a bit small. Excuse me."
 
     # <CHOICE>
     hide darius with dissolve

@@ -19,7 +19,7 @@ label depression_fr2_darius:
     vivi surprised "Honestly, I...don't think I expected you, either."
     vivi "I can't say I've ever been in an observatory quite like this."
     show darius happy -blush
-    darius happy "Beautiful, isn't it? The cosmos are alight tonight."
+    darius happy "Beautiful, isn't it? The cosmos is alight tonight."
     darius "I could watch the stars swirl like this forever. I just might."
     vivi neutral "Surely you'd tire of them eventually. Everything bright burns out after a time."
     darius sad "Too right. Sometimes even {i}before{/i} their time."
@@ -116,8 +116,9 @@ label depression_fr2_darius:
 
     vivi surprised "What do you mean by that?"
     darius neutral "I'm not who you think I am, Ms. Sanssouci. Vivi."
-    darius "I'm a monster. Worse, even, I'm a coward."
+    darius "I'm a monster. Worse, even. I'm a coward."
     vivi happy "Come on, now. You're too hard on yourself. I—"
+    show darius angry
     vivithinking "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
     darius angry "I'm responsible for the deaths of millions of sentient beings. {i}Millions{/i}."
     darius sad "I deserve to be crushed by those hands. I long for it."
