@@ -36,12 +36,12 @@ label bargaining_fr1_susurha:
 
     menu:
         # OPTION 1 +DECAY
-        "You're such an observant lizard. I just want to know what you pick up on.":
+        "You're a watchful lizard. What have you noticed'?":
 
             play sound decchoice
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
-            vivi neutral "You're such an observant lizard. I just want to know what you pick up on."  
+            vivi neutral "You're a watchful lizard. What have you noticed'?"  
             susurha angry "The one so seemingly dedicated to self-deception has the temerity to call me a lizard."
             vivi angry "Alright, then. Fine! Keep your assiduous observations to yourself."
     
