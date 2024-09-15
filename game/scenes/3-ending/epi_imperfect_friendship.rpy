@@ -9,9 +9,9 @@ label epi_imperfect_friendship:
         xzoom -1
     show urshu neutral at right with dissolve
     
-    vivithinking happy "This place always feels so fuzzy."
+    vivithinking neutral "This place always feels so fuzzy."
     urshu "Well, the time has come to clock out. Another spiral of theatrics and redemption closed."
-    vivi "Looking forward to the weekend?"
+    vivi sad "You must be exhausted going through this again and again, for all eternity?"
     urshu "I like you when you're caring, Miss Sansoucci. But enough about me. How does it feel?"
     vivi "Feel what?"
     urshu "To find the light at the end of the tunnel. At times, I was not sure you would make it! You've drifted and messed around a couple of times! Delicious!"
@@ -45,7 +45,7 @@ label epi_imperfect_friendship:
     vivi "..."
     show white:
         linear 0.6 alpha 0.6
-    vivithinking neutral "It's warm. I feel like curling my body like a cat and purring myself to infinity..."
+    vivithinking happy "It's warm. I feel like curling up like a cat and purring myself to infinity..."
     urshu "Hey! Any last words to your conductor?"
     show white:
         linear 0.6 alpha 0.65

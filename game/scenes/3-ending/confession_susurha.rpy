@@ -20,10 +20,10 @@ label confession_susurha:
     susurha happy "Our brief time together these past few—I'm not sure if I can even call them days—has been..."
     show susurha happy blush with dissolve
     susurha "Intoxicating..."
-    vivithinking neutral "Quite."
+    vivithinking happy "Quite."
     show susurha happy -blush
     susurha happy "And cathartic."
-    vivi neutral "Oh, for me too. As I'm sure you know, given your part in it."
+    vivi happy "Oh, for me too. As I'm sure you know, given your part in it."
     susurha neutral "..."
     susurha neutral "All my life, all I ever wanted was to be myself, to live life on my own terms. But I didn't understand how much {i}responsibility{/i} was bound up in that."
     show susurha happy blush with dissolve
@@ -63,7 +63,7 @@ label confession_susurha:
 
             $ susurha_friend = True
 
-            vivi neutral blush "I...I'm sorry. I like you, I do. But that's where it ends for me."
+            vivi neutral blush "I...I'm sorry. I like you, I do. But I can't like you in the way that you want me to."
             susurha sad "I would be remiss if I didn't tell you how disappointed I am. But I understand. I am a lizard with a troubled past, after all."  
             susurha sad "Nevertheless, I'm glad to have met you, Vivienne Sanssouci." 
             susurha neutral "And to call you my friend."
