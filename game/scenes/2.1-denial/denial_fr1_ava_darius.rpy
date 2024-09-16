@@ -7,7 +7,7 @@ label denial_fr1_ava_darius:
     #LOCATION: observatory
 
     #SOUND: train
-    play sound train
+    play sound train loop
 
     scene observatory with fade
 
@@ -65,6 +65,8 @@ label denial_fr1_ava_darius:
         xzoom 1
 
     vivithinking "I should get outta here. Their silence is making me uncomfortable!"
+
+    stop sound fadeout 2.0
 
     # JUMP TO: Character Selector 2
     jump denial_cs2
