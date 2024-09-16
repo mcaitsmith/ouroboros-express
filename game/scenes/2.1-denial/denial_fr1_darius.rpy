@@ -19,7 +19,7 @@ label denial_fr1_darius:
 
     vivithinking "They seem surprised. Loner type maybe?"
 
-    darius neutral "I'm surprised you walked over to me of all people. Surely the goddess or dragon would be more approachable? Not many humans would chat up a mindflayer like you just have."
+    darius neutral "Intriguing. You approaching me like this. Especially after my earlier rude behavior."
 
     vivithinking "Bingo on the loner call."
 
@@ -27,11 +27,11 @@ label denial_fr1_darius:
 
     darius neutral "Go ahead."
 
-    vivithinking "If anyone has a good idea what the hell is going on here, it has to be the mindflayer."
+    vivithinking "If anyone has a good idea what the hell is going on here, I'm guessing the mystical squid detective might have a decent shot at it."
 
     vivi  "Tell me, you must have experience with otherworldly phenomena, right?"
 
-    darius neutral "In a sense. This whole situation is unlike anything I've seen however."
+    darius neutral "You have no idea. However, this whole situation is unlike anything I've seen."
 
     vivithinking "Crap. Swing and a miss."
 
@@ -39,14 +39,31 @@ label denial_fr1_darius:
 
     vivithinking "Their... phalanges? Tentacles? Whatever they are. They keep them hidden from me. Strange."
 
+    # <CHOICE>
     darius neutral "I'm not entirely sure, but he's given us no reason to doubt. We should find out soon regardless."
 
-    show vivi angry 
-    vivithinking "Real charmer, this one. Who knows if this is some sort of trap, a messed up fantasy for this conductor? Are we supposed to just take him at his word?"
+    menu:
+
+        # OPTION 1
+            "(Real charmer, this one.)":
+
+                vivithinking angry "Real charmer, this one."
+                vivithinking angry "Who knows if this is some sort of trap, a messed up fantasy for this conductor? Are we supposed to just take him at his word?"
+    
+                # JUMP TO darius neutral "Now that you mention it, I am... curious...
+
+        # OPTION 2
+            "(Damn. I was banking on them knowing.)":
+
+                vivithinking neutral "Damn. I was banking on them knowing."
+                vivithinking neutral "I hope this won't be a total bust."
+
+                # JUMP TO darius neutral "Now that you mention it, I am... curious...
+
 
     # <CHOICE>
 
-    darius neutral "Now that you mention it, I am... curious. What do you make of this \"Urshu's\" claim that we must come to terms?"
+    darius neutral "Now that you mention it, I am... curious. What do you make of the conductor's claim that we must come to terms?"
 
     menu:
 
@@ -56,17 +73,17 @@ label denial_fr1_darius:
             vivi  "I'm not sure." 
             vivi "The man speaks in riddles, and I can't make heads or tails of them right now."
 
-            darius neutral "That is understandable. Last night was a shock to be sure."
+            darius neutral "That is understandable. Last night was certainly a shock."
 
             vivi "Is that something you're interested in? Coming to terms?"
 
-            darius neutral "You could say that. The details of my life are still cloudy but they're coming back slowly. I'm sure the same goes for you?"
+            darius neutral "You could say that. I am recalling details of my life, gradually. But the fog persists. I assume the same goes for you?"
 
             vivi "Yes, some things are coming back slowly."
 
             vivithinking "There's a pain in their voice, it's almost... melancholic?"
 
-            vivi "If you don't mind me asking, what happened--"
+            vivi "If you don't mind me asking, what happened—"
 
             darius neutral "Ahem..."
 
@@ -95,17 +112,17 @@ label denial_fr1_darius:
     # OPTION 3 
         "It's interesting.":
 
-            vivi  "It's a thinker, that's for sure. If you're into that, then I guess there's some merit to it. I don't know about you though, but I can't \"come to terms\" here of all places."
+            vivi  "It's interesting. If you're into that, then I guess there's some merit to it. I don't know about you though, but I can't \"come to terms\" here of all places."
 
-            darius surprised "Interesting. I wouldn't have expected that answer from you. Thank you for humoring me."
+            darius surprised "An unusual response. Thank you for humoring me."
 
             vivithinking surprised "What does THAT mean? You don't know me. Unless... oh god, are they reading my mind?"
 
-            darius happy "Wondering if I'm reading your mind are you?"
+            darius happy "Wondering if I'm reading your mind, are you?"
 
             vivi surprised blush "So you ARE then!"
 
-            darius happy "Hah, I don't rely on such cheap tricks. I'm naturally quite skilled at reading people you see."
+            darius happy "Hah, I don't rely on such cheap tricks. Other mindflayers might, but I'm naturally quite skilled at reading people."
 
             vivithinking "Is that a hint of annoyance I sense?"
 
@@ -113,7 +130,7 @@ label denial_fr1_darius:
 
             show darius happy blush with dissolve
 
-            darius "I-- uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
+            darius "I— uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
 
             show vivi happy 
             vivithinking "Who knew mindflayers could get flustered. And even a little cute?"
@@ -137,9 +154,9 @@ label denial_fr1_darius:
 
     vivi "Where do you think we're going?"
 
-    darius "In my...religion, we believed that oblivion was at the end of it all. Maybe this train is leading us to that."
-
-    vivithinking "Do mindflayers have religions? No, that's probably a dumb question."
+    darius "In my...religion, we believed that oblivion was at the end of it all. My people -you may know us as mindflayers- believe in a similar idea. Maybe this train is leading us to that."
+ 
+    vivi "Mindflayer? Is that what you are?"
 
     vivi "You seemed interested in making amends before. What's the point if you're headed for oblivion regardless?"
 
@@ -232,7 +249,7 @@ label denial_fr1_darius:
 
     vivi "Sure. Thank you for being open to my questions."
 
-    darius "Anytime, Ms. Sanssouci."
+    darius "Consider it restitution for my earlier rudeness, Ms. Sanssouci."
 
-    # JUMP TO: Character Selector 2
-    jump denial_cs2
+    # JUMP TO: Denial 2.1 NPC scene Ava and Darius
+    jump denial_fr1_ava_darius

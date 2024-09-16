@@ -4,6 +4,7 @@ label depression_fr1_darius:
 
     # FREE ROAM 1 - Darius
     # LOCATION: Lounge
+    call check_overlay from _call_check_overlay_29
     scene lounge with fade
 
     show darius sad at right with dissolve
@@ -12,7 +13,7 @@ label depression_fr1_darius:
 
     vivithinking "Perfect. They're here."
 
-    vivi happy "Just the sad cephalopod I wanted to see-"
+    vivi happy "Just the sad cephalopod I wanted to see—"
     vivi sad "Oh. Sorry. Is...this a bad time?"
     darius sad "It's nothing."
     vivi angry "It's clearly {i}something{/i}, you clod."
@@ -25,9 +26,15 @@ label depression_fr1_darius:
         "Darius. I could really use someone to talk with right now.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
 
             vivi neutral "Darius. I could really use someone to talk with right now."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius sad "I'm not sure that's such a good idea."
             vivi neutral "I do. I'd like your company."
             show darius surprised blush with dissolve
@@ -41,9 +48,15 @@ label depression_fr1_darius:
         "You just push everyone away, don't you?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi angry "You just push everyone away, don't you? Fine. We can wait for the inevitable in silence."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius surprised "I didn't mean to offend."
             vivi angry blush "You never do. So cold. You're practically an icicle."
             vivithinking "That flare of rage again. Good. Burn me."
@@ -77,12 +90,12 @@ label depression_fr1_darius:
     show darius happy blush
     darius "It's called a... Singapore Sling."
     vivi surprised "A... what? It looks like a tall glass of juice!"
-    darius "I'll have you know it's much more than that Ms. Sanssouci. It's actually a sophisticated gin cocktail with hints of bitters and Cointreau..."
+    darius "I'll have you know it's much more than that, Ms. Sanssouci. It's actually a sophisticated gin cocktail with hints of bitters and Cointreau..."
     darius "...layered with cherry brandy and Bénédictine..."
     darius "...lime juice, pineapple juice, and grenadine, naturally..."
     vivi happy "Monsieur Wrecker, I can say with all honesty this is the happiest I've ever seen you."
-    vivithinking "Umph. There it is again- rage, but this time it's tempered by- pain? Sadness?"
     show darius sad -blush
+    vivithinking "Umph. There it is again— rage, but this time it's tempered by— pain? Sadness?"
     darius sad "Don't get used to it."
     darius neutral "I suppose I should ask you: what's {i}your{/i} poison?"
     darius sad "I'd rather not drink alone."
@@ -94,9 +107,15 @@ label depression_fr1_darius:
         "I'll have what you're having, handsome.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
 
             vivi happy blush "I'll have what you're having, handsome."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi "I could use a little fruity delight."
             darius surprised "I assure you, this drink is enough to knock you off your feet."
             vivi happy blush "Trust me, it'll take more than a juicebox to get me sauced."
@@ -110,9 +129,15 @@ label depression_fr1_darius:
         "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
     
             vivi neutral "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "Which is it? Do you want to drink with me and wallow in our mutual misery or do you want to needle me?"
             vivithinking "Agh. The flash. There's definitely pain here."
             vivi angry "Don't be so sensitive. We're all in the same...train."
@@ -121,9 +146,10 @@ label depression_fr1_darius:
             # JUMP TO: vivi happy "Never mind all that. How about a little {i}Never Have I Ever{/i}? A distraction to keep our spirits up!"
 
         # OPTION 3 NEUTRAL
-        "Truthfully? I'm not much of a drinker. Hasn't been great for my family.":
+        "Truthfully? I'm not much of a drinker.":
 
-            vivi neutral "Truthfully? I'm not much of a drinker. Hasn't been great for my family."
+            vivi neutral "Truthfully? I'm not much of a drinker."
+            vivi neutral "Hasn't been great for my family."
             darius surprised "Ah. I'm... sorry to hear."
             vivi neutral "Quite alright. How could you possibly have known?"
             vivithinking "I feel their doubt. They didn't want to trigger me."
@@ -143,14 +169,32 @@ label depression_fr1_darius:
     darius sad "Apologized."
     vivi surprised "For what?"
     darius sad "For anything."
-    vivithinking "Radiating off of them--that uncomfortable heat."
-    darius neutral "Well? Surely you must drink to that. I know your kind is always saying that. ...Whether it's warranted or not."
-    vivi neutral "You're not wrong. You know--if you'd rather talk instead of just playing a game--"
+    darius sad blush "Except to you."
+    vivithinking "Radiating off of them—that uncomfortable heat."
+    darius neutral "Well? Surely you must drink to that. I know your kind is always apologizing. ...Whether it's warranted or not."
+    vivi neutral "You're not wrong. You know—if you'd rather talk instead of just playing a game—"
     darius sad "I wouldn't."
-    darius "In fact, perhaps it's time we leave. This lounge is feeling a bit small. Excuse me."
+    show darius neutral -blush
+    darius neutral "In fact, perhaps it's time we leave. This lounge is feeling a bit small. Excuse me."
 
+    # <CHOICE>
     hide darius with dissolve
-    vivithinking sad "I wish I could have comforted him more..."
+    
+    menu:
+        # OPTION 1
+        "(I wish I could have comforted him more...)":
 
-    #JUMP TO: Character Selector 2
-    jump depression_cs2
+            vivithinking sad "I wish I could have comforted him more..."
+
+            # JUMP TO JUMP TO: Asha Susurha convo
+
+        # OPTION 2
+        "(I'm just spectacular at this. Still, not like he wanted my help.)":
+
+            vivithinking neutral "I'm just spectacular at this. Still, not like he wanted my help."
+
+            # JUMP TO JUMP TO: Asha Susurha convo
+    
+
+    #JUMP TO: Asha Susurha convo
+    jump depression_asha_susurha

@@ -9,7 +9,7 @@
 
 transform credits_scroll(speed):
     ypos 1080
-    linear speed ypos -6600
+    linear speed ypos -7100
 
 ## Credits screen.
 
@@ -54,6 +54,8 @@ screen credits():
                 text "{b}SMALL LOAN STUDIO{/b}"
                 text "https://smallloanstudio.wordpress.com"
                 text "Thanks for playing!"
+
+    key "K_ESCAPE" action Quit(confirm=True)
 
 style credits_hbox:
     spacing 40

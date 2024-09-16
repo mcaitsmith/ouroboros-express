@@ -1,4 +1,4 @@
-﻿# The scene starts here.
+# The scene starts here.
 
 label bargaining_briefing:
     $ day = 3 # bargaining
@@ -6,6 +6,7 @@ label bargaining_briefing:
     #Briefing Bargaining
 
     # LOCATION: cabin
+    call check_overlay from _call_check_overlay_12
     scene cabin with fade
 
     show vivi neutral at left with dissolve:
@@ -42,24 +43,31 @@ label bargaining_briefing:
                 # LOCATION: lounge
                 scene lounge with fade
 
-                show vivi neutral at left with dissolve:
+                show vivi neutral at left:
                     xzoom -1
 
-                vivithinking "Welp. He isn't here. Nobody's here."
+                vivithinking "Well. He isn't here. Nobody's here."
                 vivithinking "Wait...what is..."
-                show vivi surprised
 
                 # VISUAL: rainbows flash around the room
                 scene lounge with flash
                 scene lounge with flash
                 scene lounge with flash
+
+                show vivi surprised at left
+                vivithinking surprised "The train's shaking. Feels like it's coming apart!"
+                vivithinking "Feels like {i}I{/i} might come apart."
+                vivithinking "That strange light is turning the windows into mirrors but I can't see myself in them, just endless other mirrors reflecting back. And then darkness. Darkness I can {i}feel{/i}."
+                vivithinking sad "Like there's a void closing in around me, swallowing me up, and there are things waiting there... things I don't want to see. Is this what the end feels like?"
+                vivithinking "No, pull yourself together, Vivi. It's all just your imagination. It's just..."
                 # VISUAL: a black vignette closes in on the room
+                scene lounge with flash
                 show lounge blur with dissolve
                 # SOUND: Screams, scary cosmic horror shit
                 play sound horror
                 pause 3.0
 
-                vivithinking surprised "Yeah, I'm out."
+                vivithinking surprised "...Yeah, I'm out."
 
                 hide vivi with dissolve
 
@@ -92,7 +100,7 @@ label bargaining_briefing:
                 # VISUAL: two galaxies glow, one red and one white, resembling a reptile
                 vivithinking "No... Galaxies. One is white... and the other red?"
                 vivithinking "The whole glowing thing looks like... a reptile. I'll never understand this space. Please wake me up. I got enough of this hell."
-                vivi surprised "What the--"
+                vivi surprised "What the—"
                 # VISUAL: a shadow appears over vivi's face
                 # CUE FOR VA: vivi is possessed here, speaking with a voice that is not her own
                 vivithinking "Something just stopped by the window."
@@ -100,8 +108,10 @@ label bargaining_briefing:
                 vivithinking "No. It can't be human."
                 vivithinking "Damn, it's looking at me!"
                 vivi "W-what do you want? Leave me alone!"
-                # VISUAL: shadow disappears
-                vivi surprised "What the hell!? It's gone."
+                # VISUAL: shadow disappears, leaving Vivi's reflection behind
+                vivi surprised "What the hell?! It's gone. But wait..."
+                # VISUAL: Vivi catches sight of her decaying reflection
+                vivi surprised "Where are my eyes?! I can see my reflection, but... Why does it look like my ribs are showing through my—"
                 vivi surprised "I gotta get off this train. I gotta find Urshu."
 
                 hide vivi with dissolve
@@ -148,9 +158,9 @@ label bargaining_briefing:
     stop sound fadeout 1.0
 
     vivi neutral "You... Of course, you knew." 
-    vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a petulant pissant."
+    vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a... an impish... wisenheimer or something."
     urshu happy "I appreciate that, Miss Sanssouci. I do work very hard for all of you."
-    urshu neutral "It is my joy to serve--not only to serve, but to draw out of each of you your very best."
+    urshu neutral "It is my joy to serve—not only to serve, but to draw out of each of you your very best."
     vivithinking "Oh, he's being sweet. And candid. And not talking in riddles!"
 
     show vivi angry at left:
@@ -160,13 +170,87 @@ label bargaining_briefing:
 
     show vivi neutral at left
 
-    vivithinking "I need to be delicate. I should go in with tact and poise and--"
+    vivithinking "I need to be delicate. I should go in with tact and poise and—"
     vivi angry "Urshu, I want my fucking life back!"
-    vivi neutral "Yes, I have distractions and good people and tasty espresso--and you here to spice up my life..."
+    vivi neutral "Yes, I have distractions and good people and tasty espresso—and you here to spice up my life..."
     vivi angry "But I look out of these windows, and all I see is death!"
     vivi sad "I want off this train. Ideally, I want everyone to get off and get back to their lives. I'll do anything to make it happen."
+   
+    # THE BELOW TEXT AND FOLLOWING CHOICE ONLY APPEAR IF VIVI CHOSE TO HEAR BOTH URSHU'S 
+    # FIRST STORY (SELECTED OPTION 1 "Go on, already. A story might lift my crow's feet." 
+    # IN 2.1 DENIAL_BRIEFING) AND SECOND STORY (SELECTED OPTION 2 "Look, just tell me 
+    # the story. If we have time." IN 2.2 ANGER_BRIEFING). OTHERWISE, NEEDS TO JUMP TO 
+    # urshu neutral "Miss Sanssouci..." BELOW.
+
+    if urshu_story_1 == True and urshu_story_2 == True:
+
+        urshu neutral "It is a wonderful wish, Miss Sanssouci. I wonder..."
+        vivi sad "You wonder what? How you're gonna make that happen?"
+        urshu neutral "I am sure it won't have escaped your journalist's intellect that the stories I have shared with you in our time here... well, I was that ferryman. They were my stories to share."
+        vivithinking "Yeah, no kidding."
+        urshu neutral "And I wonder if you might now care to share one of your own? About the life you so fervently wish to return to."
+        vivi neutral "Wait up, I thought you already knew a ton about us?"
+
+        # <CHOICE>
+        urshu neutral "The deepest secrets of the heart must be shared freely, Miss Sanssouci."
+
+        menu:
+            # OPTION 1
+            "Urgh, ok. You win. What do you want to hear?":
+
+                $ urshu_story_3 = True
+
+                vivi neutral "Urgh, ok. You win. What do you want to hear?"
+                vivithinking "I bet he wants to hear a {i}secret of the heart{/i}, whatever that means."
+                urshu happy "I wish to hear a memory of your past that tells me best who you are at present."
+                vivi neutral "Uhh..."
+                vivithinking "He really digs nostalgia, huh."
+                vivi neutral "Sure, I can do that. Lemme see..."
+                urshu happy "I await with bated breath, Miss Sanssouci!"
+                vivi neutral "Great. Well, I always loved crazy décor. Always. Like, all-out, the bigger the better. Too much is not enough, y'know?"
+                vivithinking "Oh, he knows. If he had anything to do with the look of this place, anyway."
+                urshu happy "I can only imagine!"
+                vivi neutral "Holidays were amazing. Mom always let me go batshit with the dec's. Birthdays, BBQs, Lunar New Year - everything got tinsel and streamers and confetti, the works. But Halloween was the best."
+                vivi happy "I turned the whole house orange and black. Every year bigger and better. It was a whole thing - people tripping over pumpkins, bats, and skeletons for a week."
+                vivi neutral "But a few years ago I was so busy and I... I screwed up."
+                vivi neutral "I was going after this scoop. It was a big catch for once, not just the usual small fry. I was finally gonna make my name."
+                vivi neutral "I was chasing leads for weeks, and I totally forgot it was Halloween."
+                vivi neutral "I left all the decorations at home. All of them. I was late to Mom's, and then I spent all day on the phone with sources and my editor barking at me."
+                urshu neutral "How out of character that must have seemed."
+                vivi sad "Mom was so sad."
+                vivi sad "I said I was sorry. I told her I was just really busy chasing my dream. I was gonna make her so proud. But she was hurt, and she was worried I was gonna trip up, always looking ahead."
+                vivi neutral "But I fixed it. I raided her fridge, shelves, even her vegetable garden. I rustled up a feast for the whole family."
+                vivi happy "I did it all: dumplings, pumpkin stew, cakes - the lot! Auntie ate so much of my putu piring she had to lie down for hours!"
+                urshu happy "A bountiful bargain!"
+                vivi happy "Yeah. It was."
+                vivi neutral "But I need to do that again. I've been so busy, I've barely been home the past couple years."
+                vivi neutral "With Mom, and Auntie, and everyone... it's not been the same. Not for a while."
+                urshu neutral "It seems your eye has been too fixed upon another time, one out of reach. It has struggled to see the present, and to bask in what it beholds."
+                vivi surprised "I... I mean, I dunno. I guess so. Maybe."
+                urshu neutral "Perhaps you lost your way?"
+                vivi surprised "Maybe a little. Yeah."
+                urshu neutral "And in this, my dear, I think we understand each other perfectly."
+                vivi surprised blush "I... What d'you mean?"
+                urshu neutral "I don't only urge you to use your time aboard this vessel wisely, Miss Sanssouci. I urge you to {i}see{/i} it wisely. Differently."
+                vivithinking blush "Dammit Urshu, why you gotta hit me in the feels like that?! Cunning little..."
+                vivithinking blush "But that does give me an idea."
+                vivi neutral "Look, Ursh..."
+
+                # JUMP TO: urshu neutral "Miss Sanssouci..."
+
+
+            # OPTION 2
+            "Not right now, Urshu. I've got an idea.":
+
+                vivi neutral "Not right now, Urshu. I've got an idea."
+                urshu neutral "Whatever for?"
+                vivi neutral "To get off this ride."
+
+                #JUMP TO: urshu neutral "Miss Sanssouci..."
+    
     urshu neutral "Miss Sanssouci..."
     vivi neutral "Don't \"Miss Sanssouci\" me. I wanna make a deal with you in exchange for my freedom. I want to give you something you haven't had in recent memory."
+
 
     # <CHOICE> 
     vivi "Something that..."

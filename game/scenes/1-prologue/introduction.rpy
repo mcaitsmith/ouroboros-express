@@ -1,4 +1,4 @@
-﻿# The scene starts here.
+# The scene starts here.
 
 label introduction:
 
@@ -40,7 +40,7 @@ label introduction:
         if option1 == False and option2 == False and option3 == False:
             vivithinking neutral "I must be here for a reason. Might as well look around."
         else:
-            vivithinking neutral "Maybe something else here will jog my memory."
+            vivithinking neutral "Hmm..."
 
         menu:
             # OPTION 1 
@@ -50,7 +50,6 @@ label introduction:
 
                 vivithinking neutral "This place definitely comes off more tacky than spooky. The decor is way over the top, and that's coming from me." 
                 vivithinking neutral "Huh... A plaque with my name on the door. I'm definitely meant to be here."
-                # JUMP TO: "Let's keep looking."
                 vivithinking "Let's keep looking."
                 jump lookaround
 
@@ -61,8 +60,7 @@ label introduction:
 
                 vivithinking neutral "It looks like an early 20th-century desk. Actually, everything in here looks like it came from 100 years ago, although it's all in pristine condition."
 
-                # JUMP TO: "Let's keep looking."
-                vivithinking "Let's keep looking."
+                vivithinking "Maybe something else will jog my memory."
                 jump lookaround
 
             # OPTION 3
@@ -72,8 +70,7 @@ label introduction:
 
                 vivithinking surprised "I'm a little paler than usual. Need to get out in the sun more. I'm absolutely asking Chloe for a vacation when this job is finished."
 
-                # JUMP TO: "Let's keep looking."
-                vivithinking "Let's keep looking."
+                vivithinking "There must be something more."
                 jump lookaround
 
             # NOTE after all three options are explored, OPTION 4 should appear
@@ -100,7 +97,7 @@ label introduction:
     vivi neutral "Sorry, this is all just a lot. I must be really tired."
     urshu happy "I could whip up an espresso if you'd like. They are to die for. I personally have one every morning."
     vivi neutral "I think I'm okay for now, but thank you."
-    urshu neutral "Well, in any case, I've actually stopped by to invite you to dinner. The other guests have gathered. I'm sure they're quite eager to meet you."
+    urshu neutral "Well, in any case, I've actually stopped by to invite you to dinner. The other guests have gathered in the dining car. I'm sure they're quite eager to meet you."
 
     # <CHOICE>
     vivi neutral "Um..."

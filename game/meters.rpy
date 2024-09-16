@@ -36,7 +36,7 @@ label meters:
     $ dec_max_depression = 45
 
     # define threshold for romance
-    $ romance_threshold = 70
+    $ romance_threshold = 67 # decreased a little under 70 to account for rounding differences
 
     # define choice number lists for each character
     # guide: [anger_FR1, anger_FR2, bargaining_FR1, bargaining_FR2, depression_FR1, depression_FR2]
@@ -51,6 +51,13 @@ label meters:
     $ dec_num_anger = 7
     $ dec_num_bargaining = 5
     $ dec_num_depression = 4
+
+    # define decay threshold for each eldritch overlay
+    $ dec_threshold_1 = 10
+    $ dec_threshold_2 = 25
+    $ dec_threshold_3 = 40
+    $ dec_threshold_4 = 55
+    $ dec_threshold_5 = 70
 
     # define variable for NPC-dependent meal reveal choice number (just one currently)
     # added 1 to the bargaining FR2 numbers in the att lists to account for this

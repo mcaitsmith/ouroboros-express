@@ -82,4 +82,7 @@ define credits_list = [
     CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
         "Najmah Salam"
     ], image = "images/thumbnail concept.png"),
+    CreditsCategory(category = "{b}{i}Special Thanks{/i}{/b}\n", credit_list = [
+        "Daniel Westfall"
+    ], image = None),
 ]

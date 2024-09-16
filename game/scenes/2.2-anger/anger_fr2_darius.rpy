@@ -5,12 +5,13 @@ label anger_fr2_darius:
     #FREE ROAM 2 - DARIUS 
 
     # LOCATION: dining car
+    call check_overlay from _call_check_overlay_7
     scene diningcar with fade
 
     show vivi happy at left with dissolve:
         xzoom -1
 
-    vivithinking neutral "Their heat is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
+    vivithinking neutral "The heat he gives off is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
 
     show darius neutral at right with dissolve
 
@@ -26,7 +27,7 @@ label anger_fr2_darius:
     show darius surprised blush
     darius "I'm sorry?"
     vivi happy blush "Something where you have to do it just right to score..."
-    darius "Ms. Sanssouci, I think this is hardly the time or place--"
+    darius "Ms. Sanssouci, I think this is hardly the time or place—"
     vivi neutral "Darts, Darius. I'm talking about darts."
     show darius neutral blush
     darius "Right. Darts."
@@ -41,7 +42,7 @@ label anger_fr2_darius:
     darius sad "Not exactly, no. I've been a bit... busy for the last thousand years."
     darius neutral "And as a side note, not all flirting is harmless. Trust me."
     vivi sad "I...I didn't mean to bring up anything painful."
-    vivithinking sad "He's staring at me--No, through me--So intensely."
+    vivithinking sad "He's staring at me—No, through me—So intensely."
     vivi neutral "So... What have you been busy with?"
     darius neutral "Oh, this and that. My kind live a long time. At least...we're supposed to."
     vivi neutral "I suppose I wouldn't know what that's like. We only get about 80 good years if we're lucky. And I suppose I wasn't lucky."
@@ -51,12 +52,13 @@ label anger_fr2_darius:
     darius surprised "Excuse me?"
     vivi angry "At least you had a life. Mine was cut short. I had more I wanted to do. You could at least clue me into what you're so upset about."
     darius angry "I owe you no such explanation."
-    vivi angry "It's not about owing anything, I'm not keeping a ledger--"
+    vivi angry "It's not about owing anything, I'm not keeping a ledger—"
     darius angry "Neither am I. Not anymore."
     vivithinking surprised "He's practically shaking."
+    vivithinking neutral "Yep. There goes Vivi, running her mouth like a bull in a china shop again."
     vivi neutral "I've touched a nerve. I'm sorry. Again. I swear I'm not trying to get under your skin."
     show darius neutral blush with dissolve
-    darius "Whether you were trying or not, you've a talent for it."
+    darius "Whether you were trying to or not, you've a talent for it."
     vivi neutral blush "Should we...play some darts?"
 
     # <CHOICE>
@@ -68,6 +70,10 @@ label anger_fr2_darius:
         "Throw a dart while looking straight into Darius' eyes.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
 
             pause 1.0
@@ -76,6 +82,8 @@ label anger_fr2_darius:
             play sound darts
             pause 2.0
             darius surprised "Huh. Nice throw. Good... darting."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi happy blush "When I want something, I go straight at it."
             darius surprised "Again. Noted."
 
@@ -85,9 +93,15 @@ label anger_fr2_darius:
         "Actually...forget it.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "Actually...forget it."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius surprised "I thought you wanted to play."
             vivi angry "Play? At a time like this? Seems a waste of time."
             darius surprised "I... actually agree."
@@ -110,9 +124,15 @@ label anger_fr2_darius:
         "If I tell you a secret, will you tell me one of yours?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
 
             vivi neutral "If I tell you a secret, will you tell me one of yours?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius surprised "Hm. Let's hear yours first."
             vivi surprised "That's...it's a yes-or-no kind of situation."
             darius happy "And I'm sure it worked on difficult interview subjects. Go ahead."
@@ -127,9 +147,15 @@ label anger_fr2_darius:
         "Sounds like you miss it a little.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "Sounds like you miss it a little."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "I beg your pardon."
             vivi neutral "Is that why you're so quiet and pensive? Moody? You wish you could still be out there, in service of your god."
             darius angry "That could not be further from the truth."
@@ -151,4 +177,4 @@ label anger_fr2_darius:
     # vivi exits
     hide vivi with dissolve
 
-    jump anger_debrief
+    jump anger_urshu_darius

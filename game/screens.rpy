@@ -256,7 +256,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences_ingame')
+            textbutton _("Settings") action ShowMenu('preferences_ingame')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -362,6 +362,7 @@ screen navigation():
 
         if not main_menu:
             textbutton _("Return"):
+                background "gui/pause/button2.png"
                 action Return()
         else:
             if renpy.variant("pc"):
@@ -836,6 +837,11 @@ screen file_slots(title):
                     style "page_label_text"
                     value page_name_value
 
+            vbox:
+                null height 50
+                xalign 0.5
+                label _("{size=-12}Hover over a slot and press Delete or D key to delete a save.{/size}")
+            
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:
                 style_prefix "slot"
@@ -963,6 +969,12 @@ screen file_slots_ingame(title):
                     style "page_ingame_label_text"
                     value page_name_value
 
+            vbox:
+                null height -20
+                xalign 0.5
+                label _("{size=-20}Hover over a slot and press Delete or D key to delete a save.{/size}")
+        
+
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:
                 style_prefix "slot_ingame"
@@ -1084,7 +1096,7 @@ screen preferences_ingame():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
             style_prefix "pref_ingame"
@@ -1205,7 +1217,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 
@@ -1707,7 +1719,11 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
+                textbutton _("Yes"):
+                    if message == gui.LOADING:
+                        action [Stop("music"),yes_action]
+                    else:
+                        action yes_action
                 textbutton _("No") action no_action
 
     ## Right-click and escape answer "no".

@@ -49,7 +49,7 @@ label denial_fr2_susurha:
             vivithinking "The way they slid that chair my way with ease..."
             # SOUND: Vivi sits down in a super comfortable recliner.
             # skipping
-            vivithinking "Holy shit..."
+            vivithinking "Hot damn..."
             susurha happy "Feels like a dream, doesn't it?"
             vivi neutral "Feels like I'm sinking."
             vivithinking happy "It's nice sitting in silence. I'm enjoying their company."
@@ -94,6 +94,7 @@ label denial_fr2_susurha:
             vivi "That's absurd. That can't be the case."
             "..."
             vivithinking "They're glaring at me. Looking me up and down."
+            vivithinking "Alright, chill Vivi. Maybe that was a bit too-"
             susurha angry "Let me tell you what is absurd." 
             susurha angry "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..."
             susurha "Suddenly finding yourself trapped with a bunch of odd looking individuals in a metal tube speeding to an unknown locale."
@@ -251,7 +252,7 @@ label denial_fr2_susurha:
                 #OPTION 2-2
                 "It's okay.":
 
-                    vivithinking "It's okay"
+                    vivithinking "It's okay."
                     # JUMP TO: susurha "Voila."
 
     susurha happy "Voila."

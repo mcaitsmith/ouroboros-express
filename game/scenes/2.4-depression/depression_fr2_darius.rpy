@@ -4,6 +4,7 @@ label depression_fr2_darius:
 
     # FREE ROAM 2 - Darius
     # LOCATION: observatory
+    call check_overlay from _call_check_overlay_32
     scene observatory with fade
 
     show darius sad at right with dissolve
@@ -18,7 +19,7 @@ label depression_fr2_darius:
     vivi surprised "Honestly, I...don't think I expected you, either."
     vivi "I can't say I've ever been in an observatory quite like this."
     show darius happy -blush
-    darius happy "Beautiful, isn't it? The cosmos are alight tonight."
+    darius happy "Beautiful, isn't it? The cosmos is alight tonight."
     darius "I could watch the stars swirl like this forever. I just might."
     vivi neutral "Surely you'd tire of them eventually. Everything bright burns out after a time."
     darius sad "Too right. Sometimes even {i}before{/i} their time."
@@ -31,9 +32,15 @@ label depression_fr2_darius:
         "There's so much more I want to learn about you.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
 
             vivi sad "There's so much more I want to learn about you."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show darius surprised blush with dissolve
             darius "Surely not. I'm an open book."
             vivi happy blush "If you call {i}this{/i} being an open book then I shudder to imagine what closed off looks like."
@@ -48,9 +55,15 @@ label depression_fr2_darius:
         "I won't say it's been nice getting to know you.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi neutral "I won't say it's been nice getting to know you."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius neutral "You {i}really{/i} don't mince words. I suppose I respect that."
             vivi neutral "There isn't a point. May as well say what we mean."
             vivi "There's still a lot I don't know about you. I'd like to unearth those truths."
@@ -103,19 +116,40 @@ label depression_fr2_darius:
 
     vivi surprised "What do you mean by that?"
     darius neutral "I'm not who you think I am, Ms. Sanssouci. Vivi."
-    darius "I'm a monster. Worse, even, I'm a coward."
-    vivi happy "Come on, now. You're too hard on yourself. I--"
+    darius "I'm a monster. Worse, even. I'm a coward."
+    vivi happy "Come on, now. You're too hard on yourself. I—"
+    show darius angry
     vivithinking "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
     darius angry "I'm responsible for the deaths of millions of sentient beings. {i}Millions{/i}."
     darius sad "I deserve to be crushed by those hands. I long for it."
     vivi surprised "I... I don't know how to respond."
     darius neutral "I'm not asking you to. I just want you to know who you're choosing to spend your time with."
+    
+    # <CHOICE>
     darius "I loved my god. I loved the Inquisition. I would have done anything for them. And I did. Frequently."
-    vivithinking "Is it weird that I'm pulling out my notebook? Who is even going to read this...?"
+    
+    menu:
+
+        # OPTION 1
+        "(Is it weird that I'm pulling out my notebook?)":
+
+            vivithinking neutral "Is it weird that I'm pulling out my notebook?"
+            vivithinking neutral "Who is even going to read this...?"
+    
+            # JUMP TO vivi neutral "Who were they?"
+
+        # OPTION 2
+        "(This is it. Their walls are coming down.)":
+
+            vivithinking neutral "This is it. Their walls are coming down."
+            vivithinking neutral "Don't speak, don't interrupt, Vivi. Hear them out, every word."
+
+            # JUMP TO vivi neutral "Who were they?"
+
     vivi neutral "Who were they?"
     darius neutral "I don't think a human tongue could say their name without considerable effort. They are ancient."
     darius sad "Eldritch."
-    darius neutral "You may think of them as That Which Gathers. Or, perhaps-- Za'deeh."
+    darius neutral "You may think of them as That Which Gathers. Or, perhaps— Za'deeh."
     vivi neutral blush "Your terrifying ancient eldritch god is a zaddy?"
     show darius surprised blush with dissolve
     darius "What? No! Their very gaze would melt your mind, much less your face! Put some respect on Za'deeh's name!"
@@ -128,12 +162,18 @@ label depression_fr2_darius:
 
     menu:
         # OPTION 1 +ATTRACTION
-        "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?":
+        "Adorable? Cute?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
 
             vivi happy blush "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius happy "You know what? Sure."
             vivi surprised blush "FINALLY! You admit it!"
 
@@ -143,10 +183,16 @@ label depression_fr2_darius:
         "More open than you'll ever be?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi sad "More open than you'll ever be?"
-            darius sad "I suppose so. There's just-- the weight. Of everything."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
+            darius sad "I suppose so. There's just— the weight. Of everything."
             vivi neutral "There you are."
         
             # JUMP TO: vivi neutral "Now. Let's get real."
@@ -194,5 +240,5 @@ label depression_fr2_darius:
         darius sad "Let the horrors take me. It's what I deserve."
     # END
 
-    # JUMP TO: Debrief Depression
-    jump depression_debrief
+    # JUMP TO: Depression NPC Group Scene
+    jump depression_npc_group_scene

@@ -5,6 +5,7 @@ label bargaining_cs2:
     #Character Selector 2
 
     # LOCATION: cabin
+    call check_overlay from _call_check_overlay_14
     scene cabin with fade
 
     show vivi angry at left with dissolve:
@@ -42,7 +43,7 @@ label bargaining_cs2:
 
             show vivi neutral at left
 
-            vivithinking "Darius would be an excellent sous chef. Heh. Call them Bobby Mind-flay-er."
+            vivithinking "Darius would be an excellent sous chef. Those deft hands of his would work wonders in the kitchen."
 
             # JUMP TO: Free roam 2 / Darius
             jump bargaining_fr2_darius

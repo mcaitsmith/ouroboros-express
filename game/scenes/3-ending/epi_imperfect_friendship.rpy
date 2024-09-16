@@ -13,7 +13,7 @@ label epi_imperfect_friendship:
     urshu "Well, the time has come to clock out. Another spiral of theatrics and redemption closed."
     vivi "Looking forward to the weekend?"
     urshu "I like you when you're caring, Miss Sansoucci. But enough about me. How does it feel?"
-    vivi "Feel what?"
+    vivi "Feel to what?"
     urshu "To find the light at the end of the tunnel. At times, I was not sure you would make it! You've drifted and messed around a couple of times! Delicious!"
     urshu "So, how does it feel?"
     vivi "I feel...fresh. But I'm also tired. How long is left?"
@@ -50,7 +50,7 @@ label epi_imperfect_friendship:
     show white:
         linear 0.6 alpha 0.65
     vivi "..."
-    urshu sad "Come on, Vivi. For prosperity!"
+    urshu sad "Come on, Vivi. For posterity!"
     vivi "..."
     vivi happy "I hate you, ahaha!!"
     vivi "So long, DUMBASS!"
@@ -65,19 +65,19 @@ label epi_imperfect_friendship:
     #To Epilogues according to attraction meters
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold:
-        call epi_friend_ava
-    elif att_meter_ava > 0:
-        call epi_eldritch_ava
+        call epi_friend_ava from _call_epi_friend_ava_2
+    else:
+        call epi_eldritch_ava from _call_epi_eldritch_ava_2
     # ??ATTRACTION
     if att_meter_darius >= romance_threshold:
-        call epi_friend_darius
-    elif att_meter_darius > 0:
-        call epi_eldritch_darius
+        call epi_friend_darius from _call_epi_friend_darius_2
+    else:
+        call epi_eldritch_darius from _call_epi_eldritch_darius_2
     # ??ATTRACTION
     if att_meter_susurha >= romance_threshold:
-        call epi_friend_susurha
-    elif att_meter_susurha > 0:
-        call epi_eldritch_susurha
+        call epi_friend_susurha from _call_epi_friend_susurha_2
+    else:
+        call epi_eldritch_susurha from _call_epi_eldritch_susurha_2
 
     stop music fadeout 3.0
     stop sound fadeout 3.0

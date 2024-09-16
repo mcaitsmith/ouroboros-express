@@ -13,7 +13,6 @@ label interview_darius:
     show darius neutral at right with dissolve
 
     # SOUND: train
-    play sound train loop
 
     vivithinking neutral "This one's imposing. Tall and solid, despite that slender frame." 
     vivithinking sad "But what's this unease I sense?"
@@ -27,7 +26,24 @@ label interview_darius:
     darius neutral "And I responded in kind. Nothing else was needed between us."
     darius neutral "But you reporters are never satisfied, are you?"
     darius neutral "{i}Sigh{/i}. If you make it quick, I'll humor you."
-    vivithinking angry "Oh, I'm about to eviscerate this jerk. Every character flaw. In print. Forever."
+
+    
+    menu:
+        # OPTION 1
+        "(I'm gonna eviscerate this jerk. Every flaw. In print. Forever.)":
+
+            vivithinking angry "I'm gonna eviscerate this jerk. Every flaw. In print. Forever."
+
+            #JUMP TO vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
+    
+    
+        # OPTION 2
+        "(This guy! No, cool your jets, Vivi. Angry, er, squids tell no tales.)":
+
+            vivithinking neutral "This guy! No, cool your jets, Vivi. Angry, er, squids tell no tales."
+
+            #JUMP TO vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
+    
     vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
     darius neutral "Just call me Darius."
     vivi neutral "No last name?"
@@ -50,7 +66,7 @@ label interview_darius:
             vivi neutral "Yeah, you know. The overcoat, tentacles, mask. What're you going for?"
             show darius neutral blush with dissolve
             darius "I don't... A detective? Yes, a detective."
-            vivi neutral "Not quite what I meant, but sure, an octopus detective."
+            vivi neutral "Not quite what I meant, but sure, a squid detective."
             show darius neutral -blush
             darius neutral "You... don't know what I am, do you?"
             vivi neutral "Sorry, I'm a bit out of the loop with current trends so I don't get the reference."
@@ -88,8 +104,9 @@ label interview_darius:
             darius neutral "Nowhere you're familiar with."
             vivi angry "Do you intend to be so difficult throughout this entire process?"
             darius neutral "I am simply being honest. I come from a rather small garden."
-            vivi neutral "Octopus puns? Really?"
-            darius neutral "It wasn't intended, but take it how you will."
+            vivi neutral "A garden? Weird way to refer to back home."
+            darius neutral "It's not the name of it, obviously. Like I said: it's small, you wouldn't know it."
+            vivithinking neutral ". . .right then."
 
             # JUMP TO vivi neutral "Forget it. Last question."
 
@@ -110,16 +127,32 @@ label interview_darius:
     vivithinking neutral "His whole demeanor changed. No witty remark this time?"
     darius sad "Sorry, I'm...not feeling very well. Why am I here, you asked?"
     vivi neutral "Essentially, yes."
+    
+    # <CHOICE>
     darius neutral "Duty... yes."
-    vivithinking neutral "Duty? You're a detective. What, did you need inspiration for your wardrobe?"
+
+    menu: 
+        # OPTION 1
+        "(Duty? You're a detective. What, were you here for wardrobe inspo?)":
+
+            vivithinking neutral "Duty? You're a detective. You just told me you weren't on a case!" 
+            vivithinking neutral "What, does the decor match your outfit? Trying to get wardrobe inspiration?"
+
+            # JUMP TO vivi neutral "Very interesting, I—"
+
+        # OPTION 2
+        "(Duty, eh? Are they keeping their eye on someone here?)":
+
+            vivithinking neutral "Duty, eh? Are they keeping their eye on someone here?"
+
+            # JUMP TO vivi neutral "Very interesting, I—"
+
     vivi neutral "Very interesting, I—"
     vivithinking sad "It's like a chill just came in. Why is the room so...heavy? Such a sickly atmosphere, like wet clothes sticking to your skin."
     vivi neutral "Thank you, uh...Darius. I'll leave you be."
     vivithinking sad "It's like he doesn't even see me."
 
     hide darius with dissolve
-
-    stop sound fadeout 2.0
 
     # JUMP TO: Figuring it out
     jump interview_choice

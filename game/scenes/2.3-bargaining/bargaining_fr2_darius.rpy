@@ -5,6 +5,7 @@ label bargaining_fr2_darius:
     #FREE ROAM 2 - Darius
 
     # LOCATION: diningcar
+    call check_overlay from _call_check_overlay_21
     scene diningcar with fade
 
     # SOUND: cooking, dining sounds
@@ -29,9 +30,15 @@ label bargaining_fr2_darius:
         "Could I interest you in dinner?":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
 
             vivi neutral "Could I interest you in dinner?"
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             show darius neutral blush with dissolve
             darius "Pardon me?"
             vivi neutral "I'm making a meal today for Urshu, and I thought this would be a great chance to work together."
@@ -45,12 +52,18 @@ label bargaining_fr2_darius:
         "Can you help me with something for Urshu?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Can you help me with something for Urshu? He asked me to make dinner for the group and I'd appreciate the extra hands."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius neutral "Urshu asked you?"
             vivi neutral "Yeah, why do you ask?"
-            darius neutral "Nothing it just seems...strange. Urshu has never asked us to do anything for him. Besides, he's a god."
+            darius neutral "Nothing. It just seems...strange. Urshu has never asked us to do anything for him. Besides, he's a god."
             vivi neutral "Yeah, well, first time for everything I suppose!"
             vivithinking "I may have given him the idea, but Darius doesn't have to know that."
 
@@ -60,9 +73,15 @@ label bargaining_fr2_darius:
         "You want out of this place?" if dec_meter > 20:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "You want out of this place? I may have your ticket, if you just help me out."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius angry "No."
             vivi neutral "No, what?"
             darius neutral "No, I do not \"want out of this place\" because it isn't possible."
@@ -78,7 +97,7 @@ label bargaining_fr2_darius:
             # JUMP TO: vivi neutral "So, my sous chef, what shall we prepare?"
 
     vivi neutral "So, my sous chef, what shall we prepare?"
-    darius sad "I'm...not sure. I don't think typical mindflayer cuisine fits the palate of our guests."
+    darius sad "I'm...not sure. I don't think typical illithid cuisine fits the palate of our guests."
 
     show vivi angry at left
 
@@ -98,10 +117,16 @@ label bargaining_fr2_darius:
         "Better not leave my comfort zone.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             show vivi neutral at left
             vivithinking "Let's just make something simple. Urshu doesn't strike me as the extravagant type."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "Let's make some chicken stir fry. I know a pretty easy recipe."
             darius neutral "Ah, seems simple enough. Let me prepare the meat."
 
@@ -111,11 +136,17 @@ label bargaining_fr2_darius:
         "Screw it, let's go all out!":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
 
             show vivi neutral at left
 
             vivithinking "Screw it, let's go all out! Really need to wow Urshu if I want my ticket out of here."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "It's a bit of a challenging recipe, but I know a beef wellington that's sure to make his jaw drop."
             darius neutral "That's a rather sophisticated recipe. Do you have a culinary background, Vivi?" 
             vivi neutral "Not exactly. I just pick up a lot of things on this job. Everyone loves food, and they all have an opinion on it. It's pretty easy to get good recipes if you just ask."
@@ -164,12 +195,28 @@ label bargaining_fr2_darius:
     vivi happy "I'm sure they could be useful for...other things as well."
     show darius neutral blush with dissolve
     darius "Ms. Sanssouci, I have no idea what you could possibly be referring to."
+    
+    # <CHOICE>
     vivi happy blush "Oh, I'm sure."
-    vivithinking "They're cute when they try to act clueless."
+    
+    menu:
+        # OPTION 1
+        "(They're cute when they try to act clueless.)":
+        
+            vivithinking "They're cute when they try to act clueless."
+
+            # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
+
+        # OPTION 2
+        "(Heh. They know.)":
+
+            vivithinking "Heh. They know."
+
+            # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
 
     # SOUND: glassware clinking (dining, clatter of silverware and plating)
     play sound glassclink
-    pause 5.0
+    pause 2.5
     stop sound fadeout 1.0
 
     vivi neutral "Well, that's about as good as it's going to get. What do you think?"
@@ -184,22 +231,22 @@ label bargaining_fr2_darius:
     vivi neutral blush "Oh? Are you so sure?"
     show darius neutral blush with dissolve
     darius "Not like that! I... Damn you."
-    vivi happy blush "Haha, so flustered Mr. Wrecker!"
+    vivi happy blush "Haha, so flustered, Mr. Wrecker!"
     vivi neutral "..."
     vivi neutral "Actually, Darius, before we go..."
     show darius neutral -blush
     darius neutral "Yes?"
-    vivi neutral "I should be honest with you... This dinner isn't as benevolent as I made it seem."
+    vivi neutral "I should be honest with you... This dinner isn't as altruistic as I made it seem."
     vivi sad "The reason I'm cooking is because of a deal I made with Urshu. If I make him a fantastic meal, he'll get us off this train."
     vivi sad "Well, I mean... I...could get off this train."
     darius neutral "..."
     darius surprised "You...you..."
     darius sad "...I see."
-    vivi neutral "I'm sorry! I--"
+    vivi neutral "I'm sorry! I—"
     darius sad "You don't need to say anything else."
     vivi neutral "Wait, Darius! You don't understand!"
     darius angry "What is there to not understand? You kept this a secret from me! I respected you enough to not read you, and this is how you repay me?" 
-    vivi neutral "Darius! I--"
+    vivi neutral "Darius! I—"
     darius angry "Did you ever stop to think about how the rest of us would feel?"
     darius sad "How I'd feel being trapped here...without you?"
 
@@ -229,12 +276,12 @@ label bargaining_fr2_darius:
 
     # ??DECAY (and if not ATTRACTION above)
     else:
-        vivi sad "But Darius! I--"
+        vivi sad "But Darius! I—"
         darius angry "I already told you! You don't need to say anything else."
 
         show vivi sad at left
 
-        vivithinking "...Shit. What have I done?" 
+        vivithinking "...Damn it. What have I done?" 
         vivithinking "I should've just kept my mouth shut."
         vivi sad "You're right."
 

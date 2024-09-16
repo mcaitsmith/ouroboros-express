@@ -5,6 +5,7 @@ label bargaining_fr1_darius:
     #FREE ROAM 1 - Darius
 
     # LOCATION: lounge 
+    call check_overlay from _call_check_overlay_18
     scene lounge with fade
 
     show vivi neutral at left with dissolve:
@@ -24,8 +25,23 @@ label bargaining_fr1_darius:
     vivi happy "Have I ever told you you're quite charming?"
     darius neutral "Oh gods, here she starts."
     vivi happy "Such a vast intelligence, but always holding it tight to the chest. So many  thoughts and words, but only picking out a select few."
+    
+    # <CHOICE>
     darius neutral "I can tell this is killing you. Come on, out with it."
-    vivithinking "Surprisingly, no, if I'm being honest. But they don't have to know that."
+    
+    menu:
+        # OPTION 1
+        "(Surprisingly, no, if I'm honest. But they don't have to know that.)":
+
+            vivithinking neutral "Surprisingly, no, if I'm honest. But they don't have to know that."
+            # JUMP TO vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
+
+        # OPTION 2
+        "(Ugh. They got me. Still, no harm in indulging them.)":
+
+            vivithinking neutral "Ugh. They got me. Still, no harm in indulging them."
+            # JUMP TO vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
+    
     vivi neutral "Alright, fine. Urshu. Have you tried using your abilities on him? Get a good mental read?"
     darius happy "Ahahaha! Oh, you humans are a riot. Comedy, that's the true gift your species possesses..."
     darius neutral "Hold on. You're serious?"
@@ -40,7 +56,7 @@ label bargaining_fr1_darius:
     
             vivi angry "Okay, I get it. No need to rub it in anymore."
             darius neutral "I apologize, but you think too highly of my abilities. Mind reading is a very involved exercise. It requires a very stable hold on one's person, almost like learning to swim in deeper waters."
-            darius neutral "A mind like Urshu's would be like diving into... hmm, what's the right example for you humans...the Mariana Trench, I believe it's named?" 
+            darius neutral "A mind like Urshu's would be like diving into a bottomless well, an abyss the depth of which I'd likely never find the end of." 
             darius neutral "I'd lose myself in his mind, unable to pull back."
             vivi neutral "I understand. I don't want you to do anything dangerous."
 
@@ -50,9 +66,15 @@ label bargaining_fr1_darius:
         "I didn't think sarcasm was in your wheelhouse.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
         
             vivi neutral "I didn't think sarcasm was in your wheelhouse, Monsieur Wrecker."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             darius happy "I have many surprises in my \"wheelhouse\" as you say. Some I may even show you someday."
             vivi happy "Rather forward, aren't we? That definitely isn't in your nature."
             darius neutral "Yes, well... Maybe you're a bad influence on me, Ms. Sanssouci."
@@ -67,9 +89,15 @@ label bargaining_fr1_darius:
         "Can you read ANYTHING?":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi angry "Can you read ANYTHING?" 
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivi angry "Just when I thought you could be useful." 
             darius angry "Only if you say please."
             vivi neutral "Please, do the one thing mindflayers are infamous for? For the benefit of us all?"
@@ -81,7 +109,7 @@ label bargaining_fr1_darius:
     vivi angry "It just bothers me how little we know about this ferryman. How can I trust someone I barely understand?"
     darius neutral "We do it every day, don't we? How many strangers do you meet in a day? How many do you just assume won't be a threat to you?"
     vivi neutral "But those people are like us. Urshu... isn't."
-    darius neutral "Oh he is. More than you know."
+    darius neutral "Oh, he is. More than you know."
     vivi happy "So you have read him!"
     darius neutral "Not read. More... observed."
     darius sad "The faces he makes when he thinks no one is noticing. The way he listens to every word with unrelenting attention."
@@ -98,14 +126,20 @@ label bargaining_fr1_darius:
         "So caring. I wouldn't expect it from you.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
     
             vivi happy "So caring. I wouldn't expect it from you."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivi neutral "You don't have to worry. I don't plan to hurt our dear Urshu."
             vivi neutral "I was actually thinking of doing something for him later today and wanted you to read him to see what he'd like."
             darius happy "I'm glad to hear it. I can tell he cares for you a great deal."
             vivi neutral blush "What do you mean? He treats me just the same as anyone else."
-            darius happy "You're inquisitive Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
+            darius happy "You're inquisitive, Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
             show darius happy blush with dissolve
             darius "Perhaps that is why I, too, enjoy your company so much."
             vivi neutral blush "This guy... When did he get so suave?"
@@ -117,9 +151,15 @@ label bargaining_fr1_darius:
         "Okay, enough. I don't need the lecture.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
     
             vivi angry "Okay, enough. I don't need the lecture. I'm not about to break this guy's heart or anything."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             darius neutral "I'm sure you won't. Just a helpful reminder."
             vivi angry "Noted. Unneeded. Unasked for. But noted."
 
@@ -153,5 +193,5 @@ label bargaining_fr1_darius:
     darius neutral "Insight is a kind way of putting it. I just told you about what I've seen."
     darius neutral "But thank you, Vivienne. I'm always open to chat."
 
-    # JUMP TO: Character Selector 2
-    jump bargaining_cs2
+    # JUMP TO: Darius Susu'Rha intermission scene
+    jump bargaining_darius_susurha

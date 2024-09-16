@@ -6,6 +6,7 @@ label depression_cs1:
 
     # LOCATION: cabin
     # scene cabin with fade
+    call check_overlay_nofade from _call_check_overlay_nofade_1
 
     # show vivi neutral at left with dissolve
 
@@ -14,6 +15,7 @@ label depression_cs1:
 
     #<CHOICE>
     vivithinking neutral "I'm gonna get a drink. I'm sure I'm not the only one who'd want one."
+    vivithinking "As Urshu said, the person I choose now won't be available later. They won't be able to see my final moments."
     menu:
 
         #OPTION 1

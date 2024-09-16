@@ -5,6 +5,7 @@ label anger_debrief:
     #Debrief Anger
 
     # LOCATION: cabin
+    call check_overlay from _call_check_overlay_2
     scene cabin with fade
     
     # ??DECAY
@@ -15,13 +16,17 @@ label anger_debrief:
 
         vivithinking angry "I feel like the only one trying to get off this train. How are people content with playing silly card games when their lives are at stake? And the conductor! He knows he's messing with me and gets off on it."
 
-        vivithinking neutral "Take a deep breath, V. This isn't getting me anywhere."
+        vivithinking surprised "What? Did my face just..."
+        
+        vivithinking neutral "...no, it couldn't have. That's impossible. Take a deep breath, V. This isn't getting me anywhere."
 
         vivithinking neutral "Fighting with everybody is obviously not gonna work. Maybe I can get what I want another way. Urshu is the key. He must want something."
 
         vivithinking neutral "I should write."
 
-        $ message = "This whole thing is pointless!\nThat conductor... URG!\nI wanna strangle him and wipe that\nstupid smirk off his face.\nTalking to him is like solving a riddle.\nIt's infuriating! Gotta find something on him.\n\nMaybe the others know a thing or two.\n\nThere's gotta be some way to make Urshu help me.\nHe seems like one who'd appreciate an\nexchange for his aid."
+        play sound writing
+
+        $ message = "This whole thing is pointless!\nThat conductor... URG!\nI wanna strangle him and wipe that\nstupid smirk off his face.\nTalking to him is like solving a riddle.\nIt's infuriating!\nGotta find something on him.\nMaybe the others know a thing or two.\n\nThere's gotta be some way to make\nUrshu help me.\nHe seems like one who'd appreciate an\nexchange for his aid."
 
         call display_journal from _call_display_journal_1
         $ cycle = 2
@@ -44,7 +49,7 @@ label anger_debrief:
 
         play sound writing
 
-        $ message = "Talking to the other passengers has helped\nput things into perspective.\nThey're not so bad after all.\nI won't get off this train by fighting.\n\nI still need more info on the conductor.\nHe's my ticket off this ride.\nHe seems like one who'd appreciate an exchange\nfor his aid.\nMaybe some of the other passengers can help me?\nWe can maybe figure out together\nwhat Urshu would want from us..."
+        $ message = "Talking to the other passengers has helped\nput things into perspective.\nThey're not so bad after all.\nI won't get off this train by fighting.\n\nI still need more info on the conductor.\nHe's my ticket off this ride.\nHe seems like one who'd appreciate\nan exchange for his aid.\nMaybe some of the other passengers\ncan help me?\nWe can maybe figure out together\nwhat Urshu would want from us..."
 
         call display_journal from _call_display_journal_2
         $ cycle = 2

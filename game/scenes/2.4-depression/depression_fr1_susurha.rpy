@@ -5,6 +5,7 @@ label depression_fr1_susurha:
     # FREE ROAM 1 - Susu'Rha (DEPRESSION)
 
     # LOCATION: diningcar
+    call check_overlay from _call_check_overlay_30
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:
@@ -30,10 +31,26 @@ label depression_fr1_susurha:
     susurha happy "In the Viridian Wood, the mixture and ingestion of intoxicating potions was almost a nightly occurrence."
     susurha happy "Ah...to sit on my balcony, reading a collection of poetry with a glass of red wine in hand."
     vivi "It sounds like you've lived a full life."
+    
+    # <CHOICE>
     susurha sad "In the Wood, we lived joyously, following the path of self-expression."
-    vivithinking "I could have used more of that."
+    
+    menu:
+        # OPTION 1
+        "(I could have used more of that.)":
+
+            vivithinking sad "I could have used more of that."
+            # JUMP TO susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
+
+        # OPTION 2
+        "(Self-expression, huh. Yeah, right.)":
+
+            vivithinking neutral "Self-expression, huh. Yeah, right."
+            vivithinking neutral "I feel like constantly chasing a way to express myself in the next day's paper sometimes got in the way of the whole living joyously part..."
+            # JUMP TO susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
+
     susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
-    vivithinking "Hmmm..."
+    vivithinking neutral "Hmmm..."
     vivi "This is incredible."
     susurha "Good."
     susurha "During my time at the druid camp, they had a special ritual that required the unique properties of liquor."
@@ -64,9 +81,15 @@ label depression_fr1_susurha:
         "Been engaged.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "Been engaged."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Hmmm..."
             susurha "I believe this is called 'Beginner's luck.' You've got me there."
             vivithinking "Wow! They've been engaged?"
@@ -85,9 +108,15 @@ label depression_fr1_susurha:
         "Led a kingdom.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "Led a kingdom."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Hmm... Got me there I suppose."
             susurha "Bottoms up."
             susurha "That was quite the easy one. Are you trying to make me drunk?"
@@ -105,9 +134,15 @@ label depression_fr1_susurha:
         "I don't know." if dec_meter >= 35:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
                 
             vivi "I don't know."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha "Boooo..."
             vivi "I'm sorry. I'm not sure what to say."
             susurha "Really?"
@@ -126,9 +161,15 @@ label depression_fr1_susurha:
         "Can we just sit and drink?" if dec_meter >= 40:
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "Can we just sit and drink?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             vivithinking "I don't know if I have any more games left in me."
             susurha angry "Hmmm..."
             #JUMP TO: susurha happy "My turn."
@@ -144,9 +185,15 @@ label depression_fr1_susurha:
         "No.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi "No."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha surprised "Really?"
             vivi sad "Yeah, I've... never really gotten that far before."
             vivi sad "I've had plenty of partners, but none of them... felt..."
@@ -165,9 +212,15 @@ label depression_fr1_susurha:
         "Possibly, recently." if att_meter_susurha >= 60:
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
 
             vivi blush "Possibly, recently."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha surprised "Oh... Do tell me more, madam."
             vivithinking "Do I tell them? Do I not?"
             vivithinking "No."
@@ -182,9 +235,15 @@ label depression_fr1_susurha:
         "I've had plenty of lovers.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
             vivi "I've had plenty of lovers."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha "I'm sure. A woman such as yourself, but..."
             susurha "Have YOU ever been in love?"
             vivi "Everyone has been in love in their life."
@@ -209,5 +268,5 @@ label depression_fr1_susurha:
     vivithinking "My head is already spinning."
     vivithinking "I should take a moment to collect myself."
 
-    #JUMP TO: Character Selector 2
-    jump depression_cs2
+    #JUMP TO: Asha Susurha convo
+    jump depression_asha_susurha

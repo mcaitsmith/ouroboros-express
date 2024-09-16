@@ -28,7 +28,7 @@ label romance_darius:
     show observatory with flash
 
     vivithinking sad "The end... It's here... But I feel at peace." 
-    vivithinking happy "Wherever you are, Urshu--thank you."
+    vivithinking happy "Wherever you are, Urshu—thank you."
 
     # VISUAL: screen fades to black  
     scene black with fade
@@ -44,18 +44,18 @@ label romance_darius:
     scene white with Dissolve(3.0)
     # LOCATION: terminalofdreams
 
-    vivi surprised "What-- Where are we? Darius?"
+    vivi surprised "What— Where are we? Darius?"
     darius surprised "Vivi... I-I don't believe it. Haha!"
     vivithinking surprised "He's laughing?"
     vivi surprised "What is this place?"
     darius happy "You know, I think Urshu had a few cards up his sleeve. We're somewhere {i}new{i}."
     vivi happy "Wait... Are you saying we have a second chance? A fresh start?"
-    darius neutral "You know better than to ask a silly question, Miss Sanssouci." 
+    darius neutral "You know better than to ask such a silly question, Miss Sanssouci." 
     darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
     vivi happy "I'm with you."
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling into nothingness\nbut I've truly found someone special.\nThey're smart and charming but most of all, kind.\nIt takes a strong person to defy their god and\nrisk eternal damnation to do what's right.\nAcceptance is a hard thing to find but we've found it\nin each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness,\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
     call display_journal from _call_display_journal_9
@@ -64,12 +64,12 @@ label romance_darius:
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold:
         call epi_friend_ava from _call_epi_friend_ava
-    elif att_meter_ava > 0:
+    else:
         call epi_eldritch_ava from _call_epi_eldritch_ava
     # ??ATTRACTION
     if att_meter_susurha >= romance_threshold:
         call epi_friend_susurha from _call_epi_friend_susurha_1
-    elif att_meter_susurha > 0:
+    else:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha_1
 
     stop music fadeout 3.0

@@ -17,7 +17,7 @@ label confession_susurha:
     susurha "Wondrous, isn't it?"
     vivi neutral blush "It sure is."
     susurha happy "I'm thrilled you could be here to enjoy it with me."
-    susurha happy "Our brief time together these past few--I'm not sure if I can even call them days--has been..."
+    susurha happy "Our brief time together these past few—I'm not sure if I can even call them days—has been..."
     show susurha happy blush with dissolve
     susurha "Intoxicating..."
     vivithinking neutral "Quite."

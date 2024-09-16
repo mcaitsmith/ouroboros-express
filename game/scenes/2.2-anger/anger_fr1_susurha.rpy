@@ -5,6 +5,7 @@ label anger_fr1_susurha:
     #FREE ROAM 1 - SUSU'RHA
 
     # LOCATION: dining car
+    call check_overlay from _call_check_overlay_5
     scene diningcar with fade
 
     # VISUAL: screen shakes
@@ -45,9 +46,15 @@ label anger_fr1_susurha:
         "I'll play.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
         
-            vivi neutral "I'll play"
+            vivi neutral "I'll play."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
@@ -55,15 +62,35 @@ label anger_fr1_susurha:
         "I'd be revealing too much.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "I'd be revealing too much."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
-            vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."    
-            susurha neutral "Either you're suffering from an acute lack of self-awareness, or you're simply a bad liar."
-            vivithinking angry "The nerve of this creature!"
+            vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."
 
-            # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+            # <CHOICE>
+            susurha neutral "Either you're suffering from an acute lack of self-awareness, or you're simply a bad liar."
+            
+            menu:
+                # OPTION 2A
+                "(The nerve of this creature!)":
+
+                    vivithinking angry "The nerve of this creature!"
+
+                    # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
+
+                # OPTION 2B
+                "(Ugh. Jerk. Not far wrong, though.)":
+
+                    vivithinking neutral "Ugh. Jerk. Not far wrong, though."
+
+                    # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
     susurha neutral "I'm going to draw cards from this deck with questions."
     susurha happy "You will answer, and I will try to ascertain whether or not you are lying."
@@ -79,9 +106,15 @@ label anger_fr1_susurha:
         "Everyone hides something. I'm no exception.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
 
             vivi neutral blush "Everyone hides something. I'm no exception."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             susurha neutral "I'm the exception. All of my pretense has been burned away."
             susurha surprised "..."
             vivithinking "Why are they looking at me like that?"
@@ -96,9 +129,15 @@ label anger_fr1_susurha:
         "Me? Hiding? What about you?!":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "Me? Hiding? What about you?! What exactly are YOU hiding behind those beady eyes?"
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha surprised "Deflection!"
             susurha surprised "A keen observer of everything but yourself."                            
             susurha neutral "Do you know what I see when I look into your eyes?"
@@ -119,9 +158,15 @@ label anger_fr1_susurha:
         "I am angry.":
 
             play sound attchoice
+            show attraction_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
 
             vivi angry "I am angry."
+            hide attraction_icon
+            with { "master" : Dissolve(0.5) }
             vivithinking angry "And the cocky bastard leans back in their chair with a smile too. Right on cue..."
             susurha happy "You know what? For all of my years of frolicking, I believe I am too."    
             vivi neutral "Who are you angry at?"
@@ -148,9 +193,15 @@ label anger_fr1_susurha:
         "You're the one who's angry.":
 
             play sound decchoice
+            show decay_icon at right with dissolve:
+                xoffset -500
+                # xoffset -30
+                yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
         
             vivi angry "You're the one who's angry."
+            hide decay_icon
+            with { "master" : Dissolve(0.5) }
             susurha happy "Again, you're deflecting."
             susurha angry "But you are right. I'm furious."
             # SOUND: sigh
