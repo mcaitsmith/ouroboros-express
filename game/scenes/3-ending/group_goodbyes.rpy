@@ -105,7 +105,7 @@ label group_goodbyes:
                 # OPTION 3
                 "Susurha... how do I even start this?" if goodbye3 == False:
 
-                    $ goodbye = True
+                    $ goodbye3 = True
 
                     hide ava silhouette with dissolve
 
@@ -186,5 +186,5 @@ label group_goodbyes:
     vivi happy "I'm glad to have met you, Susu'Rha. A friend to the end."
     susurha happy "Ha! See? You are a poet. Farewell, Vivienne."
     
-    #JUMP TO train_epilogue
-    jump train_epilogue
+    #JUMP TO goodbye_choice
+    jump goodbye_choice
