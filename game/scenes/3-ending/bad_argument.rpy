@@ -62,7 +62,7 @@ label bad_argument:
     darius neutral "Vivi—"
     vivi angry "No, I'm done with you. All of you."
     vivi angry "I tried {i}everything{/i}. Getting to know you, befriend you, even love you!"
-    vivi angry "And what did it add up to? Jack...shit!"
+    vivi angry "And what did it add up to? Jack shit!"
 
     show susurha surprised
 
@@ -86,11 +86,11 @@ label bad_argument:
 
     darius angry "I can feel you changing, Vivi. Don't give in. It's not too late."
     vivithinking angry "But it is too late. The mindflayer already knows. He's just too weak to stop me now."
-    vivi angry "Oh, why would you even pretend to care, you whining, sullen, self-obsessed shit."
+    vivi angry "Oh, why would you even pretend to care, you whining, sullen, self-obsessed squid."
     vivi angry "{i}You{/i} sit there with these incredible abilities, and all you can think of are {i}your{/i} regrets, {i}your{/i} failures."
     vivi angry "You don't care about anyone else. You think you're {i}above{/i} everyone else, just because you can look in and see what's there."
     vivi angry "Well, guess what? What you see isn't half the story. We're more. I'm more. And you missed out."
-    darius sad "I see...You are right. On many accounts."
+    darius sad "I see...You are right. On many counts."
 
     show susurha angry
 
@@ -98,8 +98,8 @@ label bad_argument:
     susurha neutral "She's clearly under the influence of this decaying world. Vivi, if you're in there, come out! We can help you!"
     vivi angry "You've helped enough, snake. You're the worst of this bunch of dying degenerates."
     vivi angry "All your education. All your wealth, thrust upon you. And the only thing you've ever done with your life is reject that silver spoon when BILLIONS would have killed for it."
-    vivi angry "I can't decide if you're just plain cruel or so...morbidly...stupid."
-    vivi angry "Hmm. Maybe {i}selfish{/i} is the best word to describe you. A selfish, stupid slithering snake."
+    vivi angry "I can't decide if you're plain cruel or just stupid."
+    vivi angry "Hmm. Maybe {i}selfish{/i} is the best word to describe you. A selfish, stupid, slithering snake."
     susurha sad "I ought to kill you myself."
     vivi happy "Ha! We're already dead."
 
@@ -107,7 +107,7 @@ label bad_argument:
 
     vivithinking neutral "Just the conductor I wanted to see..."
     urshu neutral "What is this, now? Miss Sanssouci, this is {i}not{/i} the dressing down I expected you to give your fellow passengers. What's that on the ground?"
-    vivi angry "My tears, made of shards of mirror. Look. I've cried enough of them to make mirrors for everyone. So they can see their disgusting true selves!"
+    vivi angry "Shards of mirror. I woke up weeping and this is what my tears became. Look. I've cried enough of them to make mirrors for everyone. So they can see their disgusting true selves!"
     urshu sad "My dear, this is not what I wanted for you. Yet..."
     urshu neutral "I sense something stirring within you. Something powerful."
 
@@ -121,7 +121,7 @@ label bad_argument:
     urshu happy "You saved something? For me?"
     vivi angry "Deceitful, maniacal, egotistical, gatekeeping conductor of tricks."
     vivi angry "If it weren't for you, I'd be home already."
-    urshu surprised "I see it now. Darius, Susurha, Asha, please be calm."
+    urshu surprised "I see it now. Darius, Susu'Rha, Asha, please be calm."
     urshu surprised "There is something at work here I have not seen since I was first formed."
 
     show ava neutral
@@ -135,7 +135,7 @@ label bad_argument:
     show urshu neutral blush with dissolve
     urshu "Glare all you like, Miss Sanssouci. There's nothing you can do to me."
     show urshu neutral -blush
-    urshu neutral "Think of it like so: As a reporter, you sought truth. You dealt in truths. You bent and twisted yourself into whatever shape to fit the truth."
+    urshu neutral "Think of it like so: As a reporter, you sought truth. You dealt in truths. You bent and twisted yourself into whatever shape fit the truth."
     urshu neutral "And so the decay takes this shape. The decay affects all."
     urshu neutral "{i}Reflects{/i} all." 
     vivi surprised "My skin is... Why is it doing that?"
@@ -164,18 +164,18 @@ label bad_argument:
     urshu neutral "She is not destined to the afterlife but to return to Earth as a new being."
     urshu neutral "A judge of souls, for whom she will lay bare the truth. The truth of who they are."
     urshu neutral "And many shall not survive looking in the mirror." 
-    vivithinking neutral "I'm...going back."
-    vivithinking neutral "I'm going home."
+    vivithinking neutral "I'm... going back."
+    vivithinking neutral "I'm going {i}home{/i}."
 
     show urshu happy
 
-    urshu happy "Your trainscendence is near, Miss Sanssouci. Your journey is at an end..."
-    vivi sad "What... What do you mean?"
-    vivi angry "It's her. I see her outside the window. That...shining woman in the dress. She's beckoning me."
+    urshu happy "Your transcendence is near, Miss Sanssouci. Your journey is at an end..."
+    vivi sad "What... what do you mean?"
+    vivi angry "It's her. I see her outside the window. That... shining woman in the dress. She's beckoning me."
     vivi sad "Agh! It hurts!"
     urshu happy "Goodbye, Miss Sansoucci."
     urshu happy "May the truth finally set you free."
-    vivi angry "Gahhhhhhhh!"
+    vivi angry "Free?!"
 
     # EFFECT: screen shake
     show observatory with hpunch

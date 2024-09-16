@@ -43,9 +43,8 @@ label romance_susurha:
     susurha "I'm here, Vivi. I've got you."
     vivi happy "I don't know where you end and I begin!"
     susurha happy "I don't either! And I don't know what awaits us, but if this is to be my final moment, I couldn't have asked for a better way to spend it than with you, Vivienne."
-    vivi happy blush "Me, too."
     vivi happy blush "I want to be with you forever." 
-    vivi happy blush "What if forever is only now?"
+    susurha happy blush "What if forever is only now?"
     vivi happy blush "Then I want to be with you forever, now."
 
     #EFFECT: fade to white

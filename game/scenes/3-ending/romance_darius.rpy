@@ -15,10 +15,10 @@ label romance_darius:
     show darius surprised blush with dissolve
     darius "Yes?"
     vivi happy blush "Yes."
-    vivithinking happy blush "Their hands... Those claws. He holds me so delicately."
+    vivithinking happy blush "Their hands... those claws. He holds me so delicately."
     vivithinking happy blush "Like they'll never hurt anyone ever again."
     vivi neutral blush "I believe in you, Darius."
-    vivi sad "I just wish we'd had a bit more time... Seems like our final stop is approaching."
+    vivi sad "I just wish we'd had a bit more time... seems like our final stop is approaching."
     show darius happy -blush
     darius happy "I'd take these brief moments with you over millennia of the sorry existence I had before."
 
@@ -28,7 +28,7 @@ label romance_darius:
     show observatory with flash
 
     vivithinking sad "The end... It's here... But I feel at peace." 
-    vivithinking happy "Wherever you are, Urshu—thank you."
+    vivithinking happy "Wherever you are, Urshu — thank you."
 
     # VISUAL: screen fades to black  
     scene black with fade

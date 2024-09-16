@@ -119,7 +119,7 @@ label depression_fr2_darius:
     darius "I'm a monster. Worse, even. I'm a coward."
     vivi happy "Come on, now. You're too hard on yourself. I—"
     show darius angry
-    vivithinking "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
+    vivithinking surprised "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
     darius angry "I'm responsible for the deaths of millions of sentient beings. {i}Millions{/i}."
     darius sad "I deserve to be crushed by those hands. I long for it."
     vivi surprised "I... I don't know how to respond."
@@ -212,7 +212,7 @@ label depression_fr2_darius:
     darius "My joy was in rooting out the faithless. In bringing them in to face judgment."
     darius "Across dimensions. Planes. Realities. No one could hide from me."
     darius "I found them. And brought them before my god. None could withstand their gaze."
-    darius "They died. Or went mad. ...And I relished their fear."
+    darius "They died. Or went mad... and I relished their fear."
     vivithinking "..."
     darius sad "Until one day. There was a couple. Human. Man and woman. No matter; I'd captured couples before."
     darius "But this one... something about them. Even as their minds broke before Za'deeh's baleful glare, they only thought of each other. Of what they meant to one another."
