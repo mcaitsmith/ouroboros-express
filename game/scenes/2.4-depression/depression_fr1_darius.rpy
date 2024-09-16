@@ -146,9 +146,10 @@ label depression_fr1_darius:
             # JUMP TO: vivi happy "Never mind all that. How about a little {i}Never Have I Ever{/i}? A distraction to keep our spirits up!"
 
         # OPTION 3 NEUTRAL
-        "Truthfully? I'm not much of a drinker. Hasn't been great for my family.":
+        "Truthfully? I'm not much of a drinker.":
 
-            vivi neutral "Truthfully? I'm not much of a drinker. Hasn't been great for my family."
+            vivi neutral "Truthfully? I'm not much of a drinker."
+            vivi neutral "Hasn't been great for my family."
             darius surprised "Ah. I'm... sorry to hear."
             vivi neutral "Quite alright. How could you possibly have known?"
             vivithinking "I feel their doubt. They didn't want to trigger me."
