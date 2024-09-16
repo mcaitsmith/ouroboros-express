@@ -109,7 +109,7 @@ label bargaining_fr1_darius:
     vivi angry "It just bothers me how little we know about this ferryman. How can I trust someone I barely understand?"
     darius neutral "We do it every day, don't we? How many strangers do you meet in a day? How many do you just assume won't be a threat to you?"
     vivi neutral "But those people are like us. Urshu... isn't."
-    darius neutral "Oh he is. More than you know."
+    darius neutral "Oh, he is. More than you know."
     vivi happy "So you have read him!"
     darius neutral "Not read. More... observed."
     darius sad "The faces he makes when he thinks no one is noticing. The way he listens to every word with unrelenting attention."
