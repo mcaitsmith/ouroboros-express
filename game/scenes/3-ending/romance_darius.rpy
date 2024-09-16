@@ -50,12 +50,12 @@ label romance_darius:
     vivi surprised "What is this place?"
     darius happy "You know, I think Urshu had a few cards up his sleeve. We're somewhere {i}new{i}."
     vivi happy "Wait... Are you saying we have a second chance? A fresh start?"
-    darius neutral "You know better than to ask a silly question, Miss Sanssouci." 
+    darius neutral "You know better than to ask such a silly question, Miss Sanssouci." 
     darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
     vivi happy "I'm with you."
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness,\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
     call display_journal from _call_display_journal_9
