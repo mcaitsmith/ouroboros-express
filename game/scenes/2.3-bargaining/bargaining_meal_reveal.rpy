@@ -64,7 +64,7 @@ label bargaining_meal_reveal:
     vivithinking neutral "Oh oh oh! He's going for it!"
 
     # <CHOICE>
-    "I need to hold on to something!"
+    vivithinking "I need to hold on to something!"
 
     menu:
         # OPTION 1 +ATTRACTION

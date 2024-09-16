@@ -63,7 +63,7 @@ label bargaining_fr2_darius:
             with { "master" : Dissolve(0.5) }
             darius neutral "Urshu asked you?"
             vivi neutral "Yeah, why do you ask?"
-            darius neutral "Nothing it just seems...strange. Urshu has never asked us to do anything for him. Besides, he's a god."
+            darius neutral "Nothing. It just seems...strange. Urshu has never asked us to do anything for him. Besides, he's a god."
             vivi neutral "Yeah, well, first time for everything I suppose!"
             vivithinking "I may have given him the idea, but Darius doesn't have to know that."
 
