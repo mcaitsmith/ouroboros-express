@@ -47,7 +47,7 @@ label reveal:
     darius neutral "Surprise, surprise."
 
     show ava angry
-    ava angry "What trickery is this? We've had enough of this game. Release us this instant."
+    ava angry "What trickery is this? We have had enough of this game. Release us this instant."
     urshu neutral "This is neither game nor jest, Illuminated One. Your flicker is extinguished—what a shame—and now you spiral into the elder dark." 
     urshu happy "For you are all dead! Haha!"
 

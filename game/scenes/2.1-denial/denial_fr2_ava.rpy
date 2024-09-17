@@ -54,7 +54,7 @@ label denial_fr2_ava:
             ava "Our humblest apologies, Vivi. We never intended to offend you. We have led vastly different lives, you see."
             vivi neutral "Well you've managed to offend me regardless." 
             show ava neutral -blush
-            ava "Why don't we talk about something else...you were saying earlier?"
+            ava "Let us talk about something else...you were saying earlier?"
             #JUMP to vivi saying "Yeah, so about that exit I mentioned..." 
 
     # OPTION 2 +ATTRACTION
