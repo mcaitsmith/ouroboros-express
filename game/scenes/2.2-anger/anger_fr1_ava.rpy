@@ -84,7 +84,7 @@ label anger_fr1_ava:
             ava neutral "But of course, snakes, reptiles. They are of the same family. A warning... "
             vivi surprised "Oh?"
             vivi neutral "Is this a dig at Susu'Rha?"
-            ava surprised "I merely am the messenger. And the card could not be clearer. Avoid him, Vivienne."
+            ava surprised "We are merely the messenger. And the card could not be clearer. Avoid them, Vivienne."
             # JUMP TO: vivi angry "This is silly! They're just cards. They can't tell us that!"
 
     vivi angry "This is silly! They're just cards. They can't tell us that!"
