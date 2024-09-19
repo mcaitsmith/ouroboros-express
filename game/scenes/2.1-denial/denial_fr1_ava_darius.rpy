@@ -30,7 +30,7 @@ label denial_fr1_ava_darius:
 
     darius neutral "I’m not mocking you or anyone else here. Merely mentioning that you’re just as alone as I."
 
-    ava angry "More mockery, skull shredder? We are nothing alike; I bring mercy where you are merciless, life for your death. Mother Asha, the All is the One, but for your god, The One is the All."
+    ava angry "More mockery, skull shredder? There is a difference in our practice; we bring mercy where you are merciless, life for your death. Mother Asha, the All is the One, but for your god, The One is the All."
 
     darius angry "You think you know of love? The love of the One is so all-encompassing that you quite literally cannot comprehend it." 
 
@@ -38,7 +38,7 @@ label denial_fr1_ava_darius:
 
     darius happy "This is what those who do not understand the beauty of oblivion could never imagine. Relief. Release." 
 
-    ava happy "Death brought you to this cage, Illithid. Your One cannot free you, yet you talk of relief and release."  
+    ava angry "Death brought you to this cage, Illithid. Your One cannot free you, yet you talk of relief and release."  
 
     darius angry "I am more free than you could ever possibly be."
 
