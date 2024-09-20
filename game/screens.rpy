@@ -364,6 +364,7 @@ screen navigation():
             textbutton _("Return"):
                 background "gui/pause/button2.png"
                 action Return()
+        
         else:
             if renpy.variant("pc"):
 
@@ -838,6 +839,7 @@ screen file_slots(title):
                     value page_name_value
 
             vbox:
+                yalign 0.03
                 null height 50
                 xalign 0.5
                 label _("{size=-12}Hover over a slot and press Delete or D key to delete a save.{/size}")
@@ -959,7 +961,7 @@ screen file_slots_ingame(title):
             ## The page name, which can be edited by clicking on a button.
             button:
                 style "page_label"
-                top_margin -60
+                top_margin -20
 
                 key_events True
                 xalign 0.5
@@ -970,6 +972,7 @@ screen file_slots_ingame(title):
                     value page_name_value
 
             vbox:
+                yalign 0.1
                 null height -20
                 xalign 0.5
                 label _("{size=-20}Hover over a slot and press Delete or D key to delete a save.{/size}")
@@ -980,7 +983,7 @@ screen file_slots_ingame(title):
                 style_prefix "slot_ingame"
 
                 xalign 0.5
-                yalign 0.0
+                yalign 0.8
                 xfill True
 
                 spacing 4
@@ -994,7 +997,7 @@ screen file_slots_ingame(title):
 
                         has vbox
 
-                        add FileScreenshot(slot) xalign 0.5 xsize 250 ysize 120
+                        add FileScreenshot(slot) xalign 0.5 xsize 200 ysize 90
 
                         text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
                             style "slot_ingame_time_text"
@@ -1170,6 +1173,9 @@ screen preferences_ingame():
                     label _("Dialogue Box Transparency")
 
                     bar value FieldValue(persistent, 'say_window_alpha', range=1.0, style="slider")
+            textbutton _("Tutorial"):
+                action Jump("display_tutorial")
+                style "mute_all_button_ingame"
 
 
 style pref_ingame_label is label:
