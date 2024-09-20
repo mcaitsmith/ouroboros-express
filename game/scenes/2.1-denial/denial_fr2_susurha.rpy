@@ -64,10 +64,10 @@ label denial_fr2_susurha:
 
     susurha sad "To be frank with you, I always believed such tales to be nothing more than a bunch of creative nonsense to make the less fortunate in the clan okay with their shitty life conditions."
 
-    susurha neutral "But..."
+    susurha sad "But..."
 
     # <CHOICE>
-    susurha "I'm beginning to think that those sad old sods that lived in a forest their entire lives weren't completely high as the stars above."
+    susurha sad "I'm beginning to think that those sad old sods that lived in a forest their entire lives weren't completely high as the stars above."
 
     menu:
 
@@ -77,31 +77,31 @@ label denial_fr2_susurha:
             play sound attchoice
         
             vivi "This place freaks me out."
-            susurha "I feel that in my bones. Oh, this place worms its way down my spine like a spider in the night."
-            susurha "Makes me feel like burning the whole place down."
-            susurha "Imagine..."
-            susurha "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..." 
-            susurha "Suddenly finding yourself trapped with a bunch of odd looking individuals, no offense, in a metal tube speeding to an unknown locale."
-            susurha "All the while you're being told that..."
+            susurha angry "I feel that in my bones. Oh, this place worms its way down my spine like a spider in the night."
+            susurha angry "Makes me feel like burning the whole place down."
+            susurha angry "Imagine..."
+            susurha angry "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..." 
+            susurha angry "Suddenly finding yourself trapped with a bunch of odd looking individuals, no offense, in a metal tube speeding to an unknown locale."
+            susurha angry "All the while you're being told that..."
             susurha sad "You are dead."
             vivi "Is that how you died? I mean ended up here."
-            susurha "How you'd figure that?"
-            #JUMP TO: susurha neutral "We will be dead if we stay here any longer."
+            susurha sad "How you'd figure that?"
+            #JUMP TO: susurha sad "We will be dead if we stay here any longer."
 
     #OPTION 2 
         "That's absurd. That can't be the case.":
 
             vivi "That's absurd. That can't be the case."
-            "..."
+            susurha angry "..."
             vivithinking "They're glaring at me. Looking me up and down."
             vivithinking "Alright, chill Vivi. Maybe that was a bit too-"
             susurha angry "Let me tell you what is absurd." 
             susurha angry "You're walking in the woods one day, lost in the spiraling storm of every possible thought you've ever had bouncing around in your head, and then..."
             susurha "Suddenly finding yourself trapped with a bunch of odd looking individuals in a metal tube speeding to an unknown locale."
             susurha angry "All the while you're being told that YOU ARE DEAD."
-            # JUMP TO: susurha neutral "We will be dead if we stay here any longer."
+            # JUMP TO: susurha sad "We will be dead if we stay here any longer."
 
-    susurha neutral "We will be dead if we stay here any longer."
+    susurha sad "We will be dead if we stay here any longer."
 
     vivi "We need to get out of here."
 
