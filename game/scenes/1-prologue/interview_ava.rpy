@@ -31,7 +31,7 @@ label interview_ava:
         "Drop the act and help a fellow human out?":
 
             vivi neutral "Drop the act and help a fellow human out?"
-            ava angry "Act? We are diplomats, not clowns. And we are not pathetic, pretending humans either...like some."
+            ava angry "Act? We are a diplomat, not a clown. And we are not pathetic, pretending humans either...like some."
             vivithinking surprised "Are they referring to me?!"
             # <CHOICE>
             ava neutral "Still, we are unsurprised you came to us. How may we help you, little one?"
