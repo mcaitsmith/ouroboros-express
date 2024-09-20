@@ -58,13 +58,13 @@ label denial_fr2_susurha:
 
     susurha sad "This place is a prison."
 
-    susurha "The Archdruids warned of daemons that kidnap their prey and treat them to endless luxuries."
+    susurha sad "The Archdruids warned of daemons that kidnap their prey and treat them to endless luxuries."
 
-    susurha "Perhaps this is that. We are being fed lies and comfort just so that we can become sooo relaxed and THAT is when they'll strike...to feast on our satisfied souls."
+    susurha sad "Perhaps this is that. We are being fed lies and comfort just so that we can become sooo relaxed and THAT is when they'll strike...to feast on our satisfied souls."
 
-    susurha "To be frank with you, I always believed such tales to be nothing more than a bunch of creative nonsense to make the less fortunate in the clan okay with their shitty life conditions."
+    susurha sad "To be frank with you, I always believed such tales to be nothing more than a bunch of creative nonsense to make the less fortunate in the clan okay with their shitty life conditions."
 
-    susurha "But..."
+    susurha neutral "But..."
 
     # <CHOICE>
     susurha "I'm beginning to think that those sad old sods that lived in a forest their entire lives weren't completely high as the stars above."
@@ -232,6 +232,7 @@ label denial_fr2_susurha:
 
             play sound attchoice
 
+            vivi "It sounds like you lived a fairy tale."
             #SOUND: Susu'Rha laughs.
             # skipping
             susurha "I suppose from the outside it could come across with that poetic fantasy allure."
