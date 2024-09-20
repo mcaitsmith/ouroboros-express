@@ -18,7 +18,7 @@ label denial_fr2_darius:
 
     # <CHOICE>
 
-    darius surprised "Hmm? Oh, yes. Would you like one? I'm a bit of a lightweight."
+    darius surprised "Hmm? Oh, yes. Join me, if you like."
 
     menu:
         
@@ -40,7 +40,7 @@ label denial_fr2_darius:
 
             darius sad "Mindflayers and hard alcohol... don't mix."
 
-            vivithinking "They shudder at this, it ripples through their sleek frame like a gentle breeze. Gotta be a story there."
+            vivithinking "They shudder at this. It ripples through their sleek frame like a gentle breeze. Gotta be a story there."
 
             vivi neutral "Mindflayer? Is that what you are?"
 
@@ -76,7 +76,7 @@ label denial_fr2_darius:
 
             darius sad "Mindflayers and hard alcohol... don't mix."
 
-            vivithinking "They shudder at this, it ripples through their sleek frame like a gentle breeze. Gotta be a story there."
+            vivithinking "They shudder at this. It ripples through their sleek frame like a gentle breeze. Gotta be a story there."
 
             vivi neutral "Mindflayer? Is that what you are?"
 
@@ -101,15 +101,15 @@ label denial_fr2_darius:
 
     darius neutral "Are you ok, Ms. Sanssouci? You look a little... sickly."
 
-    darius surprised "Ahh! My apologies. Give me a moment."
+    darius surprised "Ah! My apologies. Give me a moment."
 
     #SOUND (if possible): Darius sighs/tries to calm themself
 
     darius neutral "There. Feeling better?"
 
-    vivithinking  "A quick flick of the wrist... wish {i}I{/i} could be so grateful. Did they do something..? Things feel a lot lighter."
+    vivithinking  "A quick flick of the wrist... wish {i}I{/i} could be so graceful. Did they do something..? Things feel a lot lighter."
 
-    darius neutral "A mindflayer's brain is a powerful thing. Sometimes emotions and thoughts can leak out into the atmosphere. I believe you may have been feeling my...malaise, so to speak."
+    darius neutral "A mindflayer's brain is a powerful thing. Sometimes our emotions and thoughts can leak out. I believe you may have been feeling my... malaise, so to speak."
 
     darius neutral "I don't speak with humans often, so I've developed a bit of a bad habit of letting my emotions wander."
 
@@ -119,7 +119,7 @@ label denial_fr2_darius:
 
     vivi neutral "What had you so bothered?"
 
-    darius sad "Well aside from some unpleasant memories... I've been thinking."
+    darius sad "Aside from some unpleasant memories... I've been thinking."
 
     darius sad "I have many questions about this place that need answers. But I don't believe asking will get me any of them..."
 
@@ -131,11 +131,11 @@ label denial_fr2_darius:
 
     darius neutral "Hmm. I'm not interested in leaving just yet, but I think there is a way our needs could both be met."
 
-    darius neutral "I am going to trail the conductor. Should you wish to join me, you may search for an exit."
+    darius neutral "I am going to trail the conductor. Join me if you wish. You can search for an exit."
 
     vivi surprised "Trail? Are you some sort of detective?"
 
-    darius surprised "What? Ahem I'm— something like that, yes. I have the skills needed for the job, don't you worry."
+    darius surprised "What? Ahem, I'm— something like that, yes. I have a certain set of skills."
 
     vivithinking "What a weirdo. They seem pretty confident though, so I'll take their lead on this. Nice to be able to rely on someone for once."
 
@@ -156,7 +156,7 @@ label denial_fr2_darius:
     show vivi neutral at left with dissolve:
         xzoom -1
 
-    darius neutral "Stay behind me and follow my motions."
+    darius neutral "Stay behind me and follow my lead."
 
     vivithinking "Where is he?"
 
@@ -189,7 +189,7 @@ label denial_fr2_darius:
 
     darius angry "That isn't what we agreed on. Besides, you've spoken to him. Do you really think he'd just give up his secrets so easily?"
 
-    darius neutral "This is the best way to find out more. So please, it may be human nature to be quick to anger but {i}calm yourself{/i}."
+    darius neutral "This is the best way to find out more. So please: it may be human nature to be quick to anger, but {i}calm yourself{/i}."
 
     vivithinking "Those last words held an undercurrent to them. Like the rumble of an oncoming storm."
 
@@ -222,7 +222,7 @@ label denial_fr2_darius:
     vivi surprised "Magic. Yeah I think so."
 
     # <CHOICE>
-    darius happy "This is exactly what I wanted to see. Come, let's pursue him."
+    darius happy "Exactly what I wanted to see. Come, let's pursue him."
 
     menu: 
 
@@ -251,7 +251,7 @@ label denial_fr2_darius:
     show vivi surprised at left with dissolve:
         xzoom -1 
 
-    darius surprised "Been a while since I had to track a mage. Hopefully my senses are somewhat intact here."
+    darius surprised "Hopefully my senses are somewhat intact here. It's been a while since I had to track a mage."
 
     # <CHOICE>
 
@@ -291,7 +291,7 @@ label denial_fr2_darius:
             #JUMP TO: darius neutral "Found anything yet?"
 
 
-    darius neutral "Found any sign of an escape yet?"
+    darius neutral "Found anything yet?"
 
     vivi angry "No. It's like nothing makes sense on this train, the doors just lead to more doors. There's no final car either. It's almost like it just... keeps going."
 
@@ -308,7 +308,12 @@ label denial_fr2_darius:
     #I'd like Vivi to move to the right here and Darius to move to the left. Is that possible without making them disappear and reappear?
     # PROGRAMMING NOTE: not gonna implement this for now since we don't have a Vivi sprite
 
-    darius surprised "Ms. Sanssouci, I didn't take you to be one for stargazing, but this hardly seems the time for it."
+    show vivi at right with move
+    show darius at center with move
+    show darius at center:
+        xzoom -1
+
+    darius surprised "Ms. Sanssouci, I didn't take you to be one for stargazing. This hardly seems the time for it."
 
     vivi neutral "Shut up."
 
@@ -326,6 +331,9 @@ label denial_fr2_darius:
 
     vivi angry "Just look! It's in a dress but it's like it has no torso or anything! It has some sort of mirror thing for a head!"
 
+    show darius at right with move
+    show vivi at left with move
+
     darius surprised "I don't see this figure you're speaking of, but... oh my."
 
     vivi surprised "What? What do you see?"
@@ -337,13 +345,15 @@ label denial_fr2_darius:
     show urshu neutral at left with dissolve:
         xzoom -1.0
     show vivi surprised at left:
-        xzoom -1
+        xzoom 1
         linear 0.1 ypos 1000
         linear 0.1 ypos 1080
     urshu neutral "Interesting! What do you see out there?"
 
     vivi surprised "What the? Get out of the way!"
     
+    show darius at right:
+        xzoom 1
     show vivi surprised:
         linear 0.5 xpos 700
     $ renpy.pause(0.7)
@@ -415,7 +425,7 @@ label denial_fr2_darius:
 
     vivithinking "That sounded... honest. He can't be serious, right? He can't be..."
 
-    urshu sad "As for you Mr. Wrecker, hmm. I promised I wouldn't get involved in any of your journeys, but I believe showing you this will help."
+    urshu sad "As for you, Mr. Wrecker, hmm. I promised I wouldn't get involved in any of your journeys, but I believe showing you this will help."
 
     vivithinking "He stretches out his hand. Darius takes it."
 
@@ -428,7 +438,7 @@ label denial_fr2_darius:
     play sound horror
     pause 2.0
 
-    darius surprised "What... WHAT IS THIS?"
+    darius surprised "What... what is {i}this{/i}?"
 
     urshu sad "I understand this must be hard. But nothing I've shown you is an illusion. These were your choices, your actions."
 
@@ -438,7 +448,7 @@ label denial_fr2_darius:
 
     vivithinking "I've never seen Darius like this before."
 
-    urshu sad "And as for you Ms. Sanssouci, I know this must've been hard for you as well. You may not believe it, but I am here to help you, you know."
+    urshu sad "And as for you, Ms. Sanssouci, I know this must've been hard for you as well. You may not believe it, but I am here to help you, you know."
 
     vivi sad "So it's true then? We're really gone?"
 
@@ -447,7 +457,7 @@ label denial_fr2_darius:
     vivithinking "... I don't know what to say."
 
     show darius angry at right
-    darius angry "Urshu. What was it all for then? Who am I anymore?"
+    darius angry "Urshu. What was it all for? Give me something."
 
     urshu sad "Unfortunately, I can't answer that for you, my friend. I'm sure you'll learn the answer yourself, in time."
 
@@ -456,11 +466,12 @@ label denial_fr2_darius:
     show vivi neutral at  center
     vivithinking "We have things to discuss?"
 
-    vivithinking "The tension hangs in the air. It's like a miasma, cutting the oxygen and making my heart pace."
+    vivithinking "The tension hangs in the air. It's like a miasma, cutting the oxygen and making my heart race."
 
     urshu happy "...On a lighter note, we will be serving brunch tomorrow! Do come... well I'd say \"early\" but time has no meaning here anyways. Ta-ta!" 
 
     hide urshu with dissolve
+    show vivi at left with move
 
     show darius surprised at right
     darius surprised "What?"
@@ -490,14 +501,14 @@ label denial_fr2_darius:
 
     darius "I... I suppose I'm not anymore."
 
-    darius "I'm sorry, Vivi; I lost my temper. Thank you for joining me, and I hope you can forgive that little outburst."
+    darius "I'm sorry, Vivi; I lost my temper. Thank you for your assistance. I hope you can forgive my little outburst."
 
     vivithinking "Are they muttering to themselves?"
 
     show darius sad -blush:
         xzoom -1
 
-    darius "It was all pointless..."
+    darius "It was all meaningless..."
 
     hide darius with dissolve
 

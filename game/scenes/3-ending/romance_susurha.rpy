@@ -22,6 +22,12 @@ label romance_susurha:
         xpos 0.35
     show susurha happy blush with dissolve:
         xpos 0.65
+    hide vivi
+    hide susurha
+    show susu_vivi hug at center
+    with { "master" : Dissolve(1.0) }
+    pause 2.0
+
     susurha "We can merge with each other as we merge with the cosmic weave."
     vivi neutral blush "It's getting brighter..."
 
@@ -30,15 +36,15 @@ label romance_susurha:
     # VISUAL: the scene brightens
     show observatory at bright with dissolve
 
+    show susu_vivi hug blush at center
+
     vivi happy blush "This is all so much. I may cry."
     vivi happy blush "It's awfully bright... I can hardly see."
     susurha "I'm here, Vivi. I've got you."
     vivi happy "I don't know where you end and I begin!"
-    show susurha happy -blush
     susurha happy "I don't either! And I don't know what awaits us, but if this is to be my final moment, I couldn't have asked for a better way to spend it than with you, Vivienne."
-    vivi happy blush "Me, too."
     vivi happy blush "I want to be with you forever." 
-    vivi happy blush "What if forever is only now?"
+    susurha happy blush "What if forever is only now?"
     vivi happy blush "Then I want to be with you forever, now."
 
     #EFFECT: fade to white

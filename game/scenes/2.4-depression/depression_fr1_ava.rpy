@@ -5,7 +5,7 @@ label depression_fr1_ava:
     # FREE ROAM 1 - Ava
 
     # LOCATION: lounge
-    call check_overlay
+    call check_overlay from _call_check_overlay_28
     scene diningcar with fade
 
     # SOUND: train
@@ -129,7 +129,7 @@ label depression_fr1_ava:
 
     vivi neutral "It's called {i}Never Have I Ever{/i}."
     ava "How is it played?"
-    vivi "I'll tell you something I haven’t done, if you have, you take a drink. I'll go first."
+    vivi "I'll tell you something I haven’t done. If you have, you take a drink. I'll go first."
 
     # <CHOICE>
     vivi neutral "Never have I ever..."

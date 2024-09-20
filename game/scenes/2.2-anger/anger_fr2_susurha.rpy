@@ -5,7 +5,7 @@ label anger_fr2_susurha:
     #FREE ROAM 2 - SUSU'RHA
 
     # LOCATION: dining car
-    call check_overlay
+    call check_overlay from _call_check_overlay_8
     scene diningcar with fade
 
     show vivi neutral at left with dissolve : 
@@ -245,8 +245,8 @@ label anger_fr2_susurha:
     vivi sad "What did you do?"
     susurha sad "I ran home."
     susurha angry "I thought that if I could just GET THERE, I could save them."
-    susurha neutral "But the smoke was too much. None of us could see. I couldn't breathe."
-    susurha neutral "Then...a sharp pain and...darkness."
+    susurha sad "But the smoke was too much. None of us could see. I couldn't breathe."
+    susurha sad "Then...a sharp pain and...darkness."
     susurha sad "I woke up here."
     susurha angry "I have no idea whether my family--that I abandoned--is okay. My fear is I'll see them walk into this dining car, like me, wondering what happened."    
     susurha angry "If only I had been there to protect them."

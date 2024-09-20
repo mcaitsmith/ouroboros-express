@@ -15,10 +15,10 @@ label romance_darius:
     show darius surprised blush with dissolve
     darius "Yes?"
     vivi happy blush "Yes."
-    vivithinking happy blush "Their hands... Those claws. He holds me so delicately."
+    vivithinking happy blush "Their hands... those claws. He holds me so delicately."
     vivithinking happy blush "Like they'll never hurt anyone ever again."
     vivi neutral blush "I believe in you, Darius."
-    vivi sad "I just wish we'd had a bit more time... Seems like our final stop is approaching."
+    vivi sad "I just wish we'd had a bit more time... seems like our final stop is approaching."
     show darius happy -blush
     darius happy "I'd take these brief moments with you over millennia of the sorry existence I had before."
 
@@ -28,7 +28,7 @@ label romance_darius:
     show observatory with flash
 
     vivithinking sad "The end... It's here... But I feel at peace." 
-    vivithinking happy "Wherever you are, Urshu—thank you."
+    vivithinking happy "Wherever you are, Urshu — thank you."
 
     # VISUAL: screen fades to black  
     scene black with fade
@@ -50,12 +50,12 @@ label romance_darius:
     vivi surprised "What is this place?"
     darius happy "You know, I think Urshu had a few cards up his sleeve. We're somewhere {i}new{i}."
     vivi happy "Wait... Are you saying we have a second chance? A fresh start?"
-    darius neutral "You know better than to ask a silly question, Miss Sanssouci." 
+    darius neutral "You know better than to ask such a silly question, Miss Sanssouci." 
     darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
     vivi happy "I'm with you."
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness,\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
     call display_journal from _call_display_journal_9

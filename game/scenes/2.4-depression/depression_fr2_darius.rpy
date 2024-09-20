@@ -4,7 +4,7 @@ label depression_fr2_darius:
 
     # FREE ROAM 2 - Darius
     # LOCATION: observatory
-    call check_overlay
+    call check_overlay from _call_check_overlay_32
     scene observatory with fade
 
     show darius sad at right with dissolve
@@ -19,7 +19,7 @@ label depression_fr2_darius:
     vivi surprised "Honestly, I...don't think I expected you, either."
     vivi "I can't say I've ever been in an observatory quite like this."
     show darius happy -blush
-    darius happy "Beautiful, isn't it? The cosmos are alight tonight."
+    darius happy "Beautiful, isn't it? The cosmos is alight tonight."
     darius "I could watch the stars swirl like this forever. I just might."
     vivi neutral "Surely you'd tire of them eventually. Everything bright burns out after a time."
     darius sad "Too right. Sometimes even {i}before{/i} their time."
@@ -116,9 +116,10 @@ label depression_fr2_darius:
 
     vivi surprised "What do you mean by that?"
     darius neutral "I'm not who you think I am, Ms. Sanssouci. Vivi."
-    darius "I'm a monster. Worse, even, I'm a coward."
+    darius "I'm a monster. Worse, even. I'm a coward."
     vivi happy "Come on, now. You're too hard on yourself. I—"
-    vivithinking "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
+    show darius angry
+    vivithinking surprised "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
     darius angry "I'm responsible for the deaths of millions of sentient beings. {i}Millions{/i}."
     darius sad "I deserve to be crushed by those hands. I long for it."
     vivi surprised "I... I don't know how to respond."
@@ -211,7 +212,7 @@ label depression_fr2_darius:
     darius "My joy was in rooting out the faithless. In bringing them in to face judgment."
     darius "Across dimensions. Planes. Realities. No one could hide from me."
     darius "I found them. And brought them before my god. None could withstand their gaze."
-    darius "They died. Or went mad. ...And I relished their fear."
+    darius "They died. Or went mad... and I relished their fear."
     vivithinking "..."
     darius sad "Until one day. There was a couple. Human. Man and woman. No matter; I'd captured couples before."
     darius "But this one... something about them. Even as their minds broke before Za'deeh's baleful glare, they only thought of each other. Of what they meant to one another."

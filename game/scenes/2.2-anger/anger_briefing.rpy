@@ -5,7 +5,7 @@ label anger_briefing:
 
     #Briefing Anger
     # LOCATION: cabin
-    call check_overlay
+    call check_overlay from _call_check_overlay
     scene cabin with fade
 
     show vivi neutral at left with dissolve:
@@ -73,7 +73,7 @@ label anger_briefing:
             urshu happy "Ah! Innocence is precious, is it not? A purity of existence where all emotions are in touch and rhythm. Doubt, fear, and anger all have their freedom."
             vivi neutral "So...?"
             urshu happy "I'm afraid not, my dear! The answer is not innocence. Good guess, though! In truth, the answer is far less altruistic."
-            urshu neutral "Games. It's Games, Miss Sansoucci."
+            urshu neutral "Games. It's games, Miss Sansoucci."
             vivithinking angry "Cards. CARDS?! All this to get me to play poker? Let me tell you, I wanna be free with my feelings right now. I'll show Urshu my innocence..." 
             vivi angry "Give me a break, Ursh. I woke up today, still dead. Still hurtling towards THE end. And I haven't even had coffee yet. Narubian or otherwise."
             # JUMP TO: urshu happy "No matter when..." 
@@ -101,7 +101,7 @@ label anger_briefing:
             urshu happy "Pulling your leg? I would never."
             vivithinking "This sonofabitch has wasted countless cosmic minutes!" 
             vivi angry "So what's the answer to your tiresome riddle?"
-            urshu neutral "Games. It's Games, Miss Sansoucci."
+            urshu neutral "Games. It's games, Miss Sansoucci."
             # JUMP TO: urshu happy "No matter when..." 
 
 
@@ -123,7 +123,8 @@ label anger_briefing:
     urshu happy "Games are one method of reversing the naturally lawful decay we all suffer."
     vivithinking neutral "Games don't get rid of wrinkles. Wait. Do they?" 
     vivi neutral "Can you just hand them over already?"
-    urshu neutral "I'm sorry, Miss Sanssouci. These are my special cards. Given to me by...well, someone from so long ago even the Goddess of the Sun herself was but a young deity. Humans had yet to walk upright. Ah, but you don't look like you want a story like that."
+    urshu neutral "I'm sorry, Miss Sanssouci. These are my special cards. Given to me by...well, someone from so long ago even the Goddess of the Sun herself was but a young deity." 
+    urshu neutral "Humans had yet to walk upright. Ah, but you don't look like you want a story like that."
     vivithinking neutral "Good read there, honey." 
     vivi neutral "Are there other games, then?"
     urshu sad "..."

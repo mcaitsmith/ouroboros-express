@@ -5,7 +5,7 @@ label depression_fr1_susurha:
     # FREE ROAM 1 - Susu'Rha (DEPRESSION)
 
     # LOCATION: diningcar
-    call check_overlay
+    call check_overlay from _call_check_overlay_30
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:

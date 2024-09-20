@@ -7,7 +7,7 @@ label denial_fr1_ava_darius:
     #LOCATION: observatory
 
     #SOUND: train
-    play sound train
+    play sound train loop
 
     scene observatory with fade
 
@@ -40,7 +40,7 @@ label denial_fr1_ava_darius:
 
     ava happy "Death brought you to this cage, Illithid. Your One cannot free you, yet you talk of relief and release."  
 
-    darius angry "I am more free than you ever possibly be."
+    darius angry "I am more free than you could ever possibly be."
 
     ava neutral "We never knew freedom until now, minion. Hunger has sweetened the beans."
 
@@ -65,6 +65,8 @@ label denial_fr1_ava_darius:
         xzoom 1
 
     vivithinking "I should get outta here. Their silence is making me uncomfortable!"
+
+    stop sound fadeout 2.0
 
     # JUMP TO: Character Selector 2
     jump denial_cs2

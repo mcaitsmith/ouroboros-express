@@ -164,14 +164,14 @@ label interview_susurha:
 
             vivi neutral "Why are you on this train?"
             susurha neutral "..."
-            susurha neutral  "I don't...know."
-            susurha neutral "I don't remember boarding."
+            susurha sad  "I don't...know."
+            susurha sad "I don't remember boarding."
             vivi surprised "Really?"
             susurha neutral "I was in the woods, running toward my ancestral home..."
             susurha sad "And then I found myself here."
             vivithinking neutral "Something is clearly bothering them."
             vivithinking sad "I can't say that I blame them."
-            vivithinking surprised "If I woke up here without knowing I got here..."
+            vivithinking surprised "If I woke up here without knowing how I got here..."
             vivithinking "..."
             vivithinking neutral "Something must be going on."
 

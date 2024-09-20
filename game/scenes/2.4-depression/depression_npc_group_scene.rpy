@@ -1,7 +1,7 @@
 label depression_npc_group_scene:
 
     #LOCATION: bar
-    call check_overlay
+    call check_overlay from _call_check_overlay_34
     scene diningcar with fade
 
     #SOUND: train
@@ -46,7 +46,7 @@ label depression_npc_group_scene:
 
     darius neutral "The guilt appears to me in the form of a giant disembodied hand. It points directly towards my heart. I hear something echo in my mind."
 
-    darius sad "It says ‘You did this. You. You. You.’ And I know they’re correct."
+    darius sad "It says, {i}‘You did this. You. You. You.’{/i} And I know they’re right."
 
     darius neutral "I wish it would quiet."
 
@@ -72,15 +72,15 @@ label depression_npc_group_scene:
 
     darius sad "I thought the doubt was a test of faith. Maybe it was. I still ended up here."
 
-    darius neutral "As far as regrets– that is not how I view the universe. We make choices and we live with the consequences. We are consumed by guilt or we are not."
+    darius neutral "As far as regrets– that is not how I view the universe. We must suffer the consequences of the choices we make, whether we are consumed by guilt or not."
 
     ava neutral "We notice you have avoided the thrust of the question."
 
     darius surprised "...so I have. You want to hear a true regret?"
 
-    darius sad "I did not listen enough. I scraped thoughts and pulled what I wanted from other sentients. But I did not truly hear what my victims were saying. Where would I be if I had?"
+    darius sad "I did not listen enough. I scraped thoughts and wrenched what I wanted from other sentients. But I did not truly hear what my victims were saying. Where would I be if I had?"
 
-    darius sad blush "I suppose I also wish I had tried ice cream on earth, or one of its parallel dimensions."
+    darius sad blush "...I suppose I also wish I had tried ice cream on earth, or one of its parallel dimensions."
 
     susurha sad "Where would one honestly begin?"
 

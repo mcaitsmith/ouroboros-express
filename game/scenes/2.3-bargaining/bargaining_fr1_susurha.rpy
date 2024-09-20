@@ -5,7 +5,7 @@ label bargaining_fr1_susurha:
     #FREE ROAM 1 - Susu'Rha
 
     # LOCATION: diningcar
-    call check_overlay
+    call check_overlay from _call_check_overlay_19
     scene diningcar with fade
 
     # SOUND: window click - opening
@@ -37,7 +37,7 @@ label bargaining_fr1_susurha:
 
     menu:
         # OPTION 1 +DECAY
-        "You're such an observant lizard. I just want to know what you pick up on.":
+        "You're a watchful lizard. What have you noticed?":
 
             play sound decchoice
             show decay_icon at right with dissolve:
@@ -46,7 +46,7 @@ label bargaining_fr1_susurha:
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
-            vivi neutral "You're such an observant lizard. I just want to know what you pick up on."  
+            vivi neutral "You're a watchful lizard. What have you noticed?"  
             hide decay_icon
             with { "master" : Dissolve(0.5) }
             susurha angry "The one so seemingly dedicated to self-deception has the temerity to call me a lizard."

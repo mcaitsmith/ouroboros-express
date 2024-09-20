@@ -5,7 +5,7 @@ label bargaining_meal_reveal:
     #URSHU MEAL REVEAL
 
     # LOCATION: lounge
-    call check_overlay 
+    call check_overlay from _call_check_overlay_23 
     scene lounge with fade
 
     show vivi neutral at left with dissolve:
@@ -56,7 +56,7 @@ label bargaining_meal_reveal:
     vivithinking neutral "Nah, it's just the lighting. Ursh has such a flair for drama."
     urshu happy "I am famished, dear ones. What have you prepared for me?"
     vivi happy "Something to blow your mind and tastebuds!" 
-    vivi neutral "[fr2_bargaining_choice] and I made a meal that's gonna knock your god socks off!"
+    vivi neutral "[fr2_bargaining_choice] and I made a meal that's gonna knock your goddamn socks off!"
     urshu happy "You two have worked together? Ah, what joyous collaboration! All the more to be excited about!" 
     urshu neutral "Let's try a bite, shall we?"
     vivithinking neutral "Alright, let's set this down. Careful... Okay. Nothing spilled." 
@@ -64,7 +64,7 @@ label bargaining_meal_reveal:
     vivithinking neutral "Oh oh oh! He's going for it!"
 
     # <CHOICE>
-    "I need to hold on to something!"
+    vivithinking "I need to hold on to something!"
 
     menu:
         # OPTION 1 +ATTRACTION

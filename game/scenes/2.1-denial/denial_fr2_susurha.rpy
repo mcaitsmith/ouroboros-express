@@ -56,7 +56,7 @@ label denial_fr2_susurha:
             vivithinking neutral "I think my headache's easing off."
             #JUMP TO: susurha "This place is a prison."
 
-    susurha "This place is a prison."
+    susurha sad "This place is a prison."
 
     susurha "The Archdruids warned of daemons that kidnap their prey and treat them to endless luxuries."
 
