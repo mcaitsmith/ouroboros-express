@@ -40,7 +40,7 @@ label denial_fr2_darius:
 
             darius sad "Mindflayers and hard alcohol... don't mix."
 
-            vivithinking "They shudder at this. It ripples through their sleek frame like a gentle breeze. Gotta be a story there."
+            vivithinking "They shuddered at those last words. It still ripples through their sleek frame like a gentle breeze. Gotta be a story there."
 
             vivi neutral "Mindflayer? Is that what you are?"
 
@@ -478,7 +478,7 @@ label denial_fr2_darius:
     show vivi sad blush at left with dissolve:
         xzoom -1
 
-    vivithinking "The air is getting thin, heated even. It's just like before in the dining car. Darius is..."
+    vivithinking sad "The air is getting thin, heated even. It's just like before in the dining car. Darius is..."
 
     darius angry "Don't toy with me! COME BACK!"
 
@@ -495,7 +495,7 @@ label denial_fr2_darius:
     # pause
     pause 1.0
 
-    vivithinking "They stop."
+    vivithinking "They stopped."
 
     show darius sad blush with dissolve
 
