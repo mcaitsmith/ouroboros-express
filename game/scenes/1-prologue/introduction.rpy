@@ -6,12 +6,17 @@ label introduction:
     # We meet Vivi as she is writing her notes. We know that she has been invited to review the Ouroboros Express for her job. Urshu knocks on her cabin door, inviting her to dine.
 
     # SOUND: train
-    play sound train fadein 3.0
+    play sound train fadein 3.0 loop
 
     # fade in
 
     # LOCATION: cabin
-    scene cabin with Fade(3.0,1.0,3.0)
+    scene cabin at train_shake:
+        zoom 1.05
+        xoffset -5
+    with Fade(3.0,1.0,3.0)
+
+    # show cabin at train_shake
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -24,7 +29,7 @@ label introduction:
 
     vivithinking neutral "At least, I think it is."
 
-    vivithinking neutral "It's funny, I don't quite remember what I'm here for..."
+    vivithinking neutral "It's funny, I don't quite remember what I'm on this train for..."
 
     vivithinking neutral "Chloe always sends me to the weirdest places for the Halloween issue of the magazine, but normally I can recall the story I'm supposed to follow."
 
@@ -78,16 +83,14 @@ label introduction:
             # OPTION 4
             "Look out the window" if option1 == True and option2 == True and option3 == True:
 
-                stop sound fadeout 2.0
-
                 vivithinking neutral "Hmm. The view from the window is really hard to make out. It's all dark and misty. I think we're in a forest?"
                 vivithinking surprised "Huh, weird. The condensation on the window is flowing up as if the train is falling. That can't be right."
                 vivithinking surprised "What's going on?"
 
+    pause 0.5
     # SOUND: knocking on the door
-    play sound knock
-    # play sound "audio/sfx/knock.wav"
-    pause 1.0
+    play sound2 knock
+    pause 2.0
     show urshu neutral at right with dissolve
 
     urshu neutral "Ah, Miss Sanssouci, I'm glad you are awake. Welcome aboard the Ouroboros Express. We've been expecting you."
@@ -108,6 +111,8 @@ label introduction:
 
             vivi neutral "Lead the way. It'll be nice to talk to others."
 
+            stop sound fadeout 2.0
+
             # JUMP TO: The Welcome Meal
             jump welcome_meal
 
@@ -118,6 +123,8 @@ label introduction:
             urshu neutral "Quite understandable, my dear, but a hot meal and some conversation might be just what you need."
             vivithinking neutral "How can I argue with that?"
             vivi neutral "I guess you're right. Okay. Lead the way."
+
+            stop sound fadeout 2.0
 
             # JUMP TO: The Welcome Meal
             jump welcome_meal

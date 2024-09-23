@@ -50,6 +50,10 @@ image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
 image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
 image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
 
+# add second channel for sfx
+init python:
+    renpy.music.register_channel("sound2", "sfx", False)
+
 # define white background
 image white = "#ffffff"
 
@@ -111,6 +115,13 @@ transform flicker_opacity:
     linear 0.2 alpha 0.8
     linear 0.2 alpha 0.4
     repeat 4
+transform train_shake:
+    linear 0.1 xoffset -2 yoffset 2 
+    linear 0.1 xoffset 3 yoffset -3 
+    linear 0.1 xoffset 2 yoffset -2
+    linear 0.1 xoffset -3 yoffset 3
+    linear 0.1 xoffset 0 yoffset 0
+    repeat
 
 init python:
     config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
