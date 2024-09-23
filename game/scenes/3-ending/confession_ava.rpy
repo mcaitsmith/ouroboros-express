@@ -49,7 +49,7 @@ label confession_ava:
 
             vivi happy "Yes! Yes! A thousand times yes!"
             ava happy "Oh, my heart! I have never felt in my entire existence such..."
-            ava neutral "Such love!"
+            ava happy "Such love!"
 
             # JUMP TO: Romance/Avatar of Asha
             jump romance_ava
