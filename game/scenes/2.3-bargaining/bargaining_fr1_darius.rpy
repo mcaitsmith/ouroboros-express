@@ -142,7 +142,7 @@ label bargaining_fr1_darius:
             darius happy "You're inquisitive, Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
             show darius happy blush with dissolve
             darius "Perhaps that is why I, too, enjoy your company so much."
-            vivi neutral blush "This guy... When did he get so suave?"
+            vivithinking neutral blush "This guy... When did he get so suave?"
             show darius neutral -blush
     
             # JUMP TO: vivi neutral "I think I'll be going now. Thank you for the insight."

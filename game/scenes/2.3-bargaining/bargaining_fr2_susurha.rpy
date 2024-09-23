@@ -388,7 +388,7 @@ label bargaining_fr2_susurha:
             vivi neutral "So what. We're being scammed anyway."
             susurha neutral "\"So what?\" Vivi!"
             susurha neutral "If you truly don't believe our food can win over the conductor, then why are we even cooking in the first place?"
-            vivithinking "Hmmm. He's got a good point..."
+            vivithinking "Hmmm. They've' got a good point..."
 
             show vivi angry at left
 

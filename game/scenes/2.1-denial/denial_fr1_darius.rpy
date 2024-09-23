@@ -19,7 +19,7 @@ label denial_fr1_darius:
 
     vivithinking "They seem surprised. Loner type maybe?"
 
-    darius neutral "Intriguing. You approaching me like this. Especially after my earlier rude behavior."
+    darius neutral "Intriguing. You approaching me like this. Especially after my rude behavior yesterday."
 
     vivithinking "Bingo on the loner call."
 

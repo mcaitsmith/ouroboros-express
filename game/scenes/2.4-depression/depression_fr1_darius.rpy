@@ -95,7 +95,7 @@ label depression_fr1_darius:
     darius "...lime juice, pineapple juice, and grenadine, naturally..."
     vivi happy "Monsieur Wrecker, I can say with all honesty this is the happiest I've ever seen you."
     show darius sad -blush
-    vivithinking "Umph. There it is again— rage, but this time it's tempered by— pain? Sadness?"
+    vivithinking "Umph. There's the rage again, but this time it's tempered by something. Pain? Sadness?"
     darius sad "Don't get used to it."
     darius neutral "I suppose I should ask you: what's {i}your{/i} poison?"
     darius sad "I'd rather not drink alone."
