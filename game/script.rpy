@@ -191,6 +191,7 @@ label start:
     menu:
         "Press Shift+A to set accessibility options before beginning the game."
         "Continue":
+            "Access the menu anytime by pressing the Escape key. A tutorial on the game features is available from the Settings option in the main menu."
             window hide dissolve
             stop music fadeout 3.0
             pause 3.0

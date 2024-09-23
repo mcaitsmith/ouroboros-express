@@ -15,13 +15,14 @@ label display_tutorial:
     $ renpy.pause()
     show screen tutorial("choice_selection") with dissolve
     $ renpy.pause()
-    show screen tutorial("journal") with dissolve
-    $ renpy.pause()
-    show screen tutorial("vivis_diary") with dissolve
-    $ renpy.pause()
-    show screen tutorial("relationship_meter") with dissolve
-    $ renpy.pause()
-    show screen tutorial("relationship_levels") with dissolve
-    $ renpy.pause()
+    if has_journal:
+        show screen tutorial("journal") with dissolve
+        $ renpy.pause()
+        show screen tutorial("vivis_diary") with dissolve
+        $ renpy.pause()
+        show screen tutorial("relationship_meter") with dissolve
+        $ renpy.pause()
+        show screen tutorial("relationship_levels") with dissolve
+        $ renpy.pause()
     hide screen tutorial with dissolve
     return

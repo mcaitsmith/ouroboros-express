@@ -45,6 +45,10 @@ label denial_debrief:
 
     stop music fadeout 1.0
 
+    scene black with fade
+
+    "New features have become available in the tutorial. Access from the Settings option in the main menu."
+
     scene clockanger with fade
     play sound clock loop
 
