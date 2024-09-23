@@ -113,7 +113,7 @@ label anger_fr2_ava:
             with { "master" : Dissolve(0.5) }
             show ava happy blush with dissolve
             ava "No. We never wish to offend you."
-            vivithinking happy "I'll do anything she wants to spend some more time with them...!"
+            vivithinking happy "I'll do anything she wants to spend some more time with her...!"
             show ava happy -blush
             # JUMP TO: vivi neutral "Sure. Anyways..."
 

@@ -10,7 +10,7 @@ label anger_cs1:
 
     # show vivi neutral at left with dissolve
 
-    vivi neutral "Alright. Time to play. What better to do when trapped on a train towards impending doom."
+    vivi neutral "Alright. Time to play. What better to do when trapped on a train speeding towards impending doom."
 
     # <CHOICE>
     vivi neutral "Who can I talk to?"
