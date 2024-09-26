@@ -385,7 +385,7 @@ label denial_fr2_darius:
 
     # <CHOICE>
 
-    vivithinking "Are they really going to act like I'm not here? I have questions too, you know!"
+    vivithinking "Are they really gonna act like I'm not here? I have questions too, you know!"
 
     menu:
 

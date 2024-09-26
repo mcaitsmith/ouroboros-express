@@ -278,7 +278,7 @@ label denial_fr2_susurha:
 
     vivithinking "Spiraling celestial bodies swirl all around as the train speeds faster than anything I've ever seen."
 
-    vivithinking "Flames burst from the train's tracks and were sucked into the void."
+    vivithinking "Flames burst from the train's tracks and are sucked into the void."
 
     vivithinking "I can feel my hair whipping around my face. I really wanna scream. But I can't."
 

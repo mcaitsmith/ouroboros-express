@@ -14,7 +14,7 @@ label denial_debrief:
 
     vivi neutral "Outside this train... the void... it's too much. I thought I was living a nightmare before, but that outside...  That was chilling to my core."
 
-    vivi angry "Do you get off in seeing all of us in pain? Giving us all an existential dread that we can't fix?"
+    vivi angry "Do you get off on seeing all of us in pain? Giving us all an existential dread that we can't fix?"
 
     urshu neutral "Seeing the outside is sobering for many. I'm glad you're no longer denying the gravity of the situation. I understand that this is a lot to process." 
 

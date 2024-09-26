@@ -218,7 +218,7 @@ label romance_cs:
                     vivi sad "Will I ever see you again?"
                     urshu sad "I'm afraid not. This is goodbye, my dear."
                     vivi sad "Adieu, Urshu."
-                    urshu happy "Enjoy your next journey, Vivienne Sansoucci."
+                    urshu happy "Enjoy your next journey, Vivienne Sanssouci."
                     urshu happy "It's been a pleasure having you aboard the Ouroboros Express." 
 
                     # VISUAL: screen flashes white and fades to epilogues
