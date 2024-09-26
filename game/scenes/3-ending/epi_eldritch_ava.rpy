@@ -2,14 +2,18 @@
 
 label epi_eldritch_ava:
 
-    stop music fadeout 1.0
-    pause 1.0
-    play sound train loop
+    stop music fadeout 2.0
+    pause 2.0
+    scene black with fade
+    play sound train loop fadein 1.0
+    play sound2 horror loop fadein 1.0
 
     #Epilogue/Eldritch/Avatar of Asha
     #LOCATION: eldritchlandscape
-    scene black with fade
-    show urshu sad at center with dissolve
+    scene black with Fade(2,2,2)
+    pause 2.0
+    show urshu sad at left with dissolve:
+        xzoom -1.0
 
     if att_meter_ava > 0:
         urshu sad "Alas, our goddess of the sun, Avatar of the Eternal Light, collapsed under the unbearable weight of her self-imposed hatred and inescapable emptiness." 
@@ -24,6 +28,9 @@ label epi_eldritch_ava:
         $ _skipping = False
         urshu "And so she found herself an unwitting passenger for yet another ride aboard, continuing in her quest to understand herself..."
         $ _skipping = True
+
+    stop sound fadeout 1.0
+    stop sound2 fadeout 1.0
 
     # VISUAL: Ava as a cosmic horror in eldritch landscape
 

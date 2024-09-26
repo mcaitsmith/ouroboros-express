@@ -5,8 +5,8 @@ label epi_friend_ava:
     #Epilogue/Friendship/Avatar of Asha
     #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective and they'll be against a plain, bright background. 
 
-    stop music fadeout 1.0
-    pause 1.0
+    stop music fadeout 2.0
+    pause 2.0
     play music goodendmusic volume 0.5
 
     # LOCATION: terminalofdreams

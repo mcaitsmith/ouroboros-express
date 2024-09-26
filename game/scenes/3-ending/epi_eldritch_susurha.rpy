@@ -5,13 +5,17 @@ label epi_eldritch_susurha:
     #Epilogue/Eldritch/Susu'Rha Balrinn
     #Naj's note: this should just be a brief description - about 100 words, if that. Kind of like the slides at the end of Fallout, but it'll be from Urshu's perspective  and they'll be against a black background.
 
-    stop music fadeout 1.0
-    pause 1.0
-    play sound train loop
+    stop music fadeout 2.0
+    pause 2.0
+    scene black with fade
+    play sound train loop fadein 1.0
+    play sound2 horror loop fadein 1.0
 
     #LOCATION: eldritchlandscape
-    scene black with fade
-    show urshu sad at center with dissolve
+    scene eldritch_susurha with Fade(2,2,2)
+    pause 2.0
+    show urshu sad at left with dissolve:
+        xzoom -1.0
 
     if att_meter_susurha > 0:
         urshu sad "Despite the rebel prince's burning desire to live free, they could not escape the guilt that bound them to their past decisions."
@@ -29,6 +33,9 @@ label epi_eldritch_susurha:
         $ _skipping = False
         urshu "And so they found themselves an unwitting passenger for yet another ride aboard, continuing in their quest to understand themselves..."
         $ _skipping = True
+
+    stop sound fadeout 1.0
+    stop sound2 fadeout 1.0
 
     return
 
