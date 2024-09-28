@@ -133,7 +133,7 @@ label interview_ava:
 
             vivi neutral "Why are you here?"
             ava angry "We go where we are called in service of Mother Asha."
-            ava angry "And we advise you to not ask such impudent questions in our presence going forward, human."
+            ava angry "And we advise you not to ask such impudent questions in our presence going forward, human."
             ava angry "This questioning ceases now." 
 
             # ava leaves

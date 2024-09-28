@@ -116,7 +116,7 @@ label denial_fr1_susurha:
             vivi "Urshu has no idea what he was rambling about."
             susurha happy "Ah... music to my ears. So clearly I haven't found myself entirely surrounded by those more insane than I."
             vivi "No, I am very much sane, but this place is testing that."
-            susurha happy "I couldn't agree anymore."
+            susurha happy "I couldn't agree any more."
             susurha happy "Hehe."
             susurha happy "Dead..."
             susurha happy "My father could have told better crafted jokes than that back home."

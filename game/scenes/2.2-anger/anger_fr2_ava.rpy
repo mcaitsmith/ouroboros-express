@@ -48,7 +48,7 @@ label anger_fr2_ava:
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
             hide decay_icon
             with { "master" : Dissolve(0.5) }
-            ava sad "No, Vivienne, perpetual loneliness. We would not wish that upon even our monarchy."
+            ava sad "No, Vivienne, perpetual loneliness. We would not wish that even upon our monarchy."
             # SOUND: dart hitting the board
             play sound darts
             pause 2.0
