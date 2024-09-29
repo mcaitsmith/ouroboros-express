@@ -169,8 +169,9 @@ label depression_fr2_ava:
     # <CHOICE>
     menu:
 
-        #OPTION 1 >>ATTRACTION (+ATTRACTION)
-        "My family moved around a lot..." if att_meter_ava >= 60:
+        #OPTION 1 >>ATTRACTION (+ATTRACTION) - updating to be non-conditional
+        # "My family moved around a lot..." if att_meter_ava >= 60:
+        "My family moved around a lot...":
 
             play sound attchoice
             show attraction_icon at right with dissolve:
