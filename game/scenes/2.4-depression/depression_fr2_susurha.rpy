@@ -108,7 +108,7 @@ label depression_fr2_susurha:
 
             vivi "We'll never know until it happens."
             susurha "That's what I'm afraid of."
-            # JUMP TO: susurha "So are YOU afraid?"
+            # JUMP TO: susurha "So you ARE afraid?"
 
         #OPTION 2 +ATTRACTION
         "I don't want to go.":
@@ -124,10 +124,10 @@ label depression_fr2_susurha:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             susurha sad "Yeah..."
-            # JUMP TO: susurha "So are YOU afraid?"
+            # JUMP TO: susurha "So you ARE afraid?"
 
     # <CHOICE>
-    susurha "So are you afraid?"
+    susurha "So you ARE afraid?"
 
     menu:
         #OPTION 1 +ATTRACTION
