@@ -16,7 +16,7 @@ label denial_fr1_ava_darius:
 
 
 
-    vivithinking "My brain is turning faster than the wheels of this accursed train. I'm going in circles. I'm back at the observatory. may as well make a few wishes."
+    vivithinking "My brain is turning faster than the wheels of this accursed train. I'm going in circles. I'm back at the observatory. May as well make a few wishes."
 
     hide vivi
 

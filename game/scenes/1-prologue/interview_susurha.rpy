@@ -23,7 +23,7 @@ label interview_susurha:
     susurha neutral "I'm proud to say I've developed relaxation into an art form."
     vivi neutral "Damn! The only art form I've ever developed is pimple-popping." 
     susurha neutral "...Pimple...popping?"
-    vivi neutral "...Nevermind!" 
+    vivi neutral "...Never mind!" 
     vivi neutral "What should I call you?"
     susurha neutral "I am the druid, Susu'Rha of Balrinn. Balrinn is my surname."
     vivi neutral "I'm Vivienne Sanssouci, but everyone calls me Vivi."

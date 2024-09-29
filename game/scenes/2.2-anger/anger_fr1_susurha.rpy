@@ -181,7 +181,7 @@ label anger_fr1_susurha:
             vivi angry "My ex-girlfriend stole my Datsun and got it towed in another state!"
             vivi angry  "And...and...my teacher, Mizz Costello. She told me I was pugnacious. And she meant it as an insult!"
             vivi angry  "The entire school system sucks! All systems do! Society at large!"
-            susurha angry "Society! Oh, how I hate Society! I fled all the way to the Viridian Wood to escape it!"           
+            susurha angry "Society! Oh, how I hate society! I fled all the way to the Viridian Wood to escape it!"           
             vivi happy "The EXPECTATIONS of people who, at the end of the day, JUST DON'T MATTER!"
             susurha happy "YES!"
             vivi angry "But most of all, my agent, Chloe. It was she who told me to get the scoop on this cursed death train." 
