@@ -230,7 +230,7 @@ label bargaining_fr2_susurha:
             susurha happy "Well, then. Sounds like I have some friendly competition!"
             vivi happy blush "Sounds like you sure do."
             susurha happy "We'll have to taste each other's creations then to see who comes out on top." 
-            vivi surprised blush "We...sure will!"
+            vivi happy blush "We...sure will!"
             vivithinking blush "...EEEEEEEEE."
             show susurha neutral blush with dissolve
             susurha "Ahem... Right... Anyways."
