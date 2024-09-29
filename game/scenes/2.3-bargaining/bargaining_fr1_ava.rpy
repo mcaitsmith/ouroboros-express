@@ -110,19 +110,19 @@ label bargaining_fr1_ava:
                 jump barg_fr1_ava_end
 
             menu:
-                # OPTION 1 +DECAY
+                # OPTION 1 +DECAY (removing meter effect for this choice)
                 "No family?":
 
-                    play sound decchoice
-                    show decay_icon at right with dissolve:
-                        xoffset -500
-                        # xoffset -30
-                        yoffset -750
-                    $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+                    # play sound decchoice
+                    # show decay_icon at right with dissolve:
+                    #     xoffset -500
+                    #     # xoffset -30
+                    #     yoffset -750
+                    # $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
                     vivi surprised "No family?"
-                    hide decay_icon
-                    with { "master" : Dissolve(0.5) }
+                    # hide decay_icon
+                    # with { "master" : Dissolve(0.5) }
                     ava sad "Our mother gave us to Asha at birth, then sent us back."
                     vivi surprised "Sent you back?"
                     ava sad "We are sacrificed. We are grateful we do not remember our mother or our death. Praise Asha."
@@ -130,19 +130,19 @@ label bargaining_fr1_ava:
                 
                     # JUMP TO: vivi happy "I'm glad you made the most of it."
                 
-                #OPTION 2 +ATTRACTION
+                #OPTION 2 +ATTRACTION (removing meter effect for this choice)
                 "No name?":
 
-                    play sound attchoice
-                    show attraction_icon at right with dissolve:
-                        xoffset -500
-                        # xoffset -30
-                        yoffset -850
-                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+                    # play sound attchoice
+                    # show attraction_icon at right with dissolve:
+                    #     xoffset -500
+                    #     # xoffset -30
+                    #     yoffset -850
+                    # $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No name?"
-                    hide attraction_icon
-                    with { "master" : Dissolve(0.5) }
+                    # hide attraction_icon
+                    # with { "master" : Dissolve(0.5) }
                     ava sad "We speak for our people, so we are all, and we are one."
 
                     show vivi neutral at left:
@@ -162,19 +162,19 @@ label bargaining_fr1_ava:
                 
                     # JUMP TO: vivi happy "I'm glad you made the most of it."
 
-                # OPTION 3 +ATTRACTION
+                # OPTION 3 +ATTRACTION (removing meter effect for this choice)
                 "No tears?":
 
-                    play sound attchoice
-                    show attraction_icon at right with dissolve:
-                        xoffset -500
-                        # xoffset -30
-                        yoffset -850
-                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+                    # play sound attchoice
+                    # show attraction_icon at right with dissolve:
+                    #     xoffset -500
+                    #     # xoffset -30
+                    #     yoffset -850
+                    # $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No tears?"
-                    hide attraction_icon
-                    with { "master" : Dissolve(0.5) }
+                    # hide attraction_icon
+                    # with { "master" : Dissolve(0.5) }
                     ava sad "We have felt the onset once, but no. We have never cried."
                     vivithinking "That explains a lot!"
 
@@ -198,19 +198,19 @@ label bargaining_fr1_ava:
 
                     # JUMP TO: vivi happy "I'm glad you made the most of it."
 
-                #OPTION 4 +ATTRACTION
+                #OPTION 4 +ATTRACTION (removing meter effect for this choice)
                 "No men?":
 
-                    play sound attchoice
-                    show attraction_icon at right with dissolve:
-                        xoffset -500
-                        # xoffset -30
-                        yoffset -850
-                    $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+                    # play sound attchoice
+                    # show attraction_icon at right with dissolve:
+                    #     xoffset -500
+                    #     # xoffset -30
+                    #     yoffset -850
+                    # $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
 
                     vivi surprised "No men?"
-                    hide attraction_icon
-                    with { "master" : Dissolve(0.5) }
+                    # hide attraction_icon
+                    # with { "master" : Dissolve(0.5) }
                     ava happy "We never had one, but we knew many women."
                     vivithinking "Whoa! Did I underestimate Her Radiance?"
                     ava happy "When we went to lands run by women, our diplomacy always prevailed, no matter the tongue."
