@@ -105,7 +105,7 @@ label interview_darius:
             vivi angry "Do you intend to be so difficult throughout this entire process?"
             darius neutral "I am simply being honest. I come from a rather small garden."
             vivi neutral "A garden? Weird way to refer to back home."
-            darius neutral "It's not the name of it, obviously. Like I said: it's small, you wouldn't know it."
+            darius neutral "It's not the name of it, obviously. Like I said, it's small, you wouldn't know it."
             vivithinking neutral ". . .right then."
 
             # JUMP TO vivi neutral "Forget it. Last question."

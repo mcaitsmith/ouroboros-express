@@ -31,7 +31,7 @@ label denial_fr1_darius:
 
     vivi  "Tell me, you must have experience with otherworldly phenomena, right?"
 
-    darius neutral "You have no idea. However, this whole situation is unlike anything I've seen."
+    darius neutral "In a sense. This whole situation is unlike anything I've seen, however."
 
     vivithinking "Crap. Swing and a miss."
 
@@ -154,7 +154,7 @@ label denial_fr1_darius:
 
     vivi "Where do you think we're going?"
 
-    darius "In my...religion, we believed that oblivion was at the end of it all. My people -you may know us as mindflayers- believe in a similar idea. Maybe this train is leading us to that."
+    darius "In my...religion, we believed that oblivion was at the end of it all. Many mindflayers believe in a similar idea. Maybe this train is leading us to that."
  
     vivi "Mindflayer? Is that what you are?"
 
