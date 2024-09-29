@@ -186,6 +186,9 @@ label hide_overlay: # call this label to hide eldritch overlay
     # with { "master" : Dissolve(1.0) }
     return
 
+init python:
+    config.auto_voice = "audio/voice/{id}.ogg"
+
 # The game starts here.
 
 label start:

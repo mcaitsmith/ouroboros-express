@@ -1137,7 +1137,8 @@ screen preferences_ingame():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                                textbutton _("Test") action Play("sound", config.sample_sound):
+                                    style "test_button_ingame"
 
 
                     if config.has_voice:
@@ -1147,7 +1148,8 @@ screen preferences_ingame():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                                textbutton _("Test") action Play("voice", config.sample_voice):
+                                    style "test_button_ingame"
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -1218,6 +1220,11 @@ style mute_all_button_ingame is gui_button
 
 style mute_all_button_ingame_text is gui_button_text:
     size 20
+
+style test_button_ingame is gui_button
+
+style test_button_ingame_text is gui_button_text:
+    size 15
 
 screen preferences():
 

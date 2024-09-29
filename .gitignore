@@ -76,6 +76,7 @@ cache/
 /doc
 /doc-web
 /LICENSE.txt
+*.tab
 
 # Gui template.
 /gui/game/gui
