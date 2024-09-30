@@ -56,7 +56,7 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivithinking "I need to discover more about Urshu if I'm to have any hope of keeping up my end of the deal."
     
         # OPTION 2 >>DECAY +DECAY
-        "He just seems like such an enigmatic character." if dec_meter >= 10:
+        "He just seems like such an enigmatic character." if dec_meter >= 5:
 
             play sound decchoice
             show decay_icon at right with dissolve:
@@ -156,7 +156,7 @@ label bargaining_fr1_susurha:
     susurha neutral "And all I know is that bargaining with Boskala Nah was useless." 
     
     # DECAY ROUTE
-    if dec_meter >= 10:
+    if dec_meter >= 15:
         play sound decchoice
         susurha neutral "Try not to burn yourself, Vivienne."
         # JUMP TO: Character Selector 2
@@ -281,7 +281,7 @@ label bargaining_fr1_susurha:
             # JUMP TO: vivi neutral "I still need to try at least."
 
         # OPTION 5 >>DECAY +DECAY
-        "I NEED his help if I'm gonna get off this train." if dec_meter >= 15:
+        "I NEED his help if I'm gonna get off this train." if dec_meter >= 10:
 
             play sound decchoice
             show decay_icon at right with dissolve:

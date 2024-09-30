@@ -30,6 +30,7 @@
 define vivi = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",color="#FFFFFF")
 define vivithinking = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
 define urshu = Character("Urshu", callback = name_callback, cb_name = "urshu", image="urshu",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define urshudining = Character("Urshu", callback = name_callback, cb_name = "urshudining", image="urshudining",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define ava = Character("Asha", callback = name_callback, cb_name = "ava",image="ava",color="#FFFFFF", namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define darius = Character("Darius", callback = name_callback, cb_name = "darius",image="darius",color="#FFFFFF", namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susurha",image="susurha",color="#FFFFFF", namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
@@ -98,6 +99,18 @@ image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprit
 image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
 image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
 image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+
+# define urshu dining images
+image urshudining neutral = At('images/characters/urshu/urshu dining/urshu_neutral_table.png', sprite_highlight('urshudining'))
+image urshudining happy = At('images/characters/urshu/urshu dining/urshu_happy_table.png', sprite_highlight('urshudining'))
+image urshudining sad = At('images/characters/urshu/urshu dining/urshu_sad_table.png', sprite_highlight('urshudining'))
+image urshudining angry = At('images/characters/urshu/urshu dining/urshu_angry_table.png', sprite_highlight('urshudining'))
+image urshudining surprised = At('images/characters/urshu/urshu dining/urshu_surprised_table.png', sprite_highlight('urshudining'))
+image urshudining neutral blush = At('images/characters/urshu/urshu dining/urshu_neutral_table_blush.png', sprite_highlight('urshudining'))
+image urshudining happy blush = At('images/characters/urshu/urshu dining/urshu_happy_table_blush.png', sprite_highlight('urshudining'))
+image urshudining sad blush = At('images/characters/urshu/urshu dining/urshu_sad_table_blush.png', sprite_highlight('urshudining'))
+image urshudining angry blush = At('images/characters/urshu/urshu dining/urshu_angry_table_blush.png', sprite_highlight('urshudining'))
+image urshudining surprised blush = At('images/characters/urshu/urshu dining/urshu_surprised_table_blush.png', sprite_highlight('urshudining'))
 
 # define flash effect
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")

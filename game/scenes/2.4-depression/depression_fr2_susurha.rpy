@@ -66,19 +66,20 @@ label depression_fr2_susurha:
             susurha neutral "Please... sit with me."
             # JUMP TO: vivithinking "It feels so warm being next to them."
 
-        #OPTION 3 >>DECAY +ATTRACTION
-        "I don't...know why." if dec_meter >= 40:
+        #OPTION 3 >>DECAY +ATTRACTION (updating to make neutral and non-conditional)
+        # "I don't...know why." if dec_meter >= 40:
+        "I don't...know why.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't...know why."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha "I wish you knew, but I'll take it."
             susurha "Thank you for your honesty."
             vivi "Is it okay if I stay here?"
@@ -250,8 +251,9 @@ label depression_fr2_susurha:
             show susurha happy -blush
             # JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 
-        #OPTION 4 >>DECAY +DECAY
-        "I know who I am." if dec_meter >= 50:
+        #OPTION 4 >>DECAY +DECAY (updating to be non-conditional)
+        # "I know who I am." if dec_meter >= 50:
+        "I know who I am.":
 
             play sound decchoice
             show decay_icon at right with dissolve:

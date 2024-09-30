@@ -268,6 +268,8 @@ label denial_fr2_susurha:
 
     show observatory blur with dissolve
 
+    stop music fadeout 3.0
+
     vivithinking "I haven't done this much climbing since I was a kid. Now to look out the opened window."
 
     vivithinking "..."
@@ -275,6 +277,8 @@ label denial_fr2_susurha:
     vivithinking "This is..."
 
     vivithinking "Unimaginable."
+
+    play sound horror loop
 
     vivithinking "Spiraling celestial bodies swirl all around as the train speeds faster than anything I've ever seen."
 
@@ -312,6 +316,8 @@ label denial_fr2_susurha:
 
     vivithinking "It's reaching out to me..."
 
+    stop sound
+
     urshu angry "Get down from there!"
 
     #SOUND: The sounds of chairs clashing and Vivi and Susu'Rha hitting the floor.
@@ -332,6 +338,8 @@ label denial_fr2_susurha:
     vivithinking "I can breathe again!"
     show vivi surprised at center with dissolve:
         xzoom 1
+
+    play music mainmusic volume 0.5 # start main track
 
     vivi surprised "What the hell was that?"
 
