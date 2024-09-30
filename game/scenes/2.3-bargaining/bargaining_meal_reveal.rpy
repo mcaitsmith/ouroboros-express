@@ -48,17 +48,17 @@ label bargaining_meal_reveal:
         $ npc_meal = susurha
         call show_susurha from _call_show_susurha_1
 
-    show urshu neutral at left with dissolve:
+    show urshudining neutral at left with dissolve:
         xzoom -1.0
 
     vivithinking neutral "Table, chairs, white linen, candles... Where did he get those?"
     vivithinking neutral "He looks so smug. A bit creepy. His hands steepled like a movie villain." 
     vivithinking neutral "Nah, it's just the lighting. Ursh has such a flair for drama."
-    urshu happy "I am famished, dear ones. What have you prepared for me?"
+    urshudining happy "I am famished, dear ones. What have you prepared for me?"
     vivi happy "Something to blow your mind and tastebuds!" 
     vivi neutral "[fr2_bargaining_choice] and I made a meal that's gonna knock your goddamn socks off!"
-    urshu happy "You two have worked together? Ah, what joyous collaboration! All the more to be excited about!" 
-    urshu neutral "Let's try a bite, shall we?"
+    urshudining happy "You two have worked together? Ah, what joyous collaboration! All the more to be excited about!" 
+    urshudining neutral "Let's try a bite, shall we?"
     vivithinking neutral "Alright, let's set this down. Careful... Okay. Nothing spilled." 
     vivithinking neutral "God, I'm hovering. Step away, V. It smells {i}soooo good{/i}, though. Maybe he'll leave us a bite?" 
     vivithinking neutral "Oh oh oh! He's going for it!"
@@ -106,8 +106,8 @@ label bargaining_meal_reveal:
             # JUMP TO: vivithinking neutral "He's taking another bite!"    
 
     vivithinking neutral "He's taking another bite! And another! He's...he's crying."
-    show urshu sad blush with dissolve
-    urshu "My, my. I have never... My mouth dances with joy! The texture, the temperature, the sensation of it all. You have truly gone A and B the C of D."
+    show urshudining sad blush with dissolve
+    urshudining "My, my. I have never... My mouth dances with joy! The texture, the temperature, the sensation of it all. You have truly gone A and B the C of D."
     if fr2_bargaining_choice == "Asha":
         call show_ava_surprised from _call_show_ava_surprised
     elif fr2_bargaining_choice == "Darius":
@@ -115,11 +115,11 @@ label bargaining_meal_reveal:
     elif fr2_bargaining_choice == "Susu'Rha":
         call show_susurha_surprised from _call_show_susurha_surprised
     vivi surprised "What?"
-    show urshu happy -blush
-    urshu happy "You have gone above and beyond the call of duty."
+    show urshudining happy -blush
+    urshudining happy "You have gone above and beyond the call of duty."
     vivi happy "That...that's amazing! Urshu, that's the best news we could have possibly heard!"
     vivithinking neutral "Hell yeah! We are getting OUTTA HERE!"
-    urshu neutral "I am certain with every ounce of my being that this tastes absolutely wondrous."
+    urshudining neutral "I am certain with every ounce of my being that this tastes absolutely wondrous."
     vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so—"
     vivi neutral "..."
     vivi neutral "Wait, what do you mean by...certain?"
@@ -127,7 +127,7 @@ label bargaining_meal_reveal:
     vivithinking neutral "Crying? No, sobbing." 
     vivithinking neutral "That's not a happy cry. He's covering his mouth."
     vivi neutral "Urshu, what's going on? Why are you crying?"
-    urshu sad "Miss Sanssoucci, my dear."
+    urshudining sad "Miss Sanssoucci, my dear."
 
     # THE BELOW TEXT (UP UNTIL LINE 129 INCLUSIVE) ONLY APPEARS IF VIVI CHOSE TO HEAR/TELL 
     # ALL THREE STORIES WITH URSHU (SELECTED OPTION 1 "Go on, already. A story might lift 
@@ -139,25 +139,25 @@ label bargaining_meal_reveal:
     if urshu_story_1 == True and urshu_story_2 == True and urshu_story_3 == True:
 
         vivi neutral "You can just call me Vivi, Ursh."
-        urshu surprised blush "I would like that, Miss Sa- I mean, my dear Vivi."
-        urshu sad -blush "But I must confess..."
+        urshudining surprised blush "I would like that, Miss Sa- I mean, my dear Vivi."
+        urshudining sad -blush "But I must confess..."
 
         # JUMP TO: urshu sad "I underestimated you, as I so often do with humans."
     
   
-    urshu sad "I underestimated you, as I so often do with humans."
+    urshudining sad "I underestimated you, as I so often do with humans."
     vivi neutral "Ursh..."
-    urshu sad "I did not think you would complete the task at hand, let alone with a companion."
-    urshu sad "So I have led you into another ruse, I fear."
+    urshudining sad "I did not think you would complete the task at hand, let alone with a companion."
+    urshudining sad "So I have led you into another ruse, I fear."
     vivi neutral "...No."
-    urshu sad "I do not possess what you call \"taste buds.\" I do not know what this actually tastes like."
+    urshudining sad "I do not possess what you call \"taste buds.\" I do not know what this actually tastes like."
     vivi neutral "Nonononono."
-    urshu sad "And I therefore cannot call this the best tasting meal I have ever had."
+    urshudining sad "And I therefore cannot call this the best tasting meal I have ever had."
     vivi angry "YOU. DRINK. NARUBIAN. CITRUS. INFUSED. ESPRESSO. EVERY. FUCKING. MORNING. WHAT. DO. YOU. MEAN. YOU. DON'T. HAVE. TASTE. BUDS?"
     # Sal's note !!!!: Here the chosen NPC talks. If this is effort, it's not worth the pain to implement. It's only one line.
     npc_meal "Vivienne..." 
-    urshu neutral "You don't understand! Coffee is different. Coffee is a metaphysical experience."
-    urshu neutral "The concept of coffee! Hypothetical productivity with a hint of idealism, mmm! That I can taste. Not the lowly physical aspect."
+    urshudining neutral "You don't understand! Coffee is different. Coffee is a metaphysical experience."
+    urshudining neutral "The concept of coffee! Hypothetical productivity with a hint of idealism, mmm! That I can taste. Not the lowly physical aspect."
     vivi angry "No! No! NO! I can't take any more of this. I'm done."
 
     # Carrie's note - VERSION 1: THE BELOW TEXT (UNTIL LINE 159 INCLUSIVE) ONLY APPEARS IF 
@@ -173,9 +173,9 @@ label bargaining_meal_reveal:
         vivi sad "You know, I actually trusted you, more than most. I don't have much time left, but I gave you plenty of it. I heard you out. I listened to you, and all your ferryman stuff."
         vivi sad "And I opened up to you. I haven't spoken to anyone - {i}anyone{/i} - like that in a long time. You looked me in the eye and said that we understood each other perfectly."
         vivi sad "I got to feel... I felt like we were..."
-        urshu sad "My dear Vivi?"
+        urshudining sad "My dear Vivi?"
         vivi sad "No. It doesn't matter. Because you clearly don't, and we're clearly not. I thought I was seeing my time here wisely, differently, like you said I should. But maybe I don't have the investigative chops I thought I did." 
-        urshu sad "Dear Vivi, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
+        urshudining sad "Dear Vivi, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
 
         # JUMP TO: stop music fadeout 5.0
     
@@ -183,17 +183,17 @@ label bargaining_meal_reveal:
     else:
     
         vivi sad "You know, I actually trusted you. You looked me in the eyes and shook my hand, and I trusted you."
-        urshu sad "Dear Vivienne, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
+        urshudining sad "Dear Vivienne, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
 
     #SOUND: Prime moment for sad music
     stop music fadeout 5.0 # gonna stop the music here for effect
     
-    urshu neutral "As my way of apologizing, let me elucidate for you something you cannot seem to accept..."
-    urshu neutral "While living, you received innumerable second chances to make things right in your own life."
-    urshu neutral "But the Ouroboros Express is not a second chance. It is your last chance to make peace with yourself and the other travelers with you."
-    urshu neutral "I told you that I am a conductor, nothing more. I am sorry for this ruse. It was wrong of me to play with your heart in such a careless manner." 
-    urshu neutral "But when you shook my hand, there was a certain hope in your soul, Miss Sanssouci, that I was too weak to crush at its onset." 
-    urshu neutral "Only now are you ready to accept the reality of—"
+    urshudining neutral "As my way of apologizing, let me elucidate for you something you cannot seem to accept..."
+    urshudining neutral "While living, you received innumerable second chances to make things right in your own life."
+    urshudining neutral "But the Ouroboros Express is not a second chance. It is your last chance to make peace with yourself and the other travelers with you."
+    urshudining neutral "I told you that I am a conductor, nothing more. I am sorry for this ruse. It was wrong of me to play with your heart in such a careless manner." 
+    urshudining neutral "But when you shook my hand, there was a certain hope in your soul, Miss Sanssouci, that I was too weak to crush at its onset." 
+    urshudining neutral "Only now are you ready to accept the reality of—"
     vivi sad "I can't hear another word. I can't—"
 
     # fade out
