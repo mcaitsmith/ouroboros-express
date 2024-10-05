@@ -13,7 +13,7 @@ label interview_ava:
         xzoom -1
     # SOUND: train
 
-    vivithinking neutral "What's your story, tall, dark, and gorgeous?"
+    vivithinking neutral "What's your story, gorgeous?"
     ava neutral "Ah. A fellow traveler. Do you wish to bask in our radiance?"
     vivithinking neutral "Radiance? You sure think highly of yourself, sunshine."
     ava neutral "What may we call you?"

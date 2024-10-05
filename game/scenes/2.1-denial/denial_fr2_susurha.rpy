@@ -85,7 +85,7 @@ label denial_fr2_susurha:
             susurha angry "All the while you're being told that..."
             susurha sad "You are dead."
             vivi "Is that how you died? I mean ended up here."
-            susurha sad "How you'd figure that?"
+            susurha sad "How'd you figure that?"
             #JUMP TO: susurha sad "We will be dead if we stay here any longer."
 
     #OPTION 2 
