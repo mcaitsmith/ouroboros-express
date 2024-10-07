@@ -126,19 +126,19 @@ label anger_fr2_susurha:
     # <CHOICE>
 
     menu:
-    # OPTION 1 +ATTRACTION
+    # OPTION 1 +ATTRACTION (removing meter effect for balance)
         "It was an assignment given to me by my agent.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi neutral "It was an assignment given to me by my agent, Chloe. She told me to write an exposé about a mysterious train line with an enigmatic conductor."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             vivi happy "I said yes because it reminded me of those internet horror stories I grew up with."
             vivi neutral "Seems like the stories swirling around the Ouroboros Express were more than just stories."
             vivi sad "Now I'm dead..."
@@ -255,19 +255,19 @@ label anger_fr2_susurha:
     # <CHOICE>
 
     menu:
-    #OPTION 1 +ATTRACTION
+    #OPTION 1 +ATTRACTION (removing meter effect for balance)
         "You did what you could. It isn't your fault.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi sad "You did what you could. It isn't your fault."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha sad "Thank you. That means something."
             
             # SOUND: dart smacks the board

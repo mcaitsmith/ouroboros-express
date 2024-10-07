@@ -40,11 +40,11 @@ label meters:
 
     # define choice number lists for each character
     # guide: [anger_FR1, anger_FR2, bargaining_FR1, bargaining_FR2, depression_FR1, depression_FR2]
-    $ att_num_list_ava = [2,4,1,4,2,3]
-    $ dec_num_list_ava = [2,4,1,3,2,2]
+    $ att_num_list_ava = [2,2,2,4,2,3]
+    $ dec_num_list_ava = [2,4,2,3,2,2]
     $ att_num_list_darius = [2,2,2,3,2,2]
     $ dec_num_list_darius = [2,2,2,2,2,2]
-    $ att_num_list_susurha = [3,4,2,4,2,4]
+    $ att_num_list_susurha = [2,2,2,4,2,4]
     $ dec_num_list_susurha = [3,4,2,3,2,2]
 
     # define decay choice number for each phase (take max of each character)
