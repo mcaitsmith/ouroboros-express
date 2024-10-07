@@ -104,7 +104,7 @@ label bargaining_fr1_ava:
 
             # DECAY ROUTE
             if dec_meter >= 10:
-                play sound decchoice
+                # play sound decchoice
                 vivi surprised "Which one—?"
                 ava angry "We have no answer."
                 jump barg_fr1_ava_end

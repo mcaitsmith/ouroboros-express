@@ -52,7 +52,7 @@ label depression_fr1_ava:
 
     # DECAY ROUTE
     if dec_meter >= 40:
-        play sound decchoice
+        # play sound decchoice
         ava sad "We misspoke. We wish to drink alone."
         vivi "Well then. See ya, sunshine."
         # JUMP TO: vivithinking "What are the others doing, I wonder?"
@@ -136,7 +136,7 @@ label depression_fr1_ava:
 
     # DECAY ROUTE
     if dec_meter >= 40:
-        play sound decchoice
+        # play sound decchoice
         ava sad "We misspoke. We wish to drink alone."
         vivithinking "Up yours, snooty patootie."
         vivi "Well then. See ya, sunshine."

@@ -20,7 +20,7 @@ label depression_fr2_susurha:
 
     # ??DECAY (DECAY ROUTE?)
     if dec_meter >= 50:
-        play sound decchoice
+        # play sound decchoice
         vivi "Don't know. You're not boring."
         jump dep_fr2_susu_end
     #END

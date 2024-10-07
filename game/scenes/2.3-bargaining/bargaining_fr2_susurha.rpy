@@ -144,7 +144,7 @@ label bargaining_fr2_susurha:
     susurha neutral "So what should we cook?"
     # DECAY ROUTE
     if dec_meter >= 20:
-        play sound decchoice
+        # play sound decchoice
 
         vivi neutral "I can't...seem to make up my mind...."
         vivithinking "What's outside the window?"
@@ -315,7 +315,7 @@ label bargaining_fr2_susurha:
 
     # DECAY ROUTE
     if dec_meter >= 30:
-        play sound decchoice
+        # play sound decchoice
 
         vivi angry "Well, if you don't know what it is, keep your opinion to yourself!"
         susurha neutral "If you'd just let me help you—"

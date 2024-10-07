@@ -157,7 +157,7 @@ label bargaining_fr1_susurha:
     
     # DECAY ROUTE
     if dec_meter >= 15:
-        play sound decchoice
+        # play sound decchoice
         susurha neutral "Try not to burn yourself, Vivienne."
         # JUMP TO: Character Selector 2
         jump bargaining_cs2
