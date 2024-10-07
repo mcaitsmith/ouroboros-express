@@ -983,7 +983,7 @@ screen file_slots_ingame(title):
                 style_prefix "slot_ingame"
 
                 xalign 0.5
-                yalign 0.8
+                yalign 0.6
                 xfill True
 
                 spacing 4
@@ -1058,7 +1058,7 @@ screen file_slots_ingame(title):
 style slot_ingame_button is gui_button
 style slot_ingame_button:
     xsize 300
-    ysize 150
+    ysize 120
     size 16
     xalign 0.5
 style slot_ingame_button_text is text:
@@ -1069,7 +1069,7 @@ style slot_ingame_time_text:
     color "#DDD"
     hover_color gui.hover_color
     selected_idle_color "#FFF" 
-    selected_idle_bold True
+    selected_idle_bold False
 
 style page_ingame_label_text is gui_label_text
 style page_ingame_label_text:
