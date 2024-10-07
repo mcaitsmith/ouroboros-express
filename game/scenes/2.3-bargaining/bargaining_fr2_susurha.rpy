@@ -80,19 +80,19 @@ label bargaining_fr2_susurha:
 
             # JUMP TO: susurha neutral "We have a meal to cook."
 
-        #OPTION 2 +DECAY
+        #OPTION 2 +DECAY (removing meter effect for balance)
         "Whatever it was, it skipped over me.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi neutral "Whatever it was, it skipped over me."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "Whatever do you mean?"
             vivi neutral "Nana could read people. She could bargain. She had grit. Tenacity." 
             susurha neutral "Those are good qualities."

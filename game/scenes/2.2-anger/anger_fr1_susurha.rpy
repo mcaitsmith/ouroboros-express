@@ -58,19 +58,19 @@ label anger_fr1_susurha:
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
-        # OPTION 2 +DECAY
+        # OPTION 2 +DECAY (removing meter effect for balance)
         "I'd be revealing too much.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "I'd be revealing too much."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
             vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."
 

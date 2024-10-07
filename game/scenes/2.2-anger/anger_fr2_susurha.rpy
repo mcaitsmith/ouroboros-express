@@ -147,19 +147,19 @@ label anger_fr2_susurha:
             susurha sad "Vivienne. I'm so sorry, my dear. But you cannot blame yourself for this travesty."
             # JUMP TO: susurha neutral "The fault lies with your "agent.""
 
-    # OPTION 2 +DECAY
+    # OPTION 2 +DECAY (removing meter effect for balance)
         "I didn't have a choice.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I didn't have a choice."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "Do tell."
             vivi angry "I'm a reporter. I go where the story is. Wherever Chloe tells me to go."
             vivi sad "What a silly reason to die."
@@ -288,19 +288,19 @@ label anger_fr2_susurha:
             vivi sad "..."
             # JUMP TO: susurha neutral "Well, this has been fun as always, but I wish to return to my cabin for some solitude."
 
-    #OPTION +DECAY
+    #OPTION +DECAY (removing meter effect for balance)
         "We got a raw deal. Life is unfair.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "We got a raw deal. Life is unfair."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha angry "Certainly nothing about our present situation is fair."
             vivi angry "I HATE this train!"
             vivi angry "And the conductor. It's his fault we're here."

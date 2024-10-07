@@ -98,19 +98,19 @@ label anger_fr2_ava:
     vivi angry blush "Well...it's still demeaning. I don't like it."
 
     menu:
-        #OPTION 1 +DECAY
+        #OPTION 1 +DECAY (removing meter effect for balance)
         "But if you like it...":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi happy blush "But if you like it...I guess I could get used to it."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             show ava happy blush with dissolve
             ava "No. We never wish to offend you."
             vivithinking happy "I'll do anything she wants to spend some more time with her...!"
@@ -160,19 +160,19 @@ label anger_fr2_ava:
     vivi neutral blush "I've been meaning to ask you:"
 
     menu:
-        # OPTION 1 +DECAY
+        # OPTION 1 +DECAY (removing meter effect for balance)
         "What are your thoughts on our conductor?":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "What are your thoughts on the conductor?"
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             ava surprised "Ah, Urshu. A mystery."
             vivi "Personally...I think he's undead."
             ava surprised "A zombie?"

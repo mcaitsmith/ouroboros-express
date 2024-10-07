@@ -68,19 +68,19 @@ label bargaining_fr2_ava:
 
             # JUMP TO: ava neutral "So what shall we make, then?"
 
-        # OPTION 2 +DECAY
+        # OPTION 2 +DECAY (removing meter effect for balance)
         "Urshu asked me...":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            # play sound decchoice
+            # show decay_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi sad blush "Urshu asked me to cook something for everyone, so I figured we could do it together. What do you think?"
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             ava neutral "We wish you would have asked us sooner. The sun is nearly gone today."
             vivi neutral "So...is that a yes?"
             ava neutral "We suppose..."
