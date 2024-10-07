@@ -32,6 +32,11 @@ label bad_consequences:
     vivi sad "..."
     vivi neutral "I'm..."
     vivi neutral "..."
+    show vivi happy
+    pause 0.5
+    hide vivi happy
+    with { "master" : Dissolve(3.0) }
+    pause 0.5
     vivi happy "I'm a god, now."
 
     # $ message = "{i}...Illegible garble...{/i}"

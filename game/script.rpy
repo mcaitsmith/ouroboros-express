@@ -191,11 +191,7 @@ label check_overlay_nofade: # call this label to display eldritch overlay
     return
 
 label hide_overlay: # call this label to hide eldritch overlay
-    # hide eldritch1 onlayer eldritch_overlay
-    # hide eldritch2 onlayer eldritch_overlay
-    # hide eldritch3 onlayer eldritch_overlay
-    # hide eldritch4 onlayer eldritch_overlay
-    # hide eldritch5 onlayer eldritch_overlay
+    hide eldritch onlayer eldritch_overlay
     # with { "master" : Dissolve(1.0) }
     return
 
