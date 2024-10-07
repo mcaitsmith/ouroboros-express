@@ -32,19 +32,19 @@ label depression_fr2_ava:
 
     # <CHOICE>
     menu:
-        #OPTION 1 +ATTRACTION
+        #OPTION 1 +ATTRACTION (removing meter effect for balance)
         "Really?":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi surprised "Really? Even though the royals treated you poorly you had everything you could have ever wanted. I don't understand."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             ava sad "Of course you do not understand. How could you?"
             vivi sad "I want to...understand. How can I share your pain if you don't talk about it with me?"
             # JUMP TO: ava sad "Vivi..."
@@ -66,19 +66,19 @@ label depression_fr2_ava:
             vivi angry "You're right, Asha. I can't and I won't. How could a puny little human peasant like me ever understand what it's like to be a princess in a castle?!"
             # JUMP TO: ava sad "Vivi..."
 
-        #OPTION 3 >>ATTRACTION +ATTRACTION
+        #OPTION 3 >>ATTRACTION +ATTRACTION (removing meter effect for balance)
         "I wish I could have been there for you." if att_meter_ava >= 50:
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_ava += int(att_max_depression_fr2 / att_num_list_ava[5])
 
             vivi sad "I wish I could have been there for you. Our relationship has been the one thing keeping me sane on this journey... I wish we could have spent some time together while we were alive."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             ava happy "Really? We feel the same way." 
             # JUMP TO: ava sad "Vivi..."
 

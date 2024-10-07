@@ -163,19 +163,19 @@ label bargaining_fr2_ava:
 
             # JUMP TO: vivi happy blush "Let's get cooking!"
 
-        # OPTION 2 +ATTRACTION
+        # OPTION 2 +ATTRACTION (removing meter effect for balance)
         "Something simple.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi happy "Something simple. A good old American breakfast!"
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
 
             ava surprised "We are not familiar with...American..."
             vivi happy "Well, then I'll tell ya, Asha! Americans love to eat, and they wake up most days with a massive meal."

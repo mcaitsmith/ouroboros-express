@@ -55,19 +55,19 @@ label bargaining_fr2_susurha:
     susurha neutral "What made her so brilliant?"
 
     menu:
-        #OPTION 1 +ATTRACTION
+        #OPTION 1 +ATTRACTION (removing meter effect for balance)
         "She could see down to the essence of a person.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             vivi neutral "She could see down to the essence of a person."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "I sense that power in you too, milady."
             vivi neutral "I guess I have it..."
             vivi neutral "...When my agenda doesn't get in the way."
@@ -105,19 +105,19 @@ label bargaining_fr2_susurha:
             # JUMP TO: susurha neutral "We have a meal to cook."
 
 
-        #OPTION 3 >>ATTRACTION +ATTRACTION
+        #OPTION 3 >>ATTRACTION +ATTRACTION (removing meter effect for balance)
         "She was a hustler. She knew how to get what she wanted." if att_meter_susurha >= 30:
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
 
             vivi neutral "She was a hustler. She knew how to get what she wanted."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "Well, you have that quality as well, Vivienne. It's why you're such an excellent reporter!"
             vivi blush neutral "Oh. Thank you! No one's ever said that to me before..."
             vivi neutral "I guess I do have a little \"girlboss\" energy in me..."

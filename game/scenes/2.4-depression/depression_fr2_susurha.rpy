@@ -29,37 +29,37 @@ label depression_fr2_susurha:
     vivi "I wanted to see you because...."
             
     menu:
-        #OPTION 1 +ATTRACTION
+        #OPTION 1 +ATTRACTION (removing meter effect for balance)
         "I didn't want to be alone.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I didn't want to be alone."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha "I very much hoped you'd come."
             vivi "Is it okay if I stay here?"
             susurha "Please do."
             #JUMP TO: vivithinking "It feels so warm being next to them."
         
-        #OPTION 2 >>ATTRACTION +ATTRACTION
+        #OPTION 2 >>ATTRACTION +ATTRACTION (removing meter effect for balance)
         "I also needed to see a friendly face." if att_meter_susurha >= 50:
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
                 
             vivi "I also needed to see a friendly face."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             show susurha happy blush with dissolve
             vivi "..."
             show susurha neutral -blush
@@ -111,19 +111,19 @@ label depression_fr2_susurha:
             susurha "That's what I'm afraid of."
             # JUMP TO: susurha "So you ARE afraid?"
 
-        #OPTION 2 +ATTRACTION
+        #OPTION 2 +ATTRACTION (removing meter effect for balance)
         "I don't want to go.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with dissolve:
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't want to go."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha sad "Yeah..."
             # JUMP TO: susurha "So you ARE afraid?"
 
