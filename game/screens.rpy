@@ -624,7 +624,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                                 style "view_journal_button"
                                 action Jump("display_journal")
                             imagebutton:
-                                idle "gui/pause/journal.jpg"
+                                idle "gui/pause/journal.png"
                                 action Jump("display_journal")
     use navigation
 
