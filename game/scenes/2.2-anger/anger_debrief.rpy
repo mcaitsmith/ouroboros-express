@@ -29,7 +29,7 @@ label anger_debrief:
         $ message = "This whole thing is pointless!\nThat conductor... URG!\nI wanna strangle him and wipe that\nstupid smirk off his face.\nTalking to him is like solving a riddle.\nIt's infuriating!\nGotta find something on him.\nMaybe the others know a thing or two.\n\nThere's gotta be some way to make\nUrshu help me.\nHe seems like one who'd appreciate an\nexchange for his aid."
 
         call display_journal from _call_display_journal_1
-        $ cycle = 2
+        $ cycle = 3
 
         stop sound
 
@@ -52,7 +52,7 @@ label anger_debrief:
         $ message = "Talking to the other passengers has helped\nput things into perspective.\nThey're not so bad after all.\nI won't get off this train by fighting.\n\nI still need more info on the conductor.\nHe's my ticket off this ride.\nHe seems like one who'd appreciate\nan exchange for his aid.\nMaybe some of the other passengers\ncan help me?\nWe can maybe figure out together\nwhat Urshu would want from us..."
 
         call display_journal from _call_display_journal_2
-        $ cycle = 2
+        $ cycle = 3
 
         stop sound
 

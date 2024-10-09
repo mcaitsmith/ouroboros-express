@@ -62,13 +62,14 @@ label journal:
         # determine diary note
         # note 9/6/24 - 14 lines max, ~42 chars max per line
         # if len(journal_array) >= 1:
-        vbox xpos 385 ypos 260:
-            text "DAY [cycle+1]" size 32 font "fonts/Kalam-Bold.ttf" color "#000000" xalign 0.5
-            null height 30
-            viewport xsize 500 ysize 330:
+        vbox xpos 395 ypos 265:
+            text "DAY [cycle]" size 32 font "fonts/Kalam-Bold.ttf" color "#000000" xalign 0.5
+            null height 15
+            viewport xsize 500 ysize 360:
                 mousewheel True
                 draggable True
                 scrollbars "vertical"
+                vscrollbar_unscrollable "hide"
                 text message size 24 kerning 1.5 font "fonts/Kalam-Bold.ttf" color "#000000"
 
         # if cycle == 0:

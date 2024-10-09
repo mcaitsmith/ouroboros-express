@@ -30,7 +30,7 @@ label bargaining_debrief:
 
         # Journal entry with degradation meter high
         call display_journal from _call_display_journal_3
-        $ cycle = 3
+        $ cycle = 4
 
         stop sound
 
@@ -54,7 +54,7 @@ label bargaining_debrief:
 
         # Journal entry with attraction meter high
         call display_journal from _call_display_journal_4
-        $ cycle = 3
+        $ cycle = 4
 
         stop sound
 

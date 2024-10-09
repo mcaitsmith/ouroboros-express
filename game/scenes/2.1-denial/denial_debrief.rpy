@@ -37,7 +37,7 @@ label denial_debrief:
     call display_journal from _call_display_journal
     $ has_journal = True
 
-    $ cycle = 1
+    $ cycle = 2
 
     stop sound
 

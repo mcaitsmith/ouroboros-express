@@ -7,7 +7,7 @@ label meters:
     $ att_meter_darius = 0
     $ att_meter_susurha = 0
     $ dec_meter = 0
-    $ cycle = 0
+    $ cycle = 1
     $ eldritch = False
 
     # Used only for quote of the day. A number to determine 
