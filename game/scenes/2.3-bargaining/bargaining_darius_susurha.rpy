@@ -1,6 +1,6 @@
 label bargaining_darius_susurha:
 
-    call check_overlay from _call_check_overlay_15
+    # call check_overlay from _call_check_overlay_15
     scene lounge with fade
 
     show vivi neutral at left with dissolve :

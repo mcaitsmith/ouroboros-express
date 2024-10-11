@@ -5,7 +5,7 @@ label anger_debrief:
     #Debrief Anger
 
     # LOCATION: cabin
-    call check_overlay from _call_check_overlay_2
+    # call check_overlay from _call_check_overlay_2
     scene cabin with fade
     
     # ??DECAY

@@ -5,7 +5,7 @@ label bargaining_fr2_ava:
     #FREE ROAM 2 - Ava
 
     # LOCATION: diningcar
-    call check_overlay from _call_check_overlay_20
+    # call check_overlay from _call_check_overlay_20
     scene diningcar with fade
 
     # SOUND: cooking, kitchen sounds

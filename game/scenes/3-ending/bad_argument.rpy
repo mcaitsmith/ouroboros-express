@@ -25,7 +25,7 @@ label bad_argument:
 
 
     # LOCATION: observatory
-    call check_overlay from _call_check_overlay_35
+    # call check_overlay from _call_check_overlay_35
     scene observatory with fade
 
     show vivi angry at center_left with dissolve:

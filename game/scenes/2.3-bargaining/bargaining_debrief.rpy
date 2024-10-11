@@ -7,7 +7,7 @@ label bargaining_debrief:
     play music mainmusic
 
     # LOCATION: cabin
-    call check_overlay from _call_check_overlay_16
+    # call check_overlay from _call_check_overlay_16
     scene cabin with fade
 
     # ??DECAY

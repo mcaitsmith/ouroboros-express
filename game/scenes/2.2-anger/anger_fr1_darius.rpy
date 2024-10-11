@@ -5,7 +5,7 @@ label anger_fr1_darius:
     #FREE ROAM 1 - DARIUS 
 
     # LOCATION: lounge
-    call check_overlay from _call_check_overlay_4
+    # call check_overlay from _call_check_overlay_4
     scene lounge with fade
 
     show darius angry at right with dissolve

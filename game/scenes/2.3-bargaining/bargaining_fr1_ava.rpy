@@ -5,7 +5,7 @@ label bargaining_fr1_ava:
     #FREE ROAM 1 - Ava
 
     # LOCATION: observatory
-    call check_overlay from _call_check_overlay_17
+    # call check_overlay from _call_check_overlay_17
     scene observatory with fade
 
     # SOUND: the train on its tracks

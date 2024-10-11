@@ -4,7 +4,7 @@ label depression_fr2_ava:
 
     # FREE ROAM 2 - Ava
     # LOCATION: observatory
-    call check_overlay from _call_check_overlay_31
+    # call check_overlay from _call_check_overlay_31
     scene observatory with fade
 
     show vivi neutral at left with dissolve:

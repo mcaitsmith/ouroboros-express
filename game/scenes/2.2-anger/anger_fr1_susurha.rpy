@@ -5,7 +5,7 @@ label anger_fr1_susurha:
     #FREE ROAM 1 - SUSU'RHA
 
     # LOCATION: dining car
-    call check_overlay from _call_check_overlay_5
+    # call check_overlay from _call_check_overlay_5
     scene diningcar with fade
 
     # VISUAL: screen shakes
