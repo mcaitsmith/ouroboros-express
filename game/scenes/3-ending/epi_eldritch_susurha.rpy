@@ -12,12 +12,14 @@ label epi_eldritch_susurha:
     play sound2 horror loop fadein 1.0
 
     #LOCATION: eldritchlandscape
-    scene eldritch_susurha with Fade(2,2,2)
-    pause 2.0
-    show urshu sad at left with dissolve:
-        xzoom -1.0
 
     if att_meter_susurha > 0:
+
+        scene eldritch_susurha with Fade(2,2,2)
+        pause 2.0
+        show urshu sad at left with dissolve:
+            xzoom -1.0
+
         urshu sad "Despite the rebel prince's burning desire to live free, they could not escape the guilt that bound them to their past decisions."
 
         urshu sad "This growing rumination metastasized into their personal horror, who chained them at the wrists and ankles and dragged them into the furthest depths of the Dark Beyond."
@@ -28,6 +30,11 @@ label epi_eldritch_susurha:
         urshu sad "...a grotesque prisoner, devoid of agency or expression, doomed to suffer for all eternity."
         $ _skipping = True
     else:
+
+        scene black with Fade(2,2,2)
+        pause 2.0
+        show urshu sad at center with dissolve:
+            xzoom -1.0
         urshu sad "Susu'Rha retreated inward aboard the Ouroboros Express, neither giving into their grief nor opening up to the others. What better place for someone in such a transitory phase than the Express itself?"
         $ renpy.choice_for_skipping() # stop skipping
         $ _skipping = False
