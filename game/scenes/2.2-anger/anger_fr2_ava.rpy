@@ -51,7 +51,7 @@ label anger_fr2_ava:
             ava sad "No, Vivienne, perpetual loneliness. We would not wish that even upon our monarchy."
             # SOUND: dart hitting the board
             play sound darts
-            pause 2.0
+            pause 1.0
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
         # OPTION 2 +ATTRACTION
@@ -71,7 +71,7 @@ label anger_fr2_ava:
             ava "Thank you...that means more to us than you know."
             # SOUND: dart hitting the board
             play sound darts
-            pause 2.0
+            pause 1.0
             show ava happy -blush
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
@@ -83,9 +83,12 @@ label anger_fr2_ava:
             ava neutral "We...still struggle to grasp why you have this torture device, but your meaning is clear."
             # SOUND: dart hitting the board
             play sound darts
-            pause 2.0
+            pause 1.0
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
+    show darts_asha with dissolve
+    $ renpy.pause()
+    hide darts_asha with dissolve
     ava happy "Another bullseye. Your turn, little one."
     vivi angry "I thought I asked you to stop calling me that."
     ava sad "Oh, do not take offense at our term of endearment. We are warming up to you."

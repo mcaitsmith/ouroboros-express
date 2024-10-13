@@ -80,7 +80,10 @@ label anger_fr2_darius:
 
             # SOUND: dart lands on board
             play sound darts
-            pause 2.0
+            pause 1.0
+            show darts_darius with dissolve
+            $ renpy.pause()
+            hide darts_darius with dissolve
             darius surprised "Huh. Nice throw. Good... darting."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }

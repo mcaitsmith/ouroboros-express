@@ -68,7 +68,10 @@ label anger_fr2_susurha:
 
             # SOUND: dart hits the board
             play sound darts
-            pause 2.0
+            pause 1.0
+            show darts_susu_1 with dissolve
+            $ renpy.pause()
+            hide darts_susu_1 with dissolve
 
             susurha happy "Mine hit close, does that count for something?"
             vivi happy "Not as much as a bullseye!"
@@ -104,7 +107,10 @@ label anger_fr2_susurha:
             
             # SOUND: dart hits the board and then the floor
             play sound darts
-            pause 2.0
+            pause 1.0
+            show darts_susu_2 with dissolve
+            $ renpy.pause()
+            hide darts_susu_2 with dissolve
 
             vivi angry "Urghhh. Stupid dart."
             susurha happy "Am I supposed to believe that you can't hit the board from this distance?"
