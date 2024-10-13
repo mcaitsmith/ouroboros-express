@@ -19,7 +19,7 @@ label denial_fr1_ava:
     pause 1.0
     
     show ava happy at right
-    vivithinking "Oh, she's noticed me. So imposing~"
+    vivithinking "Oh, she's noticed me. So imposing..."
 
     show ava happy blush with dissolve
 
