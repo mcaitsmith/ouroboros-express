@@ -10,7 +10,7 @@ label epi_eldritch_ava:
 
     #Epilogue/Eldritch/Avatar of Asha
     #LOCATION: eldritchlandscape
-    scene black with Fade(2,2,2)
+    scene eldritch_asha with Fade(2,2,2)
     pause 2.0
     show urshu sad at left with dissolve:
         xzoom -1.0
