@@ -65,7 +65,7 @@ label journal:
         vbox xpos 395 ypos 265:
             text "DAY [cycle]" size 32 font "fonts/Kalam-Bold.ttf" color "#000000" xalign 0.5
             null height 15
-            viewport xsize 500 ysize 360:
+            viewport xsize 520 ysize 360:
                 mousewheel True
                 draggable True
                 scrollbars "vertical"
