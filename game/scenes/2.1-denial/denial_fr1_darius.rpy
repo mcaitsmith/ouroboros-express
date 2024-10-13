@@ -204,7 +204,7 @@ label denial_fr1_darius:
 
             darius neutral "I would still be interested, even if it meant losing the experiences I've had. I suppose in some cases, that would even be a better outcome."
 
-            vivi "That's assuming that this place is really what that conductor claims it is. Which I'm not that sure of, personally."
+            vivi "That's assuming that this place is really what the conductor claims it is. Which I'm not that sure of, personally."
 
             darius neutral "I see."
 
@@ -222,7 +222,7 @@ label denial_fr1_darius:
 
             darius neutral "A clean slate, a new experience... that doesn't sound terrible."
 
-            vivi "That's assuming that this place is really what that conductor claims it is. Which I'm not that sure of, personally."
+            vivi "That's assuming that this place is really what the conductor claims it is. Which I'm not that sure of, personally."
 
             darius neutral "I see."
 
