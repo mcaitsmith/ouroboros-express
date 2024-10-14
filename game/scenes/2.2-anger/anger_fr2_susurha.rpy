@@ -46,7 +46,7 @@ label anger_fr2_susurha:
         "The arrogance on this one. I'd sure love to shut them up.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -87,7 +87,7 @@ label anger_fr2_susurha:
         "Clearly, they're insecure. I'm gonna let them win.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -136,7 +136,7 @@ label anger_fr2_susurha:
         "It was an assignment given to me by my agent.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -157,7 +157,7 @@ label anger_fr2_susurha:
         "I didn't have a choice.":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750
@@ -195,7 +195,7 @@ label anger_fr2_susurha:
     # mica, I believe the above is an action rather than something vivi says. Same w/ option 2
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -222,7 +222,7 @@ label anger_fr2_susurha:
         "(Pierce the idea that it was her fault.)":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -265,7 +265,7 @@ label anger_fr2_susurha:
         "You did what you could. It isn't your fault.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -298,7 +298,7 @@ label anger_fr2_susurha:
         "We got a raw deal. Life is unfair.":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750

@@ -70,7 +70,7 @@ label anger_fr2_darius:
         "Throw a dart while looking straight into Darius' eyes.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -96,7 +96,7 @@ label anger_fr2_darius:
         "Actually...forget it.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -127,7 +127,7 @@ label anger_fr2_darius:
         "If I tell you a secret, will you tell me one of yours?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -150,7 +150,7 @@ label anger_fr2_darius:
         "Sounds like you miss it a little.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

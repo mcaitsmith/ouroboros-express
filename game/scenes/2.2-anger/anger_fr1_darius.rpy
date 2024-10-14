@@ -53,7 +53,7 @@ label anger_fr1_darius:
         "Can you even play this with two people?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -80,7 +80,7 @@ label anger_fr1_darius:
         "You mentioned Urshu. Why bring him up?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -143,7 +143,7 @@ label anger_fr1_darius:
         "That sounds difficult. Like being unmoored.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -166,7 +166,7 @@ label anger_fr1_darius:
         "Well, you don't hear me crying about it.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

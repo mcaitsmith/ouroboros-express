@@ -66,7 +66,7 @@ label bargaining_fr1_darius:
         "I didn't think sarcasm was in your wheelhouse.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -89,7 +89,7 @@ label bargaining_fr1_darius:
         "Can you read ANYTHING?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -126,7 +126,7 @@ label bargaining_fr1_darius:
         "So caring. I wouldn't expect it from you.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -151,7 +151,7 @@ label bargaining_fr1_darius:
         "Okay, enough. I don't need the lecture.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

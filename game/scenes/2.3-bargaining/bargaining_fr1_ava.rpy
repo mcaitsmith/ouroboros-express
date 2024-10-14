@@ -30,7 +30,7 @@ label bargaining_fr1_ava:
         "Who or what is our mysterious train conductor?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -58,7 +58,7 @@ label bargaining_fr1_ava:
         "If you could redo a past event, what would it be?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -104,7 +104,7 @@ label bargaining_fr1_ava:
         "No family?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -124,7 +124,7 @@ label bargaining_fr1_ava:
         "No name?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -156,7 +156,7 @@ label bargaining_fr1_ava:
         "No tears?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -192,7 +192,7 @@ label bargaining_fr1_ava:
         "No men?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850

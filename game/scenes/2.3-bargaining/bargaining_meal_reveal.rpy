@@ -78,7 +78,7 @@ label bargaining_meal_reveal:
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850

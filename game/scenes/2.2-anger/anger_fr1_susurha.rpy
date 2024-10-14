@@ -46,7 +46,7 @@ label anger_fr1_susurha:
         "I'll play.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -62,7 +62,7 @@ label anger_fr1_susurha:
         "I'd be revealing too much.":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750
@@ -106,7 +106,7 @@ label anger_fr1_susurha:
         "Everyone hides something. I'm no exception.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -129,7 +129,7 @@ label anger_fr1_susurha:
         "Me? Hiding? What about you?!":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -158,7 +158,7 @@ label anger_fr1_susurha:
         "I am angry.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -193,7 +193,7 @@ label anger_fr1_susurha:
         "You're the one who's angry.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

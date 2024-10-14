@@ -26,7 +26,7 @@ label depression_fr1_darius:
         "Darius. I could really use someone to talk with right now.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -48,7 +48,7 @@ label depression_fr1_darius:
         "You just push everyone away, don't you?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -107,7 +107,7 @@ label depression_fr1_darius:
         "I'll have what you're having, handsome.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -129,7 +129,7 @@ label depression_fr1_darius:
         "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

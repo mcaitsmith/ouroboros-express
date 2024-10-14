@@ -30,7 +30,7 @@ label bargaining_fr2_ava:
         "I want to cook together...with you.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -72,7 +72,7 @@ label bargaining_fr2_ava:
         "Urshu asked me...":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750
@@ -91,7 +91,7 @@ label bargaining_fr2_ava:
         "Be my sous chef! Together, we'll rule this train." if att_meter_ava >= 40:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -143,7 +143,7 @@ label bargaining_fr2_ava:
         "Croquembouche.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -167,7 +167,7 @@ label bargaining_fr2_ava:
         "Something simple.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -193,7 +193,7 @@ label bargaining_fr2_ava:
         "Soufflé.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -236,7 +236,7 @@ label bargaining_fr2_ava:
         "If we work together?": 
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -259,7 +259,7 @@ label bargaining_fr2_ava:
         "Beating the eggs and sifting the flour for me?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

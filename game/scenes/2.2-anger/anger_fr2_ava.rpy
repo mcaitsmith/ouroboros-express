@@ -39,7 +39,7 @@ label anger_fr2_ava:
         "Amazing.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -58,7 +58,7 @@ label anger_fr2_ava:
         "Awful.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -105,7 +105,7 @@ label anger_fr2_ava:
         "But if you like it...":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750
@@ -124,7 +124,7 @@ label anger_fr2_ava:
         "Don't ever call me that again.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -167,7 +167,7 @@ label anger_fr2_ava:
         "What are your thoughts on our conductor?":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750
@@ -190,7 +190,7 @@ label anger_fr2_ava:
         "What do you want to do with your time left?":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -232,7 +232,7 @@ label anger_fr2_ava:
                 xoffset -500
                 # xoffset -30
                 yoffset -750
-            with { "master" : Dissolve(0.5) }
+            with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
@@ -248,7 +248,7 @@ label anger_fr2_ava:
         "I don't need you to think I'm special.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

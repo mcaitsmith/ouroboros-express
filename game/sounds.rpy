@@ -3,9 +3,9 @@
 # define sound effects & music
 label sounds:
     # define blip = "audio/sfx/blip.ogg"
-    define attchoice = "audio/sfx/attchoice.ogg"
-    define decchoice = "audio/sfx/decchoice.ogg"
-    define attdecchoice = "audio/sfx/attdecchoice.ogg"
+    define attchoice = "audio/sfx/orex_ui_attraction.ogg"
+    define decchoice = "audio/sfx/orex_ui_decay.ogg"
+    define attdecchoice = "audio/sfx/orex_ui_decayattraction.ogg"
     define clock = "audio/sfx/clock.ogg"
     define train = "audio/sfx/train.ogg"
     define glassclink = "audio/sfx/glassclink.ogg"

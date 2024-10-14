@@ -59,7 +59,7 @@ label bargaining_fr2_susurha:
         "She could see down to the essence of a person.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -84,7 +84,7 @@ label bargaining_fr2_susurha:
         "Whatever it was, it skipped over me.":
 
             # play sound decchoice
-            # show decay_icon at right with dissolve:
+            # show decay_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -750
@@ -109,7 +109,7 @@ label bargaining_fr2_susurha:
         "She was a hustler. She knew how to get what she wanted." if att_meter_susurha >= 30:
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -185,7 +185,7 @@ label bargaining_fr2_susurha:
         "Let's try to appeal to Urshu's taste.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -213,7 +213,7 @@ label bargaining_fr2_susurha:
         "We'll just try to cook the best dish we possibly can!":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -243,7 +243,7 @@ label bargaining_fr2_susurha:
         "I don't know. I'll let my Nana's spirit guide me." if att_meter_susurha >= 40:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -340,7 +340,7 @@ label bargaining_fr2_susurha:
         "It needs more spice.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -375,7 +375,7 @@ label bargaining_fr2_susurha:
         "I think it's fine the way it is.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -401,7 +401,7 @@ label bargaining_fr2_susurha:
         "Something?!" if dec_meter >= 30:
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

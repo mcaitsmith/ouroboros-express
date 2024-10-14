@@ -33,7 +33,7 @@ label depression_fr2_susurha:
         "I didn't want to be alone.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -51,7 +51,7 @@ label depression_fr2_susurha:
         "I also needed to see a friendly face." if att_meter_susurha >= 50:
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -71,7 +71,7 @@ label depression_fr2_susurha:
         "I don't...know why.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -115,7 +115,7 @@ label depression_fr2_susurha:
         "I don't want to go.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -135,7 +135,7 @@ label depression_fr2_susurha:
         "Yes.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -152,7 +152,7 @@ label depression_fr2_susurha:
         "No.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -194,7 +194,7 @@ label depression_fr2_susurha:
         "I want to be ME as well.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -214,7 +214,7 @@ label depression_fr2_susurha:
         "I get what you mean." if dec_meter >= 45:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -233,7 +233,7 @@ label depression_fr2_susurha:
         "Nothing can take away who you are." if att_meter_susurha >= 60:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -256,7 +256,7 @@ label depression_fr2_susurha:
         "I know who I am.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

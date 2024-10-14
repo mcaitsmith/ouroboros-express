@@ -36,7 +36,7 @@ label depression_fr2_ava:
         "Really?":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -53,7 +53,7 @@ label depression_fr2_ava:
         "You're pretty ungrateful, huh?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -70,7 +70,7 @@ label depression_fr2_ava:
         "I wish I could have been there for you." if att_meter_ava >= 50:
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -100,7 +100,7 @@ label depression_fr2_ava:
         "But why do you need her to begin with?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -130,7 +130,7 @@ label depression_fr2_ava:
         "If only I had known you in life." if att_meter_ava >= 55:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -174,7 +174,7 @@ label depression_fr2_ava:
         "My family moved around a lot...":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -204,7 +204,7 @@ label depression_fr2_ava:
         "I wrote this haiku in school once." if dec_meter >= 50:
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

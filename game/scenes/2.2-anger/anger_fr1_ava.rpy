@@ -33,7 +33,7 @@ label anger_fr1_ava:
         "The sun card.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -53,7 +53,7 @@ label anger_fr1_ava:
         "The sea monster card.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -71,7 +71,7 @@ label anger_fr1_ava:
         "The big snake card.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -133,7 +133,7 @@ label anger_fr1_ava:
                 xoffset -500
                 # xoffset -30
                 yoffset -750
-            with { "master" : Dissolve(0.5) }
+            with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
 
@@ -159,7 +159,7 @@ label anger_fr1_ava:
         "...I know what you mean about sacrifices.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -185,7 +185,7 @@ label anger_fr1_ava:
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
