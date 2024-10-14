@@ -32,5 +32,7 @@ label sounds:
     define gasp = "audio/sfx/gasp.ogg"
     define footsteps = "audio/sfx/footsteps.ogg"
     define doorslam = "audio/sfx/doorslam.ogg"
+    define ui_mouseover = "audio/sfx/orex_ui_mouseover.ogg"
+    define ui_select = "audio/sfx/orex_ui_select.ogg"
 
     return

@@ -26,6 +26,8 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    hover_sound ui_mouseover
+    activate_sound ui_select
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -225,6 +227,8 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    hover_sound ui_mouseover
+    activate_sound ui_select
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
@@ -271,6 +275,8 @@ style quick_button_text is button_text
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    hover_sound ui_mouseover
+    activate_sound ui_select
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
