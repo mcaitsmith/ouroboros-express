@@ -7,7 +7,7 @@ label anger_susurha_urshu:
         xzoom-1
 
 
-    vivi neutral "This is getting to be too much. This train, these games, Urshu..."
+    vivithinking "This is getting to be too much. This train, these games, Urshu..."
 
 
     vivithinking "I’m sick of it!"
