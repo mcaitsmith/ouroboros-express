@@ -15,7 +15,8 @@ label train_epilogue:
     
     #SERA NOTE - Both Vivi and Urshu should be in train conductor outfits from here.
 
-    show vivi happy at center_left with dissolve:
+    # show vivi happy at center_left with dissolve:
+    show vivi_conductor neutral at center_left with dissolve:
         xzoom -1
     show urshu happy at center_right with dissolve
     
@@ -48,9 +49,10 @@ label train_epilogue:
     $ _skipping = False
     vivi happy "Then hold me close. Don't let go. Our new beginning starts now."
     
-   
+    scene white with Dissolve(3.0)
     
     stop sound fadeout 3.0
+    stop music fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
     $ quick_menu = False # hide quick menu

@@ -1,34 +1,10 @@
 ﻿# The script of the game goes in this file.
 
-# COMMENTING OUT TEXT BLIPS TO BE REPLACED BY VO
-# init python:
-#     renpy.music.register_channel("blip", "sfx")
-#     def beepy_voice_high(event, interact=True, **kwargs):
-#         if not interact:
-#             return
-#         if event == "show_done":
-#             renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg",channel="blip")
-#         elif event == "slow_done":
-#             renpy.sound.stop(channel="blip")
-#     def beepy_voice_medium(event, interact=True, **kwargs):
-#         if not interact:
-#             return
-#         if event == "show_done":
-#             renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg",channel="blip")
-#         elif event == "slow_done":
-#             renpy.sound.stop(channel="blip")
-#     def beepy_voice_low(event, interact=True, **kwargs):
-#         if not interact:
-#             return
-#         if event == "show_done":
-#             renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg",channel="blip")
-#         elif event == "slow_done":
-#             renpy.sound.stop(channel="blip")
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define vivi = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",color="#FFFFFF")
 define vivithinking = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
+define vivi_conductor = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi_conductor",color="#FFFFFF")
 define urshu = Character("Urshu", callback = name_callback, cb_name = "urshu", image="urshu",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define urshudining = Character("Urshu", callback = name_callback, cb_name = "urshudining", image="urshudining",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define ava = Character("Asha", callback = name_callback, cb_name = "ava",image="ava",color="#FFFFFF", namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
@@ -99,6 +75,7 @@ image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprit
 image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
 image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
 image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+image vivi_conductor neutral = At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
 
 # define urshu dining images
 image urshudining neutral = At('images/characters/urshu/urshu dining/urshu_neutral_table.png', sprite_highlight('urshudining'))
