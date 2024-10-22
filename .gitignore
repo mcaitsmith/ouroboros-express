@@ -2,7 +2,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-.icloud
+*.icloud
 
 # Windows-related files
 Thumbs.db
