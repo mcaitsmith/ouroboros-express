@@ -23,8 +23,15 @@ label romance_ava:
         # xpos 0.5
         # linear 0.5 xpos 0.65
         xpos 0.65
+    hide vivi
+    hide ava
+    show asha_vivi hug at center
+    with { "master" : Dissolve(1.0) }
+    pause 2.0
+
     vivi neutral blush "Aren't you afraid?"
-    show ava happy blush
+    # show ava happy blush
+    show asha_vivi hug blush at center
     ava "Not anymore."
     vivi surprised "Oh, Ava! Are you crying?"
     ava "Yes, but with joy. Hold me close. Close your eyes. We will be in this moment forever."

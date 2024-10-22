@@ -11,15 +11,22 @@ label romance_darius:
     show vivi happy at center_left with dissolve :
         xzoom -1
         xpos 0.35
+    hide vivi
+    hide darius
+    show darius_vivi hug at center
+    with { "master" : Dissolve(1.0) }
+    pause 2.0
 
-    show darius surprised blush with dissolve
+    # show darius surprised blush with dissolve
+    show darius_vivi hug blush at center
     darius "Yes?"
     vivi happy blush "Yes."
     vivithinking happy blush "Their hands... those claws. He holds me so delicately."
     vivithinking happy blush "Like they'll never hurt anyone ever again."
     vivi neutral blush "I believe in you, Darius."
     vivi sad "I just wish we'd had a bit more time... seems like our final stop is approaching."
-    show darius happy -blush
+    # show darius happy -blush
+    show darius_vivi hug at center
     darius happy "I'd take these brief moments with you over millennia of the sorry existence I had before."
 
     # VISUAL: the screen shakes, flickering
