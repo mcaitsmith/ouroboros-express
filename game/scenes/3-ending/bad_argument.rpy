@@ -113,7 +113,7 @@ label bad_argument:
 
     show ava sad
 
-    ava sad "What stirs there is made of darkness, Urshunabi. I would be watchful."
+    ava sad "What stirs there is made of darkness, Urshunabi. We would be watchful."
 
     show urshu neutral
 

@@ -152,7 +152,7 @@ label denial_fr2_ava:
             play sound attchoice
 
             vivi sad "Terrifying. I can't imagine how it feels."
-            ava sad "A circular void haunts my every thought. We fear it."
+            ava sad "A circular void haunts our every thought. We fear it."
             show urshu happy at left
             urshu happy "Best not to think too hard about it."
             urshu neutral "So instead..."

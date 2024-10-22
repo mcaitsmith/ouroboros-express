@@ -163,7 +163,7 @@ label depression_fr2_ava:
 
     #END
 
-    ava "I want to know more about your life on Earth. What can you tell us?"
+    ava "We want to know more about your life on Earth. What can you tell us?"
     show ava neutral -blush
 
     # <CHOICE>
