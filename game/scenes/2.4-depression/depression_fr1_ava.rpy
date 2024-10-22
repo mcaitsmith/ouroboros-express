@@ -200,7 +200,7 @@ label depression_fr1_ava:
             show ava surprised -blush
             ava surprised "We represent the goddess, Vivi. We must not profane."
             vivi "Well, since we're dead and all, don't you think you can? Taboo's over, no?"
-            ava "You have given me much to consider. Many thanks."
+            ava "You have given us much to consider. Many thanks."
             vivi "You know where to find me."
             vivithinking "Oh shitballs!! Did I really say that out loud just now?! Cornier than a dad joke!"
             ava happy "We do. Good-bye, Vivi."

@@ -76,7 +76,7 @@ label denial_fr2_darius:
 
             darius sad "Mindflayers and hard alcohol... don't mix."
 
-            vivithinking "They shudder at this. It ripples through their sleek frame like a gentle breeze. Gotta be a story there."
+            vivithinking "They shudder at those last words. It still ripples through their sleek frame like a gentle breeze. Gotta be a story there."
 
             vivi neutral "Mindflayer? Is that what you are?"
 
