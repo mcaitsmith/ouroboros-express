@@ -3,6 +3,7 @@
 label depression_briefing:
 
     # Briefing Depression
+    $ day = 4 # depression
 
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_25

@@ -11,10 +11,7 @@ label introduction:
     # fade in
 
     # LOCATION: cabin
-    scene cabin at train_shake:
-        zoom 1.05
-        xoffset -5
-    with Fade(3.0,1.0,3.0)
+    scene cabin with Fade(3.0,1.0,3.0)
 
     # show cabin at train_shake
 

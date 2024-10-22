@@ -50,21 +50,35 @@ label bargaining_briefing:
                 vivithinking "Wait...what is..."
 
                 # VISUAL: rainbows flash around the room
-                scene lounge with flash
-                scene lounge with flash
-                scene lounge with flash
+                show white with dissolve
+                hide white with dissolve
+                show white with dissolve
+                hide white with dissolve
+                # scene lounge with flash
+                # scene lounge with flash
+                # scene lounge with flash
+                scene lounge at train_shake:
+                    zoom 1.05
+                    xoffset -5
+                # with flash
 
-                show vivi surprised at left
-                vivithinking surprised "The train's shaking. Feels like it's coming apart!"
+                show vivi surprised at left:
+                    xzoom -1.0
+                vivithinking surprised "The train's shaking.. Feels like it's coming apart!"
                 vivithinking "Feels like {i}I{/i} might come apart."
+                show white with dissolve
+                hide white with dissolve
                 vivithinking "That strange light is turning the windows into mirrors but I can't see myself in them, just endless other mirrors reflecting back. And then darkness. Darkness I can {i}feel{/i}."
                 vivithinking sad "Like there's a void closing in around me, swallowing me up, and there are things waiting there... things I don't want to see. Is this what the end feels like?"
                 vivithinking "No, pull yourself together, Vivi. It's all just your imagination. It's just..."
                 # VISUAL: a black vignette closes in on the room
-                scene lounge with flash
-                show lounge blur with dissolve
-                # SOUND: Screams, scary cosmic horror shit
+                # scene lounge with flash
+                show white with dissolve
+                show lounge blur
                 play sound horror
+                hide white with dissolve
+                show vivi surprised
+                # SOUND: Screams, scary cosmic horror shit
                 pause 3.0
 
                 vivithinking surprised "...Yeah, I'm out."
