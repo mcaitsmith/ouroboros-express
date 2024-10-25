@@ -9,7 +9,7 @@ label welcome_meal:
     # fade in
 
     # LOCATION: diningcar
-    play sound train loop
+    play sound amb_bar loop
     scene diningcar with fade
 
     show vivi neutral at left with dissolve :

@@ -5,8 +5,9 @@ label introduction:
     # Introduction
     # We meet Vivi as she is writing her notes. We know that she has been invited to review the Ouroboros Express for her job. Urshu knocks on her cabin door, inviting her to dine.
 
-    # SOUND: train
-    play sound train fadein 3.0 loop
+    # SOUND: bedroom ambience
+    play sound amb_bedroom fadein 3.0 loop
+    play sound char_mirror
 
     # fade in
 
