@@ -7,7 +7,6 @@ label introduction:
 
     # SOUND: bedroom ambience
     play sound amb_bedroom fadein 3.0 loop
-    play sound char_mirror
 
     # fade in
 
