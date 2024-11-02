@@ -6,6 +6,7 @@ label denial_fr2_darius:
 
     #LOCATION: dining car
     scene diningcar with fade
+    play ambience amb_bar fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -15,6 +16,7 @@ label denial_fr2_darius:
     vivithinking "Darius is... drinking? Guess impeccably-dressed cephalopods need a break every now and then."
 
     vivi "Enjoying a drink?"
+    play music dariusmusic
 
     # <CHOICE>
 
@@ -26,8 +28,8 @@ label denial_fr2_darius:
         "Sure.":
 
             vivi "Sure."
-            # SOUND: glassclink
-            play sound glassclink loop
+            # SOUND: glassclink actual glasses linking please
+            #play sound glassclink
             darius neutral "There you are."
 
             vivi "Thank you."
@@ -68,7 +70,7 @@ label denial_fr2_darius:
             darius neutral "Not a fan? That's fine. I can make you a non-alcoholic version."
 
             # SOUND: glassclink
-            # still looping
+
 
             vivi surprised "Fruits? I didn't think you had a sweet tooth."
 
@@ -104,6 +106,12 @@ label denial_fr2_darius:
     darius surprised "Ah! My apologies. Give me a moment."
 
     #SOUND (if possible): Darius sighs/tries to calm themself
+    $ renpy.music.set_volume(0.00, delay=2.60, channel='music')
+    play sound orex_char_telepathy volume 1.0
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
+    pause 2.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
+    $ renpy.music.set_volume(1.00, delay=5.00, channel='music')
 
     darius neutral "There. Feeling better?"
 
@@ -145,11 +153,13 @@ label denial_fr2_darius:
 
     vivi surprised "Straight to business then? Lead on."
 
-    stop sound fadeout 1.0
-
+    stop ambience fadeout 1.0
+    stop music fadeout 1.0
 
     #LOCATION: lounge
     scene lounge with fade
+    play ambience amb_lounge fadein 1.0
+    play music spymusic fadein 1.0 loop
 
     show darius neutral at right with dissolve
 
@@ -170,7 +180,8 @@ label denial_fr2_darius:
         xzoom 1
 
     # SOUND: whistling
-    # skipping this one
+    play sound char_whistle loop
+    $ renpy.music.set_volume(0.20, delay=5.0, channel='sound')
 
     vivithinking "Is he... whistling? This asshole has us captive here and he's whistling?"
 
@@ -183,13 +194,17 @@ label denial_fr2_darius:
     show vivi angry at left with dissolve :
         xzoom -1
 
+    stop sound fadeout 10
+
     darius neutral "Calm yourself."
 
     vivi angry "Can't you just ask your questions now and I'll go off to look for an exit while he's distracted?"
 
     darius angry "That isn't what we agreed on. Besides, you've spoken to him. Do you really think he'd just give up his secrets so easily?"
-
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=5)
+    play sound [ "<silence 3.0>", "audio/sfx/orex_char_telepathy.ogg" ]
     darius neutral "This is the best way to find out more. So please: it may be human nature to be quick to anger, but {i}calm yourself{/i}."
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
 
     vivithinking "Those last words held an undercurrent to them. Like the rumble of an oncoming storm."
 
@@ -205,8 +220,7 @@ label denial_fr2_darius:
     urshu happy "Suppose it's time to retire for the evening. Should do the rounds, ensure nothing is out of order."
 
     # SOUND: teleport
-    play sound teleport
-    pause 2.0
+    play sound teleport_enter volume 1.0
 
     hide urshu with pixellate
 
@@ -223,6 +237,7 @@ label denial_fr2_darius:
 
     # <CHOICE>
     darius happy "Exactly what I wanted to see. Come, let's pursue him."
+    stop music fadeout 15
 
     menu: 
 
@@ -233,6 +248,7 @@ label denial_fr2_darius:
             vivithinking "Aww, their little mouth tentacles curl up when they're happy."
             show vivi angry blush 
             vivithinking "What am I thinking? This isn't the time Vivi!"
+            stop ambience fadeout 1.0
 
             # JUMP TO scene observatory with fade
 
@@ -240,11 +256,13 @@ label denial_fr2_darius:
         "(Wow, they're really on this. Good call teaming up with them, Vivi.)":
 
             vivithinking neutral "Wow, they're really on this. Good call teaming up with them, Vivi."
+            stop ambience fadeout 1.0
 
             # JUMP TO scene observatory with fade
 
     #LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
 
     show darius surprised at right with dissolve
 
@@ -304,9 +322,11 @@ label denial_fr2_darius:
     vivi neutral "Hold on."
 
     vivithinking "Speaking of hunches, I've got one of my own."
+    play sound twinkle volume 0.1
 
     #I'd like Vivi to move to the right here and Darius to move to the left. Is that possible without making them disappear and reappear?
     # PROGRAMMING NOTE: not gonna implement this for now since we don't have a Vivi sprite
+
 
     show vivi at right with move
     show darius at center with move
@@ -314,12 +334,13 @@ label denial_fr2_darius:
         xzoom -1
 
     darius surprised "Ms. Sanssouci, I didn't take you to be one for stargazing. This hardly seems the time for it."
-
+    stop sound fadeout 3.0
     vivi neutral "Shut up."
 
     # SOUND: crash
-    play sound crash
+    play sound crash #are we sure here?
     pause 5.0
+    play music mysterymusic
 
     vivithinking "What... what the fuck is that through the window?"
 
@@ -328,9 +349,14 @@ label denial_fr2_darius:
     vivi surprised "Just... just take a look for me will you? Do you see it? The weird... figure out there?"
 
     darius neutral "Very well. What kind of figure?"
+    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowshelf(frequency=200, gain=2), audio_filter.Lowpass(500)], replace=True, duration=2.0)
+    $ renpy.music.set_volume(0.50, delay=1.00, channel='ambience')
 
     vivi angry "Just look! It's in a dress but it's like it has no torso or anything! It has some sort of mirror thing for a head!"
+    play sound char_mirror
+    pause 8.0
 
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=10.0)
     show darius at right with move
     show vivi at left with move
 
@@ -348,6 +374,8 @@ label denial_fr2_darius:
         xzoom 1
         linear 0.1 ypos 1000
         linear 0.1 ypos 1080
+    play sound teleport_exit
+    stop music fadeout 3.0
     urshu neutral "Interesting! What do you see out there?"
 
     vivi surprised "What the? Get out of the way!"
@@ -368,6 +396,7 @@ label denial_fr2_darius:
     show urshu neutral -blush
 
     urshu neutral "However, I appear when I am needed, my dear! Now, Mr. Wrecker, I believe from your tailing of me tonight that you have something you desire. May it be related to what you see out there, I wonder?"
+    play music dariusmusic loop
 
     show darius surprised at right
     darius surprised "You... Are you not an ambassador of the Eternal Rest?"
@@ -426,17 +455,17 @@ label denial_fr2_darius:
     vivithinking "That sounded... honest. He can't be serious, right? He can't be..."
 
     urshu sad "As for you, Mr. Wrecker, hmm. I promised I wouldn't get involved in any of your journeys, but I believe showing you this will help."
+    play sound twinkle volume 0.5
 
     vivithinking "He stretches out his hand. Darius takes it."
+    stop music fadeout 3.0
 
     #SOUND: twinkle
-    play sound twinkle
     pause 2.0
-    stop sound fadeout 1.0
+    stop sound fadeout 10
 
     #SOUND: horror
-    play sound horror
-    pause 2.0
+    play music horrormusic
 
     darius surprised "What... what is {i}this{/i}?"
 
@@ -474,7 +503,12 @@ label denial_fr2_darius:
     show vivi at left with move
 
     show darius surprised at right
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
+    play sound char_telepathy 
+    stop music fadeout 2.6
+    pause 2.6
     darius surprised "What?"
+    play music confrontationmusic
     show vivi sad blush at left with dissolve:
         xzoom -1
 

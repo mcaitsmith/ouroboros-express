@@ -5,12 +5,9 @@ label denial_fr1_ava_darius:
     #2.1 DENIAL NPC scene - Ava and Darius
 
     #LOCATION: observatory
-
-    #SOUND: train
-    play sound train loop
-
     scene observatory with fade
-
+    play ambience amb_observatory if_changed fadein 1.0
+    play music spymusic
     show vivi angry at left with dissolve:
         xzoom -1       
 
@@ -52,7 +49,11 @@ label denial_fr1_ava_darius:
 
     ava neutral "Satisfied? Do we not see regret in those dark eyes? If your One had lifted you from all doubt, you would not be here with us."
 
+    stop music fadeout 2.6
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
+    play sound char_telepathy
     darius neutral "Enough."
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
 
     show ava angry blush at left
     show darius angry blush at right
@@ -65,8 +66,8 @@ label denial_fr1_ava_darius:
         xzoom 1
 
     vivithinking "I should get outta here. Their silence is making me uncomfortable!"
+    stop ambience fadeout 1.0
 
-    stop sound fadeout 2.0
 
     # JUMP TO: Character Selector 2
     jump denial_cs2

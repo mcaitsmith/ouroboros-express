@@ -13,8 +13,9 @@ label interview_darius:
     show darius neutral at right with dissolve
 
     # SOUND: train
+    play ambience amb_bar
 
-    vivithinking neutral "This one's imposing. Tall and solid, despite that slender frame." 
+    vivithinking neutral "This one's imposing. Tall and solid, despite that slender frame."
     vivithinking sad "But what's this unease I sense?"
     vivi neutral "Hello? Hi, I'm Vivi, nice to meet you. I'm doing an article on the train and I'm interested in your thoughts about it so far."
     darius neutral "Hmm? Sorry, I'm busy."
@@ -23,6 +24,7 @@ label interview_darius:
     vivi angry "Listen, if you don't want to be interviewed, that's fine. But could we not lie about—"
     darius neutral "A question. Do you {i}always{/i} badger other people minding their own business, or is that just for me?"
     vivi neutral "I—I just asked you a simple question!"
+    stop music fadeout 1
     darius neutral "And I responded in kind. Nothing else was needed between us."
     darius neutral "But you reporters are never satisfied, are you?"
     darius neutral "{i}Sigh{/i}. If you make it quick, I'll humor you."
@@ -45,6 +47,9 @@ label interview_darius:
             #JUMP TO vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
     
     vivi neutral "Thank you for your patience, um... Well, we never established your name, did we?"
+
+    stop music
+    play music dariusmusic fadein 5 volume 0.3 #introduce Darius's theme for the first time, slow fade in.
     darius neutral "Just call me Darius."
     vivi neutral "No last name?"
     darius neutral "Does it really matter?"
@@ -146,8 +151,13 @@ label interview_darius:
             vivithinking neutral "Duty, eh? Are they keeping their eye on someone here?"
 
             # JUMP TO vivi neutral "Very interesting, I—"
-
+    
+    
+    play sound [ "<silence 1.6>", "audio/sfx/orex_char_telepathy.ogg" ]
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
+    stop music fadeout 2.6
     vivi neutral "Very interesting, I—"
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     vivithinking sad "It's like a chill just came in. Why is the room so...heavy? Such a sickly atmosphere, like wet clothes sticking to your skin."
     vivi neutral "Thank you, uh...Darius. I'll leave you be."
     vivithinking sad "It's like he doesn't even see me."

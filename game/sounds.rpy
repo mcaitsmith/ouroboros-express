@@ -16,7 +16,8 @@ label sounds:
     define amb_lounge = "audio/sfx/orex_amb_lounge.ogg"
     define amb_observatory = "audio/sfx/orex_amb_observatory.ogg"
     define amb_terminal = "audio/sfx/orex_amb_terminal.ogg"
-    define amb_cosmicdecay = "audio/sfx/orex_amb_cosmicdecay.ogg" # To be used as a layer, dependent on decay level.
+
+    define amb_cosmicdecay = "audio/sfx/orex_amb_cosmicdecay.ogg" # Play on channel cd_ambience. Meant to be layered
 
     #CHARACTER SPECIFIC
     define char_mirror = "audio/sfx/orex_char_mirror.ogg" #For when Vivi sees her face in the mirror
@@ -31,6 +32,7 @@ label sounds:
     define crash = "audio/sfx/orex_fol_crash.ogg"
     define darts = "audio/sfx/orex_fol_dart.ogg"
     #define dining = "audio/sfx/orex_fol_dining.ogg"  #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
+    define dinnerware = "audio/sfx/orex_fol_dinnerware.ogg"  #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
     define doorslam = "audio/sfx/orex_fol_doorslam.ogg"
     #define furniture = "audio/sfx/orex_fol_furniture.ogg" #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
     define glassclink = "audio/sfx/glassclink.ogg"
@@ -40,13 +42,14 @@ label sounds:
     define trainwhistle = "audio/sfx/orex_fol_trainwhistle.ogg"
     define windowopen = "audio/sfx/orex_fol_windowopen.ogg"
     define windowshut = "audio/sfx/orex_fol_windowclose.ogg"
-    define writing = "audio/sfx/writing.ogg"
+    define writing = "audio/sfx/orex_fol_writing.ogg"
 
     #SPECIAL EFFECTS
     define clock = "audio/sfx/orex_sfx_clock.ogg"
     define heartbeat = "audio/sfx/orex_sfx_heartbeat.ogg"   
     define swoosh = "audio/sfx/orex_sfx_swoosh.ogg"
-    define teleport = "audio/sfx/orex_sfx_teleport.ogg"
+    define teleport_enter = "audio/sfx/orex_sfx_teleport.ogg" #used when a charaacter disappears
+    define teleport_exit = "audio/sfx/orex_sfx_teleport.ogg" #used when a character reappears
     define sparkle = "audio/sfx/orex_sfx_sparkle.ogg"
 
     #define sigh = "audio/sfx/sigh.ogg" #REPLACED WITH VO
@@ -58,6 +61,9 @@ label sounds:
     #define gasp = "audio/sfx/gasp.ogg" #UNUSED/OUTDATED
     #define footsteps = "audio/sfx/footsteps.ogg" #UNUSED/OUTDATED
     # define blip = "audio/sfx/blip.ogg" #UNUSED/OUTDATED
+
+    #FILTERS
+    define audio_filter = renpy.audio.filter
 
    
 

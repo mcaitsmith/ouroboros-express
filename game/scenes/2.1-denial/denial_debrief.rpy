@@ -6,6 +6,8 @@ label denial_debrief:
 
     #LOCATION: cabin
     scene cabin with fade
+    stop music fadeout 5.0
+    play ambience amb_bedroom fadein 1.0
 
     show vivi angry at left with dissolve:
         xzoom -1
@@ -28,7 +30,7 @@ label denial_debrief:
 
     vivi neutral "But, he might be right. Might as well use the journal."
 
-    play sound writing
+    play sound writing volume 0.5
 
     $ message = "This is real.\nIt doesn't make sense but it's all\nreally happening.\nThere was no way off the train.\nHow the hell did I die?\nI thought I'd leave a mark on the world\nbefore I left.\nOr at least someone special.\nIt's all so frustrating.\nThe conductor is the worst, acting like\nthis is a game. THIS IS OUR LIVES!\n\nAt least I'm not the only one\ngoing through this."
 
@@ -39,21 +41,21 @@ label denial_debrief:
 
     $ cycle = 2
 
-    stop sound
 
     # "This is real. It doesn't make sense but it's all really happening. There was no way off the train. How the hell did I die? I thought I'd leave a mark on the world before I left. Or at least someone special. It's all so frustrating. The conductor is the worst, acting like this is a game. THIS IS OUR LIVES! At least I'm not the only one going through this."
 
     stop music fadeout 1.0
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
 
     scene black with fade
 
     "New features have become available in the tutorial. Access from the Settings option in the main menu."
 
     scene clockanger with fade
-    play sound clock loop
-
-    pause 5.0
-    stop sound fadeout 2.0
+    stop ambience fadeout 1.0
+    play sound clock
+    pause 3.0
+    stop sound fadeout 5.0
 
     play music mainmusic volume 0.5 # start main track
 

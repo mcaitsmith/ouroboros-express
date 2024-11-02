@@ -12,21 +12,29 @@ define darius = Character("Darius", callback = name_callback, cb_name = "darius"
 define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susurha",image="susurha",color="#FFFFFF", namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 
 ###MUSIC
-#overworld music
+#TITLE MUSIC
 # define titlemusic = "audio/music/lavenders blue.ogg"
+
+#MOOD MUSIC
 define mainmusic = "audio/music/orex_mx_main.ogg"
 define mysterymusic = "audio/music/orex_mx_mystery.ogg"
+define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg"
 define horrormusic = "audio/music/orex_mx_horror.ogg"
-#define peacefulmusic = "audio/music/orex_mx_peaceful.ogg" #unfinished music, coming soon
+define peacefulmusic = "audio/music/orex_mx_peaceful.ogg" 
+define confrontationmusic = "audio/music/orex_mx_mystery.ogg"
+define spymusic = "audio/music/orex_mx_mysterypiano.ogg"
 
-#character themes
-#define susumusic = "audio/music/orex_mx_susu.ogg"
-#define dariusmusic = "audio/music/orex_mx_darius.ogg"
-#define ashamusic = "audio/music/orex_mx_asha.ogg"
+#MUSIC SEQUENCES
+define revealmusic = "audio/music/orex_mx_mystery.ogg"
 
-#ending themes
+#CHARACTER THEMES
+define susumusic = "audio/music/orex_mx_susu.ogg" 
+define dariusmusic = "audio/music/orex_mx_darius.ogg"
+define ashamusic = "audio/music/orex_mx_asha.ogg"
+
+#ENDING THEMES
 define goodendmusic = "audio/music/Good Ending.ogg"
-define badendmusic = "audio/music/orex_mx_.ogg"
+define badendmusic = "audio/music/orex_mx_cosmicself.ogg"
 define finalemusic = "audio/music/orex_mx_finale.ogg"
 
 

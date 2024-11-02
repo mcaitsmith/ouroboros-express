@@ -6,6 +6,7 @@ label denial_cs1:
 
     #LOCATION: cabin
     # scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
 
     # show vivi neutral at left with dissolve
 
@@ -13,6 +14,7 @@ label denial_cs1:
 
     # <CHOICE>
     vivi neutral "But which passenger should I talk to?"
+    stop music fadeout 5.0
 
     menu:
 
@@ -23,6 +25,7 @@ label denial_cs1:
 
             vivi happy "Who better to help me than a goddess? She's gotta know where this train is going and how to get off. I think she's in the observatory."
             #JUMP to Free roam 1 / Avatar of Asha
+            stop ambience fadeout 1.0
             jump denial_fr1_ava
 
     # OPTION 2
@@ -32,6 +35,7 @@ label denial_cs1:
 
             vivi happy "That Darius looks like they would understand what's going on. Maybe they know where this train is going. I think they're in the lounge."
             #JUMP TO: Free roam 1 / Darius Wrecker
+            stop ambience fadeout 1.0
             jump denial_fr1_darius
 
     # OPTION 3
@@ -41,4 +45,5 @@ label denial_cs1:
 
             vivi happy "The druid seemed easy to talk to. Maybe they can help me figure out what's going on. I think they're in the dining car."
             #JUMP to Free roam 1 / Susu'Rha Balrinn
+            stop ambience fadeout 1.0
             jump denial_fr1_susurha
