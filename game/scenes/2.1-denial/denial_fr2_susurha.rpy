@@ -343,7 +343,12 @@ label denial_fr2_susurha:
 
     stop music fadeout 0.5
     vivithinking "I CAN'T BREATHE!"
-    play sound char_terror 
+    $ renpy.music.set_volume(0.25, delay=1.0, channel='ambience')
+    $ renpy.music.set_volume(0.25, delay=1.0, channel='cd_ambience')
+    play sound char_terror
+    pause 5
+    $ renpy.music.set_volume(1.0, delay=3.5, channel='ambience')
+    $ renpy.music.set_volume(1.0, delay=3.5, channel='cd_ambience')
 
     vivithinking "It's reaching out to me..."
 
@@ -395,6 +400,7 @@ label denial_fr2_susurha:
     vivithinking "Oh baby. Caught between hell and a better place."
 
     vivithinking "Ugh...I need a drink."
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
     stop ambience fadeout 1.0
     #  JUMP TO: Debrief Denial.
     jump denial_debrief

@@ -53,6 +53,7 @@ label denial_debrief:
 
     scene clockanger with fade
     stop ambience fadeout 1.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True)
     play sound clock
     pause 3.0
     stop sound fadeout 5.0

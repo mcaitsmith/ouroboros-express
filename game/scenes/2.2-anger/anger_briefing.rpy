@@ -8,6 +8,7 @@ label anger_briefing:
     # call check_overlay from _call_check_overlay
     scene cabin with fade
     play ambience amb_bedroom if_changed fadein 1.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True)
 
     show vivi neutral at left with dissolve:
         xzoom -1
