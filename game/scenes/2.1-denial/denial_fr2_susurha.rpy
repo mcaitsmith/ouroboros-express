@@ -343,8 +343,8 @@ label denial_fr2_susurha:
 
     stop music fadeout 0.5
     vivithinking "I CAN'T BREATHE!"
-    $ renpy.music.set_volume(0.25, delay=1.0, channel='ambience')
-    $ renpy.music.set_volume(0.25, delay=1.0, channel='cd_ambience')
+    $ renpy.music.set_volume(0.25, delay=0.1, channel='ambience')
+    $ renpy.music.set_volume(0.25, delay=0.1, channel='cd_ambience')
     play sound char_terror
     pause 5
     $ renpy.music.set_volume(1.0, delay=3.5, channel='ambience')
@@ -359,8 +359,9 @@ label denial_fr2_susurha:
 
     #SOUND: The sounds of chairs clashing and Vivi and Susu'Rha hitting the floor.
     play sound crash
-    pause 5.0
+    pause 2.0
     #VISUAL: The screen shakes.
+    play sound cineboom
     show observatory with hpunch
     #SOUND: The window slams shut.
     play sound windowshut
@@ -371,7 +372,8 @@ label denial_fr2_susurha:
         xzoom 1
         linear 0.3 ypos 1000
         linear 0.3 ypos 1200
-
+    play sound cineboom
+    
     vivithinking "I can breathe again!"
     play music mysterymusic
     show vivi surprised at center with dissolve:

@@ -13,6 +13,7 @@ label anger_briefing:
     show vivi neutral at left with dissolve:
         xzoom -1
 
+    play sound swoosh
     show urshu neutral at right with dissolve
 
     urshu "Good cosmic morning, Miss Sanssouci!"

@@ -7,11 +7,13 @@ label anger_fr2_darius:
     # LOCATION: dining car
     # call check_overlay from _call_check_overlay_7
     scene diningcar with fade
+    play ambience amb_bar fadein 1.0
 
     show vivi happy at left with dissolve:
         xzoom -1
 
     vivithinking neutral "The heat he gives off is a trail that's easy to follow. I hope Darius doesn't mind that I followed him to the dining car."
+    stop music fadeout 10.0
 
     show darius neutral at right with dissolve
 
@@ -69,12 +71,14 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "Throw a dart while looking straight into Darius' eyes.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             pause 1.0
 
@@ -95,12 +99,14 @@ label anger_fr2_darius:
     # OPTION 2 +DECAY
         "Actually...forget it.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Actually...forget it."
             hide decay_icon
@@ -113,6 +119,7 @@ label anger_fr2_darius:
             # JUMP TO: vivi neutral "I want to know what's on your mind."
         
     vivi neutral "I want to know what's on your mind."
+    play music dariustheme fadein 10.0
     darius angry "Fine. You've pestered me enough. My purpose was clear and simple: find heretics. Break them. Consign their souls to the Lord of Eternal Rest." 
     darius angry "That is what's on my mind. Now and always."
     darius angry "You wanted to know. Now, you know."
@@ -126,12 +133,14 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "If I tell you a secret, will you tell me one of yours?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "If I tell you a secret, will you tell me one of yours?"
             hide attraction_icon
@@ -149,12 +158,14 @@ label anger_fr2_darius:
     # OPTION 2 +DECAY
         "Sounds like you miss it a little.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Sounds like you miss it a little."
             hide decay_icon
@@ -179,5 +190,6 @@ label anger_fr2_darius:
 
     # vivi exits
     hide vivi with dissolve
+    stop ambience fadeout 1.0
 
     jump anger_urshu_darius

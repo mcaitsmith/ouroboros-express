@@ -121,7 +121,7 @@ label reveal:
     # EFFECT: Brighten or distort the display
     show diningcar at bright with dissolve
     stop ambience fadeout 1.0
-    play ambience amb_cosmicdecay fadein 1.0 volume 0.75 
+    play cd_ambience amb_cosmicdecay fadein 1.0 volume 0.75 
     # SOUND: heartbeat
     $ renpy.music.set_volume(0.00, delay=0.5, channel='music')
     play sound heartbeat
@@ -144,10 +144,17 @@ label reveal:
     vivithinking sad "Bright...like a mirror..."
 
     # SOUND: crash
-    play sound crash
-    pause 6.0
-
     stop music fadeout 1.0
+    play sound crash
+    pause 2.0
+    stop cd_ambience fadeout 1.0
+    stop ambience fadeout 1.0
+    play sound char_mirror volume 0.5
+    pause 4.0
+    stop sound fadeout 4.0
+    pause 4.0
+
+
 
     scene clockdenial with fade
     play sound clock
