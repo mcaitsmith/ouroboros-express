@@ -343,7 +343,7 @@ label denial_fr2_susurha:
 
     stop music fadeout 0.5
     vivithinking "I CAN'T BREATHE!"
-    play sound heartbeat
+    play sound char_terror 
 
     vivithinking "It's reaching out to me..."
 

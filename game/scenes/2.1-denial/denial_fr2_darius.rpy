@@ -518,6 +518,7 @@ label denial_fr2_darius:
 
     #VISUAL: screen shake
     show observatory with hpunch
+    play sound cineboom
 
     darius angry "I AM AN INQUISITOR OF THE LORD—"
 
@@ -525,6 +526,7 @@ label denial_fr2_darius:
 
     #VISUAL: screen shake
     show observatory with hpunch
+    play sound cineboom
 
     # pause
     pause 1.0

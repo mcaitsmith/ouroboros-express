@@ -21,6 +21,7 @@ label sounds:
 
     #CHARACTER SPECIFIC
     define char_mirror = "audio/sfx/orex_char_mirror.ogg" #For when Vivi sees her face in the mirror
+    define char_terror = "audio/sfx/orex_char_terror.ogg"
     define char_telepathy = "audio/sfx/orex_char_telepathy.ogg" #For when Darius uses his telepathic powers
     define char_whistle = "audio/sfx/orex_char_whistle.ogg" #For when Urshu whistles
 
@@ -48,9 +49,10 @@ label sounds:
     define clock = "audio/sfx/orex_sfx_clock.ogg"
     define heartbeat = "audio/sfx/orex_sfx_heartbeat.ogg"   
     define swoosh = "audio/sfx/orex_sfx_swoosh.ogg"
-    define teleport_enter = "audio/sfx/orex_sfx_teleport.ogg" #used when a charaacter disappears
-    define teleport_exit = "audio/sfx/orex_sfx_teleport.ogg" #used when a character reappears
+    define teleport_enter = "audio/sfx/orex_sfx_teleportenter.ogg" #used when a charaacter disappears
+    define teleport_exit = "audio/sfx/orex_sfx_teleportexit.ogg" #used when a character reappears
     define sparkle = "audio/sfx/orex_sfx_sparkle.ogg"
+    define cineboom = "audio/sfx/orex_sfx_cineboom.ogg" #screenshake fun!
 
     #define sigh = "audio/sfx/sigh.ogg" #REPLACED WITH VO
     # define scoff = "audio/sfx/scoff.ogg" #REPLACED WITH VO
