@@ -1363,6 +1363,7 @@ style radio_button:
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
+    yoffset -10
 
 style check_vbox:
     spacing gui.pref_button_spacing
@@ -1373,6 +1374,7 @@ style check_button:
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+    yoffset -10
 
 style slider_slider:
     xsize 525
