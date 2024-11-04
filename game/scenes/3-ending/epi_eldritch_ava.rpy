@@ -5,8 +5,8 @@ label epi_eldritch_ava:
     stop music fadeout 2.0
     pause 2.0
     scene black with fade
-    play sound train loop fadein 1.0
-    play sound2 horror loop fadein 1.0
+    #play sound train loop fadein 1.0
+    #play sound2 horror loop fadein 1.0
 
     #Epilogue/Eldritch/Avatar of Asha
     #LOCATION: eldritchlandscape

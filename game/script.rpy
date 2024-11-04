@@ -21,7 +21,7 @@ define mysterymusic = "audio/music/orex_mx_mystery.ogg"
 define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg"
 define horrormusic = "audio/music/orex_mx_horror.ogg"
 define peacefulmusic = "audio/music/orex_mx_peaceful.ogg"  
-define confrontationmusic = "audio/music/orex_mx_mystery.ogg" #tense, dramatic
+define confrontationmusic = "audio/music/orex_mx_confrontation.ogg" #tense, dramatic
 define spymusic = "audio/music/orex_mx_mystery.ogg" #suspensful spy music
 
 #MUSIC SEQUENCES

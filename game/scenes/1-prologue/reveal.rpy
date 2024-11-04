@@ -6,12 +6,13 @@ label reveal:
     # LOCATION: diningcar
     # pixellate transition since teleport!
     scene diningcar with pixellate
+    play ambience amb_bar fadein 3.0
+    pause 3.0
 
     show vivi surprised at center_left:
         xzoom -1
     with dissolve
     play sound teleport_exit
-    play ambience amb_bar fadein 3.0
     vivi "{i}*cough* *cough*{/i}"
 
     show darius surprised at right with dissolve

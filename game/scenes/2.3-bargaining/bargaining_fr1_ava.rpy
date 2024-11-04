@@ -9,7 +9,7 @@ label bargaining_fr1_ava:
     scene observatory with fade
 
     # SOUND: the train on its tracks
-    play sound train
+    #play sound train
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -82,7 +82,7 @@ label bargaining_fr1_ava:
 
             #JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
-    play sound sigh # Asha sighing
+    #play sound sigh # Asha sighing
     pause 2.0
     vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
     ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men...even tears."

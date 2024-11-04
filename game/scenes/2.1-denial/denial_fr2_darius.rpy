@@ -29,7 +29,7 @@ label denial_fr2_darius:
 
             vivi "Sure."
             # SOUND: glassclink actual glasses linking please
-            #play sound glassclink
+            play sound glassclink
             darius neutral "There you are."
 
             vivi "Thank you."

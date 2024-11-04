@@ -6,7 +6,7 @@ label bargaining_asha_urshu :
 
 
     #SOUND: train
-    play sound train
+    #play sound train
 
     show vivi angry at left :
         xzoom -1

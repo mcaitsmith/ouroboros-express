@@ -5,7 +5,7 @@ label depression_npc_group_scene:
     scene diningcar with fade
 
     #SOUND: train
-    play sound train
+    #play sound train
 
 
     show vivi neutral at left with dissolve:

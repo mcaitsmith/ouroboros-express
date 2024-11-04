@@ -33,10 +33,11 @@ label sounds:
     define crash = "audio/sfx/orex_fol_crash.ogg"
     define darts = "audio/sfx/orex_fol_dart.ogg"
     #define dining = "audio/sfx/orex_fol_dining.ogg"  #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
-    define dinnerware = "audio/sfx/orex_fol_dinnerware.ogg"  #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
+    define dinnerware = "audio/sfx/orex_fol_dinnerware.ogg" 
     define doorslam = "audio/sfx/orex_fol_doorslam.ogg"
     #define furniture = "audio/sfx/orex_fol_furniture.ogg" #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
-    define glassclink = "audio/sfx/glassclink.ogg"
+    define glassclink = "audio/sfx/orex_fol_glassclink.ogg"
+    define drinkstir = "audio/sfx/orex_fol_drinkstir.ogg"
     define knock = "audio/sfx/orex_fol_knock.ogg"
     define shuffle = "audio/sfx/orex_fol_shuffle.ogg"
     define snap = "audio/sfx/orex_fol_snap.ogg"
@@ -47,7 +48,7 @@ label sounds:
 
     #SPECIAL EFFECTS
     define clock = "audio/sfx/orex_sfx_clock.ogg"
-    define heartbeat = "audio/sfx/orex_sfx_heartbeat.ogg"   
+    define heartbeat = "audio/sfx/orex_sfx_heartbeat.ogg"
     define swoosh = "audio/sfx/orex_sfx_swoosh.ogg"
     define teleport_enter = "audio/sfx/orex_sfx_teleportenter.ogg" #used when a charaacter disappears
     define teleport_exit = "audio/sfx/orex_sfx_teleportexit.ogg" #used when a character reappears
@@ -55,19 +56,18 @@ label sounds:
     define cineboom = "audio/sfx/orex_sfx_cineboom.ogg" #screenshake fun!
     define trainshake = "audio/sfx/orex_sfx_trainshake.ogg" #more screenshake fun!
 
-    #define sigh = "audio/sfx/sigh.ogg" #REPLACED WITH VO
-    # define scoff = "audio/sfx/scoff.ogg" #REPLACED WITH VO
-    # define laugh = "audio/sfx/laugh.ogg" #REPLACED WITH VO
+    
+    #TO BE DEPRECATED:
+    define sigh = "audio/sfx/sigh.ogg" 
+    define horror = "audio/music/orex_mx_horror.ogg" #to be phased out, leaving definition to avoid bugs
+    define train = "audio/sfx/orex_sfx_trainshake.ogg" #to be phased out, leaving definition to avoid bugs
+    # define scoff = "audio/sfx/scoff.ogg" 
+    # define laugh = "audio/sfx/laugh.ogg"
+    #define gasp = "audio/sfx/gasp.ogg"
+    #define footsteps = "audio/sfx/footsteps.ogg"
+    # define blip = "audio/sfx/blip.ogg"
 
-    #define horror = "audio/sfx/horror.ogg" #UNUSED/OUTDATED
-    #define train = "audio/sfx/train.ogg" #UNUSED/OUTDATED
-    #define gasp = "audio/sfx/gasp.ogg" #UNUSED/OUTDATED
-    #define footsteps = "audio/sfx/footsteps.ogg" #UNUSED/OUTDATED
-    # define blip = "audio/sfx/blip.ogg" #UNUSED/OUTDATED
-
-    #FILTERS
+    #FILTER
     define audio_filter = renpy.audio.filter
-
-   
 
     return

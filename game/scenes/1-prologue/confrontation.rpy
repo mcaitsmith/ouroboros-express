@@ -53,7 +53,7 @@ label confrontation:
     vivi sad "I..."
     vivi sad "We're..."
     urshu angry "Say it!"
-    stop music fadeout 0.1
+    stop music fadeout 0.5
     vivi sad "Dead! We're all dead! Except for you."
     urshu happy "Well done, Miss Sanssouci. Well done."
 

@@ -5,7 +5,7 @@ label depression_asha_susurha:
     scene lounge with fade
 
     #SOUND: train
-    play sound train
+    #play sound train
 
     show vivi neutral at left : 
         xzoom -1

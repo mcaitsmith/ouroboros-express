@@ -187,7 +187,7 @@ label bargaining_briefing:
     urshu neutral "Please, sit. Here, I have a cup for you."
 
     # SOUND: glassclink
-    play sound glassclink
+    play sound drinkstir
     pause 5.0
 
     vivi neutral "You... Of course, you knew." 

@@ -5,7 +5,7 @@ label interview_ava:
     # Interviews / Avatar of Asha
 
     # LOCATION: diningcar
-    play ambience amb_bar fadein 3.0
+    play ambience amb_bar if_changed fadein 3.0
     # scene diningcar with fade
 
     show ava neutral at right with dissolve:

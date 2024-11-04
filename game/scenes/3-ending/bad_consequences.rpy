@@ -15,7 +15,7 @@ label bad_consequences:
     vivi neutral "But what...what is that? A mirror?"
 
     # SOUND: horror
-    play sound horror loop
+    play music horrormusic loop
 
     vivi sad "No! It's her. The monster. The—"
     vivi sad "No, don't come out of the mirror! Stop! No!"

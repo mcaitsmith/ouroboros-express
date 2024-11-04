@@ -9,7 +9,7 @@ label depression_fr1_ava:
     scene diningcar with fade
 
     # SOUND: train
-    play sound train
+    #play sound train
 
     show ava neutral at right with dissolve
     show vivi neutral at center with dissolve

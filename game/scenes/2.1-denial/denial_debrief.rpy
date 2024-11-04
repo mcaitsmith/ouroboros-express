@@ -7,7 +7,7 @@ label denial_debrief:
     #LOCATION: cabin
     scene cabin with fade
     stop music fadeout 5.0
-    play ambience amb_bedroom fadein 1.0
+    play ambience amb_bedroom if_changed fadein 1.0
 
     show vivi angry at left with dissolve:
         xzoom -1
