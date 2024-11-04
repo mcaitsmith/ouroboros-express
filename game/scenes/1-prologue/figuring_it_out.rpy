@@ -6,14 +6,19 @@ label figuring_it_out:
 
     # LOCATION: cabin 
     scene cabin with fade
+    stop music fadeout 2.0
+    play ambience amb_bedroom fadein 2.0
+
 
     show vivi neutral at left with dissolve:
         xzoom -1
 
     vivithinking angry "My head's spinning. This is not normal. Something's not okay."
     vivithinking sad "Am I...okay?"
+    play music mysterymusicpiano loop
     vivithinking neutral "I'm missing something. I must be."
     vivithinking neutral "Fine, let's look at the facts, shall we? I wish I had a working voice recorder. Or a blank wall and lots of red string."
+
 
     # <CHOICE>
     # NOTE: Set up a conditional: player should exhaust Options 1-3 before 4 appears
@@ -84,11 +89,15 @@ label figuring_it_out:
                 vivithinking neutral "So, the facts: This is not normal. This is not a normal, human existence."
                 vivithinking neutral "And if I'm not hallucinating or having an absinthe-soaked bender in the Paris catacombs...again..."
                 vivithinking neutral "Then this is another plane of existence."
-                
+                stop music fadeout 1.0
+                $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
+                play sound heartbeat
+                pause 3.0
+                $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
                 # EFFECT: pixellate
-                show cabin with pixellate
-
+                show cabin with pixellate          
                 vivithinking surprised "Am I...not {i}alive{/i}?"
+
 
                 # JUMP to vivi "Dead? Really?"
         
@@ -106,4 +115,5 @@ label figuring_it_out:
     # button text: Find Urshu.
     # EFFECT: fade out
     # JUMP TO: Confrontation
+    stop ambience fadeout 1.0
     jump confrontation

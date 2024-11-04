@@ -6,6 +6,9 @@ label interview_susurha:
 
     # LOCATION: lounge
     # scene diningcar with fade
+    play ambience amb_bar
+    play music mainmusic loop volume 0.2
+
     show susurha neutral with dissolve
 
     show vivi at left with dissolve:
@@ -28,6 +31,7 @@ label interview_susurha:
     susurha neutral "I am the druid, Susu'Rha of Balrinn. Balrinn is my surname."
     vivi neutral "I'm Vivienne Sanssouci, but everyone calls me Vivi."
     susurha neutral "Vivi...Vivi..."
+    play sound sparkle volume 0.5
     susurha happy "Like Bon Vivant!"
     vivithinking neutral "Bon vivant - one fond of good living eh? I like that."
     vivithinking sad "Even if it hasn't always been true..."
@@ -105,6 +109,7 @@ label interview_susurha:
             susurha neutral "Oh, really? Take a seat then."
             vivi neutral "I will."
             vivithinking neutral "The seat cushions are warm."
+            play sound sparkle
             vivithinking neutral "Oh man. I could fall asleep."
             susurha happy "There you go."
             vivi happy "This is actually kind of nice."
@@ -118,6 +123,7 @@ label interview_susurha:
             vivi neutral "I can relax! This just isn't the time."
             susurha happy "There is always time to lay back and relax."
             susurha neutral "If you let the stress of everything get to you, you'll age like milk in the blistering sun."
+            play sound sparkle
             vivi angry "Look, my skin's already screwed up by an all-American cocktail of pollution and overpriced creams. I don't care what it looks like anymore."
             vivithinking neutral "Well, except when I'm popping a zit..."     
             vivi angry "I just came here to get this assignment done, not get a self-care lecture from a talking lizard."
@@ -183,6 +189,7 @@ label interview_susurha:
     susurha neutral "Ah, well, please try to enjoy the trip while it lasts."
     vivithinking surprised "Wait, that's it?"
     vivithinking neutral "All that talk and nothing was actually said!"
+    play sound sparkle volume 0.5
     susurha neutral "Perhaps we'll chat again. I'd love to know more about the person behind that disarming smile."
     vivithinking neutral blush "Now, they're charming me?!"
     vivithinking neutral blush "And did I even smile? How is it disarming?"

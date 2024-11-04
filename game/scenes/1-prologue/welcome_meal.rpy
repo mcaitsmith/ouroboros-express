@@ -9,7 +9,8 @@ label welcome_meal:
     # fade in
 
     # LOCATION: diningcar
-    play sound train loop
+    play ambience amb_bar loop
+    play music mainmusic loop
     scene diningcar with fade
 
     show vivi neutral at left with dissolve :
@@ -18,6 +19,7 @@ label welcome_meal:
     show urshu neutral at right with dissolve
 
     urshu neutral "Welcome to the dining car. The food will be out shortly."
+    play sound dinnerware
     vivi neutral "It all smells del—"
 
     show vivi surprised at left

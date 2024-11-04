@@ -7,10 +7,13 @@ label anger_briefing:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True)
 
     show vivi neutral at left with dissolve:
         xzoom -1
 
+    play sound swoosh
     show urshu neutral at right with dissolve
 
     urshu "Good cosmic morning, Miss Sanssouci!"
@@ -43,7 +46,7 @@ label anger_briefing:
 
             vivi angry "I don't have time or patience, patience or time! Get me, Urshu?!"
             # SOUND: urshu sighs
-            play sound sigh
+            #play sound sigh
             pause 4.0
             urshu neutral "Patience enough to repeat yourself."
             vivi angry "What was that?" 

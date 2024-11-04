@@ -6,6 +6,7 @@ label denial_cs2:
 
     #LOCATION: cabin
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -23,10 +24,15 @@ label denial_cs2:
     show cabin with dissolve
 
     vivi sad "This can't be happening."
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
+    play sound heartbeat
+    pause 5.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
     vivi angry "It can't end like this."
 
     # <CHOICE>
     vivi neutral "I should go talk to someone else. I can't be the only one who wants off this ride."
+    stop music fadeout 5.0
 
     # Note that whoever you talked to in free roam 1 should be unavailable as an option.
 
@@ -36,6 +42,7 @@ label denial_cs2:
         "Avatar of Asha" if fr1_denial_choice != "Ava":
 
             vivi happy "I should try the goddess. I think she's in the observatory."
+            stop ambience fadeout 1.0
             #JUMP TO: Free Roam 2 / Avatar of Asha
             jump denial_fr2_ava
 
@@ -43,6 +50,7 @@ label denial_cs2:
         "Darius Wrecker" if fr1_denial_choice != "Darius":
 
             vivi neutral "I have a feeling Darius knows more than he's letting on. I believe he's in the dining car."
+            stop ambience fadeout 1.0
             #JUMP TO: Free Roam 2 / Inquisitor Darius Wrecker
             jump denial_fr2_darius
 
@@ -50,5 +58,6 @@ label denial_cs2:
         "Susu'Rha Balrinn" if fr1_denial_choice != "Susu'Rha":
 
             vivi neutral "I feel like the druid wants out too. Maybe they can help me figure this all out. I think they're in the lounge."
+            stop ambience fadeout 1.0
             #JUMP TO: Free Roam 2 / Susu'Rha Balrinn
             jump denial_fr2_susurha

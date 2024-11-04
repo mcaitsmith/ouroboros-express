@@ -6,6 +6,7 @@ label denial_fr2_susurha:
 
     #LOCATION: Lounge
     scene lounge with fade
+    play ambience amb_lounge
 
     vivithinking "This train is driving me insane. I refuse to play into the conductor's games."
 
@@ -17,6 +18,7 @@ label denial_fr2_susurha:
     vivi "What are you doing?"
 
     show susurha neutral at right with dissolve
+    play music susumusic loop fadein 3.0
 
     susurha "What does it look like I'm doing at the moment? I'm deep in the meditative process of trying not to think about the circumstances that surround me."
 
@@ -43,7 +45,10 @@ label denial_fr2_susurha:
     #OPTION 2 +ATTRACTION
         "I'd love to.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi "I'd love to."
             vivithinking "The way they slid that chair my way with ease..."
@@ -74,7 +79,10 @@ label denial_fr2_susurha:
     #OPTION 1 +ATTRACTION
         "This place freaks me out.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
         
             vivi "This place freaks me out."
             susurha angry "I feel that in my bones. Oh, this place worms its way down my spine like a spider in the night."
@@ -132,10 +140,13 @@ label denial_fr2_susurha:
     susurha happy "It's a date, my dove."
 
     vivithinking surprised "Whoa - I didn't expect them to literally drag me along!"
-
-
+    stop music fadeout 1.0
+    play sound swoosh
+    stop ambience fadeout 1.0
     #LOCATION: Observatory
     scene observatory with fade
+    play music mainmusic
+    play ambience amb_observatory fadein 1.0
 
     show susurha surprised at right with dissolve
     show vivi surprised at left with dissolve :
@@ -157,7 +168,10 @@ label denial_fr2_susurha:
     #OPTION 1 +ATTRACTION
         "Worried?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi "Worried?"
             show susurha neutral
@@ -195,7 +209,7 @@ label denial_fr2_susurha:
 
     # SOUND: Vivi and Susu'Rha exert themselves stacking chairs on top of each other.
     play sound crash
-    pause 5.0
+    pause 3.0
 
     vivithinking "This seems incredibly unplanned, but I don't really have a choice."
 
@@ -230,7 +244,10 @@ label denial_fr2_susurha:
     #OPTION 2 +ATTRACTION
         "It sounds like you lived a fairy tale.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi "It sounds like you lived a fairy tale."
             #SOUND: Susu'Rha laughs.
@@ -244,7 +261,10 @@ label denial_fr2_susurha:
                 #OPTION 2-1 +ATTRACTION
                 "I wasn't. Tell me more.":
 
+                    $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
                     play sound attchoice
+                    pause 1.0
+                    $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
                     vivi "I wasn't. Tell me more."
                     susurha happy "Perhaps I shall at another time."
@@ -257,6 +277,7 @@ label denial_fr2_susurha:
                     # JUMP TO: susurha "Voila."
 
     susurha happy "Voila."
+    stop music fadeout 1.5
 
     # SOUND: The window clicks open.
     play sound windowopen
@@ -267,8 +288,9 @@ label denial_fr2_susurha:
     hide susurha with dissolve
 
     show observatory blur with dissolve
-
-    stop music fadeout 3.0
+    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowshelf(frequency=200, gain=8), audio_filter.Lowpass(2000)], replace=True, duration=2.0)
+    play cd_ambience amb_cosmicdecay fadein 2.0
+    #Complex filter - Filters out a little bit of the high, and boosts the low end by A LOT. Like wind! Also force plays cosmic decay.
 
     vivithinking "I haven't done this much climbing since I was a kid. Now to look out the opened window."
 
@@ -277,11 +299,13 @@ label denial_fr2_susurha:
     vivithinking "This is..."
 
     vivithinking "Unimaginable."
-
-    play sound horror loop
-
+ 
+    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowshelf(frequency=200, gain=2), audio_filter.Lowpass(1000)], replace=True, duration=2.0)
+    play music horrormusic
+    
     vivithinking "Spiraling celestial bodies swirl all around as the train speeds faster than anything I've ever seen."
 
+    play sound trainwhistle volume 0.25
     vivithinking "Flames burst from the train's tracks and are sucked into the void."
 
     vivithinking "I can feel my hair whipping around my face. I really wanna scream. But I can't."
@@ -299,8 +323,11 @@ label denial_fr2_susurha:
     vivithinking "It moves with purpose. It moves like it's alive."
 
     vivithinking "Dangling like a puppet as it comes closer and I can see its face."
-
+    
+    $ renpy.music.set_volume(0.00, delay=1.5, channel='music')
+    play sound char_mirror
     vivithinking "My face."
+    $ renpy.music.set_volume(1.00, delay=10.00, channel='music')
 
     vivithinking "Reflecting on the concave mirror plate it has on its shoulders."
 
@@ -309,21 +336,32 @@ label denial_fr2_susurha:
     vivithinking "The wind's stroking my face like cold hands, pulling me closer to it."
 
     vivithinking "I can't breathe."
-
+    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowshelf(frequency=200, gain=2), audio_filter.Lowpass(400)], replace=True, duration=2.0)
+    play sound heartbeat
+    
     vivithinking "I can't breathe."
 
+    stop music fadeout 0.5
     vivithinking "I CAN'T BREATHE!"
+    $ renpy.music.set_volume(0.25, delay=0.1, channel='ambience')
+    $ renpy.music.set_volume(0.25, delay=0.1, channel='cd_ambience')
+    play sound char_terror
+    pause 5
+    $ renpy.music.set_volume(1.0, delay=3.5, channel='ambience')
+    $ renpy.music.set_volume(1.0, delay=3.5, channel='cd_ambience')
 
     vivithinking "It's reaching out to me..."
 
-    stop sound
-
     urshu angry "Get down from there!"
+    
+    stop cd_ambience fadeout 5.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
 
     #SOUND: The sounds of chairs clashing and Vivi and Susu'Rha hitting the floor.
     play sound crash
-    pause 5.0
+    pause 2.0
     #VISUAL: The screen shakes.
+    play sound cineboom
     show observatory with hpunch
     #SOUND: The window slams shut.
     play sound windowshut
@@ -334,12 +372,14 @@ label denial_fr2_susurha:
         xzoom 1
         linear 0.3 ypos 1000
         linear 0.3 ypos 1200
-
+    play sound cineboom
+    
     vivithinking "I can breathe again!"
+    play music mysterymusic
     show vivi surprised at center with dissolve:
         xzoom 1
 
-    play music mainmusic volume 0.5 # start main track
+
 
     vivi surprised "What the hell was that?"
 
@@ -362,6 +402,7 @@ label denial_fr2_susurha:
     vivithinking "Oh baby. Caught between hell and a better place."
 
     vivithinking "Ugh...I need a drink."
-
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
+    stop ambience fadeout 1.0
     #  JUMP TO: Debrief Denial.
     jump denial_debrief

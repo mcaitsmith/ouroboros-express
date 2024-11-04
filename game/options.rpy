@@ -53,13 +53,17 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
+## Creating a new audio channel, tied to the sound options slider
+##will allow ambience files to play simultaneously with other audio files
+init python:
+    renpy.music.register_channel("ambience", mixer= "sfx",loop=True, stop_on_mute=True, tight=False, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
+    renpy.music.register_channel("cd_ambience", mixer= "sfx",loop=True, stop_on_mute=True, tight=False, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
 define config.sample_sound = "audio/sfx/knock.ogg"
 define config.sample_voice = "audio/voice/lookaround_0ecf15b5.ogg"
-
 
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the

@@ -6,18 +6,20 @@ label denial_fr1_susurha:
 
     #LOCATION: Dining Car
     scene diningcar with fade
+    play ambience amb_bar fadein 1.0
 
     # SOUND: Footsteps storm into the room.
-    play sound footsteps
-    pause 2.0
+    #play sound footsteps
+    #pause 2.0
 
     show susurha happy at right with dissolve
-    stop sound fadeout 1.0
+    #stop sound fadeout 1.0
 
     vivithinking "Wait. Susu'Rha just stormed into the room."
     vivithinking "What are they doing?"
-    stop sound fadeout 1.0
+    #stop sound fadeout 1.0
     vivithinking "Are they literally feasting on a slice of cake?"
+    play sound dinnerware
     vivithinking "Okay, that's cute."
 
     # SOUND: The train car door slams shut.
@@ -86,14 +88,17 @@ label denial_fr1_susurha:
     vivithinking "What's the worst that can happen?"
 
     # SOUND: Vivi takes a seat at the table.
+    play sound swoosh
     # skipping this one
 
     vivithinking "They carve a slice of cake and nudge it my way."
+    play sound dinnerware
     vivithinking "Fine. I take the fork and take a bite."
 
     vivi happy "Oh my goodness, this is amazing."
 
     susurha happy "I told you. The Archdruids back in the living forest can't even dream of conjuring such savory delights. This angel food cake is to die for."
+    play sound sparkle
 
     show susurha neutral
     show vivi neutral
@@ -145,7 +150,7 @@ label denial_fr1_susurha:
     susurha sad "I'm sorry..."
 
     susurha sad "I really know how to go and spoil a mood, don't I?"
-
+    play sound dinnerware
     vivithinking "Whoa! They just slid the entire cake dish to my side."
 
     susurha sad "I've lost my appetite."
@@ -181,17 +186,17 @@ label denial_fr1_susurha:
 
     # SOUND: Door closes.
     play sound doorslam
-    pause 2.0
+    pause 3.0
     stop sound
 
     # SOUND: A headache inducing ringing echoes.
-    play sound horror
-
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
     vivithinking "Ugh... my head feels like something is crawling at the walls of my skull."
 
-    stop sound fadeout 2.0
+    
 
     vivithinking "I think that was enough for me too."
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.0)
 
     vivithinking "I better head back to my cabin and collect myself."
 

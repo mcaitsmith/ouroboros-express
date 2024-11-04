@@ -5,6 +5,7 @@ label interview_ava:
     # Interviews / Avatar of Asha
 
     # LOCATION: diningcar
+    play ambience amb_bar fadein 3.0
     # scene diningcar with fade
 
     show ava neutral at right with dissolve:
@@ -19,7 +20,9 @@ label interview_ava:
     ava neutral "What may we call you?"
     vivi neutral "My full name's Vivienne Sanssouci, Vivi for short."
     ava neutral "As you wish, Vivi."
-    ava happy "We are the Avatar of Asha, the Eternal Light."
+    ava happy "We are the Avatar of Asha, the  Eternal Light."
+    play sound sparkle #oneshot sparkle
+    pause  0.5
     vivithinking neutral "What's with this royal plural stuff?"
     ava neutral "You may call us Asha. What draws you to us if not our light?"
 

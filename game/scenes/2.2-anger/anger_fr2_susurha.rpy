@@ -45,12 +45,14 @@ label anger_fr2_susurha:
     # OPTION 1 +ATTRACTION
         "The arrogance on this one. I'd sure love to shut them up.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "The arrogance on this one. I'd sure love to shut them up."
             hide attraction_icon
@@ -86,12 +88,14 @@ label anger_fr2_susurha:
     # OPTION 2 +DECAY
         "Clearly, they're insecure. I'm gonna let them win.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Clearly, they're insecure. I'm gonna let them win."
             hide decay_icon
@@ -194,12 +198,14 @@ label anger_fr2_susurha:
 
     # mica, I believe the above is an action rather than something vivi says. Same w/ option 2
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Pierce Chloe!"
             hide decay_icon
@@ -221,12 +227,14 @@ label anger_fr2_susurha:
     #OPTION +ATTRACTION
         "(Pierce the idea that it was her fault.)":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking sad "No. . . this isn't right.'"
             hide attraction_icon
