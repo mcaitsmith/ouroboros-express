@@ -55,12 +55,12 @@ label sounds:
     define cineboom = "audio/sfx/orex_sfx_cineboom.ogg" #screenshake fun!
     define trainshake = "audio/sfx/orex_sfx_trainshake.ogg" #more screenshake fun!
 
-    #define sigh = "audio/sfx/sigh.ogg" #REPLACED WITH VO
+    define sigh = "audio/sfx/sigh.ogg" #REPLACED WITH VO
     # define scoff = "audio/sfx/scoff.ogg" #REPLACED WITH VO
     # define laugh = "audio/sfx/laugh.ogg" #REPLACED WITH VO
 
-    #define horror = "audio/sfx/horror.ogg" #UNUSED/OUTDATED
-    #define train = "audio/sfx/train.ogg" #UNUSED/OUTDATED
+    define horror = "audio/sfx/horror.ogg" #UNUSED/OUTDATED
+    define train = "audio/sfx/train.ogg" #UNUSED/OUTDATED
     #define gasp = "audio/sfx/gasp.ogg" #UNUSED/OUTDATED
     #define footsteps = "audio/sfx/footsteps.ogg" #UNUSED/OUTDATED
     # define blip = "audio/sfx/blip.ogg" #UNUSED/OUTDATED
