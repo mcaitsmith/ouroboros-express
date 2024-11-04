@@ -113,6 +113,7 @@ image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprit
 image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
 image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
 image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
 image vivi_conductor neutral = At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
 image vivi_conductor happy = At('images/characters/vivi/vivi_conductor/vivi_conductor happy.png', sprite_highlight('vivi'))
 image vivi_conductor surprised = At('images/characters/vivi/vivi_conductor/vivi_conductor surprised.png', sprite_highlight('vivi'))
