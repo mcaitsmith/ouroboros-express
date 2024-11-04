@@ -48,8 +48,7 @@ label bargaining_meal_reveal:
         $ npc_meal = susurha
         call show_susurha from _call_show_susurha_1
 
-    show urshudining neutral at left with dissolve:
-        xzoom -1.0
+    show urshudining neutral at left with dissolve
 
     vivithinking neutral "Table, chairs, white linen, candles... Where did he get those?"
     vivithinking neutral "He looks so smug. A bit creepy. His hands steepled like a movie villain." 
