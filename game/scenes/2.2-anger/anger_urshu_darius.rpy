@@ -78,10 +78,10 @@ label anger_urshu_darius:
 
     darius neutral "I'm sure. Well. Goodnight, Vivi." 
 
-    darius angry "Urshu, don't think I'm finished with you."
     $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
     play sound char_telepathy
-    pause 1.0
+    darius angry "Urshu, don't think I'm finished with you."
+    pause 5.0
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     
 
@@ -97,5 +97,6 @@ label anger_urshu_darius:
     vivi surprised "What was that about?"
 
     urshu neutral "Dear Darius is simply adjusting. They will be fine. Do excuse me."
+    stop ambience fadeout 1.0
 
     jump anger_debrief

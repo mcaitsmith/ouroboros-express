@@ -53,6 +53,7 @@ label sounds:
     define teleport_exit = "audio/sfx/orex_sfx_teleportexit.ogg" #used when a character reappears
     define sparkle = "audio/sfx/orex_sfx_sparkle.ogg"
     define cineboom = "audio/sfx/orex_sfx_cineboom.ogg" #screenshake fun!
+    define trainshake = "audio/sfx/orex_sfx_trainshake.ogg" #more screenshake fun!
 
     #define sigh = "audio/sfx/sigh.ogg" #REPLACED WITH VO
     # define scoff = "audio/sfx/scoff.ogg" #REPLACED WITH VO

@@ -119,7 +119,7 @@ label anger_fr2_darius:
             # JUMP TO: vivi neutral "I want to know what's on your mind."
         
     vivi neutral "I want to know what's on your mind."
-    play music dariustheme fadein 10.0
+    play music dariusmusic fadein 10.0
     darius angry "Fine. You've pestered me enough. My purpose was clear and simple: find heretics. Break them. Consign their souls to the Lord of Eternal Rest." 
     darius angry "That is what's on my mind. Now and always."
     darius angry "You wanted to know. Now, you know."
