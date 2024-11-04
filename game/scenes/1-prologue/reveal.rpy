@@ -13,7 +13,7 @@ label reveal:
     vivi "{i}*cough* *cough*{/i}"
 
     show darius surprised at right with dissolve
-    darius surprised "You again."
+    darius surprised "Huh."
 
     show ava neutral at center with dissolve
     ava neutral "Another trick?"
