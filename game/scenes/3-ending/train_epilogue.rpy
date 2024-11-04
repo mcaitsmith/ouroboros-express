@@ -35,8 +35,23 @@ label train_epilogue:
     #SERA NOTE - ideally it would be lovely to fade out here, and fade up an image of 
     # the three NPCs at the terminal. Vivi's next line could be shown over this image, 
     # before returning to them in the obervatory.
+    show white with Dissolve(2.0)
+    show terminalofdreams with Dissolve(2.0)
+    pause 1.0
+    show ava neutral at left with dissolve:
+        xzoom -1.0
+    show darius neutral at center with dissolve
+    show susurha neutral at right with dissolve
+    hide white
     
     vivi_conductor surprised "They're together on the platform! Urshu, you little peach! Wherever they're going, you made sure they wouldn't be alone."
+    show white with dissolve
+    hide ava
+    hide darius
+    hide susurha
+    hide terminalofdreams
+    hide white with dissolve
+    
     urshu happy "Ahem... yes, well. Someone recently did something similar for me. You could say I found myself inspired."
     vivi_conductor neutral "Remember that first day, when I thought everyone was wearing masks? I was right, wasn't I. We all were. Especially you."
     urshu neutral "You do have quite the gift for seeing straight through them."
