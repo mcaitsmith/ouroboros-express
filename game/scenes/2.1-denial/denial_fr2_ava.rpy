@@ -41,7 +41,7 @@ label denial_fr2_ava:
     ava sad "Like sand in the wind."
 
     # <CHOICE>
-    "Who does she think she is?"
+    vivithinking "Who does she think she is?"
 
     menu:
 
