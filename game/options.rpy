@@ -62,7 +62,7 @@ init python:
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
-define config.sample_sound = "audio/sfx/knock.ogg"
+define config.sample_sound = "audio/sfx/orex_fol_knock.ogg"
 define config.sample_voice = "audio/voice/lookaround_0ecf15b5.ogg"
 
 ## Uncomment the following line to set an audio file that will be played while
