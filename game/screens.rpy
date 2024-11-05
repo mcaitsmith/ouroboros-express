@@ -343,7 +343,7 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton "Help":
+            textbutton "Controls":
                 if not main_menu:
                     background "gui/pause/button2.png"
                     action ShowMenu("help_ingame")
@@ -1496,7 +1496,7 @@ screen help_ingame():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help_ingame"
 
@@ -1552,7 +1552,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help"
 

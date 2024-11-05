@@ -50,6 +50,8 @@ image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
 image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
 
 # define decay overlay bg images
+# define day for quick fix for a bug
+define day = 0
 layeredimage cabin:
     always:
         "images/backgrounds/cabin.png"
