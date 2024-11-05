@@ -283,7 +283,7 @@ label anger_fr2_susurha:
             vivi happy "I'd love to hear your singing voice."
             susurha happy "I would happily sing for you."
             susurha sad "Quiet moments. I will miss them the most."
-            vivi sad "I can't tell you the last time that I was alone with my thoughts. I was always busy."
+            vivi sad "I can't tell you the last time I was alone with my thoughts. I was always busy."
             susurha sad "Perhaps now is a good time."
             vivi sad "..."
             # JUMP TO: susurha neutral "Well, this has been fun as always, but I wish to return to my cabin for some solitude."
