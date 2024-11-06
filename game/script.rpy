@@ -43,18 +43,31 @@ image ava silhouette = "images/characters/ava/ava silhouette.png"
 image darius silhouette = "images/characters/darius/darius silhouette.png"
 image susurha silhouette = "images/characters/susurha/susurha silhouette.png"
 
+image cabin_light_overlay:
+    "images/backgrounds/cabin_overlay.png"
+    alpha 0.5
+    linear 2.0 alpha 0.2
+    linear 2.0 alpha 0.5
+    # "images/backgrounds/cabin_overlay2.png"
+    # 0.75
+    repeat
+
 # define blurred background images
 image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
 image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
 image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
 image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
 
-# define decay overlay bg images
 # define day for quick fix for a bug
 define day = 0
+
+# define decay overlay bg images
 layeredimage cabin:
+    subpixel True
     always:
         "images/backgrounds/cabin.png"
+    group light:
+        attribute overlay default
     if day == 2:
         "decay_bedroom_1"
     elif day == 3:
@@ -259,10 +272,16 @@ label start:
             "Access the menu anytime by pressing the Escape key. A tutorial on the game features is available from the Settings option in the main menu."
             window hide dissolve
             stop music fadeout 3.0
-            pause 3.0
+            pause 5.0
             jump begin
 
 label begin:
+
+    # TRAIN BELL INTRO
+    play sound trainbell
+    pause 5.0
+    stop sound fadeout 3.0
+    pause 3.0
 
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False

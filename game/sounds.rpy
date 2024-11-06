@@ -61,6 +61,7 @@ label sounds:
 
     define horror = "audio/sfx/horror.ogg" #UNUSED/OUTDATED
     define train = "audio/sfx/train.ogg" #UNUSED/OUTDATED
+    define trainbell = "audio/sfx/trainbell.ogg"
     #define gasp = "audio/sfx/gasp.ogg" #UNUSED/OUTDATED
     #define footsteps = "audio/sfx/footsteps.ogg" #UNUSED/OUTDATED
     # define blip = "audio/sfx/blip.ogg" #UNUSED/OUTDATED
