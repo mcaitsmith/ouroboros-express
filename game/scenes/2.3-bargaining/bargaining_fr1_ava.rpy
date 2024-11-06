@@ -7,9 +7,12 @@ label bargaining_fr1_ava:
     # LOCATION: observatory
     # call check_overlay from _call_check_overlay_17
     scene observatory with fade
+    play ambience amb_observatory if_changed fadein 1.0
 
     # SOUND: the train on its tracks
-    #play sound train
+    $ renpy.music.set_audio_filter("sound", [audio_filter.Lowpass(800), audio_filter.Highpass(500)], replace=True)
+    play sound trainwhistle volume 0.2
+    $ renpy.music.set_audio_filter("sound", None, replace=False)
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -20,7 +23,7 @@ label bargaining_fr1_ava:
     vivi neutral "Hey, Asha."
     ava neutral "Yes, little— I mean, Vivienne."
 
-    stop sound fadeout 2.0
+    play music ashamusic loop fadein 5.0
 
     # <CHOICE>
     vivi neutral "I have a question for you..."
@@ -29,12 +32,15 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "Who or what is our mysterious train conductor?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi neutral "Who or what is our mysterious train conductor?"
             hide decay_icon
@@ -57,12 +63,15 @@ label bargaining_fr1_ava:
         # OPTION 2 >>ATTRACTION +ATTRACTION (removing conditional)
         "If you could redo a past event, what would it be?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi neutral "If you could redo a past event, what would it be?"
             hide attraction_icon
@@ -103,12 +112,15 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "No family?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No family?"
             hide decay_icon
@@ -123,12 +135,15 @@ label bargaining_fr1_ava:
         #OPTION 2 +ATTRACTION
         "No name?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No name?"
             hide attraction_icon
@@ -155,12 +170,15 @@ label bargaining_fr1_ava:
         # OPTION 3 +ATTRACTION
         "No tears?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No tears?"
             hide attraction_icon
@@ -191,12 +209,15 @@ label bargaining_fr1_ava:
         #OPTION 4 +ATTRACTION
         "No men?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No men?"
             hide attraction_icon
@@ -222,6 +243,7 @@ label bargaining_fr1_ava:
             # JUMP TO: vivi happy "I'm glad you made the most of it."
 
     vivi happy "I'm glad you made the most of it."
+    stop music fadeout 3.0
 
     # ??ATTRACTION
     if att_meter_ava >= 40:
@@ -237,6 +259,7 @@ label bargaining_fr1_ava:
         vivi neutral blush "It's always memorable talking with you, Asha."
         ava neutral "And with you. Goodbye, Vivienne. The All is the One."
         vivithinking "That sure was...something."
+        stop ambience fadeout 1.0
 
         # JUMP TO: Darius/Susu'Rha intermission scene'
         jump bargaining_darius_susurha

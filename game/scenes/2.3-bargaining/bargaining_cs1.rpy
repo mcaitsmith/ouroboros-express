@@ -7,6 +7,8 @@ label bargaining_cs1:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_13
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
+    stop music fadeout 1.0
 
     show vivi happy at left with dissolve:
         xzoom -1
@@ -31,6 +33,7 @@ label bargaining_cs1:
             vivithinking "I'm sure the goddess can help me out."
 
             hide vivi with dissolve
+            stop ambience fadeout 1.0
     
             # JUMP TO: Free Roam 1 / Ava
             jump bargaining_fr1_ava
@@ -43,6 +46,7 @@ label bargaining_cs1:
             vivithinking "Darius must've gleaned something from the conductor's emotions."
 
             hide vivi with dissolve
+            stop ambience fadeout 1.0
         
             # JUMP TO: Free roam 1 / Darius
             jump bargaining_fr1_darius
@@ -55,6 +59,7 @@ label bargaining_cs1:
             vivithinking "Susu'Rha is probably the friendliest with Urshu. They must know something."
 
             hide vivi with dissolve
+            stop ambience fadeout 1.0
 
             # JUMP TO: Free roam 1 / susurha
             jump bargaining_fr1_susurha

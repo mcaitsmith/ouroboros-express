@@ -27,7 +27,7 @@ label anger_urshu_darius:
     vivithinking surprised "Looks like that cosmic detective guy is here too. He seems pissed. I shouldn’t interrupt them."
 
     vivithinking neutral "But I’ll still listen in."
-    play music spymusic loop
+    play music confrontationmusic loop
 
     hide vivi
 

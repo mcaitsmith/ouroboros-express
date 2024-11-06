@@ -20,6 +20,7 @@ label anger_fr2_darius:
     vivi happy "Well well. If it isn't the melancholy mindflayer."
     darius surprised "Melancholy? Heh. Then what do I call you? The rapacious reporter? The insensitive investigative journalist?"
     vivi happy blush "You can call me whatever you like. As long as you call me."
+    play music peacefulmusic loop
     show darius surprised blush with dissolve
     darius "I'll be sure to call you on my... shell phone."
     vivi happy "..."
@@ -44,6 +45,7 @@ label anger_fr2_darius:
     darius sad "Not exactly, no. I've been a bit... busy for the last thousand years."
     darius neutral "And as a side note, not all flirting is harmless. Trust me."
     vivi sad "I...I didn't mean to bring up anything painful."
+    stop music fadeout 5.0
     vivithinking sad "He's staring at me—No, through me—So intensely."
     vivi neutral "So... What have you been busy with?"
     darius neutral "Oh, this and that. My kind live a long time. At least...we're supposed to."

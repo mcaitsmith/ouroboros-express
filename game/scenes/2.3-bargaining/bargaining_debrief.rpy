@@ -4,11 +4,12 @@ label bargaining_debrief:
 
     # Debrief Bargaining
 
-    play music mainmusic
+    play music mysterymusic
 
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_16
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
 
     # ??DECAY
     if dec_meter >= 30:
@@ -32,7 +33,7 @@ label bargaining_debrief:
         call display_journal from _call_display_journal_3
         $ cycle = 4
 
-        stop sound
+        stop sound fadeout 1.0
 
     # ELSE
     else:
@@ -56,8 +57,9 @@ label bargaining_debrief:
         call display_journal from _call_display_journal_4
         $ cycle = 4
 
-        stop sound
+        stop sound fadeout 1.0
 
     # END
-
+    stop ambience fadeout 1.0
+    pause 1.0
     jump bargaining_asha_urshu

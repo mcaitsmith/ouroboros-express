@@ -3,6 +3,7 @@ label bargaining_asha_urshu :
     #LOCATION: observatory
     # call check_overlay from _call_check_overlay_11
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
 
 
     #SOUND: train

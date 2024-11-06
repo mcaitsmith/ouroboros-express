@@ -7,9 +7,8 @@ label bargaining_fr2_darius:
     # LOCATION: diningcar
     # call check_overlay from _call_check_overlay_21
     scene diningcar with fade
+    play ambience amb_bar fadein 1.0
 
-    # SOUND: cooking, dining sounds
-    play sound cooking
     pause 1.0
 
     show vivi neutral at left with dissolve:
@@ -20,7 +19,6 @@ label bargaining_fr2_darius:
     darius neutral "Well? We're here. What is it you wanted?"
     vivi neutral "Okay, promise to hear me out?"
 
-    stop sound fadeout 1.0
 
     # <CHOICE>
     darius neutral "Always."
@@ -29,14 +27,17 @@ label bargaining_fr2_darius:
         # OPTION 1 +ATTRACTION
         "Could I interest you in dinner?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Could I interest you in dinner?"
+            play music peacefulmusic loop
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             show darius neutral blush with dissolve
@@ -51,12 +52,14 @@ label bargaining_fr2_darius:
         # OPTION 2 +DECAY
         "Can you help me with something for Urshu?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Can you help me with something for Urshu? He asked me to make dinner for the group and I'd appreciate the extra hands."
             hide decay_icon
@@ -72,14 +75,17 @@ label bargaining_fr2_darius:
         # OPTION 3 >>DECAY +DECAY
         "You want out of this place?" if dec_meter > 20:
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "You want out of this place? I may have your ticket, if you just help me out."
+            play music spymusic loop
             hide decay_icon
             with { "master" : Dissolve(0.5) }
             darius angry "No."
@@ -103,6 +109,7 @@ label bargaining_fr2_darius:
 
     vivithinking "Right, they're a mindflayer. Why did I ask the guy whose people eat brains to make food with me?"
     darius neutral "Human cuisine is rather approachable, is it not? Do you have any ideas?"
+    play music peacefulmusic if_changed fadein 1.0
 
     show vivi neutral blush at left
 
@@ -116,12 +123,14 @@ label bargaining_fr2_darius:
         # OPTION 1 +DECAY
         "Better not leave my comfort zone.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             show vivi neutral at left
             vivithinking "Let's just make something simple. Urshu doesn't strike me as the extravagant type."
@@ -135,12 +144,14 @@ label bargaining_fr2_darius:
         # OPTION 2 +ATTRACTION
         "Screw it, let's go all out!":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             show vivi neutral at left
 
@@ -185,9 +196,9 @@ label bargaining_fr2_darius:
             # JUMP TO: # SOUND: cooking
 
     # SOUND: cooking
-    play sound cooking
-    pause 3.0
-    stop sound fadeout 1.0
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=1.0) #make space for cooking layer in the ambience
+    $ renpy.music.set_volume(0.5, delay=1.0, channel='ambience') #lower ambience volume to leave space for cooking sound
+    play sound cooking loop volume 0.8 fadein 5.0
 
     vivithinking neutral "Wow. Darius is really good with their hands."
     vivi neutral "You're rather dextrous, Mr. Wrecker."
@@ -203,6 +214,10 @@ label bargaining_fr2_darius:
         # OPTION 1
         "(They're cute when they try to act clueless.)":
         
+            stop sound fadeout 1.0
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.0)
+            $ renpy.music.set_volume(1.0, delay=1.0, channel='ambience')
+            pause 1.0
             vivithinking "They're cute when they try to act clueless."
 
             # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
@@ -210,14 +225,18 @@ label bargaining_fr2_darius:
         # OPTION 2
         "(Heh. They know.)":
 
+            stop sound fadeout 1.0
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.0)
+            $ renpy.music.set_volume(1.0, delay=1.0, channel='ambience')
+            pause 1.0
             vivithinking "Heh. They know."
 
             # JUMP TO # SOUND: glassware clinking (dining, clatter of silverware and plating)
 
     # SOUND: glassware clinking (dining, clatter of silverware and plating)
-    play sound glassclink
+    play sound dinnerware
     pause 2.5
-    stop sound fadeout 1.0
+    stop music fadeout 20.0
 
     vivi neutral "Well, that's about as good as it's going to get. What do you think?"
     show darius neutral -blush
@@ -233,6 +252,7 @@ label bargaining_fr2_darius:
     darius "Not like that! I... Damn you."
     vivi happy blush "Haha, so flustered, Mr. Wrecker!"
     vivi neutral "..."
+    play music dariusmusic fadein 1.0 loop
     vivi neutral "Actually, Darius, before we go..."
     show darius neutral -blush
     darius neutral "Yes?"
@@ -269,6 +289,7 @@ label bargaining_fr2_darius:
 
         vivithinking "What I wouldn't give for a hug..."
         vivithinking "When was the last time I hugged someone?"
+        stop music fadeout 5.0
         show darius neutral -blush
         darius neutral "...Let's focus on one thing at a time though. Urshu first."
         vivi neutral "Right."
@@ -277,6 +298,7 @@ label bargaining_fr2_darius:
     # ??DECAY (and if not ATTRACTION above)
     else:
         vivi sad "But Darius! I—"
+        stop music fadeout 1.0
         darius angry "I already told you! You don't need to say anything else."
 
         show vivi sad at left
@@ -288,6 +310,7 @@ label bargaining_fr2_darius:
     #END
 
     vivi neutral "...Let's go before the food gets cold."
+    stop ambience fadeout 1.0
 
     # JUMP TO: URSHU MEAL REVEAL
     jump bargaining_meal_reveal
