@@ -17,27 +17,26 @@ define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susu
 
 #MOOD MUSIC
 define mainmusic = "audio/music/orex_mx_main.ogg"
-define mysterymusic = "audio/music/orex_mx_mystery.ogg"
-define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg"
-define horrormusic = "audio/music/orex_mx_horror.ogg"
-define peacefulmusic = "audio/music/orex_mx_peaceful.ogg"  
-define confrontationmusic = "audio/music/orex_mx_confrontation.ogg" #tense, dramatic
-define spymusic = "audio/music/orex_mx_eavesdrop.ogg" #suspensful spy music
-define sorrowmusic = "audio/music/orex_mx_charliedemo.ogg" #just so i can test this if i find a spot
-
-#MUSIC SEQUENCES
-define revealmusic = "audio/music/orex_mx_charliedemo.ogg"
-define vivistorymusic = "audio/music/orex_mx_vivistory.ogg"
+define mysterymusic = "audio/music/orex_mx_mystery.ogg" ## Noah Campodonico — Underneath the Mask
+define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg" ## Noah Campodonico — Underneath the Mask (Piano arr.)
+define horrormusic = "audio/music/orex_mx_horror.ogg" ## Noah Campodonico — Trepidation
+define peacefulmusic = "audio/music/orex_mx_peaceful.ogg" ## Noah Campodonico — Lilacs and Hydrangeas
+define confrontationmusic = "audio/music/orex_mx_confrontation.ogg" ## Charlie Armour — [untitled] Confrontation Theme
+define spymusic = "audio/music/orex_mx_eavesdrop.ogg" ## Charlie Armour — [untitled] Eavesdropping Theme
+define sorrowmusic = "audio/music/orex_mx_sorrow.ogg" ## Charlie Armour — [Untitled] Sorrow Theme
+define revealmusic = "audio/music/orex_mx_reveal.ogg" ## Charlir Amour — [Untitled] Reveal Theme
 
 #CHARACTER THEMES
-define susumusic = "audio/music/orex_mx_susu.ogg" 
-define dariusmusic = "audio/music/orex_mx_darius.ogg"
-define ashamusic = "audio/music/orex_mx_asha.ogg"
+define vivistorymusic = "audio/music/orex_mx_vivistory.ogg" ## Noah Campodonico — Vivienne's Story
+define susumusic = "audio/music/orex_mx_susu.ogg"  ## Armoni Boone — untitled susu theme
+define dariusmusic = "audio/music/orex_mx_darius.ogg" ## Armoni Boone — untitled darius theme
+define ashamusic = "audio/music/orex_mx_asha.ogg" ## Armoni Boone - untitled asha theme
 
 #ENDING THEMES
-define goodendmusic = "audio/music/Good Ending.ogg"
-define badendmusic = "audio/music/orex_mx_cosmicself.ogg"
-define finalemusic = "audio/music/orex_mx_finale.ogg"
+define finalemusic = "audio/music/orex_mx_finale.ogg" ## Noah Campodonico - Celestial Bodies, Swirling
+define goodendmusic = "audio/music/Good Ending.ogg" ## Soon to be phased out, I think?
+define badendmusic = "audio/music/orex_mx_cosmicself.ogg" ## Armoni Boone — Cosmic Self [bad ending]
+
 
 #CREDITS THEMES
 define creditsmusicgood = "audio/music/Good Ending.ogg"
