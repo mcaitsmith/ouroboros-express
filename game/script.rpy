@@ -23,10 +23,11 @@ define horrormusic = "audio/music/orex_mx_horror.ogg"
 define peacefulmusic = "audio/music/orex_mx_peaceful.ogg"  
 define confrontationmusic = "audio/music/orex_mx_confrontation.ogg" #tense, dramatic
 define spymusic = "audio/music/orex_mx_eavesdrop.ogg" #suspensful spy music
-define charliemusic = "audio/music/orex_mx_charliedemo.ogg" #just so i can test this if i find a spot
+define sorrowmusic = "audio/music/orex_mx_charliedemo.ogg" #just so i can test this if i find a spot
 
 #MUSIC SEQUENCES
 define revealmusic = "audio/music/orex_mx_charliedemo.ogg"
+define vivistorymusic = "audio/music/orex_mx_vivistory.ogg"
 
 #CHARACTER THEMES
 define susumusic = "audio/music/orex_mx_susu.ogg" 
@@ -38,6 +39,9 @@ define goodendmusic = "audio/music/Good Ending.ogg"
 define badendmusic = "audio/music/orex_mx_cosmicself.ogg"
 define finalemusic = "audio/music/orex_mx_finale.ogg"
 
+#CREDITS THEMES
+define creditsmusicgood = "audio/music/Good Ending.ogg"
+define creditsmusicbad = "audio/music/orex_mx_cosmicself.ogg"
 
 # define silhouette images
 image ava silhouette = "images/characters/ava/ava silhouette.png"

@@ -37,7 +37,7 @@ label bargaining_asha_urshu :
     with move
 
     
-
+    play music spymusic loop
     ava angry "Sleep eludes us, conductor. So many thoughts. So many regrets."
 
     urshu neutral "Regrets, you say? To live without regret is to believe you have nothing to learn, no amends to make, and no opportunity to be braver with your life."
@@ -78,6 +78,7 @@ label bargaining_asha_urshu :
 
     ava sad "Buried away long ago, conductor. A silly dream of a naïve child. No more."
 
+    stop music fadeout 10.0
     urshu neutral "Sometimes children have the simple answers that elude us. Ah, speaking of elusive, I see a visitor. I’ll leave you two. Ta ta!"
 
     hide urshu with dissolve
@@ -106,8 +107,8 @@ label bargaining_asha_urshu :
     play sound clock loop
 
     pause 5.0
-    stop sound fadeout 2.0
+    stop sound fadeout 5.0
 
-    play music mainmusic volume 0.5 # start main track
+    #play music mainmusic volume 0.5 # start main track
 
     jump depression_briefing

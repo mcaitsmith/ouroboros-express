@@ -17,6 +17,8 @@ label sounds:
     define amb_observatory = "audio/sfx/orex_amb_observatory.ogg"
     define amb_terminal = "audio/sfx/orex_amb_terminal.ogg"
 
+    #ENVIRONMENTAL
+    define twinkle = "audio/sfx/orex_env_twinkle.ogg"
     define amb_cosmicdecay = "audio/sfx/orex_amb_cosmicdecay.ogg" # Play on channel cd_ambience. Meant to be layered
 
     #CHARACTER SPECIFIC
@@ -25,8 +27,7 @@ label sounds:
     define char_telepathy = "audio/sfx/orex_char_telepathy.ogg" #For when Darius uses his telepathic powers
     define char_whistle = "audio/sfx/orex_char_whistle.ogg" #For when Urshu whistles
 
-    #ENVIRONMENTAL
-    define twinkle = "audio/sfx/orex_env_twinkle.ogg"
+
 
     #FOLEY
     define cooking = "audio/sfx/orex_fol_cooking.ogg"

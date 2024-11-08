@@ -8,6 +8,7 @@ label depression_briefing:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_25
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
 
     show vivi sad at left with dissolve :
         xzoom -1
@@ -27,14 +28,17 @@ label depression_briefing:
     pause 1.0
     
     vivi "Go away."
+    pause 2.0
 
     # SOUND: knocking
-    play sound knock
     pause 1.0
 
     # <CHOICE>
 
     vivithinking "Can I bring myself to talk to anyone?"
+    $ renpy.music.set_audio_filter("music", None, replace=True, duration=1.0)
+    play music sorrowmusic loop
+    
 
     menu:
 
@@ -69,26 +73,32 @@ label depression_briefing:
     urshu "It is written on my heart and remains my burden: to remember everyone who travels with me."
     vivithinking "I can't face this. Whatever Ursh is doing...it hurts worse now."
     vivithinking "When will it stop hurting?"
+    play cd_ambience amb_cosmicdecay volume 0.1 fadein 1.0
+    $ renpy.music.set_volume(0.2, delay=5.0, channel='cd_ambience')
     vivithinking "Why can't I just disappear?"
     urshu sad "Oh...don't turn away from me. I will not hurt you."
     vivi angry "Why don't I believe you?"
     urshu "You have always had my support."
     vivi "You don't deserve anything from me. Not my attention, nor my dwindling time!"
+    $ renpy.music.set_volume(0.4, delay=5.0, channel='cd_ambience')
     urshu sad "..."
     vivi sad "We had a deal..."
     urshu sad "..."
     vivi sad "You made me think we did, anyway. Gave me hope. Then pulled the trapdoor from under me. No warning. I served you the food, then there was nothing beneath my feet."
     vivithinking "Now I'm falling and falling and I can't stop."
     urshu neutral "Miss Sanssouci..."
+    $ renpy.music.set_volume(0.6, delay=5.0, channel='cd_ambience')
     vivi angry "Liar! Son of a bitch! Traitor! Crawl back to your hole, you worm!"
     urshu sad "..."
     vivi sad "I...want to live."
     urshu neutral "I wish you could."
     vivi "I want to— God. There's no words for it."
+    $ renpy.music.set_volume(0.8, delay=5.0, channel='cd_ambience')
     urshu "I understand. I wish to help {i}you{/i} understand something about our locomotive existence."
     vivithinking "If this turns into another trite anecdote..."
     urshu "I have been on this journey countless times, will be on it for an eternity still. This is what I do. It is what I am."
     vivi angry "A torturer in a sharp suit who could bounce silver dollars off his ass?"
+    stop cd_ambience fadeout 10.0
     show urshu neutral blush with dissolve
     urshu "Well...How flattering."
     show urshu neutral -blush
@@ -122,6 +132,7 @@ label depression_briefing:
     if urshu_story_1 == True and urshu_story_2 == True and urshu_story_3 == True:
     
         vivi neutral "Great. Want to tell me what you think it {i}is{/i} time for, 'Sursu'?"
+        stop music fadeout 20.0
         urshu happy "Ah, I see you've begun to predict my ruses. Very good, Miss... Vivi. Then I think you know: it is time for a story."
         vivithinking "He finally remembered to use my first name..."
         vivi neutral "Is this one going to be so long that I start to wish for death? That could be a neat trick."
@@ -136,6 +147,8 @@ label depression_briefing:
                 $ urshu_story_4 = True
             
                 vivi neutral "Only because I don't trust you to tell it alone."
+                $ renpy.music.set_volume(0.5, delay=8.0, channel='ambience')
+                play music vivistorymusic loop
                 vivi "You'd probably have me speaking in rhyming couplets and giving everyone flouncy pet names, right, 'my dear'?"
                 urshu happy "I may upon occasion take the slightest trace of poetic license. But in your story there truly is no need to embellish what is already there."
                 vivi sad "Yeah, right. I never achieved what I wanted. Never got the bylines I deserved, the scoops I should've... scooped. It had potential, maybe, but all  my life will be now is unfulfilled, meaningless and short."
@@ -161,6 +174,8 @@ label depression_briefing:
                 urshu angry "I shared with you what became of my last connection. What point would there be in my... extending my affections in such a way when the only certain thing is that you will all leave. And I will be –"
                 vivi sad "Alone. Again. Are you sure you don't want to bury your head in the blankets with me, Urshu? It's starting to seem like we feel similarly about the end being nigh."
                 urshu neutral "Ha... no, no time for such frivolous misery, my dear."
+                stop music fadeout 3.0
+                $ renpy.music.set_volume(1.0, delay=3.0, channel='ambience')
                 vivi neutral "No time, again. So, what's it time for now?"
     
             # JUMP TO: urshu neutral "It is time to embrace the void with others."
@@ -183,6 +198,7 @@ label depression_briefing:
     
     
     urshu neutral "It is time to embrace the void with others."
+    play music mainmusic loop
     vivi neutral "That is the worst advice to give to someone in my state."
     urshu neutral "Then you misunderstand me. I speak not of embracing the void itself, but rather the chance for true companionship at the end."
     urshu neutral "Not death, but the fleeting moments before. When nothing holds you back. When it does not matter that there is no tomorrow, because it is when you have only the present that you can be truly fearless."

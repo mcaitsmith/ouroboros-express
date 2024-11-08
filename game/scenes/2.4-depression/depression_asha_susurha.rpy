@@ -3,14 +3,18 @@ label depression_asha_susurha:
     #LOCATION: lounge
     # call check_overlay from _call_check_overlay_24
     scene lounge with fade
+    play ambience amb_lounge if_changed fadein 1.0
 
     #SOUND: train
-    #play sound train
+    pause 1.0
+    play sound trainwhistle volume 0.5
+    pause 5.0
 
     show vivi neutral at left : 
         xzoom -1
 
     vivi neutral "What's the commotion I'm hearing?"
+    play music spymusic loop
 
     hide vivi
 
@@ -55,6 +59,7 @@ label depression_asha_susurha:
     susurha angry "Don’t lash out at me for trying what you haven’t dreamt of."
 
     ava sad "You speak to one who knows nothing of freedom or dreams. Those were for the aristocrats. Like you."
+    stop music fadeout 5.0
 
     ava sad "..."
 
@@ -67,6 +72,7 @@ label depression_asha_susurha:
         xzoom -1
 
     vivithinking "This silence is killing me. I should leave."
+    stop ambience fadeout 1.0
 
 #JUMP TO Character Selector 2
 jump depression_cs2

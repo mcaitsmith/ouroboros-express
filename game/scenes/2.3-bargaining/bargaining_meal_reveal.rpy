@@ -151,7 +151,7 @@ label bargaining_meal_reveal:
     urshudining sad "I underestimated you, as I so often do with humans."
     vivi neutral "Ursh..."
     urshudining sad "I did not think you would complete the task at hand, let alone with a companion."
-    play music charliemusic loop
+    play music sorrowmusic loop
     urshudining sad "So I have led you into another ruse, I fear."
     vivi neutral "...No."
     urshudining sad "I do not possess what you call \"taste buds.\" I do not know what this actually tastes like."

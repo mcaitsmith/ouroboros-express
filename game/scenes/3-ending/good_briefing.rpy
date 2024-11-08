@@ -3,14 +3,13 @@
 label good_briefing:
 
     # Good Ending/Briefing
-
-    play music goodendmusic volume 0.5
     
     # fade in
 
     # LOCATION: cabin
     # call hide_overlay from _call_hide_overlay_2
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
 
     show vivi happy at left with dissolve:
         xzoom -1
@@ -65,6 +64,7 @@ label good_briefing:
         # OPTION 2
         "Hold your horses. I've decided to step into the unknown with you." if urshu_story_1 == True and urshu_story_2 == True and urshu_story_3 == True and urshu_story_4 == True:
         
+            play music spymusic
             vivi happy "Hold your horses. I've decided to step into the unknown with you."
             vivithinking happy "The way he's staring at me right now. Rude, but also kind of hot."
             urshu neutral "Ah. I'm afraid I am not an option as a companion, my dear. I believe I have explained to you why?"
@@ -79,7 +79,7 @@ label good_briefing:
             vivi surprised "You mean people have asked to stay before?"
             vivithinking surprised "Could the rage that thought stirs up be... jealousy? C'mon Vivi, pull yourself together, of course you're not the only one who's ever fallen for..."
             urshu sad "Ah yes, it's barely unusual for your fellow travellers to grasp at a last chance to save themselves: staying on this train long enough to learn the method of escaping from it. I can't blame them. Or you. You are far too bright a spark not to have thought of such an idea."
-            urshu neutral "But I'm afraid I must disappoint you. To stay here would not free you from your fate, but subject you to a worse one. Any who failed to disembark at the end of their journey would be cursed to stay on this train forever."
+            urshu neutral "But I'm afraid    I must disappoint you. To stay here would not free you from your fate, but subject you to a worse one. Any who failed to disembark at the end of their journey would be cursed to stay on this train forever."
             vivi neutral "Forever?"
             urshu sad "Until the very cosmos slips its moorings and spins out into oblivion. Which I am sure you will see is almost the same thing."
             vivithinking happy "Oh, oh he's ridiculous. Can't use one word where three will do. Can't see the nose in front of his face. I can't think why I adore him."
@@ -91,8 +91,10 @@ label good_briefing:
             vivi neutral "{i}I'm afraid.{/i} You don't know what it took to admit that to you. Afraid of the unknown. Of not doing more with my time. Of being alone. What I didn't say was that I'm afraid of losing you. And correct me if I'm wrong, but I think you're afraid, too."
             show urshu surprised blush with dissolve
             urshu neutral "You were right. I should never have risked saying so much in front of a journalist."
+            stop music fadeout 10.0
             vivi happy "Ha! Told ya, we're the best people readers around. Cosmic entity readers. Whatever."
             vivi neutral "Listen, I know you paid an eternal price for the last favour you granted a soul in need, and now you're scared to take the chance again. But the favour I'm asking for won’t take anything from you. I want to give you something, instead. Company."
+            play music vivistorymusic
             vivi neutral "You’ve been alone so damn long, and I’ve never given myself the chance to love. I want that chance, Urshu. With you. And if you let me stay we'll have more than a chance - we’ll have eternity. Together."
             urshu surprised "..."
             show urshu surprised blush with dissolve
@@ -112,15 +114,19 @@ label good_briefing:
   
       
             # VISUAL: the screen shakes, flickering
+            play sound trainshake
             show cabin with hpunch
             show cabin with flash
             show cabin with flash        
     
             vivi surprised "What's that? Urshu, what's happening?"
+            stop sound fadeout 2.0
             urshu neutral "The journey nears its end, at least for three of our travellers. Vivi, take my hand, there are some goodbyes you may want to say, and quickly!"
          
             urshu happy "...and then, perhaps a change of outfit."
+            stop music fadeout 5.0
             vivi happy "Wait, death has a dress code? Are you kidding me?"
+            stop ambience fadeout 1.0
     
             #SOUND: both of their laughter, softly fading out.
             #JUMP TO group_goodbyes

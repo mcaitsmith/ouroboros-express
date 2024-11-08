@@ -12,6 +12,8 @@ label train_epilogue:
     
     #LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
+    play music finalemusic
     
     #SERA NOTE - Both Vivi and Urshu should be in train conductor outfits from here.
 
@@ -31,13 +33,16 @@ label train_epilogue:
     urshu neutral "And Susu'Rha, who once broke the chains of expectation and eschewed their royal burden, only to find themselves burdened by regret, now leaves their past where it belongs."
     urshu happy "But what should fate bring them now? Perhaps... to new beginnings!"
     vivi_conductor surprised "New beginnings? You mean..."
+    stop ambience fadeout 5.0
     
     #SERA NOTE - ideally it would be lovely to fade out here, and fade up an image of 
     # the three NPCs at the terminal. Vivi's next line could be shown over this image, 
     # before returning to them in the obervatory.
     show white with Dissolve(2.0)
     show terminalofdreams with Dissolve(2.0)
-    pause 1.0
+    play ambience amb_terminal fadein 1.0
+    play sound trainwhistle
+    pause 3.0
     show ava neutral at left with dissolve:
         xzoom -1.0
     show darius neutral at center with dissolve
@@ -49,7 +54,9 @@ label train_epilogue:
     hide ava
     hide darius
     hide susurha
+    stop ambience fadeout 0.5
     hide terminalofdreams
+    play ambience amb_observatory fadein 0.5
     hide white with dissolve
     
     urshu happy "Ahem... yes, well. Someone recently did something similar for me. You could say I found myself inspired."
@@ -59,6 +66,7 @@ label train_epilogue:
     urshu neutral blush "And yet, none quite so beautiful as you. Won't you take my hand, Vivi? At any moment we will leave them to their new beginning, as our journey begins its spiral of theatrics and redemption once again."
     vivi_conductor happy "It's been a long time since you had a fresh start of your own, huh Urshu?"
     urshu neutral "An eternity, one might say."
+    stop music fadeout 3.0
     show vivi_conductor at center with moveoutleft:
         xoffset -100
     show urshu at center with moveoutright:
@@ -67,15 +75,15 @@ label train_epilogue:
     $ _skipping = False
     vivi_conductor happy "Then hold me close. Don't let go. Our new beginning starts now."
     
+    stop ambience fadeout 3.0
     scene white with Dissolve(3.0)
     
-    stop sound fadeout 3.0
-    stop music fadeout 3.0
+
     scene black with Dissolve(3.0)
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
-    play music goodendmusic volume 0.5
+    play music creditsmusicgood loop
     call screen credits
     stop music fadeout 3.0
     pause 3.0
