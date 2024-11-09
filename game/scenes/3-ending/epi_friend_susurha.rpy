@@ -7,10 +7,9 @@ label epi_friend_susurha:
 
     # LOCATION: terminalofdreams
 
-    stop music fadeout 2.0
     pause 2.0
     scene white with fade
-    play music goodendmusic volume 0.5
+    play music finalemusic if_changed loop
 
     scene terminalofdreams with Dissolve(3.0)
     pause 1.0

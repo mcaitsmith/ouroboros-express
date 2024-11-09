@@ -57,6 +57,7 @@ label good_briefing:
         "I have a feeling I know. At least, there's someone I want to see.":
         
             vivithinking happy "I have a feeling I know. At least, there's someone I want to see."
+            stop ambience fadeout 1.0
         
             # JUMP to: Romance/Confession/Character Selector
             jump romance_cs

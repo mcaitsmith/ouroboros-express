@@ -27,6 +27,8 @@ label bad_argument:
     # LOCATION: observatory
     # call check_overlay from _call_check_overlay_35
     scene observatory with fade
+    stop music fadeout 15.0
+    play ambience amb_observatory fadein 1.0
 
     show vivi angry at center_left with dissolve:
         xzoom -1
@@ -51,6 +53,7 @@ label bad_argument:
 
     ava sad "Darius is correct. Is there anything we can do?"
     vivi angry "What can you do?"
+    stop ambience fadeout 10.0
     vivi angry "Well, you can start by {i}shutting the hell up{/i}!"
 
     show susurha surprised
@@ -60,6 +63,7 @@ label bad_argument:
     show darius neutral
 
     darius neutral "Vivi—"
+    play music confrontationmusic loop
     vivi angry "No, I'm done with you. All of you."
     vivi angry "I tried {i}everything{/i}. Getting to know you, befriend you, even love you!"
     vivi angry "And what did it add up to? Jack shit!"
@@ -104,8 +108,10 @@ label bad_argument:
     vivi happy "Ha! We're already dead."
 
     show urshu neutral at center_right with dissolve
+    stop music fadeout 5.0
 
     vivithinking neutral "Just the conductor I wanted to see..."
+    play music horrormusic loop
     urshu neutral "What is this, now? Miss Sanssouci, this is {i}not{/i} the dressing down I expected you to give your fellow passengers. What's that on the ground?"
     vivi angry "Shards of mirror. I woke up weeping and this is what my tears became. Look. I've cried enough of them to make mirrors for everyone. So they can see their disgusting true selves!"
     urshu sad "My dear, this is not what I wanted for you. Yet..."
@@ -159,6 +165,8 @@ label bad_argument:
 
     # EFFECT: Screen shake or Distort screen
     show observatory with hpunch
+    play sound cineboom
+    $ renpy.music.set_audio_filter('music', audio_filter.Lowpass(1000), replace=False, duration =5.0)
 
     vivithinking surprised "What's happening? Why can't I see them clearly? Their words..."
     urshu neutral "She is not destined to the afterlife but to return to Earth as a new being."
@@ -168,6 +176,7 @@ label bad_argument:
     vivithinking neutral "I'm going {i}home{/i}."
 
     show urshu happy
+    $ renpy.music.set_audio_filter('music', None, replace=False, duration =5.0)
 
     urshu happy "Your transcendence is near, Miss Sanssouci. Your journey is at an end..."
     vivi sad "What... what do you mean?"
@@ -175,9 +184,11 @@ label bad_argument:
     vivi sad "Agh! It hurts!"
     urshu happy "Goodbye, Miss Sansoucci."
     urshu happy "May the truth finally set you free."
+    stop music fadeout 5.0
     vivi angry "Free?!"
 
     # EFFECT: screen shake
+    play sound cineboom
     show observatory with hpunch
     # JUMP to: Bad Ending/Consequences
     jump bad_consequences

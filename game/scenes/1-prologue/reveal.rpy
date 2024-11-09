@@ -61,7 +61,7 @@ label reveal:
     urshu happy "For you are all dead! Haha!"
 
     # SOUND: heartbeat
-    $ renpy.music.set_volume(0.00, delay=0.5, channel='music')
+    $ renpy.music.set_volume(0.25, delay=0.5, channel='music')
     $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
     play sound heartbeat
     pause 5.0
@@ -104,7 +104,7 @@ label reveal:
     show vivi sad
         
     # SOUND: heartbeat
-    $ renpy.music.set_volume(0.00, delay=0.5, channel='music')
+    $ renpy.music.set_volume(0.25, delay=0.5, channel='music')
     $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
     play sound heartbeat
     pause 3.0
@@ -131,6 +131,7 @@ label reveal:
     #no need for filter function here, as we're playing the cosmic decay ambience by itself. 
 
     show vivi sad
+    stop music fadeout 5.0
     vivithinking sad "I see them shouting, but... I can't hear them."
     vivithinking sad "Why's everything...so bright?"
 
@@ -145,7 +146,6 @@ label reveal:
     vivithinking sad "Bright...like a mirror..."
 
     # SOUND: crash
-    stop music fadeout 1.0
     play sound crash
     pause 2.0
     stop cd_ambience fadeout 1.0

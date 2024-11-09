@@ -16,7 +16,7 @@ label bargaining_fr2_susurha:
 
     vivi neutral "Thanks for coming on such short notice, Susu'Rha. I really need your help."
     susurha neutral "Of course, Vivienne. What is it that you need?"
-    play musuc susumusic loop fadein 5.0
+    play music susumusic loop fadein 5.0
     vivi neutral "Okay, so... Listen to me."
     vivi neutral "I know how we're gonna get off this train."
     

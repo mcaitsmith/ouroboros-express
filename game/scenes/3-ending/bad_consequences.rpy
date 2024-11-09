@@ -6,6 +6,7 @@ label bad_consequences:
     # LOCATION: eldritch landscape
     # call hide_overlay from _call_hide_overlay
     scene black with Fade(3.0,0.0,1.0)
+    play cd_ambience amb_cosmicdecay fadein 3.0
 
     show vivi neutral at right with dissolve
 
@@ -22,6 +23,8 @@ label bad_consequences:
     vivithinking surprised "She's...embracing me!!"
     vivi "..."
     vivithinking neutral "I don't feel here anymore. I'm going to open my eyes now."
+    play sound char_mirror
+    pause 5.0
     vivi surprised "She's gone? But?"
     vivithinking neutral "My...arms are shimmering."
     vivithinking neutral "My legs..."
@@ -33,10 +36,11 @@ label bad_consequences:
     vivi neutral "I'm..."
     vivi neutral "..."
     show vivi happy
-    pause 0.5
+    pause 0.521
     hide vivi happy
     with { "master" : Dissolve(3.0) }
     pause 0.5
+    stop music fadeout 5.0
     vivi happy "I'm a god, now."
 
     # $ message = "{i}...Illegible garble...{/i}"

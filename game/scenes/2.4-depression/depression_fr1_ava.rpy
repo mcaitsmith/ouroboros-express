@@ -7,9 +7,10 @@ label depression_fr1_ava:
     # LOCATION: lounge
     # call check_overlay from _call_check_overlay_28
     scene diningcar with fade
+    play ambience amb_bar fadein 1.0
 
-    # SOUND: train
-    #play sound train
+    
+    play sound trainwhistle
 
     show ava neutral at right with dissolve
     show vivi neutral at center with dissolve
@@ -29,6 +30,8 @@ label depression_fr1_ava:
     vivithinking "She's an oasis in the desert!"
     vivi "Hi! I see you're already ahead of me."
     ava "Hello, Vivi. We are drinking...?"
+    play sound glassclink
+    pause 0.25
     urshu "Tequila Sunrise."
 
     # ??ATTRACTION
@@ -40,6 +43,7 @@ label depression_fr1_ava:
     # END
 
     urshu happy "Your cocktail, Vivi. Aroma of marshmallows and Haribos? Ta ta, you two."
+    play music peacefulmusic loop
     vivithinking "Shoulda figured he'd know my drink, the cagey bastard!"
         
     hide urshu with dissolve
@@ -62,12 +66,17 @@ label depression_fr1_ava:
         # OPTION 1 +DECAY
         "...play a game?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi neutral "...play a game?"
             hide decay_icon
@@ -79,6 +88,8 @@ label depression_fr1_ava:
         # OPTION 2 +ATTRACTION +DECAY
         "...drink our feelings away?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
                 xoffset -500
@@ -91,6 +102,9 @@ label depression_fr1_ava:
             with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi neutral "...drink our feelings away?"
             hide attraction_icon
@@ -104,12 +118,17 @@ label depression_fr1_ava:
         # OPTION 3 +ATTRACTION
         "...sneak behind the bar for two top-shelf top-offs?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi happy "...sneak behind the bar for two top shelf top offs?"
             hide attraction_icon
@@ -147,12 +166,17 @@ label depression_fr1_ava:
         # OPTION 1 +DECAY
         "...had a pet.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi sad "...had a pet."
             hide decay_icon
@@ -177,12 +201,17 @@ label depression_fr1_ava:
         # OPTION 2 +ATTRACTION
         "...flirted with a goddess. Or the avatar, or whatever.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi happy "...flirted with a goddess. Or the avatar, or whatever."
             hide attraction_icon
@@ -211,12 +240,17 @@ label depression_fr1_ava:
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "...made a commitment to someone." if att_meter_ava >= 50:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi sad "...made a commitment to someone."
             hide attraction_icon

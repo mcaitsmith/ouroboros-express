@@ -10,6 +10,8 @@ label epi_friendship_all:
     # LOCATION: terminalofdreams
     scene white with dissolve
     scene terminalofdreams with Dissolve(3.0)
+    play ambience amb_terminal fadein 1.0
+    play sound trainwhistle
     pause 1.0
 
     show vivi happy at center_left with dissolve:
@@ -125,14 +127,17 @@ label epi_friendship_all:
     vivi happy blush "Together."
 
     scene white with Dissolve(3.0)
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
 
     # The End
 
-    stop sound fadeout 3.0
+
     scene black with Dissolve(3.0)
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
+    play music creditsmusicgood loop
     call screen credits
     stop music fadeout 3.0
     pause 3.0
