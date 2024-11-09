@@ -27,6 +27,7 @@ label bargaining_fr2_darius:
         # OPTION 1 +ATTRACTION
         "Could I interest you in dinner?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -34,6 +35,7 @@ label bargaining_fr2_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Could I interest you in dinner?"
@@ -52,6 +54,7 @@ label bargaining_fr2_darius:
         # OPTION 2 +DECAY
         "Can you help me with something for Urshu?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -59,6 +62,7 @@ label bargaining_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Can you help me with something for Urshu? He asked me to make dinner for the group and I'd appreciate the extra hands."
@@ -75,6 +79,7 @@ label bargaining_fr2_darius:
         # OPTION 3 >>DECAY +DECAY
         "You want out of this place?" if dec_meter > 20:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -82,6 +87,7 @@ label bargaining_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "You want out of this place? I may have your ticket, if you just help me out."
@@ -123,6 +129,7 @@ label bargaining_fr2_darius:
         # OPTION 1 +DECAY
         "Better not leave my comfort zone.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -130,6 +137,7 @@ label bargaining_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             show vivi neutral at left
@@ -144,6 +152,7 @@ label bargaining_fr2_darius:
         # OPTION 2 +ATTRACTION
         "Screw it, let's go all out!":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -151,6 +160,7 @@ label bargaining_fr2_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr2 / att_num_list_darius[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             show vivi neutral at left

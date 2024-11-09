@@ -57,7 +57,11 @@ label denial_fr1_susurha:
     # OPTION 2 +ATTRACTION
         "Honestly, I don't know.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Honestly, I don't know."
             show susurha sad
@@ -132,7 +136,12 @@ label denial_fr1_susurha:
     # OPTION 2 +ATTRACTION
         "How could I not? I can't stop thinking about it.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+            
 
             vivi "How could I not? I can't stop thinking about it."
             susurha angry "Uh.... Wrong answer. Not quite what I was looking to hear. Thank you very much. Now please tell me that the next thing that you utter isn't just echoing..."
@@ -165,7 +174,11 @@ label denial_fr1_susurha:
     # OPTION 1 +ATTRACTION
         "Are you okay?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Are you okay?"
             show susurha happy

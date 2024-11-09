@@ -32,6 +32,7 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "Who or what is our mysterious train conductor?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -39,6 +40,7 @@ label bargaining_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -63,6 +65,7 @@ label bargaining_fr1_ava:
         # OPTION 2 >>ATTRACTION +ATTRACTION (removing conditional)
         "If you could redo a past event, what would it be?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -70,6 +73,7 @@ label bargaining_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -112,6 +116,7 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "No family?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -119,6 +124,7 @@ label bargaining_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -135,6 +141,7 @@ label bargaining_fr1_ava:
         #OPTION 2 +ATTRACTION
         "No name?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -142,6 +149,7 @@ label bargaining_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -170,6 +178,7 @@ label bargaining_fr1_ava:
         # OPTION 3 +ATTRACTION
         "No tears?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -177,6 +186,7 @@ label bargaining_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -209,6 +219,7 @@ label bargaining_fr1_ava:
         #OPTION 4 +ATTRACTION
         "No men?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -216,6 +227,7 @@ label bargaining_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 

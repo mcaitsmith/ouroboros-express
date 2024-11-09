@@ -73,6 +73,7 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "Throw a dart while looking straight into Darius' eyes.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -80,6 +81,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             pause 1.0
@@ -101,6 +103,7 @@ label anger_fr2_darius:
     # OPTION 2 +DECAY
         "Actually...forget it.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -108,6 +111,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Actually...forget it."
@@ -135,6 +139,7 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "If I tell you a secret, will you tell me one of yours?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -142,6 +147,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "If I tell you a secret, will you tell me one of yours?"
@@ -160,6 +166,7 @@ label anger_fr2_darius:
     # OPTION 2 +DECAY
         "Sounds like you miss it a little.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -167,6 +174,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Sounds like you miss it a little."

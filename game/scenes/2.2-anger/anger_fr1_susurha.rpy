@@ -109,6 +109,7 @@ label anger_fr1_susurha:
         # OPTION 1 +ATTRACTION
         "Everyone hides something. I'm no exception.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -116,7 +117,8 @@ label anger_fr1_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral blush "Everyone hides something. I'm no exception."
             hide attraction_icon
@@ -134,6 +136,7 @@ label anger_fr1_susurha:
             # OPTION 2 +DECAY
         "Me? Hiding? What about you?!":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -141,7 +144,8 @@ label anger_fr1_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
-            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "Me? Hiding? What about you?! What exactly are YOU hiding behind those beady eyes?"
             hide decay_icon
@@ -165,6 +169,7 @@ label anger_fr1_susurha:
         #OPTION 1 +ATTRACTION
         "I am angry.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -172,7 +177,8 @@ label anger_fr1_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
-            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "I am angry."
             hide attraction_icon
@@ -202,6 +208,7 @@ label anger_fr1_susurha:
         #OPTION 2 +DECAY
         "You're the one who's angry.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -209,7 +216,8 @@ label anger_fr1_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
-            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi angry "You're the one who's angry."
             hide decay_icon

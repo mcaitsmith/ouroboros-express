@@ -31,6 +31,7 @@ label bargaining_fr2_ava:
         # OPTION 1 +ATTRACTION
         "I want to cook together...with you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -38,6 +39,7 @@ label bargaining_fr2_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
             
             play music ashamusic fadein 5.0 loop
@@ -96,6 +98,7 @@ label bargaining_fr2_ava:
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "Be my sous chef! Together, we'll rule this train." if att_meter_ava >= 40:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -103,6 +106,7 @@ label bargaining_fr2_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral blush "Be my sous chef! Together, we'll rule this train."
@@ -151,6 +155,7 @@ label bargaining_fr2_ava:
         # OPTION 1 +DECAY
         "Croquembouche.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -158,6 +163,7 @@ label bargaining_fr2_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi happy "Let's make the croquembouche you used to have at home. I'm sure it'll put us in a good mood."
@@ -203,6 +209,7 @@ label bargaining_fr2_ava:
         # OPTION 3 +DECAY 
         "Soufflé.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -210,6 +217,7 @@ label bargaining_fr2_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Soufflé. I think I can remember the recipe from my class."
@@ -251,6 +259,7 @@ label bargaining_fr2_ava:
         # OPTION 1 +ATTRACTION
         "If we work together?": 
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -258,6 +267,7 @@ label bargaining_fr2_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral blush "Do you mind if we work together? I'm not the most comfortable in the kitchen."
@@ -276,6 +286,7 @@ label bargaining_fr2_ava:
         # OPTION 2 +DECAY
         "Beating the eggs and sifting the flour for me?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -283,6 +294,7 @@ label bargaining_fr2_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Do you mind beating the eggs and sifting the flour for me? I'll take care of the other stuff, and we can combine ingredients."

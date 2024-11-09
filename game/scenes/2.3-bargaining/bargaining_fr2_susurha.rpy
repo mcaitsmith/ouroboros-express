@@ -191,6 +191,7 @@ label bargaining_fr2_susurha:
         # OPTION 1 +DECAY
         "Let's try to appeal to Urshu's taste.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -198,6 +199,7 @@ label bargaining_fr2_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
         
@@ -222,6 +224,7 @@ label bargaining_fr2_susurha:
         # OPTION 2 +ATTRACTION
         "We'll just try to cook the best dish we possibly can!":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -229,6 +232,7 @@ label bargaining_fr2_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
         
@@ -255,6 +259,7 @@ label bargaining_fr2_susurha:
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "I don't know. I'll let my Nana's spirit guide me." if att_meter_susurha >= 40:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -262,6 +267,7 @@ label bargaining_fr2_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
         
@@ -359,6 +365,7 @@ label bargaining_fr2_susurha:
         # OPTION 1 +ATTRACTION
         "It needs more spice.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -366,6 +373,7 @@ label bargaining_fr2_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -405,6 +413,7 @@ label bargaining_fr2_susurha:
         #OPTION 2 +DECAY
         "I think it's fine the way it is.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -412,6 +421,7 @@ label bargaining_fr2_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
         
@@ -434,6 +444,7 @@ label bargaining_fr2_susurha:
         #OPTION 3 >>DECAY +DECAY
         "Something?!" if dec_meter >= 30:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -441,6 +452,7 @@ label bargaining_fr2_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
         

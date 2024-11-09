@@ -68,6 +68,7 @@ label bargaining_fr1_darius:
         # OPTION 2 +ATTRACTION
         "I didn't think sarcasm was in your wheelhouse.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -75,6 +76,7 @@ label bargaining_fr1_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
         
@@ -95,6 +97,7 @@ label bargaining_fr1_darius:
         # OPTION 3 +DECAY
         "Can you read ANYTHING?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -102,6 +105,7 @@ label bargaining_fr1_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
 
@@ -137,6 +141,7 @@ label bargaining_fr1_darius:
         # OPTION 1 +ATTRACTION
         "So caring. I wouldn't expect it from you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -144,6 +149,7 @@ label bargaining_fr1_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
     
@@ -165,6 +171,7 @@ label bargaining_fr1_darius:
         #OPTION 2 +DECAY
         "Okay, enough. I don't need the lecture.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -172,6 +179,7 @@ label bargaining_fr1_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
     
             vivi angry "Okay, enough. I don't need the lecture. I'm not about to break this guy's heart or anything."
