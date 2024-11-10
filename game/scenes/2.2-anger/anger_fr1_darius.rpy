@@ -100,7 +100,7 @@ label anger_fr1_darius:
             vivi surprised "You're getting angry."
             darius angry "Yes. You should be, too."
             vivi surprised "What makes you think I'm not?"
-            darius neutral "Tsk. This place. I know it. We shouldn't be here."
+            darius neutral "This place. I know it. We shouldn't be here."
             vivithinking "Now, what does that mean?"
             # JUMP TO: darius angry "You still haven't played a card. Take your turn already."
 
