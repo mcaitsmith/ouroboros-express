@@ -52,7 +52,7 @@ label reveal:
     susurha happy "Ha! A joke! How droll!"
 
     show darius neutral
-    darius neutral "Surprise, surprise."
+    darius neutral "Hmph."
 
     show ava angry
     ava angry "What trickery is this? We have had enough of this game. Release us this instant."
@@ -87,7 +87,7 @@ label reveal:
     susurha surprised "Oh, well, then that's funny, see? It'll take more than a fool in uniform to keep me captive."
 
     show darius neutral
-    darius "Do you always act the fool or is this a special occasion?"
+    darius "Hmph."
     ava "What is the matter, master of thralls? Care to elaborate?"
     darius "I-I'm a mere observer."
 

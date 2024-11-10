@@ -95,7 +95,7 @@ label epi_friendship_all:
 
     susurha "Look, Vivi, he's turning."
     show susurha neutral -blush
-    vivi happy "I hate to see him to go, but I love to watch him leave."
+    vivi happy "I hate to see him go, but I love to watch him leave."
 
     ava neutral "There he goes, back into oblivion once more. It will be strange, I think, to no longer have him clutching the cards to the game of our lives."
     vivi neutral "It will be strange to have more to explore than a few rickety train carriages."

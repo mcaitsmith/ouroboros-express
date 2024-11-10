@@ -185,7 +185,7 @@ label anger_fr1_ava:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi angry blush "Here!"
-            ava sad "I am aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
+            ava sad "We are aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
             ava angry "We shall fade to darkness soon. Have you not seen it in your dreams?"
             vivi angry "You mean nightmares? Yeah..."
             vivi neutral "Well... at least we don't have to make any more sacrifices, right?"

@@ -57,7 +57,7 @@ label train_epilogue:
     urshu neutral "You do have quite the gift for seeing straight through them."
     vivi_conductor happy "And for finding something beautiful underneath."
     urshu neutral blush "And yet, none quite so beautiful as you. Won't you take my hand, Vivi? At any moment we will leave them to their new beginning, as our journey begins its spiral of theatrics and redemption once again."
-    vivi_conductor happy "It's been a long time since you had a fresh start of your own, huh Urshu?"
+    vivi_conductor happy "It's been a long time since you had a fresh start of your own, huh, Urshu?"
     urshu neutral "An eternity, one might say."
     show vivi_conductor at center with moveoutleft:
         xoffset -100
