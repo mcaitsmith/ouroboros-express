@@ -5,6 +5,8 @@ label denial_fr2_ava:
     #FREE ROAM 2 - Avatar of Asha
     #LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
+
 
     show vivi neutral at left with dissolve :
         xzoom -1
@@ -14,6 +16,7 @@ label denial_fr2_ava:
     vivithinking "Well, the goddess is here, staring into the darkness."
 
     show ava neutral at right with dissolve
+    play music ashamusic fadein 1.0
     vivi happy "Hey Ash, I think I found us a way out of this bi-"
    
     # <CHOICE>
@@ -41,7 +44,7 @@ label denial_fr2_ava:
     ava sad "Like sand in the wind."
 
     # <CHOICE>
-    "Who does she think she is?"
+    vivithinking "Who does she think she is?"
 
     menu:
 
@@ -60,7 +63,10 @@ label denial_fr2_ava:
     # OPTION 2 +ATTRACTION
         "Maybe we all matter, Asha.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi neutral "Maybe we all matter, Asha."
             vivi sad "Maybe we're all just specks of sand on a cosmic beach."
@@ -77,7 +83,10 @@ label denial_fr2_ava:
     # OPTION 3 +ATTRACTION
         "Asha, respectfully, I disagree with you.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi neutral "Asha, respectfully, I disagree with you."
             vivi neutral "Humans have identities, lives, and belief systems. Like you. We're complex. Like you. And you're no goddess. You're just a woman calling herself one."
@@ -92,6 +101,12 @@ label denial_fr2_ava:
 
     vivi happy "Yeah, so about that exit I mentioned..."
     vivi neutral "I spotted an emergency hatch in the glass above you. We can pop it open and escape. Look here at the win-"
+    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowshelf(frequency=200, gain=8), audio_filter.Lowpass(2000)], replace=True, duration=2.0)
+    play cd_ambience amb_cosmicdecay fadein 2.0
+    stop music fadeout 2.0
+    play sound char_mirror
+    pause 5.0
+    play music horrormusic
     vivi surprised "...dow"
     vivithinking "What the heck am I seeing?"
     ava surprised "Radiance protect me! What-"
@@ -99,7 +114,12 @@ label denial_fr2_ava:
     vivithinking "Dammit. I've seen this thing in nightmares." 
     vivithinking "I can't move, I can't breathe."
     ava neutral "Do you...jest? We see a cold abyss, pulsing with hunger and emptiness."
+    stop music fadeout 5.0
+    stop cd_ambience fadeout 5.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
+    pause 5.0
 
+    play sound teleport_exit
     show urshu happy at left with dissolve:
         xzoom -1.0
     show vivi surprised at left with hpunch:
@@ -127,6 +147,7 @@ label denial_fr2_ava:
     ava sad "Is there no help for us?"
     show urshu sad at left
     urshu sad "None for them, I fear."
+    play music mysterymusicpiano
     show vivi neutral at center
 
     # <CHOICE>
@@ -149,7 +170,10 @@ label denial_fr2_ava:
     #OPTION 2 +ATTRACTION
         "Terrifying. I can't imagine how it feels.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi sad "Terrifying. I can't imagine how it feels."
             ava sad "A circular void haunts our every thought. We fear it."
@@ -173,7 +197,10 @@ label denial_fr2_ava:
         #OPTION 1 +ATTRACTION
         "Can we get out of here?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi surprised "Can we get out of here?"
             show urshu neutral at left

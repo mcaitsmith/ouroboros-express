@@ -2,7 +2,8 @@ label anger_susurha_urshu:
 
     # call check_overlay from _call_check_overlay_9
     scene lounge with fade
-
+    play ambience amb_lounge if_changed fadein 1.0
+    play music mainmusic loop
     show vivi neutral at left with dissolve :
         xzoom-1
 
@@ -18,6 +19,8 @@ label anger_susurha_urshu:
 
     vivithinking "It seems Urshu is getting feisty with Susu’Rha."
 
+
+
     hide vivi
 
     show urshu neutral at left with dissolve :
@@ -32,11 +35,12 @@ label anger_susurha_urshu:
 
 
     urshu "Envious? Ah, do you spot a green-eyed monster, perhaps? I don’t have nearly enough time in the day for such feelings."
+    stop music fadeout 2.0
 
 
     susurha "Mhm."
 
-
+    play music spymusic loop
     urshu "How do you do it?"
 
 
@@ -92,6 +96,7 @@ label anger_susurha_urshu:
 
 
     urshu sad "It is a great shame that no one does."
+    stop music fadeout 2.0
 
     hide susurha
     hide urshu
@@ -102,4 +107,5 @@ label anger_susurha_urshu:
     vivithinking  "Time to go."
 
     #JUMP TO: Character Selector 2
+    stop ambience fadeout 1.0
     jump anger_cs2

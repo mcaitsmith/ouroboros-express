@@ -4,6 +4,9 @@ label anger_urshu_darius:
 
     # call check_overlay from _call_check_overlay_10
     scene observatory with fade
+    stop music fadeout 2.0
+    play ambience amb_observatory fadein 1.0
+    
 
     show vivi neutral at left with dissolve :
         xzoom -1
@@ -24,6 +27,7 @@ label anger_urshu_darius:
     vivithinking surprised "Looks like that cosmic detective guy is here too. He seems pissed. I shouldn’t interrupt them."
 
     vivithinking neutral "But I’ll still listen in."
+    play music spymusic loop
 
     hide vivi
 
@@ -61,6 +65,7 @@ label anger_urshu_darius:
 
     urshu happy "Wouldn’t you agree, Miss Sanssouci?"
 
+    stop music fadeout 1.0
     show vivi surprised at center with dissolve
 
     vivithinking surprised "Crap on a cracker, they must have heard me. Sensed me? Who can say."
@@ -72,13 +77,19 @@ label anger_urshu_darius:
     vivi surprised "Um...hello. I didn’t hear anything."
 
     darius neutral "I'm sure. Well. Goodnight, Vivi." 
+
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
+    play sound char_telepathy
     darius angry "Urshu, don't think I'm finished with you."
+    pause 5.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
+    
 
     hide darius
 
     # sound of darius leaving/ steps/ door closing
-    play sound footsteps
-    pause 2.0
+    #play sound footsteps
+    #pause 2.0
     play sound doorslam
     pause 1.0
 
@@ -86,5 +97,6 @@ label anger_urshu_darius:
     vivi surprised "What was that about?"
 
     urshu neutral "Dear Darius is simply adjusting. They will be fine. Do excuse me."
+    stop ambience fadeout 1.0
 
     jump anger_debrief

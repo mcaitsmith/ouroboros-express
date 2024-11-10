@@ -7,6 +7,8 @@ label anger_cs2:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_1
     scene cabin with fade
+    play ambience amb_bedroom fadein 1.0
+    play music mainmusic loop
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -33,6 +35,7 @@ label anger_cs2:
         "Avatar of Asha" if fr1_anger_choice != "Ava":
 
             vivi neutral "Let's see how good the goddess is at darts, shall we?"
+            stop ambience fadeout 1.0
             # JUMP TO: Free Roam 2 / Ava
             jump anger_fr2_ava
 
@@ -40,6 +43,7 @@ label anger_cs2:
         "Darius Wrecker" if fr1_anger_choice != "Darius":
 
             vivi neutral "Darius seems like good competition."
+            stop ambience fadeout 1.0
             # JUMP TO: Free Roam 2 / Darius 
             jump anger_fr2_darius
 
@@ -47,5 +51,6 @@ label anger_cs2:
         "Susu'Rha Balrinn" if fr1_anger_choice != "Susu'Rha":
 
             vivi neutral "I'm sure Susu'Rha would be down for a little competition."
+            stop ambience fadeout 1.0
             # JUMP TO: Free Roam 2 / Susurha
             jump anger_fr2_susurha

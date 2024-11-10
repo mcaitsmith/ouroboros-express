@@ -9,6 +9,8 @@ label epi_friendship_all:
 
     # LOCATION: terminalofdreams
     scene white with dissolve
+    scene terminalofdreams with Dissolve(3.0)
+    pause 1.0
 
     show vivi happy at center_left with dissolve:
         xzoom -1
@@ -121,6 +123,8 @@ label epi_friendship_all:
     $ renpy.choice_for_skipping() # stop skipping
     $ _skipping = False
     vivi happy blush "Together."
+
+    scene white with Dissolve(3.0)
 
     # The End
 

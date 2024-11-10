@@ -7,6 +7,7 @@ label anger_fr2_ava:
     # LOCATION: dining car
     # call check_overlay from _call_check_overlay_6
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -38,12 +39,14 @@ label anger_fr2_ava:
         # OPTION 1 +DECAY
         "Amazing.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
             hide decay_icon
@@ -57,12 +60,14 @@ label anger_fr2_ava:
         # OPTION 2 +ATTRACTION
         "Awful.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
             hide attraction_icon
@@ -223,6 +228,7 @@ label anger_fr2_ava:
         #OPTION 1 +ATTRACTION +DECAY
         "Don't play games with me.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
                 xoffset -500
@@ -235,6 +241,7 @@ label anger_fr2_ava:
             with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "Don't play games with me."
             hide attraction_icon
@@ -247,12 +254,14 @@ label anger_fr2_ava:
         #OPTION 2 +DECAY
         "I don't need you to think I'm special.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "I don't need you to think I'm special. Just because your crazy cult revered you doesn't mean that I'm going to, ass hat!"
             hide decay_icon
@@ -284,4 +293,5 @@ label anger_fr2_ava:
     vivithinking sad "Ugh! I messed up. Maybe they'll accept my apology tomorrow..."
 
     # JUMP TO: Urshu Darius scene
+    stop ambience fadeout 1.0
     jump anger_urshu_darius

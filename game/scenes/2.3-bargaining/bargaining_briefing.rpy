@@ -8,6 +8,7 @@ label bargaining_briefing:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_12
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -39,15 +40,24 @@ label bargaining_briefing:
             "Let's try the lounge." if not checked_lounge:
                 $ checked_lounge = True
                 vivithinking "Let's try the lounge."
+                stop ambience fadeout 1.0
 
                 # LOCATION: lounge
                 scene lounge with fade
+                play ambience amb_lounge if_changed fadein 1.0
 
                 show vivi neutral at left:
                     xzoom -1
 
                 vivithinking "Well. He isn't here. Nobody's here."
+                stop music fadeout 1.0
+                $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowshelf(frequency=200, gain=2), audio_filter.Lowpass(2000)], replace=True, duration=2.0)
                 vivithinking "Wait...what is..."
+                play music horrormusic loop
+                $ renpy.music.set_volume(0.25, delay=0.1, channel='ambience')
+                play sound trainshake loop
+
+                
 
                 # VISUAL: rainbows flash around the room
                 show white with dissolve
@@ -70,24 +80,34 @@ label bargaining_briefing:
                 hide white with dissolve
                 vivithinking "That strange light is turning the windows into mirrors but I can't see myself in them, just endless other mirrors reflecting back. And then darkness. Darkness I can {i}feel{/i}."
                 vivithinking sad "Like there's a void closing in around me, swallowing me up, and there are things waiting there... things I don't want to see. Is this what the end feels like?"
+                stop sound fadeout 1.0
+                $ renpy.music.set_volume(1.0, delay=1.0, channel='ambience')
                 vivithinking "No, pull yourself together, Vivi. It's all just your imagination. It's just..."
                 # VISUAL: a black vignette closes in on the room
                 # scene lounge with flash
+                $ renpy.music.set_volume(0.25, delay=0.1, channel='ambience')
+                $ renpy.music.set_volume(0, delay=0.1, channel='music')
+                play sound char_terror
                 show white with dissolve
                 show lounge blur
-                play sound horror
+                $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
                 hide white with dissolve
+                pause 5
+                $ renpy.music.set_volume(1.0, delay=3.5, channel='ambience')
+
                 show vivi surprised
-                # SOUND: Screams, scary cosmic horror shit
                 pause 3.0
 
                 vivithinking surprised "...Yeah, I'm out."
+                $ renpy.music.set_audio_filter("ambience", None, replace=False, duration=2.0)
+                stop ambience fadeout 1.0
+                stop music fadeout 1.0
 
                 hide vivi with dissolve
-
                 stop sound fadeout 1.0
 
                 scene cabin with fade
+                play ambience amb_bedroom if_changed fadein 1.0
 
                 show vivi neutral at left with dissolve:
                     xzoom -1
@@ -169,7 +189,6 @@ label bargaining_briefing:
     # SOUND: glassclink
     play sound glassclink
     pause 5.0
-    stop sound fadeout 1.0
 
     vivi neutral "You... Of course, you knew." 
     vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a... an impish... wisenheimer or something."
@@ -181,6 +200,7 @@ label bargaining_briefing:
         xzoom -1
     
     vivithinking "Focus, Vivi. Think about your goal. Now, how should I go about this?"
+    play music mysterymusic
 
     show vivi neutral at left
 

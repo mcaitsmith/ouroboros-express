@@ -5,6 +5,7 @@ label confrontation:
     # Confrontation
     # LOCATION: lounge
     scene lounge with fade
+    play ambience amb_lounge fadein 1.0
 
     show urshu happy at right with dissolve
     show vivi angry at left with dissolve:
@@ -21,6 +22,7 @@ label confrontation:
     vivithinking angry "Oh, the {i}gall{/i}."
     vivi angry "I {i}know{/i}, Urshu."
     urshu happy "You know? Know what? Recipes for cake? My waist size?"
+    play music confrontationmusic
     vivi angry "Quit the deflections. I said I {i}know.{/i}"
     urshu neutral "..."
     urshu neutral "Ah, so you have followed your investigative proclivities. Tell me, what is it you {i}know{/i}?"
@@ -51,16 +53,16 @@ label confrontation:
     vivi sad "I..."
     vivi sad "We're..."
     urshu angry "Say it!"
+    stop music fadeout 0.1
     vivi sad "Dead! We're all dead! Except for you."
     urshu happy "Well done, Miss Sanssouci. Well done."
 
     # SOUND: teleport
-    play sound teleport
+    play sound teleport_enter
+    stop ambience fadeout 1.0
     # VISUAL: screen shakes
     show lounge with hpunch
 
-    pause 2.0
-    stop sound fadeout 2.0
 
     # VISUAL: fade out
     # TRANSITION TO DINING CAR

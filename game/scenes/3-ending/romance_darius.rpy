@@ -50,6 +50,13 @@ label romance_darius:
     # VISUAL: screen fades to white
     scene white with Dissolve(3.0)
     # LOCATION: terminalofdreams
+    scene terminalofdreams with Dissolve(2.0)
+    pause 1.0
+    show darius happy at center_right with dissolve:
+        xpos 0.65
+    show vivi happy at center_left with dissolve :
+        xzoom -1
+        xpos 0.35
 
     vivi surprised "What— Where are we? Darius?"
     darius surprised "Vivi... I-I don't believe it. Haha!"
@@ -60,6 +67,8 @@ label romance_darius:
     darius neutral "You know better than to ask such a silly question, Miss Sanssouci." 
     darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
     vivi happy "I'm with you."
+
+    scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
     $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness,\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"

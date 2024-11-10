@@ -343,7 +343,7 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton "Help":
+            textbutton "Controls":
                 if not main_menu:
                     background "gui/pause/button2.png"
                     action ShowMenu("help_ingame")
@@ -1297,7 +1297,7 @@ screen preferences():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                                textbutton _("Test") yoffset -15 action Play("sound", config.sample_sound)
 
 
                     if config.has_voice:
@@ -1307,7 +1307,7 @@ screen preferences():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                                textbutton _("Test") yoffset -15 action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -1341,7 +1341,8 @@ style slider_button_text is gui_button_text
 style slider_pref_vbox is pref_vbox
 
 style mute_all_button is check_button
-style mute_all_button_text is check_button_text
+style mute_all_button_text is check_button_text:
+    yoffset -10
 
 style pref_label:
     top_margin gui.pref_spacing
@@ -1362,6 +1363,7 @@ style radio_button:
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
+    yoffset -10
 
 style check_vbox:
     spacing gui.pref_button_spacing
@@ -1372,6 +1374,7 @@ style check_button:
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+    yoffset -10
 
 style slider_slider:
     xsize 525
@@ -1493,7 +1496,7 @@ screen help_ingame():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help_ingame"
 
@@ -1549,7 +1552,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help"
 

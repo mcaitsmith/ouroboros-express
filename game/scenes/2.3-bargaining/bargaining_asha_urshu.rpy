@@ -11,7 +11,7 @@ label bargaining_asha_urshu :
     show vivi angry at left :
         xzoom -1
 
-    vivithinking "Ah, insomnia, my old friend. Let us gaze on stars again. Better than tossing and turning like a fish flopping around to death."
+    vivithinking "Ah, insomnia, my old friend. Let us gaze on the stars again. Better than tossing and turning like a fish flopping around to death."
 
     show vivi sad at left :
         xzoom -1

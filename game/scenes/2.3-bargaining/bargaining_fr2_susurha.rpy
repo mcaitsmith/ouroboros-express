@@ -258,8 +258,8 @@ label bargaining_fr2_susurha:
             vivi sad "Oh... Susu'Rha..."
             vivi sad "Look... I don't wanna tell you the same old cliche of \"You can't blame yourself\" for what happened to your family because, in a way...I did the same thing as you." 
             susurha neutral "What do you mean? Your actions resulted in the death of your loved ones?!"
-            vivi neutral "Well, okay. Let me clarify. Where I'm from, running away doesn't necessarily mean physically running away. It can mean a lot of things, like burrowing yourself in some much work you don't face, just...how terrifying it all is..."
-            vivi sad "I think by working so much on this reporting gig that I never saw my family did...kill the bond between us in a way..."
+            vivi neutral "Well, okay. Let me clarify. Where I'm from, running away doesn't necessarily mean physically running away. It can mean a lot of things, like burrowing yourself in so much work you don't face, just...how terrifying it all is..."
+            vivi sad "I think working so much on this reporting gig that I never saw my family... did kill the bond between us in a way..."
             vivi neutral "Anyways. What I'm trying to say is... Both of us ran from what we thought would hurt us, which is natural... I think."
             vivi angry "And we both regret it. We {i}reallllyyyy{/i} fucking regret it, and we would do anything to take it back."
             vivi neutral "But we can't. Well... Not yet at least." 
@@ -410,7 +410,7 @@ label bargaining_fr2_susurha:
             vivi angry "Something?!"
             hide decay_icon
             with { "master" : Dissolve(0.5) }
-            vivi angry "We get ONE SHOT to impress Urshu or we're stuck on this train forever, and you the only thing you can think of is that's it's missing \"something?!\""
+            vivi angry "We get ONE SHOT to impress Urshu or we're stuck on this train forever, and the only thing you can think of is that's it's missing \"something?!\""
             vivi angry "You know what? Forget it. The food is all yours, lizard brain! And you can add all the unspecific \"somethings\" your little reptilian heart desires!"
             susurha surprised "Vivienne, enough!"
             susurha neutral "I'm trying to help you, but it should be a collaboration."
