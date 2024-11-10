@@ -5,7 +5,7 @@ label bargaining_fr2_darius:
     #FREE ROAM 2 - Darius
 
     # LOCATION: diningcar
-    call check_overlay from _call_check_overlay_21
+    # call check_overlay from _call_check_overlay_21
     scene diningcar with fade
 
     # SOUND: cooking, dining sounds
@@ -30,7 +30,7 @@ label bargaining_fr2_darius:
         "Could I interest you in dinner?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -52,7 +52,7 @@ label bargaining_fr2_darius:
         "Can you help me with something for Urshu?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -73,7 +73,7 @@ label bargaining_fr2_darius:
         "You want out of this place?" if dec_meter > 20:
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -117,7 +117,7 @@ label bargaining_fr2_darius:
         "Better not leave my comfort zone.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -136,7 +136,7 @@ label bargaining_fr2_darius:
         "Screw it, let's go all out!":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850

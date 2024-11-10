@@ -7,12 +7,14 @@ label epi_friend_ava:
 
     stop music fadeout 2.0
     pause 2.0
+    scene white with fade
     play music goodendmusic volume 0.5
 
     # LOCATION: terminalofdreams
-    scene white with dissolve
-
+    scene terminalofdreams with Dissolve(3.0)
+    pause 1.0
     show ava happy at center with dissolve
+    pause 2.0
 
     urshu happy "While I had my occasional doubts about you two, I'm glad that you found each other. So many near misses, close connections, heated moments..."
     urshu "Our sun goddess brought the warm light of friendship into Vivi's empty heart; our reporter helped the Avatar to realize there was more to her than a voice, more than a goddess." 

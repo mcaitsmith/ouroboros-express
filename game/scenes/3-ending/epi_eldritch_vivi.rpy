@@ -8,8 +8,10 @@ label epi_eldritch_vivi:
     # Vivi monster gets its way back to Earth...for a little revenge. Aahaha. (She's insane)
 
     #LOCATION: eldritchlandscape
-    scene black with fade
-    show urshu sad at center with dissolve
+    scene eldritch_vivi with Fade(2,2,2)
+    pause 2.0
+    show urshu sad at left with dissolve:
+        xzoom -1.0
     urshu sad "Anyone can change for the better, but they have to want to change."
     urshu "Unfortunately, Miss Sanssouci was stuck in her ways. She was too stubborn and too angry to open up. Her repressed self gave birth to emptiness. From the emptiness came the hunger, too strong for her decaying body."
     urshu sad "I should have realized sooner that she was meant for a different purpose." 
@@ -23,6 +25,8 @@ label epi_eldritch_vivi:
     hide urshu with dissolve
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
+    scene black with Dissolve(3.0)
+    pause 1.0
     call screen credits
     stop music fadeout 3.0
     stop sound fadeout 3.0

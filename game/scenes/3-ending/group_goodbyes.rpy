@@ -44,6 +44,11 @@ label group_goodbyes:
     label goodbye_choice:
         hide vivi with dissolve
         if goodbye1 == True and goodbye2 == True and goodbye3 == True:
+            hide ava
+            hide darius
+            hide susurha
+            with { "master" : Dissolve(0.5) }
+            pause 1.0
             jump train_epilogue
         else:
             if not goodbye1:
@@ -125,7 +130,8 @@ label group_goodbyes:
 
     hide darius silhouette with dissolve  
     show ava happy at right with dissolve
-    show vivi happy at left with dissolve
+    show vivi happy at left with dissolve:
+        xzoom -1.0
     
     vivithinking neutral "There she is, radiant as always. But today she really is glowing! Like a beacon in the darkness."
     vivi happy "Asha! I'm so glad you're here."
@@ -148,7 +154,8 @@ label group_goodbyes:
     hide ava silhouette with dissolve
     hide susurha silhouette with dissolve
     show darius neutral at right with dissolve
-    show vivi neutral at left with dissolve
+    show vivi neutral at left with dissolve:
+        xzoom -1.0
    
    
     vivithinking neutral "Here he is. He's standing tall. And there's a sense of peace around him. No... acceptance. It's easing my mind."
@@ -171,7 +178,8 @@ label group_goodbyes:
     hide ava silhouette with dissolve
     hide darius silhouette with dissolve
     show susurha happy at right with dissolve
-    show vivi at left with dissolve
+    show vivi at left with dissolve:
+        xzoom -1.0
     
     vivithinking neutral "They're gazing out of the window. Right into that strange, haunting glow. Only they could look so peaceful in a moment like this."
     susurha happy "It's wondrous, isn't it? I don't know quite what it heralds, but I'm eager to find out."

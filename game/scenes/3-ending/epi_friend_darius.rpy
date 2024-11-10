@@ -7,11 +7,13 @@ label epi_friend_darius:
 
     stop music fadeout 2.0
     pause 2.0
+    scene white with fade
     play music goodendmusic volume 0.5
 
-    scene white with dissolve
-
+    scene terminalofdreams with Dissolve(3.0)
+    pause 1.0
     show darius happy at center with dissolve
+    pause 2.0
 
     urshu happy "Darius Wrecker, former Inquisitor, soldier of the Lord of Eternal Rest, was a being who looked in the mirror and hated what they saw."
     urshu happy "He regretted his past actions, but could not accept that he deserved anything but guilt and shame." 

@@ -4,7 +4,7 @@ label bad_consequences:
 
     # Bad Ending/Consequences
     # LOCATION: eldritch landscape
-    call hide_overlay from _call_hide_overlay
+    # call hide_overlay from _call_hide_overlay
     scene black with Fade(3.0,0.0,1.0)
 
     show vivi neutral at right with dissolve
@@ -32,6 +32,11 @@ label bad_consequences:
     vivi sad "..."
     vivi neutral "I'm..."
     vivi neutral "..."
+    show vivi happy
+    pause 0.5
+    hide vivi happy
+    with { "master" : Dissolve(3.0) }
+    pause 0.5
     vivi happy "I'm a god, now."
 
     # $ message = "{i}...Illegible garble...{/i}"

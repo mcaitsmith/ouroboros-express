@@ -5,8 +5,9 @@ label anger_fr1_susurha:
     #FREE ROAM 1 - SUSU'RHA
 
     # LOCATION: dining car
-    call check_overlay from _call_check_overlay_5
+    # call check_overlay from _call_check_overlay_5
     scene diningcar with fade
+    play ambience amb_bar fadein 1.0
 
     # VISUAL: screen shakes
     show diningcar with hpunch
@@ -22,6 +23,7 @@ label anger_fr1_susurha:
     # SOUND: card shuffle
     play sound shuffle
     pause 2.0
+    play music susumusic loop
 
     susurha surprised "Vivienne! What brings you here?"
     vivithinking surprised "Are they shuffling cards? Doesn't look like a deck I've ever seen."
@@ -42,35 +44,35 @@ label anger_fr1_susurha:
     vivithinking neutral "Provocative. This one's certainly not boring." 
 
     menu:
-        # OPTION 1 +ATTRACTION
+        # OPTION 1 +ATTRACTION (removing meter effect for balance)
         "I'll play.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
         
             vivi neutral "I'll play."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha happy "Indeed you will. There's nothing quite like an intimate question to enliven the mood." 
             # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
-        # OPTION 2 +DECAY
+        # OPTION 2 +DECAY (removing meter effect for balance)
         "I'd be revealing too much.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "I'd be revealing too much."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "You don't even know the contents of the game yet, and you're already scared I may pierce your carefully crafted veneer."
             vivi angry "I'm a reporter. I don't do masks. I expose the masks of others."
 
@@ -93,6 +95,8 @@ label anger_fr1_susurha:
                     # JUMP TO: susurha neutral "I'm going to ask you a question. You will answer, and I will try to ascertain whether or not you are lying."
 
     susurha neutral "I'm going to draw cards from this deck with questions."
+    play sound orex_fol_shuffle
+    pause 2.0
     susurha happy "You will answer, and I will try to ascertain whether or not you are lying."
     vivi surprised "That's it?"
     vivi neutral "Hit me." 
@@ -105,12 +109,14 @@ label anger_fr1_susurha:
         # OPTION 1 +ATTRACTION
         "Everyone hides something. I'm no exception.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivi neutral blush "Everyone hides something. I'm no exception."
             hide attraction_icon
@@ -128,12 +134,14 @@ label anger_fr1_susurha:
             # OPTION 2 +DECAY
         "Me? Hiding? What about you?!":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
 
             vivi angry "Me? Hiding? What about you?! What exactly are YOU hiding behind those beady eyes?"
             hide decay_icon
@@ -157,12 +165,14 @@ label anger_fr1_susurha:
         #OPTION 1 +ATTRACTION
         "I am angry.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr1 / att_num_list_susurha[0])
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
 
             vivi angry "I am angry."
             hide attraction_icon
@@ -192,12 +202,14 @@ label anger_fr1_susurha:
         #OPTION 2 +DECAY
         "You're the one who's angry.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
         
             vivi angry "You're the one who's angry."
             hide decay_icon
@@ -221,6 +233,7 @@ label anger_fr1_susurha:
     vivithinking neutral "To see them like that, vulnerable, staring back at me. It's been a while, hasn't it?"
     susurha happy "I think we got what we needed from this. I imagine whoever runs this place did too."
     susurha happy "See you around, dear Vivienne."
+    stop music fadeout 2.0
 
     # susurha exits
     hide susurha with dissolve

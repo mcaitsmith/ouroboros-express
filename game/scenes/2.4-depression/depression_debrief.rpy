@@ -5,7 +5,7 @@ label depression_debrief:
     # Debrief Depression
 
     # LOCATION: cabin
-    call check_overlay from _call_check_overlay_27
+    # call check_overlay from _call_check_overlay_27
     scene cabin with fade
 
     # ??ATTRACTION
@@ -50,7 +50,7 @@ label depression_debrief:
         #Journal entry with attraction meter high
         call display_journal from _call_display_journal_5
 
-        $ cycle = 4
+        $ cycle = 5
 
         stop sound
 
@@ -98,7 +98,7 @@ label depression_debrief:
         # Journal entry with degradation meter high
         call display_journal from _call_display_journal_6
 
-        $ cycle = 4
+        $ cycle = 5
 
         stop sound
 

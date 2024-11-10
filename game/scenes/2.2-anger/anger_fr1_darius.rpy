@@ -5,8 +5,9 @@ label anger_fr1_darius:
     #FREE ROAM 1 - DARIUS 
 
     # LOCATION: lounge
-    call check_overlay from _call_check_overlay_4
+    # call check_overlay from _call_check_overlay_4
     scene lounge with fade
+    play ambience amb_lounge if_changed fadein 1.0
 
     show darius angry at right with dissolve
 
@@ -26,7 +27,8 @@ label anger_fr1_darius:
     vivithinking neutral "Mon dieu, his hands. Dextrous fingers. Manicured claws."
     
     # <CHOICE>
-    darius neutral "..." 
+    darius neutral "..."
+    stop music fadeout 5.0
     
     menu:
     # OPTION 1
@@ -52,12 +54,14 @@ label anger_fr1_darius:
     # OPTION 1 +ATTRACTION
         "Can you even play this with two people?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi surprised "Can you even play this with two people?"
             hide attraction_icon
@@ -79,17 +83,20 @@ label anger_fr1_darius:
     # OPTION 2 +DECAY
         "You mentioned Urshu. Why bring him up?":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "You mentioned Urshu. Why bring him up?"
             hide decay_icon
             with { "master" : Dissolve(0.5) }
             darius angry "That little twerp knows more than he lets on."
+            play sound shuffle
             vivi surprised "You're getting angry."
             darius angry "Yes. You should be, too."
             vivi surprised "What makes you think I'm not?"
@@ -101,9 +108,13 @@ label anger_fr1_darius:
     vivi angry "Don't tell me what to do."
     darius neutral "There's no reason to get snippy with me. I'm not the one who trapped us all here."
     vivi angry "Who are you calling 'snippy'? You're being aggressive. No way to talk to a lady."
-    # SOUND: whoosh
-    play sound swoosh
-    pause 2.0
+    # SOUND: telepathy
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=1.5)
+    $ renpy.music.set_volume(0.25, delay=1.5, channel='music')
+    play sound char_telepathy
+    pause 3.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
+    $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
     vivithinking surprised "That flare of rage again. So bright, it's almost painful."
     darius surprised "Well. That's... interesting."
     vivi surprised "What is?"
@@ -118,6 +129,7 @@ label anger_fr1_darius:
     vivithinking surprised "That rage. Pure. So hot that it makes my cheeks flush."
     darius angry "Fine. Vivi. Normally, I can read the beings around me. It's what makes me such an excellent judge of... character. But since arriving here, that's changed. I feel...cut off. Disarmed."
     vivi neutral "Darius, you shouldn't be reading my mind without asking first anyway. Bit rude."
+    stop music fadeout 5.0
     show darius surprised blush with dissolve
     darius "I...I'm not trying to—"
     vivi happy "Please don't do it again. Your turn!"
@@ -125,6 +137,7 @@ label anger_fr1_darius:
 
     # <CHOICE>
     show darius neutral blush
+    play music dariusmusic fadein 5.0
     darius "Forgive me. All of this is new. As I said: unusual." 
 
     menu:
@@ -142,12 +155,14 @@ label anger_fr1_darius:
     # OPTION 2 +ATTRACTION
         "That sounds difficult. Like being unmoored.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr1 / att_num_list_darius[0])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "That sounds difficult. Like being unmoored."
             hide attraction_icon
@@ -165,12 +180,14 @@ label anger_fr1_darius:
     # OPTION 3 +DECAY
         "Well, you don't hear me crying about it.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi neutral "Well you don't hear me crying about it."
             hide decay_icon

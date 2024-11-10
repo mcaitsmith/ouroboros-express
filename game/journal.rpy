@@ -62,32 +62,42 @@ label journal:
         # determine diary note
         # note 9/6/24 - 14 lines max, ~42 chars max per line
         # if len(journal_array) >= 1:
-        if cycle == 0:
-            text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 1{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
-        # if len(journal_array) >= 2:
-        if cycle == 1:
-            # text "{color=#000000}DAY 2{/color}"  xalign 0.25 yalign 0.2
-            text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 2{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
-            # text "{color=#000000}[journal_array[1]]{/color}" xalign 0.25 yalign 0.23
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
-        # if len(journal_array) >= 3:
-        if cycle == 2:
-            # text "{color=#000000}DAY 3{/color}"  xalign 0.25 yalign 0.3
-            text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 3{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
-            # text "{color=#000000}[journal_array[2]]{/color}" xalign 0.25 yalign 0.33
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
-        # if len(journal_array) >= 4:
-        if cycle == 3:
-            # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 4{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
-            # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
-        if cycle == 4:
-            # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
-            text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 5{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
-            # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
-            text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
+        vbox xpos 395 ypos 265:
+            text "DAY [cycle]" size 32 font "fonts/Kalam-Bold.ttf" color "#000000" xalign 0.5
+            null height 15
+            viewport xsize 520 ysize 360:
+                mousewheel True
+                draggable True
+                scrollbars "vertical"
+                vscrollbar_unscrollable "hide"
+                text message size 24 kerning 1.5 font "fonts/Kalam-Bold.ttf" color "#000000"
+
+        # if cycle == 0:
+        #     text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 1{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
+        #     text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
+        # # if len(journal_array) >= 2:
+        # if cycle == 1:
+        #     # text "{color=#000000}DAY 2{/color}"  xalign 0.25 yalign 0.2
+        #     text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 2{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
+        #     # text "{color=#000000}[journal_array[1]]{/color}" xalign 0.25 yalign 0.23
+        #     text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
+        # # if len(journal_array) >= 3:
+        # if cycle == 2:
+        #     # text "{color=#000000}DAY 3{/color}"  xalign 0.25 yalign 0.3
+        #     text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 3{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
+        #     # text "{color=#000000}[journal_array[2]]{/color}" xalign 0.25 yalign 0.33
+        #     text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
+        # # if len(journal_array) >= 4:
+        # if cycle == 3:
+        #     # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
+        #     text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 4{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
+        #     # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
+        #     text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
+        # if cycle == 4:
+        #     # text "{color=#000000}DAY 4{/color}"  xalign 0.25 yalign 0.4
+        #     text "{font=Kalam-Bold.ttf}{size=32}{k=1.5}{color=#000000}DAY 5{/color}{/k}{/font}{/size}"  xalign 0.33 yalign 0.26
+        #     # text "{color=#000000}[journal_array[3]]{/color}" xalign 0.25 yalign 0.43
+        #     text "{font=Kalam-Bold.ttf}{size=24}{k=1.5}{color=#000000}[message]{/color}{/k}{/font}{/size}" xpos 400 xanchor 0.0 ypos 314 yanchor 0.0
         # note as of 9/6/24: 14 chars max per line, 5 lines max
         #determine darius note
         if eldritch == True:

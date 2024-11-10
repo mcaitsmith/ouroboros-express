@@ -5,7 +5,7 @@ label depression_fr1_ava:
     # FREE ROAM 1 - Ava
 
     # LOCATION: lounge
-    call check_overlay from _call_check_overlay_28
+    # call check_overlay from _call_check_overlay_28
     scene diningcar with fade
 
     # SOUND: train
@@ -52,7 +52,7 @@ label depression_fr1_ava:
 
     # DECAY ROUTE
     if dec_meter >= 40:
-        play sound decchoice
+        # play sound decchoice
         ava sad "We misspoke. We wish to drink alone."
         vivi "Well then. See ya, sunshine."
         # JUMP TO: vivithinking "What are the others doing, I wonder?"
@@ -63,7 +63,7 @@ label depression_fr1_ava:
         "...play a game?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -88,7 +88,7 @@ label depression_fr1_ava:
                 xoffset -500
                 # xoffset -30
                 yoffset -750
-            with { "master" : Dissolve(0.5) }
+            with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_depression_fr1 / att_num_list_ava[4])
             $ dec_meter += int(dec_max_depression / dec_num_depression)
 
@@ -105,7 +105,7 @@ label depression_fr1_ava:
         "...sneak behind the bar for two top-shelf top-offs?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -136,7 +136,7 @@ label depression_fr1_ava:
 
     # DECAY ROUTE
     if dec_meter >= 40:
-        play sound decchoice
+        # play sound decchoice
         ava sad "We misspoke. We wish to drink alone."
         vivithinking "Up yours, snooty patootie."
         vivi "Well then. See ya, sunshine."
@@ -148,7 +148,7 @@ label depression_fr1_ava:
         "...had a pet.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -178,7 +178,7 @@ label depression_fr1_ava:
         "...flirted with a goddess. Or the avatar, or whatever.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -212,7 +212,7 @@ label depression_fr1_ava:
         "...made a commitment to someone." if att_meter_ava >= 50:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850

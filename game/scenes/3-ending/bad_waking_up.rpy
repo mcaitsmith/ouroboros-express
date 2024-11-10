@@ -9,7 +9,7 @@ label bad_waking_up:
 
     #LOCATION: black background
     # over black
-    call hide_overlay from _call_hide_overlay_1
+    # call hide_overlay from _call_hide_overlay_1
     scene black with fade
 
     # vivi is dreaming
@@ -23,7 +23,7 @@ label bad_waking_up:
     vivithinking sad "Why are we so alone?"
 
     # LOCATION: cabin
-    call check_overlay from _call_check_overlay_36
+    # call check_overlay from _call_check_overlay_36
     scene cabin with fade
 
     show vivi surprised at left with dissolve:

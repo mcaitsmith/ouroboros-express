@@ -5,6 +5,8 @@ label denial_fr1_darius:
     #FREE ROAM 1 - Darius
     #LOCATION: lounge
     scene lounge with fade
+    play ambience amb_lounge fadein 1.0
+    play music mainmusic if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom-1
@@ -250,6 +252,6 @@ label denial_fr1_darius:
     vivi "Sure. Thank you for being open to my questions."
 
     darius "Consider it restitution for my earlier rudeness, Ms. Sanssouci."
-
     # JUMP TO: Denial 2.1 NPC scene Ava and Darius
+    stop music fadeout 1.0
     jump denial_fr1_ava_darius

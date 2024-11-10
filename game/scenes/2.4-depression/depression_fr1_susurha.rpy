@@ -5,7 +5,7 @@ label depression_fr1_susurha:
     # FREE ROAM 1 - Susu'Rha (DEPRESSION)
 
     # LOCATION: diningcar
-    call check_overlay from _call_check_overlay_30
+    # call check_overlay from _call_check_overlay_30
     scene diningcar with fade
 
     show vivi neutral at left with dissolve:
@@ -81,7 +81,7 @@ label depression_fr1_susurha:
         "Been engaged.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -108,7 +108,7 @@ label depression_fr1_susurha:
         "Led a kingdom.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -134,7 +134,7 @@ label depression_fr1_susurha:
         "I don't know." if dec_meter >= 35:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -161,7 +161,7 @@ label depression_fr1_susurha:
         "Can we just sit and drink?" if dec_meter >= 40:
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -185,7 +185,7 @@ label depression_fr1_susurha:
         "No.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -212,7 +212,7 @@ label depression_fr1_susurha:
         "Possibly, recently." if att_meter_susurha >= 60:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -235,7 +235,7 @@ label depression_fr1_susurha:
         "I've had plenty of lovers.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

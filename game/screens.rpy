@@ -26,6 +26,8 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    hover_sound ui_mouseover
+    activate_sound ui_select
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -225,6 +227,8 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    hover_sound ui_mouseover
+    activate_sound ui_select
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
@@ -271,6 +275,8 @@ style quick_button_text is button_text
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    hover_sound ui_mouseover
+    activate_sound ui_select
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
@@ -337,7 +343,7 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton "Help":
+            textbutton "Controls":
                 if not main_menu:
                     background "gui/pause/button2.png"
                     action ShowMenu("help_ingame")
@@ -624,7 +630,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                                 style "view_journal_button"
                                 action Jump("display_journal")
                             imagebutton:
-                                idle "gui/pause/journal.jpg"
+                                idle "gui/pause/journal.png"
                                 action Jump("display_journal")
     use navigation
 
@@ -983,7 +989,7 @@ screen file_slots_ingame(title):
                 style_prefix "slot_ingame"
 
                 xalign 0.5
-                yalign 0.8
+                yalign 0.6
                 xfill True
 
                 spacing 4
@@ -1058,7 +1064,7 @@ screen file_slots_ingame(title):
 style slot_ingame_button is gui_button
 style slot_ingame_button:
     xsize 300
-    ysize 150
+    ysize 120
     size 16
     xalign 0.5
 style slot_ingame_button_text is text:
@@ -1069,7 +1075,7 @@ style slot_ingame_time_text:
     color "#DDD"
     hover_color gui.hover_color
     selected_idle_color "#FFF" 
-    selected_idle_bold True
+    selected_idle_bold False
 
 style page_ingame_label_text is gui_label_text
 style page_ingame_label_text:
@@ -1291,7 +1297,7 @@ screen preferences():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                                textbutton _("Test") yoffset -15 action Play("sound", config.sample_sound)
 
 
                     if config.has_voice:
@@ -1301,7 +1307,7 @@ screen preferences():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                                textbutton _("Test") yoffset -15 action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -1335,7 +1341,8 @@ style slider_button_text is gui_button_text
 style slider_pref_vbox is pref_vbox
 
 style mute_all_button is check_button
-style mute_all_button_text is check_button_text
+style mute_all_button_text is check_button_text:
+    yoffset -10
 
 style pref_label:
     top_margin gui.pref_spacing
@@ -1356,6 +1363,7 @@ style radio_button:
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
+    yoffset -10
 
 style check_vbox:
     spacing gui.pref_button_spacing
@@ -1366,6 +1374,7 @@ style check_button:
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+    yoffset -10
 
 style slider_slider:
     xsize 525
@@ -1487,7 +1496,7 @@ screen help_ingame():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help_ingame"
 
@@ -1543,7 +1552,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help"
 

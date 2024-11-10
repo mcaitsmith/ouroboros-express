@@ -9,11 +9,13 @@ label epi_friend_susurha:
 
     stop music fadeout 2.0
     pause 2.0
+    scene white with fade
     play music goodendmusic volume 0.5
 
-    scene white with dissolve
-
+    scene terminalofdreams with Dissolve(3.0)
+    pause 1.0
     show susurha happy at center with dissolve
+    pause 2.0
 
     urshu happy "Susu'Rha, desirous of a life of their own design, broke the chains of expectation and eschewed their royal title, opting instead for a life of anarchic expression in the Viridian Wood."
     urshu happy "When the generational curse of war pulled them back, they found themself aboard the Ouroboros Express—and with you, Vivi."

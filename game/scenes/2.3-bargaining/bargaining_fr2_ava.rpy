@@ -5,7 +5,7 @@ label bargaining_fr2_ava:
     #FREE ROAM 2 - Ava
 
     # LOCATION: diningcar
-    call check_overlay from _call_check_overlay_20
+    # call check_overlay from _call_check_overlay_20
     scene diningcar with fade
 
     # SOUND: cooking, kitchen sounds
@@ -30,7 +30,7 @@ label bargaining_fr2_ava:
         "I want to cook together...with you.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -68,19 +68,19 @@ label bargaining_fr2_ava:
 
             # JUMP TO: ava neutral "So what shall we make, then?"
 
-        # OPTION 2 +DECAY
+        # OPTION 2 +DECAY (removing meter effect for balance)
         "Urshu asked me...":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            # play sound decchoice
+            # show decay_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
 
             vivi sad blush "Urshu asked me to cook something for everyone, so I figured we could do it together. What do you think?"
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             ava neutral "We wish you would have asked us sooner. The sun is nearly gone today."
             vivi neutral "So...is that a yes?"
             ava neutral "We suppose..."
@@ -91,7 +91,7 @@ label bargaining_fr2_ava:
         "Be my sous chef! Together, we'll rule this train." if att_meter_ava >= 40:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -143,7 +143,7 @@ label bargaining_fr2_ava:
         "Croquembouche.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -163,19 +163,19 @@ label bargaining_fr2_ava:
 
             # JUMP TO: vivi happy blush "Let's get cooking!"
 
-        # OPTION 2 +ATTRACTION
+        # OPTION 2 +ATTRACTION (removing meter effect for balance)
         "Something simple.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
 
             vivi happy "Something simple. A good old American breakfast!"
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
 
             ava surprised "We are not familiar with...American..."
             vivi happy "Well, then I'll tell ya, Asha! Americans love to eat, and they wake up most days with a massive meal."
@@ -193,7 +193,7 @@ label bargaining_fr2_ava:
         "Soufflé.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -236,7 +236,7 @@ label bargaining_fr2_ava:
         "If we work together?": 
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -259,7 +259,7 @@ label bargaining_fr2_ava:
         "Beating the eggs and sifting the flour for me?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

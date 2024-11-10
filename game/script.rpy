@@ -1,44 +1,42 @@
 ﻿# The script of the game goes in this file.
 
-# COMMENTING OUT TEXT BLIPS TO BE REPLACED BY VO
-# init python:
-#     renpy.music.register_channel("blip", "sfx")
-#     def beepy_voice_high(event, interact=True, **kwargs):
-#         if not interact:
-#             return
-#         if event == "show_done":
-#             renpy.sound.play("audio/sfx/468925__malakme__high-text-blip.ogg",channel="blip")
-#         elif event == "slow_done":
-#             renpy.sound.stop(channel="blip")
-#     def beepy_voice_medium(event, interact=True, **kwargs):
-#         if not interact:
-#             return
-#         if event == "show_done":
-#             renpy.sound.play("audio/sfx/468927__malakme__medium-text-blip.ogg",channel="blip")
-#         elif event == "slow_done":
-#             renpy.sound.stop(channel="blip")
-#     def beepy_voice_low(event, interact=True, **kwargs):
-#         if not interact:
-#             return
-#         if event == "show_done":
-#             renpy.sound.play("audio/sfx/468926__malakme__lowblip.ogg",channel="blip")
-#         elif event == "slow_done":
-#             renpy.sound.stop(channel="blip")
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define vivi = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",color="#FFFFFF")
 define vivithinking = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi",what_prefix='(', what_suffix=')',color="#FFFFFF")
+define vivi_conductor = Character("Vivi", callback = name_callback, cb_name = "vivi", image="vivi_conductor",color="#FFFFFF")
 define urshu = Character("Urshu", callback = name_callback, cb_name = "urshu", image="urshu",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define urshudining = Character("Urshu", callback = name_callback, cb_name = "urshudining", image="urshudining",color="#FFFFFF", namebox_background=Frame("gui/namebox_urshu.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define ava = Character("Asha", callback = name_callback, cb_name = "ava",image="ava",color="#FFFFFF", namebox_background=Frame("gui/namebox_ava.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define darius = Character("Darius", callback = name_callback, cb_name = "darius",image="darius",color="#FFFFFF", namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susurha",image="susurha",color="#FFFFFF", namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 
+###MUSIC
+#TITLE MUSIC
 # define titlemusic = "audio/music/lavenders blue.ogg"
-define mainmusic = "audio/music/OrEx_MainTrack1_v1.0.ogg"
+
+#MOOD MUSIC
+define mainmusic = "audio/music/orex_mx_main.ogg"
+define mysterymusic = "audio/music/orex_mx_mystery.ogg"
+define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg"
+define horrormusic = "audio/music/orex_mx_horror.ogg"
+define peacefulmusic = "audio/music/orex_mx_peaceful.ogg"  
+define confrontationmusic = "audio/music/orex_mx_mystery.ogg" #tense, dramatic
+define spymusic = "audio/music/orex_mx_mystery.ogg" #suspensful spy music
+
+#MUSIC SEQUENCES
+define revealmusic = "audio/music/orex_mx_mystery.ogg"
+
+#CHARACTER THEMES
+define susumusic = "audio/music/orex_mx_susu.ogg" 
+define dariusmusic = "audio/music/orex_mx_darius.ogg"
+define ashamusic = "audio/music/orex_mx_asha.ogg"
+
+#ENDING THEMES
 define goodendmusic = "audio/music/Good Ending.ogg"
-define badendmusic = "audio/music/CosmicSelf_Demo_BadEnding.ogg"
+define badendmusic = "audio/music/orex_mx_cosmicself.ogg"
+define finalemusic = "audio/music/orex_mx_finale.ogg"
+
 
 # define silhouette images
 image ava silhouette = "images/characters/ava/ava silhouette.png"
@@ -50,6 +48,46 @@ image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
 image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
 image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
 image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
+
+# define decay overlay bg images
+# define day for quick fix for a bug
+define day = 0
+layeredimage cabin:
+    always:
+        "images/backgrounds/cabin.png"
+    if day == 2:
+        "decay_bedroom_1"
+    elif day == 3:
+        "decay_bedroom_2"
+    elif day == 4 or day == 6:
+        "decay_bedroom_3"
+layeredimage observatory:
+    always:
+        "images/backgrounds/observatory.png"
+    if day == 2:
+        "decay_observatory_1"
+    elif day == 3:
+        "decay_observatory_2"
+    elif day == 4 or day == 6:
+        "decay_observatory_3"
+layeredimage lounge:
+    always:
+        "images/backgrounds/lounge.png"
+    if day == 2:
+        "decay_lounge_1"
+    elif day == 3:
+        "decay_lounge_2"
+    elif day == 4 or day == 6:
+        "decay_lounge_3"
+layeredimage diningcar:
+    always:
+        "images/backgrounds/diningcar.png"
+    if day == 2:
+        "decay_bar_1"
+    elif day == 3:
+        "decay_bar_2"
+    elif day == 4 or day == 6:
+        "decay_bar_3"
 
 # add second channel for sfx
 init python:
@@ -99,6 +137,10 @@ image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprit
 image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
 image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
 image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
+image vivi_conductor neutral = At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
+image vivi_conductor happy = At('images/characters/vivi/vivi_conductor/vivi_conductor happy.png', sprite_highlight('vivi'))
+image vivi_conductor surprised = At('images/characters/vivi/vivi_conductor/vivi_conductor surprised.png', sprite_highlight('vivi'))
 
 # define urshu dining images
 image urshudining neutral = At('images/characters/urshu/urshu dining/urshu_neutral_table.png', sprite_highlight('urshudining'))
@@ -129,11 +171,11 @@ transform flicker_opacity:
     linear 0.2 alpha 0.4
     repeat 4
 transform train_shake:
-    linear 0.1 xoffset -2 yoffset 2 
-    linear 0.1 xoffset 3 yoffset -3 
-    linear 0.1 xoffset 2 yoffset -2
-    linear 0.1 xoffset -3 yoffset 3
-    linear 0.1 xoffset 0 yoffset 0
+    linear 0.3 xoffset -2 yoffset 2 
+    linear 0.3 xoffset 2 yoffset -2
+    # linear 0.3 xoffset 2 yoffset -2
+    # linear 0.3 xoffset -3 yoffset 3
+    # linear 0.3 xoffset 0 yoffset 0
     repeat
 
 init python:
@@ -191,11 +233,7 @@ label check_overlay_nofade: # call this label to display eldritch overlay
     return
 
 label hide_overlay: # call this label to hide eldritch overlay
-    # hide eldritch1 onlayer eldritch_overlay
-    # hide eldritch2 onlayer eldritch_overlay
-    # hide eldritch3 onlayer eldritch_overlay
-    # hide eldritch4 onlayer eldritch_overlay
-    # hide eldritch5 onlayer eldritch_overlay
+    hide eldritch onlayer eldritch_overlay
     # with { "master" : Dissolve(1.0) }
     return
 

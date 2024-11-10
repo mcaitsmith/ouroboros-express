@@ -5,7 +5,7 @@ label bargaining_fr1_susurha:
     #FREE ROAM 1 - Susu'Rha
 
     # LOCATION: diningcar
-    call check_overlay from _call_check_overlay_19
+    # call check_overlay from _call_check_overlay_19
     scene diningcar with fade
 
     # SOUND: window click - opening
@@ -40,7 +40,7 @@ label bargaining_fr1_susurha:
         "You're such an observant lizard.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -59,7 +59,7 @@ label bargaining_fr1_susurha:
         "He just seems like such an enigmatic character." if dec_meter >= 5:
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -83,7 +83,7 @@ label bargaining_fr1_susurha:
         "I struck a bargain with Urshu. I'm going to make him a meal.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -115,7 +115,7 @@ label bargaining_fr1_susurha:
                 xoffset -500
                 # xoffset -30
                 yoffset -750
-            with { "master" : Dissolve(0.5) }
+            with { "master" : Dissolve(2.0) }
             $ att_meter_susurha += int(att_max_bargaining_fr1 / att_num_list_susurha[2])
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
         
@@ -157,7 +157,7 @@ label bargaining_fr1_susurha:
     
     # DECAY ROUTE
     if dec_meter >= 15:
-        play sound decchoice
+        # play sound decchoice
         susurha neutral "Try not to burn yourself, Vivienne."
         # JUMP TO: Character Selector 2
         jump bargaining_cs2
@@ -167,7 +167,7 @@ label bargaining_fr1_susurha:
         "So you're calling Urshu a slimy freak?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -207,7 +207,7 @@ label bargaining_fr1_susurha:
         "I don't think Urshu is that bad.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -231,7 +231,7 @@ label bargaining_fr1_susurha:
         "Are you absolutely sure we can't bargain with Urshu?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -254,7 +254,7 @@ label bargaining_fr1_susurha:
         "Urshu is quite the slimy freak." if att_meter_susurha >= 30:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -284,7 +284,7 @@ label bargaining_fr1_susurha:
         "I NEED his help if I'm gonna get off this train." if dec_meter >= 10:
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

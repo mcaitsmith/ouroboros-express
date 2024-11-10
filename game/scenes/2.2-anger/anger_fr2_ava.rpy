@@ -5,8 +5,9 @@ label anger_fr2_ava:
     #FREE ROAM 2 - AVA
 
     # LOCATION: dining car
-    call check_overlay from _call_check_overlay_6
+    # call check_overlay from _call_check_overlay_6
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -38,12 +39,14 @@ label anger_fr2_ava:
         # OPTION 1 +DECAY
         "Amazing.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
             hide decay_icon
@@ -51,18 +54,20 @@ label anger_fr2_ava:
             ava sad "No, Vivienne, perpetual loneliness. We would not wish that even upon our monarchy."
             # SOUND: dart hitting the board
             play sound darts
-            pause 2.0
+            pause 1.0
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
         # OPTION 2 +ATTRACTION
         "Awful.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
             hide attraction_icon
@@ -71,7 +76,7 @@ label anger_fr2_ava:
             ava "Thank you...that means more to us than you know."
             # SOUND: dart hitting the board
             play sound darts
-            pause 2.0
+            pause 1.0
             show ava happy -blush
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
@@ -83,9 +88,12 @@ label anger_fr2_ava:
             ava neutral "We...still struggle to grasp why you have this torture device, but your meaning is clear."
             # SOUND: dart hitting the board
             play sound darts
-            pause 2.0
+            pause 1.0
             # JUMP TO: ava happy "Another bullseye. Your turn, little one."
 
+    show darts_asha with dissolve
+    $ renpy.pause()
+    hide darts_asha with dissolve
     ava happy "Another bullseye. Your turn, little one."
     vivi angry "I thought I asked you to stop calling me that."
     ava sad "Oh, do not take offense at our term of endearment. We are warming up to you."
@@ -98,38 +106,38 @@ label anger_fr2_ava:
     vivi angry blush "Well...it's still demeaning. I don't like it."
 
     menu:
-        #OPTION 1 +DECAY
+        #OPTION 1 +DECAY (removing meter effect for balance)
         "But if you like it...":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi happy blush "But if you like it...I guess I could get used to it."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             show ava happy blush with dissolve
             ava "No. We never wish to offend you."
             vivithinking happy "I'll do anything she wants to spend some more time with her...!"
             show ava happy -blush
             # JUMP TO: vivi neutral "Sure. Anyways..."
 
-        #OPTION 2 +ATTRACTION
+        #OPTION 2 +ATTRACTION (removing meter effect for balance)
         "Don't ever call me that again.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi angry "Don't ever call me that again. I don't like it. I'm not your pet."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
             ava "By Asha, we beg forgiveness. We never intended harm."
             vivi  "..." 
@@ -160,19 +168,19 @@ label anger_fr2_ava:
     vivi neutral blush "I've been meaning to ask you:"
 
     menu:
-        # OPTION 1 +DECAY
+        # OPTION 1 +DECAY (removing meter effect for balance)
         "What are your thoughts on our conductor?":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi neutral "What are your thoughts on the conductor?"
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             ava surprised "Ah, Urshu. A mystery."
             vivi "Personally...I think he's undead."
             ava surprised "A zombie?"
@@ -183,19 +191,19 @@ label anger_fr2_ava:
             ava neutral "I suppose humans do rank in the highest percentile for creatures who smile without cause." 
             # JUMP TO: vivi neutral "How...interesting."    
 
-        # OPTION 2 +ATTRACTION
+        # OPTION 2 +ATTRACTION (removing meter effect for balance)
         "What do you want to do with your time left?":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
 
             vivi neutral "What do you want to do with your time left?"
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             ava sad "..."
             ava neutral "Enjoy the view. We seldom saw nighttime. It is strange. Nice."
             vivi happy "It is pretty nice, huh." 
@@ -220,6 +228,7 @@ label anger_fr2_ava:
         #OPTION 1 +ATTRACTION +DECAY
         "Don't play games with me.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
                 xoffset -500
@@ -229,9 +238,10 @@ label anger_fr2_ava:
                 xoffset -500
                 # xoffset -30
                 yoffset -750
-            with { "master" : Dissolve(0.5) }
+            with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "Don't play games with me."
             hide attraction_icon
@@ -244,12 +254,14 @@ label anger_fr2_ava:
         #OPTION 2 +DECAY
         "I don't need you to think I'm special.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "I don't need you to think I'm special. Just because your crazy cult revered you doesn't mean that I'm going to, ass hat!"
             hide decay_icon
@@ -281,4 +293,5 @@ label anger_fr2_ava:
     vivithinking sad "Ugh! I messed up. Maybe they'll accept my apology tomorrow..."
 
     # JUMP TO: Urshu Darius scene
+    stop ambience fadeout 1.0
     jump anger_urshu_darius

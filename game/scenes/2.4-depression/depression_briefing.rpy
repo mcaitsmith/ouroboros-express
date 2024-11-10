@@ -3,9 +3,10 @@
 label depression_briefing:
 
     # Briefing Depression
+    $ day = 4 # depression
 
     # LOCATION: cabin
-    call check_overlay from _call_check_overlay_25
+    # call check_overlay from _call_check_overlay_25
     scene cabin with fade
 
     show vivi sad at left with dissolve :

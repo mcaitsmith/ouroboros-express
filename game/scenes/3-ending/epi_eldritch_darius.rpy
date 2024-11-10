@@ -16,12 +16,14 @@ label epi_eldritch_darius:
     play sound2 horror loop fadein 1.0
 
     #LOCATION: eldritchlandscape
-    scene black with Fade(2,2,2)
-    pause 2.0
-    show urshu sad at left with dissolve:
-        xzoom -1.0
 
     if att_meter_darius > 0:
+
+        scene eldritch_darius with Fade(2,2,2)
+        pause 2.0
+        show urshu sad at left with dissolve:
+            xzoom -1.0
+
         urshu sad "The illithid Darius could not forgive himself for the atrocities he had been responsible for in life."
 
         urshu sad "With neither a vehicle through which to reconcile his own actions, nor a chance for atonement, the resentment he held only grew. "
@@ -36,6 +38,11 @@ label epi_eldritch_darius:
         urshu sad "Somewhere deep down, he knew this was a fitting fate for him—a nightmare in body to reflect the monster within."
         $ _skipping = True
     else:
+
+        scene black with Fade(2,2,2)
+        pause 2.0
+        show urshu sad at center with dissolve:
+            xzoom -1.0
         urshu sad "Darius retreated inward aboard the Ouroboros Express, neither giving into his grief nor opening up to the others. What better place for someone in such a transitory phase than the Express itself?"
         $ renpy.choice_for_skipping() # stop skipping
         $ _skipping = False

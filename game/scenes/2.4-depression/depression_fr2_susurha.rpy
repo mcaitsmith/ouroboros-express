@@ -5,7 +5,7 @@ label depression_fr2_susurha:
     # FREE ROAM 2 - Susu'Rha (DEPRESSION)
 
     # LOCATION: observatory
-    call check_overlay from _call_check_overlay_33
+    # call check_overlay from _call_check_overlay_33
     scene observatory with fade
 
     show susurha sad at right with dissolve
@@ -20,7 +20,7 @@ label depression_fr2_susurha:
 
     # ??DECAY (DECAY ROUTE?)
     if dec_meter >= 50:
-        play sound decchoice
+        # play sound decchoice
         vivi "Don't know. You're not boring."
         jump dep_fr2_susu_end
     #END
@@ -29,37 +29,37 @@ label depression_fr2_susurha:
     vivi "I wanted to see you because...."
             
     menu:
-        #OPTION 1 +ATTRACTION
+        #OPTION 1 +ATTRACTION (removing meter effect for balance)
         "I didn't want to be alone.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I didn't want to be alone."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha "I very much hoped you'd come."
             vivi "Is it okay if I stay here?"
             susurha "Please do."
             #JUMP TO: vivithinking "It feels so warm being next to them."
         
-        #OPTION 2 >>ATTRACTION +ATTRACTION
+        #OPTION 2 >>ATTRACTION +ATTRACTION (removing meter effect for balance)
         "I also needed to see a friendly face." if att_meter_susurha >= 50:
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
                 
             vivi "I also needed to see a friendly face."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             show susurha happy blush with dissolve
             vivi "..."
             show susurha neutral -blush
@@ -71,7 +71,7 @@ label depression_fr2_susurha:
         "I don't...know why.":
 
             # play sound attchoice
-            # show attraction_icon at right with dissolve:
+            # show attraction_icon at right with Dissolve(2.0):
             #     xoffset -500
             #     # xoffset -30
             #     yoffset -850
@@ -111,19 +111,19 @@ label depression_fr2_susurha:
             susurha "That's what I'm afraid of."
             # JUMP TO: susurha "So you ARE afraid?"
 
-        #OPTION 2 +ATTRACTION
+        #OPTION 2 +ATTRACTION (removing meter effect for balance)
         "I don't want to go.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
 
             vivi "I don't want to go."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha sad "Yeah..."
             # JUMP TO: susurha "So you ARE afraid?"
 
@@ -135,7 +135,7 @@ label depression_fr2_susurha:
         "Yes.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -152,7 +152,7 @@ label depression_fr2_susurha:
         "No.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -194,7 +194,7 @@ label depression_fr2_susurha:
         "I want to be ME as well.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -214,7 +214,7 @@ label depression_fr2_susurha:
         "I get what you mean." if dec_meter >= 45:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -233,7 +233,7 @@ label depression_fr2_susurha:
         "Nothing can take away who you are." if att_meter_susurha >= 60:
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -256,7 +256,7 @@ label depression_fr2_susurha:
         "I know who I am.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

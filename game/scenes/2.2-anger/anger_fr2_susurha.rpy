@@ -5,7 +5,7 @@ label anger_fr2_susurha:
     #FREE ROAM 2 - SUSU'RHA
 
     # LOCATION: dining car
-    call check_overlay from _call_check_overlay_8
+    # call check_overlay from _call_check_overlay_8
     scene diningcar with fade
 
     show vivi neutral at left with dissolve : 
@@ -45,12 +45,14 @@ label anger_fr2_susurha:
     # OPTION 1 +ATTRACTION
         "The arrogance on this one. I'd sure love to shut them up.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "The arrogance on this one. I'd sure love to shut them up."
             hide attraction_icon
@@ -68,7 +70,10 @@ label anger_fr2_susurha:
 
             # SOUND: dart hits the board
             play sound darts
-            pause 2.0
+            pause 1.0
+            show darts_susu_1 with dissolve
+            $ renpy.pause()
+            hide darts_susu_1 with dissolve
 
             susurha happy "Mine hit close, does that count for something?"
             vivi happy "Not as much as a bullseye!"
@@ -83,12 +88,14 @@ label anger_fr2_susurha:
     # OPTION 2 +DECAY
         "Clearly, they're insecure. I'm gonna let them win.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Clearly, they're insecure. I'm gonna let them win."
             hide decay_icon
@@ -104,7 +111,10 @@ label anger_fr2_susurha:
             
             # SOUND: dart hits the board and then the floor
             play sound darts
-            pause 2.0
+            pause 1.0
+            show darts_susu_2 with dissolve
+            $ renpy.pause()
+            hide darts_susu_2 with dissolve
 
             vivi angry "Urghhh. Stupid dart."
             susurha happy "Am I supposed to believe that you can't hit the board from this distance?"
@@ -126,19 +136,19 @@ label anger_fr2_susurha:
     # <CHOICE>
 
     menu:
-    # OPTION 1 +ATTRACTION
+    # OPTION 1 +ATTRACTION (removing meter effect for balance)
         "It was an assignment given to me by my agent.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi neutral "It was an assignment given to me by my agent, Chloe. She told me to write an exposé about a mysterious train line with an enigmatic conductor."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             vivi happy "I said yes because it reminded me of those internet horror stories I grew up with."
             vivi neutral "Seems like the stories swirling around the Ouroboros Express were more than just stories."
             vivi sad "Now I'm dead..."
@@ -147,19 +157,19 @@ label anger_fr2_susurha:
             susurha sad "Vivienne. I'm so sorry, my dear. But you cannot blame yourself for this travesty."
             # JUMP TO: susurha neutral "The fault lies with your "agent.""
 
-    # OPTION 2 +DECAY
+    # OPTION 2 +DECAY (removing meter effect for balance)
         "I didn't have a choice.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "I didn't have a choice."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha neutral "Do tell."
             vivi angry "I'm a reporter. I go where the story is. Wherever Chloe tells me to go."
             vivi sad "What a silly reason to die."
@@ -188,12 +198,14 @@ label anger_fr2_susurha:
 
     # mica, I believe the above is an action rather than something vivi says. Same w/ option 2
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Pierce Chloe!"
             hide decay_icon
@@ -215,12 +227,14 @@ label anger_fr2_susurha:
     #OPTION +ATTRACTION
         "(Pierce the idea that it was her fault.)":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking sad "No. . . this isn't right.'"
             hide attraction_icon
@@ -255,19 +269,19 @@ label anger_fr2_susurha:
     # <CHOICE>
 
     menu:
-    #OPTION 1 +ATTRACTION
+    #OPTION 1 +ATTRACTION (removing meter effect for balance)
         "You did what you could. It isn't your fault.":
 
-            play sound attchoice
-            show attraction_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -850
-            $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            # play sound attchoice
+            # show attraction_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -850
+            # $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
 
             vivi sad "You did what you could. It isn't your fault."
-            hide attraction_icon
-            with { "master" : Dissolve(0.5) }
+            # hide attraction_icon
+            # with { "master" : Dissolve(0.5) }
             susurha sad "Thank you. That means something."
             
             # SOUND: dart smacks the board
@@ -288,19 +302,19 @@ label anger_fr2_susurha:
             vivi sad "..."
             # JUMP TO: susurha neutral "Well, this has been fun as always, but I wish to return to my cabin for some solitude."
 
-    #OPTION +DECAY
+    #OPTION +DECAY (removing meter effect for balance)
         "We got a raw deal. Life is unfair.":
 
-            play sound decchoice
-            show decay_icon at right with dissolve:
-                xoffset -500
-                # xoffset -30
-                yoffset -750
-            $ dec_meter += int(dec_max_anger / dec_num_anger)
+            # play sound decchoice
+            # show decay_icon at right with Dissolve(2.0):
+            #     xoffset -500
+            #     # xoffset -30
+            #     yoffset -750
+            # $ dec_meter += int(dec_max_anger / dec_num_anger)
 
             vivi angry "We got a raw deal. Life is unfair."
-            hide decay_icon
-            with { "master" : Dissolve(0.5) }
+            # hide decay_icon
+            # with { "master" : Dissolve(0.5) }
             susurha angry "Certainly nothing about our present situation is fair."
             vivi angry "I HATE this train!"
             vivi angry "And the conductor. It's his fault we're here."

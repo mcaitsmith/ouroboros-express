@@ -6,6 +6,8 @@ label denial_fr1_ava:
 
     #LOCATION: Observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
+    play music mainmusic
 
     show ava sad at right with dissolve
     show vivi neutral at left with dissolve:
@@ -14,12 +16,12 @@ label denial_fr1_ava:
 
     show ava surprised at right
 
-    # SOUND: ava gasps.
-    play sound gasp
-    pause 1.0
+    # SOUND: ava gasps. OUTDATED
+    #play sound gasp
+    #pause 1.0
     
     show ava happy at right
-    vivithinking "Oh, she's noticed me. So imposing~"
+    vivithinking "Oh, she's noticed me. So imposing..."
 
     show ava happy blush with dissolve
 
@@ -63,7 +65,10 @@ label denial_fr1_ava:
     # OPTION 2 +ATTRACTION
         "I wonder what she saw in the window.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivithinking "I wonder what she saw in the window."
             vivi happy "I'm a little overwhelmed by everything going on. What are you looking at?"
@@ -86,7 +91,10 @@ label denial_fr1_ava:
     # OPTION 1 +ATTRACTION
         "I should share my worries with her.":
 
+            $ renpy.music.set_volume(0.50, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivithinking "I should share my worries with her."
             vivi surprised "I don't even know what to think anymore...this whole journey has thrown me for a loop. I mean, if the conductor was telling the truth, then are we all really dead...?"
@@ -117,7 +125,10 @@ label denial_fr1_ava:
     # OPTION 1 +ATTRACTION
         "Drink, yes? Little one? No!":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
+            pause 1.0
+            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
 
             vivithinking "Drink, yes? Little one? No!"
             vivi happy blush "Another time! But please stop calling me \"little one.\" I'm thirty."

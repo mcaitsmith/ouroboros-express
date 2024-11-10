@@ -6,6 +6,7 @@ label denial_briefing:
     #Briefing Denial
     #LOCATION: cabin
     scene cabin with fade
+    play ambience amb_bedroom
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -15,6 +16,7 @@ label denial_briefing:
     vivithinking "Did I faint yesterday?" 
 
     show urshu neutral at right with dissolve
+    play sound swoosh
 
     urshu "Miss Sanssouci, the Ouroboros Express waits for no one. Least of all a reporter. Do you have a moment?"
 
@@ -34,9 +36,13 @@ label denial_briefing:
     vivi neutral "Crow's feet? My skin is perfect. What the hell do you mean?"
     vivithinking "Come on Vivi. Perfect? Maybe ten years ago." 
     vivithinking "But I know what he means. Yesterday..."
+    stop music fadeout 10.0
     vivithinking "Something wrong. Something sick. Feeling like something pulling my skin apart, then I fell unconscious."
     vivithinking "Huh? He's pointing at the mirror."
     vivi neutral "What's wrong? Let me have a look at myself."
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
+    play sound heartbeat
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=10.0)
     vivithinking "HUH?"
     vivithinking "What are these gross flakes protruding off my skin?!"
     vivithinking "They're shining like wet scales."
@@ -47,6 +53,7 @@ label denial_briefing:
 
     # <CHOICE>
     urshu neutral "Would the good lady like a story? I am happy to indulge, if your quickly deteriorating time allotment permits?"
+    play music mysterymusicpiano
 
     menu:
     # OPTION 1
@@ -58,8 +65,7 @@ label denial_briefing:
             urshu happy "Once, long ago, a ferryman called... Sursu toiled in the doldrums of an ordinary immortal career... ferrying souls to and fro. From mortal realms to eternal gardens, or places eternal but foul." 
             vivithinking "What did I sign up for?"
             # SOUND: urshu sighs
-            play sound sigh
-            pause 3.0
+            #play sound sigh #REPLACED WITH VO
             urshu neutral "On one occasion, Sursu the ferryman met a sweet soul who asked of him a great favor. Too great, in reality - a lifeline, of sorts. And Sursu felt less than obliged to help this soul - they’d already tried to destroy the ferryman's precious vessel! It was audacious!" 
             urshu neutral "Furthermore, the ferryman was under great scrutiny by the gods who managed him. They were aware of his treasonous heart, which wanted to do more than ferry souls to and fro. They knew he yearned for more than those sad, sole voyages could yield..." 
             urshu neutral "But this sweet soul only did what they thought was right, for they were trapped and lost, with no north star to guide them..."

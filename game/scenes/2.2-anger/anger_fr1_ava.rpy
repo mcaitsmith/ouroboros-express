@@ -5,8 +5,9 @@ label anger_fr1_ava:
     #FREE ROAM 1 - Ava
 
     # LOCATION: observatory
-    call check_overlay from _call_check_overlay_3
+    # call check_overlay from _call_check_overlay_3
     scene observatory with fade
+    play ambience amb_observatory if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -16,6 +17,7 @@ label anger_fr1_ava:
     show ava happy at right with dissolve
 
     vivithinking surprised "Oh, what's this? A sunny disposition?"
+    stop music fadeout 10.0
 
     show ava sad blush with dissolve
     ava "Hello, Vivi. Has our radiance tempted you today? Come, sit, and play a game. Let us see what future the cards hold."
@@ -27,22 +29,26 @@ label anger_fr1_ava:
 
     # <CHOICE>
     ava neutral "Choose wisely."
+    play music ashamusic loop fadein 10.0
 
     menu:
         # OPTION 1 +ATTRACTION
         "The sun card.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi neutral "The sun card."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             show ava sad blush with dissolve
+            play sound sparkle volume 0.5
             ava "The sun can represent light, truth, and love..."
             vivi surprised "Finally some good news!"
             show ava sad -blush
@@ -52,12 +58,14 @@ label anger_fr1_ava:
         # OPTION 2 +DECAY
         "The sea monster card.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "The sea monster card."
             hide decay_icon
@@ -70,12 +78,14 @@ label anger_fr1_ava:
         # OPTION 3 +DECAY
         "The big snake card.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "The big snake card."
             hide decay_icon
@@ -94,6 +104,7 @@ label anger_fr1_ava:
     vivi sad "For me too, Asha."
     vivithinking neutral "We're fading even faster than we were yesterday. There's less of me and the train every second. Not totally unnerving at all!"
     # VISUAL: screen shakes, light flashes 
+    play sound cineboom
     show observatory with hpunch
     show observatory with flash
     # SOUND: ava says "ugh"
@@ -124,6 +135,7 @@ label anger_fr1_ava:
     # OPTION 1 +ATTRACTION +DECAY
         "...chin up, princess, or the crown slips.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
                 xoffset -500
@@ -133,9 +145,10 @@ label anger_fr1_ava:
                 xoffset -500
                 # xoffset -30
                 yoffset -750
-            with { "master" : Dissolve(0.5) }
+            with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "...chin up, princess, or the crown slips."
             hide attraction_icon
@@ -153,17 +166,20 @@ label anger_fr1_ava:
             vivi happy "Yes. I like that. Free."
             vivithinking happy "Not a great start, but a good ending, right?"
             show ava happy -blush
+            stop music fadeout 2.0
             # JUMP TO: vivi neutral blush "Thank you for sharing with me, Asha."
 
     # OPTION 2 +ATTRACTION
         "...I know what you mean about sacrifices.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
             hide attraction_icon
@@ -179,17 +195,20 @@ label anger_fr1_ava:
             show ava happy -blush
             ava "Thank you, Vivi. We hope you return."
             vivithinking happy "Not a great start, but a good ending, right?"
+            stop music fadeout 2.0
             # JUMP TO: vivi neutral blush "Thank you for sharing with me, Asha."
 
     # OPTION 3 +DECAY
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
 
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."
             hide decay_icon
@@ -200,6 +219,7 @@ label anger_fr1_ava:
             ava angry "Hmph. Very well. Have an... acceptable evening, Vivienne."
 
             # ava exits
+            stop music fadeout 2.0
             hide ava with dissolve
 
             # vivi exits
@@ -209,6 +229,7 @@ label anger_fr1_ava:
     vivi neutral blush "Thank you for sharing with me, Asha."
     vivithinking neutral "That went better than I thought. Maybe one of the others wants to play a game as well."
     vivithinking angry "Ugh. How am I gonna get off this doomsday train?"
+    stop ambience fadeout 1.0
 
     # JUMP TO: Anger Susurha Urshu
     jump anger_susurha_urshu

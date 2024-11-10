@@ -4,7 +4,7 @@ label depression_fr2_darius:
 
     # FREE ROAM 2 - Darius
     # LOCATION: observatory
-    call check_overlay from _call_check_overlay_32
+    # call check_overlay from _call_check_overlay_32
     scene observatory with fade
 
     show darius sad at right with dissolve
@@ -32,7 +32,7 @@ label depression_fr2_darius:
         "There's so much more I want to learn about you.":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -55,7 +55,7 @@ label depression_fr2_darius:
         "I won't say it's been nice getting to know you.":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
@@ -165,7 +165,7 @@ label depression_fr2_darius:
         "Adorable? Cute?":
 
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
@@ -183,7 +183,7 @@ label depression_fr2_darius:
         "More open than you'll ever be?":
 
             play sound decchoice
-            show decay_icon at right with dissolve:
+            show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750

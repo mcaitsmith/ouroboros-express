@@ -5,7 +5,7 @@ label bargaining_meal_reveal:
     #URSHU MEAL REVEAL
 
     # LOCATION: lounge
-    call check_overlay from _call_check_overlay_23 
+    # call check_overlay from _call_check_overlay_23 
     scene lounge with fade
 
     show vivi neutral at left with dissolve:
@@ -48,8 +48,7 @@ label bargaining_meal_reveal:
         $ npc_meal = susurha
         call show_susurha from _call_show_susurha_1
 
-    show urshudining neutral at left with dissolve:
-        xzoom -1.0
+    show urshudining neutral at left with dissolve
 
     vivithinking neutral "Table, chairs, white linen, candles... Where did he get those?"
     vivithinking neutral "He looks so smug. A bit creepy. His hands steepled like a movie villain." 
@@ -78,7 +77,7 @@ label bargaining_meal_reveal:
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
             play sound attchoice
-            show attraction_icon at right with dissolve:
+            show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850

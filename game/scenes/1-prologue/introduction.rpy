@@ -5,16 +5,13 @@ label introduction:
     # Introduction
     # We meet Vivi as she is writing her notes. We know that she has been invited to review the Ouroboros Express for her job. Urshu knocks on her cabin door, inviting her to dine.
 
-    # SOUND: train
-    play sound train fadein 3.0 loop
+    # SOUND: bedroom ambience
+    play ambience amb_bedroom fadein 3.0
 
     # fade in
 
     # LOCATION: cabin
-    scene cabin at train_shake:
-        zoom 1.05
-        xoffset -5
-    with Fade(3.0,1.0,3.0)
+    scene cabin with Fade(3.0,1.0,3.0)
 
     # show cabin at train_shake
 
@@ -84,7 +81,12 @@ label introduction:
             "Look out the window" if option1 == True and option2 == True and option3 == True:
 
                 vivithinking neutral "Hmm. The view from the window is really hard to make out. It's all dark and misty. I think we're in a forest?"
+                show black with fade
+                show vivi_window with Dissolve(3.0)
+                pause 1.0
                 vivithinking surprised "Huh, weird. The condensation on the window is flowing up as if the train is falling. That can't be right."
+                hide vivi_window with dissolve
+                hide black with dissolve
                 vivithinking surprised "What's going on?"
 
     pause 0.5

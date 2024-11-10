@@ -23,8 +23,15 @@ label romance_ava:
         # xpos 0.5
         # linear 0.5 xpos 0.65
         xpos 0.65
+    hide vivi
+    hide ava
+    show asha_vivi hug at center
+    with { "master" : Dissolve(1.0) }
+    pause 2.0
+
     vivi neutral blush "Aren't you afraid?"
-    show ava happy blush
+    # show ava happy blush
+    show asha_vivi hug blush at center
     ava "Not anymore."
     vivi surprised "Oh, Ava! Are you crying?"
     ava "Yes, but with joy. Hold me close. Close your eyes. We will be in this moment forever."
@@ -34,7 +41,7 @@ label romance_ava:
     scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nShe's regal and majestic and...\nShe opened up to me.\nNot in the way people talk\nwhen I'm reporting. It's different. Intimate.\nI feel I truly know her fears and dreams.\nI can open up to her and she sees me.\nShe sees me!\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nShe's regal and majestic and...\nShe opened up to me.\nNot in the way people talk when I'm\nreporting. It's different. Intimate.\nI feel I truly know her fears and dreams.\nI can open up to her and she sees me.\nShe sees me!\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
 
     # Journal entry with degradation meter high
     call display_journal from _call_display_journal_8

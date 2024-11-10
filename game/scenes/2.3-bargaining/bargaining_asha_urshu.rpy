@@ -1,7 +1,7 @@
 label bargaining_asha_urshu :
 
     #LOCATION: observatory
-    call check_overlay from _call_check_overlay_11
+    # call check_overlay from _call_check_overlay_11
     scene observatory with fade
 
 
@@ -79,11 +79,15 @@ label bargaining_asha_urshu :
 
     urshu neutral "Sometimes children have the simple answers that elude us. Ah, speaking of elusive, I see a visitor. I’ll leave you two. Ta ta!"
 
-    hide urshu
+    hide urshu with dissolve
 
-    show vivi neutral at left
+    show ava neutral at right with moveoutright
 
-    show ava neutral at right
+    show vivi neutral at left with dissolve:
+        xzoom -1
+
+    show ava neutral at right:
+        xzoom 1
 
     vivi neutral "Glad I found you here, Asha."
 
