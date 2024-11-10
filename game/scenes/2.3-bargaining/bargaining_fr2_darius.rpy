@@ -90,7 +90,7 @@ label bargaining_fr2_darius:
             darius angry "And you took him at his word? Perhaps, I overestimated your intelligence."
             darius angry "Truly, Vivi, how long are you going to ignore the obvious? We are here for a reason. It's up to us to figure out what that is."
             vivi angry "Bullshit. If the god says he has a way out for me, I'll take his word over yours."
-            darius neutral "Ugh. Very well. I'll help you, if only because it will give me some time to think."
+            darius neutral "Ugh. Very well. I'll help you, if only because it''ll give me some time to think."
             vivi neutral "Alright, okay. Great!"
             vivithinking "Well, I got what I wanted, right?"
 
