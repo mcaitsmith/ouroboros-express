@@ -139,7 +139,7 @@ label depression_fr1_darius:
             with { "master" : Dissolve(0.5) }
             vivi "I could use a little fruity delight."
             darius surprised "I assure you, this drink is enough to knock you off your feet."
-            play sound glassclink
+            play sound glassclink03
             pause 0.25
             vivi happy blush "Trust me, it'll take more than a juicebox to get me sauced."
             vivithinking "Oh, my. Cripes. That's strong."

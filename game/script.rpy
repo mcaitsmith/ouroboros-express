@@ -13,7 +13,7 @@ define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susu
 
 ###MUSIC
 #TITLE MUSIC
-# define titlemusic = "audio/music/lavenders blue.ogg"
+# define titlemusic = "audio/music/orex_mx_menu.ogg"
 
 #MOOD MUSIC
 define mainmusic = "audio/music/orex_mx_main.ogg"
@@ -34,13 +34,13 @@ define ashamusic = "audio/music/orex_mx_asha.ogg" ## Armoni Boone - untitled ash
 
 #ENDING THEMES
 define finalemusic = "audio/music/orex_mx_finale.ogg" ## Noah Campodonico - Celestial Bodies, Swirling
-define goodendmusic = "audio/music/Good Ending.ogg" ## Soon to be phased out, I think?
 define badendmusic = "audio/music/orex_mx_cosmicself.ogg" ## Armoni Boone — Cosmic Self [bad ending]
 
-
 #CREDITS THEMES
-define creditsmusicgood = "audio/music/Good Ending.ogg"
-define creditsmusicbad = "audio/music/orex_mx_cosmicself.ogg"
+define creditsmusicgood = "audio/music/orex_mx_creditsgood.ogg"
+define creditsmusicbad = "audio/music/orex_mx_creditsbad.ogg"
+
+
 
 # define silhouette images
 image ava silhouette = "images/characters/ava/ava silhouette.png"

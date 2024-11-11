@@ -385,14 +385,18 @@ label bargaining_fr2_susurha:
             play music peacefulmusic loop
             vivi neutral "Nana would want things spicy."
             vivi neutral "I'll add...more cardamom."
-            #play sound swoosh #None of these swooshes really work here.
+            play sound spice01
+            pause 0.5
             vivi neutral "More cinnamon."
-            #play sound swoosh
+            play sound spice02
+            pause 0.5
             vivi neutral "More cumin."
-            #play sound swoosh
+            play sound spice03
+            pause 0.5
             vivi happy "More everything!"
             vivi happy "More! More! More! More!"
-            #play sound swoosh 
+            play sound spice04
+            pause 0.5
             susurha neutral "I admire how you do that."
             vivi neutral "What?"
             susurha neutral "Inject life into everything you do. Even..."

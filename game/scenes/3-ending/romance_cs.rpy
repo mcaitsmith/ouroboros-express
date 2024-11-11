@@ -200,7 +200,7 @@ label romance_cs:
 
                     # SOUND: Snap of fingers
                     play sound snap
-                    pause 1.0
+                    pause 4.0
 
                     vivithinking surprised "What just happened? The decay of the train... It's completely reversed."
                     vivithinking surprised "And I feel warmth. I didn't realize how {i}cold{/i} this train was until now. How cold {i}I{/i} was." 

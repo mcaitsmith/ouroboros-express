@@ -50,7 +50,7 @@ label confession_susurha:
         # Accept Romance
         "Yes!":
 
-            play peacefulmusic loop
+            play music peacefulmusic loop
             vivi happy blush "I'd love nothing more than that."
             show susurha happy blush with dissolve
             susurha "That makes me happier than you can possibly imagine."

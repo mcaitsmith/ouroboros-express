@@ -30,8 +30,8 @@ label depression_fr1_ava:
     vivithinking "She's an oasis in the desert!"
     vivi "Hi! I see you're already ahead of me."
     ava "Hello, Vivi. We are drinking...?"
-    play sound glassclink
-    pause 0.25
+    play sound drinkstir
+    pause 3.0
     urshu "Tequila Sunrise."
 
     # ??ATTRACTION
@@ -59,6 +59,7 @@ label depression_fr1_ava:
         # play sound decchoice
         ava sad "We misspoke. We wish to drink alone."
         vivi "Well then. See ya, sunshine."
+        play sound glassclink03
         # JUMP TO: vivithinking "What are the others doing, I wonder?"
         jump dep_fr1_ava_end
 

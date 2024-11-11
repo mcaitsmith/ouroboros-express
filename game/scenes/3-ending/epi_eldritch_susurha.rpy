@@ -17,7 +17,7 @@ label epi_eldritch_susurha:
 
         scene eldritch_susurha with Fade(2,2,2)
         play cd_ambience amb_cosmicdecay if_changed fadein 1.0
-        play sorrowmusic if_changed loop
+        play music sorrowmusic if_changed loop
         pause 2.0
         show urshu sad at left with dissolve:
             xzoom -1.0
