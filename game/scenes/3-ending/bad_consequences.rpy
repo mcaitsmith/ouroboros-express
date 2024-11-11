@@ -22,7 +22,7 @@ label bad_consequences:
     vivi sad "No, don't come out of the mirror! Stop! No!"
     vivithinking surprised "She's...embracing me!!"
     vivi "..."
-    vivithinking neutral "I don't feel here anymore. I'm going to open my eyes now."
+    vivithinking neutral "I don't feel her anymore. I'm going to open my eyes now."
     play sound char_mirror
     pause 5.0
     vivi surprised "She's gone? But?"
