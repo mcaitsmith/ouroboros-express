@@ -13,7 +13,7 @@ label interview_darius:
     show darius neutral at right with dissolve
 
     # SOUND: train
-    play ambience amb_bar
+    play ambience amb_bar if_changed fadein 1.0
 
     vivithinking neutral "This one's imposing. Tall and solid, despite that slender frame."
     vivithinking sad "But what's this unease I sense?"

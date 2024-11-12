@@ -24,6 +24,8 @@ label depression_cs1:
             $ fr1_depression_choice = "Ava"
 
             vivithinking neutral "Can a goddess get drunk? Let's find out."
+            stop music fadeout 5.0
+            stop ambience fadeout 1.0
             # JUMP TO: Free roam 1 / Avatar of Asha
             jump depression_fr1_ava
 
@@ -33,6 +35,8 @@ label depression_cs1:
             $ fr1_depression_choice = "Darius"
 
             vivithinking neutral "I wonder what Darius is like when they're drunk."
+            stop music fadeout 5.0
+            stop ambience fadeout 1.0
             #JUMP TO: Free roam 1 / Darius Wrecker
             jump depression_fr1_darius
 
@@ -42,5 +46,7 @@ label depression_cs1:
             $ fr1_depression_choice = "Susu'Rha"
 
             vivithinking neutral "Susu'Rha might like to get drunk with me."
+            stop music fadeout 5.0
+            stop ambience fadeout 1.0
             # JUMP TO: Free roam 1 / Susu'Rha Balrinn
             jump depression_fr1_susurha

@@ -6,6 +6,7 @@ label depression_fr2_darius:
     # LOCATION: observatory
     # call check_overlay from _call_check_overlay_32
     scene observatory with fade
+    play ambience amb_observatory if_changed fadein 1.0
 
     show darius sad at right with dissolve
         
@@ -31,12 +32,16 @@ label depression_fr2_darius:
         # OPTION 1 +ATTRACTION
         "There's so much more I want to learn about you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "There's so much more I want to learn about you."
             hide attraction_icon
@@ -54,12 +59,16 @@ label depression_fr2_darius:
         # OPTION 2 +DECAY
         "I won't say it's been nice getting to know you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "I won't say it's been nice getting to know you."
             hide decay_icon
@@ -82,6 +91,7 @@ label depression_fr2_darius:
         # OPTION 4 >>ATTRACTION
         "I'm grateful my last moments are with you." if att_meter_darius >= 60:
 
+            play cd_ambience twinkle fadein 1.0 volume 0.2
             vivi neutral blush "I'm grateful my last moments are with you."
             show darius neutral blush
             darius "You don't even know me."
@@ -100,6 +110,7 @@ label depression_fr2_darius:
         # OPTION 5 >>DECAY
         "Do you see them, Darius?" if dec_meter >= 50:
 
+            play cd_ambience amb_cosmicdecay fadein 1.0
             vivi neutral "Do you see them, Darius?"
             darius surprised "I do. You do, as well?"
             vivi neutral "I thought maybe they were nightmares. Something I hallucinated. But I see them clearly now."
@@ -114,15 +125,21 @@ label depression_fr2_darius:
 
             # JUMP TO: vivi surprised "What do you mean by that?"
 
+    if att_meter_darius >= 60:
+        stop cd_ambience fadeout 5.0
     vivi surprised "What do you mean by that?"
     darius neutral "I'm not who you think I am, Ms. Sanssouci. Vivi."
     darius "I'm a monster. Worse, even. I'm a coward."
+    play sound [ "<silence 4.6>", "audio/sfx/orex_char_telepathy.ogg" ]
+    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowpass(200), audio_filter.Peaking(frequency=00, q=1.0, gain=6.0)], replace=True, duration=2.6)
+    stop music fadeout 2.6
     vivi happy "Come on, now. You're too hard on yourself. I—"
     show darius angry
     vivithinking surprised "AH. Ah. This energy coming from him... It's like the worst migraine I've ever experienced, all at once."              
     darius angry "I'm responsible for the deaths of millions of sentient beings. {i}Millions{/i}."
     darius sad "I deserve to be crushed by those hands. I long for it."
     vivi surprised "I... I don't know how to respond."
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     darius neutral "I'm not asking you to. I just want you to know who you're choosing to spend your time with."
     
     # <CHOICE>
@@ -164,12 +181,16 @@ label depression_fr2_darius:
         # OPTION 1 +ATTRACTION
         "Adorable? Cute?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_depression_fr2 / att_num_list_darius[5])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi happy blush "Adorable? Cute? A sassy lil' cupcake who you can't help but open up to?"
             hide attraction_icon
@@ -182,12 +203,16 @@ label depression_fr2_darius:
         # OPTION 2 +DECAY
         "More open than you'll ever be?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "More open than you'll ever be?"
             hide decay_icon
@@ -231,6 +256,8 @@ label depression_fr2_darius:
         vivi neutral blush "You're not beyond redemption, Darius."
         darius surprised "After all that... You believe so?"
         vivi happy blush "I know so."
+        stop ambience fadeout 1.0
+        stop cd_ambience fadeout 1.0
     # END
 
     # ??DECAY (ELSE)
@@ -238,6 +265,8 @@ label depression_fr2_darius:
         vivi sad "Darius...that's horrifying. I don't know that I can look at you the same way."
         darius sad "I know. I don't expect you to."
         darius sad "Let the horrors take me. It's what I deserve."
+        stop ambience fadeout 1.0
+        stop cd_ambience fadeout 1.0
     # END
 
     # JUMP TO: Depression NPC Group Scene

@@ -7,6 +7,8 @@ label depression_debrief:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_27
     scene cabin with fade
+    play ambience amb_bedroom if_changed fadein 1.0
+    pause 1.0
 
     # ??ATTRACTION
     if att_meter_ava >= romance_threshold or att_meter_darius >= romance_threshold or att_meter_susurha >= romance_threshold:
@@ -22,6 +24,7 @@ label depression_debrief:
 
         urshu neutral "I trust you had a good evening?"
 
+        play music mainmusic loop
         vivi happy "Yeah, it was nice."
         vivi neutral "About what you said before. Writing my own story... I think I'm starting to understand."
         urshu happy "I live to serve, Miss Sanssouci."
@@ -72,6 +75,7 @@ label depression_debrief:
         show urshu neutral at right with dissolve
 
         urshu neutral "I trust you had a good evening?"
+        play music mysterymusic loop
         vivi neutral "It was fine. I am glad this is ending though."
         urshu surprised "Oh? Do tell."
         vivi neutral "I was scared at first. Of changing, of the unknown, of leaving my past behind..."

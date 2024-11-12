@@ -13,9 +13,11 @@ label confession_ava:
     #     xzoom -1
 
     vivithinking neutral "There she is. Radiant as always."
+    play sound sparkle
     vivithinking surprised blush "But damn! Today she {i}really{/i} is glowing! Like even more than normal..." 
     vivithinking neutral "I wonder what's going on..."
     vivi happy "Asha! Hi!"
+    play music ashamusic loop
     ava happy "Vivi! Hello! What a delight to see you!" 
     vivi happy blush "Haha...I think \"delight\" is a bit strong, don't you think?"
     show ava happy blush
@@ -63,7 +65,10 @@ label confession_ava:
             vivi surprised "Oh...Oh, God. Ava..."
             vivi neutral "Thank you! And...and I'm so happy for you too!" 
             vivi sad "But I just don't think I can do that. I'm sorry."
+
             show ava sad blush
+            stop music fadeout 5.0
+
             ava "Ah. This is sad news. Would you still allow me to be your friend, regardless?"
             vivi happy "Of course! I would be honored to be your friend."
             vivi happy "Ava."
@@ -77,7 +82,10 @@ label confession_ava:
         "Could you give me a moment?":
 
             vivi surprised blush "Could you give me a moment? I just need to...clear my head for a sec."
+
+            stop music fadeout 5.0
             show ava neutral blush
+
             ava "We have precious few, but for you? Anything."
             show ava neutral -blush
 

@@ -12,8 +12,9 @@ label epi_eldritch_darius:
     stop music fadeout 2.0
     pause 2.0
     scene black with fade
-    play sound train loop fadein 1.0
-    play sound2 horror loop fadein 1.0
+    play cd_ambience amb_cosmicdecay fadein 1.0
+    play sound trainwhistle
+    #play sound2 horror loop fadein 1.0
 
     #LOCATION: eldritchlandscape
 
@@ -49,7 +50,6 @@ label epi_eldritch_darius:
         urshu "And so he found himself an unwitting passenger for yet another ride aboard, continuing in his quest to understand himself..."
         $ _skipping = True
 
-    stop sound fadeout 1.0
-    stop sound2 fadeout 1.0
+    stop ambience fadeout 1.0
     
     return

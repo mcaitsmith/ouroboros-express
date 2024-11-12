@@ -7,6 +7,7 @@ label depression_fr2_susurha:
     # LOCATION: observatory
     # call check_overlay from _call_check_overlay_33
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
 
     show susurha sad at right with dissolve
 
@@ -134,12 +135,16 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "Yes.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Yes."
             hide attraction_icon
@@ -151,12 +156,16 @@ label depression_fr2_susurha:
         #OPTION +DECAY
         "No.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "No."
             hide decay_icon
@@ -173,6 +182,7 @@ label depression_fr2_susurha:
             # JUMP TO: susurha "Well, I know I am."
 
     susurha "Well, I know I am."
+    play music sorrowmusic loop
     susurha sad "..."
     susurha neutral "That abomination that stalks me..."
     susurha "I've tried to talk to it. Reason with it. Understand its motives."
@@ -193,17 +203,23 @@ label depression_fr2_susurha:
         #OPTION 1 +ATTRACTION
         "I want to be ME as well.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
+            stop music fadeout 3.0
             vivi "I want to be ME as well."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi "My whole life... I felt I was living someone else's life."
+            play music susumusic loop fadein 3.0
             vivi "Think like someone else. Act like someone else."
             vivi "I'm afraid I've missed my chance to be me."
             susurha "Right here, right now, you are you."
@@ -213,12 +229,16 @@ label depression_fr2_susurha:
         #OPTION 2 >>DECAY +ATTRACTION
         "I get what you mean." if dec_meter >= 45:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "I get what you mean."
             hide attraction_icon
@@ -232,17 +252,25 @@ label depression_fr2_susurha:
         #OPTION 3 >>ATTRACTION +ATTRACTION
         "Nothing can take away who you are." if att_meter_susurha >= 60:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr2 / att_num_list_susurha[5])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
+            stop music fadeout 3.0
             vivi "Nothing can take away who you are."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi "You're one of the most unique creatures I have ever met."
+
+            play music susumusic loop fadein 3.0
+
             vivi "There aren't many poet-musician druids that were once heir to a throne, but chose to not take that power so that they could be THEMSELVES."
             vivi happy blush "You are truly one of a kind."
             show susurha happy blush
@@ -255,20 +283,26 @@ label depression_fr2_susurha:
         # "I know who I am." if dec_meter >= 50:
         "I know who I am.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "I know who I am."
             hide decay_icon
             with { "master" : Dissolve(0.5) }
+            play cd_ambience amb_cosmicdecay loop fadein 5.0
             susurha "Are you sure about that?"
             susurha "This whole time that I've interacted with you, it has always felt like I was talking to a mirror that bends and flows with the wind."
             vivithinking sad "This son of a..."
             susurha "I told you the thing that stalks me. Tell me, what does the thing that haunts you appear as?"
+            play sound char_terror volume 0.2
             vivi sad "It's... I can't tell you. It's personal"
             susurha "Oh. As I thought."
             #JUMP TO: susurha "Thank you for staying with me, if even for a moment."
@@ -278,6 +312,7 @@ label depression_fr2_susurha:
     # ??DECAY
     if dec_meter >= 50:
         susurha "I hope I brought some worth to you."
+        stop music fadeout 2.0
     #END
 
     susurha "The only thing worse than being alone is never being at all."
@@ -287,6 +322,7 @@ label depression_fr2_susurha:
         #DECAY ROUTE (??DECAY)
         #SAL'S NOTE: Lines below are supposed to be a DECAY ending of the scene.
         if dec_meter >= 50:
+            play music horrormusic volume 0.2
             vivi "Everything will turn out for the best."
             susurha "You lie to yourself so easily."
             susurha "I hope there is someone behind that mask."
@@ -304,8 +340,11 @@ label depression_fr2_susurha:
             vivi "And watch the cosmos fly by."
             show susurha neutral blush
             susurha "I'd love that."
+            stop music fadeout 5.0
             vivithinking "In its own strange way, the view sure is beautiful from here."
         # END
 
         #JUMP to Depression NPC Group Scene
+        stop ambience fadeout 1.0
+        stop cd_ambience fadeout 1.0
         jump depression_npc_group_scene

@@ -22,7 +22,7 @@ label confrontation:
     vivithinking angry "Oh, the {i}gall{/i}."
     vivi angry "I {i}know{/i}, Urshu."
     urshu happy "You know? Know what? Recipes for cake? My waist size?"
-    play music confrontationmusic
+    play music confrontationmusic loop fadein 10.0
     vivi angry "Quit the deflections. I said I {i}know.{/i}"
     urshu neutral "..."
     urshu neutral "Ah, so you have followed your investigative proclivities. Tell me, what is it you {i}know{/i}?"
@@ -53,7 +53,7 @@ label confrontation:
     vivi sad "I..."
     vivi sad "We're..."
     urshu angry "Say it!"
-    stop music fadeout 0.1
+    stop music fadeout 0.5
     vivi sad "Dead! We're all dead! Except for you."
     urshu happy "Well done, Miss Sanssouci. Well done."
 

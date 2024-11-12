@@ -20,7 +20,7 @@ label bargaining_briefing:
 
     show vivi happy at left
 
-    vivithinking "You know what? Not! This time, I'm going to turn the tables on Urshu. Yeah, that's right. I'll surprise him before he's had his fabuloso-lime-expresso and see how he feels!"
+    vivithinking "You know what? This time, I'm going to turn the tables on Urshu. Yeah, that's right. I'll surprise him before he's had his fabuloso-lime-expresso and see how he feels!"
 
     show vivi neutral at left
 
@@ -97,11 +97,12 @@ label bargaining_briefing:
 
                 show vivi surprised
                 pause 3.0
-
+                stop sound fadeout 1.0
+                stop music fadeout 1.0
                 vivithinking surprised "...Yeah, I'm out."
                 $ renpy.music.set_audio_filter("ambience", None, replace=False, duration=2.0)
                 stop ambience fadeout 1.0
-                stop music fadeout 1.0
+
 
                 hide vivi with dissolve
                 stop sound fadeout 1.0
@@ -122,6 +123,7 @@ label bargaining_briefing:
 
                 # LOCATION: observatory
                 scene observatory with fade
+                play ambience amb_observatory if_changed fadein 1.0
             
                 show vivi neutral at left with dissolve:
                     xzoom -1
@@ -134,23 +136,31 @@ label bargaining_briefing:
                 # VISUAL: two galaxies glow, one red and one white, resembling a reptile
                 vivithinking "No... Galaxies. One is white... and the other red?"
                 vivithinking "The whole glowing thing looks like... a reptile. I'll never understand this space. Please wake me up. I got enough of this hell."
+                $ renpy.music.set_audio_filter("sound", audio_filter.Lowpass(1500), replace=True, duration=2.0)
+                play sound char_mirror fadein 2.0
                 vivi surprised "What the—"
                 # VISUAL: a shadow appears over vivi's face
                 # CUE FOR VA: vivi is possessed here, speaking with a voice that is not her own
                 vivithinking "Something just stopped by the window."
                 vivithinking "That shape! A human figure like a big round head."
+                play sound char_terror fadein 2.0 volume 0.7
                 vivithinking "No. It can't be human."
                 vivithinking "Damn, it's looking at me!"
+                $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(2000), replace=True, duration=2.0)
                 vivi "W-what do you want? Leave me alone!"
                 # VISUAL: shadow disappears, leaving Vivi's reflection behind
                 vivi surprised "What the hell?! It's gone. But wait..."
+                $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=2.0)
                 # VISUAL: Vivi catches sight of her decaying reflection
                 vivi surprised "Where are my eyes?! I can see my reflection, but... Why does it look like my ribs are showing through my—"
+                $ renpy.music.set_audio_filter("sound", None, replace=False )
+                $ renpy.music.set_audio_filter("ambience", None, replace=True, duration = 2.0 )
                 vivi surprised "I gotta get off this train. I gotta find Urshu."
-
+                stop ambience fadeout 1.0
                 hide vivi with dissolve
 
                 scene cabin with fade
+                play ambience amb_bedroom if_changed fadein 1.0
 
                 show vivi neutral at left with dissolve:
                     xzoom -1
@@ -163,9 +173,11 @@ label bargaining_briefing:
             "I'd bet he's at the bar.":
 
                 vivithinking "I'd bet he's at the bar. Polishing spoons and staring at his reflection, that little twerp."
+                stop ambience fadeout 1.0
 
                 # LOCATION: dining car
                 scene diningcar with fade
+                play ambience amb_bar if_changed fadein 1.0
 
                 show vivi neutral at left with dissolve:
                     xzoom -1
@@ -187,8 +199,8 @@ label bargaining_briefing:
     urshu neutral "Please, sit. Here, I have a cup for you."
 
     # SOUND: glassclink
-    play sound glassclink
-    pause 5.0
+    play sound drinkstir volume 0.7
+    pause 10.0
 
     vivi neutral "You... Of course, you knew." 
     vivi neutral "Thanks for this, Ursh. You take good care of me. When you're not being a... an impish... wisenheimer or something."
@@ -200,7 +212,7 @@ label bargaining_briefing:
         xzoom -1
     
     vivithinking "Focus, Vivi. Think about your goal. Now, how should I go about this?"
-    play music mysterymusic
+    play music mysterymusic loop
 
     show vivi neutral at left
 
@@ -336,6 +348,7 @@ label bargaining_briefing:
     urshu neutral "Oh? You think you can prepare a meal worthy of an exit ticket? My dear, there is no forthcoming terminus on a train that leads to life beyond. Not for you or anyone."
     vivi neutral "I don't believe that. You aren't beholden to some greater deity or being. You're Urshunabi, god of the passages between life and death. You have real power. You can, as you say, sense my soul steps. That's not something anyone without power or influence can do."
     vivi angry "So I'm gonna make you a fucking feast worthy of 10 exit tickets, and you're gonna get me off this damned train. Deal?"
+    stop music fadeout 5.0
     urshu neutral "..."
     urshu happy "Very well, then. I will let you off this train if this meal TRULY is the best-tasting one I ever try." 
     urshu neutral "I look forward to whatever you produce."
@@ -350,6 +363,6 @@ label bargaining_briefing:
     vivithinking "But what would he even like? I only get one shot at this, so it has to be right."
 
     hide vivi with dissolve
-
+    stop ambience fadeout 1.0
     # JUMP TO: Character Selector 1
     jump bargaining_cs1
