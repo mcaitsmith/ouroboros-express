@@ -20,7 +20,7 @@ label bargaining_briefing:
 
     show vivi happy at left
 
-    vivithinking "You know what? Not! This time, I'm going to turn the tables on Urshu. Yeah, that's right. I'll surprise him before he's had his fabuloso-lime-expresso and see how he feels!"
+    vivithinking "You know what? This time, I'm going to turn the tables on Urshu. Yeah, that's right. I'll surprise him before he's had his fabuloso-lime-expresso and see how he feels!"
 
     show vivi neutral at left
 
