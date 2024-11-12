@@ -268,7 +268,9 @@ label depression_fr2_susurha:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi "You're one of the most unique creatures I have ever met."
+
             play music susumusic loop fadein 3.0
+
             vivi "There aren't many poet-musician druids that were once heir to a throne, but chose to not take that power so that they could be THEMSELVES."
             vivi happy blush "You are truly one of a kind."
             show susurha happy blush with dissolve

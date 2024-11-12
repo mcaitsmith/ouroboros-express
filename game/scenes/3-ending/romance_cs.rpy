@@ -65,7 +65,7 @@ label romance_cs:
                 "I want to be with Ava" if att_meter_ava >= romance_threshold and ava_confess == True and ava_friend == False:
 
                     vivithinking happy "I think the answer is clear. I want to be with Ava." 
-                    vivithinking happy blush "She is the one for me."
+                    vivithinking happy blush "She's the one for me."
 
                     # JUMP to: Romance / Avatar of Asha
                     jump romance_ava

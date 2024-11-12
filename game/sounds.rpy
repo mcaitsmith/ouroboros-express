@@ -62,7 +62,6 @@ label sounds:
     define sparkle = "audio/sfx/orex_sfx_sparkle.ogg"
     define cineboom = "audio/sfx/orex_sfx_cineboom.ogg" #screenshake fun!
     define trainshake = "audio/sfx/orex_sfx_trainshake.ogg" #more screenshake fun!
-
     
     #TO BE DEPRECATED:
     define sigh = "audio/sfx/sigh.ogg" 

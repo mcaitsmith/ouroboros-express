@@ -25,10 +25,10 @@ label group_goodbyes:
     urshu sad "Perhaps it would aid you to think of easy goodbyes as far sadder than hard ones. No one who mattered to you should be easy to part with."
     vivi neutral "You know, that's not the dumbest thing you've ever said."
     urshu happy "Marvellous, then I must now leave you to your parting, as I have a few small things to prepare. Try not to be too sad, but if you are, remember tears are the diamonds of the soul!"
-    vivi neutral "...And that is."
+    vivi neutral "...But {i}that{/i} is."
     urshu happy "I'll return momentarily. In the meantime, you'll find a bumper box of tissues under the bar 'designed for big weeps and unpleasant seeps.'"
     vivi surprised "{i}Gross.{/i}"
-    vivi sad "But okay, I'm as ready as I'll ever be. Lets go."
+    vivi sad "But okay, I'm as ready as I'll ever be. Let's go."
     
     # urshu exits
     hide urshu with dissolve

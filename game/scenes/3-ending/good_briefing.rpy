@@ -110,7 +110,7 @@ label good_briefing:
             vivi happy "Vivi, doofus. From now until forever. Call me Vivi."
             vivithinking happy blush "When I look back, it seems like I never made a single decision that was true to myself, to who I really am rather than what I thought I should be."
             vivithinking happy blush "Is it weird to make the best decision of your life when you're already dead?"
-            vivithinking happy blush "His smile. The way his arms fit around me like they were designed to. The stupid, highfallutin words he whispers in my ear."
+            vivithinking happy blush "His smile. The way his arms fit around me like they were designed to. The stupid, highfalutin words he whispers in my ear."
             vivithinking happy blush "I'm not sure forever's going to be long enough."
   
       
