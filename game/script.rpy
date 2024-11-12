@@ -234,9 +234,18 @@ image vivi surprised blush:
     zoom 1.01 yoffset 20
     linear 0.2 yoffset 0
 image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
-image vivi_conductor neutral = At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
-image vivi_conductor happy = At('images/characters/vivi/vivi_conductor/vivi_conductor happy.png', sprite_highlight('vivi'))
-image vivi_conductor surprised = At('images/characters/vivi/vivi_conductor/vivi_conductor surprised.png', sprite_highlight('vivi'))
+image vivi_conductor neutral:
+    At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
+    zoom 1.0
+image vivi_conductor happy:
+    At('images/characters/vivi/vivi_conductor/vivi_conductor happy.png', sprite_highlight('vivi'))
+    zoom 1.01 yoffset 10
+    linear 0.1 yoffset 0
+    linear 0.2 yoffset 5
+image vivi_conductor surprised:
+    At('images/characters/vivi/vivi_conductor/vivi_conductor surprised.png', sprite_highlight('vivi'))
+    zoom 1.01 yoffset 20
+    linear 0.2 yoffset 0
 
 # define urshu dining images
 image urshudining neutral = At('images/characters/urshu/urshu dining/urshu_neutral_table.png', sprite_highlight('urshudining'))
