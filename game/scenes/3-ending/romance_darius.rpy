@@ -17,7 +17,7 @@ label romance_darius:
     with { "master" : Dissolve(1.0) }
     pause 2.0
 
-    # show darius surprised blush with dissolve
+    # show darius surprised blush
     show darius_vivi hug blush at center
     darius "Yes?"
     vivi happy blush "Yes."

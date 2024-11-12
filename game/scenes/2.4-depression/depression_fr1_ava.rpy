@@ -33,7 +33,7 @@ label depression_fr1_ava:
 
     # ??ATTRACTION
     if att_meter_ava >= 55:
-        show ava happy blush with dissolve
+        show ava happy blush
         ava "Ah. Sunrise. Lovely, like you, Vivi."
         vivithinking "Er, um... Flirt alert!! Try not to be painfully awkward."
         show ava happy -blush
@@ -117,7 +117,7 @@ label depression_fr1_ava:
             ava happy "We were unaware you were this naughty, Vivi."
             # ??ATTRACTION
             if att_meter_ava >= 55:
-                show ava happy blush with dissolve
+                show ava happy blush
                 ava "It pleases us. How does it feel? To disobey?"
                 vivi happy "It feels exciting because it's wrong. Is that crazy?"
                 show ava neutral -blush
@@ -193,7 +193,7 @@ label depression_fr1_ava:
                 ava sad "We are no longer an avatar. Or a goddess. We are...no one."
                 vivi neutral "Not true. Maybe no one is just a starting point?"
             # END
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Your flirtation pleases us. Never have we ever spat."
             vivithinking "Well, chug-a-lug, Vivi!"
             vivi happy "Any reason why not?"
@@ -224,7 +224,7 @@ label depression_fr1_ava:
             ava sad "We do not drink then." 
             # ??ATTRACTION
             if att_meter_ava >= 60:
-                show ava sad blush with dissolve
+                show ava sad blush
                 ava "We understand this pain, Vivi. We feel as you."
                 vivithinking "Goddamn she dug deep. It's in her eyes."
                 vivi happy "Wow. Thank you, Asha. I know it's hard to share your pain."
@@ -236,7 +236,7 @@ label depression_fr1_ava:
             vivi sad "Never had the time."
             # ??ATTRACTION
             if att_meter_ava >= 65:
-                show ava neutral blush with dissolve
+                show ava neutral blush
                 ava "Had or made?"
                 vivi surprised "Good question, Asha!"
                 show ava neutral -blush

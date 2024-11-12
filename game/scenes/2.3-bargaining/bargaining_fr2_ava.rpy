@@ -40,7 +40,7 @@ label bargaining_fr2_ava:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi neutral blush "I bet we can whip up something really incredible."
-            show ava happy blush with dissolve
+            show ava happy blush
             
             # <CHOICE>
             ava "We would be honored to cook with you. It has been over a decade since we've set foot in a kitchen. This should prove to be...interesting."
@@ -100,14 +100,14 @@ label bargaining_fr2_ava:
             vivi neutral blush "Be my sous chef! Together, we'll rule this train."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show ava surprised blush with dissolve
+            show ava surprised blush
             ava "We're not sure exactly what you mean."
             vivi neutral "A sous chef is the right-hand to the main chef! We're gonna be making something in the kitchen today!" 
             show ava surprised -blush
             ava surprised "Right...hand?"
             ava happy "We don't know with confidence what you speak of, but your passion is coming through."
             vivi surprised blush "Did you just...use a contraction?"
-            show ava surprised blush with dissolve
+            show ava surprised blush
             ava "A what?"
             vivi neutral blush "Errr...Nevermind!"
 
@@ -120,13 +120,13 @@ label bargaining_fr2_ava:
 
     ava neutral "So what shall we make, then?"
     vivi neutral "Good question! What meal feels like home for you?"
-    show ava surprised blush with dissolve
+    show ava surprised blush
     ava "Well, whenever I was feeling unhappy, the servants would bring me a cornucopia of croquembouche."
     vivithinking "That sounds like a nightmare to make..."
     show ava happy -blush
     ava happy "Do you enjoy cooking at home? Allegedly the food culture on Earth has few rivals."
     vivi happy blush "You heard right! I've taken a few cooking classes back home. They even taught me how to make soufflé!"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "That sounds lovely, but it couldn't compare to the delight of croquembouche."
 
     show vivi neutral at left
@@ -210,7 +210,7 @@ label bargaining_fr2_ava:
             # JUMP TO: "Let's get cooking!"
 
     vivi happy blush "Let's get cooking!"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "We shall wash our hands, just in case."
 
     hide ava with dissolve
@@ -219,7 +219,7 @@ label bargaining_fr2_ava:
 
     show ava neutral at right with dissolve
 
-    show ava neutral blush with dissolve
+    show ava neutral blush
 
     ava "Apologies..."
     vivi neutral "For what, Asha? You worry too much."
@@ -246,7 +246,7 @@ label bargaining_fr2_ava:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivithinking "That's a lie. But I want her...near." 
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "Of course, Vivienne. Let's do this together."
             vivi neutral blush "I like this new Asha. Where has she been?"
             show ava neutral blush
@@ -288,7 +288,7 @@ label bargaining_fr2_ava:
     stop sound fadeout 1.0
 
     vivi surprised "Wow! I can't believe we actually did it. It tastes so good too!"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "Shall we present our creation to the conductor?"
     vivi happy "Let's do it!"
 

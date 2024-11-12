@@ -19,7 +19,7 @@ label anger_fr1_ava:
     vivithinking surprised "Oh, what's this? A sunny disposition?"
     stop music fadeout 10.0
 
-    show ava sad blush with dissolve
+    show ava sad blush
     ava "Hello, Vivi. Has our radiance tempted you today? Come, sit, and play a game. Let us see what future the cards hold."
     vivi neutral "Are those tarot cards? They look...off."
     show ava neutral -blush
@@ -47,7 +47,7 @@ label anger_fr1_ava:
             vivi neutral "The sun card."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show ava sad blush with dissolve
+            show ava sad blush
             play sound sparkle volume 0.5
             ava "The sun can represent light, truth, and love..."
             vivi surprised "Finally some good news!"
@@ -161,7 +161,7 @@ label anger_fr1_ava:
             vivi surprised "That's your people's tradition? Sacrifice?!"
             ava sad "We are sacrificed lest people love us too much. Once, an avatar nearly toppled the royals. But now, that is only but a distant fairytale."
             vivi neutral blush "Well, then no offense, but you're better off here. If your whole purpose was to be sacrificed, then guess what?"
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "Then our service is at an end. We are free."
             vivi happy "Yes. I like that. Free."
             vivithinking happy "Not a great start, but a good ending, right?"
@@ -189,7 +189,7 @@ label anger_fr1_ava:
             ava angry "We shall fade to darkness soon. Have you not seen it in your dreams?"
             vivi angry "You mean nightmares? Yeah..."
             vivi neutral "Well... at least we don't have to make any more sacrifices, right?"
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "That is true, yes. Our service is at an end. We are free."
             vivi happy "Yes. I like that. Free."
             show ava happy -blush

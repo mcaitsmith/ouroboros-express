@@ -69,7 +69,7 @@ label good_briefing:
             vivithinking happy "The way he's staring at me right now. Rude, but also kind of hot."
             urshu neutral "Ah. I'm afraid I am not an option as a companion, my dear. I believe I have explained to you why?"
             vivi neutral "Yeah, you tried. Something about {i}'I'm Urshu and I'm afraid of connection because everybody leaves me, so I just strut around being mysterious and flipping the number on my 'it's been 9000099 days since my last heartbreak'{/i} sign."
-            show urshu sad blush with dissolve
+            show urshu sad blush
             urshu sad "That {i}may{/i} bear some form of resemblence to the truth. But as I have made quite clear, the rules aren't mine to break. When you leave this train, you will go to your final destination and I will remain here, forever moving on."
             vivi neutral "Right, except for how you're wrong. You told me I couldn't get off the train early. You never told me I couldn't {i}stay on.{/i}"
             show urshu sad -blush
@@ -89,13 +89,13 @@ label good_briefing:
             urshu neutral "Yes, and now that you understand the bitter consequences of... pardon? Did you say {i}pretty good?{/i}"
             vivi happy "I did. You see, it turns out I don't want to escape my fate after all. I just want the chance to do what you told me, and choose my own. I want to tell my own story."
             vivi neutral "{i}I'm afraid.{/i} You don't know what it took to admit that to you. Afraid of the unknown. Of not doing more with my time. Of being alone. What I didn't say was that I'm afraid of losing you. And correct me if I'm wrong, but I think you're afraid, too."
-            show urshu surprised blush with dissolve
+            show urshu surprised blush
             urshu neutral "You were right. I should never have risked saying so much in front of a journalist."
             vivi happy "Ha! Told ya, we're the best people readers around. Cosmic entity readers. Whatever."
             vivi neutral "Listen, I know you paid an eternal price for the last favour you granted a soul in need, and now you're scared to take the chance again. But the favour I'm asking for won’t take anything from you. I want to give you something, instead. Company."
             vivi neutral "You’ve been alone so damn long, and I’ve never given myself the chance to love. I want that chance, Urshu. With you. And if you let me stay we'll have more than a chance - we’ll have eternity. Together."
             urshu surprised "..."
-            show urshu surprised blush with dissolve
+            show urshu surprised blush
             vivithinking happy "Is he seriously lost for words?"
             vivithinking surprised "I've broken him! No, wait, I've–"
             vivi happy "I just {i}surprised{/i} you, didn't I."

@@ -39,7 +39,7 @@ label bargaining_fr2_darius:
             vivi neutral "Could I interest you in dinner?"
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show darius neutral blush with dissolve
+            show darius neutral blush
             darius "Pardon me?"
             vivi neutral "I'm making a meal today for Urshu, and I thought this would be a great chance to work together."
             darius "Ah, I see. I'm not the greatest chef, but I suppose I can help you prepare what you need."
@@ -176,7 +176,7 @@ label bargaining_fr2_darius:
             vivi sad blush "When she died, that recipe went with her. Those were perfect memories, and I didn't want to associate it with anything else."
             darius neutral "And now you want to make that again."
             vivi neutral blush "Yes."
-            show darius happy blush with dissolve
+            show darius happy blush
             darius "I think if anything were to truly impress Urshu, it would be something like that. Something with heart behind it, as you humans say."
             vivi neutral blush "I guess you're right. It's cheesy, but it does make a difference."
             show darius happy -blush
@@ -193,7 +193,7 @@ label bargaining_fr2_darius:
     vivi neutral "You're rather dextrous, Mr. Wrecker."
     darius neutral "Part of the trade. Sleight of hand can be rather useful when trying to slip something past an unsuspecting fool."
     vivi happy "I'm sure they could be useful for...other things as well."
-    show darius neutral blush with dissolve
+    show darius neutral blush
     darius "Ms. Sanssouci, I have no idea what you could possibly be referring to."
     
     # <CHOICE>
@@ -223,13 +223,13 @@ label bargaining_fr2_darius:
     show darius neutral -blush
     darius neutral "I'm no expert, but it looks appetizing to me."
     vivi sad "Really? That's all you can offer?"
-    show darius neutral blush with dissolve
+    show darius neutral blush
     darius "Erm, I mean wow! Such a brilliantly composed plate! Each ingredient implemented fantastically, contributing to something greater than the sum of its parts. Splendid."
     vivi neutral "Alright, cool your jets. You get any more worked up, and we might be able to serve you next."
     show darius neutral -blush
     darius neutral "Please. You couldn't handle all of me."
     vivi neutral blush "Oh? Are you so sure?"
-    show darius neutral blush with dissolve
+    show darius neutral blush
     darius "Not like that! I... Damn you."
     vivi happy blush "Haha, so flustered, Mr. Wrecker!"
     vivi neutral "..."
@@ -260,7 +260,7 @@ label bargaining_fr2_darius:
         darius neutral "...You know I would never ask you to do that, right?"
         vivi neutral "Yeah, but..."
         vivi neutral blush "It's something I want. I don't care about the consequences anymore."
-        show darius neutral blush with dissolve
+        show darius neutral blush
         darius "Vivi... I..."
         darius "Ahem. Well,"
         darius "I think that's...something I...also want."

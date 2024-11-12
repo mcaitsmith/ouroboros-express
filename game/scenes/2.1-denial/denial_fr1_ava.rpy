@@ -23,7 +23,7 @@ label denial_fr1_ava:
     show ava happy at right
     vivithinking "Oh, she's noticed me. So imposing..."
 
-    show ava happy blush with dissolve
+    show ava happy blush
 
     # <CHOICE>
     ava "Hello, little one. Has our radiance tempted you today? Come, sit with us for a moment."
@@ -72,7 +72,7 @@ label denial_fr1_ava:
 
             vivithinking "I wonder what she saw in the window."
             vivi happy "I'm a little overwhelmed by everything going on. What are you looking at?"
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "We exist to spread the light of knowledge. We have looked into the darkness. Above us."
             vivi surprised "What'd you see?"
             show ava surprised -blush
@@ -117,7 +117,7 @@ label denial_fr1_ava:
     ava neutral "Ridiculous. Of course we are alive. Look around you. Breathe. Have a drink and calm those nerves of yours."
 
     # <CHOICE>
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "What say you, little one?"
 
     menu:

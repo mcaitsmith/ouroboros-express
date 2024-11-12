@@ -226,7 +226,7 @@ label depression_fr1_susurha:
             vivithinking "No."
             vivithinking "Let's be fun."
             vivi happy blush "You should have been more specific."
-            show susurha happy blush with dissolve
+            show susurha happy blush
             susurha "Your face tells it all."
             show susurha neutral -blush
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."

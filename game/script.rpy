@@ -156,35 +156,195 @@ init python:
 # define white background
 image white = "#ffffff"
 
+transform ex_neutral:
+    zoom 1.0
+transform ex_happy:
+    zoom 1.02 yoffset 10
+    linear 0.1 yoffset 0
+    linear 0.2 yoffset 5
+transform ex_sad:
+    zoom 1.02
+    linear 0.5 yoffset 10
+transform ex_angry:
+    zoom 1.02
+    linear 0.1 xoffset -2
+    linear 0.1 xoffset 2
+    linear 0.1 xoffset -2
+    linear 0.1 xoffset 2
+transform ex_surprised:
+    zoom 1.02 yoffset 20
+    linear 0.2 yoffset 0
+
 # define NPC expression and blush layered images
-layeredimage ava:
-    at sprite_highlight('ava')
-    group face auto:
-        attribute neutral default
+layeredimage ava neutral:
+    at [sprite_highlight('ava'),ex_neutral]
+    always:
+        'images/characters/ava/ava_face_neutral.png'
     group overlay:
         attribute blush:
             "ava_overlay_blush"
-layeredimage darius:
-    at sprite_highlight('darius')
-    group face auto:
-        attribute neutral default
+            zoom 1.02
+layeredimage ava happy:
+    at [sprite_highlight('ava'),ex_happy]
+    always:
+        'images/characters/ava/ava_face_happy.png'
+    group overlay:
+        attribute blush:
+            "ava_overlay_blush"
+layeredimage ava sad:
+    at [sprite_highlight('ava'),ex_sad]
+    always:
+        'images/characters/ava/ava_face_sad.png'
+    group overlay:
+        attribute blush:
+            "ava_overlay_blush"
+layeredimage ava angry:
+    at [sprite_highlight('ava'),ex_angry]
+    always:
+        'images/characters/ava/ava_face_angry.png'
+    group overlay:
+        attribute blush:
+            "ava_overlay_blush"
+layeredimage ava surprised:
+    at [sprite_highlight('ava'),ex_surprised]
+    always:
+        'images/characters/ava/ava_face_surprised.png'
+    group overlay:
+        attribute blush:
+            "ava_overlay_blush"
+
+layeredimage darius neutral:
+    at [sprite_highlight('darius'),ex_neutral]
+    always:
+        'images/characters/darius/darius_face_neutral.png'
     group overlay:
         attribute blush:
             "darius_overlay_blush"
-layeredimage susurha:
-    at sprite_highlight('susurha')
-    group face auto:
-        attribute neutral default
+            zoom 1.02
+layeredimage darius happy:
+    at [sprite_highlight('darius'),ex_happy]
+    always:
+        'images/characters/darius/darius_face_happy.png'
+    group overlay:
+        attribute blush:
+            "darius_overlay_blush"
+layeredimage darius sad:
+    at [sprite_highlight('darius'),ex_sad]
+    always:
+        'images/characters/darius/darius_face_sad.png'
+    group overlay:
+        attribute blush:
+            "darius_overlay_blush"
+layeredimage darius angry:
+    at [sprite_highlight('darius'),ex_angry]
+    always:
+        'images/characters/darius/darius_face_angry.png'
+    group overlay:
+        attribute blush:
+            "darius_overlay_blush"
+layeredimage darius surprised:
+    at [sprite_highlight('darius'),ex_surprised]
+    always:
+        'images/characters/darius/darius_face_surprised.png'
+    group overlay:
+        attribute blush:
+            "darius_overlay_blush"
+
+layeredimage susurha neutral:
+    at [sprite_highlight('susurha'),ex_neutral]
+    always:
+        'images/characters/susurha/susurha_face_neutral.png'
     group overlay:
         attribute blush:
             "susurha_overlay_blush"
-layeredimage urshu:
-    at sprite_highlight('urshu')
-    group face auto:
-        attribute neutral default
+            zoom 1.02
+layeredimage susurha happy:
+    at [sprite_highlight('susurha'),ex_happy]
+    always:
+        'images/characters/susurha/susurha_face_happy.png'
+    group overlay:
+        attribute blush:
+            "susurha_overlay_blush"
+layeredimage susurha sad:
+    at [sprite_highlight('susurha'),ex_sad]
+    always:
+        'images/characters/susurha/susurha_face_sad.png'
+    group overlay:
+        attribute blush:
+            "susurha_overlay_blush"
+layeredimage susurha angry:
+    at [sprite_highlight('susurha'),ex_angry]
+    always:
+        'images/characters/susurha/susurha_face_angry.png'
+    group overlay:
+        attribute blush:
+            "susurha_overlay_blush"
+layeredimage susurha surprised:
+    at [sprite_highlight('susurha'),ex_surprised]
+    always:
+        'images/characters/susurha/susurha_face_surprised.png'
+    group overlay:
+        attribute blush:
+            "susurha_overlay_blush"
+
+layeredimage urshu neutral:
+    at [sprite_highlight('urshu'),ex_neutral]
+    always:
+        'images/characters/urshu/urshu_face_neutral.png'
     group overlay:
         attribute blush:
             "urshu_overlay_blush"
+            zoom 1.02
+layeredimage urshu happy:
+    at [sprite_highlight('urshu'),ex_happy]
+    always:
+        'images/characters/urshu/urshu_face_happy.png'
+    group overlay:
+        attribute blush:
+            "urshu_overlay_blush"
+layeredimage urshu sad:
+    at [sprite_highlight('urshu'),ex_sad]
+    always:
+        'images/characters/urshu/urshu_face_sad.png'
+    group overlay:
+        attribute blush:
+            "urshu_overlay_blush"
+layeredimage urshu angry:
+    at [sprite_highlight('urshu'),ex_angry]
+    always:
+        'images/characters/urshu/urshu_face_angry.png'
+    group overlay:
+        attribute blush:
+            "urshu_overlay_blush"
+layeredimage urshu surprised:
+    at [sprite_highlight('urshu'),ex_surprised]
+    always:
+        'images/characters/urshu/urshu_face_surprised.png'
+    group overlay:
+        attribute blush:
+            "urshu_overlay_blush"
+
+# image urshu neutral:
+#     At('images/characters/urshu/urshu_face_neutral.png', sprite_highlight('urshu'), ex_neutral)
+# image urshu happy:
+#     At('images/characters/urshu/urshu_face_happy.png', sprite_highlight('urshu'), ex_happy)
+# image urshu sad:
+#     At('images/characters/urshu/urshu_face_sad.png', sprite_highlight('urshu'), ex_sad)
+# image urshu angry:
+#     At('images/characters/urshu/urshu_face_angry.png', sprite_highlight('urshu'), ex_angry)
+# image urshu surprised:
+#     At('images/characters/urshu/urshu_face_surprised.png', sprite_highlight('urshu'), ex_surprised)
+
+# image ava neutral:
+#     At('images/characters/ava/ava_face_neutral.png', sprite_highlight('ava'), ex_neutral)
+# image ava happy:
+#     At('images/characters/ava/ava_face_happy.png', sprite_highlight('ava'), ex_happy)
+# image ava sad:
+#     At('images/characters/ava/ava_face_sad.png', sprite_highlight('ava'), ex_sad)
+# image ava angry:
+#     At('images/characters/ava/ava_face_angry.png', sprite_highlight('ava'), ex_angry)
+# image ava surprised:
+#     At('images/characters/ava/ava_face_surprised.png', sprite_highlight('ava'), ex_surprised)
 
 # define vivi images
 image vivi neutral:

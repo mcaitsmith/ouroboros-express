@@ -50,7 +50,7 @@ label denial_fr2_darius:
 
             vivi neutral "I've heard some things. Mainly that your people eat brains."
 
-            show darius neutral blush with dissolve
+            show darius neutral blush
 
             darius "We don't {i}only{/i} eat brains. I've been known to enjoy a treat now and again."
 
@@ -86,7 +86,7 @@ label denial_fr2_darius:
 
             vivi neutral "I've heard some things. Mainly that your people eat brains."
 
-            show darius neutral blush with dissolve
+            show darius neutral blush
 
             darius "We don't {i}only{/i} eat brains. I've been known to enjoy a treat now and again."
 
@@ -292,7 +292,7 @@ label denial_fr2_darius:
 
             vivi neutral "Must come in handy as a detective."
 
-            show darius surprised blush with dissolve
+            show darius surprised blush
 
             darius "Yes, it's uhh...very useful."
 
@@ -389,7 +389,7 @@ label denial_fr2_darius:
         xzoom 1
     vivi surprised "Where the hell did you come from?"
 
-    show urshu neutral blush with dissolve
+    show urshu neutral blush
 
     urshu "Apologies, Ms. Sanssouci. Sometimes the teleportation spell can be a bit... wonky."
 
@@ -533,7 +533,7 @@ label denial_fr2_darius:
 
     vivithinking "They stopped."
 
-    show darius sad blush with dissolve
+    show darius sad blush
 
     darius "I... I suppose I'm not anymore."
 

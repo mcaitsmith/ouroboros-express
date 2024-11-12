@@ -218,7 +218,7 @@ label bargaining_fr1_susurha:
             with { "master" : Dissolve(0.5) }
             susurha angry "Oh, come on now. I know a woman as skilled as yourself can sniff out fakery from miles away."
             susurha angry "The man, or whatever he is, has been painting himself this whole time as a well-dressed, well-meaning human conductor while we hurtle towards our deaths on a train for the dead!"
-            show susurha neutral blush with dissolve
+            show susurha neutral blush
             susurha "I love your ability to think positively of others, but..."
             show susurha neutral -blush
             susurha neutral "When we can't even trust that the mask they wear is their own face..."

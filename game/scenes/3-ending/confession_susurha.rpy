@@ -18,7 +18,7 @@ label confession_susurha:
     vivi neutral blush "It sure is."
     susurha happy "I'm thrilled you could be here to enjoy it with me."
     susurha happy "Our brief time together these past few—I'm not sure if I can even call them days—has been..."
-    show susurha happy blush with dissolve
+    show susurha happy blush
     susurha "Intoxicating..."
     vivithinking happy "Quite."
     show susurha happy -blush
@@ -26,7 +26,7 @@ label confession_susurha:
     vivi happy "Oh, for me too. As I'm sure you know, given your part in it."
     susurha neutral "..."
     susurha neutral "All my life, all I ever wanted was to be myself, to live life on my own terms. But I didn't understand how much {i}responsibility{/i} was bound up in that."
-    show susurha happy blush with dissolve
+    show susurha happy blush
     susurha "I didn't see..."
     vivi neutral "What?"
     vivithinking neutral "They look so nervous."
@@ -37,7 +37,7 @@ label confession_susurha:
     susurha happy "Now nothing binds me anymore. The past stays where it belongs."
     vivi neutral "What about the present? The future?"
     susurha happy "The future remains unwritten. All I know is that, whatever's in store..."
-    show susurha happy blush with dissolve
+    show susurha happy blush
     susurha "...I want you by my side."
     susurha "Before everything fades away, I have to know..."
     #<CHOICE 1>
@@ -50,7 +50,7 @@ label confession_susurha:
         "Yes!":
 
             vivi happy blush "I'd love nothing more than that."
-            show susurha happy blush with dissolve
+            show susurha happy blush
             susurha "That makes me happier than you can possibly imagine."
             vivi happy blush "Oh, but I {i}can{/i} imagine...because I feel the same way."
             show susurha happy -blush
@@ -78,7 +78,7 @@ label confession_susurha:
         "Could you give me a moment?":
 
             vivi neutral blush "Could you give me a moment to think about it?"
-            show susurha neutral blush with dissolve
+            show susurha neutral blush
             susurha "Of course."
             susurha "But don't take too long, please."
             susurha "I would say the suspense would kill me, but..."
