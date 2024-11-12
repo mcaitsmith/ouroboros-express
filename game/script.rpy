@@ -43,14 +43,12 @@ image ava silhouette = "images/characters/ava/ava silhouette.png"
 image darius silhouette = "images/characters/darius/darius silhouette.png"
 image susurha silhouette = "images/characters/susurha/susurha silhouette.png"
 
-image cabin_light_overlay:
-    "images/backgrounds/cabin_overlay.png"
-    alpha 0.5
-    linear 2.0 alpha 0.2
-    linear 2.0 alpha 0.5
-    # "images/backgrounds/cabin_overlay2.png"
-    # 0.75
-    repeat
+# image cabin_light_overlay:
+#     "images/backgrounds/cabin_overlay.png"
+#     alpha 0.5
+#     linear 2.0 alpha 0.2
+#     linear 2.0 alpha 0.5
+#     repeat
 
 image terminalofdreams_dust1_overlay:
     "images/backgrounds/vfx/terminal_dust1.png"
@@ -98,11 +96,11 @@ define day = 0
 
 # define decay overlay bg images
 layeredimage cabin:
-    subpixel True
+    # subpixel True
     always:
         "images/backgrounds/cabin.png"
-    group light:
-        attribute overlay default
+    # group light:
+    #     attribute overlay default
     if day == 2:
         "decay_bedroom_1"
     elif day == 3:
@@ -323,28 +321,6 @@ layeredimage urshu surprised:
     group overlay:
         attribute blush:
             "urshu_overlay_blush"
-
-# image urshu neutral:
-#     At('images/characters/urshu/urshu_face_neutral.png', sprite_highlight('urshu'), ex_neutral)
-# image urshu happy:
-#     At('images/characters/urshu/urshu_face_happy.png', sprite_highlight('urshu'), ex_happy)
-# image urshu sad:
-#     At('images/characters/urshu/urshu_face_sad.png', sprite_highlight('urshu'), ex_sad)
-# image urshu angry:
-#     At('images/characters/urshu/urshu_face_angry.png', sprite_highlight('urshu'), ex_angry)
-# image urshu surprised:
-#     At('images/characters/urshu/urshu_face_surprised.png', sprite_highlight('urshu'), ex_surprised)
-
-# image ava neutral:
-#     At('images/characters/ava/ava_face_neutral.png', sprite_highlight('ava'), ex_neutral)
-# image ava happy:
-#     At('images/characters/ava/ava_face_happy.png', sprite_highlight('ava'), ex_happy)
-# image ava sad:
-#     At('images/characters/ava/ava_face_sad.png', sprite_highlight('ava'), ex_sad)
-# image ava angry:
-#     At('images/characters/ava/ava_face_angry.png', sprite_highlight('ava'), ex_angry)
-# image ava surprised:
-#     At('images/characters/ava/ava_face_surprised.png', sprite_highlight('ava'), ex_surprised)
 
 # define vivi images
 image vivi neutral:
