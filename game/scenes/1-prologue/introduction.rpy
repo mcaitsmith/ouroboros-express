@@ -11,7 +11,8 @@ label introduction:
     # fade in
 
     # LOCATION: cabin
-    scene cabin with Fade(3.0,1.0,3.0)
+    # scene cabin with Fade(3.0,1.0,3.0)
+    scene terminalofdreams with Fade(3.0,1.0,3.0)
 
     # show cabin at train_shake
 

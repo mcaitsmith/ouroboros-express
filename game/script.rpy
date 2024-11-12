@@ -52,6 +52,41 @@ image cabin_light_overlay:
     # 0.75
     repeat
 
+image terminalofdreams_dust1_overlay:
+    "images/backgrounds/vfx/terminal_dust1.png"
+    alpha 1.0 matrixcolor BrightnessMatrix(1.0)
+    # linear 2.0 alpha 0.0 xoffset -4 yoffset -4
+    # linear 2.0 alpha 1.0 xoffset 4 yoffset 4
+    # linear 2.0 alpha 0.0 xoffset 4 yoffset -4
+    # linear 2.0 alpha 1.0 xoffset -4 yoffset 4
+    linear 1.5 alpha 0.0
+    linear 1.5 alpha 1.0
+    linear 1.5 alpha 0.0
+    linear 1.5 alpha 1.0
+    repeat
+image terminalofdreams_dust2_overlay:
+    "images/backgrounds/vfx/terminal_dust2.png"
+    alpha 0.0 matrixcolor BrightnessMatrix(1.5)
+    # linear 2.0 alpha 1.0 xoffset 4 yoffset -4
+    # linear 2.0 alpha 0.0 xoffset -4 yoffset 4
+    # linear 2.0 alpha 1.0 xoffset -4 yoffset -4
+    # linear 2.0 alpha 0.0 xoffset 4 yoffset 4
+    linear 1.5 alpha 1.0
+    linear 1.5 alpha 0.0
+    linear 1.5 alpha 1.0
+    linear 1.5 alpha 0.0
+    repeat
+image terminalofdreams_sparkles_overlay:
+    "images/backgrounds/vfx/terminal_sparkles.png"
+    alpha 1.0 matrixcolor BrightnessMatrix(1.5)
+    linear 3.0 alpha 0.0
+    linear 3.0 alpha 1.0
+    linear 3.0 alpha 0.0
+    linear 3.0 alpha 1.0
+    repeat
+
+image terminalofdreams_petals_overlay = SnowBlossom("images/backgrounds/vfx/terminal_petals.png", count=10, border=0, xspeed=(20, 50), yspeed=(50, 100))
+
 # define blurred background images
 image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
 image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
@@ -101,6 +136,18 @@ layeredimage diningcar:
         "decay_bar_2"
     elif day == 4 or day == 6:
         "decay_bar_3"
+layeredimage terminalofdreams:
+    subpixel True
+    always:
+        "images/backgrounds/terminalofdreams_base.png"
+    group dust1:
+        attribute overlay default
+    group dust2:
+        attribute overlay default
+    group sparkles:
+        attribute overlay default
+    group petals:
+        attribute overlay default
 
 # add second channel for sfx
 init python:
@@ -140,16 +187,52 @@ layeredimage urshu:
             "urshu_overlay_blush"
 
 # define vivi images
-image vivi neutral = At('images/characters/vivi/vivi neutral.png', sprite_highlight('vivi'))
-image vivi happy = At('images/characters/vivi/vivi happy.png', sprite_highlight('vivi'))
-image vivi sad = At('images/characters/vivi/vivi sad.png', sprite_highlight('vivi'))
-image vivi angry = At('images/characters/vivi/vivi angry.png', sprite_highlight('vivi'))
-image vivi surprised = At('images/characters/vivi/vivi surprised.png', sprite_highlight('vivi'))
-image vivi neutral blush = At('images/characters/vivi/vivi neutral blush.png', sprite_highlight('vivi'))
-image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprite_highlight('vivi'))
-image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
-image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
-image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+image vivi neutral:
+    At('images/characters/vivi/vivi neutral.png', sprite_highlight('vivi'))
+    zoom 1.0
+image vivi happy:
+    At('images/characters/vivi/vivi happy.png', sprite_highlight('vivi'))
+    zoom 1.01 yoffset 10
+    linear 0.1 yoffset 0
+    linear 0.2 yoffset 5
+image vivi sad:
+    At('images/characters/vivi/vivi sad.png', sprite_highlight('vivi'))
+    zoom 1.01
+    linear 0.5 yoffset 10
+image vivi angry:
+    At('images/characters/vivi/vivi angry.png', sprite_highlight('vivi'))
+    zoom 1.01
+    linear 0.1 xoffset -2
+    linear 0.1 xoffset 2
+    linear 0.1 xoffset -2
+    linear 0.1 xoffset 2
+image vivi surprised:
+    At('images/characters/vivi/vivi surprised.png', sprite_highlight('vivi'))
+    zoom 1.01 yoffset 20
+    linear 0.2 yoffset 0
+image vivi neutral blush:
+    At('images/characters/vivi/vivi neutral blush.png', sprite_highlight('vivi'))
+    zoom 1.01
+image vivi happy blush:
+    At('images/characters/vivi/vivi happy blush.png', sprite_highlight('vivi'))
+    zoom 1.01 yoffset 10
+    linear 0.1 yoffset 0
+    linear 0.2 yoffset 5
+image vivi sad blush:
+    At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
+    zoom 1.01
+    linear 0.5 yoffset 10
+image vivi angry blush:
+    At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
+    zoom 1.01
+    linear 0.1 xoffset -2
+    linear 0.1 xoffset 2
+    linear 0.1 xoffset -2
+    linear 0.1 xoffset 2
+image vivi surprised blush:
+    At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+    zoom 1.01 yoffset 20
+    linear 0.2 yoffset 0
 image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
 image vivi_conductor neutral = At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
 image vivi_conductor happy = At('images/characters/vivi/vivi_conductor/vivi_conductor happy.png', sprite_highlight('vivi'))
