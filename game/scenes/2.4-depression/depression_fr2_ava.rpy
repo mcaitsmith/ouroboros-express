@@ -158,7 +158,7 @@ label depression_fr2_ava:
             vivi sad "If only I had known you in life, things could have been different."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show ava neutral blush with dissolve
+            show ava neutral blush
             ava "A little bit of love would have gone a long way."
             vivi happy blush "Well I'm glad we can spend this time together now."
             stop cd_ambience fadeout 5.0
@@ -169,7 +169,7 @@ label depression_fr2_ava:
     vivi neutral blush "I'm sorry, Asha."
     stop music fadeout 5.0
 
-    show ava neutral blush with dissolve
+    show ava neutral blush
 
     # ??ATTRACTION
     if att_meter_ava >= 55:
@@ -257,14 +257,14 @@ label depression_fr2_ava:
             ava happy "We cannot imagine..."
             vivi happy "And the people! I've reported on so many stories, interviewed so many strange characters."
             vivi neutral "I just wish I could have taken my time in the places I traveled to. Really got to know some people - or someone."
-            show ava surprised blush with dissolve
+            show ava surprised blush
             ava "Is there really so much diversity on your Earth?"
             show ava surprised -blush
         # JUMP TO: vivi happy "Like you wouldn't believe!"
 
 
     vivi happy "Like you wouldn't believe!"
-    show ava neutral blush with dissolve
+    show ava neutral blush
     ava "Well our conversations have certainly helped us feel better. We enjoy your...perspective."
     vivi happy blush "Come to Earth sometime! I'll show you around!"
 

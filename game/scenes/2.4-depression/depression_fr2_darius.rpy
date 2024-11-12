@@ -15,7 +15,7 @@ label depression_fr2_darius:
 
     darius sad "You're here."
     vivi neutral "Expecting me?"
-    show darius sad blush with dissolve
+    show darius sad blush
     darius "I don't think I ever expected you."
     vivi surprised "Honestly, I...don't think I expected you, either."
     vivi "I can't say I've ever been in an observatory quite like this."
@@ -46,7 +46,7 @@ label depression_fr2_darius:
             vivi sad "There's so much more I want to learn about you."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show darius surprised blush with dissolve
+            show darius surprised blush
             darius "Surely not. I'm an open book."
             vivi happy blush "If you call {i}this{/i} being an open book then I shudder to imagine what closed off looks like."
             show darius happy blush
@@ -93,7 +93,7 @@ label depression_fr2_darius:
 
             play cd_ambience twinkle fadein 1.0 volume 0.2
             vivi neutral blush "I'm grateful my last moments are with you."
-            show darius neutral blush with dissolve
+            show darius neutral blush
             darius "You don't even know me."
             vivi happy blush "I know enough. You care deeply."
             show darius sad blush
@@ -168,7 +168,7 @@ label depression_fr2_darius:
     darius sad "Eldritch."
     darius neutral "You may think of them as That Which Gathers. Or, perhaps— Za'deeh."
     vivi neutral blush "Your terrifying ancient eldritch god is a zaddy?"
-    show darius surprised blush with dissolve
+    show darius surprised blush
     darius "What? No! Their very gaze would melt your mind, much less your face! Put some respect on Za'deeh's name!"
     vivi happy blush "Listen, I get it. I'll always respect a zaddy when I see one."
     show darius happy blush

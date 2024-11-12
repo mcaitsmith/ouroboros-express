@@ -81,7 +81,7 @@ label bargaining_fr1_ava:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi neutral "Or I guess to be more specific, if you could change something that might have caused this, what would you do?"
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Once, we broke a taboo. We found a bird, hurt and dying. We hid it, cared for it, grew attached to it."
             vivi neutral "What happened?"
             show ava sad -blush
@@ -201,7 +201,7 @@ label bargaining_fr1_ava:
                 vivi neutral "What happened the time you almost cried?"
                 ava sad "A serving girl in the palace. We tried to befriend her."
                 vivi angry "Don't tell me something awful happened to you!"
-                show ava sad blush with dissolve
+                show ava sad blush
                 ava "No. Far worse. We never saw her again."
                 show ava sad -blush
             # END
@@ -209,7 +209,7 @@ label bargaining_fr1_ava:
             vivi sad "I'm so sorry, Asha. That really sucks."
             ava surprised "Sucks?! What do you mean sucks? Like a calf does to its mother?"
             vivi surprised "Uhhhhhhh... I guess?"
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Strange you humans think sucking to be bad, but yes, we understand. Thank you for listening to us."
             show ava neutral -blush
             ava neutral "And while yes, we indeed faced much cruelty in our lives, it was an honor to serve our people. That we will never regret."
@@ -259,7 +259,7 @@ label bargaining_fr1_ava:
 
     # ??ATTRACTION
     if att_meter_ava >= 40:
-        show ava happy blush with dissolve
+        show ava happy blush
         ava "We sighed differently then. And we sigh looking at you now."
         show ava neutral -blush
     # END

@@ -48,7 +48,7 @@ label depression_fr1_darius:
             with { "master" : Dissolve(0.5) }
             darius sad "I'm not sure that's such a good idea."
             vivi neutral "I do. I'd like your company."
-            show darius surprised blush with dissolve
+            show darius surprised blush
             darius "No one {i}likes{/i} my company. It's my specialty."
             vivi happy blush "Well, consider me the first."
             show darius surprised -blush
@@ -96,8 +96,10 @@ label depression_fr1_darius:
     vivi happy "So. What are we drinking?"
     darius neutral "...You can't laugh."
     vivi surprised "Why would I?"
+
     play music peacefulmusic loop
-    show darius neutral blush with dissolve
+    show darius neutral blush
+
     darius "My drink of choice. It's a bit unexpected."
     vivi surprised blush "Oh no— Should I prepare to be horrified? The tears of the damned? The blood of the innocent?"
     show darius surprised blush
@@ -188,7 +190,7 @@ label depression_fr1_darius:
     vivi happy "Never mind all that. How about a little {i}Never Have I Ever{/i}? A distraction to keep our spirits up!"
     darius sad "Why not? Nothing else to do."
     vivi neutral "I'll start. Never have I ever... been in love."
-    show darius surprised blush with dissolve
+    show darius surprised blush
     darius "I... neither have I."
     darius "What happens now?"
     vivi neutral blush "I think that means we both drink."

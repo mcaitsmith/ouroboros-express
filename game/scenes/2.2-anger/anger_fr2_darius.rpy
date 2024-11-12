@@ -20,8 +20,10 @@ label anger_fr2_darius:
     vivi happy "Well well. If it isn't the melancholy mindflayer."
     darius surprised "Melancholy? Heh. Then what do I call you? The rapacious reporter? The insensitive investigative journalist?"
     vivi happy blush "You can call me whatever you like. As long as you call me."
+
     play music peacefulmusic loop
-    show darius surprised blush with dissolve
+    show darius surprised blush
+
     darius "I'll be sure to call you on my... shell phone."
     vivi happy "..."
     show darius sad blush
@@ -61,7 +63,7 @@ label anger_fr2_darius:
     vivithinking surprised "He's practically shaking."
     vivithinking neutral "Yep. There goes Vivi, running her mouth like a bull in a china shop again."
     vivi neutral "I've touched a nerve. I'm sorry. Again. I swear I'm not trying to get under your skin."
-    show darius neutral blush with dissolve
+    show darius neutral blush
     darius "Whether you were trying to or not, you've a talent for it."
     vivi neutral blush "Should we...play some darts?"
 

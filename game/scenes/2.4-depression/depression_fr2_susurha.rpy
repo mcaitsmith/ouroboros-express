@@ -61,7 +61,7 @@ label depression_fr2_susurha:
             vivi "I also needed to see a friendly face."
             # hide attraction_icon
             # with { "master" : Dissolve(0.5) }
-            show susurha happy blush with dissolve
+            show susurha happy blush
             vivi "..."
             show susurha neutral -blush
             susurha neutral "Please... sit with me."
@@ -273,7 +273,7 @@ label depression_fr2_susurha:
 
             vivi "There aren't many poet-musician druids that were once heir to a throne, but chose to not take that power so that they could be THEMSELVES."
             vivi happy blush "You are truly one of a kind."
-            show susurha happy blush with dissolve
+            show susurha happy blush
             susurha "STOP... You flatter me, Vivienne."
             susurha "Nothing can take away who you are either."
             show susurha happy -blush
@@ -338,7 +338,7 @@ label depression_fr2_susurha:
         else:
             vivi "We can sit here for a little while longer."
             vivi "And watch the cosmos fly by."
-            show susurha neutral blush with dissolve
+            show susurha neutral blush
             susurha "I'd love that."
             stop music fadeout 5.0
             vivithinking "In its own strange way, the view sure is beautiful from here."

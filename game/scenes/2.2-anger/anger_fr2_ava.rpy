@@ -76,7 +76,7 @@ label anger_fr2_ava:
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Thank you...that means more to us than you know."
             # SOUND: dart hitting the board
             play sound darts
@@ -123,7 +123,7 @@ label anger_fr2_ava:
             vivi happy blush "But if you like it...I guess I could get used to it."
             # hide decay_icon
             # with { "master" : Dissolve(0.5) }
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "No. We never wish to offend you."
             vivithinking happy "I'll do anything she wants to spend some more time with her...!"
             show ava happy -blush
@@ -142,7 +142,7 @@ label anger_fr2_ava:
             vivi angry "Don't ever call me that again. I don't like it. I'm not your pet."
             # hide attraction_icon
             # with { "master" : Dissolve(0.5) }
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "By Asha, we beg forgiveness. We never intended harm."
             vivi  "..." 
             vivi sad blush "It's...just...old memories. Sorry, I snapped."
@@ -157,7 +157,7 @@ label anger_fr2_ava:
             vivi blush "My old roommates called me dildo. It's a...personal massage device. For...relaxation?"
             ava happy "Oh! Those. The orgies after were most pleasureable!"
             vivi happy blush "Oh! I didn't know Soleos did...that."
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "Perhaps our other customs might tempt you?"
             vivithinking surprised "Write this down. WRITE THIS DOWN!"
             # SOUND: dart hitting the board
@@ -211,7 +211,7 @@ label anger_fr2_ava:
             ava sad "..."
             ava neutral "Enjoy the view. We seldom saw nighttime. It is strange. Nice."
             vivi happy "It is pretty nice, huh." 
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "We would enjoy spending more time talking with you."
             vivithinking surprised blush "BRRRRT BRRRTT! Flirt alert!!"
             show ava happy -blush

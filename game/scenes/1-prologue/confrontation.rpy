@@ -33,13 +33,13 @@ label confrontation:
     vivi angry "And you, or someone, or {i}something{/i} has taken our memories of boarding the train!"
     urshu happy "How delightful you've learned so much about your peers!"
     vivi angry "Don't interrupt me. I'm furious with you!"
-    show urshu happy blush with dissolve
+    show urshu happy blush
     urshu "My apologies."
     vivi neutral "Which means one of three things: One, I'm having a delusion my therapist is just {i}loving{/i} because she knows her findings are going to get her a Nobel Prize."
     show urshu neutral -blush
     urshu neutral "Interesting."
     vivi neutral "Two: I'm projecting my spirit into this astral plane while lying butt naked in a yurt in Cuzco."
-    show urshu happy blush with dissolve
+    show urshu happy blush
     urshu "What a sight that would be!"
     vivi angry "This isn't a game, Urshunabi!"
     show urshu neutral -blush

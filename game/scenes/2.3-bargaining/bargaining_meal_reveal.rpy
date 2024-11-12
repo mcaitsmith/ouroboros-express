@@ -75,7 +75,7 @@ label bargaining_meal_reveal:
             vivithinking neutral "I need to hold on to something!"
             vivithinking neutral "But no, what if [fr2_bargaining_choice] doesn't want to?" 
             vivithinking neutral "Fuck it!"
-            show vivi neutral blush with dissolve:
+            show vivi neutral blush:
                 xpos 0.5
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
@@ -108,8 +108,10 @@ label bargaining_meal_reveal:
             # JUMP TO: vivithinking neutral "He's taking another bite!"    
 
     vivithinking neutral "He's taking another bite! And another! He's...he's crying."
+
     stop music fadeout 20.0
-    show urshudining sad blush with dissolve
+    show urshudining sad blush
+
     urshudining "My, my. I have never... My mouth dances with joy! The texture, the temperature, the sensation of it all. You have truly gone A and B the C of D."
     if fr2_bargaining_choice == "Asha":
         call show_ava_surprised from _call_show_ava_surprised
@@ -231,7 +233,7 @@ label bargaining_meal_reveal:
         vivi neutral "You didn't have to do this, but you still did, and I just..."
         vivi neutral "I really appreciate it."
         darius neutral "You're welcome, Vivi. I'm glad I could help."
-        show darius neutral blush with dissolve
+        show darius neutral blush
         darius "...Anyways."
         vivi neutral "Yeah. We should go."
         show darius neutral -blush
@@ -244,13 +246,13 @@ label bargaining_meal_reveal:
         return
 
     label show_ava_blush:
-        show ava surprised blush with dissolve
+        show ava surprised blush
         return
     label show_darius_blush:
-        show darius surprised blush with dissolve
+        show darius surprised blush
         return
     label show_susurha_blush:
-        show susurha surprised blush with dissolve
+        show susurha surprised blush
         return
 
     label show_ava_surprised:

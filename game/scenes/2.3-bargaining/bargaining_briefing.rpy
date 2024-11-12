@@ -306,7 +306,7 @@ label bargaining_briefing:
         "Reminds you of your lost love.":
 
             vivi neutral "Reminds you of your lost love." 
-            show urshu angry blush with dissolve
+            show urshu angry blush
             urshu "Don't you dare claim you can do such a thing."
             show urshu sad -blush
             urshu sad "I cannot hope for what I know is impossible."
@@ -335,7 +335,7 @@ label bargaining_briefing:
     vivi neutral "..." 
     vivithinking"He seems enthralled with his senses. That's something he craves. What could possibly..."
     vivi happy "Urshu, has anyone ever made you a meal? Like a whole, cooked-from-scratch meal?"
-    show urshu neutral blush with dissolve
+    show urshu neutral blush
     urshu "You know, I cannot recall..."
 
     show vivi happy at left:

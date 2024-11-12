@@ -126,7 +126,7 @@ label bargaining_fr2_susurha:
             susurha happy "Indeed you do! Now, let's use that to get us off this train!"
             vivi neutral "You're right..."
             vivi neutral "If we work together, maybe we can pull this thing off."
-            show susurha neutral blush with dissolve
+            show susurha neutral blush
             susurha "I dare say, working in close quarters with you, I hope I don't get too distracted...by your \"girlboss\" energy."
             vivi surprised blush "Susu'Rha, I'm not sure that's the compliment you think it is..."
             susurha "No, sorry! What I meant to say was... Well, I just think... I think you're quite... radiant. I mean that. Earnestly."
@@ -249,7 +249,7 @@ label bargaining_fr2_susurha:
             susurha happy "We'll have to taste each other's creations then to see who comes out on top." 
             vivi happy blush "We...sure will!"
             vivithinking blush "...EEEEEEEEE."
-            show susurha neutral blush with dissolve
+            show susurha neutral blush
             susurha "Ahem... Right... Anyways."
             susurha "Shall we begin?"
             show susurha neutral -blush
@@ -325,12 +325,12 @@ label bargaining_fr2_susurha:
     vivithinking "That's...wonky. But edible!"
     vivi neutral "And voila!"
     vivi neutral "Okay, Susu'Rha, try a bite! What do you think?"
-    show susurha happy blush with dissolve
+    show susurha happy blush
     susurha "It's, uh...exquisite!"
     vivi angry "Really? Good enough to get us off this train?"
     show susurha neutral -blush
     susurha neutral "...Well."
-    show susurha neutral blush with dissolve
+    show susurha neutral blush
     susurha "I don't want to hurt your feelings..."   
     show susurha neutral -blush
     susurha neutral "And I can't put my claw on it, but..."
@@ -403,8 +403,10 @@ label bargaining_fr2_susurha:
             vivi neutral "...Beyond death?"
             susurha neutral "I didn't want to say it, but... Yes." 
             vivi neutral blush "Well...it's easy to do when you've got someone with you who...makes life worth living..."
+
             stop cd_ambience fadeout 10.0
-            show susurha neutral blush with dissolve
+            show susurha neutral blush
+
             susurha "The feeling is mutual...Vivi."
             vivithinking "God, I'm as red as a beet. Shoulda put {i}me{/i} in the meal!"
             show susurha neutral -blush

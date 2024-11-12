@@ -20,11 +20,11 @@ label confession_ava:
     play music ashamusic loop
     ava happy "Vivi! Hello! What a delight to see you!" 
     vivi happy blush "Haha...I think \"delight\" is a bit strong, don't you think?"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "Nonsense. You have always brought us joy, even when we were unable to see it at first..."
     show ava neutral -blush
     ava neutral "Listen. We shall make this short as time is of the essence. There is something we have to tell you." 
-    show ava neutral blush with dissolve
+    show ava neutral blush
     ava "Something we should have told you long ago."
     vivi neutral blush "Uh, sure! Yeah! Go ahead."
     show ava happy blush
@@ -36,7 +36,7 @@ label confession_ava:
     ava happy "No. No, so that {i}I{/i} can ask you this."
     vivithinking surprised "I! She can't be..."
     vivi surprised blush "Asha...Do you mean—?"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "From now on we are Asha no more. {i}I{/i} am Ava." 
     ava "And I would like to dance with you, Vivienne, until you and I are no more."
 
@@ -65,8 +65,10 @@ label confession_ava:
             vivi surprised "Oh...Oh, God. Ava..."
             vivi neutral "Thank you! And...and I'm so happy for you too!" 
             vivi sad "But I just don't think I can do that. I'm sorry."
-            show ava sad blush with dissolve
+
+            show ava sad blush
             stop music fadeout 5.0
+
             ava "Ah. This is sad news. Would you still allow me to be your friend, regardless?"
             vivi happy "Of course! I would be honored to be your friend."
             vivi happy "Ava."
@@ -80,8 +82,10 @@ label confession_ava:
         "Could you give me a moment?":
 
             vivi surprised blush "Could you give me a moment? I just need to...clear my head for a sec."
+
             stop music fadeout 5.0
-            show ava neutral blush with dissolve
+            show ava neutral blush
+
             ava "We have precious few, but for you? Anything."
             show ava neutral -blush
 

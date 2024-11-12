@@ -98,8 +98,10 @@ label depression_briefing:
     vivithinking "If this turns into another trite anecdote..."
     urshu "I have been on this journey countless times, will be on it for an eternity still. This is what I do. It is what I am."
     vivi angry "A torturer in a sharp suit who could bounce silver dollars off his ass?"
+
     stop cd_ambience fadeout 10.0
-    show urshu neutral blush with dissolve
+    show urshu neutral blush
+
     urshu "Well...How flattering."
     show urshu neutral -blush
     urshu neutral "But a torturer? No. A caretaker of poor souls. A ferryman. And the only currency I accept is the pleasure of conversation and high-stakes romantic drama. It is {i}all{/i} I have here."
@@ -206,7 +208,7 @@ label depression_briefing:
     urshu angry "Don't you get it? This is all on purpose and you only have so much time! You must complete--"
     vivithinking "Well that was... unusually direct. No creative metaphor? And he's never used that kind of tone with me. He sounds almost... desperate. What the hell?"
     vivi neutral "Complete what?" 
-    show urshu neutral blush with dissolve
+    show urshu neutral blush
     urshu "Nothing. I apologize, Miss Sanssouci, for losing my composure."
     show urshu sad -blush
     #Here starts a reminder for the player: that the chosen person for FR1 will not be available in FR2, i.e. Vivi's "last moments" before the endings

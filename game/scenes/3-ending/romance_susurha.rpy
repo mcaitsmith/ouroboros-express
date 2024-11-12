@@ -20,9 +20,9 @@ label romance_susurha:
     #     linear 1.0 xpos 480
     # show susurha happy blush:
     #     linear 1.0 xpos 1560
-    show vivi neutral blush with dissolve:
+    show vivi neutral blush:
         xpos 0.35
-    show susurha happy blush with dissolve:
+    show susurha happy blush:
         xpos 0.65
     hide vivi
     hide susurha

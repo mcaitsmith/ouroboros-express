@@ -105,7 +105,7 @@ label interview_ava:
     vivi neutral "Because it's far away from Earth?"
     ava neutral "It is on another plane entirely."
     vivi surprised "Like...You're from the future? Or the past?"
-    show ava neutral blush with dissolve
+    show ava neutral blush
     
     # <CHOICE>
     ava "We are not bound by your facile definitions of time."
@@ -151,7 +151,7 @@ label interview_ava:
         "Do you remember boarding this train?":
 
             vivi neutral "Do you remember boarding this train?"
-            show ava neutral blush with dissolve
+            show ava neutral blush
             ava "..."
             show ava sad -blush
             ava sad "Mother Asha! We try to seize our memory, but like a desert wind it repels us."

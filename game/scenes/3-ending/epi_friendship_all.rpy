@@ -49,7 +49,7 @@ label epi_friendship_all:
 
     darius happy "Strangers to ourselves, perhaps, but not among each other."
     vivi happy "That's a cute way of saying we're friends."
-    show darius angry blush with dissolve
+    show darius angry blush
     darius "Vivienne Sanssouci..."
     vivi neutral "But now what..? Where do we go? There are no signs!"
     show darius angry -blush
@@ -78,7 +78,7 @@ label epi_friendship_all:
     play sound trainwhistle
     pause 3.0
 
-    show urshu happy blush with dissolve
+    show urshu happy blush
     urshu "Au revoir, my diamonds!"
     vivi happy blush "Give us one more look!"
     show urshu neutral -blush
@@ -93,7 +93,7 @@ label epi_friendship_all:
    
     ava "But I believe we have all come to appreciate it."
 
-    show susurha happy blush with dissolve
+    show susurha happy blush
 
     susurha "Look, Vivi, he's turning."
     show susurha neutral -blush

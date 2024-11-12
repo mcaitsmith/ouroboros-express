@@ -73,6 +73,8 @@ label sounds:
     #define footsteps = "audio/sfx/footsteps.ogg"
     # define blip = "audio/sfx/blip.ogg"
 
+    define trainbell = "audio/sfx/trainbell.ogg"
+
     #FILTER
     define audio_filter = renpy.audio.filter
 

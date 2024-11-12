@@ -138,7 +138,7 @@ label bad_argument:
     show urshu happy
 
     urshu happy "You are transcending, Miss Sanssouci. Trainscending, in this instance..."
-    show urshu neutral blush with dissolve
+    show urshu neutral blush
     urshu "Glare all you like, Miss Sanssouci. There's nothing you can do to me."
     show urshu neutral -blush
     urshu neutral "Think of it like so: As a reporter, you sought truth. You dealt in truths. You bent and twisted yourself into whatever shape fit the truth."

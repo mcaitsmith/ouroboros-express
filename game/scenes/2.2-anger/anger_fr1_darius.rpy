@@ -73,7 +73,7 @@ label anger_fr1_darius:
             play sound shuffle
             pause 2.0
             vivi neutral "You deal so swiftly."
-            show darius happy blush with dissolve
+            show darius happy blush
             darius "That's kind."
             vivi neutral "I'm surprised, given your history."
             show darius angry -blush
@@ -134,7 +134,7 @@ label anger_fr1_darius:
     darius angry "Fine. Vivi. Normally, I can read the beings around me. It's what makes me such an excellent judge of... character. But since arriving here, that's changed. I feel...cut off. Disarmed."
     vivi neutral "Darius, you shouldn't be reading my mind without asking first anyway. Bit rude."
     stop music fadeout 5.0
-    show darius surprised blush with dissolve
+    show darius surprised blush
     darius "I...I'm not trying to—"
     vivi happy "Please don't do it again. Your turn!"
 

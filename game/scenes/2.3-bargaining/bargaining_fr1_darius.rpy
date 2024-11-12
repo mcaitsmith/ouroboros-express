@@ -161,7 +161,7 @@ label bargaining_fr1_darius:
             darius happy "I'm glad to hear it. I can tell he cares for you a great deal."
             vivi neutral blush "What do you mean? He treats me just the same as anyone else."
             darius happy "You're inquisitive, Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
-            show darius happy blush with dissolve
+            show darius happy blush
             darius "Perhaps that is why I, too, enjoy your company so much."
             vivithinking neutral blush "This guy... When did he get so suave?"
             show darius neutral -blush
@@ -198,7 +198,7 @@ label bargaining_fr1_darius:
             darius sad "In heartbreak? Much less than you'd think."
             vivi neutral "Never had someone you couldn't quite read? Someone that ended up hurting you?"
             darius sad "Honestly? No. The life I lived left little room for such ventures."
-            show darius neutral blush with dissolve
+            show darius neutral blush
             darius "Until now... funny enough."
             darius "I have never met someone I couldn't read. It became almost second nature to naturally understand everyone I came across."
             darius "You however... It's strange. I feel like I'm beginning to, but it has nothing to do with my abilities."

@@ -13,7 +13,7 @@ label romance_ava:
         xzoom -1
     show ava neutral at center_right with dissolve
 
-    show ava sad blush with dissolve
+    show ava sad blush
     ava "Now, take my hand, Vivi." 
     play music ashamusic loop fadein 3.0
     stop ambience fadeout 1.0
@@ -22,7 +22,7 @@ label romance_ava:
         # xpos 0.5
         # linear 0.5 xpos 0.35
         xpos 0.35
-    show ava sad blush with dissolve:
+    show ava sad blush:
         # xpos 0.5
         # linear 0.5 xpos 0.65
         xpos 0.65
