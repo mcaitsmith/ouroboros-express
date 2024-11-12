@@ -81,12 +81,19 @@ label introduction:
             "Look out the window" if option1 == True and option2 == True and option3 == True:
 
                 vivithinking neutral "Hmm. The view from the window is really hard to make out. It's all dark and misty. I think we're in a forest?"
+                play cd_ambience amb_cosmicdecay fadein 1.0 volume 1.0
+                $ renpy.music.set_audio_filter("cd_ambience", audio_filter.Lowpass(8000), replace=True, duration=1.0)
+                $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
+                $ renpy.music.set_volume(0.25, delay=1.0, channel='music')
                 show black with fade
                 show vivi_window with Dissolve(3.0)
                 pause 1.0
                 vivithinking surprised "Huh, weird. The condensation on the window is flowing up as if the train is falling. That can't be right."
                 hide vivi_window with dissolve
                 hide black with dissolve
+                stop cd_ambience fadeout 1.0
+                $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.0)
+                $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
                 vivithinking surprised "What's going on?"
 
     pause 0.5

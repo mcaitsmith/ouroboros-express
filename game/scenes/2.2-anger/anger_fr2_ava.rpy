@@ -39,6 +39,7 @@ label anger_fr2_ava:
         # OPTION 1 +DECAY
         "Amazing.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -46,6 +47,7 @@ label anger_fr2_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi happy "Amazing. Peace and quiet? Now that's luxury."
@@ -60,6 +62,7 @@ label anger_fr2_ava:
         # OPTION 2 +ATTRACTION
         "Awful.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -67,6 +70,7 @@ label anger_fr2_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "Awful. I'm so sorry. I can't even begin to imagine."
@@ -228,6 +232,7 @@ label anger_fr2_ava:
         #OPTION 1 +ATTRACTION +DECAY
         "Don't play games with me.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
@@ -241,6 +246,7 @@ label anger_fr2_ava:
             with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr2 / att_num_list_ava[1])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "Don't play games with me."
@@ -254,6 +260,7 @@ label anger_fr2_ava:
         #OPTION 2 +DECAY
         "I don't need you to think I'm special.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -261,6 +268,7 @@ label anger_fr2_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "I don't need you to think I'm special. Just because your crazy cult revered you doesn't mean that I'm going to, ass hat!"

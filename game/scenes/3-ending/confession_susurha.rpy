@@ -12,6 +12,7 @@ label confession_susurha:
     #show susurha neutral at right with dissolve
     #show vivi neutral at left with dissolve
 
+    play music susumusic fadein 1.0 loop
     vivithinking neutral "There they are, gazing out the window..."
     vivithinking neutral "The glow... It's haunting, yet..."
     susurha "Wondrous, isn't it?"
@@ -49,11 +50,13 @@ label confession_susurha:
         # Accept Romance
         "Yes!":
 
+            play music peacefulmusic loop
             vivi happy blush "I'd love nothing more than that."
             show susurha happy blush with dissolve
             susurha "That makes me happier than you can possibly imagine."
             vivi happy blush "Oh, but I {i}can{/i} imagine...because I feel the same way."
             show susurha happy -blush
+            stop ambience fadeout 1.0
             # JUMP TO: Romance/Susu'Rha Balrinn
             jump romance_susurha
 

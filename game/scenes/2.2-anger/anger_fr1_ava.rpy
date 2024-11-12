@@ -35,6 +35,7 @@ label anger_fr1_ava:
         # OPTION 1 +ATTRACTION
         "The sun card.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -42,6 +43,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi neutral "The sun card."
@@ -58,6 +60,7 @@ label anger_fr1_ava:
         # OPTION 2 +DECAY
         "The sea monster card.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -65,6 +68,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "The sea monster card."
@@ -78,6 +82,7 @@ label anger_fr1_ava:
         # OPTION 3 +DECAY
         "The big snake card.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -85,6 +90,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "The big snake card."
@@ -135,6 +141,7 @@ label anger_fr1_ava:
     # OPTION 1 +ATTRACTION +DECAY
         "...chin up, princess, or the crown slips.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
@@ -148,6 +155,7 @@ label anger_fr1_ava:
             with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "...chin up, princess, or the crown slips."
@@ -172,6 +180,7 @@ label anger_fr1_ava:
     # OPTION 2 +ATTRACTION
         "...I know what you mean about sacrifices.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -179,6 +188,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
@@ -201,6 +211,7 @@ label anger_fr1_ava:
     # OPTION 3 +DECAY
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -208,6 +219,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."

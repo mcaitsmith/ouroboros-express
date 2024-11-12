@@ -28,8 +28,8 @@ label denial_fr2_darius:
         "Sure.":
 
             vivi "Sure."
-            # SOUND: glassclink actual glasses linking please
-            #play sound glassclink
+            # SOUND: glassclink
+            play sound glassclink01
             darius neutral "There you are."
 
             vivi "Thank you."
@@ -70,7 +70,7 @@ label denial_fr2_darius:
             darius neutral "Not a fan? That's fine. I can make you a non-alcoholic version."
 
             # SOUND: glassclink
-
+            play sound glassclink02
 
             vivi surprised "Fruits? I didn't think you had a sweet tooth."
 
@@ -220,16 +220,17 @@ label denial_fr2_darius:
     urshu happy "Suppose it's time to retire for the evening. Should do the rounds, ensure nothing is out of order."
 
     # SOUND: teleport
+    $ renpy.music.set_audio_filter("music", audio_filter.Lowpass(500), replace=True, duration=0.5)
+    $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
     play sound teleport_enter volume 1.0
-
+    $ renpy.music.set_audio_filter("music", None, replace=True, duration=1.5)
+    $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
     hide urshu with pixellate
 
     show darius surprised at right with dissolve
 
     show vivi surprised at left with dissolve:
         xzoom -1
-
-    stop sound fadeout 2.0
 
     darius surprised "Is that..."
 

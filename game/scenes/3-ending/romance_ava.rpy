@@ -7,6 +7,7 @@ label romance_ava:
 
     # LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
 
     show vivi neutral at center_left with dissolve:
         xzoom -1
@@ -14,6 +15,8 @@ label romance_ava:
 
     show ava sad blush with dissolve
     ava "Now, take my hand, Vivi." 
+    play music ashamusic loop fadein 3.0
+    stop ambience fadeout 1.0
     ava "Hold me close for our last dance."
     show vivi neutral with dissolve:
         # xpos 0.5
@@ -59,12 +62,12 @@ label romance_ava:
         call epi_eldritch_susurha from _call_epi_eldritch_susurha
 
     stop music fadeout 3.0
-    stop sound fadeout 3.0
+    stop ambience fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
-    play music goodendmusic volume 0.5
+    play music creditsmusicgood loop
     call screen credits
     stop music fadeout 3.0
     pause 3.0

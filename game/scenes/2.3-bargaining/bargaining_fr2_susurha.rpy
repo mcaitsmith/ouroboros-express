@@ -7,6 +7,7 @@ label bargaining_fr2_susurha:
     # LOCATION: diningcar
     # call check_overlay from _call_check_overlay_22
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -15,6 +16,7 @@ label bargaining_fr2_susurha:
 
     vivi neutral "Thanks for coming on such short notice, Susu'Rha. I really need your help."
     susurha neutral "Of course, Vivienne. What is it that you need?"
+    play music susumusic loop fadein 5.0
     vivi neutral "Okay, so... Listen to me."
     vivi neutral "I know how we're gonna get off this train."
     
@@ -147,6 +149,8 @@ label bargaining_fr2_susurha:
         # play sound decchoice
 
         vivi neutral "I can't...seem to make up my mind...."
+        stop music fadeout 5.0
+        play cd_ambience twinkle loop fadein 5.0
         vivithinking "What's outside the window?"
         vivithinking "Wow. Look at those cosmic spirals, twisting violently like tornados."
 
@@ -158,6 +162,7 @@ label bargaining_fr2_susurha:
 
         # EFFECT: Distort screen
         show diningcar blur with pixellate
+        play sound cineboom
 
         show vivi surprised at left with dissolve
 
@@ -169,11 +174,13 @@ label bargaining_fr2_susurha:
         vivithinking "Why is it stealing all the light—and reflecting it everywhere?"
         vivithinking "I don't get it!"
 
+        stop cd_ambience fadeout 1.0
         show diningcar with dissolve
 
         show susurha neutral at right with dissolve
 
         susurha neutral "Vivi! Vivienne! Collect yourself!"
+        play music susumusic loop fadein 5.0
         vivi neutral "Sorry! Sorry. I don't know what that was..."
         susurha neutral "You looked like a ghost for a moment! You are sure you wish to go through with this?"
 
@@ -184,12 +191,17 @@ label bargaining_fr2_susurha:
         # OPTION 1 +DECAY
         "Let's try to appeal to Urshu's taste.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi neutral "Let's try to appeal to Urshu's taste."
             hide decay_icon
@@ -212,12 +224,17 @@ label bargaining_fr2_susurha:
         # OPTION 2 +ATTRACTION
         "We'll just try to cook the best dish we possibly can!":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi neutral "We'll just try to cook the best dish we possibly can!"
             hide attraction_icon
@@ -242,12 +259,17 @@ label bargaining_fr2_susurha:
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "I don't know. I'll let my Nana's spirit guide me." if att_meter_susurha >= 40:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi neutral "I don't know. I'll let my Nana's spirit guide me."
             hide attraction_icon
@@ -273,6 +295,7 @@ label bargaining_fr2_susurha:
             susurha angry "Still burn with rage." 
             susurha neutral "But the first step towards quelling that rage is leaving this iniquitous purgatory and going home."
             susurha neutral "Which means..."
+            play sound sparkle
             vivi happy "It's time to start cookin', good lookin'!"
 
             show vivi surprised blush at left
@@ -296,6 +319,8 @@ label bargaining_fr2_susurha:
     play sound cooking
     pause 3.0
     stop sound fadeout 1.0
+    play sound dinnerware
+    pause 1.0
 
     vivithinking "That's...wonky. But edible!"
     vivi neutral "And voila!"
@@ -322,6 +347,7 @@ label bargaining_fr2_susurha:
         vivi angry "I've got this under control!"
         susurha angry "Enough with the rude commentary!"
         susurha angry "You act as though you WISH to displease Urshu!"
+        stop music fadeout 1.0
         susurha angry "Don't you even want to go home?"
 
         show vivi neutral at left
@@ -339,47 +365,69 @@ label bargaining_fr2_susurha:
         # OPTION 1 +ATTRACTION
         "It needs more spice.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_bargaining_fr2 / att_num_list_susurha[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             susurha neutral "It needs more spice."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
+            play cd_ambience cooking loop fadein 5.0
             vivi neutral "Okay...I can work with that!"
+            play music peacefulmusic loop
             vivi neutral "Nana would want things spicy."
             vivi neutral "I'll add...more cardamom."
+            play sound spice01
+            pause 0.5
             vivi neutral "More cinnamon."
+            play sound spice02
+            pause 0.5
             vivi neutral "More cumin."
+            play sound spice03
+            pause 0.5
             vivi happy "More everything!"
             vivi happy "More! More! More! More!"
+            play sound spice04
+            pause 0.5
             susurha neutral "I admire how you do that."
             vivi neutral "What?"
             susurha neutral "Inject life into everything you do. Even..."
             vivi neutral "...Beyond death?"
             susurha neutral "I didn't want to say it, but... Yes." 
             vivi neutral blush "Well...it's easy to do when you've got someone with you who...makes life worth living..."
+            stop cd_ambience fadeout 10.0
             show susurha neutral blush with dissolve
             susurha "The feeling is mutual...Vivi."
             vivithinking "God, I'm as red as a beet. Shoulda put {i}me{/i} in the meal!"
             show susurha neutral -blush
             susurha neutral "Ahem, well. We should go, before our creation cools!"
             vivi neutral "Yeah, totally!"
+            stop music fadeout 5.0
 
             # JUMP TO: vivi neutral "Let's serve this up!" 
 
         #OPTION 2 +DECAY
         "I think it's fine the way it is.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi neutral "I think it's fine the way it is."
             hide decay_icon
@@ -400,12 +448,17 @@ label bargaining_fr2_susurha:
         #OPTION 3 >>DECAY +DECAY
         "Something?!" if dec_meter >= 30:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi angry "Something?!"
             hide decay_icon
