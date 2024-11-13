@@ -9,10 +9,11 @@ label confession_darius:
     show vivi neutral at left with dissolve:
         xzoom -1
 
+    play music mainmusic loop
     vivithinking neutral "There he is. He's standing tall."
     darius neutral "I'm glad to see you. I wasn't sure if we'd have the chance to talk again."
     vivi neutral "Where else would I go?"
-    show darius neutral blush with dissolve
+    show darius neutral blush
     darius "Fair enough."
     darius "There's... something about you, Vivi." 
     darius "That fierce intelligence, the dogged questioning."
@@ -41,6 +42,8 @@ label confession_darius:
         "Yes!":
             vivithinking happy "The way their mouth tentacles curl..."
             vivi happy blush "Darius... Yes."
+            stop music fadeout 5.0
+            stop ambience fadeout 1.0
             #JUMP TO: Romance/Darius Wrecker
             jump romance_darius
 
@@ -52,10 +55,11 @@ label confession_darius:
 
             vivi neutral blush "Darius, I believe that you've accepted your past. But your future—you have a lot to figure out on your own."
             vivi happy "I'd love to come with you on your journey. As a friend."
-            show darius neutral blush with dissolve
+            show darius neutral blush
             darius "I understand. And I appreciate the confidence. And your honesty."
             darius "Safe travels... friend."
             show darius neutral -blush
+            stop music fadeout 5.0
             # Note: Darius is locked as friend. Can no longer be chosen as romance partner.
             # JUMP TO: Character Selector
             jump show_chars
@@ -65,8 +69,9 @@ label confession_darius:
         "Could you give me a moment?":
 
             vivi surprised blush "Could you give me a moment? I want to give this, um, assignment the consideration it's due."
-            show darius neutral blush with dissolve
+            show darius neutral blush
             darius "Noted. And...thank you."
             show darius neutral -blush
+            stop music fadeout 5.0
             #JUMP TO: Character selector
             jump show_chars

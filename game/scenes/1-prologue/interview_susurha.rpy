@@ -6,7 +6,7 @@ label interview_susurha:
 
     # LOCATION: lounge
     # scene diningcar with fade
-    play ambience amb_bar
+    play ambience amb_bar if_changed fadein 1.0
     play music mainmusic loop volume 0.2
 
     show susurha neutral with dissolve

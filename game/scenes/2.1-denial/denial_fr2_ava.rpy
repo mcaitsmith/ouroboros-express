@@ -53,7 +53,7 @@ label denial_fr2_ava:
 
             vivi angry "Asha! Or Avatar! Whatever! How dare you!" 
             vivi angry "If you feel that way, why are we even speaking? I'm one of them, you know!"
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Our humblest apologies, Vivi. We never intended to offend you. We have led vastly different lives, you see."
             vivi neutral "Well you've managed to offend me regardless." 
             show ava neutral -blush
@@ -63,10 +63,12 @@ label denial_fr2_ava:
     # OPTION 2 +ATTRACTION
         "Maybe we all matter, Asha.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Maybe we all matter, Asha."
             vivi sad "Maybe we're all just specks of sand on a cosmic beach."
@@ -74,7 +76,7 @@ label denial_fr2_ava:
             ava sad "There are times we wished for a simpler life. Family. Friends. Love, perhaps? All forbidden. Even tears."
             vivithinking surprised "Whoa. Even tears? Here I thought I was a hot mess."
             vivi sad "That must've been awful. Well, I'm here now, so dry those eyes."
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Your heart speaks strangely, but with truth. Tears do not come easily to us. Thank you, Vivi."
             show ava sad -blush
             # JUMP TO: vivi saying "Yeah, so about that exit I mentioned..." 
@@ -83,17 +85,19 @@ label denial_fr2_ava:
     # OPTION 3 +ATTRACTION
         "Asha, respectfully, I disagree with you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Asha, respectfully, I disagree with you."
             vivi neutral "Humans have identities, lives, and belief systems. Like you. We're complex. Like you. And you're no goddess. You're just a woman calling herself one."
             ava happy "Really? In our world, humans are simple creatures incapable of conscious thought." 
             vivithinking "Hold my bujo, I'm about to destroy this woman."
             vivi happy blush "Well you're speaking with me right now, are you not? I'm human. Would you say I'm incapable of conscious thought?"
-            show ava surprised blush with dissolve
+            show ava surprised blush
             ava "Well, when you put it as such...who are we to argue? We apologize."
             vivithinking "About time! Still, I can't forget why I came here."
             show ava neutral -blush
@@ -137,7 +141,7 @@ label denial_fr2_ava:
         xzoom 1
     $ renpy.pause()
     vivi surprised "Where the hell did you come from?"
-    show urshu neutral blush with dissolve
+    show urshu neutral blush
     urshu "Apologies Ms. Sanssouci, sometimes the teleportation spell can be a bit... faulty."
     show urshu neutral -blush
 
@@ -170,10 +174,12 @@ label denial_fr2_ava:
     #OPTION 2 +ATTRACTION
         "Terrifying. I can't imagine how it feels.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "Terrifying. I can't imagine how it feels."
             ava sad "A circular void haunts our every thought. We fear it."
@@ -197,10 +203,12 @@ label denial_fr2_ava:
         #OPTION 1 +ATTRACTION
         "Can we get out of here?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi surprised "Can we get out of here?"
             show urshu neutral at left
@@ -231,7 +239,7 @@ label denial_fr2_ava:
 
             vivi sad "Why do you do this job?"
             show urshu surprised at left
-            show urshu surprised blush with dissolve
+            show urshu surprised blush
             urshu "That is the first time anybody has asked me that! Well to be honest, the tale is long, so perhaps another time?"
             vivi sad "Oh..."
             show urshu happy -blush

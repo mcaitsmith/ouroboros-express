@@ -6,7 +6,7 @@ label denial_briefing:
     #Briefing Denial
     #LOCATION: cabin
     scene cabin with fade
-    play ambience amb_bedroom
+    play ambience amb_bedroom if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1

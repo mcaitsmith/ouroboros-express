@@ -47,7 +47,7 @@ label anger_briefing:
             vivi angry "I don't have time or patience, patience or time! Get me, Urshu?!"
             # SOUND: urshu sighs
             #play sound sigh
-            pause 4.0
+            #pause 4.0
             urshu neutral "Patience enough to repeat yourself."
             vivi angry "What was that?" 
             vivithinking angry "What is he on today?" 
@@ -134,7 +134,7 @@ label anger_briefing:
     urshu sad "We had something like love, then. A time and place long gone. Eternal gardens. Amber lanterns like fireflies. Buildings of floating emerald marble. What I wouldn't give..."
     vivithinking neutral "He's not even speaking in full sentences. Weird." 
     vivi neutral "Uh...Ursh?"
-    show urshu sad blush with dissolve
+    show urshu sad blush
 
     # <CHOICE>
     # THIS MENU CHOICE ONLY APPEARS IF VIVI CHOSE TO HEAR URSHU'S FIRST STORY 

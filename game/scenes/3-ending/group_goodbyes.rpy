@@ -8,6 +8,7 @@ label group_goodbyes:
 
     # LOCATION: diningcar
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
     
     show ava silhouette at left with dissolve:
         xzoom -1.0
@@ -24,10 +25,10 @@ label group_goodbyes:
     urshu sad "Perhaps it would aid you to think of easy goodbyes as far sadder than hard ones. No one who mattered to you should be easy to part with."
     vivi neutral "You know, that's not the dumbest thing you've ever said."
     urshu happy "Marvellous, then I must now leave you to your parting, as I have a few small things to prepare. Try not to be too sad, but if you are, remember tears are the diamonds of the soul!"
-    vivi neutral "...And that is."
+    vivi neutral "...But {i}that{/i} is."
     urshu happy "I'll return momentarily. In the meantime, you'll find a bumper box of tissues under the bar 'designed for big weeps and unpleasant seeps.'"
     vivi surprised "{i}Gross.{/i}"
-    vivi sad "But okay, I'm as ready as I'll ever be. Lets go."
+    vivi sad "But okay, I'm as ready as I'll ever be. Let's go."
     
     # urshu exits
     hide urshu with dissolve
@@ -133,6 +134,7 @@ label group_goodbyes:
     show vivi happy at left with dissolve:
         xzoom -1.0
     
+    play music ashamusic loop
     vivithinking neutral "There she is, radiant as always. But today she really is glowing! Like a beacon in the darkness."
     vivi happy "Asha! I'm so glad you're here."
     ava neutral "Of course. We would not miss wishing you well. Though our conductor tells us your journey is to continue."
@@ -144,6 +146,7 @@ label group_goodbyes:
     ava surprised "We? No, no, so that {i}I{/i} can tell you this: from now on, we are Asha no more. {i}I{/i} am Ava. And I would like you to remember me, Vivi. As a friend."
     vivi surprised "Ava. That's a beautiful name. I'm so glad to meet you, Ava. I'll miss your brightness, but I'll never forget who you are."
     ava happy "Nor I you. But I will not take more of your time. There is precious little left."
+    stop music fadeout 5.0
     
     #JUMP TO goodbye_choice
     jump goodbye_choice
@@ -158,6 +161,7 @@ label group_goodbyes:
         xzoom -1.0
    
    
+    play music dariusmusic loop
     vivithinking neutral "Here he is. He's standing tall. And there's a sense of peace around him. No... acceptance. It's easing my mind."
     darius neutral "I'm glad to see you. I wasn't sure if we'd have the chance to talk again."
     vivi neutral "Like I'd let you leave without saying goodbye."
@@ -169,6 +173,7 @@ label group_goodbyes:
     vivi happy "But you know what? I think you'll get there. I hope you do."
     darius happy "I hope so, too. As ever, I appreciate the confidence... and your honesty."
     darius happy "Have a safe onward journey, friend."
+    stop music fadeout 5.0
     
     #JUMP TO goodbye_choice
     jump goodbye_choice
@@ -181,6 +186,7 @@ label group_goodbyes:
     show vivi at left with dissolve:
         xzoom -1.0
     
+    play music susumusic
     vivithinking neutral "They're gazing out of the window. Right into that strange, haunting glow. Only they could look so peaceful in a moment like this."
     susurha happy "It's wondrous, isn't it? I don't know quite what it heralds, but I'm eager to find out."
     vivi neutral "Eager isn't the word I think I'd be using. You're not afraid of the great unknown?"
@@ -193,6 +199,7 @@ label group_goodbyes:
     vivi happy "You feel free. That is wondrous, I'll give you that."
     vivi happy "I'm glad to have met you, Susu'Rha. A friend to the end."
     susurha happy "Ha! See? You are a poet. Farewell, Vivienne."
+    stop music fadeout 5.0
     
     #JUMP TO goodbye_choice
     jump goodbye_choice

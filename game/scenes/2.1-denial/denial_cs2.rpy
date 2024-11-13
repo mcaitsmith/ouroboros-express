@@ -24,10 +24,10 @@ label denial_cs2:
     show cabin with dissolve
 
     vivi sad "This can't be happening."
-    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
-    play sound heartbeat
-    pause 5.0
-    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
+    #$ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
+    #play sound heartbeat
+    #pause 5.0
+    #$ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
     vivi angry "It can't end like this."
 
     # <CHOICE>

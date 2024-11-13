@@ -23,7 +23,7 @@ label denial_fr1_ava:
     show ava happy at right
     vivithinking "Oh, she's noticed me. So imposing..."
 
-    show ava happy blush with dissolve
+    show ava happy blush
 
     # <CHOICE>
     ava "Hello, little one. Has our radiance tempted you today? Come, sit with us for a moment."
@@ -65,14 +65,16 @@ label denial_fr1_ava:
     # OPTION 2 +ATTRACTION
         "I wonder what she saw in the window.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "I wonder what she saw in the window."
             vivi happy "I'm a little overwhelmed by everything going on. What are you looking at?"
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "We exist to spread the light of knowledge. We have looked into the darkness. Above us."
             vivi surprised "What'd you see?"
             show ava surprised -blush
@@ -91,10 +93,12 @@ label denial_fr1_ava:
     # OPTION 1 +ATTRACTION
         "I should share my worries with her.":
 
-            $ renpy.music.set_volume(0.50, delay=0.25, channel='music')
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "I should share my worries with her."
             vivi surprised "I don't even know what to think anymore...this whole journey has thrown me for a loop. I mean, if the conductor was telling the truth, then are we all really dead...?"
@@ -117,7 +121,7 @@ label denial_fr1_ava:
     ava neutral "Ridiculous. Of course we are alive. Look around you. Breathe. Have a drink and calm those nerves of yours."
 
     # <CHOICE>
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "What say you, little one?"
 
     menu:
@@ -125,10 +129,12 @@ label denial_fr1_ava:
     # OPTION 1 +ATTRACTION
         "Drink, yes? Little one? No!":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Drink, yes? Little one? No!"
             vivi happy blush "Another time! But please stop calling me \"little one.\" I'm thirty."

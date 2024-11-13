@@ -7,6 +7,7 @@ label depression_cs2:
     # LOCATION: dining car
     # call check_overlay from _call_check_overlay_26
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -19,6 +20,7 @@ label depression_cs2:
     pause 1.0
 
     show urshu neutral at right with dissolve
+    play music mainmusic loop
 
     urshu neutral "Ms. Sanssouci, I see you've found the liquor cabinet."
     vivi neutral "Top shelf stuff, Urshu."
@@ -54,6 +56,7 @@ label depression_cs2:
     # END
     hide urshu with dissolve
 
+    stop music fadeout 5.0
     vivithinking neutral "I suppose there might be something to what he said."
 
     # <CHOICE>
@@ -74,6 +77,7 @@ label depression_cs2:
         "Avatar of Asha" if fr1_depression_choice != "Ava":
 
             vivithinking neutral "The goddess. I want to spend my last moments with her."
+            stop ambience fadeout 1.0
             # JUMP TO: Free roam 2 / Avatar of Asha
             jump depression_fr2_ava
 
@@ -81,6 +85,7 @@ label depression_cs2:
         "Darius Wrecker" if fr1_depression_choice != "Darius":
 
             vivithinking neutral "Darius. I want to spend my last moments with them."
+            stop ambience fadeout 1.0
             # JUMP TO: Free roam 2 / Darius Wrecker
             jump depression_fr2_darius
 
@@ -88,5 +93,6 @@ label depression_cs2:
         "Susu'Rha Balrinn" if fr1_depression_choice != "Susu'Rha":
 
             vivithinking neutral "Susu'Rha. I want to spend my last moments with them."
+            stop ambience fadeout 1.0
             # JUMP TO: Free roam 2 / Susu'Rha Balrinn
             jump depression_fr2_susurha

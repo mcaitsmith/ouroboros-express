@@ -7,6 +7,7 @@ label depression_fr1_susurha:
     # LOCATION: diningcar
     # call check_overlay from _call_check_overlay_30
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -49,6 +50,7 @@ label depression_fr1_susurha:
             vivithinking neutral "I feel like constantly chasing a way to express myself in the next day's paper sometimes got in the way of the whole living joyously part..."
             # JUMP TO susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
 
+    play sound sparkle
     susurha happy "A delectable pina colada for me and a sloe gin fizz for you."
     vivithinking neutral "Hmmm..."
     vivi "This is incredible."
@@ -80,12 +82,16 @@ label depression_fr1_susurha:
         #OPTION 1 +ATTRACTION
         "Been engaged.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Been engaged."
             hide attraction_icon
@@ -107,12 +113,16 @@ label depression_fr1_susurha:
         #OPTION 2 +DECAY
         "Led a kingdom.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Led a kingdom."
             hide decay_icon
@@ -133,12 +143,17 @@ label depression_fr1_susurha:
         #OPTION 3 >>DECAY +ATTRACTION
         "I don't know." if dec_meter >= 35:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+            
                 
             vivi "I don't know."
             hide attraction_icon
@@ -160,12 +175,16 @@ label depression_fr1_susurha:
         #OPTION 4 >>DECAY +DECAY
         "Can we just sit and drink?" if dec_meter >= 40:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Can we just sit and drink?"
             hide decay_icon
@@ -184,12 +203,16 @@ label depression_fr1_susurha:
         #OPTION 1 +ATTRACTION
         "No.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "No."
             hide attraction_icon
@@ -211,12 +234,16 @@ label depression_fr1_susurha:
         #OPTION 2 >>ATTRACTION +ATTRACTION
         "Possibly, recently." if att_meter_susurha >= 60:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_depression_fr1 / att_num_list_susurha[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi blush "Possibly, recently."
             hide attraction_icon
@@ -226,7 +253,7 @@ label depression_fr1_susurha:
             vivithinking "No."
             vivithinking "Let's be fun."
             vivi happy blush "You should have been more specific."
-            show susurha happy blush with dissolve
+            show susurha happy blush
             susurha "Your face tells it all."
             show susurha neutral -blush
             #JUMP TO: susurha neutral "I wonder if love lasts beyond death..."
@@ -234,12 +261,16 @@ label depression_fr1_susurha:
         #OPTION 3 +DECAY
         "I've had plenty of lovers.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "I've had plenty of lovers."
             hide decay_icon
@@ -258,15 +289,19 @@ label depression_fr1_susurha:
 
     #DECAY ROUTE (??DECAY?)
     if dec_meter >= 40:
+        play cd_ambience twinkle fadein 1.0 loop
         susurha "I wish I could have made these moments more special for you."
         susurha "The train is speeding up. Have you noticed?"
     # END
 
     hide susurha with dissolve
+    
+    stop music fadeout 5.0
 
     vivithinking "I think I got enough out of this drink."
     vivithinking "My head is already spinning."
     vivithinking "I should take a moment to collect myself."
+    stop ambience fadeout 1.0
 
     #JUMP TO: Asha Susurha convo
     jump depression_asha_susurha

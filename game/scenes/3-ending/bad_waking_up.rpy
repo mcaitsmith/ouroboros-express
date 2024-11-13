@@ -25,6 +25,7 @@ label bad_waking_up:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_36
     scene cabin with fade
+    play ambience amb_bedroom fadein 1.0
 
     show vivi surprised at left with dissolve:
         xzoom -1
@@ -53,6 +54,7 @@ label bad_waking_up:
     vivithinking angry "I want to break something. Anything! Starting with this mirror!"
     vivi neutral "No... I can't even feel it. I feel nothing."
     vivi angry "I'm going to find them. And make them pay."
+    stop ambience fadeout 1.0
 
     # JUMP TO: Bad Ending/Argument
     jump bad_argument

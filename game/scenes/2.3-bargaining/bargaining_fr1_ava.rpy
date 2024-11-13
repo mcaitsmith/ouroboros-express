@@ -7,9 +7,12 @@ label bargaining_fr1_ava:
     # LOCATION: observatory
     # call check_overlay from _call_check_overlay_17
     scene observatory with fade
+    play ambience amb_observatory if_changed fadein 1.0
 
     # SOUND: the train on its tracks
-    play sound train
+    $ renpy.music.set_audio_filter("sound", [audio_filter.Lowpass(800), audio_filter.Highpass(500)], replace=True)
+    play sound trainwhistle volume 0.2
+    $ renpy.music.set_audio_filter("sound", None, replace=False)
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -20,7 +23,7 @@ label bargaining_fr1_ava:
     vivi neutral "Hey, Asha."
     ava neutral "Yes, little— I mean, Vivienne."
 
-    stop sound fadeout 2.0
+    play music ashamusic loop fadein 5.0
 
     # <CHOICE>
     vivi neutral "I have a question for you..."
@@ -29,12 +32,17 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "Who or what is our mysterious train conductor?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi neutral "Who or what is our mysterious train conductor?"
             hide decay_icon
@@ -57,18 +65,23 @@ label bargaining_fr1_ava:
         # OPTION 2 >>ATTRACTION +ATTRACTION (removing conditional)
         "If you could redo a past event, what would it be?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi neutral "If you could redo a past event, what would it be?"
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi neutral "Or I guess to be more specific, if you could change something that might have caused this, what would you do?"
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Once, we broke a taboo. We found a bird, hurt and dying. We hid it, cared for it, grew attached to it."
             vivi neutral "What happened?"
             show ava sad -blush
@@ -82,7 +95,7 @@ label bargaining_fr1_ava:
 
             #JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
-    play sound sigh # Asha sighing
+    #play sound sigh # Asha sighing
     pause 2.0
     vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
     ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men...even tears."
@@ -103,12 +116,17 @@ label bargaining_fr1_ava:
         # OPTION 1 +DECAY
         "No family?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No family?"
             hide decay_icon
@@ -123,12 +141,17 @@ label bargaining_fr1_ava:
         #OPTION 2 +ATTRACTION
         "No name?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No name?"
             hide attraction_icon
@@ -155,12 +178,17 @@ label bargaining_fr1_ava:
         # OPTION 3 +ATTRACTION
         "No tears?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No tears?"
             hide attraction_icon
@@ -173,7 +201,7 @@ label bargaining_fr1_ava:
                 vivi neutral "What happened the time you almost cried?"
                 ava sad "A serving girl in the palace. We tried to befriend her."
                 vivi angry "Don't tell me something awful happened to you!"
-                show ava sad blush with dissolve
+                show ava sad blush
                 ava "No. Far worse. We never saw her again."
                 show ava sad -blush
             # END
@@ -181,7 +209,7 @@ label bargaining_fr1_ava:
             vivi sad "I'm so sorry, Asha. That really sucks."
             ava surprised "Sucks?! What do you mean sucks? Like a calf does to its mother?"
             vivi surprised "Uhhhhhhh... I guess?"
-            show ava sad blush with dissolve
+            show ava sad blush
             ava "Strange you humans think sucking to be bad, but yes, we understand. Thank you for listening to us."
             show ava neutral -blush
             ava neutral "And while yes, we indeed faced much cruelty in our lives, it was an honor to serve our people. That we will never regret."
@@ -191,12 +219,17 @@ label bargaining_fr1_ava:
         #OPTION 4 +ATTRACTION
         "No men?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr1 / att_num_list_ava[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi surprised "No men?"
             hide attraction_icon
@@ -222,10 +255,11 @@ label bargaining_fr1_ava:
             # JUMP TO: vivi happy "I'm glad you made the most of it."
 
     vivi happy "I'm glad you made the most of it."
+    stop music fadeout 3.0
 
     # ??ATTRACTION
     if att_meter_ava >= 40:
-        show ava happy blush with dissolve
+        show ava happy blush
         ava "We sighed differently then. And we sigh looking at you now."
         show ava neutral -blush
     # END
@@ -237,6 +271,7 @@ label bargaining_fr1_ava:
         vivi neutral blush "It's always memorable talking with you, Asha."
         ava neutral "And with you. Goodbye, Vivienne. The All is the One."
         vivithinking "That sure was...something."
+        stop ambience fadeout 1.0
 
         # JUMP TO: Darius/Susu'Rha intermission scene'
         jump bargaining_darius_susurha

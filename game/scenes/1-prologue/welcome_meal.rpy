@@ -9,8 +9,8 @@ label welcome_meal:
     # fade in
 
     # LOCATION: diningcar
-    play ambience amb_bar loop
-    play music mainmusic loop
+    play ambience amb_bar if_changed fadein 1.0
+    play music mainmusic if_changed loop
     scene diningcar with fade
 
     show vivi neutral at left with dissolve :

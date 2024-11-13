@@ -7,6 +7,7 @@ label bargaining_fr1_darius:
     # LOCATION: lounge 
     # call check_overlay from _call_check_overlay_18
     scene lounge with fade
+    play ambience amb_lounge if_changed fadein 1.0
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -15,6 +16,7 @@ label bargaining_fr1_darius:
 
     vivithinking "Now that's a curious sight. Clutching their forehead like they had a bad hangover?"
     vivi neutral "Rough night?"
+    play music peacefulmusic loop
     darius sad "You could say that. The dragon, Susu'Rha, was it? Their thoughts are so loud. I could barely sleep."
     vivi neutral "It's always the thoughts with you. You can't just...turn that off?"
     darius sad "Normally I can! That's how incessant it was! Like a stampede of preschoolers rambling on and on about the most inane concepts."
@@ -59,18 +61,24 @@ label bargaining_fr1_darius:
             darius neutral "A mind like Urshu's would be like diving into a bottomless well, an abyss the depth of which I'd likely never find the end of." 
             darius neutral "I'd lose myself in his mind, unable to pull back."
             vivi neutral "I understand. I don't want you to do anything dangerous."
+            stop music fadeout 1.0
 
             # JUMP TO: vivi neutral "My apologies, I suppose you'd want to know what this is all about."
 
         # OPTION 2 +ATTRACTION
         "I didn't think sarcasm was in your wheelhouse.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
         
             vivi neutral "I didn't think sarcasm was in your wheelhouse, Monsieur Wrecker."
             hide attraction_icon
@@ -82,18 +90,24 @@ label bargaining_fr1_darius:
             show vivi neutral blush at left
 
             vivithinking "Huh? That was a little more than flirty..."
+            stop music fadeout 1.0
 
             # JUMP TO: vivi neutral "My apologies, I suppose you'd want to know what this is all about."
 
         # OPTION 3 +DECAY
         "Can you read ANYTHING?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
 
             vivi angry "Can you read ANYTHING?" 
             hide decay_icon
@@ -102,10 +116,12 @@ label bargaining_fr1_darius:
             darius angry "Only if you say please."
             vivi neutral "Please, do the one thing mindflayers are infamous for? For the benefit of us all?"
             darius neutral "But that's the curious part, isn't it? You still haven't explained yourself in the slightest. Why are you so interested in reading Urshu?"
+            stop music fadeout 1.0
 
             # JUMP TO: vivineutral "My apologies, I suppose you'd want to know what this is all about."
 
     vivi neutral "My apologies, I suppose you'd want to know what this is all about."
+    play music mysterymusicpiano fadein 1.0 loop
     vivi angry "It just bothers me how little we know about this ferryman. How can I trust someone I barely understand?"
     darius neutral "We do it every day, don't we? How many strangers do you meet in a day? How many do you just assume won't be a threat to you?"
     vivi neutral "But those people are like us. Urshu... isn't."
@@ -125,12 +141,17 @@ label bargaining_fr1_darius:
         # OPTION 1 +ATTRACTION
         "So caring. I wouldn't expect it from you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_bargaining_fr1 / att_num_list_darius[2])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
     
             vivi happy "So caring. I wouldn't expect it from you."
             hide attraction_icon
@@ -140,7 +161,7 @@ label bargaining_fr1_darius:
             darius happy "I'm glad to hear it. I can tell he cares for you a great deal."
             vivi neutral blush "What do you mean? He treats me just the same as anyone else."
             darius happy "You're inquisitive, Vivi, I told you. You get people to confront aspects of themselves they wouldn't otherwise. Urshu admires that. I can see it."
-            show darius happy blush with dissolve
+            show darius happy blush
             darius "Perhaps that is why I, too, enjoy your company so much."
             vivithinking neutral blush "This guy... When did he get so suave?"
             show darius neutral -blush
@@ -150,12 +171,16 @@ label bargaining_fr1_darius:
         #OPTION 2 +DECAY
         "Okay, enough. I don't need the lecture.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
     
             vivi angry "Okay, enough. I don't need the lecture. I'm not about to break this guy's heart or anything."
             hide decay_icon
@@ -173,7 +198,7 @@ label bargaining_fr1_darius:
             darius sad "In heartbreak? Much less than you'd think."
             vivi neutral "Never had someone you couldn't quite read? Someone that ended up hurting you?"
             darius sad "Honestly? No. The life I lived left little room for such ventures."
-            show darius neutral blush with dissolve
+            show darius neutral blush
             darius "Until now... funny enough."
             darius "I have never met someone I couldn't read. It became almost second nature to naturally understand everyone I came across."
             darius "You however... It's strange. I feel like I'm beginning to, but it has nothing to do with my abilities."
@@ -191,6 +216,7 @@ label bargaining_fr1_darius:
 
     vivi neutral "I think I'll be going now. Thank you for the insight."
     darius neutral "Insight is a kind way of putting it. I just told you about what I've seen."
+    stop music fadeout 1.0
     darius neutral "But thank you, Vivienne. I'm always open to chat."
 
     # JUMP TO: Darius Susu'Rha intermission scene

@@ -19,7 +19,7 @@ label anger_fr1_ava:
     vivithinking surprised "Oh, what's this? A sunny disposition?"
     stop music fadeout 10.0
 
-    show ava sad blush with dissolve
+    show ava sad blush
     ava "Hello, Vivi. Has our radiance tempted you today? Come, sit, and play a game. Let us see what future the cards hold."
     vivi neutral "Are those tarot cards? They look...off."
     show ava neutral -blush
@@ -35,6 +35,7 @@ label anger_fr1_ava:
         # OPTION 1 +ATTRACTION
         "The sun card.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -42,12 +43,13 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi neutral "The sun card."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show ava sad blush with dissolve
+            show ava sad blush
             play sound sparkle volume 0.5
             ava "The sun can represent light, truth, and love..."
             vivi surprised "Finally some good news!"
@@ -58,6 +60,7 @@ label anger_fr1_ava:
         # OPTION 2 +DECAY
         "The sea monster card.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -65,6 +68,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "The sea monster card."
@@ -78,6 +82,7 @@ label anger_fr1_ava:
         # OPTION 3 +DECAY
         "The big snake card.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -85,6 +90,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "The big snake card."
@@ -135,6 +141,7 @@ label anger_fr1_ava:
     # OPTION 1 +ATTRACTION +DECAY
         "...chin up, princess, or the crown slips.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attdecchoice
             show attraction_icon at right:
@@ -148,6 +155,7 @@ label anger_fr1_ava:
             with { "master" : Dissolve(2.0) }
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "...chin up, princess, or the crown slips."
@@ -161,7 +169,7 @@ label anger_fr1_ava:
             vivi surprised "That's your people's tradition? Sacrifice?!"
             ava sad "We are sacrificed lest people love us too much. Once, an avatar nearly toppled the royals. But now, that is only but a distant fairytale."
             vivi neutral blush "Well, then no offense, but you're better off here. If your whole purpose was to be sacrificed, then guess what?"
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "Then our service is at an end. We are free."
             vivi happy "Yes. I like that. Free."
             vivithinking happy "Not a great start, but a good ending, right?"
@@ -172,6 +180,7 @@ label anger_fr1_ava:
     # OPTION 2 +ATTRACTION
         "...I know what you mean about sacrifices.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -179,17 +188,18 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_anger_fr1 / att_num_list_ava[0])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi sad "...I know what you mean about sacrifices. You're not alone. My career always came first, over friends, family, love. Where'd it get me?" 
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi angry blush "Here!"
-            ava sad "I am aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
+            ava sad "We are aware of your tale, li-, ahem, Vivienne. And I am sorry for that."
             ava angry "We shall fade to darkness soon. Have you not seen it in your dreams?"
             vivi angry "You mean nightmares? Yeah..."
             vivi neutral "Well... at least we don't have to make any more sacrifices, right?"
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "That is true, yes. Our service is at an end. We are free."
             vivi happy "Yes. I like that. Free."
             show ava happy -blush
@@ -201,6 +211,7 @@ label anger_fr1_ava:
     # OPTION 3 +DECAY
         "Pull yourself up by your bootstraps, and deal with it, Asha.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -208,6 +219,7 @@ label anger_fr1_ava:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "...Wanna know what they say on earth where I'm from? Pull yourself up by your bootstraps, and deal with it, Asha."

@@ -45,6 +45,7 @@ label anger_fr2_susurha:
     # OPTION 1 +ATTRACTION
         "The arrogance on this one. I'd sure love to shut them up.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -52,6 +53,7 @@ label anger_fr2_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "The arrogance on this one. I'd sure love to shut them up."
@@ -88,6 +90,7 @@ label anger_fr2_susurha:
     # OPTION 2 +DECAY
         "Clearly, they're insecure. I'm gonna let them win.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -95,6 +98,7 @@ label anger_fr2_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Clearly, they're insecure. I'm gonna let them win."
@@ -198,6 +202,7 @@ label anger_fr2_susurha:
 
     # mica, I believe the above is an action rather than something vivi says. Same w/ option 2
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -205,6 +210,7 @@ label anger_fr2_susurha:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Pierce Chloe!"
@@ -227,6 +233,7 @@ label anger_fr2_susurha:
     #OPTION +ATTRACTION
         "(Pierce the idea that it was her fault.)":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -234,6 +241,7 @@ label anger_fr2_susurha:
                 # xoffset -30
                 yoffset -850
             $ att_meter_susurha += int(att_max_anger_fr2 / att_num_list_susurha[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking sad "No. . . this isn't right.'"
@@ -297,7 +305,7 @@ label anger_fr2_susurha:
             vivi happy "I'd love to hear your singing voice."
             susurha happy "I would happily sing for you."
             susurha sad "Quiet moments. I will miss them the most."
-            vivi sad "I can't tell you the last time that I was alone with my thoughts. I was always busy."
+            vivi sad "I can't tell you the last time I was alone with my thoughts. I was always busy."
             susurha sad "Perhaps now is a good time."
             vivi sad "..."
             # JUMP TO: susurha neutral "Well, this has been fun as always, but I wish to return to my cabin for some solitude."

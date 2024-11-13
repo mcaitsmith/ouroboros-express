@@ -10,6 +10,8 @@ label epi_friendship_all:
     # LOCATION: terminalofdreams
     scene white with dissolve
     scene terminalofdreams with Dissolve(3.0)
+    play ambience amb_terminal fadein 1.0
+    play sound trainwhistle
     pause 1.0
 
     show vivi happy at center_left with dissolve:
@@ -47,7 +49,7 @@ label epi_friendship_all:
 
     darius happy "Strangers to ourselves, perhaps, but not among each other."
     vivi happy "That's a cute way of saying we're friends."
-    show darius angry blush with dissolve
+    show darius angry blush
     darius "Vivienne Sanssouci..."
     vivi neutral "But now what..? Where do we go? There are no signs!"
     show darius angry -blush
@@ -76,7 +78,7 @@ label epi_friendship_all:
     play sound trainwhistle
     pause 3.0
 
-    show urshu happy blush with dissolve
+    show urshu happy blush
     urshu "Au revoir, my diamonds!"
     vivi happy blush "Give us one more look!"
     show urshu neutral -blush
@@ -91,11 +93,11 @@ label epi_friendship_all:
    
     ava "But I believe we have all come to appreciate it."
 
-    show susurha happy blush with dissolve
+    show susurha happy blush
 
     susurha "Look, Vivi, he's turning."
     show susurha neutral -blush
-    vivi happy "I hate to see him to go, but I love to watch him leave."
+    vivi happy "I hate to see him go, but I love to watch him leave."
 
     ava neutral "There he goes, back into oblivion once more. It will be strange, I think, to no longer have him clutching the cards to the game of our lives."
     vivi neutral "It will be strange to have more to explore than a few rickety train carriages."
@@ -125,14 +127,17 @@ label epi_friendship_all:
     vivi happy blush "Together."
 
     scene white with Dissolve(3.0)
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
 
     # The End
 
-    stop sound fadeout 3.0
+
     scene black with Dissolve(3.0)
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
+    play music creditsmusicgood loop
     call screen credits
     stop music fadeout 3.0
     pause 3.0

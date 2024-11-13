@@ -45,10 +45,12 @@ label denial_fr2_susurha:
     #OPTION 2 +ATTRACTION
         "I'd love to.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "I'd love to."
             vivithinking "The way they slid that chair my way with ease..."
@@ -79,10 +81,12 @@ label denial_fr2_susurha:
     #OPTION 1 +ATTRACTION
         "This place freaks me out.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
         
             vivi "This place freaks me out."
             susurha angry "I feel that in my bones. Oh, this place worms its way down my spine like a spider in the night."
@@ -168,10 +172,12 @@ label denial_fr2_susurha:
     #OPTION 1 +ATTRACTION
         "Worried?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "Worried?"
             show susurha neutral
@@ -244,10 +250,12 @@ label denial_fr2_susurha:
     #OPTION 2 +ATTRACTION
         "It sounds like you lived a fairy tale.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             pause 1.0
-            $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi "It sounds like you lived a fairy tale."
             #SOUND: Susu'Rha laughs.
@@ -261,10 +269,12 @@ label denial_fr2_susurha:
                 #OPTION 2-1 +ATTRACTION
                 "I wasn't. Tell me more.":
 
+                    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
                     $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
                     play sound attchoice
                     pause 1.0
-                    $ renpy.music.set_volume(1.00, delay=1.5, channel='music')
+                    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+                    $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
                     vivi "I wasn't. Tell me more."
                     susurha happy "Perhaps I shall at another time."

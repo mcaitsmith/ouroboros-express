@@ -7,6 +7,7 @@ label romance_susurha:
 
     #LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
 
     show vivi neutral blush at center_left with dissolve:
         xzoom -1
@@ -14,18 +15,20 @@ label romance_susurha:
 
     vivi neutral blush  "Can you feel it? We're approaching our final stop."
     susurha "Come into my arms. There."
+    stop music fadeout 5.0
     # show vivi neutral blush:
     #     linear 1.0 xpos 480
     # show susurha happy blush:
     #     linear 1.0 xpos 1560
-    show vivi neutral blush with dissolve:
+    show vivi neutral blush:
         xpos 0.35
-    show susurha happy blush with dissolve:
+    show susurha happy blush:
         xpos 0.65
     hide vivi
     hide susurha
     show susu_vivi hug at center
     with { "master" : Dissolve(1.0) }
+    play music finalemusic loop
     pause 2.0
 
     susurha "We can merge with each other as we merge with the cosmic weave."
@@ -46,6 +49,8 @@ label romance_susurha:
     vivi happy blush "I want to be with you forever." 
     susurha happy blush "What if forever is only now?"
     vivi happy blush "Then I want to be with you forever, now."
+    stop music fadeout 3.0
+    stop ambience fadeout 3.0
 
     #EFFECT: fade to white
     scene white with Dissolve(3.0)
@@ -67,13 +72,11 @@ label romance_susurha:
     else:
         call epi_eldritch_darius from _call_epi_eldritch_darius_1
 
-    stop music fadeout 3.0
-    stop sound fadeout 3.0
     scene black with Dissolve(3.0)
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
-    play music goodendmusic volume 0.5
+    play music creditsmusicgood volume 0.5
     call screen credits
     stop music fadeout 3.0
     pause 3.0

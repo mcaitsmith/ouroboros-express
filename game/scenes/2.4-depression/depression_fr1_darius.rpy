@@ -6,6 +6,7 @@ label depression_fr1_darius:
     # LOCATION: Lounge
     # call check_overlay from _call_check_overlay_29
     scene lounge with fade
+    play ambience amb_lounge if_changed fadein 1.0
 
     show darius sad at right with dissolve
     show vivi happy at left with dissolve:
@@ -13,10 +14,16 @@ label depression_fr1_darius:
 
     vivithinking "Perfect. They're here."
 
+    $ renpy.music.set_audio_filter("sound", audio_filter.Lowpass(1000), replace=True, duration=0)
+    play sound [ "<silence 1.0>", "audio/sfx/orex_char_telepathy.ogg" ]
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
+    stop music fadeout 2.6
     vivi happy "Just the sad cephalopod I wanted to see—"
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     vivi sad "Oh. Sorry. Is...this a bad time?"
     darius sad "It's nothing."
     vivi angry "It's clearly {i}something{/i}, you clod."
+    $ renpy.music.set_audio_filter("sound", None, replace=True, duration=0)
 
     # <CHOICE>
 
@@ -25,19 +32,23 @@ label depression_fr1_darius:
         # OPTION 1 +ATTRACTION
         "Darius. I could really use someone to talk with right now.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Darius. I could really use someone to talk with right now."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             darius sad "I'm not sure that's such a good idea."
             vivi neutral "I do. I'd like your company."
-            show darius surprised blush with dissolve
+            show darius surprised blush
             darius "No one {i}likes{/i} my company. It's my specialty."
             vivi happy blush "Well, consider me the first."
             show darius surprised -blush
@@ -47,12 +58,16 @@ label depression_fr1_darius:
         # OPTION 2 +DECAY 
         "You just push everyone away, don't you?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi angry "You just push everyone away, don't you? Fine. We can wait for the inevitable in silence."
             hide decay_icon
@@ -81,7 +96,10 @@ label depression_fr1_darius:
     vivi happy "So. What are we drinking?"
     darius neutral "...You can't laugh."
     vivi surprised "Why would I?"
-    show darius neutral blush with dissolve
+
+    play music peacefulmusic loop
+    show darius neutral blush
+
     darius "My drink of choice. It's a bit unexpected."
     vivi surprised blush "Oh no— Should I prepare to be horrified? The tears of the damned? The blood of the innocent?"
     show darius surprised blush
@@ -94,6 +112,7 @@ label depression_fr1_darius:
     darius "...layered with cherry brandy and Bénédictine..."
     darius "...lime juice, pineapple juice, and grenadine, naturally..."
     vivi happy "Monsieur Wrecker, I can say with all honesty this is the happiest I've ever seen you."
+    play sound cineboom
     show darius sad -blush
     vivithinking "Umph. There's the rage again, but this time it's tempered by something. Pain? Sadness?"
     darius sad "Don't get used to it."
@@ -106,18 +125,24 @@ label depression_fr1_darius:
         # OPTION 1 +ATTRACTION
         "I'll have what you're having, handsome.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_depression_fr1 / att_num_list_darius[4])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi happy blush "I'll have what you're having, handsome."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi "I could use a little fruity delight."
             darius surprised "I assure you, this drink is enough to knock you off your feet."
+            play sound glassclink03
+            pause 0.25
             vivi happy blush "Trust me, it'll take more than a juicebox to get me sauced."
             vivithinking "Oh, my. Cripes. That's strong."
             vivi neutral blush "Delicious!"
@@ -128,16 +153,22 @@ label depression_fr1_darius:
         # OPTION 2 +DECAY
         "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_depression / dec_num_depression)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+
     
             vivi neutral "I thought you {i}wanted{/i} to be alone. Pick a lane, won't you?"
             hide decay_icon
             with { "master" : Dissolve(0.5) }
+            play sound cineboom
             darius angry "Which is it? Do you want to drink with me and wallow in our mutual misery or do you want to needle me?"
             vivithinking "Agh. The flash. There's definitely pain here."
             vivi angry "Don't be so sensitive. We're all in the same...train."
@@ -159,7 +190,7 @@ label depression_fr1_darius:
     vivi happy "Never mind all that. How about a little {i}Never Have I Ever{/i}? A distraction to keep our spirits up!"
     darius sad "Why not? Nothing else to do."
     vivi neutral "I'll start. Never have I ever... been in love."
-    show darius surprised blush with dissolve
+    show darius surprised blush
     darius "I... neither have I."
     darius "What happens now?"
     vivi neutral blush "I think that means we both drink."
@@ -170,6 +201,7 @@ label depression_fr1_darius:
     vivi surprised "For what?"
     darius sad "For anything."
     darius sad blush "Except to you."
+    stop music fadeout 5.0
     vivithinking "Radiating off of them—that uncomfortable heat."
     darius neutral "Well? Surely you must drink to that. I know your kind is always apologizing. ...Whether it's warranted or not."
     vivi neutral "You're not wrong. You know—if you'd rather talk instead of just playing a game—"
