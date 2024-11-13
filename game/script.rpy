@@ -151,6 +151,13 @@ layeredimage terminalofdreams:
     group petals:
         attribute overlay default
 
+image vivi_window:
+    "images/cgs/vivi_window.png"
+    matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(1.0)
+    linear 3.0 matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    repeat
+
 # add second channel for sfx
 init python:
     renpy.music.register_channel("sound2", "sfx", False)
