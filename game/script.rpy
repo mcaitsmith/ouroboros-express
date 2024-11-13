@@ -554,6 +554,21 @@ label start:
     pause 1.0
 
     menu:
+        "Photosensitive Warning: Read Before Playing?"
+        "Yes":
+            "A very small percentage of individuals may experience epileptic seizures when exposed to certain light patterns or flashing lights."
+            "Exposure to certain patterns or backgrounds on a computer screen, or while playing video games, may induce an epileptic seizure in these individuals."
+            "Certain conditions may induce previously undetected epileptic symptoms even in persons who have no history of prior seizures or epilepsy."
+            "If you, or anyone in your family, have an epileptic condition, consult your physician prior to playing."
+            "Symptoms may include dizziness, altered vision, eye or muscle twitches, loss of awareness, disorientation, any involuntary movement, or convulsions."
+            "If you experience any of these symptoms while playing a video or computer game, IMMEDIATELY discontinue use and consult your physician before resuming play."
+            window hide
+        "No":
+            window hide
+
+    pause 1.0
+
+    menu:
         "Press Shift+A to set accessibility options before beginning the game."
         "Continue":
             "Access the menu anytime by pressing the Escape key. A tutorial on the game features is available from the Settings option in the main menu."
