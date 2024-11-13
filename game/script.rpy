@@ -160,6 +160,8 @@ image white = "#ffffff"
 
 transform ex_neutral:
     zoom 1.0
+transform ex_neutral_blush:
+    zoom 1.02
 transform ex_happy:
     zoom 1.02 yoffset 10
     linear 0.1 yoffset 0
@@ -182,10 +184,12 @@ layeredimage ava neutral:
     at [sprite_highlight('ava'),ex_neutral]
     always:
         'images/characters/ava/ava_face_neutral.png'
-    group overlay:
-        attribute blush:
-            "ava_overlay_blush"
-            zoom 1.02
+layeredimage ava neutral blush:
+    at [sprite_highlight('ava'),ex_neutral_blush]
+    always:
+        'images/characters/ava/ava_face_neutral.png'
+    if day >= 0:
+        'images/characters/ava/ava_overlay_blush.png'
 layeredimage ava happy:
     at [sprite_highlight('ava'),ex_happy]
     always:
@@ -219,10 +223,18 @@ layeredimage darius neutral:
     at [sprite_highlight('darius'),ex_neutral]
     always:
         'images/characters/darius/darius_face_neutral.png'
-    group overlay:
-        attribute blush:
-            "darius_overlay_blush"
-            zoom 1.02
+    # group overlay:
+    #     attribute blush:
+    #         "darius_overlay_blush"
+layeredimage darius neutral blush:
+    at [sprite_highlight('darius'),ex_neutral_blush]
+    always:
+        'images/characters/darius/darius_face_neutral.png'
+    if day >= 0:
+        'images/characters/darius/darius_overlay_blush.png'
+    # group overlay:
+    #     attribute blush:
+    #         "darius_overlay_blush"
 layeredimage darius happy:
     at [sprite_highlight('darius'),ex_happy]
     always:
@@ -256,10 +268,12 @@ layeredimage susurha neutral:
     at [sprite_highlight('susurha'),ex_neutral]
     always:
         'images/characters/susurha/susurha_face_neutral.png'
-    group overlay:
-        attribute blush:
-            "susurha_overlay_blush"
-            zoom 1.02
+layeredimage susurha neutral blush:
+    at [sprite_highlight('susurha'),ex_neutral_blush]
+    always:
+        'images/characters/susurha/susurha_face_neutral.png'
+    if day >= 0:
+        'images/characters/susurha/susurha_overlay_blush.png'
 layeredimage susurha happy:
     at [sprite_highlight('susurha'),ex_happy]
     always:
@@ -293,10 +307,12 @@ layeredimage urshu neutral:
     at [sprite_highlight('urshu'),ex_neutral]
     always:
         'images/characters/urshu/urshu_face_neutral.png'
-    group overlay:
-        attribute blush:
-            "urshu_overlay_blush"
-            zoom 1.02
+layeredimage urshu neutral blush:
+    at [sprite_highlight('urshu'),ex_neutral_blush]
+    always:
+        'images/characters/urshu/urshu_face_neutral.png'
+    if day >= 0:
+        'images/characters/urshu/urshu_overlay_blush.png'
 layeredimage urshu happy:
     at [sprite_highlight('urshu'),ex_happy]
     always:
