@@ -154,7 +154,39 @@ layeredimage terminalofdreams:
 image vivi_window:
     "images/cgs/vivi_window.png"
     matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
-    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(1.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.5)
+    linear 3.0 matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    repeat
+image eldritch_vivi:
+    "images/characters/eldritch_cgs/eldritch_vivi.png"
+    matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#4b0000")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    repeat
+image eldritch_asha:
+    "images/characters/eldritch_cgs/eldritch_asha.png"
+    matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#a3852b")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    repeat
+image eldritch_darius:
+    "images/characters/eldritch_cgs/eldritch_darius.png"
+    matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#c66dd1")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    repeat
+image eldritch_susurha:
+    "images/characters/eldritch_cgs/eldritch_susurha.png"
+    matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#00c3b4")* BrightnessMatrix(0.0)
+    linear 3.0 matrixcolor TintMatrix("#5a3d5a")* BrightnessMatrix(0.0)
     linear 3.0 matrixcolor TintMatrix("#fff")* BrightnessMatrix(0.0)
     repeat
 
