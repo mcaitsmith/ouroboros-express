@@ -154,6 +154,9 @@ image urshudining sad blush = At('images/characters/urshu/urshu dining/urshu_sad
 image urshudining angry blush = At('images/characters/urshu/urshu dining/urshu_angry_table_blush.png', sprite_highlight('urshudining'))
 image urshudining surprised blush = At('images/characters/urshu/urshu dining/urshu_surprised_table_blush.png', sprite_highlight('urshudining'))
 
+
+
+
 # define flash effect
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 

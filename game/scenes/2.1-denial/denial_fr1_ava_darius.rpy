@@ -15,10 +15,9 @@ label denial_fr1_ava_darius:
 
     vivithinking "My brain is turning faster than the wheels of this accursed train. I'm going in circles. I'm back at the observatory. May as well make a few wishes."
 
-    hide vivi
 
-    show darius angry at right with dissolve
-    show ava angry at left with dissolve:
+    show darius f_angry at right with dissolve
+    show ava f_angry at center with dissolve:
         xzoom -1
 
     vivithinking "Oh! The Goddess and the detective are in the middle of something. Time to be a fly on the wall, Vivi."
