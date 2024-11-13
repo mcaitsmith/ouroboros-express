@@ -15,11 +15,13 @@ label denial_fr1_ava_darius:
 
     vivithinking "My brain is turning faster than the wheels of this accursed train. I'm going in circles. I'm back at the observatory. May as well make a few wishes."
 
+    $ ava_fullbody = True
+    $ darius_fullbody = True
 
-    show darius f_angry at right with dissolve
-    show ava f_angry at center with dissolve:
+    show darius angry at right with dissolve
+    show ava angry at center with dissolve:
         xzoom -1
-
+    
     vivithinking "Oh! The Goddess and the detective are in the middle of something. Time to be a fly on the wall, Vivi."
 
     ava angry "You mock us? Your shapeless, nameless god sends his Illithid scourge to commit murder; nay, rather, genocide. Your sacrifices brought you nothing but here."
@@ -54,16 +56,16 @@ label denial_fr1_ava_darius:
     darius neutral "Enough."
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
 
-    show ava angry blush at left
+    show ava angry blush at center
     show darius angry blush at right
 
     vivithinking "Wowzers. That was heavy. Sounds like they’re both right on some things. Both had and lost faith."
-
+    show darius angry -blush at right
     #TURN ava away from Darius.
 
-    show ava angry at left:
+    show ava angry at center:
         xzoom 1
-
+    
     vivithinking "I should get outta here. Their silence is making me uncomfortable!"
     stop ambience fadeout 1.0
 

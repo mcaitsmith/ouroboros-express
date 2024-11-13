@@ -7,7 +7,8 @@ label anger_susurha_urshu:
     show vivi neutral at left with dissolve :
         xzoom-1
 
-
+    $ urshu_fullbody = True
+    $ susurha_fullbody = True
     vivithinking "This is getting to be too much. This train, these games, Urshu..."
 
 
@@ -21,9 +22,9 @@ label anger_susurha_urshu:
 
 
 
-    hide vivi
 
-    show urshu neutral at left with dissolve :
+
+    show urshu neutral at center with dissolve :
         xzoom-1
     show susurha neutral at right with dissolve
 

@@ -8,7 +8,8 @@ label depression_cs2:
     # call check_overlay from _call_check_overlay_26
     scene diningcar with fade
     play ambience amb_bar if_changed fadein 1.0
-
+    $ susurha_fullbody = False
+    $ ava_fullbody = False
     show vivi neutral at left with dissolve:
         xzoom -1
 

@@ -7,7 +7,8 @@ label anger_urshu_darius:
     stop music fadeout 2.0
     play ambience amb_observatory fadein 1.0
     
-
+    $ urshu_fullbody = True
+    $ darius_fullbody = True
     show vivi neutral at left with dissolve :
         xzoom -1
         

@@ -8,7 +8,8 @@ label bargaining_cs2:
     # call check_overlay from _call_check_overlay_14
     scene cabin with fade
     play ambience amb_bedroom if_changed fadein 1.0
-
+    $ darius_fullbody = False
+    $ susurha_fullbody = False
     show vivi angry at left with dissolve:
         xzoom -1
 

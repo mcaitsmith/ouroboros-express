@@ -4,7 +4,8 @@ label depression_asha_susurha:
     # call check_overlay from _call_check_overlay_24
     scene lounge with fade
     play ambience amb_lounge if_changed fadein 1.0
-
+    $ susurha_fullbody = True
+    $ ava_fullbody = True
     #SOUND: train
     pause 1.0
     play sound trainwhistle volume 0.5
@@ -16,10 +17,10 @@ label depression_asha_susurha:
     vivi neutral "What's the commotion I'm hearing?"
     play music spymusic loop
 
-    hide vivi
+    # hide vivi
 
     show ava neutral at right
-    show susurha neutral at left :
+    show susurha neutral at center :
         xzoom -1
 
     vivithinking "Oh! It's them! Don't want to interrupt."
@@ -75,4 +76,4 @@ label depression_asha_susurha:
     stop ambience fadeout 1.0
 
 #JUMP TO Character Selector 2
-jump depression_cs2
+    jump depression_cs2

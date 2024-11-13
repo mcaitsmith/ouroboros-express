@@ -3,7 +3,8 @@ label bargaining_darius_susurha:
     # call check_overlay from _call_check_overlay_15
     scene lounge with fade
     play ambience amb_lounge if_changed fadein 1.0
-
+    $ darius_fullbody = True
+    $ susurha_fullbody = True
     show vivi neutral at left with dissolve :
         xzoom -1
 

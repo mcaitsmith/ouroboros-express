@@ -12,7 +12,8 @@ label denial_cs2:
         xzoom -1
 
     vivi neutral "That was... interesting. Looks like I wasn't the only one blindsided by this train. I need some time to gather my thoughts."
-
+    $ ava_fullbody = False
+    $ darius_fullbody = False
     # Fade to blur if possible.
     show cabin blur with dissolve
 
