@@ -162,7 +162,7 @@ label group_goodbyes:
     darius neutral "I'm glad to see you. I wasn't sure if we'd have the chance to talk again."
     vivi neutral "Like I'd let you leave without saying goodbye."
     darius sad "You would be forgiven for wanting nothing more to do with me. I am... worthless. A murderer. Degraded beyond belief."
-    darius neutral "But there is something about you, Vivi. Meeting you has taught me I can... must... be better. I must own these sins I carry with me, I can't pretend they mean nothing anymore."
+    darius neutral "But there is something about you, Vivi. Meeting you has taught me I can... must... be better. I must own these sins I carry with me. I can't pretend they mean nothing anymore."
     vivi neutral "I've done that?"
     darius neutral "You have been a witness. It matters more than you know."
     vivi neutral "Darius, I can't absolve the things you've done, but I believe accepting your past took more strength than you're letting on. As for your future... you have a lot to figure out on your own."
