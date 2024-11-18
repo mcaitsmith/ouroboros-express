@@ -3,6 +3,39 @@
 # define sound effects & music
 #Sorted by sound category. 
 label sounds:
+
+    ###MUSIC
+
+    #TITLE MUSIC
+    # define titlemusic = "audio/music/orex_mx_menu.ogg"
+
+    #MOOD MUSIC
+    define mainmusic = "audio/music/orex_mx_main.ogg"
+    define mysterymusic = "audio/music/orex_mx_mystery.ogg" ## Noah Campodonico — Underneath the Mask
+    define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg" ## Noah Campodonico — Underneath the Mask (Piano arr.)
+    define horrormusic = "audio/music/orex_mx_horror.ogg" ## Noah Campodonico — Trepidation
+    define peacefulmusic = "audio/music/orex_mx_peaceful.ogg" ## Noah Campodonico — Lilacs and Hydrangeas
+    define confrontationmusic = "audio/music/orex_mx_confrontation.ogg" ## Charlie Armour — [untitled] Confrontation Theme
+    define spymusic = "audio/music/orex_mx_eavesdrop.ogg" ## Charlie Armour — [untitled] Eavesdropping Theme
+    define sorrowmusic = "audio/music/orex_mx_sorrow.ogg" ## Charlie Armour — [Untitled] Sorrow Theme
+    define revealmusic = "audio/music/orex_mx_reveal.ogg" ## Charlir Amour — [Untitled] Reveal Theme
+
+    #CHARACTER THEMES
+    define vivistorymusic = "audio/music/orex_mx_vivistory.ogg" ## Noah Campodonico — Vivienne's Story
+    define susumusic = "audio/music/orex_mx_susu.ogg"  ## Armoni Boone — untitled susu theme
+    define dariusmusic = "audio/music/orex_mx_darius.ogg" ## Armoni Boone — untitled darius theme
+    define ashamusic = "audio/music/orex_mx_asha.ogg" ## Armoni Boone - untitled asha theme
+
+    #ENDING THEMES
+    define finalemusic = "audio/music/orex_mx_finale.ogg" ## Noah Campodonico - Celestial Bodies, Swirling
+    define badendmusic = "audio/music/orex_mx_cosmicself.ogg" ## Armoni Boone — Cosmic Self [bad ending]
+
+    #CREDITS THEMES
+    define creditsmusicgood = "audio/music/orex_mx_creditsgood.ogg"
+    define creditsmusicbad = "audio/music/orex_mx_creditsbad.ogg"
+
+    ###SFX
+    
     #UI
     define ui_mouseover = "audio/sfx/orex_ui_mouseover.ogg"
     define ui_select = "audio/sfx/orex_ui_select.ogg"
