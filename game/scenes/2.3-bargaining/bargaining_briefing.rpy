@@ -326,7 +326,8 @@ label bargaining_briefing:
 
             vivi neutral "Takes you back to your first days ferrying souls."
             vivithinking "Maybe I can get him to tell me more about the Ouroboros Express."
-            urshu neutral "I remember those days fondly, yet they offer nothing more for me. Most immortals like myself have a near-perfect memory, so there is little to re-experience. Nothing to regret in those ancient libraries of my mind, just as there is nothing to regret here in the present, even if there is what you humans call \"redundancy.\""
+            urshu neutral "I remember those days fondly, yet they offer nothing more for me. Most immortals like myself have a near-perfect memory, so there is little to re-experience."
+            urshu neutral "Nothing to regret in those ancient libraries of my mind, just as there is nothing to regret here in the present, even if there is what you humans call \"redundancy.\""
             # JUMP TO: urshu "Take this coffee, for instance."
 
     urshu neutral "Take this coffee, for instance. I have it at the same time every day. The same coffee. The same luxurious, velvety liquid flooding over my tongue with its smooth splash. It dances down my throat, indeed, down into my being."
