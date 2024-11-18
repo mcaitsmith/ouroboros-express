@@ -217,11 +217,18 @@ transform ex_angry:
 transform ex_surprised:
     zoom 1.02 yoffset 20
     linear 0.2 yoffset 0
-
+# define fullbody status for each character
+define ava_fullbody = False
+define darius_fullbody = False
+define urshu_fullbody = False
+define susurha_fullbody = False
+define vivi_fullbody= False
 # define NPC expression and blush layered images
 layeredimage ava neutral:
     at [sprite_highlight('ava'),ex_neutral]
-    always:
+    if ava_fullbody:
+        'images/characters/ava/ava f_neutral.png'
+    else:
         'images/characters/ava/ava_face_neutral.png'
 layeredimage ava neutral blush:
     at [sprite_highlight('ava'),ex_neutral_blush]
@@ -231,201 +238,323 @@ layeredimage ava neutral blush:
         'images/characters/ava/ava_overlay_blush.png'
 layeredimage ava happy:
     at [sprite_highlight('ava'),ex_happy]
-    always:
+    if ava_fullbody:
+        'images/characters/ava/ava f_happy.png'
+    else:
         'images/characters/ava/ava_face_happy.png'
     group overlay:
         attribute blush:
             "ava_overlay_blush"
 layeredimage ava sad:
     at [sprite_highlight('ava'),ex_sad]
-    always:
+    if ava_fullbody:
+        'images/characters/ava/ava f_sad.png'
+    else:
         'images/characters/ava/ava_face_sad.png'
     group overlay:
         attribute blush:
             "ava_overlay_blush"
 layeredimage ava angry:
     at [sprite_highlight('ava'),ex_angry]
-    always:
+    if ava_fullbody:
+        'images/characters/ava/ava f_angry.png'
+    else:
         'images/characters/ava/ava_face_angry.png'
-    group overlay:
-        attribute blush:
-            "ava_overlay_blush"
+layeredimage ava angry blush:
+    at [sprite_highlight('ava'),ex_angry]
+    if ava_fullbody:
+        'images/characters/ava/ava f_angry blush.png'
+    else:
+        'images/characters/ava/ava_face_angry.png'
+    if not ava_fullbody:
+        'images/characters/ava/ava_overlay_blush.png'
 layeredimage ava surprised:
     at [sprite_highlight('ava'),ex_surprised]
-    always:
+    if ava_fullbody:
+        'images/characters/ava/ava f_surprised.png'
+    else:
         'images/characters/ava/ava_face_surprised.png'
-    group overlay:
-        attribute blush:
-            "ava_overlay_blush"
-
+layeredimage ava surprised blush:
+    at [sprite_highlight('ava'),ex_surprised]
+    if ava_fullbody:
+        'images/characters/ava/ava f_surprised blush.png'
+    else:
+        'images/characters/ava/ava_face_surprised.png'
+    if not ava_fullbody:
+        'images/characters/ava/ava_overlay_blush.png'
 layeredimage darius neutral:
     at [sprite_highlight('darius'),ex_neutral]
-    always:
+    if darius_fullbody:
+        'images/characters/darius/darius f_neutral.png'
+    else:
         'images/characters/darius/darius_face_neutral.png'
     # group overlay:
     #     attribute blush:
     #         "darius_overlay_blush"
 layeredimage darius neutral blush:
     at [sprite_highlight('darius'),ex_neutral_blush]
-    always:
+    if darius_fullbody:
+        'images/characters/darius/darius f_neutral blush.png'
+    else:
         'images/characters/darius/darius_face_neutral.png'
-    if day >= 0:
+    if day >= 0 and not darius_fullbody:
         'images/characters/darius/darius_overlay_blush.png'
     # group overlay:
     #     attribute blush:
     #         "darius_overlay_blush"
 layeredimage darius happy:
     at [sprite_highlight('darius'),ex_happy]
-    always:
+    if darius_fullbody:
+        'images/characters/darius/darius f_happy.png'
+    else:
         'images/characters/darius/darius_face_happy.png'
-    group overlay:
-        attribute blush:
-            "darius_overlay_blush"
+layeredimage darius happy blush:
+    at [sprite_highlight('darius'),ex_happy]
+    if darius_fullbody:
+        'images/characters/darius/darius f_happy blush.png'
+    else:
+        'images/characters/darius/darius_face_happy.png'
+    if not darius_fullbody:
+        'images/characters/darius/darius_overlay_blush.png'
 layeredimage darius sad:
     at [sprite_highlight('darius'),ex_sad]
-    always:
+    if darius_fullbody:
+        'images/characters/darius/darius f_sad.png'
+    else:
         'images/characters/darius/darius_face_sad.png'
-    group overlay:
-        attribute blush:
-            "darius_overlay_blush"
+layeredimage darius sad blush:
+    at [sprite_highlight('darius'),ex_sad]
+    if darius_fullbody:
+        'images/characters/darius/darius f_sad blush.png'
+    else:
+        'images/characters/darius/darius_face_sad.png'
+    if not darius_fullbody:
+        'images/characters/darius/darius_overlay_blush.png'
 layeredimage darius angry:
     at [sprite_highlight('darius'),ex_angry]
-    always:
+    if darius_fullbody:
+        'images/characters/darius/darius f_angry.png'
+    else:
         'images/characters/darius/darius_face_angry.png'
-    group overlay:
-        attribute blush:
-            "darius_overlay_blush"
+    # group overlay:
+    #     attribute blush:
+layeredimage darius angry blush:
+    at [sprite_highlight('darius'),ex_angry]
+    if darius_fullbody:
+        'images/characters/darius/darius f_angry blush.png'
+    else:
+        'images/characters/darius/darius_face_angry.png'
+    if not darius_fullbody:
+        'images/characters/darius/darius_overlay_blush.png'
+
 layeredimage darius surprised:
     at [sprite_highlight('darius'),ex_surprised]
-    always:
+    if darius_fullbody:
+        'images/characters/darius/darius f_surprised.png'
+    else:
         'images/characters/darius/darius_face_surprised.png'
-    group overlay:
-        attribute blush:
-            "darius_overlay_blush"
+layeredimage darius surprised blush:
+    at [sprite_highlight('darius'),ex_surprised]
+    if darius_fullbody:
+        'images/characters/darius/darius f_surprised blush.png'
+    else:
+        'images/characters/darius/darius_face_surprised.png'
+    if not darius_fullbody:
+        'images/characters/darius/darius_overlay_blush.png'
 
 layeredimage susurha neutral:
     at [sprite_highlight('susurha'),ex_neutral]
-    always:
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_neutral.png'
+    else:
         'images/characters/susurha/susurha_face_neutral.png'
 layeredimage susurha neutral blush:
     at [sprite_highlight('susurha'),ex_neutral_blush]
-    always:
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_neutral blush.png'
+    else:
         'images/characters/susurha/susurha_face_neutral.png'
-    if day >= 0:
+    if day >= 0 and not susurha_fullbody:
         'images/characters/susurha/susurha_overlay_blush.png'
 layeredimage susurha happy:
     at [sprite_highlight('susurha'),ex_happy]
-    always:
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_happy.png'
+    else:
         'images/characters/susurha/susurha_face_happy.png'
-    group overlay:
-        attribute blush:
-            "susurha_overlay_blush"
+layeredimage susurha happy blush:
+    at [sprite_highlight('susurha'),ex_happy]
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_happy blush.png'
+    else:
+        'images/characters/susurha/susurha_face_happy.png'
+    if not susurha_fullbody:
+        'images/characters/susurha/susurha_overlay_blush.png'
 layeredimage susurha sad:
     at [sprite_highlight('susurha'),ex_sad]
-    always:
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_sad.png'
+    else:
         'images/characters/susurha/susurha_face_sad.png'
-    group overlay:
-        attribute blush:
-            "susurha_overlay_blush"
+layeredimage susurha sad blush:
+    at [sprite_highlight('susurha'),ex_sad]
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_sad blush.png'
+    else:
+        'images/characters/susurha/susurha_face_sad.png'
+    if not susurha_fullbody:
+        'images/characters/susurha/susurha_overlay_blush.png'
 layeredimage susurha angry:
     at [sprite_highlight('susurha'),ex_angry]
-    always:
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_angry.png'
+    else:
         'images/characters/susurha/susurha_face_angry.png'
-    group overlay:
-        attribute blush:
-            "susurha_overlay_blush"
+layeredimage susurha angry blush:
+    at [sprite_highlight('susurha'),ex_angry]
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_angry blush.png'
+    else:
+        'images/characters/susurha/susurha_face_angry.png'
+    if not susurha_fullbody:
+        'images/characters/susurha/susurha_overlay_blush.png'
 layeredimage susurha surprised:
     at [sprite_highlight('susurha'),ex_surprised]
-    always:
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_surprised.png'
+    else:
         'images/characters/susurha/susurha_face_surprised.png'
-    group overlay:
-        attribute blush:
-            "susurha_overlay_blush"
+layeredimage susurha surprised blush:
+    at [sprite_highlight('susurha'),ex_surprised]
+    if susurha_fullbody:
+        'images/characters/susurha/susurha f_surprised blush.png'
+    else:
+        'images/characters/susurha/susurha_face_surprised.png'
+    if not susurha_fullbody:
+        'images/characters/susurha/susurha_overlay_blush.png'
 
 layeredimage urshu neutral:
     at [sprite_highlight('urshu'),ex_neutral]
-    always:
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_neutral.png'
+    else:
         'images/characters/urshu/urshu_face_neutral.png'
 layeredimage urshu neutral blush:
     at [sprite_highlight('urshu'),ex_neutral_blush]
-    always:
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_neutral blush.png'
+    else:
         'images/characters/urshu/urshu_face_neutral.png'
-    if day >= 0:
+    if day >= 0 and not urshu_fullbody:
         'images/characters/urshu/urshu_overlay_blush.png'
 layeredimage urshu happy:
     at [sprite_highlight('urshu'),ex_happy]
-    always:
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_happy.png'
+    else:
         'images/characters/urshu/urshu_face_happy.png'
-    group overlay:
-        attribute blush:
-            "urshu_overlay_blush"
+layeredimage urshu happy blush:
+    at [sprite_highlight('urshu'),ex_happy]
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_happy blush.png'
+    else:
+        'images/characters/urshu/urshu_face_happy.png'
+    if not urshu_fullbody:
+        'images/characters/urshu/urshu_overlay_blush.png'
 layeredimage urshu sad:
     at [sprite_highlight('urshu'),ex_sad]
-    always:
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_sad.png'
+    else:
         'images/characters/urshu/urshu_face_sad.png'
-    group overlay:
-        attribute blush:
-            "urshu_overlay_blush"
+layeredimage urshu sad blush:
+    at [sprite_highlight('urshu'),ex_sad]
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_sad blush.png'
+    else:
+        'images/characters/urshu/urshu_face_sad.png'
+    if not urshu_fullbody:
+        'images/characters/urshu/urshu_overlay_blush.png'
 layeredimage urshu angry:
     at [sprite_highlight('urshu'),ex_angry]
-    always:
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_angry.png'
+    else:
         'images/characters/urshu/urshu_face_angry.png'
-    group overlay:
-        attribute blush:
-            "urshu_overlay_blush"
+layeredimage urshu angry blush:
+    at [sprite_highlight('urshu'),ex_angry]
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_angry blush.png'
+    else:
+        'images/characters/urshu/urshu_face_angry.png'
+    if not urshu_fullbody:
+        'images/characters/urshu/urshu_overlay_blush.png'
 layeredimage urshu surprised:
     at [sprite_highlight('urshu'),ex_surprised]
-    always:
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_surprised.png'
+    else:
         'images/characters/urshu/urshu_face_surprised.png'
-    group overlay:
-        attribute blush:
-            "urshu_overlay_blush"
+layeredimage urshu surprised blush:
+    at [sprite_highlight('urshu'),ex_surprised]
+    if urshu_fullbody:
+        'images/characters/urshu/urshu f_surprised blush.png'
+    else:
+        'images/characters/urshu/urshu_face_surprised.png'
+    if not urshu_fullbody:
+        'images/characters/urshu/urshu_overlay_blush.png'
 
 # define vivi images
+init python:
+    def vivi_return_image(expression):
+        if vivi_fullbody:
+            return 'images/characters/vivi/vivi f_'+expression+'.png'
+        else:
+            return 'images/characters/vivi/vivi '+expression+'.png'
 image vivi neutral:
-    At('images/characters/vivi/vivi neutral.png', sprite_highlight('vivi'))
+    At(vivi_return_image('neutral'), sprite_highlight('vivi'))
     zoom 1.0
 image vivi happy:
-    At('images/characters/vivi/vivi happy.png', sprite_highlight('vivi'))
+    At(vivi_return_image('happy'), sprite_highlight('vivi'))
     zoom 1.01 yoffset 10
     linear 0.1 yoffset 0
     linear 0.2 yoffset 5
 image vivi sad:
-    At('images/characters/vivi/vivi sad.png', sprite_highlight('vivi'))
+    At(vivi_return_image('sad'), sprite_highlight('vivi'))
     zoom 1.01
     linear 0.5 yoffset 10
 image vivi angry:
-    At('images/characters/vivi/vivi angry.png', sprite_highlight('vivi'))
+    At(vivi_return_image('angry'), sprite_highlight('vivi'))
     zoom 1.01
     linear 0.1 xoffset -2
     linear 0.1 xoffset 2
     linear 0.1 xoffset -2
     linear 0.1 xoffset 2
 image vivi surprised:
-    At('images/characters/vivi/vivi surprised.png', sprite_highlight('vivi'))
+    At(vivi_return_image('surprised'), sprite_highlight('vivi'))
     zoom 1.01 yoffset 20
     linear 0.2 yoffset 0
 image vivi neutral blush:
-    At('images/characters/vivi/vivi neutral blush.png', sprite_highlight('vivi'))
+    At(vivi_return_image('neutral blush'), sprite_highlight('vivi'))
     zoom 1.01
 image vivi happy blush:
-    At('images/characters/vivi/vivi happy blush.png', sprite_highlight('vivi'))
+    At(vivi_return_image('happy blush'), sprite_highlight('vivi'))
     zoom 1.01 yoffset 10
     linear 0.1 yoffset 0
     linear 0.2 yoffset 5
 image vivi sad blush:
-    At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
+    At(vivi_return_image('sad blush'), sprite_highlight('vivi'))
     zoom 1.01
     linear 0.5 yoffset 10
 image vivi angry blush:
-    At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
+    At(vivi_return_image('angry blush'), sprite_highlight('vivi'))
     zoom 1.01
     linear 0.1 xoffset -2
     linear 0.1 xoffset 2
     linear 0.1 xoffset -2
     linear 0.1 xoffset 2
 image vivi surprised blush:
-    At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
+    At(vivi_return_image('surprised blush'), sprite_highlight('vivi'))
     zoom 1.01 yoffset 20
     linear 0.2 yoffset 0
 image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
@@ -453,6 +582,9 @@ image urshudining happy blush = At('images/characters/urshu/urshu dining/urshu_h
 image urshudining sad blush = At('images/characters/urshu/urshu dining/urshu_sad_table_blush.png', sprite_highlight('urshudining'))
 image urshudining angry blush = At('images/characters/urshu/urshu dining/urshu_angry_table_blush.png', sprite_highlight('urshudining'))
 image urshudining surprised blush = At('images/characters/urshu/urshu dining/urshu_surprised_table_blush.png', sprite_highlight('urshudining'))
+
+
+
 
 # define flash effect
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")

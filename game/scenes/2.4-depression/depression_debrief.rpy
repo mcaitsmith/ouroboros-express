@@ -7,6 +7,7 @@ label depression_debrief:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_27
     scene cabin with fade
+    $ vivi_fullbody = False
     play ambience amb_bedroom if_changed fadein 1.0
     pause 1.0
 

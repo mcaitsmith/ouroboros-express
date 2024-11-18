@@ -4,7 +4,8 @@ label bargaining_asha_urshu :
     # call check_overlay from _call_check_overlay_11
     scene observatory with fade
     play ambience amb_observatory fadein 1.0
-
+    $ ava_fullbody = True
+    $ urshu_fullbody = True
 
     #SOUND: train
     #play sound train
