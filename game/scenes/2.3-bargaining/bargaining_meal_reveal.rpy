@@ -128,6 +128,7 @@ label bargaining_meal_reveal:
     vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so—"
     vivi neutral "..."
     vivi neutral "Wait, what do you mean by...certain?"
+    show urshudining sad
     vivithinking neutral "Holy moly. He's crying again!"
     vivithinking neutral "Crying? No, sobbing." 
     vivithinking neutral "That's not a happy cry. He's covering his mouth."
