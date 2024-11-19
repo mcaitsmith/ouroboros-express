@@ -98,6 +98,22 @@ label hide_overlay: # call this label to hide eldritch overlay
     # with { "master" : Dissolve(1.0) }
     return
 
+# define splashscreen with SLS logo
+label splashscreen:
+    scene white with dissolve
+    with Pause(1)
+
+    # play sound "ping.ogg"
+
+    show splashlogo at truecenter with dissolve:
+        zoom 2.0
+    with Pause(3)
+
+    scene black with dissolve
+    with Pause(1)
+
+    return
+
 init python:
     config.auto_voice = "audio/voice/{id}.ogg" # define location of voice files for VO
     config.keymap['save_delete'].append('K_d') # Add D key for deleting saves

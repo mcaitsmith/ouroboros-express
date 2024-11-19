@@ -133,6 +133,9 @@ label images_bgs:
     #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
     #     repeat
 
+    # define SLS logo image
+    image splashlogo = "images/logo.png"
+
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
     image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)

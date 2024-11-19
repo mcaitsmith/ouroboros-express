@@ -101,6 +101,7 @@ define config.game_main_transition = pixellate
 
 # define config.end_game_transition = None
 define config.end_game_transition = fade
+define config.end_splash_transition = fade
 
 
 ## A variable to set the transition used when the game starts does not exist.
