@@ -137,6 +137,25 @@ label images_bgs:
     # image splashlogo = "images/logo.png"
     image splashlogo = Movie(channel="movie_dp", loop = False, play = 'images/SLS_Logo.mpg')
 
+    # define Orex animated logo image for title
+    image titlelogo:
+        Movie(channel="movie_dp", loop = False, play = 'images/OrExLogo_1.mpg')
+        xoffset 93 yoffset 17 zoom 0.97
+        pause 4.5
+        Movie(channel="movie_dp", loop = True, play = 'images/OrExLogo_repeat.avi')
+        # linear 1.0 alpha 0.0
+
+    image titlebg:
+        "gui/main_menu_overlay.png"
+        alpha 0.0
+        pause 4.5
+        linear 1.0 alpha 1.0
+
+    image titlemenu = Composite(
+        (1920, 1080),
+        (0, 0), "titlelogo",
+        (0, 0), "titlebg")
+
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
     image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
