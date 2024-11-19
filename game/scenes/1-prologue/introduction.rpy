@@ -50,6 +50,13 @@ label introduction:
 
                 $ option1 = True
 
+                pause 0.5
+                show vivi neutral at left:
+                    xzoom 1
+                pause 1.0
+                show vivi neutral at left:
+                    xzoom -1
+                pause 1.0
                 vivithinking neutral "This place definitely comes off more tacky than spooky. The decor is way over the top, and that's coming from me." 
                 vivithinking neutral "Huh... A plaque with my name on the door. I'm definitely meant to be here."
                 vivithinking "Let's keep looking."
@@ -60,9 +67,22 @@ label introduction:
 
                 $ option2 = True
 
+                hide vivi with dissolve
+
+                $ vivi_fullbody = True
+
+                show vivi neutral at left with dissolve:
+                    xzoom 1
+
                 vivithinking neutral "It looks like an early 20th-century desk. Actually, everything in here looks like it came from 100 years ago, although it's all in pristine condition."
 
                 vivithinking "Maybe something else will jog my memory."
+
+                hide vivi with dissolve
+                $ vivi_fullbody = False
+                show vivi neutral at left with dissolve:
+                    xzoom -1
+
                 jump lookaround
 
             # OPTION 3
@@ -70,9 +90,21 @@ label introduction:
 
                 $ option3 = True
 
+                hide vivi with dissolve
+
+                $ vivi_fullbody = True
+
+                show vivi neutral at left with dissolve:
+                    xzoom -1
+
                 vivithinking surprised "I'm a little paler than usual. Need to get out in the sun more. I'm absolutely asking Chloe for a vacation when this job is finished."
 
                 vivithinking "There must be something more."
+
+                hide vivi with dissolve
+                $ vivi_fullbody = False
+                show vivi neutral at left with dissolve:
+                    xzoom -1
                 jump lookaround
 
             # NOTE after all three options are explored, OPTION 4 should appear

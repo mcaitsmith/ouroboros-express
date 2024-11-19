@@ -4,20 +4,63 @@ label images_bgs:
 
     ###BG VFX OVERLAYS
 
-    # image cabin_light_overlay:
-    #     "images/backgrounds/cabin_overlay.png"
-    #     alpha 0.5
-    #     linear 2.0 alpha 0.2
-    #     linear 2.0 alpha 0.5
-    #     repeat
+    image cabin_light_overlay:
+        "images/backgrounds/vfx/cabin_lamps.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
+
+    image diningcar_light_overlay:
+        "images/backgrounds/vfx/diningcar_light.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
+
+    image lounge_light_overlay:
+        "images/backgrounds/vfx/lounge_lamps.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
+
+    image observatory_light_overlay:
+        "images/backgrounds/vfx/observatory_lamp.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
+    image observatory_stars1_overlay:
+        "images/backgrounds/vfx/observatory_stars1.png"
+        # alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        alpha 0.0 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(0.0) * SaturationMatrix(1.0)
+        # linear 2.0 alpha 1.0 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(1.5) * SaturationMatrix(1.0)
+        linear 2.0 alpha 1.0 matrixcolor TintMatrix("#e031d4") * BrightnessMatrix(1.5) * SaturationMatrix(2.0)
+        # linear 2.0 alpha 0.0 matrixcolor  TintMatrix("#ffffff") * BrightnessMatrix(0.0) * SaturationMatrix(1.0)
+        linear 2.0 alpha 0.0 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(0.0) * SaturationMatrix(1.0)
+        repeat
+    image observatory_stars2_overlay:
+        "images/backgrounds/vfx/observatory_stars2.png"
+        alpha 0.5 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(0.75) * SaturationMatrix(1.5)
+        linear 1.0 alpha 1.0 matrixcolor TintMatrix("#34e031") * BrightnessMatrix(1.5) * SaturationMatrix(2.0)
+        linear 2.0 alpha 0.0 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(0.0) * SaturationMatrix(1.0)
+        linear 1.0 alpha 0.5 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(0.75) * SaturationMatrix(1.5)
+        repeat
+    image observatory_stars3_overlay:
+        "images/backgrounds/vfx/observatory_stars3.png"
+        alpha 1.0 matrixcolor TintMatrix("#319de0") * BrightnessMatrix(1.5) * SaturationMatrix(2.0)
+        linear 2.0 alpha 0.0 matrixcolor TintMatrix("#ffffff") * BrightnessMatrix(0.0) * SaturationMatrix(1.0)
+        linear 2.0 alpha 1.0 matrixcolor TintMatrix("#319de0") * BrightnessMatrix(1.5) * SaturationMatrix(2.0)
+        repeat
 
     image terminalofdreams_dust1_overlay:
         "images/backgrounds/vfx/terminal_dust1.png"
         alpha 1.0 matrixcolor BrightnessMatrix(1.0)
-        # linear 2.0 alpha 0.0 xoffset -4 yoffset -4
-        # linear 2.0 alpha 1.0 xoffset 4 yoffset 4
-        # linear 2.0 alpha 0.0 xoffset 4 yoffset -4
-        # linear 2.0 alpha 1.0 xoffset -4 yoffset 4
         linear 1.5 alpha 0.0
         linear 1.5 alpha 1.0
         linear 1.5 alpha 0.0
@@ -26,10 +69,6 @@ label images_bgs:
     image terminalofdreams_dust2_overlay:
         "images/backgrounds/vfx/terminal_dust2.png"
         alpha 0.0 matrixcolor BrightnessMatrix(1.5)
-        # linear 2.0 alpha 1.0 xoffset 4 yoffset -4
-        # linear 2.0 alpha 0.0 xoffset -4 yoffset 4
-        # linear 2.0 alpha 1.0 xoffset -4 yoffset -4
-        # linear 2.0 alpha 0.0 xoffset 4 yoffset 4
         linear 1.5 alpha 1.0
         linear 1.5 alpha 0.0
         linear 1.5 alpha 1.0
@@ -54,11 +93,11 @@ label images_bgs:
 
     # define decay overlay bg images
     layeredimage cabin:
-        # subpixel True
+        subpixel True
         always:
             "images/backgrounds/cabin.png"
-        # group light:
-        #     attribute overlay default
+        group light:
+            attribute overlay default
         if day == 2:
             "decay_bedroom_1"
         elif day == 3:
@@ -66,8 +105,17 @@ label images_bgs:
         elif day == 4 or day == 6:
             "decay_bedroom_3"
     layeredimage observatory:
+        subpixel True
         always:
             "images/backgrounds/observatory.png"
+        group light:
+            attribute overlay default
+        group stars1:
+            attribute overlay default
+        group stars2:
+            attribute overlay default
+        group stars3:
+            attribute overlay default
         if day == 2:
             "decay_observatory_1"
         elif day == 3:
@@ -75,8 +123,11 @@ label images_bgs:
         elif day == 4 or day == 6:
             "decay_observatory_3"
     layeredimage lounge:
+        subpixel True
         always:
             "images/backgrounds/lounge.png"
+        group light:
+            attribute overlay default
         if day == 2:
             "decay_lounge_1"
         elif day == 3:
@@ -84,8 +135,11 @@ label images_bgs:
         elif day == 4 or day == 6:
             "decay_lounge_3"
     layeredimage diningcar:
+        subpixel True
         always:
             "images/backgrounds/diningcar.png"
+        group light:
+            attribute overlay default
         if day == 2:
             "decay_bar_1"
         elif day == 3:
