@@ -82,8 +82,56 @@ label images_bgs:
         linear 3.0 alpha 0.0
         linear 3.0 alpha 1.0
         repeat
-
+    
     image terminalofdreams_petals_overlay = SnowBlossom("images/backgrounds/vfx/terminal_petals.png", count=10, border=0, xspeed=(20, 50), yspeed=(50, 100))
+    
+    # mote effect for title screen
+    transform mote_fade:
+        linear 1.0 alpha 0.0
+        linear 1.0 alpha 1.0
+        repeat
+    transform mote_fade2:
+        linear 1.0 alpha 1.0
+        linear 1.0 alpha 0.0
+        repeat
+    transform mote_fade3:
+        alpha 0.5
+        linear 0.5 alpha 1.0
+        linear 1.0 alpha 0.0
+        linear 0.5 alpha 0.5
+        repeat
+    image title_motes = SnowBlossom(At("images/backgrounds/vfx/mote.png",mote_fade), count=30, border=10, xspeed=(100, -100), yspeed=(100,-100), fast=True)
+    image title_motes2 = SnowBlossom(At("images/backgrounds/vfx/mote.png",mote_fade2), count=30, border=10, xspeed=(100, -100), yspeed=(100,-100), fast=True)
+    image title_motes3 = SnowBlossom(At("images/backgrounds/vfx/mote.png",mote_fade3), count=30, border=10, xspeed=(100, -100), yspeed=(100,-100), fast=True)
+
+
+    # flicker effect for title screen (not currently used)
+    # transform title_flicker:
+    #     pause 0.1
+    #     linear 0.0 matrixcolor SaturationMatrix(0.4) * TintMatrix("#fae388")
+    #     pause 0.05
+    #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
+    #     pause 0.1
+    #     linear 0.0 matrixcolor SaturationMatrix(0.6) * TintMatrix("#ffffff")
+    #     pause 0.05
+    #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
+    #     pause 0.1
+    #     linear 0.0 matrixcolor SaturationMatrix(0.6) * TintMatrix("#fbefc0")
+    #     pause 0.05
+    #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
+    #     pause 0.1
+    #     linear 0.0 matrixcolor SaturationMatrix(0.6) * TintMatrix("#ffffff")
+    #     pause 0.05
+    #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
+    #     pause 0.1
+    #     linear 0.0 matrixcolor SaturationMatrix(0.8) * TintMatrix("#fae388")
+    #     pause 0.05
+    #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
+    #     pause 0.1
+    #     linear 0.0 matrixcolor SaturationMatrix(0.8) * TintMatrix("#ffffff")
+    #     pause 0.05
+    #     linear 0.0 matrixcolor SaturationMatrix(1.0) * TintMatrix("#ffffff")
+    #     repeat
 
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)

@@ -424,7 +424,12 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
+    # add gui.main_menu_background at title_flicker
     add gui.main_menu_background
+
+    add "title_motes"
+    add "title_motes2"
+    add "title_motes3"
 
     ## This empty frame darkens the main menu.
     frame:
