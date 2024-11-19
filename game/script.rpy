@@ -100,17 +100,26 @@ label hide_overlay: # call this label to hide eldritch overlay
 
 # define splashscreen with SLS logo
 label splashscreen:
-    scene white with dissolve
+    scene black
     with Pause(1)
 
-    # play sound "ping.ogg"
+    play sound twinkle fadein 2.0
 
-    show splashlogo at truecenter with dissolve:
-        zoom 2.0
-    with Pause(3)
+    pause 2.0
+
+    # show splashlogo at truecenter with dissolve:
+    #     zoom 2.0
+    # with Pause(3)
+
+    # $ renpy.movie_cutscene('images/SLS_Logo.mpg')
+    show splashlogo
+
+    pause 4.5
+
+    stop sound fadeout 2.0
 
     scene black with dissolve
-    with Pause(1)
+    with Pause(3)
 
     return
 

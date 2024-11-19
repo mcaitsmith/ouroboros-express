@@ -134,7 +134,8 @@ label images_bgs:
     #     repeat
 
     # define SLS logo image
-    image splashlogo = "images/logo.png"
+    # image splashlogo = "images/logo.png"
+    image splashlogo = Movie(channel="movie_dp", loop = False, play = 'images/SLS_Logo.mpg')
 
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
