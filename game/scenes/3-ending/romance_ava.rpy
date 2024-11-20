@@ -9,6 +9,8 @@ label romance_ava:
     scene observatory with fade
     play ambience amb_observatory fadein 1.0
 
+    show romancemotes
+
     show vivi neutral at center_left with dissolve:
         xzoom -1
     show ava neutral at center_right with dissolve

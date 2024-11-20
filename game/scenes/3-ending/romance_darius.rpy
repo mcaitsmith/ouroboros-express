@@ -7,6 +7,8 @@ label romance_darius:
     scene observatory with fade
     play ambience amb_observatory fadein 1.0
 
+    show romancemotes
+
     show darius surprised at center_right with dissolve:
         xpos 0.65
     show vivi happy at center_left with dissolve :

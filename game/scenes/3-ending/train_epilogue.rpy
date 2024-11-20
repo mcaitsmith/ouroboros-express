@@ -14,6 +14,8 @@ label train_epilogue:
     scene observatory with fade
     play ambience amb_observatory fadein 1.0
     play music finalemusic
+
+    show romancemotes
     
     #SERA NOTE - Both Vivi and Urshu should be in train conductor outfits from here.
 

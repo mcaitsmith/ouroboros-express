@@ -156,6 +156,12 @@ label images_bgs:
         (0, 0), "titlelogo",
         (0, 0), "titlebg")
 
+    image romancemotes = Composite(
+        (1920, 1080),
+        (0, 0), "title_motes",
+        (0, 0), "title_motes2",
+        (0, 0), "title_motes3")
+
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
     image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
