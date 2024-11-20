@@ -269,7 +269,7 @@ label depression_fr2_susurha:
             susurha "This whole time that I've interacted with you, it has always felt like I was talking to a mirror that bends and flows with the wind."
             vivithinking sad "This son of a..."
             susurha "I told you the thing that stalks me. Tell me, what does the thing that haunts you appear as?"
-            vivi sad "It's... I can't tell you. It's personal"
+            vivi sad "It's... I can't tell you. It's personal."
             susurha "Oh. As I thought."
             #JUMP TO: susurha "Thank you for staying with me, if even for a moment."
 

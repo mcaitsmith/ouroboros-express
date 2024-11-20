@@ -36,7 +36,7 @@ label depression_fr1_darius:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             darius sad "I'm not sure that's such a good idea."
-            vivi neutral "I do. I'd like your company."
+            vivi neutral "I am. I'd like your company."
             show darius surprised blush with dissolve
             darius "No one {i}likes{/i} my company. It's my specialty."
             vivi happy blush "Well, consider me the first."

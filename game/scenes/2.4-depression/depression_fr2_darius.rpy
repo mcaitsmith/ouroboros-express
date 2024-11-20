@@ -152,7 +152,7 @@ label depression_fr2_darius:
     darius neutral "You may think of them as That Which Gathers. Or, perhaps— Za'deeh."
     vivi neutral blush "Your terrifying ancient eldritch god is a zaddy?"
     show darius surprised blush with dissolve
-    darius "What? No! Their very gaze would melt your mind, much less your face! Put some respect on Za'deeh's name!"
+    darius "What? No! Their very gaze will melt your mind, much less your face! Put some respect on Za'deeh's name!"
     vivi happy blush "Listen, I get it. I'll always respect a zaddy when I see one."
     show darius happy blush
     darius happy blush "You... you are..."

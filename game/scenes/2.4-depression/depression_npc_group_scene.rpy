@@ -11,7 +11,7 @@ label depression_npc_group_scene:
     show vivi neutral at left with dissolve:
         xzoom -1
 
-    vivithinking "Well, the lounge was pretty empty too. Wonder where everyone is? Maybe I’ll check out the bar."
+    vivithinking "Well, the lounge was pretty empty too. Wonder where everyone is? Maybe I’ll check the bar."
 
     hide vivi
 
