@@ -47,9 +47,11 @@ label images_chars:
             'images/characters/ava/ava_face_neutral.png'
     layeredimage ava neutral blush:
         at [sprite_highlight('ava'),ex_neutral_blush]
-        always:
+        if ava_fullbody:
+            'images/characters/ava/ava f_neutral blush.png'
+        else:
             'images/characters/ava/ava_face_neutral.png'
-        if day >= 0:
+        if not ava_fullbody:
             'images/characters/ava/ava_overlay_blush.png'
     layeredimage ava happy:
         at [sprite_highlight('ava'),ex_happy]
@@ -57,18 +59,28 @@ label images_chars:
             'images/characters/ava/ava f_happy.png'
         else:
             'images/characters/ava/ava_face_happy.png'
-        group overlay:
-            attribute blush:
-                "ava_overlay_blush"
+    layeredimage ava happy blush:
+        at [sprite_highlight('ava'),ex_happy]
+        if ava_fullbody:
+            'images/characters/ava/ava f_happy blush.png'
+        else:
+            'images/characters/ava/ava_face_happy.png'
+        if not ava_fullbody:
+            'images/characters/ava/ava_overlay_blush.png'
     layeredimage ava sad:
         at [sprite_highlight('ava'),ex_sad]
         if ava_fullbody:
             'images/characters/ava/ava f_sad.png'
         else:
             'images/characters/ava/ava_face_sad.png'
-        group overlay:
-            attribute blush:
-                "ava_overlay_blush"
+    layeredimage ava sad blush:
+        at [sprite_highlight('ava'),ex_sad]
+        if ava_fullbody:
+            'images/characters/ava/ava f_sad blush.png'
+        else:
+            'images/characters/ava/ava_face_sad.png'
+        if not ava_fullbody:
+            'images/characters/ava/ava_overlay_blush.png'
     layeredimage ava angry:
         at [sprite_highlight('ava'),ex_angry]
         if ava_fullbody:
@@ -105,20 +117,14 @@ label images_chars:
             'images/characters/darius/darius f_neutral.png'
         else:
             'images/characters/darius/darius_face_neutral.png'
-        # group overlay:
-        #     attribute blush:
-        #         "darius_overlay_blush"
     layeredimage darius neutral blush:
         at [sprite_highlight('darius'),ex_neutral_blush]
         if darius_fullbody:
             'images/characters/darius/darius f_neutral blush.png'
         else:
             'images/characters/darius/darius_face_neutral.png'
-        if day >= 0 and not darius_fullbody:
+        if not darius_fullbody:
             'images/characters/darius/darius_overlay_blush.png'
-        # group overlay:
-        #     attribute blush:
-        #         "darius_overlay_blush"
     layeredimage darius happy:
         at [sprite_highlight('darius'),ex_happy]
         if darius_fullbody:
@@ -153,8 +159,6 @@ label images_chars:
             'images/characters/darius/darius f_angry.png'
         else:
             'images/characters/darius/darius_face_angry.png'
-        # group overlay:
-        #     attribute blush:
     layeredimage darius angry blush:
         at [sprite_highlight('darius'),ex_angry]
         if darius_fullbody:
@@ -163,7 +167,6 @@ label images_chars:
             'images/characters/darius/darius_face_angry.png'
         if not darius_fullbody:
             'images/characters/darius/darius_overlay_blush.png'
-
     layeredimage darius surprised:
         at [sprite_highlight('darius'),ex_surprised]
         if darius_fullbody:
@@ -192,7 +195,7 @@ label images_chars:
             'images/characters/susurha/susurha f_neutral blush.png'
         else:
             'images/characters/susurha/susurha_face_neutral.png'
-        if day >= 0 and not susurha_fullbody:
+        if not susurha_fullbody:
             'images/characters/susurha/susurha_overlay_blush.png'
     layeredimage susurha happy:
         at [sprite_highlight('susurha'),ex_happy]
@@ -264,7 +267,7 @@ label images_chars:
             'images/characters/urshu/urshu f_neutral blush.png'
         else:
             'images/characters/urshu/urshu_face_neutral.png'
-        if day >= 0 and not urshu_fullbody:
+        if not urshu_fullbody:
             'images/characters/urshu/urshu_overlay_blush.png'
     layeredimage urshu happy:
         at [sprite_highlight('urshu'),ex_happy]

@@ -83,8 +83,12 @@ label bargaining_asha_urshu :
     urshu neutral "Sometimes children have the simple answers that elude us. Ah, speaking of elusive, I see a visitor. I’ll leave you two. Ta ta!"
 
     hide urshu with dissolve
+    hide ava with dissolve
 
-    show ava neutral at right with moveoutright
+    $ ava_fullbody = False
+    $ urshu_fullbody = False
+
+    show ava neutral at right with dissolve
 
     show vivi neutral at left with dissolve:
         xzoom -1

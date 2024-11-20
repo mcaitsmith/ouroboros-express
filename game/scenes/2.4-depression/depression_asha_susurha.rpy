@@ -17,11 +17,17 @@ label depression_asha_susurha:
     vivi neutral "What's the commotion I'm hearing?"
     play music spymusic loop
 
-    # hide vivi
+    hide vivi with dissolve
 
-    show ava neutral at right
-    show susurha neutral at center :
+    show ava neutral at center
+    show susurha neutral at left :
         xzoom -1
+    with dissolve
+
+    pause 1.0
+
+    show vivi neutral at right with dissolve:
+        xzoom 1
 
     vivithinking "Oh! It's them! Don't want to interrupt."
 
@@ -68,11 +74,12 @@ label depression_asha_susurha:
 
     hide susurha
     hide ava
+    with dissolve
 
-    show vivi sad at left :
-        xzoom -1
+    # show vivi sad at left with dissolve :
+    #     xzoom -1
 
-    vivithinking "This silence is killing me. I should leave."
+    vivithinking sad "This silence is killing me. I should leave."
     stop ambience fadeout 1.0
 
 #JUMP TO Character Selector 2
