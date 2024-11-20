@@ -148,7 +148,7 @@ label images_bgs:
     image titlebg:
         "gui/main_menu_overlay.png"
         alpha 0.0
-        pause 4.5
+        pause 2.0
         linear 1.0 alpha 1.0
 
     image titlemenu = Composite(
