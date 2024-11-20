@@ -12,7 +12,8 @@ label denial_cs2:
         xzoom -1
 
     vivi neutral "That was... interesting. Looks like I wasn't the only one blindsided by this train. I need some time to gather my thoughts."
-
+    $ ava_fullbody = False
+    $ darius_fullbody = False
     # Fade to blur if possible.
     show cabin blur with dissolve
 
@@ -24,10 +25,10 @@ label denial_cs2:
     show cabin with dissolve
 
     vivi sad "This can't be happening."
-    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
-    play sound heartbeat
-    pause 5.0
-    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
+    #$ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)
+    #play sound heartbeat
+    #pause 5.0
+    #$ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
     vivi angry "It can't end like this."
 
     # <CHOICE>

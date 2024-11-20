@@ -2,7 +2,9 @@ label bargaining_darius_susurha:
 
     # call check_overlay from _call_check_overlay_15
     scene lounge with fade
-
+    play ambience amb_lounge if_changed fadein 1.0
+    $ darius_fullbody = True
+    $ susurha_fullbody = True
     show vivi neutral at left with dissolve :
         xzoom -1
 
@@ -10,6 +12,7 @@ label bargaining_darius_susurha:
 
     vivithinking surprised "Oh scat, someone’s coming. I could sense that roiling mind anywhere. Better make myself scarce, see if I can learn anything."
 
+    play music peacefulmusic loop
     hide vivi
 
     # vivi portrait disappears, fades away or something
@@ -43,9 +46,11 @@ label bargaining_darius_susurha:
 
     susurha surprised "Well, I certainly didn’t do it for the company. You’d think the two of us would get along."
 
+    stop music fadeout 1.0 
     darius surprised "Why would we...ever get along?"
 
     susurha happy "Because we have so much in common!"
+    play music dariusmusic fadein 2.0
 
     darius neutral "This is a joke. You’re mocking me. My time is better spent elsewhere."
 
@@ -63,6 +68,8 @@ label bargaining_darius_susurha:
 
     darius neutral "Well. That’s just– it’s nothing. A psychic field, amplified by distress. Good day, little prince."
 
+    stop music fadeout 5.0
+
     hide darius
 
     #darius fades, vivi potrait slides left?
@@ -79,5 +86,7 @@ label bargaining_darius_susurha:
     vivi neutral "I– I’d better not. I should get back to the others. Another time."
 
     susurha happy "Suit yourself!"
+
+    stop ambience fadeout 1.0
 
     jump bargaining_cs2

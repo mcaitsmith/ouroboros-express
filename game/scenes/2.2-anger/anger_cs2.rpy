@@ -9,7 +9,8 @@ label anger_cs2:
     scene cabin with fade
     play ambience amb_bedroom fadein 1.0
     play music mainmusic loop
-
+    $ urshu_fullbody = False
+    $ susurha_fullbody = False
     show vivi neutral at left with dissolve:
         xzoom -1
 

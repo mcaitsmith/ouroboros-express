@@ -7,7 +7,9 @@ label bargaining_cs2:
     # LOCATION: cabin
     # call check_overlay from _call_check_overlay_14
     scene cabin with fade
-
+    play ambience amb_bedroom if_changed fadein 1.0
+    $ darius_fullbody = False
+    $ susurha_fullbody = False
     show vivi angry at left with dissolve:
         xzoom -1
 
@@ -32,6 +34,7 @@ label bargaining_cs2:
             show vivi neutral at left
 
             vivithinking "I could use the palate of a goddess. Nothing but the best, right?"
+            stop ambience fadeout 1.0
         
             # JUMP TO: Free roam 2 / Ava
             jump bargaining_fr2_ava
@@ -44,6 +47,7 @@ label bargaining_cs2:
             show vivi neutral at left
 
             vivithinking "Darius would be an excellent sous chef. Those deft hands of his would work wonders in the kitchen."
+            stop ambience fadeout 1.0
 
             # JUMP TO: Free roam 2 / Darius
             jump bargaining_fr2_darius
@@ -56,6 +60,7 @@ label bargaining_cs2:
             show vivi neutral at left
 
             vivithinking "Susu'Rha could definitely help me win over the conductor."
+            stop ambience fadeout 1.0
 
             # JUMP TO: Free roam 2 / Susu'Rha
             jump bargaining_fr2_susurha

@@ -7,7 +7,7 @@ label figuring_it_out:
     # LOCATION: cabin 
     scene cabin with fade
     stop music fadeout 2.0
-    play ambience amb_bedroom fadein 2.0
+    play ambience amb_bedroom if_changed fadein 2.0
 
 
     show vivi neutral at left with dissolve:

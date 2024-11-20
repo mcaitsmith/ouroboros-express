@@ -3,12 +3,15 @@ label depression_npc_group_scene:
     #LOCATION: bar
     # call check_overlay from _call_check_overlay_34
     scene diningcar with fade
-
+    play ambience amb_bar if_changed fadein 1.0
+    $ vivi_fullbody = True
     #SOUND: train
-    play sound train
+    #play sound train
+    play sound trainwhistle volume 0.5
+    pause 5.0
 
 
-    show vivi neutral at left with dissolve:
+    show vivi neutral at center with dissolve:
         xzoom -1
 
     vivithinking "Well, the lounge was pretty empty too. Wonder where everyone is? Maybe I’ll check the bar."
@@ -25,12 +28,13 @@ label depression_npc_group_scene:
     hide darius with dissolve
     hide susurha with dissolve
 
-    show vivi neutral at left with dissolve:
-        xzoom -1
+    show vivi neutral at center with dissolve:
+        xzoom -1 xoffset -300
 
     vivithinking "Oh, wow! Here they are. Huh. The vibe is kinda off. I’ll hang back. Listen to what they’re talking about on our last night."
+    play music sorrowmusic
 
-    hide vivi
+    # hide vivi
 
     show ava sad at left with dissolve:
         xzoom -1
@@ -46,6 +50,7 @@ label depression_npc_group_scene:
 
     darius neutral "The guilt appears to me in the form of a giant disembodied hand. It points directly towards my heart. I hear something echo in my mind."
 
+    play sound char_telepathy volume 0.5
     darius sad "It says, {i}‘You did this. You. You. You.’{/i} And I know they’re right."
 
     darius neutral "I wish it would quiet."
@@ -105,19 +110,21 @@ label depression_npc_group_scene:
     ava angry blush "Every decision eats at our soul, Inspector."
 
     ava sad "Of which so little remains."
+    stop music fadeout 5.0
 
     hide ava with dissolve
     hide darius with dissolve
     hide susurha with dissolve
-
+    $ vivi_fullbody = False
     show vivi neutral at left:
-        xzoom -1
-
+        xzoom -1 xoffset 0
+    
     show urshu neutral at right
 
     urshu happy "Ah, Vivienne! A journalist to the bitter end, I see, eh? Glad I found you. Let us allow our fellow passengers some space. Perhaps I could regale you instead?"
 
     vivi angry "Thanks, Urshunabi, but I think my bed is calling my name, and I’d hate to ignore it. Night."
+    stop ambience fadeout 1.0
 
     #JUMP TO Depression debrief
 

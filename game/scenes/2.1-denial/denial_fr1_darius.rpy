@@ -130,7 +130,7 @@ label denial_fr1_darius:
 
             vivi "So then, what do you see when you look at me?"
 
-            show darius happy blush with dissolve
+            show darius happy blush
 
             darius "I— uhh, erm... my detective skills are a bit off today, you see. Try asking me again tomorrow, I'm sure I'll have a better answer for you."
 

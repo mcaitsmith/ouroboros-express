@@ -5,6 +5,9 @@ label romance_darius:
     #Romance/Darius Wrecker
     #LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory fadein 1.0
+
+    show romancemotes
 
     show darius surprised at center_right with dissolve:
         xpos 0.65
@@ -17,8 +20,9 @@ label romance_darius:
     with { "master" : Dissolve(1.0) }
     pause 2.0
 
-    # show darius surprised blush with dissolve
+    # show darius surprised blush
     show darius_vivi hug blush at center
+    play music dariusmusic loop
     darius "Yes?"
     vivi happy blush "Yes."
     vivithinking happy blush "Their hands... those claws. He holds me so delicately."
@@ -30,14 +34,17 @@ label romance_darius:
     darius happy "I'd take these brief moments with you over millennia of the sorry existence I had before."
 
     # VISUAL: the screen shakes, flickering
+    play sound cineboom
     show observatory with hpunch
     show observatory with flash
     show observatory with flash
 
     vivithinking sad "The end... It's here... But I feel at peace." 
     vivithinking happy "Wherever you are, Urshu — thank you."
+    stop music fadeout 5.0
 
     # VISUAL: screen fades to black  
+    stop ambience fadeout 1.0
     scene black with fade
 
     show urshu happy at center with dissolve
@@ -46,11 +53,13 @@ label romance_darius:
     urshu neutral "I must admit, there were a few close misses. Ah, love. It seems such a shame for their story to end here..."
     urshu neutral "..."
     urshu happy "But now, what kind of conductor would I be if I couldn't arrange an alternate journey for my passengers? Oh dear, I've become quite the romantic fool in my old age..."
+    play music finalemusic loop
 
     # VISUAL: screen fades to white
     scene white with Dissolve(3.0)
     # LOCATION: terminalofdreams
     scene terminalofdreams with Dissolve(2.0)
+    play ambience amb_terminal fadein 2.0
     pause 1.0
     show darius happy at center_right with dissolve:
         xpos 0.65
@@ -68,6 +77,7 @@ label romance_darius:
     darius happy "Don't wait about, my love; let's go explore. I don't intend to make a mess of it this time."
     vivi happy "I'm with you."
 
+    stop ambience fadeout 3.0
     scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
@@ -94,7 +104,7 @@ label romance_darius:
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
-    play music goodendmusic volume 0.5
+    play music creditsmusicgood loop
     call screen credits
     stop music fadeout 3.0
     pause 3.0

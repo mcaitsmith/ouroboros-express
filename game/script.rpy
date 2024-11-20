@@ -11,157 +11,21 @@ define ava = Character("Asha", callback = name_callback, cb_name = "ava",image="
 define darius = Character("Darius", callback = name_callback, cb_name = "darius",image="darius",color="#FFFFFF", namebox_background=Frame("gui/namebox_darius.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define susurha = Character("Susu'Rha", callback = name_callback, cb_name = "susurha",image="susurha",color="#FFFFFF", namebox_background=Frame("gui/namebox_susurha.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 
-###MUSIC
-#TITLE MUSIC
-# define titlemusic = "audio/music/lavenders blue.ogg"
+init:
+    call images_bgs from _images_bgs # define background/CG images
+    call images_chars from _images_chars # define character sprite images
 
-#MOOD MUSIC
-define mainmusic = "audio/music/orex_mx_main.ogg"
-define mysterymusic = "audio/music/orex_mx_mystery.ogg"
-define mysterymusicpiano = "audio/music/orex_mx_mysterypiano.ogg"
-define horrormusic = "audio/music/orex_mx_horror.ogg"
-define peacefulmusic = "audio/music/orex_mx_peaceful.ogg"  
-define confrontationmusic = "audio/music/orex_mx_mystery.ogg" #tense, dramatic
-define spymusic = "audio/music/orex_mx_mystery.ogg" #suspensful spy music
-
-#MUSIC SEQUENCES
-define revealmusic = "audio/music/orex_mx_mystery.ogg"
-
-#CHARACTER THEMES
-define susumusic = "audio/music/orex_mx_susu.ogg" 
-define dariusmusic = "audio/music/orex_mx_darius.ogg"
-define ashamusic = "audio/music/orex_mx_asha.ogg"
-
-#ENDING THEMES
-define goodendmusic = "audio/music/Good Ending.ogg"
-define badendmusic = "audio/music/orex_mx_cosmicself.ogg"
-define finalemusic = "audio/music/orex_mx_finale.ogg"
-
-
-# define silhouette images
-image ava silhouette = "images/characters/ava/ava silhouette.png"
-image darius silhouette = "images/characters/darius/darius silhouette.png"
-image susurha silhouette = "images/characters/susurha/susurha silhouette.png"
-
-# define blurred background images
-image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
-image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
-image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
-image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
-
-# define decay overlay bg images
 # define day for quick fix for a bug
 define day = 0
-layeredimage cabin:
-    always:
-        "images/backgrounds/cabin.png"
-    if day == 2:
-        "decay_bedroom_1"
-    elif day == 3:
-        "decay_bedroom_2"
-    elif day == 4 or day == 6:
-        "decay_bedroom_3"
-layeredimage observatory:
-    always:
-        "images/backgrounds/observatory.png"
-    if day == 2:
-        "decay_observatory_1"
-    elif day == 3:
-        "decay_observatory_2"
-    elif day == 4 or day == 6:
-        "decay_observatory_3"
-layeredimage lounge:
-    always:
-        "images/backgrounds/lounge.png"
-    if day == 2:
-        "decay_lounge_1"
-    elif day == 3:
-        "decay_lounge_2"
-    elif day == 4 or day == 6:
-        "decay_lounge_3"
-layeredimage diningcar:
-    always:
-        "images/backgrounds/diningcar.png"
-    if day == 2:
-        "decay_bar_1"
-    elif day == 3:
-        "decay_bar_2"
-    elif day == 4 or day == 6:
-        "decay_bar_3"
-
-# add second channel for sfx
-init python:
-    renpy.music.register_channel("sound2", "sfx", False)
-
-# define white background
-image white = "#ffffff"
-
-# define NPC expression and blush layered images
-layeredimage ava:
-    at sprite_highlight('ava')
-    group face auto:
-        attribute neutral default
-    group overlay:
-        attribute blush:
-            "ava_overlay_blush"
-layeredimage darius:
-    at sprite_highlight('darius')
-    group face auto:
-        attribute neutral default
-    group overlay:
-        attribute blush:
-            "darius_overlay_blush"
-layeredimage susurha:
-    at sprite_highlight('susurha')
-    group face auto:
-        attribute neutral default
-    group overlay:
-        attribute blush:
-            "susurha_overlay_blush"
-layeredimage urshu:
-    at sprite_highlight('urshu')
-    group face auto:
-        attribute neutral default
-    group overlay:
-        attribute blush:
-            "urshu_overlay_blush"
-
-# define vivi images
-image vivi neutral = At('images/characters/vivi/vivi neutral.png', sprite_highlight('vivi'))
-image vivi happy = At('images/characters/vivi/vivi happy.png', sprite_highlight('vivi'))
-image vivi sad = At('images/characters/vivi/vivi sad.png', sprite_highlight('vivi'))
-image vivi angry = At('images/characters/vivi/vivi angry.png', sprite_highlight('vivi'))
-image vivi surprised = At('images/characters/vivi/vivi surprised.png', sprite_highlight('vivi'))
-image vivi neutral blush = At('images/characters/vivi/vivi neutral blush.png', sprite_highlight('vivi'))
-image vivi happy blush = At('images/characters/vivi/vivi happy blush.png', sprite_highlight('vivi'))
-image vivi sad blush = At('images/characters/vivi/vivi sad blush.png', sprite_highlight('vivi'))
-image vivi angry blush = At('images/characters/vivi/vivi angry blush.png', sprite_highlight('vivi'))
-image vivi surprised blush = At('images/characters/vivi/vivi surprised blush.png', sprite_highlight('vivi'))
-image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
-image vivi_conductor neutral = At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
-image vivi_conductor happy = At('images/characters/vivi/vivi_conductor/vivi_conductor happy.png', sprite_highlight('vivi'))
-image vivi_conductor surprised = At('images/characters/vivi/vivi_conductor/vivi_conductor surprised.png', sprite_highlight('vivi'))
-
-# define urshu dining images
-image urshudining neutral = At('images/characters/urshu/urshu dining/urshu_neutral_table.png', sprite_highlight('urshudining'))
-image urshudining happy = At('images/characters/urshu/urshu dining/urshu_happy_table.png', sprite_highlight('urshudining'))
-image urshudining sad = At('images/characters/urshu/urshu dining/urshu_sad_table.png', sprite_highlight('urshudining'))
-image urshudining angry = At('images/characters/urshu/urshu dining/urshu_angry_table.png', sprite_highlight('urshudining'))
-image urshudining surprised = At('images/characters/urshu/urshu dining/urshu_surprised_table.png', sprite_highlight('urshudining'))
-image urshudining neutral blush = At('images/characters/urshu/urshu dining/urshu_neutral_table_blush.png', sprite_highlight('urshudining'))
-image urshudining happy blush = At('images/characters/urshu/urshu dining/urshu_happy_table_blush.png', sprite_highlight('urshudining'))
-image urshudining sad blush = At('images/characters/urshu/urshu dining/urshu_sad_table_blush.png', sprite_highlight('urshudining'))
-image urshudining angry blush = At('images/characters/urshu/urshu dining/urshu_angry_table_blush.png', sprite_highlight('urshudining'))
-image urshudining surprised blush = At('images/characters/urshu/urshu dining/urshu_surprised_table_blush.png', sprite_highlight('urshudining'))
-
-# define flash effect
-define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 # define custom positions for sprites
 transform center_left:
     xalign 0.2 yalign 1.0
 transform center_right:
     xalign 0.8 yalign 1.0
+
+# define flash effect
+define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 # define custom screen effects
 transform bright:
@@ -178,10 +42,7 @@ transform train_shake:
     # linear 0.3 xoffset 0 yoffset 0
     repeat
 
-init python:
-    config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
-
-# add layer for eldritch overlay
+# add layer for eldritch overlay (currently not used)
 define config.layers = [ 'background','master', 'transient', 'screens', 'overlay','eldritch_overlay']
 # define layers of backgrounds and NPCs
 $ config.tag_layer['observatory'] = 'background'
@@ -237,8 +98,35 @@ label hide_overlay: # call this label to hide eldritch overlay
     # with { "master" : Dissolve(1.0) }
     return
 
+# define splashscreen with SLS logo
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    play sound twinkle fadein 2.0
+
+    pause 2.0
+
+    # show splashlogo at truecenter with dissolve:
+    #     zoom 2.0
+    # with Pause(3)
+
+    # $ renpy.movie_cutscene('images/SLS_Logo.mpg')
+    show splashlogo
+
+    pause 4.5
+
+    stop sound fadeout 2.0
+
+    scene black with dissolve
+    with Pause(3)
+
+    return
+
 init python:
-    config.auto_voice = "audio/voice/{id}.ogg"
+    config.auto_voice = "audio/voice/{id}.ogg" # define location of voice files for VO
+    config.keymap['save_delete'].append('K_d') # Add D key for deleting saves
+    renpy.music.register_channel("sound2", "sfx", False) # add second channel for sfx
 
 # The game starts here.
 
@@ -254,15 +142,36 @@ label start:
     pause 1.0
 
     menu:
+        "Photosensitive Warning: Read Before Playing?"
+        "Yes":
+            "A very small percentage of individuals may experience epileptic seizures when exposed to certain light patterns or flashing lights."
+            "Exposure to certain patterns or backgrounds on a computer screen, or while playing video games, may induce an epileptic seizure in these individuals."
+            "Certain conditions may induce previously undetected epileptic symptoms even in persons who have no history of prior seizures or epilepsy."
+            "If you, or anyone in your family, have an epileptic condition, consult your physician prior to playing."
+            "Symptoms may include dizziness, altered vision, eye or muscle twitches, loss of awareness, disorientation, any involuntary movement, or convulsions."
+            "If you experience any of these symptoms while playing a video or computer game, IMMEDIATELY discontinue use and consult your physician before resuming play."
+            window hide
+        "No":
+            window hide
+
+    pause 1.0
+
+    menu:
         "Press Shift+A to set accessibility options before beginning the game."
         "Continue":
             "Access the menu anytime by pressing the Escape key. A tutorial on the game features is available from the Settings option in the main menu."
             window hide dissolve
             stop music fadeout 3.0
-            pause 3.0
+            pause 5.0
             jump begin
 
 label begin:
+
+    # TRAIN BELL INTRO
+    play sound trainbell
+    pause 5.0
+    stop sound fadeout 3.0
+    pause 3.0
 
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False

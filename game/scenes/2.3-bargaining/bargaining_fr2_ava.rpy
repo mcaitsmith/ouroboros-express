@@ -7,9 +7,11 @@ label bargaining_fr2_ava:
     # LOCATION: diningcar
     # call check_overlay from _call_check_overlay_20
     scene diningcar with fade
+    play ambience amb_bar if_changed fadein 1.0
+    play music mainmusic loop
 
     # SOUND: cooking, kitchen sounds
-    play sound cooking
+    #play sound cooking
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -19,8 +21,8 @@ label bargaining_fr2_ava:
     vivi neutral "Thanks for coming on such short notice, Asha. I really need your help."
     ava happy "Of course, my radiant companion."
     ava neutral "What services of ours do you require so urgently?"
+    stop music fadeout 3.0
 
-    stop sound fadeout 1.0
 
     # <CHOICE>
     vivi neutral blush "Asha, to be entirely honest...well..."
@@ -29,18 +31,24 @@ label bargaining_fr2_ava:
         # OPTION 1 +ATTRACTION
         "I want to cook together...with you.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
-
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
+            
+            play music ashamusic fadein 5.0 loop
             vivi neutral blush "I want to cook together... With you."
+            
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivi neutral blush "I bet we can whip up something really incredible."
-            show ava happy blush with dissolve
+            show ava happy blush
             
             # <CHOICE>
             ava "We would be honored to cook with you. It has been over a decade since we've set foot in a kitchen. This should prove to be...interesting."
@@ -90,24 +98,28 @@ label bargaining_fr2_ava:
         # OPTION 3 >>ATTRACTION +ATTRACTION
         "Be my sous chef! Together, we'll rule this train." if att_meter_ava >= 40:
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral blush "Be my sous chef! Together, we'll rule this train."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
-            show ava surprised blush with dissolve
+            show ava surprised blush
             ava "We're not sure exactly what you mean."
             vivi neutral "A sous chef is the right-hand to the main chef! We're gonna be making something in the kitchen today!" 
             show ava surprised -blush
             ava surprised "Right...hand?"
             ava happy "We don't know with confidence what you speak of, but your passion is coming through."
             vivi surprised blush "Did you just...use a contraction?"
-            show ava surprised blush with dissolve
+            show ava surprised blush
             ava "A what?"
             vivi neutral blush "Errr...Nevermind!"
 
@@ -118,15 +130,16 @@ label bargaining_fr2_ava:
 
             # JUMP TO: vivi neutral "So what shall we make, then?"
 
+    play music ashamusic if_changed fadein 5.0 loop #Music will queue earlier if you do the first attraction option, otherwise it will start here.
     ava neutral "So what shall we make, then?"
     vivi neutral "Good question! What meal feels like home for you?"
-    show ava surprised blush with dissolve
+    show ava surprised blush
     ava "Well, whenever I was feeling unhappy, the servants would bring me a cornucopia of croquembouche."
     vivithinking "That sounds like a nightmare to make..."
     show ava happy -blush
     ava happy "Do you enjoy cooking at home? Allegedly the food culture on Earth has few rivals."
     vivi happy blush "You heard right! I've taken a few cooking classes back home. They even taught me how to make soufflé!"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "That sounds lovely, but it couldn't compare to the delight of croquembouche."
 
     show vivi neutral at left
@@ -142,12 +155,16 @@ label bargaining_fr2_ava:
         # OPTION 1 +DECAY
         "Croquembouche.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi happy "Let's make the croquembouche you used to have at home. I'm sure it'll put us in a good mood."
             hide decay_icon
@@ -192,12 +209,16 @@ label bargaining_fr2_ava:
         # OPTION 3 +DECAY 
         "Soufflé.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Soufflé. I think I can remember the recipe from my class."
             hide decay_icon
@@ -210,7 +231,11 @@ label bargaining_fr2_ava:
             # JUMP TO: "Let's get cooking!"
 
     vivi happy blush "Let's get cooking!"
-    show ava happy blush with dissolve
+
+    $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=1.0) #make space for cooking layer in the ambience
+    $ renpy.music.set_volume(0.5, delay=1.0, channel='ambience') #lower ambience volume to leave space for cooking sound
+    play cd_ambience cooking fadein 1.0 loop #playing this on cd_ambience channel to avoid clashing with decay sound upcoming
+    show ava happy blush
     ava "We shall wash our hands, just in case."
 
     hide ava with dissolve
@@ -219,7 +244,7 @@ label bargaining_fr2_ava:
 
     show ava neutral at right with dissolve
 
-    show ava neutral blush with dissolve
+    show ava neutral blush
 
     ava "Apologies..."
     vivi neutral "For what, Asha? You worry too much."
@@ -235,18 +260,22 @@ label bargaining_fr2_ava:
         # OPTION 1 +ATTRACTION
         "If we work together?": 
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -850
             $ att_meter_ava += int(att_max_bargaining_fr2 / att_num_list_ava[3])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral blush "Do you mind if we work together? I'm not the most comfortable in the kitchen."
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             vivithinking "That's a lie. But I want her...near." 
-            show ava happy blush with dissolve
+            show ava happy blush
             ava "Of course, Vivienne. Let's do this together."
             vivi neutral blush "I like this new Asha. Where has she been?"
             show ava neutral blush
@@ -258,12 +287,16 @@ label bargaining_fr2_ava:
         # OPTION 2 +DECAY
         "Beating the eggs and sifting the flour for me?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
+            $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
                 xoffset -500
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_bargaining / dec_num_bargaining)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
+            $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Do you mind beating the eggs and sifting the flour for me? I'll take care of the other stuff, and we can combine ingredients."
             hide decay_icon
@@ -278,17 +311,18 @@ label bargaining_fr2_ava:
             # JUMP TO: vivi neutral blush "Nothing at all..."
 
     vivi neutral blush "Nothing at all..."
-
-    # SOUND: cooking sounds
-    play sound cooking
-
-    # PAUSE
     pause 3.0
 
-    stop sound fadeout 1.0
-
+    # SOUND: cooking sounds
+    stop cd_ambience fadeout 3.0
+    $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=3.0)
+    $ renpy.music.set_volume(1.0, delay=3.0, channel='ambience')
+    pause 3.0
+    play sound dinnerware
+    pause 1.0
+    stop music fadeout 10.0
     vivi surprised "Wow! I can't believe we actually did it. It tastes so good too!"
-    show ava happy blush with dissolve
+    show ava happy blush
     ava "Shall we present our creation to the conductor?"
     vivi happy "Let's do it!"
 
@@ -315,6 +349,7 @@ label bargaining_fr2_ava:
         vivithinking "And I'm not crazy, either. Asha really is changing her speech pattern around me. I think... No, I shouldn't read into it too much."
     #END
     show ava neutral -blush
+    stop ambience fadeout 1.0
 
     #JUMP TO: URSHU MEAL REVEAL
     jump bargaining_meal_reveal

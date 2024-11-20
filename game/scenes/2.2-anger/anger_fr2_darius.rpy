@@ -20,7 +20,10 @@ label anger_fr2_darius:
     vivi happy "Well well. If it isn't the melancholy mindflayer."
     darius surprised "Melancholy? Heh. Then what do I call you? The rapacious reporter? The insensitive investigative journalist?"
     vivi happy blush "You can call me whatever you like. As long as you call me."
-    show darius surprised blush with dissolve
+
+    play music peacefulmusic loop
+    show darius surprised blush
+
     darius "I'll be sure to call you on my... shell phone."
     vivi happy "..."
     show darius sad blush
@@ -44,6 +47,7 @@ label anger_fr2_darius:
     darius sad "Not exactly, no. I've been a bit... busy for the last thousand years."
     darius neutral "And as a side note, not all flirting is harmless. Trust me."
     vivi sad "I...I didn't mean to bring up anything painful."
+    stop music fadeout 5.0
     vivithinking sad "He's staring at me—No, through me—So intensely."
     vivi neutral "So... What have you been busy with?"
     darius neutral "Oh, this and that. My kind live a long time. At least...we're supposed to."
@@ -59,7 +63,7 @@ label anger_fr2_darius:
     vivithinking surprised "He's practically shaking."
     vivithinking neutral "Yep. There goes Vivi, running her mouth like a bull in a china shop again."
     vivi neutral "I've touched a nerve. I'm sorry. Again. I swear I'm not trying to get under your skin."
-    show darius neutral blush with dissolve
+    show darius neutral blush
     darius "Whether you were trying to or not, you've a talent for it."
     vivi neutral blush "Should we...play some darts?"
 
@@ -71,6 +75,7 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "Throw a dart while looking straight into Darius' eyes.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -78,6 +83,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             pause 1.0
@@ -99,6 +105,7 @@ label anger_fr2_darius:
     # OPTION 2 +DECAY
         "Actually...forget it.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -106,6 +113,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Actually...forget it."
@@ -133,6 +141,7 @@ label anger_fr2_darius:
     # OPTION 1 +ATTRACTION
         "If I tell you a secret, will you tell me one of yours?":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound attchoice
             show attraction_icon at right with Dissolve(2.0):
@@ -140,6 +149,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -850
             $ att_meter_darius += int(att_max_anger_fr2 / att_num_list_darius[1])
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "If I tell you a secret, will you tell me one of yours?"
@@ -158,6 +168,7 @@ label anger_fr2_darius:
     # OPTION 2 +DECAY
         "Sounds like you miss it a little.":
 
+            $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(1000), replace=True, duration=0.25)
             $ renpy.music.set_volume(0.5, delay=0.25, channel='music')
             play sound decchoice
             show decay_icon at right with Dissolve(2.0):
@@ -165,6 +176,7 @@ label anger_fr2_darius:
                 # xoffset -30
                 yoffset -750
             $ dec_meter += int(dec_max_anger / dec_num_anger)
+            $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=1.5)
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivi neutral "Sounds like you miss it a little."

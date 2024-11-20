@@ -7,6 +7,8 @@ label bargaining_meal_reveal:
     # LOCATION: lounge
     # call check_overlay from _call_check_overlay_23 
     scene lounge with fade
+    play ambience amb_lounge if_changed fadein 1.0
+    play music mainmusic loop
 
     show vivi neutral at left with dissolve:
         xzoom -1
@@ -31,9 +33,10 @@ label bargaining_meal_reveal:
     elif fr2_bargaining_choice == "Susu'Rha":
         call susurha_route from _call_susurha_route
 
-
+    stop ambience fadeout 1.0
     # LOCATION: observatory
     scene observatory with fade
+    play ambience amb_observatory if_changed fadein 1.0
 
     show vivi happy at center with dissolve
 
@@ -72,7 +75,7 @@ label bargaining_meal_reveal:
             vivithinking neutral "I need to hold on to something!"
             vivithinking neutral "But no, what if [fr2_bargaining_choice] doesn't want to?" 
             vivithinking neutral "Fuck it!"
-            show vivi neutral blush with dissolve:
+            show vivi neutral blush:
                 xpos 0.5
                 linear 0.5 xpos 0.7
             #show [INSERT NPC] surprise blush at left
@@ -105,7 +108,10 @@ label bargaining_meal_reveal:
             # JUMP TO: vivithinking neutral "He's taking another bite!"    
 
     vivithinking neutral "He's taking another bite! And another! He's...he's crying."
-    show urshudining sad blush with dissolve
+
+    stop music fadeout 20.0
+    show urshudining sad blush
+
     urshudining "My, my. I have never... My mouth dances with joy! The texture, the temperature, the sensation of it all. You have truly gone A and B the C of D."
     if fr2_bargaining_choice == "Asha":
         call show_ava_surprised from _call_show_ava_surprised
@@ -122,6 +128,7 @@ label bargaining_meal_reveal:
     vivi happy "Oh, my God Urshu! Thank you! Thank you! Thank you! I am so—"
     vivi neutral "..."
     vivi neutral "Wait, what do you mean by...certain?"
+    show urshudining sad
     vivithinking neutral "Holy moly. He's crying again!"
     vivithinking neutral "Crying? No, sobbing." 
     vivithinking neutral "That's not a happy cry. He's covering his mouth."
@@ -147,6 +154,7 @@ label bargaining_meal_reveal:
     urshudining sad "I underestimated you, as I so often do with humans."
     vivi neutral "Ursh..."
     urshudining sad "I did not think you would complete the task at hand, let alone with a companion."
+    play music sorrowmusic loop
     urshudining sad "So I have led you into another ruse, I fear."
     vivi neutral "...No."
     urshudining sad "I do not possess what you call \"taste buds.\" I do not know what this actually tastes like."
@@ -171,7 +179,7 @@ label bargaining_meal_reveal:
         vivi sad "I cannot believe you, Urshu. That you did this. {i}You.{/i}" 
         vivi sad "You know, I actually trusted you, more than most. I don't have much time left, but I gave you plenty of it. I heard you out. I listened to you, and all your ferryman stuff."
         vivi sad "And I opened up to you. I haven't spoken to anyone - {i}anyone{/i} - like that in a long time. You looked me in the eye and said that we understood each other perfectly."
-        vivi sad "I got to feel... I felt like we were..."
+        vivi sad "I got to feel... I felt like we were..." 
         urshudining sad "My dear Vivi?"
         vivi sad "No. It doesn't matter. Because you clearly don't, and we're clearly not. I thought I was seeing my time here wisely, differently, like you said I should. But maybe I don't have the investigative chops I thought I did." 
         urshudining sad "Dear Vivi, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
@@ -185,7 +193,7 @@ label bargaining_meal_reveal:
         urshudining sad "Dear Vivienne, I did not mean to obscure the truth. I tried to tell you numerous times that I do not possess the power to take you off this train, yet you only hear what you want to hear."
 
     #SOUND: Prime moment for sad music
-    stop music fadeout 5.0 # gonna stop the music here for effect
+    # gonna stop the music here for effect
     
     urshudining neutral "As my way of apologizing, let me elucidate for you something you cannot seem to accept..."
     urshudining neutral "While living, you received innumerable second chances to make things right in your own life."
@@ -193,12 +201,16 @@ label bargaining_meal_reveal:
     urshudining neutral "I told you that I am a conductor, nothing more. I am sorry for this ruse. It was wrong of me to play with your heart in such a careless manner." 
     urshudining neutral "But when you shook my hand, there was a certain hope in your soul, Miss Sanssouci, that I was too weak to crush at its onset." 
     urshudining neutral "Only now are you ready to accept the reality of—"
+    stop music fadeout 3.0
     vivi sad "I can't hear another word. I can't—"
 
     # fade out
+    stop ambience fadeout 1.0
     scene black with fade
-
+    play cd_ambience amb_cosmicdecay fadein 1.0
+    
     vivithinking neutral "It's falling apart again. It's all..."
+    stop cd_ambience fadeout 1.0
 
     # JUMP TO: Debrief Bargaining
     jump bargaining_debrief
@@ -222,7 +234,7 @@ label bargaining_meal_reveal:
         vivi neutral "You didn't have to do this, but you still did, and I just..."
         vivi neutral "I really appreciate it."
         darius neutral "You're welcome, Vivi. I'm glad I could help."
-        show darius neutral blush with dissolve
+        show darius neutral blush
         darius "...Anyways."
         vivi neutral "Yeah. We should go."
         show darius neutral -blush
@@ -235,13 +247,13 @@ label bargaining_meal_reveal:
         return
 
     label show_ava_blush:
-        show ava surprised blush with dissolve
+        show ava surprised blush
         return
     label show_darius_blush:
-        show darius surprised blush with dissolve
+        show darius surprised blush
         return
     label show_susurha_blush:
-        show susurha surprised blush with dissolve
+        show susurha surprised blush
         return
 
     label show_ava_surprised:

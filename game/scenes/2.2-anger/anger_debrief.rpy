@@ -8,7 +8,8 @@ label anger_debrief:
     # call check_overlay from _call_check_overlay_2
     scene cabin with fade
     play ambience amb_bedroom fadein 1.0
-    
+    $ urshu_fullbody = False
+    $ darius_fullbody = False
     # ??DECAY
     if dec_meter >= 10:
 

@@ -6,6 +6,7 @@ label romance_cs:
 
     # LOCATION: lounge
     scene lounge with fade
+    play ambience amb_lounge fadein 1.0
 
     $ ava_confess = False
     $ darius_confess = False
@@ -199,7 +200,7 @@ label romance_cs:
 
                     # SOUND: Snap of fingers
                     play sound snap
-                    pause 1.0
+                    pause 4.0
 
                     vivithinking surprised "What just happened? The decay of the train... It's completely reversed."
                     vivithinking surprised "And I feel warmth. I didn't realize how {i}cold{/i} this train was until now. How cold {i}I{/i} was." 
@@ -208,10 +209,12 @@ label romance_cs:
                     urshu happy "Like I said before. This train takes you to where you need to go. And the destination is finally clear." 
 
                     # VISUAL: screen starts flashing white
+                    play sound trainshake fadein 1.0
                     show lounge with flash
                     show lounge with flash
                     show lounge with flash
                     show lounge at bright with dissolve
+                    stop sound fadeout 1.0
 
                     vivi surprised "Wait, Urshu! What's going on?"
                     vivi surprised "Where am I going?" 

@@ -69,7 +69,7 @@ define config.sample_voice = "audio/voice/lookaround_0ecf15b5.ogg"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/music/lavenders blue_truncated.ogg"
+define config.main_menu_music = "audio/music/orex_mx_menu.ogg"
 
 
 ## Transitions #################################################################
@@ -101,6 +101,7 @@ define config.game_main_transition = pixellate
 
 # define config.end_game_transition = None
 define config.end_game_transition = fade
+define config.end_splash_transition = fade
 
 
 ## A variable to set the transition used when the game starts does not exist.
