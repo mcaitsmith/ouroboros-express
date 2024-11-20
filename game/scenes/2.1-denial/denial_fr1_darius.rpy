@@ -65,7 +65,7 @@ label denial_fr1_darius:
 
     # <CHOICE>
 
-    darius neutral "Now that you mention it, I am... curious. What do you make of this "Urshu's" claim that we must come to terms?"
+    darius neutral "Now that you mention it, I am... curious. What do you make of this \"Urshu's\" claim that we must come to terms?"
 
     menu:
 
