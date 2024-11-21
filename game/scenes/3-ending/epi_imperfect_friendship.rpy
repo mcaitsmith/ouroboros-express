@@ -36,13 +36,14 @@ label epi_imperfect_friendship:
     with hpunch
     vivi "What? No! What, what, what?"
     # show vivi surprised blush with disRsolve:
-    show vivi floating_happy with dissolve:
+    show vivi floating_surprised blush with dissolve:
         linear 4 ypos 1100 xpos 700
         linear 4 ypos 1000 xpos 200
         linear 4 ypos 1200 xpos 500
         repeat 2
         linear 4  ypos 1380 xpos 200
     # vivithinking surprised blush "I'm drifting like an astronaut!"
+    show vivi floating_surprised blush with dissolve
     vivi "I'm drifting like an astronaut!"
     show white:
         linear 0.6 alpha 0.55
@@ -50,6 +51,7 @@ label epi_imperfect_friendship:
     show white:
         linear 0.6 alpha 0.6
     # vivithinking happy "It's warm. I feel like curling up like a cat and purring myself to infinity..."
+    show vivi floating_happy with dissolve
     vivi "It's warm. I feel like curling up like a cat and purring myself to infinity..."
     urshu "Hey! Any last words to your conductor?"
     show white:

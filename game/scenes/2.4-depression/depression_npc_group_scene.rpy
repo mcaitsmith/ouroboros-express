@@ -29,7 +29,7 @@ label depression_npc_group_scene:
     hide susurha with dissolve
 
     show vivi neutral at center with dissolve:
-        xzoom -1 xoffset -300
+        xzoom -1 xoffset -200
 
     vivithinking "Oh, wow! Here they are. Huh. The vibe is kinda off. I’ll hang back. Listen to what they’re talking about on our last night."
     play music sorrowmusic
