@@ -379,7 +379,16 @@ label images_chars:
         At(vivi_return_image('surprised blush'), sprite_highlight('vivi'))
         zoom 1.01 yoffset 20
         linear 0.2 yoffset 0
+    image vivi floating_surprised = At('images/characters/vivi/vivi_floating/vivi floating_surprised.png', sprite_highlight('vivi'))
+    image vivi floating_surprised blush = At('images/characters/vivi/vivi_floating/vivi floating_surprised blush.png', sprite_highlight('vivi'))
     image vivi floating_happy = At('images/characters/vivi/vivi_floating/vivi floating_happy.png', sprite_highlight('vivi'))
+    image vivi floating_happy blush = At('images/characters/vivi/vivi_floating/vivi floating_happy blush.png', sprite_highlight('vivi'))
+    image vivi floating_angry = At('images/characters/vivi/vivi_floating/vivi floating_angry.png', sprite_highlight('vivi'))
+    image vivi floating_angry blush = At('images/characters/vivi/vivi_floating/vivi floating_angry blush.png', sprite_highlight('vivi'))
+    image vivi floating_sad = At('images/characters/vivi/vivi_floating/vivi floating_sad.png', sprite_highlight('vivi'))
+    image vivi floating_sad blush = At('images/characters/vivi/vivi_floating/vivi floating_sad blush.png', sprite_highlight('vivi'))
+    image vivi floating_neutral = At('images/characters/vivi/vivi_floating/vivi floating_neutral.png', sprite_highlight('vivi'))
+    image vivi floating_neutral blush = At('images/characters/vivi/vivi_floating/vivi floating_neutral blush.png', sprite_highlight('vivi'))
     image vivi_conductor neutral:
         At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
         zoom 1.0

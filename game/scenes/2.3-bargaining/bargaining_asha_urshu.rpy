@@ -31,9 +31,9 @@ label bargaining_asha_urshu :
 
     vivithinking "Well, hot damn! They look deep in conversation."
 
-    hide vivi with dissolve
+    # hide vivi with dissolve
 
-    show ava angry at left with dissolve :
+    show ava angry at center with dissolve :
         xzoom -1
     with move
 
