@@ -81,7 +81,6 @@ label anger_urshu_darius:
 
     $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
     play sound char_telepathy
-    darius angry "Urshu, don't think I'm finished with you."
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     
 

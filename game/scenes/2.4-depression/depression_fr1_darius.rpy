@@ -200,7 +200,6 @@ label depression_fr1_darius:
     darius sad "Apologized."
     vivi surprised "For what?"
     darius sad "For anything."
-    darius sad blush "Except to you."
     stop music fadeout 5.0
     vivithinking "Radiating off of them—that uncomfortable heat."
     darius neutral "Well? Surely you must drink to that. I know your kind is always apologizing. ...Whether it's warranted or not."
