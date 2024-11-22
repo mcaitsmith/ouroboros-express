@@ -69,7 +69,7 @@ label sounds:
     #define dining = "audio/sfx/orex_fol_dining.ogg"  #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
     define dinnerware = "audio/sfx/orex_fol_dinnerware.ogg" 
     define doorslam = "audio/sfx/orex_fol_doorslam.ogg"
-    #define furniture = "audio/sfx/orex_fol_furniture.ogg" #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
+    define furniture = "audio/sfx/orex_fol_furniture.ogg" #CURRENTLY NO ASSET HAS BEEN MADE FOR THIS
     define glassclink01 = "audio/sfx/orex_fol_glassclink.ogg"
     define glassclink02 = "audio/sfx/orex_fol_glassclink02.ogg" 
     define glassclink03 = "audio/sfx/orex_fol_glassclink03.ogg"
@@ -100,13 +100,7 @@ label sounds:
     define sigh = "audio/sfx/sigh.ogg" 
     define horror = "audio/music/orex_mx_horror.ogg" #to be phased out, leaving definition to avoid bugs
     define train = "audio/sfx/orex_sfx_trainshake.ogg" #to be phased out, leaving definition to avoid bugs
-    # define scoff = "audio/sfx/scoff.ogg" 
-    # define laugh = "audio/sfx/laugh.ogg"
-    #define gasp = "audio/sfx/gasp.ogg"
-    #define footsteps = "audio/sfx/footsteps.ogg"
-    # define blip = "audio/sfx/blip.ogg"
-
-    define trainbell = "audio/sfx/trainbell.ogg"
+    define trainbell = "audio/sfx/orex_sfx_trainbell.ogg"
 
     #FILTER
     define audio_filter = renpy.audio.filter

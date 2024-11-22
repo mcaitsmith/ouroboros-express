@@ -76,7 +76,7 @@ label romance_susurha:
     window hide fade
     $ quick_menu = False # hide quick menu
     $ _game_menu_screen = None # disable menu
-    play music creditsmusicgood volume 0.5
+    play music creditsmusicgood loop
     call screen credits
     stop music fadeout 3.0
     pause 3.0
