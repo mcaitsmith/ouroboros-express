@@ -26,6 +26,7 @@ label welcome_meal:
 
     # VISUAL: the screen shakes
     show diningcar with hpunch
+    play sound trainshake volume 0.5
 
     vivithinking surprised "WHAT THE—"
 

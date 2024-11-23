@@ -15,8 +15,10 @@ label denial_briefing:
     vivithinking "My head's pounding. Almost as bad as it did that one lunar new year in Hanoi."
     vivithinking "Did I faint yesterday?" 
 
+    play sound dooropen
+    pause 1.0
     show urshu neutral at right with dissolve
-    play sound swoosh
+    #play sound swoosh
 
     urshu "Miss Sanssouci, the Ouroboros Express waits for no one. Least of all a reporter. Do you have a moment?"
 

@@ -339,8 +339,8 @@ label denial_fr2_darius:
     vivi neutral "Shut up."
 
     # SOUND: crash
-    play sound crash #are we sure here?
-    pause 5.0
+    #play sound crash
+    #pause 5.0
     play music mysterymusic
 
     vivithinking "What... what the fuck is that through the window?"
