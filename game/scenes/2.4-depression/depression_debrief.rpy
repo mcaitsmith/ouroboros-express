@@ -39,7 +39,7 @@ label depression_debrief:
         urshu neutral "Enjoy your final night here."
         vivi sad "It's really ending, huh?"
         urshu happy "All may not be as lost as you think."
-        vivi happy "Goodnight, Urshu."
+        vivi sad "Goodnight, Urshu."
         urshu happy "Goodnight, Vivienne."
 
         hide urshu with dissolve
