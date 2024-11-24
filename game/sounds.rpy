@@ -59,6 +59,8 @@ label sounds:
     define char_terror = "audio/sfx/orex_char_terror.ogg"
     define char_telepathy = "audio/sfx/orex_char_telepathy.ogg" #For when Darius uses his telepathic powers
     define char_whistle = "audio/sfx/orex_char_whistle.ogg" #For when Urshu whistles
+    define char_sigh_asha = "audio/sfx/orex_char_sighasha.ogg"
+    define char_sigh_susu =  "audio/sfx/orex_char_sighsusu.ogg"
 
 
 
@@ -96,11 +98,9 @@ label sounds:
     define sparkle = "audio/sfx/orex_sfx_sparkle.ogg"
     define cineboom = "audio/sfx/orex_sfx_cineboom.ogg" #screenshake fun!
     define trainshake = "audio/sfx/orex_sfx_trainshake.ogg" #more screenshake fun!
-    
-    #TO BE DEPRECATED:
-    define sigh = "audio/sfx/sigh.ogg" 
-    define horror = "audio/music/orex_mx_horror.ogg" #to be phased out, leaving definition to avoid bugs
-    define train = "audio/sfx/orex_sfx_trainshake.ogg" #to be phased out, leaving definition to avoid bugs
+
+    #define horror = "audio/music/orex_mx_horror.ogg" #to be phased out, leaving definition to avoid bugs
+    #define train = "audio/sfx/orex_sfx_trainshake.ogg" #to be phased out, leaving definition to avoid bugs
     # define scoff = "audio/sfx/scoff.ogg" 
     # define laugh = "audio/sfx/laugh.ogg"
     #define gasp = "audio/sfx/gasp.ogg"

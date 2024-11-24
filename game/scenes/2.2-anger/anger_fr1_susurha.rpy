@@ -225,8 +225,8 @@ label anger_fr1_susurha:
             susurha happy "Again, you're deflecting."
             susurha angry "But you are right. I'm furious."
             # SOUND: sigh
-            #play sound sigh
-            pause 3.0
+            play sound char_sigh_susu
+            pause 1.0
             vivithinking surprised "That exhale's like, 150 degrees. Hate to see them truly mad."
             susurha angry "The bloodsuckers. The leeches. Those with souls impervious to art and music. All of them infuriate me to no end!"
             vivithinking surprised "My face is literally burning."
