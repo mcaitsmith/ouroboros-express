@@ -73,6 +73,7 @@ label depression_debrief:
         play sound knock
         pause 1.0
 
+        play sound2 dooropen
         show urshu neutral at right with dissolve
 
         urshu neutral "I trust you had a good evening?"

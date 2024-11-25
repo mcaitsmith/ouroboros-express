@@ -21,6 +21,8 @@ label good_briefing:
     # SOUND: knocking on the door
     play sound knock
     pause 1.0
+    play sound2 dooropen
+    pause 1.0
 
     show urshu happy at right with dissolve
 
