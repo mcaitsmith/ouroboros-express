@@ -389,6 +389,7 @@ label images_chars:
     image vivi floating_sad blush = At('images/characters/vivi/vivi_floating/vivi floating_sad blush.png', sprite_highlight('vivi'))
     image vivi floating_neutral = At('images/characters/vivi/vivi_floating/vivi floating_neutral.png', sprite_highlight('vivi'))
     image vivi floating_neutral blush = At('images/characters/vivi/vivi_floating/vivi floating_neutral blush.png', sprite_highlight('vivi'))
+    image vivi jump_surprised = At('images/characters/vivi/vivi_jump/vivi j_surprised.png', sprite_highlight('vivi'))
     image vivi_conductor neutral:
         At('images/characters/vivi/vivi_conductor/vivi_conductor neutral.png', sprite_highlight('vivi'))
         zoom 1.0
