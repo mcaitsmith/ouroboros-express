@@ -11,6 +11,13 @@ label images_bgs:
         linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
         linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         repeat
+    image cabin_windows_overlay:
+        "images/backgrounds/vfx/cabin_window.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
 
     image diningcar_light_overlay:
         "images/backgrounds/vfx/diningcar_light.png"
@@ -19,9 +26,23 @@ label images_bgs:
         linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
         linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         repeat
+    image diningcar_windows_overlay:
+        "images/backgrounds/vfx/diningcar_window.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
 
     image lounge_light_overlay:
         "images/backgrounds/vfx/lounge_lamps.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
+    image lounge_windows_overlay:
+        "images/backgrounds/vfx/lounge_window.png"
         alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         pause 5.0
         linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
@@ -175,6 +196,8 @@ label images_bgs:
             "images/backgrounds/cabin.png"
         group light:
             attribute overlay default
+        group windows:
+            attribute overlay default
         if day == 2:
             "decay_bedroom_1"
         elif day == 3:
@@ -205,6 +228,8 @@ label images_bgs:
             "images/backgrounds/lounge.png"
         group light:
             attribute overlay default
+        group windows:
+            attribute overlay default
         if day == 2:
             "decay_lounge_1"
         elif day == 3:
@@ -216,6 +241,8 @@ label images_bgs:
         always:
             "images/backgrounds/diningcar.png"
         group light:
+            attribute overlay default
+        group windows:
             attribute overlay default
         if day == 2:
             "decay_bar_1"
