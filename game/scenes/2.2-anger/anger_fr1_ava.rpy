@@ -12,7 +12,7 @@ label anger_fr1_ava:
     show vivi neutral at left with dissolve:
         xzoom -1
 
-    vivithinking sad "Looks like our friendly neighborhood sun goddess is here."
+    vivithinking neutral "Looks like our friendly neighborhood sun goddess is here."
 
     show ava happy at right with dissolve
 

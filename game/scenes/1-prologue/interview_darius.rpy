@@ -85,7 +85,7 @@ label interview_darius:
 
             vivi neutral "Tell me about yourself."
             darius neutral "I'd... rather not."
-            vivi neutral "Come on, can't you give me something? Even the tiniest shred?"
+            vivi angry "Come on, can't you give me something? Even the tiniest shred?"
             darius neutral "A detective. I'm a detective."
             vivithinking neutral "Well, then. This suddenly got a lot more interesting."
             vivi neutral "A detective, huh? Here on a case?"
