@@ -15,8 +15,10 @@ label denial_briefing:
     vivithinking "My head's pounding. Almost as bad as it did that one lunar new year in Hanoi."
     vivithinking "Did I faint yesterday?" 
 
+    play sound dooropen
+    pause 1.0
     show urshu neutral at right with dissolve
-    play sound swoosh
+    #play sound swoosh
 
     urshu "Miss Sanssouci, the Ouroboros Express waits for no one. Least of all a reporter. Do you have a moment?"
 
@@ -65,7 +67,7 @@ label denial_briefing:
             urshu happy "Once, long ago, a ferryman called... Sursu toiled in the doldrums of an ordinary immortal career... ferrying souls to and fro. From mortal realms to eternal gardens, or places eternal but foul." 
             vivithinking "What did I sign up for?"
             # SOUND: urshu sighs
-            #play sound sigh #REPLACED WITH VO
+            #play sound sigh #URSHU SIGHING
             urshu neutral "On one occasion, Sursu the ferryman met a sweet soul who asked of him a great favor. Too great, in reality - a lifeline, of sorts. And Sursu felt less than obliged to help this soul - they’d already tried to destroy the ferryman's precious vessel! It was audacious!" 
             urshu neutral "Furthermore, the ferryman was under great scrutiny by the gods who managed him. They were aware of his treasonous heart, which wanted to do more than ferry souls to and fro. They knew he yearned for more than those sad, sole voyages could yield..." 
             urshu neutral "But this sweet soul only did what they thought was right, for they were trapped and lost, with no north star to guide them..."

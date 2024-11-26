@@ -19,6 +19,7 @@ label depression_cs2:
     # SOUND: knocking
     play sound knock
     pause 1.0
+    play sound2 dooropen
 
     show urshu neutral at right with dissolve
     play music mainmusic loop

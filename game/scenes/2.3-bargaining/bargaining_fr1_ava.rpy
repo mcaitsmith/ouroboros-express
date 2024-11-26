@@ -96,7 +96,8 @@ label bargaining_fr1_ava:
             #JUMP TO: vivi neutral blush "It's always memorable talking with you, Asha."
 
     #play sound sigh # Asha sighing
-    pause 2.0
+    play sound char_sigh_asha
+    pause 1.0
     vivi neutral "That was a big sigh. Pebble in your sandal, Asha?"
     ava sad "Regrets, Vivienne. Many. No Avatar is allowed a family, a name, men...even tears."
     show vivi surprised at left:

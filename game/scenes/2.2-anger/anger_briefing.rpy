@@ -46,7 +46,7 @@ label anger_briefing:
 
             vivi angry "I don't have time or patience, patience or time! Get me, Urshu?!"
             # SOUND: urshu sighs
-            #play sound sigh
+            #play sound sigh #URSHU SIGHING
             #pause 4.0
             urshu neutral "Patience enough to repeat yourself."
             vivi angry "What was that?" 

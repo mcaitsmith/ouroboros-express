@@ -103,9 +103,9 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    play sound twinkle fadein 2.0
+    #play sound twinkle fadein 2.0
 
-    pause 2.0
+    #pause 2.0
 
     # show splashlogo at truecenter with dissolve:
     #     zoom 2.0
@@ -116,7 +116,7 @@ label splashscreen:
 
     pause 4.5
 
-    stop sound fadeout 2.0
+    #stop sound fadeout 2.0
 
     scene black with dissolve
     with Pause(3)
@@ -169,9 +169,8 @@ label begin:
 
     # TRAIN BELL INTRO
     play sound trainbell
-    pause 5.0
-    stop sound fadeout 3.0
-    pause 3.0
+    pause 8.0
+    
 
     play music mainmusic volume 0.5 # start main track
     $ has_journal = False

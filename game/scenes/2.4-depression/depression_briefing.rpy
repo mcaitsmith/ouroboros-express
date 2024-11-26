@@ -33,6 +33,7 @@ label depression_briefing:
     pause 2.0
 
     # SOUND: knocking
+    play sound knock
     pause 1.0
 
     # <CHOICE>
@@ -48,6 +49,8 @@ label depression_briefing:
         "I guess so...":
 
             vivithinking neutral "I guess so..."
+            play sound dooropen
+            pause 1.0
             vivi neutral "God, who is it?"
             urshu "Your worst enemy, I imagine."
             vivi angry "You...you fucker! You've done enough! Leave me here to die."
@@ -59,6 +62,8 @@ label depression_briefing:
         "No. Let them knock till their knuckles bleed. Especially if it's Urshu.":
 
             vivithinking "No. Let them knock till their knuckles bleed. Especially if it's Urshu."
+            play sound dooropen
+            pause 1.0
             urshu neutral "Miss Sanssouci, time is passing - you may as well enjoy a delicious breakfast."
             vivithinking angry "Oh, no. He doesn't get to bring me breakfast!"
             urshu "The only thing worse than being dead is being dead and bored. Might as well let me in, I'll cheer you up."

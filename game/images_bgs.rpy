@@ -135,11 +135,11 @@ label images_bgs:
 
     # define SLS logo image
     # image splashlogo = "images/logo.png"
-    image splashlogo = Movie(channel="movie_dp", loop = False, play = 'images/SLS_Logo.mpg')
+    image splashlogo = Movie(channel="movie_dp", loop = False, play = 'images/SLS_Logo.mkv')
 
     # define Orex animated logo image for title
     image titlelogo:
-        Movie(channel="movie_dp", loop = False, play = 'images/OrExLogo_1.mpg')
+        Movie(channel="movie_dp", loop = False, play = 'images/OrEx_Logo.mkv')
         xoffset 93 yoffset 17 zoom 0.97
         pause 4.5
         Movie(channel="movie_dp", loop = True, play = 'images/OrExLogo_repeat.avi')
