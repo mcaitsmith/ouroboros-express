@@ -104,8 +104,26 @@ label images_bgs:
         linear 3.0 alpha 1.0
         repeat
     
-    image terminalofdreams_petals_overlay = SnowBlossom("images/backgrounds/vfx/terminal_petals.png", count=10, border=0, xspeed=(20, 50), yspeed=(50, 100))
-    
+    image terminalofdreams_petal1 = SnowBlossom("images/backgrounds/vfx/terminal_petal1.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal2 = SnowBlossom("images/backgrounds/vfx/terminal_petal2.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal3 = SnowBlossom("images/backgrounds/vfx/terminal_petal3.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal4 = SnowBlossom("images/backgrounds/vfx/terminal_petal4.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal5 = SnowBlossom("images/backgrounds/vfx/terminal_petal5.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal6 = SnowBlossom("images/backgrounds/vfx/terminal_petal6.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal7 = SnowBlossom("images/backgrounds/vfx/terminal_petal7.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal8 = SnowBlossom("images/backgrounds/vfx/terminal_petal8.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+
+    image terminalofdreams_petals_overlay = Composite(
+        (1920, 1080),
+        (0, 0), "terminalofdreams_petal1",
+        (0, 0), "terminalofdreams_petal2",
+        (0, 0), "terminalofdreams_petal3",
+        (0, 0), "terminalofdreams_petal4",
+        (0, 0), "terminalofdreams_petal5",
+        (0, 0), "terminalofdreams_petal6",
+        (0, 0), "terminalofdreams_petal7",
+        (0, 0), "terminalofdreams_petal8")
+
     # mote effect for title screen
     transform mote_fade:
         linear 1.0 alpha 0.0
