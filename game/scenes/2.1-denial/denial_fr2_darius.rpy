@@ -143,7 +143,7 @@ label denial_fr2_darius:
 
     vivi surprised "Trail? Are you some sort of detective?"
 
-    darius surprised "What? Ahem, I'm— something like that, yes. I have a certain set of skills."
+    darius surprised "What? Ahem, I'm— something like that, yes. I have the skills needed for the job, don't you worry."
 
     vivithinking "What a weirdo. They seem pretty confident though, so I'll take their lead on this. Nice to be able to rely on someone for once."
 
@@ -166,7 +166,7 @@ label denial_fr2_darius:
     show vivi neutral at left with dissolve:
         xzoom -1
 
-    darius neutral "Stay behind me and follow my lead."
+    darius neutral "Stay behind me and follow my motions."
 
     vivithinking "Where is he?"
 
@@ -237,7 +237,7 @@ label denial_fr2_darius:
     vivi surprised "Magic. Yeah I think so."
 
     # <CHOICE>
-    darius happy "Exactly what I wanted to see. Come, let's pursue him."
+    darius happy "This is exactly what I wanted to see. Come, let's pursue him."
     stop music fadeout 15
 
     menu: 
@@ -270,7 +270,7 @@ label denial_fr2_darius:
     show vivi surprised at left with dissolve:
         xzoom -1 
 
-    darius surprised "Hopefully my senses are somewhat intact here. It's been a while since I had to track a mage."
+    darius surprised "Been a while since I had to track a mage. Hopefully my senses are somewhat intact here."
 
     # <CHOICE>
 
@@ -310,7 +310,7 @@ label denial_fr2_darius:
             #JUMP TO: darius neutral "Found anything yet?"
 
 
-    darius neutral "Found anything yet?"
+    darius neutral "Found any sign of an escape yet?"
 
     vivi angry "No. It's like nothing makes sense on this train, the doors just lead to more doors. There's no final car either. It's almost like it just... keeps going."
 
@@ -334,7 +334,7 @@ label denial_fr2_darius:
     show darius at center:
         xzoom -1
 
-    darius surprised "Ms. Sanssouci, I didn't take you to be one for stargazing. This hardly seems the time for it."
+    darius surprised "Ms. Sanssouci, I didn't take you to be one for stargazing, but this hardly seems the time for it."
     stop sound fadeout 3.0
     vivi neutral "Shut up."
 
@@ -487,7 +487,7 @@ label denial_fr2_darius:
     vivithinking "... I don't know what to say."
 
     show darius angry at right
-    darius angry "Urshu. What was it all for? Give me something."
+    darius angry "Urshu. What was it all for them? Who am I anymore?"
 
     urshu sad "Unfortunately, I can't answer that for you, my friend. I'm sure you'll learn the answer yourself, in time."
 
@@ -538,14 +538,14 @@ label denial_fr2_darius:
 
     darius "I... I suppose I'm not anymore."
 
-    darius "I'm sorry, Vivi; I lost my temper. Thank you for your assistance. I hope you can forgive my little outburst."
+    darius "I'm sorry, Vivi; I lost my temper. Thank you for joining me, and I hope you can forgive that little outburst."
 
     vivithinking "Are they muttering to themselves?"
 
     show darius sad -blush:
         xzoom -1
 
-    darius "It was all meaningless..."
+    darius "It was all pointless..."
 
     hide darius with dissolve
 
