@@ -117,7 +117,7 @@ label denial_fr2_darius:
 
     vivithinking  "A quick flick of the wrist... wish {i}I{/i} could be so graceful. Did they do something..? Things feel a lot lighter."
 
-    darius neutral "A mindflayer's brain is a powerful thing. Sometimes our emotions and thoughts can leak out. I believe you may have been feeling my... malaise, so to speak."
+    darius neutral "A mindflayer's brain is a powerful thing. Sometimes emotions and thoughts can leak out into the atmosphere. I believe you may have been feeling my...malaise, so to speak."
 
     darius neutral "I don't speak with humans often, so I've developed a bit of a bad habit of letting my emotions wander."
 
@@ -487,7 +487,7 @@ label denial_fr2_darius:
     vivithinking "... I don't know what to say."
 
     show darius angry at right
-    darius angry "Urshu. What was it all for them? Who am I anymore?"
+    darius angry "Urshu. What was it all for then? Who am I anymore?"
 
     urshu sad "Unfortunately, I can't answer that for you, my friend. I'm sure you'll learn the answer yourself, in time."
 
