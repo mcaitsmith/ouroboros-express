@@ -65,7 +65,7 @@ label denial_fr1_darius:
 
     # <CHOICE>
 
-    darius neutral "Now that you mention it, I am... curious. What do you make of the conductor's claim that we must come to terms?"
+    darius neutral "Now that you mention it, I am... curious. What do you make of this \"Urshu's\" claim that we must come to terms?"
 
     menu:
 
@@ -75,11 +75,11 @@ label denial_fr1_darius:
             vivi  "I'm not sure." 
             vivi "The man speaks in riddles, and I can't make heads or tails of them right now."
 
-            darius neutral "That is understandable. Last night was certainly a shock."
+            darius neutral "That is understandable. Last night was a shock to be sure."
 
             vivi "Is that something you're interested in? Coming to terms?"
 
-            darius neutral "You could say that. I am recalling details of my life, gradually. But the fog persists. I assume the same goes for you?"
+            darius neutral "You could say that. The details of my life are still cloudy but they're coming back slowly. I'm sure the same goes for you?"
 
             vivi "Yes, some things are coming back slowly."
 
@@ -116,7 +116,7 @@ label denial_fr1_darius:
 
             vivi  "It's interesting. If you're into that, then I guess there's some merit to it. I don't know about you though, but I can't \"come to terms\" here of all places."
 
-            darius surprised "An unusual response. Thank you for humoring me."
+            darius surprised "Interesting. I wouldn't have expected that answer from you. Thank you for humoring me."
 
             vivithinking surprised "What does THAT mean? You don't know me. Unless... oh god, are they reading my mind?"
 
@@ -251,7 +251,7 @@ label denial_fr1_darius:
 
     vivi "Sure. Thank you for being open to my questions."
 
-    darius "Consider it restitution for my earlier rudeness, Ms. Sanssouci."
+    darius "Anytime, Ms. Sanssouci."
     # JUMP TO: Denial 2.1 NPC scene Ava and Darius
     stop music fadeout 1.0
     jump denial_fr1_ava_darius

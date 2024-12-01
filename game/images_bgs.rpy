@@ -11,6 +11,13 @@ label images_bgs:
         linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
         linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         repeat
+    image cabin_windows_overlay:
+        "images/backgrounds/vfx/cabin_window.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
 
     image diningcar_light_overlay:
         "images/backgrounds/vfx/diningcar_light.png"
@@ -19,9 +26,23 @@ label images_bgs:
         linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
         linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         repeat
+    image diningcar_windows_overlay:
+        "images/backgrounds/vfx/diningcar_window.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
 
     image lounge_light_overlay:
         "images/backgrounds/vfx/lounge_lamps.png"
+        alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        pause 5.0
+        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        repeat
+    image lounge_windows_overlay:
+        "images/backgrounds/vfx/lounge_window.png"
         alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         pause 5.0
         linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
@@ -83,8 +104,26 @@ label images_bgs:
         linear 3.0 alpha 1.0
         repeat
     
-    image terminalofdreams_petals_overlay = SnowBlossom("images/backgrounds/vfx/terminal_petals.png", count=10, border=0, xspeed=(20, 50), yspeed=(50, 100))
-    
+    image terminalofdreams_petal1 = SnowBlossom("images/backgrounds/vfx/terminal_petal1.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal2 = SnowBlossom("images/backgrounds/vfx/terminal_petal2.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal3 = SnowBlossom("images/backgrounds/vfx/terminal_petal3.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal4 = SnowBlossom("images/backgrounds/vfx/terminal_petal4.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal5 = SnowBlossom("images/backgrounds/vfx/terminal_petal5.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal6 = SnowBlossom("images/backgrounds/vfx/terminal_petal6.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal7 = SnowBlossom("images/backgrounds/vfx/terminal_petal7.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+    image terminalofdreams_petal8 = SnowBlossom("images/backgrounds/vfx/terminal_petal8.png", count=5, border=0, xspeed=(-20, 20), yspeed=(50, 50), fast=True)
+
+    image terminalofdreams_petals_overlay = Composite(
+        (1920, 1080),
+        (0, 0), "terminalofdreams_petal1",
+        (0, 0), "terminalofdreams_petal2",
+        (0, 0), "terminalofdreams_petal3",
+        (0, 0), "terminalofdreams_petal4",
+        (0, 0), "terminalofdreams_petal5",
+        (0, 0), "terminalofdreams_petal6",
+        (0, 0), "terminalofdreams_petal7",
+        (0, 0), "terminalofdreams_petal8")
+
     # mote effect for title screen
     transform mote_fade:
         linear 1.0 alpha 0.0
@@ -148,13 +187,19 @@ label images_bgs:
     image titlebg:
         "gui/main_menu_overlay.png"
         alpha 0.0
-        pause 4.5
+        pause 2.0
         linear 1.0 alpha 1.0
 
     image titlemenu = Composite(
         (1920, 1080),
         (0, 0), "titlelogo",
         (0, 0), "titlebg")
+
+    image romancemotes = Composite(
+        (1920, 1080),
+        (0, 0), "title_motes",
+        (0, 0), "title_motes2",
+        (0, 0), "title_motes3")
 
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
@@ -168,6 +213,8 @@ label images_bgs:
         always:
             "images/backgrounds/cabin.png"
         group light:
+            attribute overlay default
+        group windows:
             attribute overlay default
         if day == 2:
             "decay_bedroom_1"
@@ -199,6 +246,8 @@ label images_bgs:
             "images/backgrounds/lounge.png"
         group light:
             attribute overlay default
+        group windows:
+            attribute overlay default
         if day == 2:
             "decay_lounge_1"
         elif day == 3:
@@ -210,6 +259,8 @@ label images_bgs:
         always:
             "images/backgrounds/diningcar.png"
         group light:
+            attribute overlay default
+        group windows:
             attribute overlay default
         if day == 2:
             "decay_bar_1"

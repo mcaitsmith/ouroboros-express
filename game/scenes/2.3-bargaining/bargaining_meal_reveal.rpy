@@ -162,6 +162,11 @@ label bargaining_meal_reveal:
     urshudining sad "And I therefore cannot call this the best tasting meal I have ever had."
     vivi angry "YOU. DRINK. NARUBIAN. CITRUS. INFUSED. ESPRESSO. EVERY. FUCKING. MORNING. WHAT. DO. YOU. MEAN. YOU. DON'T. HAVE. TASTE. BUDS?"
     # Sal's note !!!!: Here the chosen NPC talks. If this is effort, it's not worth the pain to implement. It's only one line.
+    # if fr2_bargaining_choice == "Asha":
+    if fr2_bargaining_choice == "Darius":
+        voice "audio/voice/bargaining_meal_reveal_53703497Darius.ogg"
+    elif fr2_bargaining_choice == "Susu'Rha":
+        voice "audio/voice/bargaining_meal_reveal_53703497Susu.ogg"
     npc_meal "Vivienne..." 
     urshudining neutral "You don't understand! Coffee is different. Coffee is a metaphysical experience."
     urshudining neutral "The concept of coffee! Hypothetical productivity with a hint of idealism, mmm! That I can taste. Not the lowly physical aspect."

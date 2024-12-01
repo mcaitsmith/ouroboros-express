@@ -119,7 +119,7 @@ label splashscreen:
     #stop sound fadeout 2.0
 
     scene black with dissolve
-    with Pause(3)
+    with Pause(1)
 
     return
 

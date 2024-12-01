@@ -47,7 +47,7 @@ label depression_fr1_darius:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             darius sad "I'm not sure that's such a good idea."
-            vivi neutral "I do. I'd like your company."
+            vivi neutral "I am. I'd like your company."
             show darius surprised blush
             darius "No one {i}likes{/i} my company. It's my specialty."
             vivi happy blush "Well, consider me the first."
@@ -200,7 +200,6 @@ label depression_fr1_darius:
     darius sad "Apologized."
     vivi surprised "For what?"
     darius sad "For anything."
-    darius sad blush "Except to you."
     stop music fadeout 5.0
     vivithinking "Radiating off of them—that uncomfortable heat."
     darius neutral "Well? Surely you must drink to that. I know your kind is always apologizing. ...Whether it's warranted or not."

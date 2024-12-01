@@ -40,7 +40,7 @@ label anger_urshu_darius:
 
     urshu happy "My sincerest apologies. We want everyone’s experience aboard the Ouroboros Express to be as pleasant as possible."
 
-    darius angry "Pleasant? Really? You call {i}this{/i} pleasant?"
+    darius angry "Stuff it down your stack."
 
     urshu happy "Pardon?"
 
@@ -77,11 +77,10 @@ label anger_urshu_darius:
 
     vivi surprised "Um...hello. I didn’t hear anything."
 
-    darius neutral "I'm sure. Well. Goodnight, Vivi." 
+    darius neutral "Miss. Good night." 
 
     $ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(100), replace=True, duration=2.6)
     play sound char_telepathy
-    darius angry "Urshu, don't think I'm finished with you."
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     
 

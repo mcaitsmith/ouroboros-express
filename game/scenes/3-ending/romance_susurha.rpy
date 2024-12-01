@@ -9,6 +9,8 @@ label romance_susurha:
     scene observatory with fade
     play ambience amb_observatory fadein 1.0
 
+    show romancemotes
+
     show vivi neutral blush at center_left with dissolve:
         xzoom -1
     show susurha happy blush at center_right with dissolve
