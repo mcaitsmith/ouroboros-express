@@ -494,7 +494,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
+        # add gui.main_menu_background
 
         frame:
             style "main_menu_outer_frame"

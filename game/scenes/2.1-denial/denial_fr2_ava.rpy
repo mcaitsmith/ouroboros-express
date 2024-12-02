@@ -118,10 +118,10 @@ label denial_fr2_ava:
     vivithinking "Dammit. I've seen this thing in nightmares." 
     vivithinking "I can't move, I can't breathe."
     ava neutral "Do you...jest? We see a cold abyss, pulsing with hunger and emptiness."
-    stop music fadeout 5.0
-    stop cd_ambience fadeout 5.0
+    stop music fadeout 3.0
+    stop cd_ambience fadeout 3.0
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
-    pause 5.0
+    pause 2.0
 
     play sound teleport_exit
     show urshu happy at left with dissolve:
@@ -139,7 +139,7 @@ label denial_fr2_ava:
     $ renpy.pause(1)
     show vivi surprised blush at center with dissolve:
         xzoom 1
-    $ renpy.pause()
+    $ renpy.pause(1)
     vivi surprised "Where the hell did you come from?"
     show urshu neutral blush
     urshu "Apologies Ms. Sanssouci, sometimes the teleportation spell can be a bit... faulty."
