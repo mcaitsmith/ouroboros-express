@@ -23,6 +23,12 @@ label bargaining_meal_reveal:
         call show_susurha from _call_show_susurha
 
     vivithinking "Okay, this is it. Time to show Urshu what we got."  
+    if fr2_bargaining_choice == "Asha":
+        voice "audio/voice/bargaining_meal_reveal_d0f8f785Ava.ogg"
+    elif fr2_bargaining_choice == "Darius":
+        voice "audio/voice/bargaining_meal_reveal_d0f8f785Darius.ogg"
+    elif fr2_bargaining_choice == "Susu'Rha":
+        voice "audio/voice/bargaining_meal_reveal_d0f8f785Susu.ogg"
     vivithinking "But, hold on... None of this would've been possible without [fr2_bargaining_choice]'s help. I need to say something." 
     vivi neutral blush "Hey. I just... I wanna say... I can't thank you enough."
 
@@ -58,6 +64,12 @@ label bargaining_meal_reveal:
     vivithinking neutral "Nah, it's just the lighting. Ursh has such a flair for drama."
     urshudining happy "I am famished, dear ones. What have you prepared for me?"
     vivi happy "Something to blow your mind and tastebuds!" 
+    if fr2_bargaining_choice == "Asha":
+        voice "audio/voice/bargaining_meal_reveal_8930de3eAva.ogg"
+    elif fr2_bargaining_choice == "Darius":
+        voice "audio/voice/bargaining_meal_reveal_8930de3eDarius.ogg"
+    elif fr2_bargaining_choice == "Susu'Rha":
+        voice "audio/voice/bargaining_meal_reveal_8930de3eSusu.ogg"
     vivi neutral "[fr2_bargaining_choice] and I made a meal that's gonna knock your goddamn socks off!"
     urshudining happy "You two have worked together? Ah, what joyous collaboration! All the more to be excited about!" 
     urshudining neutral "Let's try a bite, shall we?"
@@ -73,6 +85,12 @@ label bargaining_meal_reveal:
         "Grab [fr2_bargaining_choice]'s Hand":
 
             vivithinking neutral "I need to hold on to something!"
+            if fr2_bargaining_choice == "Asha":
+                voice "audio/voice/bargaining_meal_reveal_f3dc08d0Ava.ogg"
+            elif fr2_bargaining_choice == "Darius":
+                voice "audio/voice/bargaining_meal_reveal_f3dc08d0Darius.ogg"
+            elif fr2_bargaining_choice == "Susu'Rha":
+                voice "audio/voice/bargaining_meal_reveal_f3dc08d0Susu.ogg"
             vivithinking neutral "But no, what if [fr2_bargaining_choice] doesn't want to?" 
             vivithinking neutral "Fuck it!"
             show vivi neutral blush:
@@ -162,8 +180,9 @@ label bargaining_meal_reveal:
     urshudining sad "And I therefore cannot call this the best tasting meal I have ever had."
     vivi angry "YOU. DRINK. NARUBIAN. CITRUS. INFUSED. ESPRESSO. EVERY. FUCKING. MORNING. WHAT. DO. YOU. MEAN. YOU. DON'T. HAVE. TASTE. BUDS?"
     # Sal's note !!!!: Here the chosen NPC talks. If this is effort, it's not worth the pain to implement. It's only one line.
-    # if fr2_bargaining_choice == "Asha":
-    if fr2_bargaining_choice == "Darius":
+    if fr2_bargaining_choice == "Asha":
+        voice "audio/voice/bargaining_meal_reveal_53703497Ava.ogg"
+    elif fr2_bargaining_choice == "Darius":
         voice "audio/voice/bargaining_meal_reveal_53703497Darius.ogg"
     elif fr2_bargaining_choice == "Susu'Rha":
         voice "audio/voice/bargaining_meal_reveal_53703497Susu.ogg"

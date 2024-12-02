@@ -131,7 +131,7 @@ label depression_fr2_darius:
     darius neutral "I'm not who you think I am, Ms. Sanssouci. Vivi."
     darius "I'm a monster. Worse, even. I'm a coward."
     play sound [ "<silence 4.6>", "audio/sfx/orex_char_telepathy.ogg" ]
-    $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowpass(200), audio_filter.Peaking(frequency=00, q=1.0, gain=6.0)], replace=True, duration=2.6)
+    # $ renpy.music.set_audio_filter("ambience", [audio_filter.Lowpass(200), audio_filter.Peaking(frequency=00, q=1.0, gain=6.0)], replace=True, duration=2.6)
     stop music fadeout 2.6
     vivi happy "Come on, now. You're too hard on yourself. I—"
     show darius angry
