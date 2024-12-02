@@ -496,8 +496,6 @@ label denial_fr2_darius:
     show vivi neutral at  center
     vivithinking "We have things to discuss?"
 
-    vivithinking "The tension hangs in the air. It's like a miasma, cutting the oxygen and making my heart race."
-
     urshu happy "...On a lighter note, we will be serving brunch tomorrow! Do come... well I'd say \"early\" but time has no meaning here anyways. Ta-ta!" 
 
     hide urshu with dissolve
