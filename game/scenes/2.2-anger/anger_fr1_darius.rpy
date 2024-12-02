@@ -19,7 +19,7 @@ label anger_fr1_darius:
         xzoom -1
 
     darius neutral "Well. Cards, then?"
-    vivi surprised "Of course you read my mind already. Do you actually want to play?"
+    vivi surprised "Of course you've read my mind already. Do you actually want to play?"
     darius angry "Why not? Seems as though we can't do anything else at the moment."
     vivi neutral "I don't know a lot of card games."
     darius surprised "I thought that's all you humans did. Play games. Fritter away your time."

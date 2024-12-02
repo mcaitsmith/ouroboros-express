@@ -124,7 +124,7 @@ label denial_fr1_darius:
 
             vivi surprised blush "So you ARE then!"
 
-            darius happy "Hah, I don't rely on such cheap tricks. Other mindflayers might, but I'm naturally quite skilled at reading people."
+            darius happy "Hah, I don't rely on such cheap tricks. I'm naturally quite skilled at reading people you see."
 
             vivithinking "Is that a hint of annoyance I sense?"
 

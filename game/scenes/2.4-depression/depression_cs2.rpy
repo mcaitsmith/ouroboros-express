@@ -41,7 +41,7 @@ label depression_cs2:
     urshu sad "I'm sorry you feel that way. Truly, I am."
     urshu neutral "Countless have boarded my train. Some have sung its praise. Many more have cursed it out. But this place, whether you see it or not, is a gift."
     urshu neutral "You have been granted a final chance. A place to right your deepest regrets. There's a reason it's not a solo voyage."
-    vivi sad "What does it matter? It ends all the same."
+    vivi sad "What does it matter? It all ends the same."
     urshu neutral "Heed my advice, or don't. Only one thing is certain:"
     urshu happy "Your story, my dear? It's not finished. Yes, the finale draws near, but the last act is yours to write. Make it a good one."
     vivi neutral "And how do you figure I do that?"
