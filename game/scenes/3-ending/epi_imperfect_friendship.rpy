@@ -12,9 +12,9 @@ label epi_imperfect_friendship:
     
     vivithinking neutral "This place always feels so fuzzy."
     urshu "Well, the time has come to clock out. Another spiral of theatrics and redemption closed."
-    vivi sad "You must be exhausted going through this again and again, for all eternity?"
+    vivi happy "Looking forward to the weekend?"
     urshu "I like you when you're caring, Miss Sansoucci. But enough about me. How does it feel?"
-    vivi "Feel to what?"
+    vivi sad "How does what feel?"
     urshu "Finding that light at the end of the tunnel. At times, I was not sure you would make it! You've drifted and messed around a couple of times! Delicious!"
     urshu "So, how does it feel?"
     vivi "I feel...fresh. But I'm also tired. How long is left?"
