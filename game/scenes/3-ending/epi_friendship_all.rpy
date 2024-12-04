@@ -93,6 +93,8 @@ label epi_friendship_all:
    
     ava "But I believe we have all come to appreciate it."
 
+    hide urshu
+
     show susurha happy blush
 
     susurha "Look, Vivi, he's turning."
