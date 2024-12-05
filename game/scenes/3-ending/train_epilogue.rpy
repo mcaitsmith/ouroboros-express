@@ -81,7 +81,7 @@ label train_epilogue:
     scene white with Dissolve(3.0)
 
     # Journal entry
-    call display_journal    
+    call display_journal from _call_display_journal_11    
 
     scene black with Dissolve(3.0)
     window hide fade

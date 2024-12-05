@@ -27,7 +27,7 @@ label bargaining_asha_urshu :
 
     show ava angry at center with dissolve :
         xzoom -1
-    show urshu sad at right with dissolve
+    show urshu neutral at right with dissolve
 
     vivithinking "Well, hot damn! They look deep in conversation."
 
@@ -49,7 +49,7 @@ label bargaining_asha_urshu :
 
     ava sad "Give up? We gave everything to our goddess. And now...what was the point of our sacrifices?"
 
-    urshu sad "What is the point of anything, O Enlightened One?"
+    urshu neutral "What is the point of anything, O Enlightened One?"
 
     ava angry blush "Do not distract us with juvenile hypotheticals, conductor."
 
@@ -57,6 +57,7 @@ label bargaining_asha_urshu :
 
     ava surprised "Feel? We went where Mother Asha needed us to go. We did so willingly."
 
+    show urshu neutral -blush
     urshu neutral "Curious answer. Tell me this then: How did you feel about your upbringing alongside the decaying royal family?"
 
     ava angry "Alongside indeed. We dwelt in the same place, yet could not have been more distant."
@@ -67,7 +68,7 @@ label bargaining_asha_urshu :
 
     ava neutral "And yet, we have seen this bottomless dark void outside through the windows. Is it...?"
 
-    urshu sad "Mayhaps, O Enlightened One. Mayhaps the emptiness you see is what you fear most."
+    urshu neutral "Mayhaps, O Enlightened One. Mayhaps the emptiness you see is what you fear most."
 
     ava angry "Mother Asha! Mocking us again, Dark Ferryman?"
 
