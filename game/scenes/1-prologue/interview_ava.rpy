@@ -48,9 +48,9 @@ label interview_ava:
                     # JUMP TO vivithinking neutral "Deep breaths, Vivi. It's just a job."
 
                 # OPTION 1B
-                "(Ugh, “little one”? That reminds me of... never mind. Focus.)":
+                "(“Little one”? That reminds me of... never mind. Focus.)":
 
-                    vivithinking neutral "Ugh, “little one”? That reminds me of... never mind. Focus."
+                    vivithinking neutral "“Little one”? That reminds me of... never mind. Focus."
 
                     # JUMP TO vivithinking neutral "Deep breaths, Vivi. It's just a job."
 

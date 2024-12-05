@@ -202,7 +202,7 @@ label depression_fr1_darius:
     darius sad "For anything."
     stop music fadeout 5.0
     vivithinking "Radiating off of them—that uncomfortable heat."
-    darius neutral "Well? Surely you must drink to that. I know your kind is always apologizing. ...Whether it's warranted or not."
+    darius neutral "Well? Surely you must drink to that. I know your kind is always saying that... whether it's warranted or not."
     vivi neutral "You're not wrong. You know—if you'd rather talk instead of just playing a game—"
     darius sad "I wouldn't."
     show darius neutral -blush
