@@ -93,7 +93,7 @@ label epi_friendship_all:
    
     ava "But I believe we have all come to appreciate it."
 
-    hide urshu
+    hide urshu with dissolve
 
     show susurha happy blush
 
