@@ -202,9 +202,6 @@ label romance_cs:
                     play sound snap
                     pause 4.0
 
-                    vivithinking surprised "What just happened? The decay of the train... It's completely reversed."
-                    vivithinking surprised "And I feel warmth. I didn't realize how {i}cold{/i} this train was until now. How cold {i}I{/i} was." 
-                    vivithinking neutral "What is that little bastard up to?"
                     vivi neutral "Ursh, what did you do?"
                     urshu happy "Like I said before. This train takes you to where you need to go. And the destination is finally clear." 
 
