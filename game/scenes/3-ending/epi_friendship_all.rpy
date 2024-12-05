@@ -22,7 +22,7 @@ label epi_friendship_all:
     vivithinking happy "I'm in the open!"
     vivithinking happy "I think Urshu's being serious."
     urshu happy "It is time to disembark now. Please watch your step."
-    show susurha happy at right with dissolve
+    show susurha happy at right behind urshu with dissolve
 
     susurha happy "Yes, hurry, let's get off this thing!"
     vivithinking surprised "Wow! Solid ground! Not that shaky-ass train floor!"
@@ -45,7 +45,7 @@ label epi_friendship_all:
 
     ava happy "I believe we're all intended to be together, now, no longer strangers."
 
-    show darius happy at center with dissolve
+    show darius happy at center behind urshu with dissolve
 
     darius happy "Strangers to ourselves, perhaps, but not among each other."
     vivi happy "That's a cute way of saying we're friends."

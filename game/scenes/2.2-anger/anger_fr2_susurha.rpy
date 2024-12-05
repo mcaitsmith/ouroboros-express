@@ -225,6 +225,7 @@ label anger_fr2_susurha:
             # VISUAL: the screen shakes
             play sound darts
             play sound2 cineboom
+            show diningcar with hpunch
             susurha happy "You got a bullseye!"
             vivithinking neutral "God, I'm out of breath!"
             susurha neutral "Thank you, Vivienne. I hope you feel a bit better now."
