@@ -81,9 +81,9 @@ label romance_darius:
     scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness,\nbut I've truly found someone special.\nThey're smart and charming but\nmost of all, kind.\nIt takes a strong person to defy their god\nand risk eternal damnation to do\nwhat's right.\nAcceptance is a hard thing to find but\nwe've found it in each other.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but I think I'm in love.\nMaybe it's the threat of swirling into nothingness, but I've truly found someone special.\nThey're smart and charming but most of all, kind.\nIt takes a strong person to defy their god and risk eternal damnation to do what's right.\nAcceptance is a hard thing to find but we've found it in each other.\nI feel like I'm back in middle school, smiling as I write this, but I can't help it!"
 
-    # Journal entry with degradation meter high
+    # Journal entry
     call display_journal from _call_display_journal_9
 
     #To Epilogues according to attraction meters

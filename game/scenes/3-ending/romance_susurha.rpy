@@ -58,9 +58,9 @@ label romance_susurha:
     scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "I can't believe I'm saying this, but\nI think I'm in love.\nMaybe it's the threat of swirling\ninto nothingness\nbut I've truly found someone special.\nThey're funny and positive. It's a breath\nof fresh air.\nI think the thing I love most is\nSusu'Rha's heart.\nThey're the kindest being I've ever met.\nIt feels like a warm hug\nwhenever they speak.\nI feel like I'm back in middle school, smiling\nas I write this, but I can't help it!"
+    $ message = "I can't believe I'm saying this, but I think I'm in love.\nMaybe it's the threat of swirling into nothingness but I've truly found someone special.\nThey're funny and positive. It's a breath of fresh air.\nI think the thing I love most is Susu'Rha's heart.\nThey're the kindest being I've ever met.\nIt feels like a warm hug whenever they speak.\nI feel like I'm back in middle school, smiling as I write this, but I can't help it!"
 
-    # Journal entry with degradation meter high
+    # Journal entry
     call display_journal from _call_display_journal_10
 
     #To Epilogues according to attraction meters

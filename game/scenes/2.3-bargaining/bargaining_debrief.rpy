@@ -27,7 +27,7 @@ label bargaining_debrief:
 
         play sound writing
 
-        $ message = "Urshu...that stupid, cruel son of a...\n\nThis is all hopeless!\nI can see changes in all of us.\nI don't feel fully human anymore.\nThose creatures outside the windows...\nWill we end like them?\n\nAt least the bar is stocked.\nTomorrow's plan is to drink the place dry.\nHopefully, if I'm lucky, it'll\npiss the conductor off."
+        $ message = "Urshu...that stupid, cruel son of a...\n\nThis is all hopeless!\nI can see changes in all of us.\nI don't feel fully human anymore.\nThose creatures outside the windows... Will we end like them?\n\nAt least the bar is stocked.\nTomorrow's plan is to drink the place dry.\nHopefully, if I'm lucky, it'll piss the conductor off."
 
         # Journal entry with degradation meter high
         call display_journal from _call_display_journal_3
@@ -51,7 +51,7 @@ label bargaining_debrief:
 
         play sound writing
 
-        $ message =  "If cooking for him didn't work, what would?\n\nI'm beginning to think that this is it.\nThe end of the line.\nEverything I worked for... gone.\n\nI bet "+ fr2_bargaining_choice  +" has more to say.\nI should pay them a visit sometime\n\nIt beats cloud gazing through\nthese creepy windows."
+        $ message =  "If cooking for him didn't work, what would?\n\nI'm beginning to think that this is it.\nThe end of the line.\nEverything I worked for... gone.\n\nI bet "+ fr2_bargaining_choice  +" has more to say.\nI should pay them a visit sometime.\n\nIt beats cloud gazing through these creepy windows."
 
         # Journal entry with attraction meter high
         call display_journal from _call_display_journal_4

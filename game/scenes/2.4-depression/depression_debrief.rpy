@@ -48,7 +48,7 @@ label depression_debrief:
 
         play sound writing
 
-        $ message = "Wow.\nAt the beginning of all this, I would've\nnever thought I'd get to know some of\nthe other passengers this well.\nWe're all more similar than I thought.\nEven Urshu, believe it or not.\n\nTime is weird here.\nI feel like I've been riding this train\nfor ages,\nbut I think I finally understand this place.\n\nIt's a lot to process,\nbut I'm glad I didn't have to do it alone."
+        $ message = "Wow.\nAt the beginning of all this, I would've never thought I'd get to know some of the other passengers this well.\nWe're all more similar than I thought.\nEven Urshu, believe it or not.\n\nTime is weird here.\nI feel like I've been riding this train for ages, but I think I finally understand this place.\n\nIt's a lot to process, but I'm glad I didn't have to do it alone."
 
         $ day = 5 # good ending
         #Journal entry with attraction meter high
