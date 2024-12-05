@@ -223,6 +223,8 @@ label anger_fr2_susurha:
             vivi angry "SHE killed me!"
             vivi angry "It's HER FAULT!"
             # VISUAL: the screen shakes
+            play sound darts
+            play sound2 cineboom
             susurha happy "You got a bullseye!"
             vivithinking neutral "God, I'm out of breath!"
             susurha neutral "Thank you, Vivienne. I hope you feel a bit better now."

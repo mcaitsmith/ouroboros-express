@@ -178,9 +178,9 @@ label depression_fr2_ava:
         #pause
 
         # SOUND: heartbeat
-        play sound heartbeat
-        pause 3.0
-        stop sound fadeout 1.0
+        play sound sparkle
+        #pause 3.0
+        #stop sound fadeout 1.0
 
     #END
 
