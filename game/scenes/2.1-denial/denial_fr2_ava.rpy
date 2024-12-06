@@ -57,7 +57,7 @@ label denial_fr2_ava:
             ava "Our humblest apologies, Vivi. We never intended to offend you. We have led vastly different lives, you see."
             vivi neutral "Well you've managed to offend me regardless." 
             show ava neutral -blush
-            ava "Let us talk about something else...you were saying earlier?"
+            ava "Let us talk about something else... you were saying earlier?"
             #JUMP to vivi saying "Yeah, so about that exit I mentioned..." 
 
     # OPTION 2 +ATTRACTION
@@ -98,7 +98,7 @@ label denial_fr2_ava:
             vivithinking "Hold my bujo, I'm about to destroy this woman."
             vivi happy blush "Well you're speaking with me right now, are you not? I'm human. Would you say I'm incapable of conscious thought?"
             show ava surprised blush
-            ava "Well, when you put it as such...who are we to argue? We apologize."
+            ava "Well, when you put it as such... who are we to argue? We apologize."
             vivithinking "About time! Still, I can't forget why I came here."
             show ava neutral -blush
             #JUMP TO: vivi saying "Yeah, so about that exit I mentioned..." 
@@ -117,7 +117,7 @@ label denial_fr2_ava:
     vivi surprised "IT'S LIKE THE MORTON'S SALT GIRL COVERED IN TINFOIL AND ROASTED UNDER A JET ENGINE?!"
     vivithinking "Dammit. I've seen this thing in nightmares." 
     vivithinking "I can't move, I can't breathe."
-    ava neutral "Do you...jest? We see a cold abyss, pulsing with hunger and emptiness."
+    ava neutral "Do you... jest? We see a cold abyss, pulsing with hunger and emptiness."
     stop music fadeout 3.0
     stop cd_ambience fadeout 3.0
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5.0)
@@ -134,10 +134,10 @@ label denial_fr2_ava:
 
     vivi surprised "What the? Get out of the way!"
 
-    show vivi surprised blush:
+    show vivi surprised:
         linear 1 xpos 700
     $ renpy.pause(1)
-    show vivi surprised blush at center with dissolve:
+    show vivi surprised at center with dissolve:
         xzoom 1
     $ renpy.pause(1)
     vivi surprised "Where the hell did you come from?"
@@ -147,7 +147,7 @@ label denial_fr2_ava:
 
     urshu "Those are the spirits of passengers lost to the fabric of space-time. Or perhaps how you see them.. hard to say sometimes."
 
-    vivi sad "Those poor souls...is there no help for them?" 
+    vivi sad "Those poor souls... is there no help for them?" 
     ava sad "Is there no help for us?"
     show urshu sad at left
     urshu sad "None for them, I fear."
@@ -186,9 +186,9 @@ label denial_fr2_ava:
             show urshu happy at left
             urshu happy "Best not to think too hard about it."
             urshu neutral "So instead..."
-            # JUMP TO: urshu "Do you..have any questions?"
+            # JUMP TO: urshu "Do you... have any questions?"
 
-    urshu neutral "Do you..have any questions?"
+    urshu neutral "Do you... have any questions?"
     urshu happy " Anything about the Ouroboros Express you want to know..?"
     ava surprised "So are we truly dead? Our service to the Goddess has ended?"
     urshu neutral "All quite true. All of it. I wish I could offer better news, but on the Ouroboros Express your soul is bound for the afterlife."
@@ -228,7 +228,7 @@ label denial_fr2_ava:
             vivi surprised "So am I going to Hell then?"
             show urshu neutral at left
             urshu neutral "Depends. Were you good, deserving of reward, or a villain, destined to rot eternally in Hell? Hell! A silly tale to frighten ill-mannered children, at best."
-            vivi surprised "So...Heaven?"
+            vivi surprised "So... Heaven?"
             urshu surprised "Heaven - what a noble concept. The word boring also comes to mind..."
             vivi angry "Fine, it's not either one."
             vivithinking "Just like pulling teeth..."
@@ -252,7 +252,7 @@ label denial_fr2_ava:
     vivi neutral "Well, I cannot thank you both enough for this wonderful chat. Time to head back to my room, now."
     ava happy "See you soon, Vivi. The All is the One."
     ava sad "We have much to ponder. May your dreams be peaceful and warm."
-    vivi neutral "Yeah yeah...you too, Asha."
+    vivi neutral "Yeah yeah... you too, Asha."
     vivithinking "Ugh, I think I need to go lie down. That was a lot to take in."
 
     # JUMP TO: Debrief Denial

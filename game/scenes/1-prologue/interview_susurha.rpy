@@ -33,7 +33,7 @@ label interview_susurha:
     susurha neutral "Vivi...Vivi..."
     play sound sparkle volume 0.5
     susurha happy "Like Bon Vivant!"
-    vivithinking neutral "Bon vivant - one fond of good living eh? I like that."
+    vivithinking neutral "Bon vivant - one fond of good living, eh? I like that."
     vivithinking sad "Even if it hasn't always been true..."
     susurha neutral "So...What inspired you to approach me, Vivi?"
 
@@ -59,9 +59,9 @@ label interview_susurha:
             # JUMP TO: vivithinking neutral "Seriously?"
 
         # OPTION 2
-        "Where are you from?!":
+        "Where are you from?":
 
-            vivi neutral "Where are you from?!"
+            vivi neutral "Where are you from?"
             susurha neutral "Balrinn. The capital city of my home country." 
             susurha neutral "Which is also my family name."
             vivi neutral "So...you're royalty."

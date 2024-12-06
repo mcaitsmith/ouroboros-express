@@ -70,7 +70,7 @@ label bargaining_fr2_darius:
             with { "master" : Dissolve(0.5) }
             darius neutral "Urshu asked you?"
             vivi neutral "Yeah, why do you ask?"
-            darius neutral "Nothing. It just seems...strange. Urshu has never asked us to do anything for him. Besides, he's a god."
+            darius neutral "Nothing. It just seems... strange. Urshu has never asked us to do anything for him. Besides, he's a god."
             vivi neutral "Yeah, well, first time for everything I suppose!"
             vivithinking "I may have given him the idea, but Darius doesn't have to know that."
 
@@ -109,7 +109,7 @@ label bargaining_fr2_darius:
             # JUMP TO: vivi neutral "So, my sous chef, what shall we prepare?"
 
     vivi neutral "So, my sous chef, what shall we prepare?"
-    darius sad "I'm...not sure. I don't think typical illithid cuisine fits the palate of our guests."
+    darius sad "I'm... not sure. I don't think typical illithid cuisine fits the palate of our guests."
 
     show vivi angry at left
 
@@ -123,7 +123,7 @@ label bargaining_fr2_darius:
     vivithinking "I could go all out, give these people something to really drool over. But maybe Urshu doesn't like that? Maybe something simple is better?"
 
     # <CHOICE>
-    vivithinking "Then there's my specialty...but I haven't made that in a long time. Besides, do I really want to make something so personal for these...beings?"
+    vivithinking "Then there's my specialty... but I haven't made that in a long time. Besides, do I really want to make something so personal for these... beings?"
 
     menu:
         # OPTION 1 +DECAY
@@ -187,9 +187,9 @@ label bargaining_fr2_darius:
             show vivi neutral at left
 
             vivithinking "Desperate times call for desperate measures."
-            vivi neutral blush "I have one recipe that I know is a hit. But...it's a bit personal."
+            vivi neutral blush "I have one recipe that I know is a hit. But... it's a bit personal."
             darius neutral "You don't have to show me if you don't want to."
-            vivi neutral blush "No, I...I think I do."
+            vivi neutral blush "No, I... I think I do."
             vivi neutral "My Nana is the one who first taught me to cook anything. A really simple dish, spaghetti and meatballs with a carbonara sauce."
             vivi happy blush "It was awful. I burnt half the beef, the pasta was soggy, and the sauce came out all lumpy. But Nana didn't care. She praised it like it was a five star meal."
             vivi happy blush "I made it for her every time I visited, and every time she made me feel like a master chef."
@@ -213,7 +213,7 @@ label bargaining_fr2_darius:
     vivithinking neutral "Wow. Darius is really good with their hands."
     vivi neutral "You're rather dextrous, Mr. Wrecker."
     darius neutral "Part of the trade. Sleight of hand can be rather useful when trying to slip something past an unsuspecting fool."
-    vivi happy "I'm sure they could be useful for...other things as well."
+    vivi happy "I'm sure they could be useful for... other things as well."
     show darius neutral blush
     darius "Ms. Sanssouci, I have no idea what you could possibly be referring to."
     
@@ -268,9 +268,9 @@ label bargaining_fr2_darius:
     darius neutral "Yes?"
     vivi neutral "I should be honest with you... This dinner isn't as altruistic as I made it seem."
     vivi sad "The reason I'm cooking is because of a deal I made with Urshu. If I make him a fantastic meal, he'll get us off this train."
-    vivi sad "Well, I mean... I...could get off this train."
+    vivi sad "Well, I mean... I... could get off this train."
     darius neutral "..."
-    darius surprised "You...you..."
+    darius surprised "You... you..."
     darius sad "...I see."
     vivi neutral "I'm sorry! I—"
     darius sad "You don't need to say anything else."
@@ -278,13 +278,13 @@ label bargaining_fr2_darius:
     darius angry "What is there to not understand? You kept this a secret from me! I respected you enough to not read you, and this is how you repay me?" 
     vivi neutral "Darius! I—"
     darius angry "Did you ever stop to think about how the rest of us would feel?"
-    darius sad "How I'd feel being trapped here...without you?"
+    darius sad "How I'd feel being trapped here... without you?"
 
     # ??ATTRACTION (and if not DECAY below)
     if att_meter_darius >= 50:
         vivi neutral blush "But I'm not getting off this train if you can't come with me!"
         vivi neutral blush "That's why I'm telling you this now."
-        vivi sad "I'm sorry I kept this a secret from you. I wasn't thinking straight when I made the deal, and I...I just didn't want anyone to get hurt."
+        vivi sad "I'm sorry I kept this a secret from you. I wasn't thinking straight when I made the deal, and I... I just didn't want anyone to get hurt."
         vivi neutral blush "But now, all I know is that you... You guys really mean a lot to me."
         vivi neutral blush "And home won't be home if you're not a part of it in some way."
         darius neutral "...You know I would never ask you to do that, right?"
@@ -292,8 +292,8 @@ label bargaining_fr2_darius:
         vivi neutral blush "It's something I want. I don't care about the consequences anymore."
         show darius neutral blush
         darius "Vivi... I..."
-        darius "Ahem. Well,"
-        darius "I think that's...something I...also want."
+        darius "Ahem. Well..."
+        darius "I think that's... something I... also want."
 
         show vivi neutral blush at left
 

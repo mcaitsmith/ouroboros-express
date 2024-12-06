@@ -97,7 +97,7 @@ label depression_fr1_susurha:
             hide attraction_icon
             with { "master" : Dissolve(0.5) }
             susurha "Hmmm..."
-            susurha "I believe this is called 'Beginner's luck.' You've got me there."
+            susurha "I believe this is called 'Beginner's luck'. You've got me there."
             vivithinking "Wow! They've been engaged?"
             vivithinking "Looking at them, not hard to believe."
             vivi "Who was it to?"
@@ -298,7 +298,7 @@ label depression_fr1_susurha:
     
     stop music fadeout 5.0
 
-    vivithinking "I think I got enough out of this drink."
+    vivithinking neutral "I think I got enough out of this drink."
     vivithinking "My head is already spinning."
     vivithinking "I should take a moment to collect myself."
     stop ambience fadeout 1.0

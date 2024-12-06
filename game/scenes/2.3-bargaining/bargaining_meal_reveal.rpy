@@ -175,7 +175,7 @@ label bargaining_meal_reveal:
     play music sorrowmusic loop
     urshudining sad "So I have led you into another ruse, I fear."
     vivi neutral "...No."
-    urshudining sad "I do not possess what you call \"taste buds.\" I do not know what this actually tastes like."
+    urshudining sad "I do not possess what you call \"taste buds\". I do not know what this actually tastes like."
     vivi neutral "Nonononono."
     urshudining sad "And I therefore cannot call this the best tasting meal I have ever had."
     vivi angry "YOU. DRINK. NARUBIAN. CITRUS. INFUSED. ESPRESSO. EVERY. FUCKING. MORNING. WHAT. DO. YOU. MEAN. YOU. DON'T. HAVE. TASTE. BUDS?"

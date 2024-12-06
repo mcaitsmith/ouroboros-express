@@ -20,7 +20,7 @@ label bargaining_fr1_susurha:
 
     show susurha neutral at right with dissolve
 
-    vivithinking "There they are. Wait, what are they--"
+    vivithinking "There they are. Wait, what are they—"
     play music mysterymusic loop
     vivi neutral "Susu'Rha? Why are you just staring out that dirty window?"
     vivi neutral "Is something wrong?"
@@ -174,7 +174,7 @@ label bargaining_fr1_susurha:
     susurha neutral "Boskala Nah, a sentient mass of ooze that floods the very fabric of reality."
     susurha neutral "The stories claimed that when someone dies they return to all that is. Become one with everything... existence, if you will."
     susurha neutral "To do this, Boskala Nah drowns you as a test, watching to see if you sink or swim."
-    susurha neutral "This Urshu I believe, holds a similar function."
+    susurha neutral "This Urshu, I believe, holds a similar function."
             
     # <CHOICE>
     susurha neutral "And all I know is that bargaining with Boskala Nah was useless." 

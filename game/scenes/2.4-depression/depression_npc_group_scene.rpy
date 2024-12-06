@@ -85,7 +85,7 @@ label depression_npc_group_scene:
 
     darius sad "I did not listen enough. I scraped thoughts and wrenched what I wanted from other sentients. But I did not truly hear what my victims were saying. Where would I be if I had?"
 
-    darius sad blush "...I suppose I also wish I had tried ice cream on earth, or one of its parallel dimensions."
+    darius sad blush "...I suppose I also wish I had tried ice cream on Earth, or one of its parallel dimensions."
 
     susurha sad "Where would one honestly begin?"
 

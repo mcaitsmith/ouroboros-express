@@ -131,7 +131,7 @@ label bargaining_fr1_darius:
     darius sad "The faces he makes when he thinks no one is noticing. The way he listens to every word with unrelenting attention."
     darius sad "The way he dutifully attends to every need we have, but has no desire to care for his own."
     darius sad "The way he takes in everything others give in, the good and bad, but is so reluctant to give up anything of his own."
-    darius sad "Perhaps, I understand him so well because I know his pain. His suffering. His heartbreak. He is isolated. Alone."
+    darius sad "Perhaps I understand him so well because I know his pain. His suffering. His heartbreak. He is isolated. Alone."
     darius neutral "Know this, Vivienne. Toying with that man isn't just foolish, it's cruel."
 
     # <CHOICE>

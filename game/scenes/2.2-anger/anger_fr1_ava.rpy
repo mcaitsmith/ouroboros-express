@@ -104,7 +104,7 @@ label anger_fr1_ava:
             # JUMP TO: vivi angry "This is silly! They're just cards. They can't tell us that!"
 
     vivi angry "This is silly! They're just cards. They can't tell us that!"
-    ava surprised "Perhaps, you're right. They are merely cards." 
+    ava surprised "Perhaps you're right. They are merely cards." 
     ava sad "..."
     ava sad "In the mirror this morning, fate stared back at us. And for you, Vivienne?"
     vivi sad "For me too, Asha."

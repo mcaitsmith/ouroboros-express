@@ -27,7 +27,7 @@ label interview_ava:
     ava neutral "You may call us Asha. What draws you to us if not our light?"
 
     # <CHOICE>
-    vivi neutral "Well for starters, maybe you could ..."
+    vivi neutral "Well for starters, maybe you could..."
 
     menu: 
         # OPTION 1
