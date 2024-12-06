@@ -4,8 +4,8 @@ label anger_susurha_urshu:
     scene lounge with fade
     play ambience amb_lounge if_changed fadein 1.0
     play music mainmusic loop
-    show vivi neutral at left with dissolve :
-        xzoom-1
+    show vivi neutral at right with dissolve:
+        xzoom 1
 
     $ urshu_fullbody = True
     $ susurha_fullbody = True
@@ -24,9 +24,10 @@ label anger_susurha_urshu:
 
 
 
-    show urshu neutral at center with dissolve :
-        xzoom-1
-    show susurha neutral at right with dissolve
+    show urshu neutral at center with dissolve:
+        xoffset -300 xzoom -1
+    show susurha neutral at center with dissolve:
+        xoffset 30
 
 
     urshu "Lounging about again, I see. Kicking the feet up and enjoying the ride, hmm?"
@@ -102,8 +103,7 @@ label anger_susurha_urshu:
     hide susurha
     hide urshu
 
-    show vivi neutral at left with dissolve :
-        xzoom-1
+    show vivi neutral with dissolve 
 
     vivithinking  "Time to go."
 
