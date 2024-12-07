@@ -6,7 +6,7 @@ label train_epilogue:
     scene white with Dissolve(3.0)
 
     # ROMANCE JOURNAL ENTRY
-    $ message = "Here we are: the final stop. And I'm still here.\nI'm staying with Urshu. He's easily the most frustrating, maddening, cryptic excuse for a cosmic entity I've ever met... and yet I can't get enough of him. He sees me. Sees the real me in a way that no one ever has, and when I look at him I see a soul so much deeper than the flippant remarks he likes to come out with. Sure, we're probably going to argue our way through eternity, but I love a challenge. And... I love Urshu. I hate to say goodbye to the others. But Urshu told me he has a trick up his sleeve when it comes to that... lets go find out."
+    $ message = "Here we are: the final stop. And I'm still here. I'm staying with Urshu. He's easily the most frustrating, maddening, cryptic excuse for a cosmic entity I've ever met... and yet I can't get enough of him. He sees me. Sees the real me in a way that no one ever has, and when I look at him I see a soul so much deeper than the flippant remarks he likes to come out with. Sure, we're probably going to argue our way through eternity, but I love a challenge. And... I love Urshu. I hate to say goodbye to the others. But Urshu told me he has a trick up his sleeve when it comes to that... lets go find out."
     
     
     
