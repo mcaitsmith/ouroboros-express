@@ -97,7 +97,7 @@ label depression_fr2_ava:
     vivi surprised blush "Oh? And why's that?"
     play cd_ambience twinkle fadein 5.0 volume 0.2
     play music ashamusic fadein 5.0 loop
-    ava neutral "{i}*sigh*{/i} You are aware that I am not the first Avatar of Asha. Every twenty and five years, a new avatar is chosen."
+    ava neutral "{i}*Sigh*{/i} You are aware that I am not the first Avatar of Asha. Every twenty and five years, a new Avatar is chosen."
     ava sad "Soleos was not always the peaceful society it is today. The planet was once split in two, marred by war and terror...until the Avatar arrived."
     ava sad "She was born from the seed of a Solarian man and the egg of a Lunolian woman. The mixing of cultures was considered taboo, said to bring about the end of the world."
     vivi sad "Oh, my goodness. I had no idea."
@@ -265,7 +265,7 @@ label depression_fr2_ava:
 
     vivi happy "Like you wouldn't believe!"
     show ava neutral blush
-    ava "Well our conversations have certainly helped us feel better. We enjoy your...perspective."
+    ava "Well, our conversations have certainly helped us feel better. We enjoy your...perspective."
     vivi happy blush "Come to Earth sometime! I'll show you around!"
 
     # ??DECAY

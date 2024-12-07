@@ -114,7 +114,7 @@ label denial_fr1_ava:
 
             vivithinking "I should interview her for more info."
             vivi neutral "How has this luxury liner been for you?"
-            ava neutral "Let us bring Light to your darkness. Besides last night, the journey, like so many, has been pleasant."
+            ava neutral "Let us bring light to your darkness. Besides last night, the journey, like so many, has been pleasant."
             # JUMP TO: vivi "I can't imagine we're actually dead... I mean we're still breathing, eating, and drinking! If that's not alive, then I don't know what is."
 
     vivi neutral "I can't imagine we're actually dead... I mean we're still breathing, eating, and drinking! If that's not alive, then I don't know what is."
@@ -137,7 +137,7 @@ label denial_fr1_ava:
             $ renpy.music.set_volume(1.0, delay=1.5, channel='music')
 
             vivithinking "Drink, yes? Little one? No!"
-            vivi happy blush "Another time! But please stop calling me \"little one.\" I'm thirty."
+            vivi happy blush "Another time! But please stop calling me \"little one\". I'm thirty."
             show ava sad blush
             ava "Ah. Our words have offended. A thousand pardons." 
             show ava happy blush

@@ -76,6 +76,8 @@ label bargaining_asha_urshu :
 
     ava sad "You speak in circuitous riddles, conductor. We were Mother Asha, born to serve, no more, no less."
 
+    show urshu neutral -blush
+
     urshu sad "Yes, goddess. But what of the heart that beats in your chest and craves more?"
 
     ava sad "Buried away long ago, conductor. A silly dream of a naïve child. No more."

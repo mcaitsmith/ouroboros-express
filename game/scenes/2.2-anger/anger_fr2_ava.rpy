@@ -290,7 +290,7 @@ label anger_fr2_ava:
             # JUMP TO vivi sad blush "I'm sorry. I didn't mean it. I'm just...in a crappy mood."
 
         # OPTION 2
-        "(Like I have time to worry about manners. Still, maybe I should say...)":
+        "(Like I have time to worry about manners. Still...)":
 
             vivithinking neutral "Like I have time to worry about manners. Still, maybe I should say..."
 

@@ -184,7 +184,7 @@ label depression_fr2_susurha:
     susurha "Well, I know I am."
     play music sorrowmusic loop
     susurha sad "..."
-    susurha neutral "That abomination that stalks me..."
+    susurha sad "That abomination that stalks me..."
     susurha "I've tried to talk to it. Reason with it. Understand its motives."
     susurha "I thought it chose to not speak to me when I begged for it to free me, but I realize now that it never had a voice to begin with."
     susurha "Its body is chained at the wrists and ankles, making it unable to move."

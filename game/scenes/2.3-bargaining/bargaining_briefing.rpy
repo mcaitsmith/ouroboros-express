@@ -310,7 +310,7 @@ label bargaining_briefing:
             urshu "Don't you dare claim you can do such a thing."
             show urshu sad -blush
             urshu sad "I cannot hope for what I know is impossible."
-            vivi sad "Ursh... I'm sorry. I didn't mean." 
+            vivi sad "Ursh... I'm sorry. I didn't mean..." 
 
             show vivi neutral at left :
                 xzoom -1

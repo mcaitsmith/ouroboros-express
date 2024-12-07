@@ -19,7 +19,7 @@ label introduction:
         xzoom -1
 
 
-    vivithinking surprised "Notepad, check. Pen, check. Laptop... Ugh, I swear I charged it. Phone... Dead too? Typical.. Hundreds of interviews and still I make amateur mistakes. This is an important story!"
+    vivithinking surprised "Notepad, check. Pen, check. Laptop... ugh, I swear I charged it. Phone... dead too? Typical... hundreds of interviews and still I make amateur mistakes. This is an important story!"
     # $ message = "Hello there"
     # call display_journal
     vivi neutral "..."

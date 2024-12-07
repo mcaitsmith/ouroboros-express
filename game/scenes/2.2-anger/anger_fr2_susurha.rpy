@@ -159,7 +159,7 @@ label anger_fr2_susurha:
             show susurha sad
             vivi sad "I'm going to miss living."
             susurha sad "Vivienne. I'm so sorry, my dear. But you cannot blame yourself for this travesty."
-            # JUMP TO: susurha neutral "The fault lies with your "agent.""
+            # JUMP TO: susurha neutral "The fault lies with your "agent"."
 
     # OPTION 2 +DECAY (removing meter effect for balance)
         "I didn't have a choice.":
@@ -179,9 +179,9 @@ label anger_fr2_susurha:
             vivi sad "What a silly reason to die."
             susurha sad "Oh, Vivienne. I'm sorry. "
             susurha neutral "But you must remember that you did not come here on your own. Someone told you to come."
-            # JUMP TO: susurha neutral "The fault lies with your \"agent.\""
+            # JUMP TO: susurha neutral "The fault lies with your \"agent\"."
 
-    susurha neutral "The fault lies with your \"agent.\" This Chloe individual."
+    susurha neutral "The fault lies with your \"agent\". This Chloe individual."
     vivi neutral "Yeah. It does."
 
     # SOUND: dart hits the board
@@ -218,7 +218,7 @@ label anger_fr2_susurha:
             with { "master" : Dissolve(0.5) }
             vivi angry "It's all her fault!"
             vivi angry "HER!"
-            vivi angry "SHE had to discover this \"exclusive story.\""
+            vivi angry "SHE had to discover this \"exclusive story\"."
             vivi angry "SHE had to get me to come here!"
             vivi angry "SHE killed me!"
             vivi angry "It's HER FAULT!"
@@ -273,7 +273,7 @@ label anger_fr2_susurha:
     susurha sad "But the smoke was too much. None of us could see. I couldn't breathe."
     susurha sad "Then...a sharp pain and...darkness."
     susurha sad "I woke up here."
-    susurha angry "I have no idea whether my family--that I abandoned--is okay. My fear is I'll see them walk into this dining car, like me, wondering what happened."    
+    susurha angry "I have no idea whether my family—that I abandoned—is okay. My fear is I'll see them walk into this dining car, like me, wondering what happened."    
     susurha angry "If only I had been there to protect them."
     susurha sad "They died because I abandoned them."
 
