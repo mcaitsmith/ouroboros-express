@@ -30,9 +30,9 @@ label anger_urshu_darius:
     vivithinking neutral "But I’ll still listen in."
     play music confrontationmusic loop
 
-    hide vivi
+    hide vivi with dissolve
 
-    show darius angry at left :
+    show darius angry at center :
         xzoom -1
     show urshu neutral at right
 
@@ -67,7 +67,8 @@ label anger_urshu_darius:
     urshu happy "Wouldn’t you agree, Miss Sanssouci?"
 
     stop music fadeout 1.0
-    show vivi surprised at center with dissolve
+    show vivi surprised at left with dissolve:
+        xzoom -1
 
     vivithinking surprised "Crap on a cracker, they must have heard me. Sensed me? Who can say."
 
@@ -84,7 +85,7 @@ label anger_urshu_darius:
     $ renpy.music.set_audio_filter("ambience", None, replace=True, duration=5)
     
 
-    hide darius
+    hide darius with dissolve
 
     # sound of darius leaving/ steps/ door closing
     #play sound footsteps
