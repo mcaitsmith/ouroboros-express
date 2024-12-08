@@ -101,10 +101,11 @@ define credits_list2 = [
         "Kyle Smith-Laird",
         "Logan Grimes",
         "Noah Campodonico",
-        "Sisi Peng"
+        "Sisi Peng",
+        "Stephanie Terrero",
+        "Alec Viera"
     ], image = "images/fanart_vivi.png"),
     CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = [
-        "{b}Writing{/b}",
         "Salvador Bas Folch",
         "Cameron Daxon",
         "Carrie Talbot",
@@ -113,8 +114,6 @@ define credits_list2 = [
         "Kyle Smith-Laird",
         "Logan Grimes",
         "Sera Milano",
-        "Sisi Peng",
-        "{b}Editing{/b}",
         "Sisi Peng"
     ], image = "images/fanart_susurha.png"),
     CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
@@ -140,7 +139,7 @@ define credits_list2 = [
         "Alice",
         "Stephanie Terrero"
     ], image = None),
-    CreditsCategory(category = "{b}{i}QA/PLAYTESTING{/i}{/b}\n", credit_list = [
+    CreditsCategory(category = "{b}{i}QA{/i}{/b}\n", credit_list = [
         "Rafael Campbell",
         "Rachel Lee",
         "Carrie Talbot",
