@@ -85,85 +85,108 @@ define credits_list = [
 ]
 
 define credits_list2 = [
-    CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = 
+    CreditsCategory(category = "{b}{i}VOICEOVER{/i}{/b}\n", credit_list = 
     [
-        "{b}Writing{/b}",
-        "Haley Bulen",
-        "Patrick Christell",
-        "Robert Corra",
-        "Tiago Da Cunha",
-        "Cameron Daxon",
-        "Gideon Devendra",
-        "Logan Grimes",
-        "Zachary Roush",
-        "Dylan Sands",
+        "{b}VO Cast{/b}",
+        "Allyson Frazier - Vivi",
+        "Preston Yeung - Susu'Rha",
+        "Rydberg Delta - Darius",
+        "Sean Baxendale - Urshu",
+        "Sera Milano - Avatar of Asha",
+        "Stephanie Terrero",
+        "{b}VO Production{/b}",
+        "Lindsay Howard",
+        "Alan Moore",
+        "Jonathan Rhee",
         "Kyle Smith-Laird",
-        "{b}Editing{/b}",
-        "Allison Bryant",
-        "Haley Bulen",
-        "hosomeowa",
-        "Megan Fleming",
-        "Lindsay Howard"
+        "Logan Grimes",
+        "Noah Campodonico",
+        "Sisi Peng"
     ], image = "images/fanart_vivi.png"),
-    CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
-        "Onashabay Daniyar",
-        "Denochi_",
-        "gleamiarts",
-        "Stephanie Terrero"
+    CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = [
+        "{b}Writing{/b}",
+        "Salvador Bas Folch",
+        "Cameron Daxon",
+        "Carrie Talbot",
+        "Dylan Sands",
+        "Alan Moore",
+        "Kyle Smith-Laird",
+        "Logan Grimes",
+        "Sera Milano",
+        "Sisi Peng",
+        "{b}Editing{/b}",
+        "Sisi Peng"
     ], image = "images/fanart_susurha.png"),
+    CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
+        "Vinny Konawalik",
+        "Stephanie Terrero",
+        "Cleo Weeks",
+        "Dylan Chambore",
+        "Den",
+        "Perri Polyviou",
+        "Rachel Lee"
+    ], image = "images/fanart_darius.png"),
     CreditsCategory(category = "{b}{i}SOUND{/i}{/b}\n", credit_list = [
         "Armoni Boone",
-        "Max Lincoln",
-        "Scott Stinson"
-    ], image = "images/fanart_darius.png"),
+        "Scott Stinson",
+        "Charlie Armour"
+    ], image = None),
     CreditsCategory(category = "{b}{i}PROGRAMMING{/i}{/b}\n", credit_list = [
-        "Amorphous",
-        "Denochi_"
+        "Mica Smith",
+        "Den",
+        "Special thanks to Daniel Westfall"
     ], image = "images/fanart_ava.png"),
+    CreditsCategory(category = "{b}{i}ACCESSIBILITY{/i}{/b}\n", credit_list = [
+        "Alice",
+        "Stephanie Terrero"
+    ], image = None),
     CreditsCategory(category = "{b}{i}QA/PLAYTESTING{/i}{/b}\n", credit_list = [
-        "{b}QA{/b}",
-        "Keumars Afifi-Sabet",
         "Rafael Campbell",
-        "Patrick Christell",
-        "Robert Corra",
-        "Jonathan Rhee",
-        "Cameryn Tuliao",
-        "{b}Playtesting{/b}",
-        "Keumars Afifi-Sabet",
-        "Mohammad Al Hadiansyah Suwandhy",
-        "Rafael Campbell",
-        "Marcelo Domingues",
-        "Megan Fleming",
-        "Patrick Knisely",
-        "Anika Konkati",
-        "Aaron Mesnard",
-        "Jonathan Rhee",
-        "Thomasina Rogers",
-        "Kyle Smith-Laird",
-        "Ines Souquett",
-        "Cameryn Tuliao"
-    ], image = "images/fanart_urshu.png"),
+        "Rachel Lee",
+        "Carrie Talbot",
+        "Damon Day",
+        "Jonathan Rhee"
+    ], image = None),
     CreditsCategory(category = "{b}{i}LEADS{/i}{/b}\n", credit_list = [
         "{b}Narrative Lead{/b}",
-        "Salvador Bas Folch",
-        "{b}Narrative Producer{/b}",
-        "Anivette Wong",
+        "Tiago Da Cunha",
         "{b}Art Lead{/b}",
-        "fruitsicaljams",
+        "Vinny Konawalik",
+        "{b}QA Lead{/b}",
+        "Rafael Campbell",
         "{b}Sound Lead{/b}",
-        "Andrea Saravia Pérez",
+        "Noah Campodonico",
         "{b}Programming Lead{/b}",
-        "Mica Smith"
-    ], image = "images/snakelogo.png"),
-    CreditsCategory(category = "{b}{i}Special Thanks{/i}{/b}\n", credit_list = [
-        "Daniel Westfall"
+        "Mica Smith",
+        "{b}Voiceover Producer{/b}",
+        "Lindsay Howard",
+        "{b}Casting Director{/b}",
+        "Lindsay Howard",
+        "{b}Voiceover Director{/b}",
+        "Alan Moore",
+        "{b}Lead Producer{/b}",
+        "Rachel Lee",
+    ], image = "images/fanart_urshu.png"),
+    CreditsCategory(category = "{b}{i}MARKETING{/i}{/b}\n", credit_list = [
+        "Alice Cross",
+        "Armoni Boone",
+        "Dylan Sands",
+        "Kelsey Phelan",
+        "Kshitij Khandare",
+        "Sisi Peng"
     ], image = None),
+    CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
+        "Najmah Salam"
+    ], image = None),
+    # CreditsCategory(category = "{b}{i}Special Thanks{/i}{/b}\n", credit_list = [
+    #     "Daniel Westfall"
+    # ], image = None),
     CreditsCategory(category = "Use of the terms “mindflayer” and “illithid” in The Ouroboros Express\nis unofficial Fan Content permitted under the Fan Content Policy.\nNot approved/endorsed by Wizards.\nThese portions of the materials used are property of Wizards of the Coast.\n©Wizards of the Coast LLC.", credit_list = [
     ], image = None),
 ]
 
-define credits_list3 = [
-    CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
-        "Najmah Salam"
-    ], image = None),
-]
+# define credits_list3 = [
+    # CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
+    #     "Najmah Salam"
+    # ], image = None),
+# ]

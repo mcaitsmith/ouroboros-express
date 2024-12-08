@@ -10,7 +10,7 @@
 transform credits_scroll(speed):
     ypos 1080
     # linear speed ypos -7100
-    linear speed ypos -17000
+    linear speed ypos -17500
 
 ## Credits screen.
 
@@ -65,19 +65,19 @@ screen credits():
                     for name in credit.credit_list:
                         text name
 
-            null height 200
-            # spacing 60
+            # null height 200
+            # # spacing 60
 
-            for credit in credits_list3:
+            # for credit in credits_list3:
 
-                vbox:
-                    add credit.image
+            #     vbox:
+            #         add credit.image
 
-                vbox:
-                    spacing 10
-                    text "{b}" + credit.category + "{/b}"
-                    for name in credit.credit_list:
-                        text name
+            #     vbox:
+            #         spacing 10
+            #         text "{b}" + credit.category + "{/b}"
+            #         for name in credit.credit_list:
+            #             text name
 
             null height 750
             # spacing 60
