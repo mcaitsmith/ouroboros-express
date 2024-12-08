@@ -22,7 +22,7 @@ label denial_cs2:
     vivithinking "Surreal landscapes—blending into a swirl of colors. The train's breathtaking speed blurs everything into cosmic spaghetti. It gets darker. Darker."
 
     # Fade back in.
-    show cabin with dissolve
+    show cabin -blur with dissolve
 
     vivi sad "This can't be happening."
     #$ renpy.music.set_audio_filter("ambience", audio_filter.Lowpass(400), replace=True, duration=1.0)

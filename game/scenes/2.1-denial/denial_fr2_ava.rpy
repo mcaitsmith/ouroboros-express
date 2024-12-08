@@ -127,7 +127,7 @@ label denial_fr2_ava:
     show urshu happy at left with dissolve:
         xzoom -1.0
     show vivi jump_surprised at left with hpunch:
-        ypos 1500
+        xzoom 1 ypos 1500
         linear 0.1 ypos 1400
         linear 0.1 ypos 1500
     $ renpy.pause(0.3)

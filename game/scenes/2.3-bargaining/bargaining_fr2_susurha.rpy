@@ -175,7 +175,7 @@ label bargaining_fr2_susurha:
         vivithinking "I don't get it!"
 
         stop cd_ambience fadeout 1.0
-        show diningcar with dissolve
+        show diningcar -blur with dissolve
 
         show susurha neutral at right with dissolve
 

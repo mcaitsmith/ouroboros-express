@@ -391,6 +391,8 @@ label denial_fr2_susurha:
     show vivi surprised at center with dissolve:
         xzoom 1
 
+    show observatory -blur with dissolve
+
 
 
     vivi surprised "What the hell was that?"
