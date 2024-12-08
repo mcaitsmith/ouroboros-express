@@ -93,7 +93,6 @@ define credits_list2 = [
         "Rydberg Delta - Darius",
         "Sean Baxendale - Urshu",
         "Sera Milano - Avatar of Asha",
-        "Stephanie Terrero",
         "{b}VO Production{/b}",
         "Lindsay Howard",
         "Alan Moore",
@@ -121,22 +120,23 @@ define credits_list2 = [
         "Stephanie Terrero",
         "Cleo Weeks",
         "Dylan Chambore",
-        "Den",
+        "Deniz Dilek",
         "Perri Polyviou",
         "Rachel Lee"
     ], image = "images/fanart_darius.png"),
-    CreditsCategory(category = "{b}{i}SOUND{/i}{/b}\n", credit_list = [
+    CreditsCategory(category = "{b}{i}AUDIO{/i}{/b}\n", credit_list = [
+        "Noah Campodonico",
         "Armoni Boone",
         "Scott Stinson",
         "Charlie Armour"
     ], image = None),
     CreditsCategory(category = "{b}{i}PROGRAMMING{/i}{/b}\n", credit_list = [
         "Mica Smith",
-        "Den",
+        "Deniz Dilek",
         "Special thanks to Daniel Westfall"
     ], image = "images/fanart_ava.png"),
     CreditsCategory(category = "{b}{i}ACCESSIBILITY{/i}{/b}\n", credit_list = [
-        "Alice",
+        "Alice Cross",
         "Stephanie Terrero"
     ], image = None),
     CreditsCategory(category = "{b}{i}QA{/i}{/b}\n", credit_list = [
@@ -153,7 +153,7 @@ define credits_list2 = [
         "Vinny Konawalik",
         "{b}QA Lead{/b}",
         "Rafael Campbell",
-        "{b}Sound Lead{/b}",
+        "{b}Audio Lead{/b}",
         "Noah Campodonico",
         "{b}Programming Lead{/b}",
         "Mica Smith",
