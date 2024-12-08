@@ -105,6 +105,7 @@ define credits_list2 = [
         "Alec Viera"
     ], image = "images/fanart_vivi.png"),
     CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = [
+        "Tiago Da Cunha",
         "Salvador Bas Folch",
         "Cameron Daxon",
         "Carrie Talbot",
