@@ -179,7 +179,7 @@ label images_bgs:
     # define Orex animated logo image for title
     image titlelogo:
         Movie(channel="movie_dp", loop = False, play = 'images/OrEx_Logo.mkv')
-        xoffset 93 yoffset 17 zoom 0.97
+        xoffset 93 yoffset 16 zoom 0.97
         pause 4.5
         Movie(channel="movie_dp", loop = True, play = 'images/OrExLogo_repeat.avi')
         # linear 1.0 alpha 0.0
@@ -202,10 +202,10 @@ label images_bgs:
         (0, 0), "title_motes3")
 
     # define blurred background images
-    image cabin blur = im.Blur("images/backgrounds/cabin.png", 5)
-    image observatory blur = im.Blur("images/backgrounds/observatory.png", 5)
-    image lounge blur = im.Blur("images/backgrounds/lounge.png", 5)
-    image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 5)
+    image cabin blur = im.Blur("images/backgrounds/cabin.png", 2.5)
+    image observatory blur = im.Blur("images/backgrounds/observatory.png", 2.5)
+    image lounge blur = im.Blur("images/backgrounds/lounge.png", 2.5)
+    image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 2.5)
 
     # define decay overlay bg images
     layeredimage cabin:

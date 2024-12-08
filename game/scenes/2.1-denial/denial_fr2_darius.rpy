@@ -371,13 +371,16 @@ label denial_fr2_darius:
 
     show urshu neutral at left with dissolve:
         xzoom -1.0
-    show vivi surprised at left:
-        xzoom 1
-        linear 0.1 ypos 1000
-        linear 0.1 ypos 1080
+    show vivi jump_surprised at left:
+        xzoom 1 ypos 1500
+        linear 0.1 ypos 1400
+        linear 0.1 ypos 1500
     play sound teleport_exit
     stop music fadeout 3.0
     urshu neutral "Interesting! What do you see out there?"
+
+    show vivi surprised at left:
+        xpos 200
 
     vivi surprised "What the? Get out of the way!"
     
