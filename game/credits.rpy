@@ -9,7 +9,8 @@
 
 transform credits_scroll(speed):
     ypos 1080
-    linear speed ypos -7100
+    # linear speed ypos -7100
+    linear speed ypos -17000
 
 ## Credits screen.
 
@@ -19,19 +20,21 @@ screen credits():
     add "#000000"
 
     # timer 10.0 action Return()
-    timer 60.0 action Return()
+    timer 145.0 action Return()
 
     # frame at credits_scroll(10.0):
-    frame at credits_scroll(50.0):
+    frame at credits_scroll(125.0):
         background None
         xalign 0.5
 
         vbox:
 
-            label "Credits"
+            label "{size=60}{k=2}{color=#d0bc95}{b}Credits{/b}{/color}{/k}{/size}"
+            null height 40
+            label "{b}Jam Team{/b}"
 
-            null height 20
-            spacing 60
+            null height 40
+            spacing 100
 
             for credit in credits_list:
 
@@ -39,12 +42,44 @@ screen credits():
                     add credit.image
 
                 vbox:
-                    spacing 4
+                    spacing 10
                     text "{b}" + credit.category + "{/b}"
                     for name in credit.credit_list:
                         text name
 
             null height 200
+
+            label "{b}Patch Team{/b}"
+
+            null height 40
+            # spacing 60
+
+            for credit in credits_list2:
+
+                vbox:
+                    add credit.image
+
+                vbox:
+                    spacing 10
+                    text "{b}" + credit.category + "{/b}"
+                    for name in credit.credit_list:
+                        text name
+
+            null height 200
+            # spacing 60
+
+            for credit in credits_list3:
+
+                vbox:
+                    add credit.image
+
+                vbox:
+                    spacing 10
+                    text "{b}" + credit.category + "{/b}"
+                    for name in credit.credit_list:
+                        text name
+
+            null height 750
             # spacing 60
 
             vbox:
