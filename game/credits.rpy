@@ -10,7 +10,7 @@
 transform credits_scroll(speed):
     ypos 1080
     # linear speed ypos -7100
-    linear speed ypos -17500
+    linear speed ypos -17050
 
 ## Credits screen.
 
@@ -19,10 +19,8 @@ screen credits():
 
     add "#000000"
 
-    # timer 10.0 action Return()
     timer 145.0 action Return()
 
-    # frame at credits_scroll(10.0):
     frame at credits_scroll(125.0):
         background None
         xalign 0.5
@@ -52,7 +50,6 @@ screen credits():
             label "{b}Patch Team{/b}"
 
             null height 40
-            # spacing 60
 
             for credit in credits_list2:
 
@@ -65,22 +62,7 @@ screen credits():
                     for name in credit.credit_list:
                         text name
 
-            # null height 200
-            # # spacing 60
-
-            # for credit in credits_list3:
-
-            #     vbox:
-            #         add credit.image
-
-            #     vbox:
-            #         spacing 10
-            #         text "{b}" + credit.category + "{/b}"
-            #         for name in credit.credit_list:
-            #             text name
-
             null height 750
-            # spacing 60
 
             vbox:
                 add "images/logo.png"

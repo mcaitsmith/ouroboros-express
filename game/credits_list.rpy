@@ -85,108 +85,88 @@ define credits_list = [
 ]
 
 define credits_list2 = [
-    CreditsCategory(category = "{b}{i}VOICEOVER{/i}{/b}\n", credit_list = 
-    [
-        "{b}VO Cast{/b}",
-        "Allyson Frazier - Vivi",
-        "Preston Yeung - Susu'Rha",
-        "Rydberg Delta - Darius",
-        "Sean Baxendale - Urshu",
-        "Sera Milano - Avatar of Asha",
-        "{b}VO Production{/b}",
-        "Lindsay Howard",
-        "Alan Moore",
-        "Jonathan Rhee",
-        "Kyle Smith-Laird",
-        "Logan Grimes",
-        "Noah Campodonico",
-        "Sisi Peng",
-        "Stephanie Terrero",
-        "Alec Viera"
-    ], image = "images/fanart_vivi.png"),
-    CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = [
-        "Tiago Da Cunha",
-        "Salvador Bas Folch",
-        "Cameron Daxon",
-        "Carrie Talbot",
-        "Dylan Sands",
-        "Alan Moore",
-        "Kyle Smith-Laird",
-        "Logan Grimes",
-        "Sera Milano",
-        "Sisi Peng"
-    ], image = "images/fanart_susurha.png"),
-    CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
-        "Vinny Konawalik",
-        "Stephanie Terrero",
-        "Cleo Weeks",
-        "Dylan Chambore",
-        "Deniz Dilek",
-        "Perri Polyviou",
-        "Rachel Lee"
-    ], image = "images/fanart_darius.png"),
-    CreditsCategory(category = "{b}{i}AUDIO{/i}{/b}\n", credit_list = [
-        "Noah Campodonico",
-        "Armoni Boone",
-        "Scott Stinson",
-        "Charlie Armour"
-    ], image = None),
-    CreditsCategory(category = "{b}{i}PROGRAMMING{/i}{/b}\n", credit_list = [
-        "Mica Smith",
-        "Deniz Dilek",
-        "Special thanks to Daniel Westfall"
-    ], image = "images/fanart_ava.png"),
     CreditsCategory(category = "{b}{i}ACCESSIBILITY{/i}{/b}\n", credit_list = [
         "Alice Cross",
         "Stephanie Terrero"
+    ], image = "images/fanart_vivi.png"),
+    CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
+        "Vinny Konawalik - Art Lead, Artist",
+        "Cleo Weeks - Artist",
+        "Deniz Dilek - Artist",
+        "Dylan Chambore - Artist",
+        "Perri Polyviou - Artist",
+        "Rachel Lee - Artist"
     ], image = None),
-    CreditsCategory(category = "{b}{i}QA{/i}{/b}\n", credit_list = [
-        "Rafael Campbell",
-        "Rachel Lee",
-        "Carrie Talbot",
-        "Damon Day",
-        "Jonathan Rhee"
-    ], image = None),
-    CreditsCategory(category = "{b}{i}LEADS{/i}{/b}\n", credit_list = [
-        "{b}Narrative Lead{/b}",
-        "Tiago Da Cunha",
-        "{b}Art Lead{/b}",
-        "Vinny Konawalik",
-        "{b}QA Lead{/b}",
-        "Rafael Campbell",
-        "{b}Audio Lead{/b}",
-        "Noah Campodonico",
-        "{b}Programming Lead{/b}",
-        "Mica Smith",
-        "{b}Voiceover Producer{/b}",
-        "Lindsay Howard",
-        "{b}Casting Director{/b}",
-        "Lindsay Howard",
-        "{b}Voiceover Director{/b}",
-        "Alan Moore",
-        "{b}Lead Producer{/b}",
-        "Rachel Lee",
-    ], image = "images/fanart_urshu.png"),
+    CreditsCategory(category = "{b}{i}AUDIO{/i}{/b}\n", credit_list = [
+        "Noah Campodonico - Audio Lead",
+        "{b}Sound{/b}",
+        "Noah Campodonico - Sound Designer",
+        "Alec Viera - Additional Audio Support",
+        "{b}Music{/b}",
+        "Armoni Boone - Composer",
+        "Charlie Armour - Composer",
+        "Noah Campodonico - Composer",
+        "Scott Stinson - Composer",
+        "{b}Voiceover Cast{/b}",
+        "Allyson Frazier - Vivienne Sanssouci",
+        "Preston Yeung - Susu’Rha Balrinn",
+        "Rydberg Delta - Darius Wrecker",
+        "Sean Baxendale - Urshunabi",
+        "Sera Milano - Avatar of Asha",
+        "{b}Voiceover Production Team{/b}",
+        "Lindsay Howard - Voiceover Producer, Casting Director, Voiceover Editor",
+        "Alan Moore - Voiceover Director",
+        "Jonathan Rhee - Voiceover Production Assistant",
+        "Kyle Smith-Laird - Voiceover Production Assistant",
+        "Logan Grimes - Casting Assistant, Voiceover Production Assistant",
+        "Noah Campodonico - Voiceover Editor, Voiceover Designer",
+        "Scott Stinson - Voiceover Editor",
+        "Sisi Peng - Voiceover Production Assistant",
+        "Stephanie Terrero - Voiceover Production Assistant"
+    ], image = "images/fanart_susurha.png"),
     CreditsCategory(category = "{b}{i}MARKETING{/i}{/b}\n", credit_list = [
+        "Armoni Boone - Marketing Lead",
         "Alice Cross",
-        "Armoni Boone",
         "Dylan Sands",
         "Kelsey Phelan",
         "Kshitij Khandare",
         "Sisi Peng"
+    ], image = "images/fanart_darius.png"),
+    CreditsCategory(category = "{b}{i}NARRATIVE{/i}{/b}\n", credit_list = [
+        "Tiago Da Cunha - Narrative Lead",
+        "Alan Moore - Editor, Voiceover Expert",
+        "Cameron Daxon - Writer, Editor, Darius Expert",
+        "Carrie Talbot - Writer, Narrative Designer, Vivi/Urshu Expert",
+        "Dylan Sands - Avatar of Asha Expert",
+        "Salvador Bas Folch - Writer, Editor, Narrative Designer",
+        "Kyle Smith-Laird - Writer, Avatar of Asha Expert",
+        "Logan Grimes - Writer, Susu’Rha Expert",
+        "Sera Milano - Writer, Narrative Designer, Vivi/Urshu Expert",
+        "Sisi Peng - Writer, Editor, Darius Expert"
+    ], image = None),
+    CreditsCategory(category = "{b}{i}PROGRAMMING{/i}{/b}\n", credit_list = [
+        "Mica Smith - Programming Lead, Game Designer",
+        "Deniz Dilek - Programmer",
+        "Special thanks to Daniel Westfall"
+    ], image = "images/fanart_ava.png"),
+    CreditsCategory(category = "{b}{i}QA{/i}{/b}\n", credit_list = [
+        "Rafael Campbell - QA Lead",
+        "Carrie Talbot",
+        "Damon Day",
+        "Jonathan Rhee",
+        "Rachel Lee",
+        "Salvador Bas Folch",
+        "Kyle Smith-Laird"
+    ], image = None),
+    CreditsCategory(category = "{b}{i}UI/UX{/i}{/b}\n", credit_list = [
+        "Stephanie Terrero - UI/UX Lead"
+    ], image = None),
+    CreditsCategory(category = "{b}{i}PRODUCTION{/i}{/b}\n", credit_list = [
+        "Rachel Lee - Lead Producer"
     ], image = None),
     CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
         "Najmah Salam"
     ], image = None),
-    # CreditsCategory(category = "{b}{i}Special Thanks{/i}{/b}\n", credit_list = [
-    #     "Daniel Westfall"
-    # ], image = None),
     CreditsCategory(category = "Use of the terms “mindflayer” and “illithid” in The Ouroboros Express\nis unofficial Fan Content permitted under the Fan Content Policy.\nNot approved/endorsed by Wizards.\nThese portions of the materials used are property of Wizards of the Coast.\n©Wizards of the Coast LLC.", credit_list = [
-    ], image = None),
+    ], image = "images/fanart_urshu.png"),
 ]
-
-# define credits_list3 = [
-    # CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
-    #     "Najmah Salam"
-    # ], image = None),
-# ]
