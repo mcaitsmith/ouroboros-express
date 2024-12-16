@@ -79,9 +79,9 @@ define credits_list = [
         "{b}Programming Lead{/b}",
         "Mica Smith"
     ], image = "images/vivi in the train being all mysterious and such.png"),
-    # CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
-    #     "Najmah Salam"
-    # ], image = "images/thumbnail concept.png"),
+    CreditsCategory(category = "{b}{i}DIRECTOR{/i}{/b}\n", credit_list = [
+        "Najmah Salam"
+    ], image = "images/thumbnail concept.png"),
 ]
 
 define credits_list2 = [
