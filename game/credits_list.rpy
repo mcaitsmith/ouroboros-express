@@ -154,9 +154,9 @@ define credits_list2 = [
         "Carrie Talbot",
         "Damon Day",
         "Jonathan Rhee",
+        "Kyle Smith-Laird",
         "Rachel Lee",
-        "Salvador Bas Folch",
-        "Kyle Smith-Laird"
+        "Salvador Bas Folch"
     ], image = None),
     CreditsCategory(category = "{b}{i}UI/UX{/i}{/b}\n", credit_list = [
         "Stephanie Terrero - UI/UX Lead"
