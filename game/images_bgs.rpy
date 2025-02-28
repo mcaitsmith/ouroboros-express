@@ -38,14 +38,14 @@ label images_bgs:
         "images/backgrounds/vfx/lounge_lamps.png"
         alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         pause 5.0
-        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.6 matrixcolor BrightnessMatrix(0.4)
         linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         repeat
     image lounge_windows_overlay:
         "images/backgrounds/vfx/lounge_window.png"
         alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         pause 5.0
-        linear 2.0 alpha 1.0 matrixcolor BrightnessMatrix(0.4)
+        linear 2.0 alpha 0.6 matrixcolor BrightnessMatrix(0.4)
         linear 2.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         repeat
 

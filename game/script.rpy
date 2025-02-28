@@ -150,6 +150,7 @@ label start:
             "If you, or anyone in your family, have an epileptic condition, consult your physician prior to playing."
             "Symptoms may include dizziness, altered vision, eye or muscle twitches, loss of awareness, disorientation, any involuntary movement, or convulsions."
             "If you experience any of these symptoms while playing a video or computer game, IMMEDIATELY discontinue use and consult your physician before resuming play."
+            "Warning: Skipping quickly through text may cause frame jumps or abrupt visual effects which may be sensitive for some players."
             window hide
         "No":
             window hide

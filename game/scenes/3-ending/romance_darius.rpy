@@ -36,8 +36,14 @@ label romance_darius:
     # VISUAL: the screen shakes, flickering
     play sound cineboom
     show observatory with hpunch
-    show observatory with flash
-    show observatory with flash
+    show white:
+        alpha 0.0
+        easeout 0.75 alpha 0.5
+        easein 0.5 alpha 0.0
+        easeout 0.75 alpha 0.5
+        easein 2 alpha 0.0
+    pause 4
+    hide white
 
     vivithinking sad "The end... It's here... But I feel at peace." 
     vivithinking happy "Wherever you are, Urshu — thank you."

@@ -9,7 +9,7 @@ label images_chars:
 
     # define expression VFX
     transform ex_neutral:
-        zoom 1.0
+        zoom 1.02
     transform ex_neutral_blush:
         zoom 1.02
     transform ex_happy:
