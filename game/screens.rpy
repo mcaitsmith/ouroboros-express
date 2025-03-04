@@ -369,6 +369,9 @@ screen navigation():
                     background "gui/pause/button2.png"
                     action MainMenu()
 
+        if main_menu:
+            textbutton _("Credits") action [Hide(), Show("credits")]
+
         if not main_menu:
             textbutton _("Return"):
                 background "gui/pause/button2.png"
@@ -676,6 +679,8 @@ style game_menu_label_text is gui_label_text
 
 style return_button is navigation_button
 style return_button_text is navigation_button_text
+style main_button_return is main_button
+style main_button_return_text is main_button_text
 
 # Styles used in the menu from the title screen.
 style main_menu_outer_frame is empty:
@@ -732,6 +737,11 @@ style return_button:
     yalign 1.0
     yoffset -45
 
+style main_button_return:
+    xpos gui.navigation_xpos
+    yalign 1.0
+    yoffset -45
+
 
 ## About screen ################################################################
 ##
@@ -761,6 +771,11 @@ screen about():
                 text "[gui.about!t]\n"
 
             text _("{i}Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]{/i}")
+
+    textbutton _("Return"):
+        style "main_button_return"
+
+        action Return()
 
 
 style about_label is gui_label
@@ -824,6 +839,10 @@ screen load():
 
     if main_menu:
         use file_slots(_("Load"))
+        textbutton _("Return"):
+            style "main_button_return"
+
+            action Return()
     else:
         use file_slots_ingame(_("Load"))
 
@@ -1324,6 +1343,11 @@ screen preferences():
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
 
+    textbutton _("Return"):
+        style "main_button_return"
+
+        action Return()
+
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
@@ -1581,6 +1605,11 @@ screen help():
                 use mouse_help
             elif device == "gamepad":
                 use gamepad_help
+
+    textbutton _("Return"):
+        style "main_button_return"
+
+        action Return()
 
 
 screen keyboard_help():

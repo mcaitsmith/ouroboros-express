@@ -9,16 +9,27 @@
 
 transform credits_scroll(speed):
     ypos 1080
-    linear speed ypos -17800
+    linear speed ypos -17900
 
 ## Credits screen.
 
 screen credits():
+
     style_prefix "credits"
 
     add "#000000"
 
-    timer 145.0 action Return()
+    if main_menu:
+
+        textbutton _("Return"):
+            style "main_button_return"
+
+            action [Hide("credits"), ShowMenu("main_menu")]
+
+    if main_menu:
+        timer 145.0 action [Hide("credits"), ShowMenu("main_menu")]
+    else:
+        timer 145.0 action Return()
 
     frame at credits_scroll(125.0):
         background None

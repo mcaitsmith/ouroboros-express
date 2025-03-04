@@ -87,6 +87,7 @@ define credits_list = [
 define credits_list2 = [
     CreditsCategory(category = "{b}{i}ACCESSIBILITY{/i}{/b}\n", credit_list = [
         "Alice Cross",
+        "Amit Gaikwad",
         "Stephanie Terrero"
     ], image = "images/fanart_vivi.png"),
     CreditsCategory(category = "{b}{i}ART{/i}{/b}\n", credit_list = [
@@ -156,7 +157,8 @@ define credits_list2 = [
         "Jonathan Rhee",
         "Kyle Smith-Laird",
         "Rachel Lee",
-        "Salvador Bas Folch"
+        "Salvador Bas Folch",
+        "Soojung Choi"
     ], image = None),
     CreditsCategory(category = "{b}{i}UI/UX{/i}{/b}\n", credit_list = [
         "Stephanie Terrero - UI/UX Lead"
