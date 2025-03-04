@@ -60,9 +60,12 @@ label bargaining_briefing:
                 
 
                 # VISUAL: rainbows flash around the room
-                show white with dissolve
-                hide white with dissolve
-                show white with dissolve
+                show white :
+                    alpha 0.0
+                    ease 0.5 alpha 0.3
+                    linear 0.5 alpha 0.0
+                    ease 0.5 alpha 0.3
+                pause 2.0
                 hide white with dissolve
                 # scene lounge with flash
                 # scene lounge with flash
@@ -76,7 +79,9 @@ label bargaining_briefing:
                     xzoom -1.0
                 vivithinking surprised "The train's shaking.. Feels like it's coming apart!"
                 vivithinking "Feels like {i}I{/i} might come apart."
-                show white with dissolve
+                show white:
+                    alpha 0.5
+                with dissolve
                 hide white with dissolve
                 vivithinking "That strange light is turning the windows into mirrors but I can't see myself in them, just endless other mirrors reflecting back. And then darkness. Darkness I can {i}feel{/i}."
                 vivithinking sad "Like there's a void closing in around me, swallowing me up, and there are things waiting there... things I don't want to see. Is this what the end feels like?"
@@ -88,11 +93,9 @@ label bargaining_briefing:
                 $ renpy.music.set_volume(0.25, delay=0.1, channel='ambience')
                 $ renpy.music.set_volume(0, delay=0.1, channel='music')
                 play sound char_terror
-                show white with dissolve
-                show lounge blur
-                $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
-                hide white with dissolve
-                pause 5
+                show lounge blur with Dissolve(2.0)
+                $ renpy.music.set_volume(1.0, delay=2.0, channel='music')
+                pause 2
                 $ renpy.music.set_volume(1.0, delay=3.5, channel='ambience')
 
                 show vivi surprised
