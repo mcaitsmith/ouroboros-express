@@ -64,6 +64,7 @@ label bargaining_briefing:
                     alpha 0.0
                     ease 0.5 alpha 0.3
                     linear 0.5 alpha 0.0
+                    pause 0.5
                     ease 0.5 alpha 0.3
                 pause 2.0
                 hide white with dissolve

@@ -204,7 +204,7 @@ label images_bgs:
     # define blurred background images
     image cabin blur = im.Blur("images/backgrounds/cabin.png", 2.5)
     image observatory blur = im.Blur("images/backgrounds/observatory.png", 2.5)
-    image lounge blur = im.Blur("images/backgrounds/lounge.png", 2.5)
+    image lounge blur = im.Blur("images/backgrounds/lounge.png", 2.0)
     image diningcar blur = im.Blur("images/backgrounds/diningcar.png", 2.5)
 
     # define decay overlay bg images
