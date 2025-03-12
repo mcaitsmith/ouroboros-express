@@ -64,6 +64,7 @@ label bargaining_briefing:
                     alpha 0.0
                     ease 0.5 alpha 0.3
                     linear 0.5 alpha 0.0
+                    pause 0.5
                     ease 0.5 alpha 0.3
                 pause 2.0
                 hide white with dissolve
@@ -71,10 +72,14 @@ label bargaining_briefing:
                 # scene lounge with flash
                 # scene lounge with flash
                 scene lounge at train_shake:
-                    zoom 1.05
-                    xoffset -5
+                    pause 2.0
+                    linear 3.0 zoom 1.05 xoffset -5
+                    # xoffset -5
                 # with flash
 
+                show vivi neutral at left:
+                    xzoom -1.0
+                pause 1.5
                 show vivi surprised at left:
                     xzoom -1.0
                 vivithinking surprised "The train's shaking.. Feels like it's coming apart!"
