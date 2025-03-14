@@ -207,13 +207,18 @@ label romance_cs:
 
                     # VISUAL: screen starts flashing white
                     play sound trainshake fadein 1.0
-                    show lounge with flash
-                    show lounge with flash
-                    show lounge with flash
+                    show white:
+                        alpha 0.0
+                        easeout 1.25 alpha 0.4
+                        easein 1 alpha 0.0
+                        easeout 1.25 alpha 0.4
+                        easein 2 alpha 0.0
+                    pause 4
                     show lounge at bright with dissolve
                     stop sound fadeout 1.0
 
                     vivi surprised "Wait, Urshu! What's going on?"
+                    hide white
                     vivi surprised "Where am I going?" 
                     vivi sad "Will I ever see you again?"
                     urshu sad "I'm afraid not. This is goodbye, my dear."

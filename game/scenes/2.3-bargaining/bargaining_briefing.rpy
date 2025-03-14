@@ -62,11 +62,11 @@ label bargaining_briefing:
                 # VISUAL: rainbows flash around the room
                 show white :
                     alpha 0.0
-                    ease 0.5 alpha 0.3
-                    linear 0.5 alpha 0.0
+                    ease 1.25 alpha 0.3
+                    linear 1.25 alpha 0.0
                     pause 0.5
-                    ease 0.5 alpha 0.3
-                pause 2.0
+                    ease 1 alpha 0.3
+                pause 4.0
                 hide white with dissolve
                 # scene lounge with flash
                 # scene lounge with flash

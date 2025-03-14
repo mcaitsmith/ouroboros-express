@@ -38,17 +38,16 @@ label romance_darius:
     show observatory with hpunch
     show white:
         alpha 0.0
-        easeout 0.75 alpha 0.5
-        easein 0.5 alpha 0.0
-        easeout 0.75 alpha 0.5
+        easeout 1.25 alpha 0.4
+        easein 1 alpha 0.0
+        easeout 1.25 alpha 0.4
         easein 2 alpha 0.0
     pause 4
-    hide white
 
     vivithinking sad "The end... It's here... But I feel at peace." 
     vivithinking happy "Wherever you are, Urshu — thank you."
     stop music fadeout 5.0
-
+    hide white
     # VISUAL: screen fades to black  
     stop ambience fadeout 1.0
     scene black with fade

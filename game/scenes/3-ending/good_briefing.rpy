@@ -119,10 +119,16 @@ label good_briefing:
             # VISUAL: the screen shakes, flickering
             play sound trainshake
             show cabin with hpunch
-            show cabin with flash
-            show cabin with flash        
+            show white:
+                alpha 0.0
+                easeout 1.25 alpha 0.4
+                easein 1 alpha 0.0
+                easeout 1.25 alpha 0.4
+                easein 2 alpha 0.0
+            pause 4   
     
             vivi surprised "What's that? Urshu, what's happening?"
+            hide white
             stop sound fadeout 2.0
             urshu neutral "The journey nears its end, at least for three of our travellers. Vivi, take my hand, there are some goodbyes you may want to say, and quickly!"
          
