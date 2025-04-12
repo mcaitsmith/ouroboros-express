@@ -23,15 +23,14 @@ label epi_imperfect_friendship:
     vivi surprised "Are you kidding me?"
     
     # VISUAL: screen starts flashing white
-    show white:
-        alpha 0.0
-        linear 1 alpha 0.3
-        linear 1 alpha 0.6
-        linear 1 alpha 0.8
-        linear 0.2 alpha 0.4
-        linear 0.2 alpha 0.8
-        flicker_opacity
-        linear 0.6 alpha 0.5
+    # show white:
+    #     alpha 0.0
+    #     linear 3 alpha 0.3
+    #     linear 3 alpha 0.6
+    #     linear 3 alpha 0.3
+    #     linear 0.6 alpha 0.4
+    #     linear 0.6 alpha 0.6
+    #     linear 0.6 alpha 0.3
     urshu "Any time now! Look at you, you're starting to float! See?"
     with hpunch
     vivi "What? No! What, what, what?"
@@ -46,16 +45,21 @@ label epi_imperfect_friendship:
     show vivi floating_surprised blush with dissolve
     vivi "I'm drifting like an astronaut!"
     show white:
-        linear 0.6 alpha 0.55
+        alpha 0.0
+        linear 3 alpha 0.25
+        linear 3 alpha 0.0
     vivi "..."
     show white:
-        linear 0.6 alpha 0.6
+        linear 3 alpha 0.35
+        linear 3 alpha 0.0
     # vivithinking happy "It's warm. I feel like curling up like a cat and purring myself to infinity..."
     show vivi floating_happy with dissolve
     vivi "It's warm. I feel like curling up like a cat and purring myself to infinity..."
     urshu "Hey! Any last words to your conductor?"
     show white:
-        linear 0.6 alpha 0.65
+        linear 3 alpha 0.45
+        linear 3 alpha 0.0
+    with hpunch
     vivi "..."
     urshu sad "Come on, Vivi. For posterity!"
     vivi "..."
